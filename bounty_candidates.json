@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Opire featured bounties",
+    "url": "https://opire.dev/",
+    "repository_url": "pending login/detail page",
+    "updated_at": "2026-05-16",
+    "score": 82,
+    "amount_hint": "$390, $120, $110, $70, $30",
+    "reason": "public platform shows explicit bounty amounts; detail pages require account/login verification"
+  },
+  {
+    "title": "AsyncAPI CLI Microgrant 2026-05 - request body validation skipped",
+    "url": "https://github.com/asyncapi/cli/issues/1987",
+    "repository_url": "https://github.com/asyncapi/cli",
+    "updated_at": "2026-05-16",
+    "score": 70,
+    "amount_hint": "microgrant program, amount must be verified",
+    "reason": "linked from AsyncAPI microgrant aggregate issue; bug-like coding task"
+  },
+  {
+    "title": "AsyncAPI website dashboard update workflow issue",
+    "url": "https://github.com/asyncapi/website/issues/5333",
+    "repository_url": "https://github.com/asyncapi/website",
+    "updated_at": "2026-05-16",
+    "score": 61,
+    "amount_hint": "microgrant candidate, amount must be verified",
+    "reason": "specific workflow bug with public issue; needs microgrant eligibility confirmation"
+  }
+]
