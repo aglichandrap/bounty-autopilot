@@ -1,0 +1,7 @@
+# Add one GitHub issue search query per line.
+# These run in addition to the built-in search queries in scripts/bounty_scout.py.
+is:issue is:open "bounty" "python" sort:updated-desc
+is:issue is:open "bounty" "typescript" sort:updated-desc
+is:issue is:open "bounty" "good first issue" sort:updated-desc
+is:issue is:open "reward" "bug" sort:updated-desc
+is:issue is:open "paid issue" sort:updated-desc
