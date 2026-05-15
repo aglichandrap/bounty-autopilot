@@ -1,33 +1,59 @@
 # Bounty Worker Queue
 
-Last manual build: 2026-05-16 Asia/Dubai
+Last built: 2026-05-15 23:57 UTC
 
-## Queue Item 1: Verify Opire featured $120 TypeScript bounty
+Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-- Source: https://opire.dev/
-- Amount hint: $120
-- Task hint: Migration generation drops and creates columns instead of altering, resulting in data loss.
-- Worker action:
-  1. Open Opire account/login.
-  2. Find the featured bounty detail page.
-  3. Confirm repository, issue URL, claim rules, and whether it is already claimed.
-  4. If open, inspect repo and reproduce.
+## Queue Item 1: [ FastAPI ] Fix OpenAPI schema missing server, contact, and license information
 
-## Queue Item 2: AsyncAPI CLI request body validation bug
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/801
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Amount hint: $30, bounty $30
+- Score: 64
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
 
-- Issue: https://github.com/asyncapi/cli/issues/1987
-- Aggregate: https://github.com/asyncapi/cli/issues/2125
-- Worker action:
-  1. Confirm microgrant eligibility and claim rules.
-  2. Clone `asyncapi/cli`.
-  3. Reproduce skipped request body validation.
-  4. Patch validator logic and add test.
+### Worker Instructions
 
-## Queue Item 3: AsyncAPI website dashboard workflow bug
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-- Issue: https://github.com/asyncapi/website/issues/5333
-- Worker action:
-  1. Confirm if it is in a paid microgrant round.
-  2. Inspect dashboard update workflow.
-  3. Reproduce missing dashboard output.
-  4. Patch workflow/API handling if scope is clear.
+## Queue Item 2: [ T3 Code ] Standardize server error types with Effect.Data.TaggedEnum
+
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/861
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Amount hint: $170, bounty $170
+- Score: 64
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
+
+### Worker Instructions
+
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
+
+## Queue Item 3: [ Crypto ] Fix missing slippage protection and deadline in SimpleSwap
+
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/913
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Amount hint: $300, bounty $300
+- Score: 64
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
+
+### Worker Instructions
+
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.

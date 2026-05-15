@@ -1,29 +1,110 @@
 [
   {
-    "title": "Opire featured bounties",
-    "url": "https://opire.dev/",
-    "repository_url": "pending login/detail page",
-    "updated_at": "2026-05-16",
-    "score": 82,
-    "amount_hint": "$390, $120, $110, $70, $30",
-    "reason": "public platform shows explicit bounty amounts; detail pages require account/login verification"
+    "title": "[ FastAPI ] Fix OpenAPI schema missing server, contact, and license information",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/801",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T23:38:10Z",
+    "score": 64,
+    "amount_hint": "$30, bounty $30",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "AsyncAPI CLI Microgrant 2026-05 - request body validation skipped",
-    "url": "https://github.com/asyncapi/cli/issues/1987",
-    "repository_url": "https://github.com/asyncapi/cli",
-    "updated_at": "2026-05-16",
-    "score": 70,
-    "amount_hint": "microgrant program, amount must be verified",
-    "reason": "linked from AsyncAPI microgrant aggregate issue; bug-like coding task"
+    "title": "[ T3 Code ] Standardize server error types with Effect.Data.TaggedEnum",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/861",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T23:22:20Z",
+    "score": 64,
+    "amount_hint": "$170, bounty $170",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "AsyncAPI website dashboard update workflow issue",
-    "url": "https://github.com/asyncapi/website/issues/5333",
-    "repository_url": "https://github.com/asyncapi/website",
-    "updated_at": "2026-05-16",
+    "title": "[ Crypto ] Fix missing slippage protection and deadline in SimpleSwap",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/913",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T20:20:58Z",
+    "score": 64,
+    "amount_hint": "$300, bounty $300",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2819",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-15T17:23:16Z",
     "score": 61,
-    "amount_hint": "microgrant candidate, amount must be verified",
-    "reason": "specific workflow bug with public issue; needs microgrant eligibility confirmation"
+    "amount_hint": "$0.10, 10 USD",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "🔐 AWS S3 Security Remediation & Civil ID Upload Fix — IAM Key Rotation, Bucket Hardening & Backend Patches",
+    "url": "https://github.com/BAWES-Universe/studenthub/issues/55",
+    "repository_url": "https://github.com/BAWES-Universe/studenthub",
+    "updated_at": "2026-05-15T23:18:54Z",
+    "score": 61,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, has visible amount, large issue body, busy thread"
+  },
+  {
+    "title": "[ FastAPI ] Add concurrent task runner with semaphore limiting and timeout",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/803",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T23:38:48Z",
+    "score": 60,
+    "amount_hint": "$50, bounty $50",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[ Laravel ] Add failed job monitoring listener and summary command",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/789",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T23:29:13Z",
+    "score": 60,
+    "amount_hint": "$45, bounty $45",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[ T3 Code ] Add deep linking support via t3code:// custom protocol",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/864",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T23:22:12Z",
+    "score": 60,
+    "amount_hint": "$100, bounty $100",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[ T3 Code ] Implement automatic token refresh in ACP client with Effect retry",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/829",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T20:13:38Z",
+    "score": 60,
+    "amount_hint": "$500, bounty $500",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[ FastAPI ] Add FastAPITestClient with auth helpers and WebSocket convenience methods",
+    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/804",
+    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
+    "updated_at": "2026-05-15T20:13:17Z",
+    "score": 60,
+    "amount_hint": "$200, bounty $200",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "More thorough benchmarks [$200]",
+    "url": "https://github.com/QuantumSavory/QuantumSavory.jl/issues/131",
+    "repository_url": "https://github.com/QuantumSavory/QuantumSavory.jl",
+    "updated_at": "2026-05-15T07:52:31Z",
+    "score": 59,
+    "amount_hint": "$200",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "Wrong error message while approving CAP on Stake function",
+    "url": "https://github.com/capofficial/client/issues/32",
+    "repository_url": "https://github.com/capofficial/client",
+    "updated_at": "2026-05-15T15:59:46Z",
+    "score": 59,
+    "amount_hint": "$25",
+    "reason": "mentions bounty/reward, has visible amount"
   }
 ]

@@ -1,50 +1,125 @@
 # Bounty Scout Candidates
 
-Last manual scan: 2026-05-16 Asia/Dubai
+Last run: 2026-05-15 23:57 UTC
 
-Status: online automation is not deployed yet. This is a manual scan from Codex.
+This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. Opire featured bounties
+## 1. [ FastAPI ] Fix OpenAPI schema missing server, contact, and license information
 
-- Source: https://opire.dev/
-- Amounts visible on public page:
-  - $390 - Add Wayland support - Python
-  - $120 - Migration generation drops and creates columns instead of altering, resulting in data loss - TypeScript
-  - $110 - Storybook controls type select problem - TypeScript
-  - $70 - View test coverage in editor - Rust
-  - $30 - QueryEngine deleteMany nested entity bug - TypeScript
-- Status: promising, but needs Opire account/login to open details and claim rules.
-- Next action: after Opire account setup, inspect the $120 TypeScript issue first because it is specific and bug-like.
+- Score: 64
+- Amount hint: $30, bounty $30
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/801
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T23:38:10Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. AsyncAPI Microgrant 2026-05
+## 2. [ T3 Code ] Standardize server error types with Effect.Data.TaggedEnum
 
-- Source issue: https://github.com/asyncapi/cli/issues/2125
-- Candidate linked issue: https://github.com/asyncapi/cli/issues/1987
-- Summary: request body validation skipped for some paths or HTTP methods.
-- Status: promising, but must confirm microgrant claim process and whether the issue is unclaimed.
-- Next action: inspect AsyncAPI contribution and microgrant rules, then reproduce bug locally.
+- Score: 64
+- Amount hint: $170, bounty $170
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/861
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T23:22:20Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. AsyncAPI website workflow issue
+## 3. [ Crypto ] Fix missing slippage protection and deadline in SimpleSwap
 
-- Candidate: https://github.com/asyncapi/website/issues/5333
-- Summary: dashboard update workflow not updating dashboard data due to likely API/rate-limit/workflow problem.
-- Status: possible microgrant-related candidate from AsyncAPI discussion, but needs confirmation.
-- Next action: inspect repo workflows and determine if issue is scoped to microgrant round.
+- Score: 64
+- Amount hint: $300, bounty $300
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/913
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T20:20:58Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. ProjectDiscovery OSS bounty program
+## 4. [BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)
 
-- Source: https://github.com/projectdiscovery/oss-bounty-program
-- Status: valid bounty program exists, but no open `bounty` labeled issue found in the checked repositories during this scan.
-- Next action: keep monitoring official ProjectDiscovery repos for `bounty` label.
+- Score: 61
+- Amount hint: $0.10, 10 USD
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2819
+- Repository: https://github.com/Scottcjn/rustchain-bounties
+- Updated: 2026-05-15T17:23:16Z
+- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. PromptLayer slash encoding issue
+## 5. 🔐 AWS S3 Security Remediation & Civil ID Upload Fix — IAM Key Rotation, Bucket Hardening & Backend Patches
 
-- Prior candidate: https://github.com/MagnivOrg/prompt-layer-library/issues/254
-- Status: no current actionable open candidate found in scan; main branch already appears to encode prompt names with `quote(prompt_name, safe='')`.
-- Next action: do not spend time unless a fresh bounty/issue appears.
+- Score: 61
+- Amount hint: amount not obvious
+- Issue: https://github.com/BAWES-Universe/studenthub/issues/55
+- Repository: https://github.com/BAWES-Universe/studenthub
+- Updated: 2026-05-15T23:18:54Z
+- Why it matched: mentions bounty/reward, has visible amount, large issue body, busy thread
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## Current recommendation
+## 6. [ FastAPI ] Add concurrent task runner with semaphore limiting and timeout
 
-First target after accounts are ready: Opire featured bounties, then AsyncAPI Microgrant.
+- Score: 60
+- Amount hint: $50, bounty $50
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/803
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T23:38:48Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-Reason: Opire shows explicit dollar amounts. AsyncAPI has structured microgrant issues but may require stricter claiming rules.
+## 7. [ Laravel ] Add failed job monitoring listener and summary command
+
+- Score: 60
+- Amount hint: $45, bounty $45
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/789
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T23:29:13Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. [ T3 Code ] Add deep linking support via t3code:// custom protocol
+
+- Score: 60
+- Amount hint: $100, bounty $100
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/864
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T23:22:12Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. [ T3 Code ] Implement automatic token refresh in ACP client with Effect retry
+
+- Score: 60
+- Amount hint: $500, bounty $500
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/829
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T20:13:38Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. [ FastAPI ] Add FastAPITestClient with auth helpers and WebSocket convenience methods
+
+- Score: 60
+- Amount hint: $200, bounty $200
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/804
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Updated: 2026-05-15T20:13:17Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. More thorough benchmarks [$200]
+
+- Score: 59
+- Amount hint: $200
+- Issue: https://github.com/QuantumSavory/QuantumSavory.jl/issues/131
+- Repository: https://github.com/QuantumSavory/QuantumSavory.jl
+- Updated: 2026-05-15T07:52:31Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. Wrong error message while approving CAP on Stake function
+
+- Score: 59
+- Amount hint: $25
+- Issue: https://github.com/capofficial/client/issues/32
+- Repository: https://github.com/capofficial/client
+- Updated: 2026-05-15T15:59:46Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
