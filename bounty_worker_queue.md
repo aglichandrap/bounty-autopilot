@@ -1,16 +1,16 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 10:18 UTC
+Last built: 2026-05-16 11:28 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: [BOUNTY $25] OpenCL keywords are not escaped during code generation
+## Queue Item 1: Quest Board Table Component (Mercenary Jobs List)
 
-- Issue: https://github.com/Syncleus/aparapi/issues/54
-- Repository: https://github.com/Syncleus/aparapi
-- Amount hint: $25, BOUNTY $25
-- Score: 59
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/godamongstmen897/loot-vault/issues/5
+- Repository: https://github.com/godamongstmen897/loot-vault
+- Amount hint: amount not obvious
+- Score: 47
+- Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions
 
@@ -22,10 +22,10 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: Sats to Local Currency | Mexico
+## Queue Item 2: New Subdomain, Login Page, and Path Detection Feature
 
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
+- Issue: https://github.com/TideSec/TscanPlus/issues/1495
+- Repository: https://github.com/TideSec/TscanPlus
 - Amount hint: amount not obvious
 - Score: 39
 - Match reason: mentions bounty/reward, low discussion volume
@@ -40,13 +40,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## Queue Item 3: Sats to Local Currency | Mexico
 
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
 - Amount hint: amount not obvious
 - Score: 39
-- Match reason: mentions bounty/reward, large issue body, low discussion volume
+- Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions
 
