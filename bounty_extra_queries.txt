@@ -1,7 +1,9 @@
 # Add one GitHub issue search query per line.
 # These run in addition to the built-in search queries in scripts/bounty_scout.py.
-is:issue is:open "bounty" "python" sort:updated-desc
-is:issue is:open "bounty" "typescript" sort:updated-desc
-is:issue is:open "bounty" "good first issue" sort:updated-desc
-is:issue is:open "reward" "bug" sort:updated-desc
-is:issue is:open "paid issue" sort:updated-desc
+is:issue is:open "bounty" "python" no:assignee comments:<10 sort:updated-desc
+is:issue is:open "bounty" "typescript" no:assignee comments:<10 sort:updated-desc
+is:issue is:open "bounty" "good first issue" no:assignee comments:<10 sort:updated-desc
+is:issue is:open "reward" "bug" no:assignee comments:<10 sort:updated-desc
+is:issue is:open "paid issue" no:assignee comments:<10 sort:updated-desc
+repo:requestly/requestly is:issue is:open label:bounty-$20 label:up-for-grabs no:assignee comments:<12 sort:updated-desc
+is:issue is:open "Opire" bounty no:assignee comments:<10 sort:updated-desc
