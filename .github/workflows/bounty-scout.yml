@@ -4,6 +4,13 @@ on:
   schedule:
     - cron: "17 */2 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - "bounty_extra_queries.txt"
+      - ".github/workflows/bounty-scout.yml"
 
 permissions:
   contents: write
