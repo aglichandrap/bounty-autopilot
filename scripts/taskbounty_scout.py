@@ -167,11 +167,14 @@ def candidates_from_browse_page() -> list[TaskBountyCandidate]:
         if href in seen:
             continue
         seen.add(href)
-        body = clean_text(match.group("body"))
+        raw_body = match.group("body")
+        body = clean_text(raw_body)
+        heading_match = re.search(r"<h3[^>]*>(?P<title>.*?)</h3>", raw_body, re.I | re.S)
+        heading = clean_text(heading_match.group("title")) if heading_match else ""
         amount_match = re.search(r"\$\s?\d+(?:\.\d+)?", body)
         amount_hint = amount_match.group(0).replace(" ", "") if amount_match else "amount not obvious"
-        title = body
-        if amount_match:
+        title = heading or body
+        if amount_match and not heading:
             title = clean_text(body[: amount_match.start()])
         score, reason = score_task(title, amount_hint)
         if score < 25:
