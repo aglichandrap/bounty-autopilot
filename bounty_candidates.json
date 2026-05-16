@@ -18,11 +18,11 @@
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2025-03-11T19:50:52Z",
-    "score": 39,
+    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/137",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-16T23:05:25Z",
+    "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -30,10 +30,28 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T20:33:08Z",
+    "updated_at": "2026-05-16T23:05:34Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/215",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-16T23:05:23Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2025-03-11T19:50:52Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "useMercenaryBoard Hook (Mercenary Board)",
@@ -52,15 +70,6 @@
     "score": 38,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward"
-  },
-  {
-    "title": "feature Request: Show Time Information on Bounties",
-    "url": "https://github.com/algora-io/algora/issues/175",
-    "repository_url": "https://github.com/algora-io/algora",
-    "updated_at": "2026-05-16T20:52:22Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Fixing the bounty award system",

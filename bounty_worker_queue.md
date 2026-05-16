@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 21:06 UTC
+Last built: 2026-05-16 23:11 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -40,12 +40,12 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: Sats to Local Currency | Mexico
+## Queue Item 3: [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
+- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Repository: https://github.com/svv2014/loop-monitor
 - Amount hint: amount not obvious
-- Score: 39
+- Score: 43
 - Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions

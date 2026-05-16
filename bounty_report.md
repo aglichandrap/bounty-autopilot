@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-16 21:06 UTC
+Last run: 2026-05-16 23:11 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -24,13 +24,13 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Sats to Local Currency | Mexico
+## 3. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
-- Score: 39
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
-- Updated: 2025-03-11T19:50:52Z
+- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-16T23:05:25Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -40,11 +40,31 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-16T20:33:08Z
+- Updated: 2026-05-16T23:05:34Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. useMercenaryBoard Hook (Mercenary Board)
+## 5. v2 UI missing per-ticket timeline drill-down (regression from prototype)
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/215
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-16T23:05:23Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. Sats to Local Currency | Mexico
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2025-03-11T19:50:52Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. useMercenaryBoard Hook (Mercenary Board)
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -54,7 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. 🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties
+## 8. 🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties
 
 - Score: 38
 - Amount hint: amount not obvious
@@ -64,17 +84,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. feature Request: Show Time Information on Bounties
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/algora-io/algora/issues/175
-- Repository: https://github.com/algora-io/algora
-- Updated: 2026-05-16T20:52:22Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Fixing the bounty award system
+## 9. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -84,7 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Create a Bounty Amount Box Issue
+## 10. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -94,7 +104,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Sync Issue-Assigned property from GH to LB
+## 11. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
