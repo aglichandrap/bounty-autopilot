@@ -1,30 +1,30 @@
 [
   {
-    "title": "[ FastAPI ] Fix OpenAPI schema missing server, contact, and license information",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/801",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T23:38:10Z",
-    "score": 64,
-    "amount_hint": "$30, bounty $30",
+    "title": "miro: regression test for empty-board + frame-coord + token-trim fixes",
+    "url": "https://github.com/ATX-TXLookup/TXLookup/issues/165",
+    "repository_url": "https://github.com/ATX-TXLookup/TXLookup",
+    "updated_at": "2026-05-16T00:01:13Z",
+    "score": 72,
+    "amount_hint": "$500",
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "[ T3 Code ] Standardize server error types with Effect.Data.TaggedEnum",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/861",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T23:22:20Z",
+    "title": "Bounty scout candidates",
+    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/1",
+    "repository_url": "https://github.com/asaadnashed/bounty-autopilot",
+    "updated_at": "2026-05-15T23:57:09Z",
     "score": 64,
-    "amount_hint": "$170, bounty $170",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+    "amount_hint": "$30,, $30, $170,, $170",
+    "reason": "mentions bounty/reward, has visible amount, large issue body, low discussion volume"
   },
   {
-    "title": "[ Crypto ] Fix missing slippage protection and deadline in SimpleSwap",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/913",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T20:20:58Z",
-    "score": 64,
-    "amount_hint": "$300, bounty $300",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+    "title": "🔐 AWS S3 Security Remediation & Civil ID Upload Fix — IAM Key Rotation, Bucket Hardening & Backend Patches",
+    "url": "https://github.com/BAWES-Universe/studenthub/issues/55",
+    "repository_url": "https://github.com/BAWES-Universe/studenthub",
+    "updated_at": "2026-05-16T00:06:21Z",
+    "score": 61,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, has visible amount, large issue body, busy thread"
   },
   {
     "title": "[BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)",
@@ -34,60 +34,6 @@
     "score": 61,
     "amount_hint": "$0.10, 10 USD",
     "reason": "mentions bounty/reward, has visible amount, busy thread"
-  },
-  {
-    "title": "🔐 AWS S3 Security Remediation & Civil ID Upload Fix — IAM Key Rotation, Bucket Hardening & Backend Patches",
-    "url": "https://github.com/BAWES-Universe/studenthub/issues/55",
-    "repository_url": "https://github.com/BAWES-Universe/studenthub",
-    "updated_at": "2026-05-15T23:18:54Z",
-    "score": 61,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, has visible amount, large issue body, busy thread"
-  },
-  {
-    "title": "[ FastAPI ] Add concurrent task runner with semaphore limiting and timeout",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/803",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T23:38:48Z",
-    "score": 60,
-    "amount_hint": "$50, bounty $50",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Laravel ] Add failed job monitoring listener and summary command",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/789",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T23:29:13Z",
-    "score": 60,
-    "amount_hint": "$45, bounty $45",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ T3 Code ] Add deep linking support via t3code:// custom protocol",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/864",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T23:22:12Z",
-    "score": 60,
-    "amount_hint": "$100, bounty $100",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ T3 Code ] Implement automatic token refresh in ACP client with Effect retry",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/829",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T20:13:38Z",
-    "score": 60,
-    "amount_hint": "$500, bounty $500",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ FastAPI ] Add FastAPITestClient with auth helpers and WebSocket convenience methods",
-    "url": "https://github.com/UnsafeLabs/Bounty-Hunters/issues/804",
-    "repository_url": "https://github.com/UnsafeLabs/Bounty-Hunters",
-    "updated_at": "2026-05-15T20:13:17Z",
-    "score": 60,
-    "amount_hint": "$200, bounty $200",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
     "title": "More thorough benchmarks [$200]",
@@ -106,5 +52,59 @@
     "score": 59,
     "amount_hint": "$25",
     "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "Anyone can drain the full reward pool by tallying + closing before other winners",
+    "url": "https://github.com/Bench-games/opportunity-markets/issues/12",
+    "repository_url": "https://github.com/Bench-games/opportunity-markets",
+    "updated_at": "2026-05-15T22:25:32Z",
+    "score": 55,
+    "amount_hint": "1000 USD, 300 USD, 600 USD",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "[BOUNTY: 15-25 RTC by variant, 200 RTC pool] Mining Hardware Video — Production Brief: shot list, duration variants, captions, voiceover, asset constraints",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/6194",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-15T18:28:41Z",
+    "score": 55,
+    "amount_hint": "$20, $0.10, 20 USD, BOUNTY: 15",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
+    "repository_url": "https://github.com/claude-builders-bounty/claude-builders-bounty",
+    "updated_at": "2026-05-16T00:06:36Z",
+    "score": 53,
+    "amount_hint": "$100, BOUNTY $100, Bounty: $100",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "BGL PR bounty hunt",
+    "url": "https://github.com/BitgesellOfficial/bitgesell/issues/32",
+    "repository_url": "https://github.com/BitgesellOfficial/bitgesell",
+    "updated_at": "2026-05-15T08:13:34Z",
+    "score": 53,
+    "amount_hint": "$100",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
+    "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
+    "repository_url": "https://github.com/claude-builders-bounty/claude-builders-bounty",
+    "updated_at": "2026-05-15T21:39:51Z",
+    "score": 53,
+    "amount_hint": "$200, BOUNTY $200, Bounty: $200",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "Telegram Core API Integration ($2,500)",
+    "url": "https://github.com/Spectral-Finance/lux/issues/62",
+    "repository_url": "https://github.com/Spectral-Finance/lux",
+    "updated_at": "2026-05-15T20:41:12Z",
+    "score": 53,
+    "amount_hint": "$2,500",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
   }
 ]
