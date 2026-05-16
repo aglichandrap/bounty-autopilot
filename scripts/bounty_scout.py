@@ -26,6 +26,13 @@ SEARCH_QUERIES = [
 EXTRA_QUERY_FILE = "bounty_extra_queries.txt"
 
 BLOCKLIST_PATTERNS = [
+    r"\bpre_task_context\b",
+    r"\bgeneration_context\b",
+    r"\bruntime_instructions\b",
+    r"paste.*entire.*session",
+    r"paste.*everything.*platform",
+    r"entire block of text.*start",
+    r"\bai only allowed\b",
     r"\bcontest\b",
     r"\bhackathon\b",
     r"\bsecurity report\b",
@@ -36,6 +43,24 @@ BLOCKLIST_PATTERNS = [
     r"\bgambling\b",
     r"\btrading bot\b",
 ]
+
+CLAIMED_PATTERNS = [
+    r"\balready assigned\b",
+    r"\bassigning this to you\b",
+    r"\bi am working on it\b",
+    r"\braised pr\b",
+    r"\bopened a pr\b",
+    r"\bopen(ed)? new prs?\b",
+    r"\bplease go ahead and raise a pr\b",
+    r"\bdo not open new prs?\b",
+    r"\bunder active review\b",
+    r"\bwill not be reviewed\b",
+    r"\bnot assigned to you\b",
+]
+
+REPO_BLOCKLIST = {
+    "UnsafeLabs/Bounty-Hunters",
+}
 
 POSITIVE_PATTERNS = [
     r"\bbug\b",
@@ -103,6 +128,15 @@ def score_issue(item: dict) -> tuple[int, str]:
     if "pull_request" in item:
         return -100, "skip: this is already a pull request"
 
+    repo_full_name = item.get("repository_url", "").split("/repos/")[-1]
+    if repo_full_name in REPO_BLOCKLIST:
+        return -100, f"skip: repo blocked ({repo_full_name})"
+
+    assignees = item.get("assignees") or []
+    if assignees:
+        names = ", ".join(user.get("login", "unknown") for user in assignees[:3])
+        return -80, f"skip: already assigned to {names}"
+
     if "bounty" in text or "reward" in text or "opire" in text or "lightning bounties" in text:
         score += 30
         reasons.append("mentions bounty/reward")
@@ -125,8 +159,12 @@ def score_issue(item: dict) -> tuple[int, str]:
 
     for pattern in BLOCKLIST_PATTERNS:
         if re.search(pattern, text, flags=re.I):
-            score -= 60
-            reasons.append(f"blocked pattern: {pattern}")
+            return -100, f"skip: blocked pattern: {pattern}"
+
+    for pattern in CLAIMED_PATTERNS:
+        if re.search(pattern, text, flags=re.I):
+            score -= 50
+            reasons.append(f"likely claimed: {pattern}")
 
     comments = int(item.get("comments", 0))
     if comments > 20:
@@ -137,6 +175,25 @@ def score_issue(item: dict) -> tuple[int, str]:
         reasons.append("low discussion volume")
 
     return score, ", ".join(reasons[:5]) or "general bounty candidate"
+
+
+def comments_url_from_issue(item: dict) -> str | None:
+    comments_url = item.get("comments_url")
+    if isinstance(comments_url, str) and comments_url:
+        return comments_url
+    return None
+
+
+def recent_comments_text(item: dict, token: str | None = None) -> str:
+    comments_url = comments_url_from_issue(item)
+    if not comments_url or int(item.get("comments", 0)) <= 0:
+        return ""
+    try:
+        comments = github_get(f"{comments_url}?per_page=30", token=token)
+    except Exception as exc:
+        print(f"Could not inspect comments for {item.get('html_url', '')}: {exc}", file=sys.stderr)
+        return ""
+    return " ".join(clean_text(comment.get("body", "")) for comment in comments if isinstance(comment, dict))
 
 
 def iter_candidates(token: str | None = None) -> Iterable[Candidate]:
@@ -163,6 +220,18 @@ def iter_candidates(token: str | None = None) -> Iterable[Candidate]:
                 continue
             seen.add(url)
             score, reason = score_issue(item)
+            if score >= 25 and int(item.get("comments", 0)) > 0:
+                comment_text = recent_comments_text(item, token=token).lower()
+                for pattern in BLOCKLIST_PATTERNS:
+                    if re.search(pattern, comment_text, flags=re.I):
+                        score, reason = -100, f"skip: blocked comment pattern: {pattern}"
+                        break
+                if score >= 25:
+                    for pattern in CLAIMED_PATTERNS:
+                        if re.search(pattern, comment_text, flags=re.I):
+                            score -= 50
+                            reason = f"{reason}, likely claimed in comments: {pattern}"
+                            break
             if score < 25:
                 continue
             repo_url = item.get("repository_url", "").replace("api.github.com/repos", "github.com")
