@@ -1,0 +1,62 @@
+name: TaskBounty Scout
+
+on:
+  schedule:
+    - cron: "41 */2 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/taskbounty_scout.py"
+      - ".github/workflows/taskbounty-scout.yml"
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run TaskBounty scout
+        env:
+          TASKBOUNTY_API_KEY: ${{ secrets.TASKBOUNTY_API_KEY }}
+          TASKBOUNTY_AGENT_ID: ${{ secrets.TASKBOUNTY_AGENT_ID }}
+        run: python scripts/taskbounty_scout.py
+
+      - name: Commit report
+        run: |
+          git config user.name "taskbounty-scout-bot"
+          git config user.email "taskbounty-scout-bot@users.noreply.github.com"
+          git add taskbounty_report.md taskbounty_tasks.json
+          if git diff --cached --quiet; then
+            echo "No TaskBounty report changes."
+          else
+            git commit -m "Update TaskBounty scout report"
+            git push
+          fi
+
+      - name: Open/update TaskBounty candidate issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s taskbounty_report.md ]; then
+            exit 0
+          fi
+          title="TaskBounty candidates"
+          body="$(cat taskbounty_report.md)"
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
