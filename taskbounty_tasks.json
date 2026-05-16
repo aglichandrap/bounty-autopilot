@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "title": "Bug: findTaskByIssueUrl URL normalisation regex strips entire path",
+    "url": "https://www.task-bounty.com/task/bug-findtaskbyissueurl-url-normalisation-regex-str-hzqkcp",
+    "task_id": "bug-findtaskbyissueurl-url-normalisation-regex-str-hzqkcp",
+    "amount_hint": "$50.00",
+    "score": 70,
+    "source": "browse",
+    "reason": "TaskBounty paid task, visible funded amount"
+  }
+]
