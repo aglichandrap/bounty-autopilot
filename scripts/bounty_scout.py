@@ -26,6 +26,26 @@ SEARCH_QUERIES = [
 EXTRA_QUERY_FILE = "bounty_extra_queries.txt"
 
 BLOCKLIST_PATTERNS = [
+    r"\u6bcf\u65e5\u4fe1\u606f\u6d41",
+    r"\bdaily\s+(info|information)\s+flow\b",
+    r"\bnews\s+feed\b",
+    r"\bmarket\s+cap\b",
+    r"\bprice\s+(?:is|feed|update)\b",
+    r"\btoken\s+pool\b",
+    r"\breward\s+pool\b",
+    r"\brtc\s+pool\b",
+    r"\bpr\s+review\s+bounty\b",
+    r"\breview\s+prs?\b",
+    r"\bbounty\s+claim\b",
+    r"\bbug\s+fix\s+claim\b",
+    r"^\s*\[claim\]",
+    r"^\s*\[bounty claim\]",
+    r"\bsecurity remediation\b",
+    r"\biam\s+key\b",
+    r"\bs3\s+bucket\b",
+    r"\bcivil\s+id\b",
+    r"\bcredential(s)?\b",
+    r"\bprivate\s+key\b",
     r"\bpre_task_context\b",
     r"\bgeneration_context\b",
     r"\bruntime_instructions\b",
@@ -36,6 +56,7 @@ BLOCKLIST_PATTERNS = [
     r"\bcontest\b",
     r"\bhackathon\b",
     r"\bsecurity report\b",
+    r"\bsecurity\b",
     r"\bresponsible disclosure\b",
     r"\breferral\b",
     r"\bairdrop\b",
@@ -56,6 +77,7 @@ CLAIMED_PATTERNS = [
     r"\bunder active review\b",
     r"\bwill not be reviewed\b",
     r"\bnot assigned to you\b",
+    r"\bclaim\b",
 ]
 
 REPO_BLOCKLIST = {
@@ -105,6 +127,8 @@ def clean_text(value: str) -> str:
 
 
 def amount_hint(text: str) -> str:
+    if re.search(r"\u6bcf\u65e5\u4fe1\u606f\u6d41|\bmarket\s+cap\b|\bprice\s+(?:is|feed|update)\b", text, flags=re.I):
+        return "amount not obvious"
     patterns = [
         r"\$\s?\d[\d,]*(?:\.\d+)?",
         r"\d[\d,]*\s?(?:sats|sat|usd|usdc|eur|gbp)",
@@ -124,6 +148,9 @@ def score_issue(item: dict) -> tuple[int, str]:
 
     score = 0
     reasons: list[str] = []
+
+    if re.search(r"^\s*\[(?:claim|bounty claim)\]", title, flags=re.I):
+        return -100, "skip: this is a claim, not an open bounty"
 
     if "pull_request" in item:
         return -100, "skip: this is already a pull request"
