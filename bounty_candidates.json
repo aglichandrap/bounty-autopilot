@@ -9,13 +9,13 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "New Subdomain, Login Page, and Path Detection Feature",
-    "url": "https://github.com/TideSec/TscanPlus/issues/1495",
-    "repository_url": "https://github.com/TideSec/TscanPlus",
-    "updated_at": "2026-05-16T11:17:25Z",
-    "score": 39,
+    "title": "Add native bounty tools (replace bounty.drx4.xyz handlers, target aibtc.com/api/bounties)",
+    "url": "https://github.com/aibtcdev/aibtc-mcp-server/issues/524",
+    "repository_url": "https://github.com/aibtcdev/aibtc-mcp-server",
+    "updated_at": "2026-05-16T13:35:27Z",
+    "score": 43,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
     "title": "Sats to Local Currency | Mexico",
@@ -30,10 +30,19 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T11:04:53Z",
+    "updated_at": "2026-05-16T13:36:16Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "useMercenaryBoard Hook (Mercenary Board)",
+    "url": "https://github.com/godamongstmen897/loot-vault/issues/26",
+    "repository_url": "https://github.com/godamongstmen897/loot-vault",
+    "updated_at": "2026-05-16T12:25:26Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties",
@@ -43,6 +52,24 @@
     "score": 38,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward"
+  },
+  {
+    "title": "Implement unit tests for assigned bounties tab on profile",
+    "url": "https://github.com/stakwork/sphinx-tribes/issues/878",
+    "repository_url": "https://github.com/stakwork/sphinx-tribes",
+    "updated_at": "2026-05-16T13:16:16Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Implement unit tests for Bounties tab on a profile",
+    "url": "https://github.com/stakwork/sphinx-tribes/issues/877",
+    "repository_url": "https://github.com/stakwork/sphinx-tribes",
+    "updated_at": "2026-05-16T13:11:29Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Fixing the bounty award system",
@@ -70,5 +97,14 @@
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create updated video demo [1 XMR]",
+    "url": "https://github.com/haveno-dex/haveno/issues/2211",
+    "repository_url": "https://github.com/haveno-dex/haveno",
+    "updated_at": "2026-05-16T13:49:05Z",
+    "score": 34,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward"
   }
 ]

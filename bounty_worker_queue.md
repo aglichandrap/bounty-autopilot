@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 11:28 UTC
+Last built: 2026-05-16 14:02 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -22,13 +22,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: New Subdomain, Login Page, and Path Detection Feature
+## Queue Item 2: Add native bounty tools (replace bounty.drx4.xyz handlers, target aibtc.com/api/bounties)
 
-- Issue: https://github.com/TideSec/TscanPlus/issues/1495
-- Repository: https://github.com/TideSec/TscanPlus
+- Issue: https://github.com/aibtcdev/aibtc-mcp-server/issues/524
+- Repository: https://github.com/aibtcdev/aibtc-mcp-server
 - Amount hint: amount not obvious
-- Score: 39
-- Match reason: mentions bounty/reward, low discussion volume
+- Score: 43
+- Match reason: mentions bounty/reward, large issue body, low discussion volume
 
 ### Worker Instructions
 
