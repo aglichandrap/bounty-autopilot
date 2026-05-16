@@ -164,6 +164,10 @@ def score_issue(item: dict) -> tuple[int, str]:
         names = ", ".join(user.get("login", "unknown") for user in assignees[:3])
         return -80, f"skip: already assigned to {names}"
 
+    comments = int(item.get("comments", 0))
+    if comments > 80:
+        return -80, "skip: overcrowded bounty thread"
+
     if "bounty" in text or "reward" in text or "opire" in text or "lightning bounties" in text:
         score += 30
         reasons.append("mentions bounty/reward")
@@ -193,9 +197,8 @@ def score_issue(item: dict) -> tuple[int, str]:
             score -= 50
             reasons.append(f"likely claimed: {pattern}")
 
-    comments = int(item.get("comments", 0))
     if comments > 20:
-        score -= 10
+        score -= 25
         reasons.append("busy thread")
     elif comments <= 5:
         score += 5
