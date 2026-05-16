@@ -1,19 +1,37 @@
 [
   {
+    "title": "[Bug] Keeper explorer proxy leaks internal connection errors",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5438",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-16T14:19:43Z",
+    "score": 55,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
     "title": "Quest Board Table Component (Mercenary Jobs List)",
     "url": "https://github.com/godamongstmen897/loot-vault/issues/5",
     "repository_url": "https://github.com/godamongstmen897/loot-vault",
-    "updated_at": "2026-05-16T11:16:40Z",
+    "updated_at": "2026-05-16T15:13:19Z",
     "score": 47,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "Add native bounty tools (replace bounty.drx4.xyz handlers, target aibtc.com/api/bounties)",
-    "url": "https://github.com/aibtcdev/aibtc-mcp-server/issues/524",
-    "repository_url": "https://github.com/aibtcdev/aibtc-mcp-server",
-    "updated_at": "2026-05-16T13:35:27Z",
-    "score": 43,
+    "title": "[Bug] Dashboard health leaks internal component exception details",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5442",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-16T15:01:14Z",
+    "score": 47,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Loading Bounty Page takes too long",
+    "url": "https://github.com/stakwork/sphinx-tribes-frontend/issues/1493",
+    "repository_url": "https://github.com/stakwork/sphinx-tribes-frontend",
+    "updated_at": "2026-05-16T14:32:50Z",
+    "score": 47,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
@@ -30,7 +48,7 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T13:36:16Z",
+    "updated_at": "2026-05-16T15:29:18Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
@@ -52,24 +70,6 @@
     "score": 38,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward"
-  },
-  {
-    "title": "Implement unit tests for assigned bounties tab on profile",
-    "url": "https://github.com/stakwork/sphinx-tribes/issues/878",
-    "repository_url": "https://github.com/stakwork/sphinx-tribes",
-    "updated_at": "2026-05-16T13:16:16Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Implement unit tests for Bounties tab on a profile",
-    "url": "https://github.com/stakwork/sphinx-tribes/issues/877",
-    "repository_url": "https://github.com/stakwork/sphinx-tribes",
-    "updated_at": "2026-05-16T13:11:29Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Fixing the bounty award system",
@@ -97,14 +97,5 @@
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Create updated video demo [1 XMR]",
-    "url": "https://github.com/haveno-dex/haveno/issues/2211",
-    "repository_url": "https://github.com/haveno-dex/haveno",
-    "updated_at": "2026-05-16T13:49:05Z",
-    "score": 34,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward"
   }
 ]
