@@ -1,10 +1,19 @@
 [
   {
-    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/137",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T09:48:57Z",
-    "score": 43,
+    "title": "[BOUNTY $25] OpenCL keywords are not escaped during code generation",
+    "url": "https://github.com/Syncleus/aparapi/issues/54",
+    "repository_url": "https://github.com/Syncleus/aparapi",
+    "updated_at": "2026-05-16T10:12:42Z",
+    "score": 59,
+    "amount_hint": "$25, BOUNTY $25",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2025-03-11T19:50:52Z",
+    "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -16,24 +25,6 @@
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/215",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T09:48:55Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2025-03-11T19:50:52Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties",
@@ -70,5 +61,14 @@
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "🔴 CRITICAL: OTC Bridge Funds Stuck + Enrollment Preemption + Float Precision (Bugs #5-8)",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/8691",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-16T10:17:59Z",
+    "score": 34,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward"
   }
 ]
