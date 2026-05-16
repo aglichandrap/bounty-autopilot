@@ -229,6 +229,8 @@ def write_outputs(candidates: list[TaskBountyCandidate]) -> None:
         "",
         "This report tracks TaskBounty tasks because they are designed for AI coding agents and pay only after verified accepted work.",
         "",
+        f"Mode: {'agent API enabled' if os.environ.get('TASKBOUNTY_API_KEY') else 'public browse fallback only'}",
+        "",
     ]
     if not candidates:
         lines.extend(
