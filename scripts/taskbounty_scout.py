@@ -14,6 +14,7 @@ from urllib.request import Request, urlopen
 
 BASE_URL = os.environ.get("TASKBOUNTY_BASE_URL", "https://www.task-bounty.com").rstrip("/")
 TASKS_API_URL = f"{BASE_URL}/api/v1/tasks"
+BOUNTIES_FEED_URL = f"{BASE_URL}/api/v1/bounties.json?limit=50"
 BROWSE_URL = f"{BASE_URL}/browse"
 
 TASKS_PATH = "taskbounty_tasks.json"
@@ -155,6 +156,44 @@ def candidates_from_api(token: str | None) -> list[TaskBountyCandidate]:
     return candidates
 
 
+def candidates_from_bounties_feed(token: str | None) -> list[TaskBountyCandidate]:
+    try:
+        payload = json.loads(http_get(BOUNTIES_FEED_URL, token=token))
+    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
+        print(f"TaskBounty bounties feed read failed: {exc}", file=sys.stderr)
+        return []
+
+    items = payload.get("items") if isinstance(payload, dict) else None
+    if not isinstance(items, list):
+        return []
+
+    candidates: list[TaskBountyCandidate] = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        meta = item.get("_taskbounty")
+        meta = meta if isinstance(meta, dict) else {}
+        title = clean_text(str(item.get("title") or item.get("summary") or "Untitled TaskBounty bounty"))
+        amount_hint = amount_from_cents(meta.get("bounty_cents"))
+        score, reason = score_task(title, amount_hint, item)
+        if score < 25:
+            continue
+        task_id = str(item.get("id") or "")
+        url = str(item.get("url") or BROWSE_URL)
+        candidates.append(
+            TaskBountyCandidate(
+                title=title,
+                url=url if url.startswith("http") else f"{BASE_URL}{url}",
+                task_id=task_id,
+                amount_hint=amount_hint,
+                score=score,
+                source="bounties-feed",
+                reason=reason,
+            )
+        )
+    return candidates
+
+
 def candidates_from_browse_page() -> list[TaskBountyCandidate]:
     try:
         page = http_get(BROWSE_URL, accept="text/html")
@@ -199,7 +238,7 @@ def candidates_from_browse_page() -> list[TaskBountyCandidate]:
     if not candidates:
         text = clean_text(page)
         coarse = re.search(r"(Bug: .*?\$\s?\d+(?:\.\d+)?)", text)
-        if coarse and not re.search(r"\bclosed\b|\bcompleted\b|\bpaid\b|\bexpired\b", coarse.group(1), flags=re.I):
+        if coarse:
             body = coarse.group(1)
             amount_match = re.search(r"\$\s?\d+(?:\.\d+)?", body)
             amount_hint = amount_match.group(0).replace(" ", "") if amount_match else "amount not obvious"
@@ -268,7 +307,9 @@ def write_outputs(candidates: list[TaskBountyCandidate]) -> None:
 
 def main() -> int:
     token = os.environ.get("TASKBOUNTY_API_KEY")
-    candidates = candidates_from_api(token=token)
+    candidates = candidates_from_bounties_feed(token=token)
+    if not candidates:
+        candidates = candidates_from_api(token=token)
     if not candidates:
         candidates = candidates_from_browse_page()
     write_outputs(candidates)
