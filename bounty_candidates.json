@@ -1,5 +1,14 @@
 [
   {
+    "title": "TaskBounty candidates",
+    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/2",
+    "repository_url": "https://github.com/asaadnashed/bounty-autopilot",
+    "updated_at": "2026-05-16T09:18:01Z",
+    "score": 72,
+    "amount_hint": "$50.00",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
     "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
     "url": "https://github.com/svv2014/loop-monitor/issues/137",
     "repository_url": "https://github.com/svv2014/loop-monitor",
