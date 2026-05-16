@@ -40,12 +40,17 @@ jobs:
         run: |
           git config user.name "taskbounty-scout-bot"
           git config user.email "taskbounty-scout-bot@users.noreply.github.com"
+          git pull --rebase origin main
           git add taskbounty_report.md taskbounty_tasks.json claim_queue.md
           if git diff --cached --quiet; then
             echo "No TaskBounty report changes."
           else
             git commit -m "Update TaskBounty scout report"
-            git push
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase origin main
+              sleep 5
+            done
           fi
 
       - name: Open/update TaskBounty candidate issue
