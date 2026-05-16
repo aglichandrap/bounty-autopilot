@@ -1,110 +1,80 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-16 04:06 UTC
+Last run: 2026-05-16 06:38 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. 📱 Epic: BAWES Universe Mobile App (Android + iOS)
+## 1. [每日信息流] 2026-05-16
 
-- Score: 67
-- Amount hint: amount not obvious
-- Issue: https://github.com/BAWES-Universe/workadventure-universe/issues/1
-- Repository: https://github.com/BAWES-Universe/workadventure-universe
-- Updated: 2026-05-16T04:05:25Z
-- Why it matched: mentions bounty/reward, has visible amount
+- Score: 68
+- Amount hint: $385,750, $900, $523,000
+- Issue: https://github.com/chainreactors/picker/issues/1241
+- Repository: https://github.com/chainreactors/picker
+- Updated: 2026-05-16T06:30:24Z
+- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
 ## 2. [每日信息流] 2026-05-16
 
-- Score: 64
-- Amount hint: $1.3, $13
-- Issue: https://github.com/Tyaoo/picker/issues/1379
-- Repository: https://github.com/Tyaoo/picker
-- Updated: 2026-05-16T03:59:50Z
+- Score: 68
+- Amount hint: $385,750, $900, $523,000
+- Issue: https://github.com/BruceFeIix/picker/issues/2442
+- Repository: https://github.com/BruceFeIix/picker
+- Updated: 2026-05-16T06:29:05Z
 - Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. [BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)
+## 3. [每日信息流] 2026-05-16
+
+- Score: 68
+- Amount hint: $385,750, $900, $523,000
+- Issue: https://github.com/MM0x02/RSS-Push/issues/506
+- Repository: https://github.com/MM0x02/RSS-Push
+- Updated: 2026-05-16T06:26:19Z
+- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. 🔐 AWS S3 Security Remediation & Civil ID Upload Fix — IAM Key Rotation, Bucket Hardening & Backend Patches
 
 - Score: 61
-- Amount hint: $0.10, 10 USD
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2819
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Updated: 2026-05-16T02:56:33Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Amount hint: amount not obvious
+- Issue: https://github.com/BAWES-Universe/studenthub/issues/55
+- Repository: https://github.com/BAWES-Universe/studenthub
+- Updated: 2026-05-16T06:18:34Z
+- Why it matched: mentions bounty/reward, has visible amount, large issue body, busy thread
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. More thorough benchmarks [$200]
-
-- Score: 59
-- Amount hint: $200
-- Issue: https://github.com/QuantumSavory/QuantumSavory.jl/issues/131
-- Repository: https://github.com/QuantumSavory/QuantumSavory.jl
-- Updated: 2026-05-15T07:52:31Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. Size to close is not well formatted, sometimes
-
-- Score: 59
-- Amount hint: $20
-- Issue: https://github.com/capofficial/client/issues/11
-- Repository: https://github.com/capofficial/client
-- Updated: 2026-05-16T02:45:27Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Welcome modal with integrated bridge and/or instructions
-
-- Score: 55
-- Amount hint: $500
-- Issue: https://github.com/capofficial/client/issues/13
-- Repository: https://github.com/capofficial/client
-- Updated: 2026-05-16T02:50:10Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands
-
-- Score: 53
-- Amount hint: $100, BOUNTY $100, Bounty: $100
-- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3
-- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
-- Updated: 2026-05-16T04:05:32Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. [BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary
-
-- Score: 53
-- Amount hint: $200, BOUNTY $200, Bounty: $200
-- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5
-- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
-- Updated: 2026-05-16T03:59:11Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. BGL PR bounty hunt
+## 5. BGL PR bounty hunt
 
 - Score: 53
 - Amount hint: $100
 - Issue: https://github.com/BitgesellOfficial/bitgesell/issues/32
 - Repository: https://github.com/BitgesellOfficial/bitgesell
-- Updated: 2026-05-16T03:33:05Z
+- Updated: 2026-05-16T06:36:56Z
 - Why it matched: mentions bounty/reward, has visible amount, busy thread
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. [Bounty Claim] PR #4835 docs contributing setup
+## 6. [BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands
+
+- Score: 53
+- Amount hint: $100, BOUNTY $100, Bounty: $100
+- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3
+- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
+- Updated: 2026-05-16T05:27:29Z
+- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. [Bug] GPU protocol accepts JSON booleans as numeric escrow and pricing values
 
 - Score: 51
 - Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5345
+- Issue: https://github.com/Scottcjn/Rustchain/issues/5368
 - Repository: https://github.com/Scottcjn/Rustchain
-- Updated: 2026-05-15T23:14:35Z
+- Updated: 2026-05-16T05:18:06Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. [Bounty Claim] PR Reviews - 3 PRs (Bounty #73)
+## 8. [Bounty Claim] PR Reviews - 3 PRs (Bounty #73)
 
 - Score: 51
 - Amount hint: Reward
@@ -115,12 +85,42 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Bug Fix Claim — PR #5354: Keeper explorer strict py_compile cleanup
+## 9. Bug Fix Claim — PR #5354: Keeper explorer strict py_compile cleanup
 
 - Score: 51
 - Amount hint: amount not obvious
 - Issue: https://github.com/Scottcjn/rustchain-bounties/issues/9840
 - Repository: https://github.com/Scottcjn/rustchain-bounties
 - Updated: 2026-05-16T03:25:49Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. [BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment
+
+- Score: 49
+- Amount hint: $150, BOUNTY $150, Bounty: $150
+- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4
+- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
+- Updated: 2026-05-16T06:33:53Z
+- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. [BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)
+
+- Score: 49
+- Amount hint: $0.10, 10 USD
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/73
+- Repository: https://github.com/Scottcjn/rustchain-bounties
+- Updated: 2026-05-16T04:42:46Z
+- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. [CLAIM] PR Review - RustChain PR #5388 (Bounty #73)
+
+- Score: 47
+- Amount hint: amount not obvious
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/9879
+- Repository: https://github.com/Scottcjn/rustchain-bounties
+- Updated: 2026-05-16T05:50:58Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

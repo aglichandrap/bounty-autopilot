@@ -1,16 +1,16 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 04:06 UTC
+Last built: 2026-05-16 06:38 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: 📱 Epic: BAWES Universe Mobile App (Android + iOS)
+## Queue Item 1: [每日信息流] 2026-05-16
 
-- Issue: https://github.com/BAWES-Universe/workadventure-universe/issues/1
-- Repository: https://github.com/BAWES-Universe/workadventure-universe
-- Amount hint: amount not obvious
-- Score: 67
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/chainreactors/picker/issues/1241
+- Repository: https://github.com/chainreactors/picker
+- Amount hint: $385,750, $900, $523,000
+- Score: 68
+- Match reason: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 
 ### Worker Instructions
 
@@ -24,10 +24,10 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 
 ## Queue Item 2: [每日信息流] 2026-05-16
 
-- Issue: https://github.com/Tyaoo/picker/issues/1379
-- Repository: https://github.com/Tyaoo/picker
-- Amount hint: $1.3, $13
-- Score: 64
+- Issue: https://github.com/BruceFeIix/picker/issues/2442
+- Repository: https://github.com/BruceFeIix/picker
+- Amount hint: $385,750, $900, $523,000
+- Score: 68
 - Match reason: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 
 ### Worker Instructions
@@ -40,13 +40,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)
+## Queue Item 3: [每日信息流] 2026-05-16
 
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2819
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Amount hint: $0.10, 10 USD
-- Score: 61
-- Match reason: mentions bounty/reward, has visible amount, busy thread
+- Issue: https://github.com/MM0x02/RSS-Push/issues/506
+- Repository: https://github.com/MM0x02/RSS-Push
+- Amount hint: $385,750, $900, $523,000
+- Score: 68
+- Match reason: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 
 ### Worker Instructions
 
