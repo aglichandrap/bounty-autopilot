@@ -78,6 +78,9 @@ def score_task(title: str, amount_hint: str, task: dict[str, Any] | None = None)
     score = 40
     reasons = ["TaskBounty paid task"]
 
+    if re.search(r"\bclosed\b|\bcompleted\b|\bpaid\b|\bexpired\b", text):
+        return -100, "skip: task is not open"
+
     amount_match = re.search(r"\$(\d+(?:\.\d+)?)", amount_hint)
     if amount_match:
         amount = float(amount_match.group(1))
@@ -169,6 +172,8 @@ def candidates_from_browse_page() -> list[TaskBountyCandidate]:
         seen.add(href)
         raw_body = match.group("body")
         body = clean_text(raw_body)
+        if re.search(r"\bclosed\b|\bcompleted\b|\bpaid\b|\bexpired\b", body, flags=re.I):
+            continue
         heading_match = re.search(r"<h3[^>]*>(?P<title>.*?)</h3>", raw_body, re.I | re.S)
         heading = clean_text(heading_match.group("title")) if heading_match else ""
         amount_match = re.search(r"\$\s?\d+(?:\.\d+)?", body)
@@ -194,7 +199,7 @@ def candidates_from_browse_page() -> list[TaskBountyCandidate]:
     if not candidates:
         text = clean_text(page)
         coarse = re.search(r"(Bug: .*?\$\s?\d+(?:\.\d+)?)", text)
-        if coarse:
+        if coarse and not re.search(r"\bclosed\b|\bcompleted\b|\bpaid\b|\bexpired\b", coarse.group(1), flags=re.I):
             body = coarse.group(1)
             amount_match = re.search(r"\$\s?\d+(?:\.\d+)?", body)
             amount_hint = amount_match.group(0).replace(" ", "") if amount_match else "amount not obvious"
