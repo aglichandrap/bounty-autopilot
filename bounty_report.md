@@ -1,126 +1,85 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-16 06:38 UTC
+Last run: 2026-05-16 09:14 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [每日信息流] 2026-05-16
+## 1. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
-- Score: 68
-- Amount hint: $385,750, $900, $523,000
-- Issue: https://github.com/chainreactors/picker/issues/1241
-- Repository: https://github.com/chainreactors/picker
-- Updated: 2026-05-16T06:30:24Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. [每日信息流] 2026-05-16
-
-- Score: 68
-- Amount hint: $385,750, $900, $523,000
-- Issue: https://github.com/BruceFeIix/picker/issues/2442
-- Repository: https://github.com/BruceFeIix/picker
-- Updated: 2026-05-16T06:29:05Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [每日信息流] 2026-05-16
-
-- Score: 68
-- Amount hint: $385,750, $900, $523,000
-- Issue: https://github.com/MM0x02/RSS-Push/issues/506
-- Repository: https://github.com/MM0x02/RSS-Push
-- Updated: 2026-05-16T06:26:19Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. 🔐 AWS S3 Security Remediation & Civil ID Upload Fix — IAM Key Rotation, Bucket Hardening & Backend Patches
-
-- Score: 61
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/BAWES-Universe/studenthub/issues/55
-- Repository: https://github.com/BAWES-Universe/studenthub
-- Updated: 2026-05-16T06:18:34Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. BGL PR bounty hunt
-
-- Score: 53
-- Amount hint: $100
-- Issue: https://github.com/BitgesellOfficial/bitgesell/issues/32
-- Repository: https://github.com/BitgesellOfficial/bitgesell
-- Updated: 2026-05-16T06:36:56Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. [BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands
-
-- Score: 53
-- Amount hint: $100, BOUNTY $100, Bounty: $100
-- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3
-- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
-- Updated: 2026-05-16T05:27:29Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [Bug] GPU protocol accepts JSON booleans as numeric escrow and pricing values
-
-- Score: 51
-- Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5368
-- Repository: https://github.com/Scottcjn/Rustchain
-- Updated: 2026-05-16T05:18:06Z
+- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-16T09:11:05Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [Bounty Claim] PR Reviews - 3 PRs (Bounty #73)
+## 2. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
-- Score: 51
-- Amount hint: Reward
-3
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/9848
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Updated: 2026-05-16T03:41:35Z
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-16T09:11:14Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. v2 UI missing per-ticket timeline drill-down (regression from prototype)
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/215
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-16T09:11:03Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. Sats to Local Currency | Mexico
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2025-03-11T19:50:52Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Bug Fix Claim — PR #5354: Keeper explorer strict py_compile cleanup
+## 5. 🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties
 
-- Score: 51
+- Score: 38
 - Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/9840
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Updated: 2026-05-16T03:25:49Z
+- Issue: https://github.com/SolFoundry/solfoundry/issues/844
+- Repository: https://github.com/SolFoundry/solfoundry
+- Updated: 2026-05-16T04:25:30Z
+- Why it matched: mentions bounty/reward
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. Fixing the bounty award system
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. [BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment
+## 7. Create a Bounty Amount Box Issue
 
-- Score: 49
-- Amount hint: $150, BOUNTY $150, Bounty: $150
-- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4
-- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
-- Updated: 2026-05-16T06:33:53Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)
-
-- Score: 49
-- Amount hint: $0.10, 10 USD
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/73
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Updated: 2026-05-16T04:42:46Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. [CLAIM] PR Review - RustChain PR #5388 (Bounty #73)
-
-- Score: 47
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/9879
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Updated: 2026-05-16T05:50:58Z
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. Sync Issue-Assigned property from GH to LB
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
