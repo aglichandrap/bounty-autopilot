@@ -1,15 +1,15 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 15:29 UTC
+Last built: 2026-05-16 17:18 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: [Bug] Keeper explorer proxy leaks internal connection errors
+## Queue Item 1: [Bug] Dashboard health leaks internal component exception details
 
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5438
+- Issue: https://github.com/Scottcjn/Rustchain/issues/5442
 - Repository: https://github.com/Scottcjn/Rustchain
 - Amount hint: amount not obvious
-- Score: 55
+- Score: 47
 - Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions
@@ -40,13 +40,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [Bug] Dashboard health leaks internal component exception details
+## Queue Item 3: Loading Bounty Page takes too long
 
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5442
-- Repository: https://github.com/Scottcjn/Rustchain
+- Issue: https://github.com/stakwork/sphinx-tribes-frontend/issues/1493
+- Repository: https://github.com/stakwork/sphinx-tribes-frontend
 - Amount hint: amount not obvious
 - Score: 47
-- Match reason: mentions bounty/reward, low discussion volume
+- Match reason: mentions bounty/reward, large issue body, low discussion volume
 
 ### Worker Instructions
 

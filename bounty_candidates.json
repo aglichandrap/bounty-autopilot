@@ -1,10 +1,10 @@
 [
   {
-    "title": "[Bug] Keeper explorer proxy leaks internal connection errors",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/5438",
+    "title": "[Bug] Dashboard health leaks internal component exception details",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5442",
     "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-16T14:19:43Z",
-    "score": 55,
+    "updated_at": "2026-05-16T15:42:16Z",
+    "score": 47,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -18,21 +18,21 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[Bug] Dashboard health leaks internal component exception details",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/5442",
-    "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-16T15:01:14Z",
-    "score": 47,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
     "title": "Loading Bounty Page takes too long",
     "url": "https://github.com/stakwork/sphinx-tribes-frontend/issues/1493",
     "repository_url": "https://github.com/stakwork/sphinx-tribes-frontend",
     "updated_at": "2026-05-16T14:32:50Z",
     "score": 47,
     "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "Bounty 4 finding — RISK_BUF_CAP=4 eviction excludes victim LP from auto-close → direct insurance fund drain (42,515 lamports verified against deployed BPF)",
+    "url": "https://github.com/aeyakovenko/percolator-prog/issues/100",
+    "repository_url": "https://github.com/aeyakovenko/percolator-prog",
+    "updated_at": "2026-05-16T17:12:44Z",
+    "score": 39,
+    "amount_hint": "Bounty 4, bounty4",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
@@ -48,7 +48,7 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T15:29:18Z",
+    "updated_at": "2026-05-16T16:46:11Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
@@ -97,5 +97,14 @@
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[C4GT Community]: Implement Real-time Block Connection Validation Engine for Visual Editor",
+    "url": "https://github.com/Code4GovTech/C4GT/issues/796",
+    "repository_url": "https://github.com/Code4GovTech/C4GT",
+    "updated_at": "2026-05-16T17:17:09Z",
+    "score": 34,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward"
   }
 ]
