@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-16 19:36 UTC
+Last run: 2026-05-16 21:06 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -24,17 +24,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. feat: add stolen device report form scaffold
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/HavenOnStellar/Haven_Frontend/issues/13
-- Repository: https://github.com/HavenOnStellar/Haven_Frontend
-- Updated: 2026-05-16T19:34:46Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. Sats to Local Currency | Mexico
+## 3. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -44,17 +34,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 4. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-16T19:17:49Z
+- Updated: 2026-05-16T20:33:08Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. useMercenaryBoard Hook (Mercenary Board)
+## 5. useMercenaryBoard Hook (Mercenary Board)
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -64,7 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. 🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties
+## 6. 🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties
 
 - Score: 38
 - Amount hint: amount not obvious
@@ -74,17 +64,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. feat: scaffold user dashboard for device management
+## 7. feature Request: Show Time Information on Bounties
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/HavenOnStellar/Haven_Frontend/issues/6
-- Repository: https://github.com/HavenOnStellar/Haven_Frontend
-- Updated: 2026-05-16T19:29:54Z
+- Issue: https://github.com/algora-io/algora/issues/175
+- Repository: https://github.com/algora-io/algora
+- Updated: 2026-05-16T20:52:22Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Fixing the bounty award system
+## 8. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -94,7 +84,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Create a Bounty Amount Box Issue
+## 9. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -104,7 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Sync Issue-Assigned property from GH to LB
+## 10. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -112,14 +102,4 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Repository: https://github.com/Lightning-Bounties/progress-tracker
 - Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. D4 S13 Maxroll Whirlwind Endgame Barbarian imported names are totally wrong
-
-- Score: 27
-- Amount hint: amount not obvious
-- Issue: https://github.com/d4lfteam/d4lf/issues/716
-- Repository: https://github.com/d4lfteam/d4lf
-- Updated: 2026-05-16T19:33:09Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

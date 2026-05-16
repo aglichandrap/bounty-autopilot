@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 19:36 UTC
+Last built: 2026-05-16 21:06 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -40,10 +40,10 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: feat: add stolen device report form scaffold
+## Queue Item 3: Sats to Local Currency | Mexico
 
-- Issue: https://github.com/HavenOnStellar/Haven_Frontend/issues/13
-- Repository: https://github.com/HavenOnStellar/Haven_Frontend
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
 - Amount hint: amount not obvious
 - Score: 39
 - Match reason: mentions bounty/reward, low discussion volume
