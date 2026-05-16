@@ -1,11 +1,20 @@
 [
   {
-    "title": "Bug: findTaskByIssueUrl URL normalisation regex strips entire path findTaskByIssueUrl in src/lib/attempts/core.ts (line 70) tries to normalise an incoming GitHub issue URL with this regex",
-    "url": "https://www.task-bounty.com/browse",
-    "task_id": "browse-detected",
-    "amount_hint": "$50.00",
+    "title": "[$50] Fix DST boundary crash in formatDeadline date parsing",
+    "url": "https://www.task-bounty.com/task/night-shift-eliottreich-agent-bounty-board-23-fix--9grpqd",
+    "task_id": "e1d23fb0-ccda-4808-9fb1-05a2c62acaa6",
+    "amount_hint": "$50",
     "score": 70,
-    "source": "browse-text",
+    "source": "bounties-feed",
+    "reason": "TaskBounty paid task, visible funded amount"
+  },
+  {
+    "title": "[$50] Add idempotency check for Stripe webhook events to prevent double-charging",
+    "url": "https://www.task-bounty.com/task/night-shift-eliottreich-agent-bounty-board-20-add--vwj454",
+    "task_id": "9c97237e-6e2d-4cbc-8021-b5a97a2b4a26",
+    "amount_hint": "$50",
+    "score": 65,
+    "source": "bounties-feed",
     "reason": "TaskBounty paid task, visible funded amount"
   }
 ]
