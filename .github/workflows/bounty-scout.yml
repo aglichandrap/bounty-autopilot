@@ -42,12 +42,17 @@ jobs:
         run: |
           git config user.name "bounty-scout-bot"
           git config user.email "bounty-scout-bot@users.noreply.github.com"
+          git pull --rebase origin main
           git add bounty_report.md bounty_candidates.json bounty_worker_queue.md claim_queue.md
           if git diff --cached --quiet; then
             echo "No bounty report changes."
           else
             git commit -m "Update bounty scout report"
-            git push
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase origin main
+              sleep 5
+            done
           fi
 
       - name: Open/update candidate issue
