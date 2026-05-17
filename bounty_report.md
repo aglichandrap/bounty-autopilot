@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-17 15:31 UTC
+Last run: 2026-05-17 17:19 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -15,17 +15,7 @@ $50
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. Bug: mining dashboard API echoes backend exception details
-
-- Score: 55
-- Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5552
-- Repository: https://github.com/Scottcjn/Rustchain
-- Updated: 2026-05-17T14:10:33Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. Quest Board Table Component (Mercenary Jobs List)
+## 2. Quest Board Table Component (Mercenary Jobs List)
 
 - Score: 47
 - Amount hint: amount not obvious
@@ -35,7 +25,27 @@ $50
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. Sats to Local Currency | Mexico
+## 3. [FEAT] Add "Copy to Clipboard" button on medicine verification result card
+
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/196
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-17T17:07:13Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. [FEATURE] Client side Image Preprocessing and Compression for medicine verification
+
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/193
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-17T15:45:43Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -45,27 +55,27 @@ $50
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 6. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-17T14:58:04Z
+- Updated: 2026-05-17T16:52:35Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [WIKI-PATCH] wiki.file_bug Jaccard duplicate detection misses substantive overlap in long-form filings (default threshold 0.25 calibrated for short-form; framing prose dilutes the technical core)
+## 7. [WIKI-PATCH] wiki.file_bug Jaccard duplicate detection misses substantive overlap in long-form filings (default threshold 0.25 calibrated for short-form; framing prose dilutes the technical core)
 
 - Score: 38
 - Amount hint: amount not obvious
 - Issue: https://github.com/Jonnyton/Workflow/issues/885
 - Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-17T15:09:05Z
+- Updated: 2026-05-17T16:37:36Z
 - Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Fixing the bounty award system
+## 8. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -75,7 +85,7 @@ $50
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. Create a Bounty Amount Box Issue
+## 9. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -85,7 +95,7 @@ $50
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Sync Issue-Assigned property from GH to LB
+## 10. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -95,7 +105,7 @@ $50
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. CI/CD: Universe deployment pipeline (build → test → deploy to universe.bawes.net)
+## 11. CI/CD: Universe deployment pipeline (build → test → deploy to universe.bawes.net)
 
 - Score: 25
 - Amount hint: amount not obvious
