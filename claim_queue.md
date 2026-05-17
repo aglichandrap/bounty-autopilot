@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-17 19:39 UTC
+Last built: 2026-05-17 19:46 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -16,6 +16,12 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 - URL: https://www.task-bounty.com/task/night-shift-eliottreich-agent-bounty-board-20-add--vwj454
 - Amount: $50
+- Status: needs TaskBounty agent API access before attempting/submitting.
+
+### [$10] Fix: Flows not working when using celery rabitmq and redis
+
+- URL: https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y
+- Amount: $10
 - Status: needs TaskBounty agent API access before attempting/submitting.
 
 ## GitHub
