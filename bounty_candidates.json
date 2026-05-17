@@ -1,5 +1,23 @@
 [
   {
+    "title": "[Tutorial] Concurrent Transactions on Midnight: UTXO Race Conditions & Workarounds",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/301",
+    "repository_url": "https://github.com/midnightntwrk/contributor-hub",
+    "updated_at": "2026-05-17T07:52:51Z",
+    "score": 59,
+    "amount_hint": "$500, $700",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "[rocket-pool] DEFI@home",
+    "url": "https://github.com/guil-lambert/defipunkd/issues/227",
+    "repository_url": "https://github.com/guil-lambert/defipunkd",
+    "updated_at": "2026-05-17T08:30:46Z",
+    "score": 55,
+    "amount_hint": "$900",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
     "title": "Quest Board Table Component (Mercenary Jobs List)",
     "url": "https://github.com/godamongstmen897/loot-vault/issues/5",
     "repository_url": "https://github.com/godamongstmen897/loot-vault",
@@ -9,13 +27,22 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "Loading Bounty Page takes too long",
-    "url": "https://github.com/stakwork/sphinx-tribes-frontend/issues/1493",
-    "repository_url": "https://github.com/stakwork/sphinx-tribes-frontend",
-    "updated_at": "2026-05-16T14:32:50Z",
-    "score": 47,
+    "title": "[Bounty] SFPU binary comparison regressions via SFPSETSGN/XOR/OR/SHIFT — 3 bugs, 4 CI failures",
+    "url": "https://github.com/tenstorrent/tt-metal/issues/44569",
+    "repository_url": "https://github.com/tenstorrent/tt-metal",
+    "updated_at": "2026-05-17T08:27:22Z",
+    "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "[WIKI-PATCH] wiki.file_bug Jaccard duplicate detection misses substantive overlap in long-form filings (default threshold 0.25 calibrated for short-form; framing prose dilutes the technical core)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/885",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T07:58:23Z",
+    "score": 43,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Cross-chain swap module for heterogeneous chains (EVM, Tron, Solana, BTC)",
@@ -27,28 +54,46 @@
     "reason": "has visible amount, low discussion volume"
   },
   {
-    "title": "[WIKI-DESIGN] External-write primitive needed for user-buildable Loop 2 to emit PRs — currently side effects must stay as packet outputs, blocking parity with substrate Loop 1 (fourth blocker from readiness baseline, the only one without a dedicated filing)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/889",
+    "title": "[WIKI-PATCH] Tie PR-048 Phase B (DaemonBrain class) to the Tiny daemon as the first-migration acceptance test — give the consolidation a concrete consumer so it stops being abstract",
+    "url": "https://github.com/Jonnyton/Workflow/issues/908",
     "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T04:23:17Z",
+    "updated_at": "2026-05-17T07:19:40Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[WIKI-PATCH] Open-brain v2 slice A — value-layer foundation: memory_kinds registry + promotion lifecycle state machine",
-    "url": "https://github.com/Jonnyton/Workflow/issues/876",
+    "title": "[WIKI-PATCH] Open-brain v2 slice D — bounded autonomous spend, logged-proposed mode only (decomposed from PR-049 with Codex amendment applied)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/884",
     "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T03:04:04Z",
+    "updated_at": "2026-05-17T07:02:02Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[WIKI-PATCH] supervisor stuck_pending alarm misfires on tier_enabled=false rows; should distinguish policy-parked tasks from wedged dispatcher",
-    "url": "https://github.com/Jonnyton/Workflow/issues/875",
+    "title": "[WIKI-PATCH] Open-brain v2 slice C — read-only cost ledger + status surface (no autonomous decisions; decomposed from PR-049)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/883",
     "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T02:56:21Z",
+    "updated_at": "2026-05-17T06:56:50Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[WIKI-PATCH] Open-brain v2 slice B — soul-guided dispatch read path (dispatcher consults daemon soul at pickup; decomposed from PR-049)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/882",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T06:48:57Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[WIKI-PATCH] Open-brain v2 slice A — memory_kinds registry + promotion lifecycle state machine (decomposed from PR-049)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/881",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T06:42:31Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
@@ -59,51 +104,6 @@
     "repository_url": "https://github.com/sutt/docs",
     "updated_at": "2025-03-11T19:50:52Z",
     "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
-    "url": "https://github.com/svv2014/loop-monitor/issues/109",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T04:09:36Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "useMercenaryBoard Hook (Mercenary Board)",
-    "url": "https://github.com/godamongstmen897/loot-vault/issues/26",
-    "repository_url": "https://github.com/godamongstmen897/loot-vault",
-    "updated_at": "2026-05-16T12:25:26Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "🏭 Bounty T2: Build Claude Code Skill for SolFoundry Bounties",
-    "url": "https://github.com/SolFoundry/solfoundry/issues/844",
-    "repository_url": "https://github.com/SolFoundry/solfoundry",
-    "updated_at": "2026-05-16T04:25:30Z",
-    "score": 38,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward"
-  },
-  {
-    "title": "[WIKI-PATCH] Privileged-node primitive — node-level `host_controlled` flag where live execution uses host-private version while public proposal remains the fork-and-amend surface (Loop 2 final-shape requirement, host directive 2026-05-17)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/892",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T04:18:49Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[WIKI-PATCH] Filing-time effort-class prediction — Circuit-Breaker classifier flags ghost-risk and merge-instant filings at file_bug time so carrier attention can land before stall (MSR '26 prior art with AUC 0.96 on 33K agent PRs)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/891",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T04:18:46Z",
-    "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   }
