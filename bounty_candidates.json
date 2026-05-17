@@ -18,31 +18,40 @@
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
-    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/137",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T23:05:25Z",
-    "score": 43,
+    "title": "Cross-chain swap module for heterogeneous chains (EVM, Tron, Solana, BTC)",
+    "url": "https://github.com/tetherto/wdk/issues/49",
+    "repository_url": "https://github.com/tetherto/wdk",
+    "updated_at": "2026-05-17T03:53:02Z",
+    "score": 42,
+    "amount_hint": "$2",
+    "reason": "has visible amount, low discussion volume"
+  },
+  {
+    "title": "[WIKI-DESIGN] External-write primitive needed for user-buildable Loop 2 to emit PRs — currently side effects must stay as packet outputs, blocking parity with substrate Loop 1 (fourth blocker from readiness baseline, the only one without a dedicated filing)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/889",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T04:23:17Z",
+    "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
-    "url": "https://github.com/svv2014/loop-monitor/issues/109",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T23:05:34Z",
+    "title": "[WIKI-PATCH] Open-brain v2 slice A — value-layer foundation: memory_kinds registry + promotion lifecycle state machine",
+    "url": "https://github.com/Jonnyton/Workflow/issues/876",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T03:04:04Z",
     "score": 39,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/215",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-16T23:05:23Z",
+    "title": "[WIKI-PATCH] supervisor stuck_pending alarm misfires on tier_enabled=false rows; should distinguish policy-parked tasks from wedged dispatcher",
+    "url": "https://github.com/Jonnyton/Workflow/issues/875",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T02:56:21Z",
     "score": 39,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Sats to Local Currency | Mexico",
@@ -52,6 +61,15 @@
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
+    "url": "https://github.com/svv2014/loop-monitor/issues/109",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-17T04:09:36Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
     "title": "useMercenaryBoard Hook (Mercenary Board)",
@@ -72,28 +90,19 @@
     "reason": "mentions bounty/reward"
   },
   {
-    "title": "Fixing the bounty award system",
-    "url": "https://github.com/ResearchHub/issues/issues/531",
-    "repository_url": "https://github.com/ResearchHub/issues",
-    "updated_at": "2026-01-20T06:50:39Z",
+    "title": "[WIKI-PATCH] Privileged-node primitive — node-level `host_controlled` flag where live execution uses host-private version while public proposal remains the fork-and-amend surface (Loop 2 final-shape requirement, host directive 2026-05-17)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/892",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T04:18:49Z",
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "Create a Bounty Amount Box Issue",
-    "url": "https://github.com/ResearchHub/issues/issues/540",
-    "repository_url": "https://github.com/ResearchHub/issues",
-    "updated_at": "2026-01-20T06:50:37Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Sync Issue-Assigned property from GH to LB",
-    "url": "https://github.com/Lightning-Bounties/progress-tracker/issues/53",
-    "repository_url": "https://github.com/Lightning-Bounties/progress-tracker",
-    "updated_at": "2025-05-08T13:14:16Z",
+    "title": "[WIKI-PATCH] Filing-time effort-class prediction — Circuit-Breaker classifier flags ghost-risk and merge-instant filings at file_bug time so carrier attention can land before stall (MSR '26 prior art with AUC 0.96 on 33K agent PRs)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/891",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T04:18:46Z",
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"

@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-16 23:11 UTC
+Last built: 2026-05-17 04:35 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -40,13 +40,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+## Queue Item 3: Cross-chain swap module for heterogeneous chains (EVM, Tron, Solana, BTC)
 
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
-- Repository: https://github.com/svv2014/loop-monitor
-- Amount hint: amount not obvious
-- Score: 43
-- Match reason: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/tetherto/wdk/issues/49
+- Repository: https://github.com/tetherto/wdk
+- Amount hint: $2
+- Score: 42
+- Match reason: has visible amount, low discussion volume
 
 ### Worker Instructions
 
