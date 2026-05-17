@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-17 17:19 UTC
+Last built: 2026-05-17 19:39 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,10 +23,10 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: Quest Board Table Component (Mercenary Jobs List)
+## Queue Item 2: submit_pr posts an empty body when required args are missing instead of returning a clear error
 
-- Issue: https://github.com/godamongstmen897/loot-vault/issues/5
-- Repository: https://github.com/godamongstmen897/loot-vault
+- Issue: https://github.com/eliottreich/taskbounty-mcp-server/issues/15
+- Repository: https://github.com/eliottreich/taskbounty-mcp-server
 - Amount hint: amount not obvious
 - Score: 47
 - Match reason: mentions bounty/reward, low discussion volume
@@ -41,12 +41,12 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [FEAT] Add "Copy to Clipboard" button on medicine verification result card
+## Queue Item 3: Quest Board Table Component (Mercenary Jobs List)
 
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/196
-- Repository: https://github.com/RatLoopz/sahidawa-india
+- Issue: https://github.com/godamongstmen897/loot-vault/issues/5
+- Repository: https://github.com/godamongstmen897/loot-vault
 - Amount hint: amount not obvious
-- Score: 43
+- Score: 47
 - Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions

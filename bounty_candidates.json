@@ -9,6 +9,15 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
+    "title": "submit_pr posts an empty body when required args are missing instead of returning a clear error",
+    "url": "https://github.com/eliottreich/taskbounty-mcp-server/issues/15",
+    "repository_url": "https://github.com/eliottreich/taskbounty-mcp-server",
+    "updated_at": "2026-05-17T19:37:11Z",
+    "score": 47,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
     "title": "Quest Board Table Component (Mercenary Jobs List)",
     "url": "https://github.com/godamongstmen897/loot-vault/issues/5",
     "repository_url": "https://github.com/godamongstmen897/loot-vault",
@@ -18,20 +27,11 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[FEAT] Add \"Copy to Clipboard\" button on medicine verification result card",
-    "url": "https://github.com/RatLoopz/sahidawa-india/issues/196",
-    "repository_url": "https://github.com/RatLoopz/sahidawa-india",
-    "updated_at": "2026-05-17T17:07:13Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[FEATURE] Client side Image Preprocessing and Compression for medicine verification",
-    "url": "https://github.com/RatLoopz/sahidawa-india/issues/193",
-    "repository_url": "https://github.com/RatLoopz/sahidawa-india",
-    "updated_at": "2026-05-17T15:45:43Z",
-    "score": 43,
+    "title": "Bugfix Rewards Program Submission",
+    "url": "https://github.com/FreeCAD/FPA/issues/470",
+    "repository_url": "https://github.com/FreeCAD/FPA",
+    "updated_at": "2026-05-17T18:57:55Z",
+    "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -48,19 +48,37 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T16:52:35Z",
+    "updated_at": "2026-05-17T19:25:55Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
-    "title": "[WIKI-PATCH] wiki.file_bug Jaccard duplicate detection misses substantive overlap in long-form filings (default threshold 0.25 calibrated for short-form; framing prose dilutes the technical core)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/885",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T16:37:36Z",
-    "score": 38,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward"
+    "title": "Create Wiki Page - Zimppy.xyz",
+    "url": "https://github.com/ZecHub/zechub/issues/1566",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-17T18:53:44Z",
+    "score": 39,
+    "amount_hint": "Bounty: 0",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Update Zcash Library - ZecHub Wiki",
+    "url": "https://github.com/ZecHub/zechub/issues/1579",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-17T19:37:23Z",
+    "score": 35,
+    "amount_hint": "Bounty: 0",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Zcash Ecosystem Digest | May 16th Submission",
+    "url": "https://github.com/ZecHub/zechub/issues/1610",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-17T19:33:39Z",
+    "score": 35,
+    "amount_hint": "Bounty: 0",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Fixing the bounty award system",
@@ -88,14 +106,5 @@
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "CI/CD: Universe deployment pipeline (build → test → deploy to universe.bawes.net)",
-    "url": "https://github.com/BAWES-Universe/workadventure-universe/issues/10",
-    "repository_url": "https://github.com/BAWES-Universe/workadventure-universe",
-    "updated_at": "2026-05-17T05:49:28Z",
-    "score": 25,
-    "amount_hint": "amount not obvious",
-    "reason": "low discussion volume"
   }
 ]
