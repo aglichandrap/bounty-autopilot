@@ -1,46 +1,37 @@
 [
   {
+    "title": "[Hacktoberfest] VS Code Extension for Policy Development",
+    "url": "https://github.com/aporthq/aport-integrations/issues/10",
+    "repository_url": "https://github.com/aporthq/aport-integrations",
+    "updated_at": "2026-05-17T09:15:32Z",
+    "score": 68,
+    "amount_hint": "$50, 50 USD, Bounty\n$50",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
+    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
+    "repository_url": "https://github.com/tenstorrent/tt-metal",
+    "updated_at": "2026-05-17T11:27:30Z",
+    "score": 64,
+    "amount_hint": "$3, Bounty $3",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
     "title": "[Tutorial] Concurrent Transactions on Midnight: UTXO Race Conditions & Workarounds",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/301",
     "repository_url": "https://github.com/midnightntwrk/contributor-hub",
-    "updated_at": "2026-05-17T07:52:51Z",
+    "updated_at": "2026-05-17T11:09:25Z",
     "score": 59,
     "amount_hint": "$500, $700",
-    "reason": "mentions bounty/reward, has visible amount"
-  },
-  {
-    "title": "[rocket-pool] DEFI@home",
-    "url": "https://github.com/guil-lambert/defipunkd/issues/227",
-    "repository_url": "https://github.com/guil-lambert/defipunkd",
-    "updated_at": "2026-05-17T08:30:46Z",
-    "score": 55,
-    "amount_hint": "$900",
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
     "title": "Quest Board Table Component (Mercenary Jobs List)",
     "url": "https://github.com/godamongstmen897/loot-vault/issues/5",
     "repository_url": "https://github.com/godamongstmen897/loot-vault",
-    "updated_at": "2026-05-16T15:13:19Z",
+    "updated_at": "2026-05-17T11:09:45Z",
     "score": 47,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[Bounty] SFPU binary comparison regressions via SFPSETSGN/XOR/OR/SHIFT — 3 bugs, 4 CI failures",
-    "url": "https://github.com/tenstorrent/tt-metal/issues/44569",
-    "repository_url": "https://github.com/tenstorrent/tt-metal",
-    "updated_at": "2026-05-17T08:27:22Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "[WIKI-PATCH] wiki.file_bug Jaccard duplicate detection misses substantive overlap in long-form filings (default threshold 0.25 calibrated for short-form; framing prose dilutes the technical core)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/885",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T07:58:23Z",
-    "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -48,62 +39,71 @@
     "title": "Cross-chain swap module for heterogeneous chains (EVM, Tron, Solana, BTC)",
     "url": "https://github.com/tetherto/wdk/issues/49",
     "repository_url": "https://github.com/tetherto/wdk",
-    "updated_at": "2026-05-17T03:53:02Z",
+    "updated_at": "2026-05-17T11:11:11Z",
     "score": 42,
     "amount_hint": "$2",
     "reason": "has visible amount, low discussion volume"
   },
   {
-    "title": "[WIKI-PATCH] Tie PR-048 Phase B (DaemonBrain class) to the Tiny daemon as the first-migration acceptance test — give the consolidation a concrete consumer so it stops being abstract",
-    "url": "https://github.com/Jonnyton/Workflow/issues/908",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T07:19:40Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[WIKI-PATCH] Open-brain v2 slice D — bounded autonomous spend, logged-proposed mode only (decomposed from PR-049 with Codex amendment applied)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/884",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T07:02:02Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[WIKI-PATCH] Open-brain v2 slice C — read-only cost ledger + status surface (no autonomous decisions; decomposed from PR-049)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/883",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T06:56:50Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[WIKI-PATCH] Open-brain v2 slice B — soul-guided dispatch read path (dispatcher consults daemon soul at pickup; decomposed from PR-049)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/882",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T06:48:57Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[WIKI-PATCH] Open-brain v2 slice A — memory_kinds registry + promotion lifecycle state machine (decomposed from PR-049)",
-    "url": "https://github.com/Jonnyton/Workflow/issues/881",
-    "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-17T06:42:31Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
     "title": "Sats to Local Currency | Mexico",
     "url": "https://github.com/sutt/docs/issues/5",
     "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2025-03-11T19:50:52Z",
+    "updated_at": "2026-05-17T11:11:31Z",
     "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
+    "url": "https://github.com/svv2014/loop-monitor/issues/109",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-17T11:08:12Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "[WIKI-PATCH] wiki.file_bug Jaccard duplicate detection misses substantive overlap in long-form filings (default threshold 0.25 calibrated for short-form; framing prose dilutes the technical core)",
+    "url": "https://github.com/Jonnyton/Workflow/issues/885",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-17T11:20:42Z",
+    "score": 38,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward"
+  },
+  {
+    "title": "Draft Workbench: Adding Missing Information",
+    "url": "https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/27",
+    "repository_url": "https://github.com/Reqrefusion/FreeCAD-Documentation-Project",
+    "updated_at": "2026-05-17T11:24:26Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Fixing the bounty award system",
+    "url": "https://github.com/ResearchHub/issues/issues/531",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:39Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create a Bounty Amount Box Issue",
+    "url": "https://github.com/ResearchHub/issues/issues/540",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:37Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Sync Issue-Assigned property from GH to LB",
+    "url": "https://github.com/Lightning-Bounties/progress-tracker/issues/53",
+    "repository_url": "https://github.com/Lightning-Bounties/progress-tracker",
+    "updated_at": "2025-05-08T13:14:16Z",
+    "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   }
