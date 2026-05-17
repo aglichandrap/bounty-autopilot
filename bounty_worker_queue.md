@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-17 14:00 UTC
+Last built: 2026-05-17 15:31 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,13 +23,13 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: Implement component tests for Bounty Home Page
+## Queue Item 2: Bug: mining dashboard API echoes backend exception details
 
-- Issue: https://github.com/stakwork/sphinx-tribes/issues/867
-- Repository: https://github.com/stakwork/sphinx-tribes
-- Amount hint: 00 USD
-- Score: 60
-- Match reason: mentions bounty/reward, has visible amount, large issue body, low discussion volume
+- Issue: https://github.com/Scottcjn/Rustchain/issues/5552
+- Repository: https://github.com/Scottcjn/Rustchain
+- Amount hint: amount not obvious
+- Score: 55
+- Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions
 
