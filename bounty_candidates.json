@@ -9,10 +9,10 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "submit_pr posts an empty body when required args are missing instead of returning a clear error",
-    "url": "https://github.com/eliottreich/taskbounty-mcp-server/issues/15",
-    "repository_url": "https://github.com/eliottreich/taskbounty-mcp-server",
-    "updated_at": "2026-05-17T19:37:11Z",
+    "title": "PR Review: RustChain PR #5609 PPC wallet compatibility",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10787",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-17T21:02:59Z",
     "score": 47,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
@@ -27,12 +27,48 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "Bugfix Rewards Program Submission",
-    "url": "https://github.com/FreeCAD/FPA/issues/470",
-    "repository_url": "https://github.com/FreeCAD/FPA",
-    "updated_at": "2026-05-17T18:57:55Z",
+    "title": "Bug: Rent-a-Relic reserve crashes on non-string JSON fields",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5604",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-17T20:15:43Z",
+    "score": 43,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Bug: testnet faucet crashes on non-string JSON fields",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5602",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-17T20:00:02Z",
+    "score": 43,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "feat: replace mocked frontend data with shared demo fixtures or client state",
+    "url": "https://github.com/HavenOnStellar/Haven_Frontend/issues/37",
+    "repository_url": "https://github.com/HavenOnStellar/Haven_Frontend",
+    "updated_at": "2026-05-17T21:06:45Z",
     "score": 39,
     "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "feat: add recovery confirmation page and payout scaffold",
+    "url": "https://github.com/HavenOnStellar/Haven_Frontend/issues/35",
+    "repository_url": "https://github.com/HavenOnStellar/Haven_Frontend",
+    "updated_at": "2026-05-17T21:06:40Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create Wiki Page - Zimppy.xyz",
+    "url": "https://github.com/ZecHub/zechub/issues/1567",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-17T20:59:05Z",
+    "score": 39,
+    "amount_hint": "Bounty: 0",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
@@ -48,10 +84,19 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T19:25:55Z",
+    "updated_at": "2026-05-17T20:41:55Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "PR Review: RustChain PR #5605 Rent-a-Relic field validation",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10778",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-17T20:32:28Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Create Wiki Page - Zimppy.xyz",
@@ -60,51 +105,6 @@
     "updated_at": "2026-05-17T18:53:44Z",
     "score": 39,
     "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Update Zcash Library - ZecHub Wiki",
-    "url": "https://github.com/ZecHub/zechub/issues/1579",
-    "repository_url": "https://github.com/ZecHub/zechub",
-    "updated_at": "2026-05-17T19:37:23Z",
-    "score": 35,
-    "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Zcash Ecosystem Digest | May 16th Submission",
-    "url": "https://github.com/ZecHub/zechub/issues/1610",
-    "repository_url": "https://github.com/ZecHub/zechub",
-    "updated_at": "2026-05-17T19:33:39Z",
-    "score": 35,
-    "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Fixing the bounty award system",
-    "url": "https://github.com/ResearchHub/issues/issues/531",
-    "repository_url": "https://github.com/ResearchHub/issues",
-    "updated_at": "2026-01-20T06:50:39Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Create a Bounty Amount Box Issue",
-    "url": "https://github.com/ResearchHub/issues/issues/540",
-    "repository_url": "https://github.com/ResearchHub/issues",
-    "updated_at": "2026-01-20T06:50:37Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Sync Issue-Assigned property from GH to LB",
-    "url": "https://github.com/Lightning-Bounties/progress-tracker/issues/53",
-    "repository_url": "https://github.com/Lightning-Bounties/progress-tracker",
-    "updated_at": "2025-05-08T13:14:16Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   }
 ]

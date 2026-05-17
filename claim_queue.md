@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-17 19:46 UTC
+Last built: 2026-05-17 21:10 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -45,7 +45,7 @@ I can work on this. Please assign it to me if it is still available; I will wait
 
 ### Create Wiki Page - Zimppy.xyz
 
-- URL: https://github.com/ZecHub/zechub/issues/1566
+- URL: https://github.com/ZecHub/zechub/issues/1567
 - Amount: Bounty: 0
 - Claim comment if rules allow:
 
@@ -59,9 +59,9 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### Update Zcash Library - ZecHub Wiki
+### Create Wiki Page - Zimppy.xyz
 
-- URL: https://github.com/ZecHub/zechub/issues/1579
+- URL: https://github.com/ZecHub/zechub/issues/1566
 - Amount: Bounty: 0
 - Claim comment if rules allow:
 

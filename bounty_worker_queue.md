@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-17 19:39 UTC
+Last built: 2026-05-17 21:10 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,10 +23,10 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: submit_pr posts an empty body when required args are missing instead of returning a clear error
+## Queue Item 2: PR Review: RustChain PR #5609 PPC wallet compatibility
 
-- Issue: https://github.com/eliottreich/taskbounty-mcp-server/issues/15
-- Repository: https://github.com/eliottreich/taskbounty-mcp-server
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/10787
+- Repository: https://github.com/Scottcjn/rustchain-bounties
 - Amount hint: amount not obvious
 - Score: 47
 - Match reason: mentions bounty/reward, low discussion volume
