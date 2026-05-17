@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-17 11:35 UTC
+Last built: 2026-05-17 14:00 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,13 +23,13 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: [Bounty $3k] Optimise exp2 fp32/bf16
+## Queue Item 2: Implement component tests for Bounty Home Page
 
-- Issue: https://github.com/tenstorrent/tt-metal/issues/44507
-- Repository: https://github.com/tenstorrent/tt-metal
-- Amount hint: $3, Bounty $3
-- Score: 64
-- Match reason: mentions bounty/reward, has visible amount, low discussion volume
+- Issue: https://github.com/stakwork/sphinx-tribes/issues/867
+- Repository: https://github.com/stakwork/sphinx-tribes
+- Amount hint: 00 USD
+- Score: 60
+- Match reason: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 
 ### Worker Instructions
 
@@ -41,13 +41,13 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [Tutorial] Concurrent Transactions on Midnight: UTXO Race Conditions & Workarounds
+## Queue Item 3: Quest Board Table Component (Mercenary Jobs List)
 
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/301
-- Repository: https://github.com/midnightntwrk/contributor-hub
-- Amount hint: $500, $700
-- Score: 59
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/godamongstmen897/loot-vault/issues/5
+- Repository: https://github.com/godamongstmen897/loot-vault
+- Amount hint: amount not obvious
+- Score: 47
+- Match reason: mentions bounty/reward, low discussion volume
 
 ### Worker Instructions
 
