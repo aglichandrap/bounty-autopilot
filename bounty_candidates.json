@@ -9,6 +9,42 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
+    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
+    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
+    "repository_url": "https://github.com/tenstorrent/tt-metal",
+    "updated_at": "2026-05-17T23:11:08Z",
+    "score": 64,
+    "amount_hint": "$3, Bounty $3",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "PR Review Batch - 11 PRs - [RTC]",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10821",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-17T22:45:58Z",
+    "score": 47,
+    "amount_hint": "bounty 443",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "PR Review: RustChain PR #5612 merkle-validation test import",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10803",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-17T21:32:42Z",
+    "score": 47,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "P2P merkle validation test exits during collection without RC_P2P_SECRET",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5511",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-17T21:27:38Z",
+    "score": 47,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
     "title": "PR Review: RustChain PR #5609 PPC wallet compatibility",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10787",
     "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
@@ -27,10 +63,19 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
+    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/137",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-17T23:13:10Z",
+    "score": 43,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
     "title": "Bug: Rent-a-Relic reserve crashes on non-string JSON fields",
     "url": "https://github.com/Scottcjn/Rustchain/issues/5604",
     "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-17T20:15:43Z",
+    "updated_at": "2026-05-17T21:40:40Z",
     "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
@@ -39,72 +84,27 @@
     "title": "Bug: testnet faucet crashes on non-string JSON fields",
     "url": "https://github.com/Scottcjn/Rustchain/issues/5602",
     "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-17T20:00:02Z",
+    "updated_at": "2026-05-17T21:27:04Z",
     "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "feat: replace mocked frontend data with shared demo fixtures or client state",
-    "url": "https://github.com/HavenOnStellar/Haven_Frontend/issues/37",
-    "repository_url": "https://github.com/HavenOnStellar/Haven_Frontend",
-    "updated_at": "2026-05-17T21:06:45Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "feat: add recovery confirmation page and payout scaffold",
-    "url": "https://github.com/HavenOnStellar/Haven_Frontend/issues/35",
-    "repository_url": "https://github.com/HavenOnStellar/Haven_Frontend",
-    "updated_at": "2026-05-17T21:06:40Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Create Wiki Page - Zimppy.xyz",
-    "url": "https://github.com/ZecHub/zechub/issues/1567",
-    "repository_url": "https://github.com/ZecHub/zechub",
-    "updated_at": "2026-05-17T20:59:05Z",
-    "score": 39,
-    "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2026-05-17T11:11:31Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
-    "url": "https://github.com/svv2014/loop-monitor/issues/109",
+    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/215",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T20:41:55Z",
+    "updated_at": "2026-05-17T23:13:26Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
-    "title": "PR Review: RustChain PR #5605 Rent-a-Relic field validation",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10778",
-    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
-    "updated_at": "2026-05-17T20:32:28Z",
+    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
+    "url": "https://github.com/svv2014/loop-monitor/issues/109",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-17T23:13:05Z",
     "score": 39,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Create Wiki Page - Zimppy.xyz",
-    "url": "https://github.com/ZecHub/zechub/issues/1566",
-    "repository_url": "https://github.com/ZecHub/zechub",
-    "updated_at": "2026-05-17T18:53:44Z",
-    "score": 39,
-    "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
   }
 ]

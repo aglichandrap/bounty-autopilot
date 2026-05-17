@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-17 21:10 UTC
+Last built: 2026-05-17 23:14 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,13 +23,13 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: PR Review: RustChain PR #5609 PPC wallet compatibility
+## Queue Item 2: [Bounty $3k] Optimise exp2 fp32/bf16
 
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/10787
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Amount hint: amount not obvious
-- Score: 47
-- Match reason: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/tenstorrent/tt-metal/issues/44507
+- Repository: https://github.com/tenstorrent/tt-metal
+- Amount hint: $3, Bounty $3
+- Score: 64
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
 
 ### Worker Instructions
 
@@ -41,11 +41,11 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: Quest Board Table Component (Mercenary Jobs List)
+## Queue Item 3: PR Review Batch - 11 PRs - [RTC]
 
-- Issue: https://github.com/godamongstmen897/loot-vault/issues/5
-- Repository: https://github.com/godamongstmen897/loot-vault
-- Amount hint: amount not obvious
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/10821
+- Repository: https://github.com/Scottcjn/rustchain-bounties
+- Amount hint: bounty 443
 - Score: 47
 - Match reason: mentions bounty/reward, low discussion volume
 
