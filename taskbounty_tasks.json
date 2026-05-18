@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "title": "[$10] Fix: Flows not working when using celery rabitmq and redis",
+    "url": "https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y",
+    "task_id": "1a7cb78f-67a3-4d95-a37b-404d773d9099",
+    "amount_hint": "$10",
+    "score": 50,
+    "source": "bounties-feed",
+    "reason": "TaskBounty paid task"
+  },
+  {
+    "title": "[$10] Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)",
+    "url": "https://www.task-bounty.com/task/fix-editor-scroll-jumps-randomly-related-to-chrome-97d1ll",
+    "task_id": "5e9ad131-6f9b-45b7-929e-30f5421b7f8b",
+    "amount_hint": "$10",
+    "score": 50,
+    "source": "bounties-feed",
+    "reason": "TaskBounty paid task"
+  },
+  {
+    "title": "[$10] Add a test harness and run it in CI",
+    "url": "https://www.task-bounty.com/task/taskbounty-mcp-server-16-add-a-test-harness-and-ru-q8mnpc",
+    "task_id": "670734bc-bc86-4162-961e-b1daf42b2d6b",
+    "amount_hint": "$10",
+    "score": 45,
+    "source": "bounties-feed",
+    "reason": "TaskBounty paid task"
+  },
+  {
+    "title": "[$10] Device-login polling logic is duplicated and the deviceLogin() fallback is dead/divergent",
+    "url": "https://www.task-bounty.com/task/taskbounty-mcp-server-18-device-login-polling-logi-v2c223",
+    "task_id": "09320d4d-812d-4634-a862-5f42a9de2a68",
+    "amount_hint": "$10",
+    "score": 40,
+    "source": "bounties-feed",
+    "reason": "TaskBounty paid task"
+  },
+  {
+    "title": "[$10] Resolve 3 moderate npm audit advisories in transitive deps",
+    "url": "https://www.task-bounty.com/task/taskbounty-mcp-server-17-resolve-3-moderate-npm-au-nw89of",
+    "task_id": "b2368630-7497-4e79-a73a-ecbd7fda86c9",
+    "amount_hint": "$10",
+    "score": 40,
+    "source": "bounties-feed",
+    "reason": "TaskBounty paid task"
+  }
+]
