@@ -9,12 +9,21 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
-    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
-    "repository_url": "https://github.com/tenstorrent/tt-metal",
-    "updated_at": "2026-05-18T15:42:30Z",
+    "title": "feat(web): aggregate bounty volume across tokens in CELO units (B92)",
+    "url": "https://github.com/yeheskieltame/claudelance/issues/293",
+    "repository_url": "https://github.com/yeheskieltame/claudelance",
+    "updated_at": "2026-05-18T21:36:54Z",
+    "score": 60,
+    "amount_hint": "$0.40, 18, USD",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "Support WASIX in Zig",
+    "url": "https://github.com/wasmerio/wasmer/issues/4218",
+    "repository_url": "https://github.com/wasmerio/wasmer",
+    "updated_at": "2026-05-18T21:19:47Z",
     "score": 59,
-    "amount_hint": "$3, Bounty $3",
+    "amount_hint": "$5,000",
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
@@ -36,24 +45,6 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
-    "title": "Bug: Contributor registry allows unauthenticated registration with arbitrary GitHub usernames",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/4911",
-    "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-18T18:47:42Z",
-    "score": 51,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Create wallet benchmarks",
-    "url": "https://github.com/tari-project/wallet-benchmarks/issues/1",
-    "repository_url": "https://github.com/tari-project/wallet-benchmarks",
-    "updated_at": "2026-05-18T19:44:07Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
     "title": "Sats to Local Currency | Mexico",
     "url": "https://github.com/sutt/docs/issues/5",
     "repository_url": "https://github.com/sutt/docs",
@@ -66,10 +57,19 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T19:47:29Z",
+    "updated_at": "2026-05-18T21:07:36Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "Create wallet benchmarks",
+    "url": "https://github.com/tari-project/wallet-benchmarks/issues/1",
+    "repository_url": "https://github.com/tari-project/wallet-benchmarks",
+    "updated_at": "2026-05-18T20:23:33Z",
+    "score": 38,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body"
   },
   {
     "title": "Fixing the bounty award system",
