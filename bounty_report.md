@@ -1,20 +1,71 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-18 10:43 UTC
+Last run: 2026-05-18 15:58 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. Quest Board Table Component (Mercenary Jobs List)
+## 1. [Hacktoberfest] VS Code Extension for Policy Development
 
-- Score: 47
+- Score: 68
+- Amount hint: $50, 50 USD, Bounty
+$50
+- Issue: https://github.com/aporthq/aport-integrations/issues/10
+- Repository: https://github.com/aporthq/aport-integrations
+- Updated: 2026-05-18T10:50:10Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. [Bounty $3k] Optimise exp2 fp32/bf16
+
+- Score: 59
+- Amount hint: $3, Bounty $3
+- Issue: https://github.com/tenstorrent/tt-metal/issues/44507
+- Repository: https://github.com/tenstorrent/tt-metal
+- Updated: 2026-05-18T15:42:30Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/godamongstmen897/loot-vault/issues/5
-- Repository: https://github.com/godamongstmen897/loot-vault
-- Updated: 2026-05-17T11:09:45Z
+- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-18T15:43:32Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. Sats to Local Currency | Mexico
+## 4. Create wallet benchmarks
+
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
+- Repository: https://github.com/tari-project/wallet-benchmarks
+- Updated: 2026-05-18T15:03:37Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-18T15:43:43Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. v2 UI missing per-ticket timeline drill-down (regression from prototype)
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/215
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-18T15:43:29Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -24,27 +75,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-18T10:14:03Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. PR Review: RustChain PR #5605 Rent-a-Relic field validation
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/10778
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Updated: 2026-05-18T04:49:37Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. Create Wiki Page - Zimppy.xyz
+## 8. Create Wiki Page - Zimppy.xyz
 
 - Score: 39
 - Amount hint: Bounty: 0
@@ -54,7 +85,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Create Wiki Page - Zimppy.xyz
+## 9. Create Wiki Page - Zimppy.xyz
 
 - Score: 39
 - Amount hint: Bounty: 0
@@ -64,27 +95,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. BGL PR bounty hunt ($10000 overall budget)
+## 10. BGL PR bounty hunt ($10000 overall budget)
 
 - Score: 38
 - Amount hint: $10000, $500
 - Issue: https://github.com/BitgesellOfficial/bitgesell/issues/39
 - Repository: https://github.com/BitgesellOfficial/bitgesell
-- Updated: 2026-05-18T09:04:13Z
+- Updated: 2026-05-18T15:01:49Z
 - Why it matched: mentions bounty/reward, has visible amount, busy thread
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. 🏭 Bounty T3: Bounty Analytics Dashboard
-
-- Score: 38
-- Amount hint: amount not obvious
-- Issue: https://github.com/SolFoundry/solfoundry/issues/859
-- Repository: https://github.com/SolFoundry/solfoundry
-- Updated: 2026-05-18T05:18:40Z
-- Why it matched: mentions bounty/reward
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Fixing the bounty award system
+## 11. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -94,32 +115,12 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Create a Bounty Amount Box Issue
+## 12. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
 - Issue: https://github.com/ResearchHub/issues/issues/540
 - Repository: https://github.com/ResearchHub/issues
 - Updated: 2026-01-20T06:50:37Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. Create Wiki Page - CipherScan
-
-- Score: 35
-- Amount hint: Bounty: 0
-- Issue: https://github.com/ZecHub/zechub/issues/1575
-- Repository: https://github.com/ZecHub/zechub
-- Updated: 2026-05-17T18:42:08Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
