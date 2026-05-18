@@ -1,14 +1,5 @@
 [
   {
-    "title": "[Hacktoberfest] VS Code Extension for Policy Development",
-    "url": "https://github.com/aporthq/aport-integrations/issues/10",
-    "repository_url": "https://github.com/aporthq/aport-integrations",
-    "updated_at": "2026-05-17T09:15:32Z",
-    "score": 68,
-    "amount_hint": "$50, 50 USD, Bounty\n$50",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
     "title": "Quest Board Table Component (Mercenary Jobs List)",
     "url": "https://github.com/godamongstmen897/loot-vault/issues/5",
     "repository_url": "https://github.com/godamongstmen897/loot-vault",
@@ -18,10 +9,10 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "decentralization (off-chain): cross-authority handoff issue/present/accept path",
-    "url": "https://github.com/cenetex/signal/issues/479",
-    "repository_url": "https://github.com/cenetex/signal",
-    "updated_at": "2026-05-18T04:36:25Z",
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2026-05-17T11:11:31Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
@@ -30,16 +21,16 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T04:19:34Z",
+    "updated_at": "2026-05-18T10:14:03Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2026-05-17T11:11:31Z",
+    "title": "PR Review: RustChain PR #5605 Rent-a-Relic field validation",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10778",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-18T04:49:37Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
@@ -66,10 +57,19 @@
     "title": "BGL PR bounty hunt ($10000 overall budget)",
     "url": "https://github.com/BitgesellOfficial/bitgesell/issues/39",
     "repository_url": "https://github.com/BitgesellOfficial/bitgesell",
-    "updated_at": "2026-05-18T03:57:33Z",
+    "updated_at": "2026-05-18T09:04:13Z",
     "score": 38,
     "amount_hint": "$10000, $500",
     "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "🏭 Bounty T3: Bounty Analytics Dashboard",
+    "url": "https://github.com/SolFoundry/solfoundry/issues/859",
+    "repository_url": "https://github.com/SolFoundry/solfoundry",
+    "updated_at": "2026-05-18T05:18:40Z",
+    "score": 38,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward"
   },
   {
     "title": "Fixing the bounty award system",
