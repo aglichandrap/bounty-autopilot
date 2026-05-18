@@ -36,10 +36,19 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
+    "title": "Bug: Contributor registry allows unauthenticated registration with arbitrary GitHub usernames",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/4911",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-18T18:47:42Z",
+    "score": 51,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
     "title": "Create wallet benchmarks",
     "url": "https://github.com/tari-project/wallet-benchmarks/issues/1",
     "repository_url": "https://github.com/tari-project/wallet-benchmarks",
-    "updated_at": "2026-05-18T15:03:37Z",
+    "updated_at": "2026-05-18T19:44:07Z",
     "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
@@ -57,37 +66,10 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T17:46:04Z",
+    "updated_at": "2026-05-18T19:47:29Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "Create Wiki Page - Zimppy.xyz",
-    "url": "https://github.com/ZecHub/zechub/issues/1566",
-    "repository_url": "https://github.com/ZecHub/zechub",
-    "updated_at": "2026-05-18T02:12:07Z",
-    "score": 39,
-    "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "BGL PR bounty hunt ($10000 overall budget)",
-    "url": "https://github.com/BitgesellOfficial/bitgesell/issues/39",
-    "repository_url": "https://github.com/BitgesellOfficial/bitgesell",
-    "updated_at": "2026-05-18T17:06:20Z",
-    "score": 38,
-    "amount_hint": "$10000, $500",
-    "reason": "mentions bounty/reward, has visible amount, busy thread"
-  },
-  {
-    "title": "Acqui-hires, AI Slop, and PE Takeovers",
-    "url": "https://github.com/thevibeworks/claude-reads-hn/issues/986",
-    "repository_url": "https://github.com/thevibeworks/claude-reads-hn",
-    "updated_at": "2026-05-18T18:00:22Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Fixing the bounty award system",
@@ -106,5 +88,23 @@
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Sync Issue-Assigned property from GH to LB",
+    "url": "https://github.com/Lightning-Bounties/progress-tracker/issues/53",
+    "repository_url": "https://github.com/Lightning-Bounties/progress-tracker",
+    "updated_at": "2025-05-08T13:14:16Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[Tutorial] Decoding Error 1010: What 'Invalid Transaction' Actually Means",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/318",
+    "repository_url": "https://github.com/midnightntwrk/contributor-hub",
+    "updated_at": "2026-05-18T20:02:43Z",
+    "score": 34,
+    "amount_hint": "$300, $500",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
   }
 ]
