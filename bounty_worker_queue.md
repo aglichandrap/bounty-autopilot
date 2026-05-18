@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-18 21:41 UTC
+Last built: 2026-05-18 23:32 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,13 +23,13 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: feat(web): aggregate bounty volume across tokens in CELO units (B92)
+## Queue Item 2: [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
-- Issue: https://github.com/yeheskieltame/claudelance/issues/293
-- Repository: https://github.com/yeheskieltame/claudelance
-- Amount hint: $0.40, 18, USD
-- Score: 60
-- Match reason: mentions bounty/reward, has visible amount, low discussion volume
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Repository: https://github.com/midnightntwrk/contributor-hub
+- Amount hint: $300, $500
+- Score: 59
+- Match reason: mentions bounty/reward, has visible amount
 
 ### Worker Instructions
 
@@ -41,11 +41,11 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: Support WASIX in Zig
+## Queue Item 3: [Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw
 
-- Issue: https://github.com/wasmerio/wasmer/issues/4218
-- Repository: https://github.com/wasmerio/wasmer
-- Amount hint: $5,000
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/287
+- Repository: https://github.com/midnightntwrk/contributor-hub
+- Amount hint: $300, $500
 - Score: 59
 - Match reason: mentions bounty/reward, has visible amount
 

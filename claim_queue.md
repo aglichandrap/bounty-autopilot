@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-18 21:49 UTC
+Last built: 2026-05-18 23:32 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -43,10 +43,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### feat(web): aggregate bounty volume across tokens in CELO units (B92)
+### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
-- URL: https://github.com/yeheskieltame/claudelance/issues/293
-- Amount: $0.40, 18, USD
+- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Amount: $300, $500
 - Claim comment if rules allow:
 
 ```text
@@ -59,10 +59,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### Support WASIX in Zig
+### [Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw
 
-- URL: https://github.com/wasmerio/wasmer/issues/4218
-- Amount: $5,000
+- URL: https://github.com/midnightntwrk/contributor-hub/issues/287
+- Amount: $300, $500
 - Claim comment if rules allow:
 
 ```text

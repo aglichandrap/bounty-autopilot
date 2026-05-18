@@ -9,24 +9,6 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "feat(web): aggregate bounty volume across tokens in CELO units (B92)",
-    "url": "https://github.com/yeheskieltame/claudelance/issues/293",
-    "repository_url": "https://github.com/yeheskieltame/claudelance",
-    "updated_at": "2026-05-18T21:36:54Z",
-    "score": 60,
-    "amount_hint": "$0.40, 18, USD",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "Support WASIX in Zig",
-    "url": "https://github.com/wasmerio/wasmer/issues/4218",
-    "repository_url": "https://github.com/wasmerio/wasmer",
-    "updated_at": "2026-05-18T21:19:47Z",
-    "score": 59,
-    "amount_hint": "$5,000",
-    "reason": "mentions bounty/reward, has visible amount"
-  },
-  {
     "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
     "repository_url": "https://github.com/midnightntwrk/contributor-hub",
@@ -45,11 +27,11 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2026-05-17T11:11:31Z",
-    "score": 39,
+    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/137",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-18T23:07:04Z",
+    "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -57,10 +39,28 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T21:07:36Z",
+    "updated_at": "2026-05-18T23:07:13Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/215",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-18T23:07:01Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2026-05-17T11:11:31Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Create wallet benchmarks",
@@ -99,12 +99,12 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[Tutorial] Decoding Error 1010: What 'Invalid Transaction' Actually Means",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/318",
-    "repository_url": "https://github.com/midnightntwrk/contributor-hub",
-    "updated_at": "2026-05-18T20:02:43Z",
-    "score": 34,
-    "amount_hint": "$300, $500",
-    "reason": "mentions bounty/reward, has visible amount, busy thread"
+    "title": "帝国数字服务清单 - $1起，接受USDT TRC20支付",
+    "url": "https://github.com/jiezishu000/empire-digital-shop/issues/1",
+    "repository_url": "https://github.com/jiezishu000/empire-digital-shop",
+    "updated_at": "2026-05-18T19:47:29Z",
+    "score": 30,
+    "amount_hint": "$1",
+    "reason": "has visible amount, low discussion volume"
   }
 ]
