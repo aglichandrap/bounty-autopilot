@@ -9,51 +9,6 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
-    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
-    "repository_url": "https://github.com/tenstorrent/tt-metal",
-    "updated_at": "2026-05-17T23:11:08Z",
-    "score": 64,
-    "amount_hint": "$3, Bounty $3",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "PR Review Batch - 11 PRs - [RTC]",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10821",
-    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
-    "updated_at": "2026-05-17T22:45:58Z",
-    "score": 47,
-    "amount_hint": "bounty 443",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "PR Review: RustChain PR #5612 merkle-validation test import",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10803",
-    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
-    "updated_at": "2026-05-17T21:32:42Z",
-    "score": 47,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "P2P merkle validation test exits during collection without RC_P2P_SECRET",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/5511",
-    "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-17T21:27:38Z",
-    "score": 47,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "PR Review: RustChain PR #5609 PPC wallet compatibility",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10787",
-    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
-    "updated_at": "2026-05-17T21:02:59Z",
-    "score": 47,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
     "title": "Quest Board Table Component (Mercenary Jobs List)",
     "url": "https://github.com/godamongstmen897/loot-vault/issues/5",
     "repository_url": "https://github.com/godamongstmen897/loot-vault",
@@ -63,48 +18,93 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/137",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T23:13:10Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Bug: Rent-a-Relic reserve crashes on non-string JSON fields",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/5604",
-    "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-17T21:40:40Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Bug: testnet faucet crashes on non-string JSON fields",
-    "url": "https://github.com/Scottcjn/Rustchain/issues/5602",
-    "repository_url": "https://github.com/Scottcjn/Rustchain",
-    "updated_at": "2026-05-17T21:27:04Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/215",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T23:13:26Z",
+    "title": "decentralization (off-chain): cross-authority handoff issue/present/accept path",
+    "url": "https://github.com/cenetex/signal/issues/479",
+    "repository_url": "https://github.com/cenetex/signal",
+    "updated_at": "2026-05-18T04:36:25Z",
     "score": 39,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-17T23:13:05Z",
+    "updated_at": "2026-05-18T04:19:34Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2026-05-17T11:11:31Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create Wiki Page - Zimppy.xyz",
+    "url": "https://github.com/ZecHub/zechub/issues/1566",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-18T02:12:07Z",
+    "score": 39,
+    "amount_hint": "Bounty: 0",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create Wiki Page - Zimppy.xyz",
+    "url": "https://github.com/ZecHub/zechub/issues/1567",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-18T02:12:06Z",
+    "score": 39,
+    "amount_hint": "Bounty: 0",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "BGL PR bounty hunt ($10000 overall budget)",
+    "url": "https://github.com/BitgesellOfficial/bitgesell/issues/39",
+    "repository_url": "https://github.com/BitgesellOfficial/bitgesell",
+    "updated_at": "2026-05-18T03:57:33Z",
+    "score": 38,
+    "amount_hint": "$10000, $500",
+    "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "Fixing the bounty award system",
+    "url": "https://github.com/ResearchHub/issues/issues/531",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:39Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create a Bounty Amount Box Issue",
+    "url": "https://github.com/ResearchHub/issues/issues/540",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:37Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Sync Issue-Assigned property from GH to LB",
+    "url": "https://github.com/Lightning-Bounties/progress-tracker/issues/53",
+    "repository_url": "https://github.com/Lightning-Bounties/progress-tracker",
+    "updated_at": "2025-05-08T13:14:16Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create Wiki Page - CipherScan",
+    "url": "https://github.com/ZecHub/zechub/issues/1575",
+    "repository_url": "https://github.com/ZecHub/zechub",
+    "updated_at": "2026-05-17T18:42:08Z",
+    "score": 35,
+    "amount_hint": "Bounty: 0",
+    "reason": "mentions bounty/reward, low discussion volume"
   }
 ]

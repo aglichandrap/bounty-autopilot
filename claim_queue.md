@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-17 23:35 UTC
+Last built: 2026-05-18 04:45 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -43,10 +43,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [Bounty $3k] Optimise exp2 fp32/bf16
+### Create Wiki Page - Zimppy.xyz
 
-- URL: https://github.com/tenstorrent/tt-metal/issues/44507
-- Amount: $3, Bounty $3
+- URL: https://github.com/ZecHub/zechub/issues/1566
+- Amount: Bounty: 0
 - Claim comment if rules allow:
 
 ```text
@@ -59,10 +59,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### PR Review Batch - 11 PRs - [RTC]
+### Create Wiki Page - Zimppy.xyz
 
-- URL: https://github.com/Scottcjn/rustchain-bounties/issues/10821
-- Amount: bounty 443
+- URL: https://github.com/ZecHub/zechub/issues/1567
+- Amount: Bounty: 0
 - Claim comment if rules allow:
 
 ```text
