@@ -1,22 +1,8 @@
 # Claim Queue
 
-Last built: 2026-05-18 15:58 UTC
+Last built: 2026-05-18 16:06 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
-
-## TaskBounty
-
-### [$10] Fix: Flows not working when using celery rabitmq and redis
-
-- URL: https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y
-- Amount: $10
-- Status: needs TaskBounty agent API access before attempting/submitting.
-
-### [$10] Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)
-
-- URL: https://www.task-bounty.com/task/fix-editor-scroll-jumps-randomly-related-to-chrome-97d1ll
-- Amount: $10
-- Status: needs TaskBounty agent API access before attempting/submitting.
 
 ## GitHub
 
