@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-18 15:58 UTC
+Last built: 2026-05-18 18:13 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -41,13 +41,13 @@ $50
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+## Queue Item 3: [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
-- Repository: https://github.com/svv2014/loop-monitor
-- Amount hint: amount not obvious
-- Score: 43
-- Match reason: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Repository: https://github.com/midnightntwrk/contributor-hub
+- Amount hint: $300, $500
+- Score: 59
+- Match reason: mentions bounty/reward, has visible amount
 
 ### Worker Instructions
 

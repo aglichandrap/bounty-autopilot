@@ -18,13 +18,22 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
-    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/137",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T15:43:32Z",
-    "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
+    "repository_url": "https://github.com/midnightntwrk/contributor-hub",
+    "updated_at": "2026-05-18T16:50:17Z",
+    "score": 59,
+    "amount_hint": "$300, $500",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "[Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw",
+    "url": "https://github.com/midnightntwrk/contributor-hub/issues/287",
+    "repository_url": "https://github.com/midnightntwrk/contributor-hub",
+    "updated_at": "2026-05-18T16:50:15Z",
+    "score": 59,
+    "amount_hint": "$300, $500",
+    "reason": "mentions bounty/reward, has visible amount"
   },
   {
     "title": "Create wallet benchmarks",
@@ -32,24 +41,6 @@
     "repository_url": "https://github.com/tari-project/wallet-benchmarks",
     "updated_at": "2026-05-18T15:03:37Z",
     "score": 43,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
-    "url": "https://github.com/svv2014/loop-monitor/issues/109",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T15:43:43Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "v2 UI missing per-ticket timeline drill-down (regression from prototype)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/215",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-18T15:43:29Z",
-    "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
@@ -63,6 +54,15 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
+    "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
+    "url": "https://github.com/svv2014/loop-monitor/issues/109",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-18T17:46:04Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+  },
+  {
     "title": "Create Wiki Page - Zimppy.xyz",
     "url": "https://github.com/ZecHub/zechub/issues/1566",
     "repository_url": "https://github.com/ZecHub/zechub",
@@ -72,22 +72,22 @@
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "Create Wiki Page - Zimppy.xyz",
-    "url": "https://github.com/ZecHub/zechub/issues/1567",
-    "repository_url": "https://github.com/ZecHub/zechub",
-    "updated_at": "2026-05-18T02:12:06Z",
-    "score": 39,
-    "amount_hint": "Bounty: 0",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
     "title": "BGL PR bounty hunt ($10000 overall budget)",
     "url": "https://github.com/BitgesellOfficial/bitgesell/issues/39",
     "repository_url": "https://github.com/BitgesellOfficial/bitgesell",
-    "updated_at": "2026-05-18T15:01:49Z",
+    "updated_at": "2026-05-18T17:06:20Z",
     "score": 38,
     "amount_hint": "$10000, $500",
     "reason": "mentions bounty/reward, has visible amount, busy thread"
+  },
+  {
+    "title": "Acqui-hires, AI Slop, and PE Takeovers",
+    "url": "https://github.com/thevibeworks/claude-reads-hn/issues/986",
+    "repository_url": "https://github.com/thevibeworks/claude-reads-hn",
+    "updated_at": "2026-05-18T18:00:22Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Fixing the bounty award system",

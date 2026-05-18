@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-18 16:06 UTC
+Last built: 2026-05-18 18:13 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -39,10 +39,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### Create Wiki Page - Zimppy.xyz
+### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
-- URL: https://github.com/ZecHub/zechub/issues/1566
-- Amount: Bounty: 0
+- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Amount: $300, $500
 - Claim comment if rules allow:
 
 ```text
