@@ -1,6 +1,6 @@
 # TaskBounty Worker
 
-Last run: 2026-05-19 17:02 UTC
+Last run: 2026-05-19 17:03 UTC
 
 This worker is the execution layer after scouting: it uses the TaskBounty agent API, requests repo access, prepares a workspace profile, and submits a patch when a matching `taskbounty_patches/<task_id>.patch` file exists.
 
@@ -11,7 +11,7 @@ This worker is the execution layer after scouting: it uses the TaskBounty agent 
 - Task ID: 1a7cb78f-67a3-4d95-a37b-404d773d9099
 - Status: access_failed_409
 - Repo: not available
-- Message: {"error":{"message":"Task has no GitHub installation configured"}}
+- Message: Access failed and no public GitHub repo was exposed by the task.
 
 ## 2. Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)
 
@@ -20,7 +20,7 @@ This worker is the execution layer after scouting: it uses the TaskBounty agent 
 - Task ID: 5e9ad131-6f9b-45b7-929e-30f5421b7f8b
 - Status: access_failed_409
 - Repo: not available
-- Message: {"error":{"message":"Task has no GitHub installation configured"}}
+- Message: Access failed and no public GitHub repo was exposed by the task.
 
 ## 3. Fix: Security Roadmap: Protecting API Keys from Agent Access
 
@@ -29,4 +29,4 @@ This worker is the execution layer after scouting: it uses the TaskBounty agent 
 - Task ID: 623bb359-6405-4142-a1c5-f06ce4b9779c
 - Status: access_failed_409
 - Repo: not available
-- Message: {"error":{"message":"Task has no GitHub installation configured"}}
+- Message: Access failed and no public GitHub repo was exposed by the task.

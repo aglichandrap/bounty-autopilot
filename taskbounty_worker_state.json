@@ -8,7 +8,7 @@
     "repo_url": null,
     "repo_profile": null,
     "submission_id": null,
-    "message": "{\"error\":{\"message\":\"Task has no GitHub installation configured\"}}"
+    "message": "Access failed and no public GitHub repo was exposed by the task."
   },
   {
     "task_id": "5e9ad131-6f9b-45b7-929e-30f5421b7f8b",
@@ -19,7 +19,7 @@
     "repo_url": null,
     "repo_profile": null,
     "submission_id": null,
-    "message": "{\"error\":{\"message\":\"Task has no GitHub installation configured\"}}"
+    "message": "Access failed and no public GitHub repo was exposed by the task."
   },
   {
     "task_id": "623bb359-6405-4142-a1c5-f06ce4b9779c",
@@ -30,6 +30,6 @@
     "repo_url": null,
     "repo_profile": null,
     "submission_id": null,
-    "message": "{\"error\":{\"message\":\"Task has no GitHub installation configured\"}}"
+    "message": "Access failed and no public GitHub repo was exposed by the task."
   }
 ]
