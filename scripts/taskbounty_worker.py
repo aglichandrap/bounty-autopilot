@@ -200,9 +200,13 @@ def github_repo_from_task(task: dict[str, Any]) -> str:
     if issue_url_match:
         return f"https://github.com/{issue_url_match.group(1)}"
 
+    repo_match = re.search(r"issue\s+#\d+.*?\bin\s+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)", text, flags=re.I)
+    if repo_match:
+        return f"https://github.com/{repo_match.group(1).rstrip('.')}"
+
     repo_match = re.search(r"\bin\s+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+).*?issue\s+#\d+", text, flags=re.I)
     if repo_match:
-        return f"https://github.com/{repo_match.group(1)}"
+        return f"https://github.com/{repo_match.group(1).rstrip('.')}"
     return ""
 
 
@@ -262,6 +266,16 @@ def process_task(task: dict[str, Any], token: str, agent_id: str, clone_repos: b
     if not result.task_id:
         result.status = "skipped"
         result.message = "Task has no task_id."
+        return result
+
+    triage_decision = str(task.get("triage_decision") or "").lower()
+    if triage_decision in {"blocked", "crowded", "hard"}:
+        result.status = f"triage_skipped_{triage_decision}"
+        reasons = task.get("triage_reasons")
+        if isinstance(reasons, list) and reasons:
+            result.message = "; ".join(str(reason) for reason in reasons[:4])
+        else:
+            result.message = "Skipped by TaskBounty triage."
         return result
 
     patch_file = PATCH_DIR / f"{result.task_id}.patch"
