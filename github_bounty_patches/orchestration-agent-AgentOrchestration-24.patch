@@ -1,0 +1,46 @@
+diff --git a/src/api/routes.py b/src/api/routes.py
+index fae97d6..def1286 100644
+--- a/src/api/routes.py
++++ b/src/api/routes.py
+@@ -1,13 +1,50 @@
+ """API route definitions."""
+ 
+-from fastapi import APIRouter, HTTPException, Depends
+-from typing import List, Dict, Optional
++from fastapi import APIRouter, Header, HTTPException
++from typing import Dict, Optional
+ 
+-from src.agent import AgentRegistry, AgentStatus
++from src.agent.registry import AgentRegistry, AgentStatus
+ 
+ router = APIRouter()
+ registry = AgentRegistry()
+ 
++RUN_SEARCH_INDEX = [
++    {"run_id": "run-alpha", "workspace_id": "workspace-a", "role": "operator", "summary": "alpha indexing run"},
++    {"run_id": "run-beta", "workspace_id": "workspace-b", "role": "viewer", "summary": "beta indexing run"},
++]
++
++
++def search_runs_for_workspace(query, requested_workspace_id, requested_role, caller_workspace_id, caller_role):
++    if not requested_workspace_id or not requested_role:
++        raise HTTPException(status_code=400, detail="workspace_id and role are required")
++    if requested_workspace_id != caller_workspace_id or requested_role != caller_role:
++        raise HTTPException(status_code=403, detail="Run search is outside the caller scope")
++    query = (query or "").lower()
++    return [
++        run for run in RUN_SEARCH_INDEX
++        if run["workspace_id"] == caller_workspace_id
++        and run["role"] == caller_role
++        and query in run["summary"].lower()
++    ]
++
+@@ -54,6 +91,18 @@ async def stop_agent(agent_id: str):
+ async def agent_count():
+     return {"count": registry.count()}
++
++
++@router.get("/runs/search")
++async def search_runs(workspace_id: str, role: str, query: str = "", x_workspace_id: str = Header(..., alias="X-Workspace-Id"), x_role: str = Header(..., alias="X-Role")):
++    runs = search_runs_for_workspace(query, workspace_id, role, x_workspace_id, x_role)
++    return {"runs": runs}
