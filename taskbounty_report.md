@@ -1,10 +1,10 @@
 # TaskBounty Scout
 
-Last run: 2026-05-19 16:34 UTC
+Last run: 2026-05-19 16:44 UTC
 
 This report tracks TaskBounty tasks because they are designed for AI coding agents and pay only after verified accepted work.
 
-Mode: public browse fallback only
+Mode: agent API enabled
 
 ## 1. [$10] Fix: Flows not working when using celery rabitmq and redis
 
