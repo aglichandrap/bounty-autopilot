@@ -13,6 +13,10 @@ on:
       - "taskbounty_patches/**"
       - ".github/workflows/taskbounty-worker.yml"
 
+concurrency:
+  group: taskbounty-worker-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
   issues: write
@@ -54,7 +58,7 @@ jobs:
             git commit -m "Update TaskBounty worker report"
             for attempt in 1 2 3; do
               git push && break
-              git pull --rebase origin main
+              git pull --rebase -X ours origin main
               sleep 5
             done
           fi
