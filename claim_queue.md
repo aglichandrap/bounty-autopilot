@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-19 21:57 UTC
+Last built: 2026-05-19 22:12 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -20,42 +20,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### [ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions
+### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
-- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/68
-- Amount: $6, $6000, Bounty $6, bounty $6000
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
-
-- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/19
-- Amount: $3, $3000, Bounty $3, bounty $3000
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
-
-- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/12
-- Amount: $4, $4000, Bounty $4, bounty $4000
+- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Amount: $300, $500
 - Claim comment if rules allow:
 
 ```text

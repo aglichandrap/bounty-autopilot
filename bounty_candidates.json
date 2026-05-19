@@ -1,84 +1,27 @@
 [
   {
-    "title": "[ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/68",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T21:19:23Z",
-    "score": 80,
-    "amount_hint": "$6, $6000, Bounty $6, bounty $6000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/19",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T20:02:47Z",
-    "score": 80,
-    "amount_hint": "$3, $3000, Bounty $3, bounty $3000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/12",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T19:55:53Z",
-    "score": 80,
-    "amount_hint": "$4, $4000, Bounty $4, bounty $4000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Bounty $6k ] [ Docker ] Remove build arguments from final layers — image metadata",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/78",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T21:46:06Z",
-    "score": 76,
-    "amount_hint": "$6, $6000, Bounty $6, bounty $6000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Bounty $4k ] [ API ] Prevent partial batch update success masking failures — agent config API",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/73",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T21:42:23Z",
-    "score": 76,
-    "amount_hint": "$4, $4000, Bounty $4, bounty $4000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/24",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T19:23:08Z",
-    "score": 71,
-    "amount_hint": "$4, $4000, Bounty $4, bounty $4000",
-    "reason": "mentions bounty/reward, has visible amount"
-  },
-  {
-    "title": "Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output",
-    "url": "https://github.com/thesysdev/openui-creator-program/issues/3",
-    "repository_url": "https://github.com/thesysdev/openui-creator-program",
-    "updated_at": "2026-05-19T17:33:51Z",
-    "score": 63,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, has visible amount"
-  },
-  {
     "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
     "repository_url": "https://github.com/midnightntwrk/contributor-hub",
     "updated_at": "2026-05-19T06:08:12Z",
     "score": 59,
     "amount_hint": "$300, $500",
-    "reason": "mentions bounty/reward, has visible amount"
+    "reason": "mentions bounty/reward, has visible amount",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
   },
   {
     "title": "[WIKI-PATCH] External long-run checkpoint/resume provenance primitive for Goal-bound research runs",
     "url": "https://github.com/Jonnyton/Workflow/issues/918",
     "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-19T21:43:23Z",
+    "updated_at": "2026-05-19T22:11:35Z",
     "score": 43,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "reason": "mentions bounty/reward, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
   },
   {
     "title": "Token Stripping",
@@ -87,7 +30,34 @@
     "updated_at": "2026-05-19T18:54:27Z",
     "score": 43,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "reason": "mentions bounty/reward, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  },
+  {
+    "title": "[BUG-090] build_branch accepts goal_id but does not bind the created Branch to the Goal",
+    "url": "https://github.com/Jonnyton/Workflow/issues/921",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-19T22:10:46Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  },
+  {
+    "title": "[BUG-089] Goal-bound science branch run failed immediately with AllProvidersExhaustedError",
+    "url": "https://github.com/Jonnyton/Workflow/issues/920",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-19T22:10:43Z",
+    "score": 39,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
   },
   {
     "title": "Sats to Local Currency | Mexico",
@@ -96,15 +66,21 @@
     "updated_at": "2026-05-17T11:11:31Z",
     "score": 39,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "reason": "mentions bounty/reward, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
   },
   {
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-19T21:13:20Z",
+    "updated_at": "2026-05-19T21:53:32Z",
     "score": 39,
     "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
+    "reason": "mentions bounty/reward, large issue body, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
   }
 ]
