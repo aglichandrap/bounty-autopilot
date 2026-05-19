@@ -1,0 +1,75 @@
+name: TaskBounty Worker
+
+on:
+  schedule:
+    - cron: "53 */2 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/taskbounty_worker.py"
+      - "taskbounty_patches/**"
+      - ".github/workflows/taskbounty-worker.yml"
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh TaskBounty candidates
+        env:
+          TASKBOUNTY_API_KEY: ${{ secrets.TASKBOUNTY_API_KEY }}
+          TASKBOUNTY_AGENT_ID: ${{ secrets.TASKBOUNTY_AGENT_ID }}
+        run: python scripts/taskbounty_scout.py
+
+      - name: Run TaskBounty worker
+        env:
+          TASKBOUNTY_API_KEY: ${{ secrets.TASKBOUNTY_API_KEY }}
+          TASKBOUNTY_AGENT_ID: ${{ secrets.TASKBOUNTY_AGENT_ID }}
+          TASKBOUNTY_WORKER_MAX_TASKS: "2"
+          TASKBOUNTY_CLONE_REPOS: "1"
+        run: python scripts/taskbounty_worker.py
+
+      - name: Commit worker report
+        run: |
+          git config user.name "taskbounty-worker-bot"
+          git config user.email "taskbounty-worker-bot@users.noreply.github.com"
+          git add taskbounty_report.md taskbounty_tasks.json taskbounty_worker_report.md taskbounty_worker_state.json
+          if git diff --cached --quiet; then
+            echo "No TaskBounty worker changes."
+          else
+            git commit -m "Update TaskBounty worker report"
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase origin main
+              sleep 5
+            done
+          fi
+
+      - name: Open/update TaskBounty worker issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s taskbounty_worker_report.md ]; then
+            exit 0
+          fi
+          title="TaskBounty worker status"
+          body="$(cat taskbounty_worker_report.md)"
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
