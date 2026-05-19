@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-19 16:44 UTC
+Last built: 2026-05-19 16:50 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -20,10 +20,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### [SHOWCASE] Multi-Agent System Built for This Bounty Board
+### [ Bounty $4k ] [ Registry ] Pin resolved handler per attempt — mid-run registry updates
 
-- URL: https://github.com/SecureBananaLabs/bug-bounty/issues/313
-- Amount: $430, $780, $1,210
+- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/8
+- Amount: $4, $4000, Bounty $4, bounty $4000
 - Claim comment if rules allow:
 
 ```text
@@ -36,10 +36,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [RESOURCE] Claude Code Skill Pack - 5 AI Workflows for Bounty Hunting
+### [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
 
-- URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1695
-- Amount: $1,785, $9, $50, $200
+- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/6
+- Amount: $3, $3000, Bounty $3, bounty $3000
 - Claim comment if rules allow:
 
 ```text
@@ -52,10 +52,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+### [ Bounty $5k ] [ Config ] Validate sandbox resource limit config — config-to-sandbox boundary
 
-- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
-- Amount: $300, $500
+- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/5
+- Amount: $5, $5000, Bounty $5, bounty $5000
 - Claim comment if rules allow:
 
 ```text
