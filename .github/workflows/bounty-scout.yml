@@ -8,9 +8,15 @@ on:
     branches:
       - main
     paths:
-      - "scripts/**"
+      - "scripts/bounty_scout.py"
+      - "scripts/bounty_worker_queue.py"
+      - "scripts/claim_queue.py"
       - "bounty_extra_queries.txt"
       - ".github/workflows/bounty-scout.yml"
+
+concurrency:
+  group: bounty-scout-main
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -49,7 +55,7 @@ jobs:
             git commit -m "Update bounty scout report"
             for attempt in 1 2 3; do
               git push && break
-              git pull --rebase origin main
+              git pull --rebase -X ours origin main
               sleep 5
             done
           fi
