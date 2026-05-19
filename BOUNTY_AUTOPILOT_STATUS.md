@@ -10,6 +10,7 @@
 - Codex scout automation: active every 2 hours.
 - Codex worker automation: active every 2 hours.
 - TaskBounty solver automation: active every 2 hours.
+- Bounty reply monitor: active every 1 hour.
 - Online GitHub repo: deployed to `asaadnashed/bounty-autopilot`.
 - TaskBounty credentials: configured as repository secrets.
 
@@ -17,11 +18,15 @@
 
 - Prepared and locally tested a patch for `orchestration-agent/AgentOrchestration` issue #12.
 - Local verification: `uv run pytest tests/test_config.py -q` returned `7 passed`.
-- Submission is currently blocked because the bounty requires starring the upstream repository, and the configured `BOUNTY_GITHUB_TOKEN` does not have GitHub Starring permission.
+- Fork exists: `asaadnashed/AgentOrchestration`.
+- Branch exists: `bounty-12-config-branch-scalar-conflict`.
+- Patch has been pushed to the fork branch.
+- Creating the upstream PR through the GitHub integration was blocked by GitHub with `Resource not accessible by integration`.
+- Direct PR URL: https://github.com/orchestration-agent/AgentOrchestration/compare/main...asaadnashed:AgentOrchestration:bounty-12-config-branch-scalar-conflict?expand=1
 
 ## Next Milestone
 
-Either update `BOUNTY_GITHUB_TOKEN` with permission to star/fork/create PRs for public repositories, or keep the worker focused on no-star bounties while the blocker remains.
+Open the direct PR URL once if browser approval is required by GitHub, then the reply monitor can follow reviewer comments. Also confirm the upstream repository is starred because issue #12 says starring is required for bounty payout eligibility.
 
 ## Financial Status
 
