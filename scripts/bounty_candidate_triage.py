@@ -18,6 +18,11 @@ GITHUB_API = "https://api.github.com"
 OWNER_LOGIN = os.environ.get("BOUNTY_OWNER_LOGIN", "asaadnashed").lower()
 MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "25"))
 MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "0"))
+PAID_LABEL_WORDS = ("bounty", "reward", "paid", "grant", "microgrant")
+NO_PAY_PATTERN = re.compile(
+    r"\b(no paid bounty|no bounty|not paid|unpaid|free[- ]?ok|volunteer only|no compensation)\b"
+)
+MONEY_PATTERN = re.compile(r"(?:usd\s*)?\$\s*\d|(?:\b\d+\s*(?:usd|usdc)\b)", re.IGNORECASE)
 
 
 @dataclass
@@ -99,6 +104,19 @@ def comments_indicate_competition(repo: str, issue_number: int, token: str | Non
     )
 
 
+def has_paid_signal(candidate: dict[str, Any], labels: set[str], issue_text: str) -> bool:
+    candidate_text = " ".join(
+        clean(str(candidate.get(key) or ""))
+        for key in ("title", "amount_hint", "reason", "source")
+    ).lower()
+    combined = f"{candidate_text} {issue_text} {' '.join(labels)}"
+    return (
+        MONEY_PATTERN.search(combined) is not None
+        or "microgrant" in combined
+        or any(any(word in label for word in PAID_LABEL_WORDS) for label in labels)
+    )
+
+
 def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict[str, Any] | None, TriageEntry]:
     title = clean(str(candidate.get("title") or "Untitled"))
     url = clean(str(candidate.get("url") or ""))
@@ -126,6 +144,15 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
                 if isinstance(label, dict)
             }
             issue_text = f"{title} {issue.get('body') or ''}".lower()
+
+            if NO_PAY_PATTERN.search(issue_text) or any("free-ok" in label for label in labels):
+                decision = "drop"
+                reasons.append("issue explicitly indicates no paid bounty or free-only payment status")
+                final_score -= 100
+            elif not has_paid_signal(candidate, labels, issue_text):
+                decision = "drop"
+                reasons.append("no clear paid bounty signal found")
+                final_score -= 70
 
             if (
                 "content-proposal" in labels
@@ -205,7 +232,7 @@ def write_report(entries: list[TriageEntry], kept_count: int) -> None:
         "",
         f"Kept candidates: {kept_count}",
         "",
-        "This pass removes crowded, assigned, closed, or already-attempted GitHub bounty issues before worker time is spent.",
+        "This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub bounty issues before worker time is spent.",
         "",
     ]
     if not entries:
