@@ -1,16 +1,16 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-19 22:12 UTC
+Last built: 2026-05-19 22:22 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+## Queue Item 1: [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
 
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/298
-- Repository: https://github.com/midnightntwrk/contributor-hub
-- Amount hint: $300, $500
-- Score: 59
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Score: 80
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
 
 ### Worker Instructions
 

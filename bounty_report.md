@@ -1,10 +1,20 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-19 22:12 UTC
+Last run: 2026-05-19 22:22 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
+## 1. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
+
+- Score: 80
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-19T22:16:10Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
 
 - Score: 80
 - Amount hint: $3, $3000, Bounty $3, bounty $3000
@@ -14,23 +24,13 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+## 3. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
 
 - Score: 80
 - Amount hint: $4, $4000, Bounty $4, bounty $4000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/12
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
 - Updated: 2026-05-19T19:55:53Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [ Bounty $4k ] [ API ] Prevent partial batch update success masking failures — agent config API
-
-- Score: 76
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/73
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T22:03:34Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -70,7 +70,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Amount hint: amount not obvious
 - Issue: https://github.com/Jonnyton/Workflow/issues/918
 - Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-19T22:11:35Z
+- Updated: 2026-05-19T22:12:17Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 

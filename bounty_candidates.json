@@ -1,12 +1,12 @@
 [
   {
-    "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
-    "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
-    "repository_url": "https://github.com/midnightntwrk/contributor-hub",
-    "updated_at": "2026-05-19T06:08:12Z",
-    "score": 59,
-    "amount_hint": "$300, $500",
-    "reason": "mentions bounty/reward, has visible amount",
+    "title": "[ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading",
+    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/88",
+    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
+    "updated_at": "2026-05-19T22:16:10Z",
+    "score": 80,
+    "amount_hint": "$4, $4000, Bounty $4, bounty $4000",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume",
     "triage_decision": "keep",
     "triage_reasons": [],
     "linked_prs": []
@@ -15,7 +15,7 @@
     "title": "[WIKI-PATCH] External long-run checkpoint/resume provenance primitive for Goal-bound research runs",
     "url": "https://github.com/Jonnyton/Workflow/issues/918",
     "repository_url": "https://github.com/Jonnyton/Workflow",
-    "updated_at": "2026-05-19T22:11:35Z",
+    "updated_at": "2026-05-19T22:12:17Z",
     "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume",

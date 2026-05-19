@@ -1,30 +1,29 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-19 22:12 UTC
+Last run: 2026-05-19 22:22 UTC
 
 Kept candidates: 7
 
 This pass removes crowded, assigned, closed, or already-attempted GitHub bounty issues before worker time is spent.
 
-## 1. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
+## 1. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
+
+- Decision: keep
+- Score: 80 -> 80
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
+
+## 2. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
 
 - Decision: drop
 - Score: 80 -> 20
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/19
 - Reason: issue comments indicate active attempts or claims
 
-## 2. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+## 3. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
 
 - Decision: drop
 - Score: 80 -> 20
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/12
-- Reason: issue comments indicate active attempts or claims
-
-## 3. [ Bounty $4k ] [ API ] Prevent partial batch update success masking failures — agent config API
-
-- Decision: drop
-- Score: 76 -> 16
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/73
 - Reason: issue comments indicate active attempts or claims
 
 ## 4. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
@@ -43,9 +42,10 @@ This pass removes crowded, assigned, closed, or already-attempted GitHub bounty 
 
 ## 6. [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
-- Decision: keep
-- Score: 59 -> 59
+- Decision: drop
+- Score: 59 -> -41
 - Issue: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Reason: content bounty has AI-content disqualification risk for autonomous work
 
 ## 7. [WIKI-PATCH] External long-run checkpoint/resume provenance primitive for Goal-bound research runs
 
