@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-19 16:50 UTC
+Last run: 2026-05-19 16:55 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -30,11 +30,21 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Amount hint: $5, $5000, Bounty $5, bounty $5000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/5
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T16:33:13Z
+- Updated: 2026-05-19T16:54:54Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [Bounty $3k] Optimise exp2 fp32/bf16
+## 4. TaskBounty worker status
+
+- Score: 68
+- Amount hint: $10
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-19T16:49:40Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. [Bounty $3k] Optimise exp2 fp32/bf16
 
 - Score: 59
 - Amount hint: $3, Bounty $3
@@ -44,7 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+## 6. [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
 - Score: 59
 - Amount hint: $300, $500
@@ -54,47 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-19T16:32:09Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-19T16:32:15Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Crash in [Combat] dialog (Combat, Human vs AI) EIP: H3era hd.00495B60. Code: C0000005
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/ERA-Projects/era-project-eng/issues/750
-- Repository: https://github.com/ERA-Projects/era-project-eng
-- Updated: 2026-05-19T16:30:43Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. NSS fall-through to libnss_himmelblau generates wasted GetCredentialType probes, hits Entra per-IP enumeration throttle
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/himmelblau-idm/himmelblau/issues/1392
-- Repository: https://github.com/himmelblau-idm/himmelblau
-- Updated: 2026-05-19T16:28:24Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. Sats to Local Currency | Mexico
+## 7. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -104,7 +74,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Linux miner dry-run on Windows reports CPU Unknown without platform warning
+## 8. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-19T16:32:15Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. Linux miner dry-run on Windows reports CPU Unknown without platform warning
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -114,12 +94,32 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Fixing the bounty award system
+## 10. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
 - Issue: https://github.com/ResearchHub/issues/issues/531
 - Repository: https://github.com/ResearchHub/issues
 - Updated: 2026-01-20T06:50:39Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. Create a Bounty Amount Box Issue
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. Sync Issue-Assigned property from GH to LB
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

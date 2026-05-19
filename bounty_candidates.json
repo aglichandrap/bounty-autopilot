@@ -21,9 +21,18 @@
     "title": "[ Bounty $5k ] [ Config ] Validate sandbox resource limit config — config-to-sandbox boundary",
     "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/5",
     "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T16:33:13Z",
+    "updated_at": "2026-05-19T16:54:54Z",
     "score": 72,
     "amount_hint": "$5, $5000, Bounty $5, bounty $5000",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "TaskBounty worker status",
+    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/5",
+    "repository_url": "https://github.com/asaadnashed/bounty-autopilot",
+    "updated_at": "2026-05-19T16:49:40Z",
+    "score": 68,
+    "amount_hint": "$10",
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
@@ -45,11 +54,11 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
-    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
-    "url": "https://github.com/svv2014/loop-monitor/issues/137",
-    "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-19T16:32:09Z",
-    "score": 43,
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2026-05-17T11:11:31Z",
+    "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
@@ -61,33 +70,6 @@
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "Crash in [Combat] dialog (Combat, Human vs AI) EIP: H3era hd.00495B60. Code: C0000005",
-    "url": "https://github.com/ERA-Projects/era-project-eng/issues/750",
-    "repository_url": "https://github.com/ERA-Projects/era-project-eng",
-    "updated_at": "2026-05-19T16:30:43Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "NSS fall-through to libnss_himmelblau generates wasted GetCredentialType probes, hits Entra per-IP enumeration throttle",
-    "url": "https://github.com/himmelblau-idm/himmelblau/issues/1392",
-    "repository_url": "https://github.com/himmelblau-idm/himmelblau",
-    "updated_at": "2026-05-19T16:28:24Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2026-05-17T11:11:31Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
   },
   {
     "title": "Linux miner dry-run on Windows reports CPU Unknown without platform warning",
@@ -103,6 +85,24 @@
     "url": "https://github.com/ResearchHub/issues/issues/531",
     "repository_url": "https://github.com/ResearchHub/issues",
     "updated_at": "2026-01-20T06:50:39Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Create a Bounty Amount Box Issue",
+    "url": "https://github.com/ResearchHub/issues/issues/540",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:37Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Sync Issue-Assigned property from GH to LB",
+    "url": "https://github.com/Lightning-Bounties/progress-tracker/issues/53",
+    "repository_url": "https://github.com/Lightning-Bounties/progress-tracker",
+    "updated_at": "2025-05-08T13:14:16Z",
     "score": 35,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
