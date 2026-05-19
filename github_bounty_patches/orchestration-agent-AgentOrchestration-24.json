@@ -1,0 +1,13 @@
+{
+  "repo": "orchestration-agent/AgentOrchestration",
+  "issue_number": 24,
+  "patch": "github_bounty_patches/orchestration-agent-AgentOrchestration-24.patch",
+  "branch": "bounty-24-scope-run-search",
+  "branch_ready": true,
+  "star_required": true,
+  "assume_starred": true,
+  "commit_message": "Scope run search queries to caller context",
+  "pr_title": "Scope run search queries to caller workspace and role",
+  "pr_body": "Fixes #24.\n\nThis adds a scoped run search path that validates the requested workspace and role against the caller context before returning indexed run data. Cross-workspace and cross-role searches now fail with a deterministic 403, while malformed scope input fails with a deterministic 400.\n\nImplementation notes:\n\n- Added a shared `search_runs_for_workspace` guard in `src/api/routes.py`.\n- Added `/api/v2/runs/search` route coverage for authorized, unauthorized, and malformed requests.\n- Kept `src.agent` imports usable on Windows by guarding the Unix-only `resource` dependency when importing `AgentSandbox`.\n\nVerification:\n\n```bash\nuv run pytest tests/test_run_search_api.py -q\n# 4 passed\n\nuv run pytest tests/test_agent_registry.py -q\n# 8 passed\n```\n\nI also tried the full test suite locally; it timed out after 124 seconds outside this change path, so I verified the new route coverage and the existing registry tests directly.",
+  "test_commands": []
+}
