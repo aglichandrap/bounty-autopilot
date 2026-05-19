@@ -27,15 +27,6 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "TaskBounty worker status",
-    "url": "https://github.com/asaadnashed/bounty-autopilot/issues/5",
-    "repository_url": "https://github.com/asaadnashed/bounty-autopilot",
-    "updated_at": "2026-05-19T16:49:40Z",
-    "score": 68,
-    "amount_hint": "$10",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
     "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
     "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
     "repository_url": "https://github.com/tenstorrent/tt-metal",

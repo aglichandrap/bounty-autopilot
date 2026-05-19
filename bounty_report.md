@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-19 16:55 UTC
+Last run: 2026-05-19 17:04 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -34,17 +34,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. TaskBounty worker status
-
-- Score: 68
-- Amount hint: $10
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-19T16:49:40Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. [Bounty $3k] Optimise exp2 fp32/bf16
+## 4. [Bounty $3k] Optimise exp2 fp32/bf16
 
 - Score: 59
 - Amount hint: $3, Bounty $3
@@ -54,7 +44,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+## 5. [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
 - Score: 59
 - Amount hint: $300, $500
@@ -64,7 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Sats to Local Currency | Mexico
+## 6. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -74,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 7. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -84,7 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Linux miner dry-run on Windows reports CPU Unknown without platform warning
+## 8. Linux miner dry-run on Windows reports CPU Unknown without platform warning
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -94,7 +84,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Fixing the bounty award system
+## 9. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -104,7 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Create a Bounty Amount Box Issue
+## 10. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -114,7 +104,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Sync Issue-Assigned property from GH to LB
+## 11. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious

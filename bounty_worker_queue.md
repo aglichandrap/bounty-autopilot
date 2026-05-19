@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-19 16:55 UTC
+Last built: 2026-05-19 17:04 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
