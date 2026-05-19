@@ -1,30 +1,20 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-19 23:06 UTC
+Last run: 2026-05-19 23:34 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
+## 1. [ Bounty $3k ] [ Storage ] Add restore test for compressed artifacts — backup reliability
 
 - Score: 80
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
+- Amount hint: $3, $3000, Bounty $3, bounty $3000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/105
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T22:51:51Z
+- Updated: 2026-05-19T23:30:47Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
-
-- Score: 80
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T22:51:37Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
+## 2. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
 
 - Score: 80
 - Amount hint: $3, $3000, Bounty $3, bounty $3000
@@ -34,7 +24,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+## 3. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
 
 - Score: 80
 - Amount hint: $4, $4000, Bounty $4, bounty $4000
@@ -44,13 +34,23 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
+## 4. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
 
 - Score: 71
 - Amount hint: $4, $4000, Bounty $4, bounty $4000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/24
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
 - Updated: 2026-05-19T19:23:08Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. App stops updating on resume after suspend mode
+
+- Score: 67
+- Amount hint: $100.00
+- Issue: https://github.com/sindresorhus/caprine/issues/103
+- Repository: https://github.com/sindresorhus/caprine
+- Updated: 2026-05-19T23:26:08Z
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -74,27 +74,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [WIKI-PATCH] External long-run checkpoint/resume provenance primitive for Goal-bound research runs
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/918
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-19T22:53:11Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+## 8. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
 - Score: 43
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/137
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-19T22:32:56Z
+- Updated: 2026-05-19T23:12:27Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Token Stripping
+## 9. Token Stripping
 
 - Score: 43
 - Amount hint: amount not obvious
@@ -104,13 +94,23 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
+## 10. [BUG-091] Branch validation allows undeclared state fields to drop initial inputs and node outputs at runtime
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/Jonnyton/Workflow/issues/924
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-19T23:20:18Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
 ## 11. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-19T22:33:01Z
+- Updated: 2026-05-19T23:12:32Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 

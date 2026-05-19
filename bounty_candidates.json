@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "title": "App stops updating on resume after suspend mode",
+    "url": "https://github.com/sindresorhus/caprine/issues/103",
+    "repository_url": "https://github.com/sindresorhus/caprine",
+    "updated_at": "2026-05-19T23:26:08Z",
+    "score": 67,
+    "amount_hint": "$100.00",
+    "reason": "mentions bounty/reward, has visible amount",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  }
+]

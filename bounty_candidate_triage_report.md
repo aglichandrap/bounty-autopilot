@@ -1,45 +1,44 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-19 23:06 UTC
+Last run: 2026-05-19 23:35 UTC
 
-Kept candidates: 0
+Kept candidates: 1
 
 This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub bounty issues before worker time is spent.
 
-## 1. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
+## 1. [ Bounty $3k ] [ Storage ] Add restore test for compressed artifacts — backup reliability
 
 - Decision: drop
 - Score: 80 -> 20
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/105
 - Reason: issue comments indicate active attempts or claims
 
-## 2. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
-
-- Decision: drop
-- Score: 80 -> 20
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
-- Reason: issue comments indicate active attempts or claims
-
-## 3. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
+## 2. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
 
 - Decision: drop
 - Score: 80 -> 20
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/19
 - Reason: issue comments indicate active attempts or claims
 
-## 4. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+## 3. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
 
 - Decision: drop
 - Score: 80 -> 20
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/12
 - Reason: issue comments indicate active attempts or claims
 
-## 5. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
+## 4. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
 
 - Decision: drop
 - Score: 71 -> 11
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/24
 - Reason: issue comments indicate active attempts or claims
+
+## 5. App stops updating on resume after suspend mode
+
+- Decision: keep
+- Score: 67 -> 67
+- Issue: https://github.com/sindresorhus/caprine/issues/103
 
 ## 6. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
@@ -55,26 +54,26 @@ This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub
 - Issue: https://github.com/midnightntwrk/contributor-hub/issues/298
 - Reason: content bounty has AI-content disqualification risk for autonomous work
 
-## 8. [WIKI-PATCH] External long-run checkpoint/resume provenance primitive for Goal-bound research runs
-
-- Decision: drop
-- Score: 43 -> -57
-- Issue: https://github.com/Jonnyton/Workflow/issues/918
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 9. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+## 8. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
 - Decision: drop
 - Score: 43 -> -27
 - Issue: https://github.com/svv2014/loop-monitor/issues/137
 - Reason: no clear paid bounty signal found
 
-## 10. Token Stripping
+## 9. Token Stripping
 
 - Decision: drop
 - Score: 43 -> -27
 - Issue: https://github.com/xFengleN/MiniBountyFactory_LangGraph/issues/8
 - Reason: no clear paid bounty signal found
+
+## 10. [BUG-091] Branch validation allows undeclared state fields to drop initial inputs and node outputs at runtime
+
+- Decision: drop
+- Score: 39 -> -61
+- Issue: https://github.com/Jonnyton/Workflow/issues/924
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
 
 ## 11. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
