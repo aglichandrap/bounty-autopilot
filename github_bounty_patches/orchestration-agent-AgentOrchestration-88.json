@@ -8,5 +8,6 @@
   "assume_starred": true,
   "patch": "github_bounty_patches/orchestration-agent-AgentOrchestration-88.patch",
   "pr_title": "Report config JSON parse errors with path context",
+  "retry_after_secret_update": "2026-05-20T02:57:00+04:00",
   "pr_body": "Fixes #88.\n\nThis catches JSONDecodeError during Config.load() and re-raises a ConfigurationError that includes the config file path plus the JSON parser line and column. That keeps deployment logs actionable when a malformed config file is loaded.\n\nVerification:\n\n```bash\nuv run pytest tests/test_config.py tests/test_config_json_errors.py -q\n```\n\nExpected targeted result: existing config tests plus the new malformed JSON regression test pass."
 }
