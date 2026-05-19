@@ -4,7 +4,6 @@ import json
 import os
 import shutil
 import subprocess
-import sys
 import tempfile
 import time
 from dataclasses import asdict, dataclass
@@ -34,14 +33,23 @@ def now_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 
-def request_json(path: str, token: str, method: str = "GET", payload: dict[str, Any] | None = None) -> Any:
+def http_error_message(exc: HTTPError) -> str:
+    try:
+        body = exc.read().decode("utf-8", errors="replace")
+    except Exception:
+        body = ""
+    return f"HTTP {exc.code}: {body or exc.reason}"
+
+
+def request_json(path: str, token: str | None = None, method: str = "GET", payload: dict[str, Any] | None = None) -> Any:
     data = None
     headers = {
         "Accept": "application/vnd.github+json",
-        "Authorization": f"Bearer {token}",
         "User-Agent": "bounty-autopilot-submitter",
         "X-GitHub-Api-Version": "2022-11-28",
     }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     if payload is not None:
         data = json.dumps(payload).encode("utf-8")
         headers["Content-Type"] = "application/json"
@@ -49,6 +57,15 @@ def request_json(path: str, token: str, method: str = "GET", payload: dict[str, 
     with urlopen(request, timeout=60) as response:
         text = response.read().decode("utf-8", errors="replace")
         return json.loads(text) if text else {}
+
+
+def read_public_json(path: str, token: str | None) -> Any:
+    try:
+        return request_json(path, token)
+    except HTTPError as exc:
+        if exc.code not in {403, 404}:
+            raise
+        return request_json(path, None)
 
 
 def request_empty(path: str, token: str, method: str = "PUT") -> None:
@@ -113,29 +130,34 @@ def validate_metadata(meta: dict[str, Any]) -> tuple[str, int, Path]:
 def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[str, Any]) -> SubmissionResult:
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
     repo, issue_number, patch_path = validate_metadata(meta)
+    issue_url = f"https://github.com/{repo}/issues/{issue_number}"
     key = f"{repo}#{issue_number}:{patch_path}"
     existing = state["submissions"].get(key)
     if existing and existing.get("pr_url"):
-        return SubmissionResult(repo, f"https://github.com/{repo}/issues/{issue_number}", "already_submitted", existing.get("pr_url"))
+        return SubmissionResult(repo, issue_url, "already_submitted", existing.get("pr_url"))
 
-    issue = request_json(f"/repos/{repo}/issues/{issue_number}", token)
+    issue = read_public_json(f"/repos/{repo}/issues/{issue_number}", token)
+    issue_url = issue.get("html_url", issue_url)
     if issue.get("state") != "open":
-        return SubmissionResult(repo, issue.get("html_url", ""), "skipped", message="issue is not open")
+        return SubmissionResult(repo, issue_url, "skipped", message="issue is not open")
 
-    repo_info = request_json(f"/repos/{repo}", token)
+    repo_info = read_public_json(f"/repos/{repo}", token)
     default_branch = str(repo_info.get("default_branch") or "main")
-    owner, name = repo.split("/", 1)
+    _, name = repo.split("/", 1)
     branch = str(meta.get("branch") or f"bounty-{issue_number}-{int(time.time())}")
 
     body_text = str(issue.get("body") or "").lower()
     if meta.get("star_required") or "must star" in body_text:
-        request_empty(f"/user/starred/{repo}", token, method="PUT")
+        try:
+            request_empty(f"/user/starred/{repo}", token, method="PUT")
+        except HTTPError as exc:
+            return SubmissionResult(repo, issue_url, "blocked", message=f"token cannot star required repo: {http_error_message(exc)}")
 
     try:
         request_json(f"/repos/{repo}/forks", token, method="POST", payload={})
     except HTTPError as exc:
-        if exc.code not in {202, 403, 422}:
-            raise
+        if exc.code not in {202, 422}:
+            return SubmissionResult(repo, issue_url, "blocked", message=f"token cannot fork repo: {http_error_message(exc)}")
 
     fork = None
     for _ in range(24):
@@ -144,16 +166,16 @@ def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[
             break
         except HTTPError as exc:
             if exc.code != 404:
-                raise
+                return SubmissionResult(repo, issue_url, "blocked", message=f"cannot read fork: {http_error_message(exc)}")
             time.sleep(5)
     if not fork:
-        return SubmissionResult(repo, issue.get("html_url", ""), "blocked", message="fork was not available after waiting")
+        return SubmissionResult(repo, issue_url, "blocked", message="fork was not available after waiting")
 
-    open_prs = request_json(f"/repos/{repo}/pulls?state=all&head={actor_login}:{branch}", token)
+    open_prs = read_public_json(f"/repos/{repo}/pulls?state=all&head={actor_login}:{branch}", token)
     if isinstance(open_prs, list) and open_prs:
         pr_url = open_prs[0].get("html_url")
         state["submissions"][key] = {"pr_url": pr_url, "updated_at": now_utc()}
-        return SubmissionResult(repo, issue.get("html_url", ""), "already_submitted", pr_url)
+        return SubmissionResult(repo, issue_url, "already_submitted", pr_url)
 
     work_root = Path(tempfile.mkdtemp(prefix="github-bounty-submit-"))
     try:
@@ -191,7 +213,7 @@ def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[
         )
         pr_url = pr.get("html_url")
         state["submissions"][key] = {"pr_url": pr_url, "updated_at": now_utc()}
-        return SubmissionResult(repo, issue.get("html_url", ""), "submitted", pr_url)
+        return SubmissionResult(repo, issue_url, "submitted", pr_url)
     finally:
         shutil.rmtree(work_root, ignore_errors=True)
 
