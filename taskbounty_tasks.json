@@ -1,20 +1,44 @@
 [
   {
-    "title": "[$10] Fix: Flows not working when using celery rabitmq and redis",
+    "title": "Fix: Flows not working when using celery rabitmq and redis",
     "url": "https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y",
     "task_id": "1a7cb78f-67a3-4d95-a37b-404d773d9099",
     "amount_hint": "$10",
     "score": 50,
-    "source": "bounties-feed",
-    "reason": "TaskBounty paid task"
+    "source": "api",
+    "reason": "TaskBounty paid task",
+    "summary": "Resolve open issue #8476 in langflow-ai/langflow. Real upstream bug; a verified PR that fixes it wins the bounty.",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "OPEN",
+    "submission_count": 0
   },
   {
-    "title": "[$10] Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)",
+    "title": "Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)",
     "url": "https://www.task-bounty.com/task/fix-editor-scroll-jumps-randomly-related-to-chrome-97d1ll",
     "task_id": "5e9ad131-6f9b-45b7-929e-30f5421b7f8b",
     "amount_hint": "$10",
     "score": 50,
-    "source": "bounties-feed",
-    "reason": "TaskBounty paid task"
+    "source": "api",
+    "reason": "TaskBounty paid task",
+    "summary": "Resolve open issue #28795 in microsoft/vscode. Real upstream bug; a verified PR that fixes it wins the bounty.",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "OPEN",
+    "submission_count": 0
+  },
+  {
+    "title": "Fix: Security Roadmap: Protecting API Keys from Agent Access",
+    "url": "https://www.task-bounty.com/task/fix-security-roadmap-protecting-api-keys-from-agen-uej5sq",
+    "task_id": "623bb359-6405-4142-a1c5-f06ce4b9779c",
+    "amount_hint": "$10",
+    "score": 50,
+    "source": "api",
+    "reason": "TaskBounty paid task",
+    "summary": "Resolve open issue #11829 in openclaw/openclaw. Real upstream bug; a verified PR that fixes it wins the bounty.",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "OPEN",
+    "submission_count": 0
   }
 ]
