@@ -1,0 +1,63 @@
+diff --git a/src/common/config.py b/src/common/config.py
+index 07894d3..05b872b 100644
+--- a/src/common/config.py
++++ b/src/common/config.py
+@@ -4,6 +4,8 @@ import os
+ import json
+ from typing import Any, Dict, Optional
+ 
++from src.common.errors import ConfigurationError
++
+ 
+ class Config:
+     def __init__(self, config_path: Optional[str] = None):
+@@ -29,7 +31,16 @@ class Config:
+         for part in parts[:-1]:
+             if part not in current:
+                 current[part] = {}
++            elif not isinstance(current[part], dict):
++                raise ConfigurationError(
++                    f"Cannot set nested key '{key}' because '{part}' is already a scalar value"
++                )
+             current = current[part]
++        leaf = parts[-1]
++        if isinstance(current.get(leaf), dict) and not isinstance(value, dict):
++            raise ConfigurationError(
++                f"Cannot replace configuration branch '{key}' with a scalar value"
++            )
+         current[parts[-1]] = value
+ 
+     def get(self, key: str, default: Any = None) -> Any:
+diff --git a/tests/test_config.py b/tests/test_config.py
+index 9e2c163..5c0e5e4 100644
+--- a/tests/test_config.py
++++ b/tests/test_config.py
+@@ -1,5 +1,6 @@
+ import pytest
+ from src.common.config import Config
++from src.common.errors import ConfigurationError
+ 
+ 
+ class TestConfig:
+@@ -24,6 +25,21 @@ class TestConfig:
+         config.set("a.b.c.d", "value")
+         assert config.get("a.b.c.d") == "value"
+ 
++    def test_env_scalar_cannot_replace_existing_branch(self, tmp_path, monkeypatch):
++        config_file = tmp_path / "config.json"
++        config_file.write_text('{"app": {"name": "test"}}')
++        monkeypatch.setenv("AO_APP", "replacement")
++
++        with pytest.raises(ConfigurationError):
++            Config(str(config_file))
++
++    def test_nested_set_cannot_descend_through_scalar(self):
++        config = Config()
++        config.set("app", "scalar")
++
++        with pytest.raises(ConfigurationError):
++            config.set("app.name", "test")
++
+     def test_to_dict(self):
+         config = Config()
+         config.set("key1", "value1")
