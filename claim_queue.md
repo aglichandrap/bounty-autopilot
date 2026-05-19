@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-19 17:06 UTC
+Last built: 2026-05-19 17:10 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -20,42 +20,42 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### [ Bounty $4k ] [ Registry ] Pin resolved handler per attempt — mid-run registry updates
-
-- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/8
-- Amount: $4, $4000, Bounty $4, bounty $4000
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
-
-- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/6
-- Amount: $3, $3000, Bounty $3, bounty $3000
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
 ### [ Bounty $5k ] [ Config ] Validate sandbox resource limit config — config-to-sandbox boundary
 
 - URL: https://github.com/orchestration-agent/AgentOrchestration/issues/5
 - Amount: $5, $5000, Bounty $5, bounty $5000
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### [Bounty $3k] Optimise exp2 fp32/bf16
+
+- URL: https://github.com/tenstorrent/tt-metal/issues/44507
+- Amount: $3, Bounty $3
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+
+- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
+- Amount: $300, $500
 - Claim comment if rules allow:
 
 ```text

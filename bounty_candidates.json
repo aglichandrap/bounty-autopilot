@@ -1,23 +1,5 @@
 [
   {
-    "title": "[ Bounty $4k ] [ Registry ] Pin resolved handler per attempt — mid-run registry updates",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/8",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T16:47:05Z",
-    "score": 80,
-    "amount_hint": "$4, $4000, Bounty $4, bounty $4000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
-    "title": "[ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/6",
-    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T16:46:50Z",
-    "score": 80,
-    "amount_hint": "$3, $3000, Bounty $3, bounty $3000",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
-  },
-  {
     "title": "[ Bounty $5k ] [ Config ] Validate sandbox resource limit config — config-to-sandbox boundary",
     "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/5",
     "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
