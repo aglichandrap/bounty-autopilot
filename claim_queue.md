@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-19 17:28 UTC
+Last built: 2026-05-19 20:06 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -20,9 +20,9 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
+### [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
 
-- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/6
+- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/19
 - Amount: $3, $3000, Bounty $3, bounty $3000
 - Claim comment if rules allow:
 
@@ -52,10 +52,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [Bounty $3k] Optimise exp2 fp32/bf16
+### [ Bounty $6k ] [ Webhook ] Avoid leaking internal run metadata in public events — payload shaping
 
-- URL: https://github.com/tenstorrent/tt-metal/issues/44507
-- Amount: $3, Bounty $3
+- URL: https://github.com/orchestration-agent/AgentOrchestration/issues/52
+- Amount: $6, $6000, Bounty $6, bounty $6000
 - Claim comment if rules allow:
 
 ```text

@@ -1,12 +1,12 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-19 17:19 UTC
+Last built: 2026-05-19 20:06 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
+## Queue Item 1: [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
 
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/6
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/19
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
 - Amount hint: $3, $3000, Bounty $3, bounty $3000
 - Score: 80
@@ -40,13 +40,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [Bounty $3k] Optimise exp2 fp32/bf16
+## Queue Item 3: [ Bounty $6k ] [ Webhook ] Avoid leaking internal run metadata in public events — payload shaping
 
-- Issue: https://github.com/tenstorrent/tt-metal/issues/44507
-- Repository: https://github.com/tenstorrent/tt-metal
-- Amount hint: $3, Bounty $3
-- Score: 59
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/52
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Score: 76
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
 
 ### Worker Instructions
 
