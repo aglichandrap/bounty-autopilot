@@ -1,0 +1,11 @@
+{
+  "repo": "orchestration-agent/AgentOrchestration",
+  "issue": 88,
+  "title": "Report config JSON parse errors with path context",
+  "branch": "bounty-88-json-parse-path-context",
+  "branch_ready": true,
+  "star_required": true,
+  "assume_starred": true,
+  "patch": "github_bounty_patches/orchestration-agent-AgentOrchestration-88.patch",
+  "pr_body": "Fixes #88.\n\nThis catches JSONDecodeError during Config.load() and re-raises a ConfigurationError that includes the config file path plus the JSON parser line and column. That keeps deployment logs actionable when a malformed config file is loaded.\n\nVerification:\n\n```bash\nuv run pytest tests/test_config.py tests/test_config_json_errors.py -q\n```\n\nExpected targeted result: existing config tests plus the new malformed JSON regression test pass."
+}
