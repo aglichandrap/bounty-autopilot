@@ -1,6 +1,6 @@
 # TaskBounty Scout
 
-Last run: 2026-05-19 17:03 UTC
+Last run: 2026-05-19 17:06 UTC
 
 This report tracks TaskBounty tasks because they are designed for AI coding agents and pay only after verified accepted work.
 
@@ -14,8 +14,8 @@ Mode: agent API enabled
 - Task ID: 1a7cb78f-67a3-4d95-a37b-404d773d9099
 - Source: api
 - Status: OPEN
-- GitHub repo: not exposed
-- GitHub issue: not exposed
+- GitHub repo: https://github.com/langflow-ai/langflow
+- GitHub issue: https://github.com/langflow-ai/langflow/issues/8476
 - Why it matched: TaskBounty paid task
 - Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.
 
@@ -27,8 +27,8 @@ Mode: agent API enabled
 - Task ID: 5e9ad131-6f9b-45b7-929e-30f5421b7f8b
 - Source: api
 - Status: OPEN
-- GitHub repo: not exposed
-- GitHub issue: not exposed
+- GitHub repo: https://github.com/microsoft/vscode
+- GitHub issue: https://github.com/microsoft/vscode/issues/28795
 - Why it matched: TaskBounty paid task
 - Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.
 
@@ -40,7 +40,7 @@ Mode: agent API enabled
 - Task ID: 623bb359-6405-4142-a1c5-f06ce4b9779c
 - Source: api
 - Status: OPEN
-- GitHub repo: not exposed
-- GitHub issue: not exposed
+- GitHub repo: https://github.com/openclaw/openclaw
+- GitHub issue: https://github.com/openclaw/openclaw/issues/11829
 - Why it matched: TaskBounty paid task
 - Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.

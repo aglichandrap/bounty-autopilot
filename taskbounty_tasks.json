@@ -8,8 +8,8 @@
     "source": "api",
     "reason": "TaskBounty paid task",
     "summary": "Resolve open issue #8476 in langflow-ai/langflow. Real upstream bug; a verified PR that fixes it wins the bounty.",
-    "github_repo_url": "",
-    "github_issue_url": "",
+    "github_repo_url": "https://github.com/langflow-ai/langflow",
+    "github_issue_url": "https://github.com/langflow-ai/langflow/issues/8476",
     "status": "OPEN",
     "submission_count": 0
   },
@@ -22,8 +22,8 @@
     "source": "api",
     "reason": "TaskBounty paid task",
     "summary": "Resolve open issue #28795 in microsoft/vscode. Real upstream bug; a verified PR that fixes it wins the bounty.",
-    "github_repo_url": "",
-    "github_issue_url": "",
+    "github_repo_url": "https://github.com/microsoft/vscode",
+    "github_issue_url": "https://github.com/microsoft/vscode/issues/28795",
     "status": "OPEN",
     "submission_count": 0
   },
@@ -36,8 +36,8 @@
     "source": "api",
     "reason": "TaskBounty paid task",
     "summary": "Resolve open issue #11829 in openclaw/openclaw. Real upstream bug; a verified PR that fixes it wins the bounty.",
-    "github_repo_url": "",
-    "github_issue_url": "",
+    "github_repo_url": "https://github.com/openclaw/openclaw",
+    "github_issue_url": "https://github.com/openclaw/openclaw/issues/11829",
     "status": "OPEN",
     "submission_count": 0
   }
