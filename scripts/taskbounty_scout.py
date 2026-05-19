@@ -80,10 +80,16 @@ def task_url(task: dict[str, Any]) -> str:
 
 
 def github_refs_from_text(text: str) -> tuple[str, str]:
+    match = re.search(r"issue\s+#(\d+).*?\bin\s+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)", text, flags=re.I)
+    if match:
+        issue = match.group(1)
+        repo = match.group(2).rstrip(".")
+        return f"https://github.com/{repo}", f"https://github.com/{repo}/issues/{issue}"
+
     match = re.search(r"\bin\s+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+).*?issue\s+#(\d+)", text, flags=re.I)
     if not match:
         return "", ""
-    repo = match.group(1)
+    repo = match.group(1).rstrip(".")
     issue = match.group(2)
     return f"https://github.com/{repo}", f"https://github.com/{repo}/issues/{issue}"
 
