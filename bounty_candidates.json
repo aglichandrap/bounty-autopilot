@@ -1,5 +1,14 @@
 [
   {
+    "title": "[ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions",
+    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/68",
+    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
+    "updated_at": "2026-05-19T21:19:23Z",
+    "score": 80,
+    "amount_hint": "$6, $6000, Bounty $6, bounty $6000",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
     "title": "[ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata",
     "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/19",
     "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
@@ -18,12 +27,21 @@
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
-    "title": "[ Bounty $6k ] [ Webhook ] Avoid leaking internal run metadata in public events — payload shaping",
-    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/52",
+    "title": "[ Bounty $6k ] [ Docker ] Remove build arguments from final layers — image metadata",
+    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/78",
     "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
-    "updated_at": "2026-05-19T20:04:34Z",
+    "updated_at": "2026-05-19T21:46:06Z",
     "score": 76,
     "amount_hint": "$6, $6000, Bounty $6, bounty $6000",
+    "reason": "mentions bounty/reward, has visible amount, low discussion volume"
+  },
+  {
+    "title": "[ Bounty $4k ] [ API ] Prevent partial batch update success masking failures — agent config API",
+    "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/73",
+    "repository_url": "https://github.com/orchestration-agent/AgentOrchestration",
+    "updated_at": "2026-05-19T21:42:23Z",
+    "score": 76,
+    "amount_hint": "$4, $4000, Bounty $4, bounty $4000",
     "reason": "mentions bounty/reward, has visible amount, low discussion volume"
   },
   {
@@ -45,15 +63,6 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
-    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
-    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
-    "repository_url": "https://github.com/tenstorrent/tt-metal",
-    "updated_at": "2026-05-19T14:55:17Z",
-    "score": 59,
-    "amount_hint": "$3, Bounty $3",
-    "reason": "mentions bounty/reward, has visible amount"
-  },
-  {
     "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
     "repository_url": "https://github.com/midnightntwrk/contributor-hub",
@@ -63,6 +72,15 @@
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
+    "title": "[WIKI-PATCH] External long-run checkpoint/resume provenance primitive for Goal-bound research runs",
+    "url": "https://github.com/Jonnyton/Workflow/issues/918",
+    "repository_url": "https://github.com/Jonnyton/Workflow",
+    "updated_at": "2026-05-19T21:43:23Z",
+    "score": 43,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
     "title": "Token Stripping",
     "url": "https://github.com/xFengleN/MiniBountyFactory_LangGraph/issues/8",
     "repository_url": "https://github.com/xFengleN/MiniBountyFactory_LangGraph",
@@ -70,15 +88,6 @@
     "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate",
-    "url": "https://github.com/matchmoments-admin/ask-arthur/issues/321",
-    "repository_url": "https://github.com/matchmoments-admin/ask-arthur",
-    "updated_at": "2026-05-19T19:51:38Z",
-    "score": 42,
-    "amount_hint": "$3",
-    "reason": "has visible amount, low discussion volume"
   },
   {
     "title": "Sats to Local Currency | Mexico",
@@ -93,18 +102,9 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-19T19:53:51Z",
+    "updated_at": "2026-05-19T21:13:20Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
-  },
-  {
-    "title": "Create wallet benchmarks",
-    "url": "https://github.com/tari-project/wallet-benchmarks/issues/1",
-    "repository_url": "https://github.com/tari-project/wallet-benchmarks",
-    "updated_at": "2026-05-19T19:28:58Z",
-    "score": 38,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body"
   }
 ]
