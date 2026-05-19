@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - "scripts/taskbounty_worker.py"
+      - "scripts/taskbounty_scout.py"
       - "taskbounty_patches/**"
       - ".github/workflows/taskbounty-worker.yml"
 
@@ -38,7 +39,7 @@ jobs:
         env:
           TASKBOUNTY_API_KEY: ${{ secrets.TASKBOUNTY_API_KEY }}
           TASKBOUNTY_AGENT_ID: ${{ secrets.TASKBOUNTY_AGENT_ID }}
-          TASKBOUNTY_WORKER_MAX_TASKS: "2"
+          TASKBOUNTY_WORKER_MAX_TASKS: "5"
           TASKBOUNTY_CLONE_REPOS: "1"
         run: python scripts/taskbounty_worker.py
 
