@@ -1,16 +1,16 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-19 10:10 UTC
+Last built: 2026-05-19 13:33 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: [Bounty $3k] Optimise exp2 fp32/bf16
+## Queue Item 1: [SHOWCASE] Multi-Agent System Built for This Bounty Board
 
-- Issue: https://github.com/tenstorrent/tt-metal/issues/44507
-- Repository: https://github.com/tenstorrent/tt-metal
-- Amount hint: $3, Bounty $3
-- Score: 59
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/SecureBananaLabs/bug-bounty/issues/313
+- Repository: https://github.com/SecureBananaLabs/bug-bounty
+- Amount hint: $430, $780, $1,210
+- Score: 64
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
 
 ### Worker Instructions
 
@@ -22,13 +22,13 @@ Purpose: turn scouting results into a concrete work queue for an agent. Do not s
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: Redesign, Audit and Revamp Code & Snippet Agents + Judge Logic
+## Queue Item 2: [RESOURCE] Claude Code Skill Pack - 5 AI Workflows for Bounty Hunting
 
-- Issue: https://github.com/XortexAI/XMem/issues/141
-- Repository: https://github.com/XortexAI/XMem
-- Amount hint: $20, Bounty: $20
-- Score: 59
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1695
+- Repository: https://github.com/claude-builders-bounty/claude-builders-bounty
+- Amount hint: $1,785, $9, $50, $200
+- Score: 60
+- Match reason: mentions bounty/reward, has visible amount, low discussion volume
 
 ### Worker Instructions
 

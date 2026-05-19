@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-19 10:26 UTC
+Last built: 2026-05-19 13:33 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### [Bounty $3k] Optimise exp2 fp32/bf16
+### [SHOWCASE] Multi-Agent System Built for This Bounty Board
 
-- URL: https://github.com/tenstorrent/tt-metal/issues/44507
-- Amount: $3, Bounty $3
+- URL: https://github.com/SecureBananaLabs/bug-bounty/issues/313
+- Amount: $430, $780, $1,210
 - Claim comment if rules allow:
 
 ```text
@@ -42,10 +42,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### Redesign, Audit and Revamp Code & Snippet Agents + Judge Logic
+### [RESOURCE] Claude Code Skill Pack - 5 AI Workflows for Bounty Hunting
 
-- URL: https://github.com/XortexAI/XMem/issues/141
-- Amount: $20, Bounty: $20
+- URL: https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1695
+- Amount: $1,785, $9, $50, $200
 - Claim comment if rules allow:
 
 ```text
