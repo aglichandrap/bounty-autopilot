@@ -120,6 +120,20 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
             comments_count = int(issue.get("comments") or 0)
             assignees = issue.get("assignees") or []
             state = issue.get("state")
+            labels = {
+                str(label.get("name") or "").lower()
+                for label in issue.get("labels", [])
+                if isinstance(label, dict)
+            }
+            issue_text = f"{title} {issue.get('body') or ''}".lower()
+
+            if (
+                "content-proposal" in labels
+                or re.search(r"\b(tutorial|article|blog post|written tutorial|dev\.to|medium|hashnode)\b", issue_text)
+            ) and re.search(r"\bai[- ]generated content\b|substantially ai-generated|ai content", issue_text):
+                decision = "drop"
+                reasons.append("content bounty has AI-content disqualification risk for autonomous work")
+                final_score -= 100
 
             if state != "open":
                 decision = "drop"
