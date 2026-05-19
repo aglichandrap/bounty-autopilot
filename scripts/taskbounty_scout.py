@@ -30,6 +30,11 @@ class TaskBountyCandidate:
     score: int
     source: str
     reason: str
+    summary: str = ""
+    github_repo_url: str = ""
+    github_issue_url: str = ""
+    status: str = ""
+    submission_count: int | None = None
 
 
 def http_get(url: str, token: str | None = None, accept: str = "application/json") -> str:
@@ -74,12 +79,21 @@ def task_url(task: dict[str, Any]) -> str:
     return f"{BASE_URL}/browse#{task_id}" if task_id else BROWSE_URL
 
 
+def github_refs_from_text(text: str) -> tuple[str, str]:
+    match = re.search(r"\bin\s+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+).*?issue\s+#(\d+)", text, flags=re.I)
+    if not match:
+        return "", ""
+    repo = match.group(1)
+    issue = match.group(2)
+    return f"https://github.com/{repo}", f"https://github.com/{repo}/issues/{issue}"
+
+
 def score_task(title: str, amount_hint: str, task: dict[str, Any] | None = None) -> tuple[int, str]:
     text = f"{title} {json.dumps(task or {}, ensure_ascii=False)}".lower()
     score = 40
     reasons = ["TaskBounty paid task"]
 
-    if re.search(r"\bclosed\b|\bcompleted\b|\bpaid\b|\bexpired\b", text):
+    if re.search(r"\bclosed\b|\bcompleted\b|\bpaid\b|\bexpired\b|\bawarded\b", text):
         return -100, "skip: task is not open"
 
     amount_match = re.search(r"\$(\d+(?:\.\d+)?)", amount_hint)
@@ -96,7 +110,7 @@ def score_task(title: str, amount_hint: str, task: dict[str, Any] | None = None)
         if keyword in text:
             score += 5
 
-    for keyword in ("security", "abuse", "spam", "casino", "trading", "prompt", "context"):
+    for keyword in ("abuse", "spam", "casino", "trading"):
         if keyword in text:
             score -= 60
             reasons.append(f"blocked risk keyword: {keyword}")
@@ -132,6 +146,11 @@ def candidates_from_api(token: str | None) -> list[TaskBountyCandidate]:
         if not isinstance(item, dict):
             continue
         title = clean_text(str(item.get("title") or item.get("name") or "Untitled TaskBounty task"))
+        status = str(item.get("status") or "").upper()
+        if status and status != "OPEN":
+            continue
+        summary = clean_text(str(item.get("short_summary") or item.get("summary") or item.get("description") or ""))
+        repo_url, issue_url = github_refs_from_text(summary)
         amount_hint = amount_from_cents(
             item.get("bounty_cents")
             or item.get("amount_cents")
@@ -142,6 +161,10 @@ def candidates_from_api(token: str | None) -> list[TaskBountyCandidate]:
         if score < 25:
             continue
         task_id = str(item.get("id") or item.get("task_id") or item.get("slug") or "")
+        try:
+            submission_count = int(item.get("submission_count"))
+        except (TypeError, ValueError):
+            submission_count = None
         candidates.append(
             TaskBountyCandidate(
                 title=title,
@@ -151,6 +174,11 @@ def candidates_from_api(token: str | None) -> list[TaskBountyCandidate]:
                 score=score,
                 source="api",
                 reason=reason,
+                summary=summary,
+                github_repo_url=repo_url,
+                github_issue_url=issue_url,
+                status=status,
+                submission_count=submission_count,
             )
         )
     return candidates
@@ -174,6 +202,8 @@ def candidates_from_bounties_feed(token: str | None) -> list[TaskBountyCandidate
         meta = item.get("_taskbounty")
         meta = meta if isinstance(meta, dict) else {}
         title = clean_text(str(item.get("title") or item.get("summary") or "Untitled TaskBounty bounty"))
+        summary = clean_text(str(item.get("content_text") or item.get("summary") or ""))
+        repo_url, issue_url = github_refs_from_text(summary)
         amount_hint = amount_from_cents(meta.get("bounty_cents"))
         score, reason = score_task(title, amount_hint, item)
         if score < 25:
@@ -189,6 +219,11 @@ def candidates_from_bounties_feed(token: str | None) -> list[TaskBountyCandidate
                 score=score,
                 source="bounties-feed",
                 reason=reason,
+                summary=summary,
+                github_repo_url=repo_url,
+                github_issue_url=issue_url,
+                status="OPEN",
+                submission_count=None,
             )
         )
     return candidates
@@ -260,7 +295,12 @@ def candidates_from_browse_page() -> list[TaskBountyCandidate]:
 
 def write_outputs(candidates: list[TaskBountyCandidate]) -> None:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    candidates = sorted(candidates, key=lambda item: item.score, reverse=True)[:10]
+    deduped: dict[str, TaskBountyCandidate] = {}
+    for candidate in candidates:
+        key = candidate.task_id or candidate.url
+        if key not in deduped or candidate.score > deduped[key].score:
+            deduped[key] = candidate
+    candidates = sorted(deduped.values(), key=lambda item: item.score, reverse=True)[:10]
 
     with open(TASKS_PATH, "w", encoding="utf-8") as handle:
         json.dump([asdict(candidate) for candidate in candidates], handle, indent=2, ensure_ascii=False)
@@ -295,6 +335,9 @@ def write_outputs(candidates: list[TaskBountyCandidate]) -> None:
                 f"- Task: {candidate.url}",
                 f"- Task ID: {candidate.task_id or 'not exposed'}",
                 f"- Source: {candidate.source}",
+                f"- Status: {candidate.status or 'unknown'}",
+                f"- GitHub repo: {candidate.github_repo_url or 'not exposed'}",
+                f"- GitHub issue: {candidate.github_issue_url or 'not exposed'}",
                 f"- Why it matched: {candidate.reason}",
                 "- Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.",
                 "",
@@ -307,9 +350,7 @@ def write_outputs(candidates: list[TaskBountyCandidate]) -> None:
 
 def main() -> int:
     token = os.environ.get("TASKBOUNTY_API_KEY")
-    candidates = candidates_from_bounties_feed(token=token)
-    if not candidates:
-        candidates = candidates_from_api(token=token)
+    candidates = candidates_from_api(token=token) + candidates_from_bounties_feed(token=token)
     if not candidates:
         candidates = candidates_from_browse_page()
     write_outputs(candidates)
