@@ -127,6 +127,25 @@ def validate_metadata(meta: dict[str, Any]) -> tuple[str, int, Path]:
     return repo, issue_number, patch_path
 
 
+def create_pr(repo: str, issue_number: int, branch: str, actor_login: str, default_branch: str, meta: dict[str, Any], token: str) -> str:
+    pr_body = str(meta.get("pr_body") or "")
+    if not pr_body:
+        pr_body = f"Fixes #{issue_number}.\n\nVerification: see commit notes and automated checks."
+    pr = request_json(
+        f"/repos/{repo}/pulls",
+        token,
+        method="POST",
+        payload={
+            "title": str(meta.get("pr_title") or f"Fix issue #{issue_number}"),
+            "head": f"{actor_login}:{branch}",
+            "base": default_branch,
+            "body": pr_body,
+            "maintainer_can_modify": True,
+        },
+    )
+    return str(pr.get("html_url") or "")
+
+
 def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[str, Any]) -> SubmissionResult:
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
     repo, issue_number, patch_path = validate_metadata(meta)
@@ -147,11 +166,26 @@ def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[
     branch = str(meta.get("branch") or f"bounty-{issue_number}-{int(time.time())}")
 
     body_text = str(issue.get("body") or "").lower()
-    if meta.get("star_required") or "must star" in body_text:
+    assume_starred = bool(meta.get("assume_starred"))
+    if (meta.get("star_required") or "must star" in body_text) and not assume_starred:
         try:
             request_empty(f"/user/starred/{repo}", token, method="PUT")
         except HTTPError as exc:
             return SubmissionResult(repo, issue_url, "blocked", message=f"token cannot star required repo: {http_error_message(exc)}")
+
+    open_prs = read_public_json(f"/repos/{repo}/pulls?state=all&head={actor_login}:{branch}", token)
+    if isinstance(open_prs, list) and open_prs:
+        pr_url = open_prs[0].get("html_url")
+        state["submissions"][key] = {"pr_url": pr_url, "updated_at": now_utc()}
+        return SubmissionResult(repo, issue_url, "already_submitted", pr_url)
+
+    if meta.get("branch_ready"):
+        try:
+            pr_url = create_pr(repo, issue_number, branch, actor_login, default_branch, meta, token)
+        except HTTPError as exc:
+            return SubmissionResult(repo, issue_url, "blocked", message=f"token cannot create upstream PR: {http_error_message(exc)}")
+        state["submissions"][key] = {"pr_url": pr_url, "updated_at": now_utc()}
+        return SubmissionResult(repo, issue_url, "submitted", pr_url)
 
     try:
         request_json(f"/repos/{repo}/forks", token, method="POST", payload={})
@@ -170,12 +204,6 @@ def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[
             time.sleep(5)
     if not fork:
         return SubmissionResult(repo, issue_url, "blocked", message="fork was not available after waiting")
-
-    open_prs = read_public_json(f"/repos/{repo}/pulls?state=all&head={actor_login}:{branch}", token)
-    if isinstance(open_prs, list) and open_prs:
-        pr_url = open_prs[0].get("html_url")
-        state["submissions"][key] = {"pr_url": pr_url, "updated_at": now_utc()}
-        return SubmissionResult(repo, issue_url, "already_submitted", pr_url)
 
     work_root = Path(tempfile.mkdtemp(prefix="github-bounty-submit-"))
     try:
@@ -196,22 +224,7 @@ def apply_and_submit(meta_path: Path, token: str, actor_login: str, state: dict[
         run(["git", "commit", "-m", str(meta.get("commit_message") or f"Fix issue #{issue_number}")], clone_dir)
         run(["git", "push", "origin", branch], clone_dir, token=token)
 
-        pr_body = str(meta.get("pr_body") or "")
-        if not pr_body:
-            pr_body = f"Fixes #{issue_number}.\n\nVerification: see commit notes and automated checks."
-        pr = request_json(
-            f"/repos/{repo}/pulls",
-            token,
-            method="POST",
-            payload={
-                "title": str(meta.get("pr_title") or f"Fix issue #{issue_number}"),
-                "head": f"{actor_login}:{branch}",
-                "base": default_branch,
-                "body": pr_body,
-                "maintainer_can_modify": True,
-            },
-        )
-        pr_url = pr.get("html_url")
+        pr_url = create_pr(repo, issue_number, branch, actor_login, default_branch, meta, token)
         state["submissions"][key] = {"pr_url": pr_url, "updated_at": now_utc()}
         return SubmissionResult(repo, issue_url, "submitted", pr_url)
     finally:
