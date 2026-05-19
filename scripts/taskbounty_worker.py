@@ -3,8 +3,11 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
 import subprocess
+import sys
 import tempfile
+import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,6 +21,7 @@ API_BASE = f"{BASE_URL}/api/v1"
 TASKS_PATH = Path("taskbounty_tasks.json")
 REPORT_PATH = Path("taskbounty_worker_report.md")
 STATE_PATH = Path("taskbounty_worker_state.json")
+AGENT_STATE_PATH = Path("taskbounty_agent_state.json")
 PATCH_DIR = Path(os.environ.get("TASKBOUNTY_PATCH_DIR", "taskbounty_patches"))
 
 
@@ -36,8 +40,43 @@ class WorkerResult:
 
 def redact(value: str) -> str:
     value = re.sub(r"tb_live_[A-Za-z0-9]+", "[REDACTED]", value)
-    value = re.sub(r"x-access-token:[^@\s]+@", "x-access-token:[REDACTED]@", value)
+    value = re.sub(r"x-access-token:[^@\\s]+@", "x-access-token:[REDACTED]@", value)
     return value
+
+
+def is_uuid(value: str) -> bool:
+    try:
+        uuid.UUID(value)
+    except (TypeError, ValueError):
+        return False
+    return True
+
+
+def load_state_agent_id() -> str:
+    if not AGENT_STATE_PATH.exists():
+        return ""
+    try:
+        data = json.loads(AGENT_STATE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return ""
+    agent_id = str(data.get("agent_id") or "").strip() if isinstance(data, dict) else ""
+    return agent_id if is_uuid(agent_id) else ""
+
+
+def save_state_agent_id(agent_id: str, source: str) -> None:
+    AGENT_STATE_PATH.write_text(
+        json.dumps(
+            {
+                "agent_id": agent_id,
+                "source": source,
+                "updated_at": datetime.now(timezone.utc).isoformat(),
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
 
 
 def api_request(path: str, token: str, method: str = "GET", body: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -58,6 +97,40 @@ def api_request(path: str, token: str, method: str = "GET", body: dict[str, Any]
     if not raw:
         return {}
     return json.loads(raw)
+
+
+def register_agent(token: str) -> str:
+    payload = api_request(
+        "/agents",
+        token=token,
+        method="POST",
+        body={
+            "name": os.environ.get("TASKBOUNTY_AGENT_NAME", "AsaadCode"),
+            "skills": ["Python", "JavaScript", "GitHub Actions", "Bug fixes", "APIs"],
+        },
+    )
+    data = payload.get("data", payload)
+    if not isinstance(data, dict):
+        return ""
+    agent_id = str(data.get("id") or data.get("agent_id") or data.get("agentId") or "").strip()
+    return agent_id if is_uuid(agent_id) else ""
+
+
+def resolve_agent_id(token: str) -> tuple[str, str]:
+    secret_agent_id = os.environ.get("TASKBOUNTY_AGENT_ID", "").strip()
+    if is_uuid(secret_agent_id):
+        save_state_agent_id(secret_agent_id, "secret")
+        return secret_agent_id, "secret"
+
+    state_agent_id = load_state_agent_id()
+    if state_agent_id:
+        return state_agent_id, "state"
+
+    agent_id = register_agent(token)
+    if agent_id:
+        save_state_agent_id(agent_id, "created")
+        return agent_id, "created"
+    return "", "missing"
 
 
 def load_tasks() -> list[dict[str, Any]]:
@@ -256,8 +329,7 @@ def write_outputs(results: list[WorkerResult]) -> None:
 
 def main() -> int:
     token = os.environ.get("TASKBOUNTY_API_KEY", "").strip()
-    agent_id = os.environ.get("TASKBOUNTY_AGENT_ID", "").strip()
-    if not token or not agent_id:
+    if not token:
         write_outputs(
             [
                 WorkerResult(
@@ -266,7 +338,54 @@ def main() -> int:
                     amount_hint="",
                     task_url="",
                     status="not_configured",
-                    message="TASKBOUNTY_API_KEY and TASKBOUNTY_AGENT_ID are required.",
+                    message="TASKBOUNTY_API_KEY is required.",
+                )
+            ]
+        )
+        return 0
+
+    try:
+        agent_id, agent_source = resolve_agent_id(token)
+    except HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        write_outputs(
+            [
+                WorkerResult(
+                    task_id="",
+                    title="Agent setup failed",
+                    amount_hint="",
+                    task_url="",
+                    status=f"agent_failed_{exc.code}",
+                    message=redact(body or str(exc)),
+                )
+            ]
+        )
+        return 0
+    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
+        write_outputs(
+            [
+                WorkerResult(
+                    task_id="",
+                    title="Agent setup failed",
+                    amount_hint="",
+                    task_url="",
+                    status="agent_failed",
+                    message=redact(str(exc)),
+                )
+            ]
+        )
+        return 0
+
+    if not agent_id:
+        write_outputs(
+            [
+                WorkerResult(
+                    task_id="",
+                    title="Agent configuration missing",
+                    amount_hint="",
+                    task_url="",
+                    status="not_configured",
+                    message="Could not resolve or create a valid TaskBounty agent id.",
                 )
             ]
         )
@@ -277,7 +396,7 @@ def main() -> int:
     clone_repos = os.environ.get("TASKBOUNTY_CLONE_REPOS", "1") == "1"
     results = [process_task(task, token, agent_id, clone_repos) for task in tasks[:max_tasks]]
     write_outputs(results)
-    print(f"Wrote {len(results)} TaskBounty worker results.")
+    print(f"Wrote {len(results)} TaskBounty worker results using agent source: {agent_source}.")
     return 0
 
 
