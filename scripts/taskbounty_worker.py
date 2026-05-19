@@ -187,6 +187,46 @@ def repo_profile(repo_dir: Path) -> dict[str, Any]:
     return {"markers": markers, "languages": languages, "sample_files": paths[:80]}
 
 
+def github_repo_from_task(task: dict[str, Any]) -> str:
+    repo_url = str(task.get("github_repo_url") or "").strip()
+    if repo_url.startswith("https://github.com/"):
+        return repo_url.rstrip("/")
+
+    text = " ".join(
+        str(task.get(key) or "")
+        for key in ("summary", "reason", "title", "url", "github_issue_url")
+    )
+    issue_url_match = re.search(r"https://github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)/issues/\d+", text)
+    if issue_url_match:
+        return f"https://github.com/{issue_url_match.group(1)}"
+
+    repo_match = re.search(r"\bin\s+([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+).*?issue\s+#\d+", text, flags=re.I)
+    if repo_match:
+        return f"https://github.com/{repo_match.group(1)}"
+    return ""
+
+
+def clone_profile_public_repo(task: dict[str, Any], result: WorkerResult) -> WorkerResult:
+    repo_url = github_repo_from_task(task)
+    if not repo_url:
+        result.message = "Access failed and no public GitHub repo was exposed by the task."
+        return result
+
+    result.repo_url = repo_url
+    clone_url = f"{repo_url}.git"
+    with tempfile.TemporaryDirectory(prefix="taskbounty-public-") as tmp:
+        repo_dir = Path(tmp) / "repo"
+        code, output = run_command(["git", "clone", "--depth", "1", clone_url, str(repo_dir)], timeout=180)
+        if code != 0:
+            result.status = "public_clone_failed"
+            result.message = output[-2000:]
+            return result
+        result.repo_profile = repo_profile(repo_dir)
+        result.status = "public_workspace_prepared"
+        result.message = "TaskBounty access endpoint had no GitHub installation, but the public upstream repo was cloned and profiled. A patch can still be submitted through /submissions/patch."
+        return result
+
+
 def request_access(task_id: str, agent_id: str, token: str) -> dict[str, Any]:
     payload = api_request(
         f"/tasks/{task_id}/access",
@@ -225,25 +265,6 @@ def process_task(task: dict[str, Any], token: str, agent_id: str, clone_repos: b
         return result
 
     patch_file = PATCH_DIR / f"{result.task_id}.patch"
-    try:
-        access = request_access(result.task_id, agent_id, token)
-    except HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")
-        result.status = f"access_failed_{exc.code}"
-        result.message = redact(body or str(exc))
-        return result
-    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
-        result.status = "access_failed"
-        result.message = redact(str(exc))
-        return result
-
-    result.repo_url = access.get("repoUrl")
-    clone_url = access.get("cloneUrl")
-    if not clone_url:
-        result.status = "access_ready"
-        result.message = "Access returned no cloneUrl; task may be public or not a code task."
-        return result
-
     if patch_file.exists():
         try:
             submission = submit_patch(task, token, agent_id, patch_file)
@@ -256,6 +277,27 @@ def process_task(task: dict[str, Any], token: str, agent_id: str, clone_repos: b
             result.status = f"submit_failed_{exc.code}"
             result.message = redact(body or str(exc))
             return result
+
+    try:
+        access = request_access(result.task_id, agent_id, token)
+    except HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        result.status = f"access_failed_{exc.code}"
+        result.message = redact(body or str(exc))
+        if exc.code == 409 and "no GitHub installation" in body:
+            return clone_profile_public_repo(task, result)
+        return result
+    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
+        result.status = "access_failed"
+        result.message = redact(str(exc))
+        return result
+
+    result.repo_url = access.get("repoUrl")
+    clone_url = access.get("cloneUrl")
+    if not clone_url:
+        result.status = "access_ready"
+        result.message = "Access returned no cloneUrl; task may be public or not a code task."
+        return result
 
     if not clone_repos:
         result.status = "access_ready"
