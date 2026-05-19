@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-19 04:45 UTC
+Last built: 2026-05-19 10:10 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+### [Bounty $3k] Optimise exp2 fp32/bf16
 
-- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
-- Amount: $300, $500
+- URL: https://github.com/tenstorrent/tt-metal/issues/44507
+- Amount: $3, Bounty $3
 - Claim comment if rules allow:
 
 ```text
@@ -42,9 +42,25 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw
+### Redesign, Audit and Revamp Code & Snippet Agents + Judge Logic
 
-- URL: https://github.com/midnightntwrk/contributor-hub/issues/287
+- URL: https://github.com/XortexAI/XMem/issues/141
+- Amount: $20, Bounty: $20
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
+
+- URL: https://github.com/midnightntwrk/contributor-hub/issues/298
 - Amount: $300, $500
 - Claim comment if rules allow:
 

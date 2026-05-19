@@ -1,9 +1,27 @@
 [
   {
+    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
+    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
+    "repository_url": "https://github.com/tenstorrent/tt-metal",
+    "updated_at": "2026-05-19T09:52:53Z",
+    "score": 59,
+    "amount_hint": "$3, Bounty $3",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
+    "title": "Redesign, Audit and Revamp Code & Snippet Agents + Judge Logic",
+    "url": "https://github.com/XortexAI/XMem/issues/141",
+    "repository_url": "https://github.com/XortexAI/XMem",
+    "updated_at": "2026-05-19T05:04:56Z",
+    "score": 59,
+    "amount_hint": "$20, Bounty: $20",
+    "reason": "mentions bounty/reward, has visible amount"
+  },
+  {
     "title": "[Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/298",
     "repository_url": "https://github.com/midnightntwrk/contributor-hub",
-    "updated_at": "2026-05-18T16:50:17Z",
+    "updated_at": "2026-05-19T06:08:12Z",
     "score": 59,
     "amount_hint": "$300, $500",
     "reason": "mentions bounty/reward, has visible amount"
@@ -12,43 +30,61 @@
     "title": "[Tutorial] Building a Shielded Token Vault: Deposit, Accumulate & Withdraw",
     "url": "https://github.com/midnightntwrk/contributor-hub/issues/287",
     "repository_url": "https://github.com/midnightntwrk/contributor-hub",
-    "updated_at": "2026-05-18T16:50:15Z",
+    "updated_at": "2026-05-19T06:07:43Z",
     "score": 59,
     "amount_hint": "$300, $500",
     "reason": "mentions bounty/reward, has visible amount"
   },
   {
-    "title": "Add EE-delta differential-IK action term (4-DoF Cartesian control for arms)",
-    "url": "https://github.com/KraHsu/GeneLab/issues/73",
-    "repository_url": "https://github.com/KraHsu/GeneLab",
-    "updated_at": "2026-05-19T04:30:59Z",
+    "title": "Miner service templates ignore the configured wallet unless --wallet is passed",
+    "url": "https://github.com/Scottcjn/Rustchain/issues/5713",
+    "repository_url": "https://github.com/Scottcjn/Rustchain",
+    "updated_at": "2026-05-19T08:37:49Z",
+    "score": 51,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "Feedback: x402 support and hiero-sdk-python 0.2.6 compatibility",
+    "url": "https://github.com/hashgraph/hedera-agent-kit-py/issues/308",
+    "repository_url": "https://github.com/hashgraph/hedera-agent-kit-py",
+    "updated_at": "2026-05-19T09:22:22Z",
+    "score": 47,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "macOS miner enrollment fails with mac_churn from overbroad MAC collection",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/10986",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-19T07:31:03Z",
+    "score": 47,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume"
+  },
+  {
+    "title": "[ui] Phase 6.4 · Token-spend dashboard (per role / project / day)",
+    "url": "https://github.com/svv2014/loop-monitor/issues/137",
+    "repository_url": "https://github.com/svv2014/loop-monitor",
+    "updated_at": "2026-05-19T09:43:55Z",
     "score": 43,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   },
   {
-    "title": "Add \"evergreen bounty\" as Server Goal verb",
-    "url": "https://github.com/Imaginary-Horizons-Productions/BountyBot/issues/312",
-    "repository_url": "https://github.com/Imaginary-Horizons-Productions/BountyBot",
-    "updated_at": "2026-05-19T04:31:24Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
+    "title": "shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate",
+    "url": "https://github.com/matchmoments-admin/ask-arthur/issues/321",
+    "repository_url": "https://github.com/matchmoments-admin/ask-arthur",
+    "updated_at": "2026-05-19T09:15:19Z",
+    "score": 42,
+    "amount_hint": "$3",
+    "reason": "has visible amount, low discussion volume"
   },
   {
-    "title": "Add XP Multiplier content to Evergreen Thread as festival preview, remove multipliers from bounty board embeds",
-    "url": "https://github.com/Imaginary-Horizons-Productions/BountyBot/issues/522",
-    "repository_url": "https://github.com/Imaginary-Horizons-Productions/BountyBot",
-    "updated_at": "2026-05-19T04:31:22Z",
-    "score": 39,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Sats to Local Currency | Mexico",
-    "url": "https://github.com/sutt/docs/issues/5",
-    "repository_url": "https://github.com/sutt/docs",
-    "updated_at": "2026-05-17T11:11:31Z",
+    "title": "Bug bounty",
+    "url": "https://github.com/mjoibh/Qw/issues/1",
+    "repository_url": "https://github.com/mjoibh/Qw",
+    "updated_at": "2026-05-19T10:01:31Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
@@ -57,53 +93,17 @@
     "title": "[event-audit/4] Anomaly detector switches from log-mining to SQL query",
     "url": "https://github.com/svv2014/loop-monitor/issues/109",
     "repository_url": "https://github.com/svv2014/loop-monitor",
-    "updated_at": "2026-05-19T04:23:39Z",
+    "updated_at": "2026-05-19T09:44:00Z",
     "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, large issue body, low discussion volume"
   },
   {
-    "title": "Create wallet benchmarks",
-    "url": "https://github.com/tari-project/wallet-benchmarks/issues/1",
-    "repository_url": "https://github.com/tari-project/wallet-benchmarks",
-    "updated_at": "2026-05-18T20:23:33Z",
-    "score": 38,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, large issue body"
-  },
-  {
-    "title": "Progressive Evergreen Bounty Progress",
-    "url": "https://github.com/Imaginary-Horizons-Productions/BountyBot/issues/280",
-    "repository_url": "https://github.com/Imaginary-Horizons-Productions/BountyBot",
-    "updated_at": "2026-05-19T04:31:28Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Construct custom image to celebrate completion of Server Goal or Bounty",
-    "url": "https://github.com/Imaginary-Horizons-Productions/BountyBot/issues/288",
-    "repository_url": "https://github.com/Imaginary-Horizons-Productions/BountyBot",
-    "updated_at": "2026-05-19T04:31:26Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Fixing the bounty award system",
-    "url": "https://github.com/ResearchHub/issues/issues/531",
-    "repository_url": "https://github.com/ResearchHub/issues",
-    "updated_at": "2026-01-20T06:50:39Z",
-    "score": 35,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, low discussion volume"
-  },
-  {
-    "title": "Create a Bounty Amount Box Issue",
-    "url": "https://github.com/ResearchHub/issues/issues/540",
-    "repository_url": "https://github.com/ResearchHub/issues",
-    "updated_at": "2026-01-20T06:50:37Z",
-    "score": 35,
+    "title": "Sats to Local Currency | Mexico",
+    "url": "https://github.com/sutt/docs/issues/5",
+    "repository_url": "https://github.com/sutt/docs",
+    "updated_at": "2026-05-17T11:11:31Z",
+    "score": 39,
     "amount_hint": "amount not obvious",
     "reason": "mentions bounty/reward, low discussion volume"
   }
