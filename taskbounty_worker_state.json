@@ -4,21 +4,21 @@
     "title": "[$10] Fix: Flows not working when using celery rabitmq and redis",
     "amount_hint": "$10",
     "task_url": "https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y",
-    "status": "access_failed_400",
+    "status": "access_failed_409",
     "repo_url": null,
     "repo_profile": null,
     "submission_id": null,
-    "message": "{\"error\":{\"message\":\"Invalid UUID\"}}"
+    "message": "{\"error\":{\"message\":\"Task has no GitHub installation configured\"}}"
   },
   {
     "task_id": "5e9ad131-6f9b-45b7-929e-30f5421b7f8b",
     "title": "[$10] Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)",
     "amount_hint": "$10",
     "task_url": "https://www.task-bounty.com/task/fix-editor-scroll-jumps-randomly-related-to-chrome-97d1ll",
-    "status": "access_failed_400",
+    "status": "access_failed_409",
     "repo_url": null,
     "repo_profile": null,
     "submission_id": null,
-    "message": "{\"error\":{\"message\":\"Invalid UUID\"}}"
+    "message": "{\"error\":{\"message\":\"Task has no GitHub installation configured\"}}"
   }
 ]
