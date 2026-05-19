@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-18 23:41 UTC
+Last built: 2026-05-19 04:36 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -25,23 +25,6 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 - Status: needs TaskBounty agent API access before attempting/submitting.
 
 ## GitHub
-
-### [Hacktoberfest] VS Code Extension for Policy Development
-
-- URL: https://github.com/aporthq/aport-integrations/issues/10
-- Amount: $50, 50 USD, Bounty
-$50
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
 
 ### [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
 
