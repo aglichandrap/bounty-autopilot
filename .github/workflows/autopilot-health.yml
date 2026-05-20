@@ -2,7 +2,7 @@ name: Autopilot Health
 
 on:
   schedule:
-    - cron: "7 * * * *"
+    - cron: "14,29,44,59 * * * *"
   workflow_dispatch:
   push:
     branches:
