@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 13:08 UTC
+Last run: 2026-05-20 13:28 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -44,7 +44,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem
+## 5. Add BIP44 account addresses
+
+- Score: 60
+- Amount hint: $10
+- Issue: https://github.com/bigearth/bitbox-scaffold-vue/issues/1
+- Repository: https://github.com/bigearth/bitbox-scaffold-vue
+- Updated: 2026-05-20T13:12:52Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. [Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem
 
 - Score: 59
 - Amount hint: $500, $700
@@ -54,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Add favicon
+## 7. Add favicon
 
 - Score: 55
 - Amount hint: $10
@@ -64,7 +74,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. feat(backend): scaffold bounties CRUD module
+## 8. Add low-latency raw search path separate from agentic answer synthesis
+
+- Score: 39
+- Amount hint: Bounty 5
+- Issue: https://github.com/XortexAI/XMem/issues/163
+- Repository: https://github.com/XortexAI/XMem
+- Updated: 2026-05-20T13:20:55Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. feat(backend): scaffold bounties CRUD module
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -74,17 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [WIKI-DOCS] Archon fantasy RTS/FPS v0 prototype spec
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/948
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T12:13:42Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Sats to Local Currency | Mexico
+## 10. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -94,32 +104,22 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Fixing the bounty award system
+## 11. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-20T13:09:24Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
 - Issue: https://github.com/ResearchHub/issues/issues/531
 - Repository: https://github.com/ResearchHub/issues
 - Updated: 2026-01-20T06:50:39Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. Create a Bounty Amount Box Issue
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/540
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:37Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

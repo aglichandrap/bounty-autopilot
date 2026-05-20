@@ -1,6 +1,6 @@
 # Algora Bounty Scout
 
-Last run: 2026-05-20 13:08 UTC
+Last run: 2026-05-20 13:28 UTC
 
 Found candidates: 4
 
@@ -9,25 +9,29 @@ Found candidates: 4
 - Amount: $100
 - Issue: https://github.com/projectdiscovery/nuclei/issues/6674
 - Repository: https://github.com/projectdiscovery/nuclei
-- Reason: Algora open bounty from https://algora.io/projectdiscovery/bounties
+- Score: 150
+- Reason: Algora open paid bounty from https://algora.io/projectdiscovery/bounties
 
 ## Integrate typos tool into CI
 
 - Amount: $100
 - Issue: https://github.com/projectdiscovery/nuclei/issues/6532
 - Repository: https://github.com/projectdiscovery/nuclei
-- Reason: Algora open bounty from https://algora.io/projectdiscovery/bounties
+- Score: 150
+- Reason: Algora open paid bounty from https://algora.io/projectdiscovery/bounties
 
 ## [CAL-3105] BigBlueButton Integration
 
 - Amount: $50
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Repository: https://github.com/calcom/cal.com
-- Reason: Algora open bounty from https://algora.io/cal/bounties
+- Score: 145
+- Reason: Algora open paid bounty from https://algora.io/cal/bounties
 
 ## Proton Calendar Integration
 
 - Amount: $200
 - Issue: https://github.com/calcom/cal.com/issues/5756
 - Repository: https://github.com/calcom/cal.com
-- Reason: Algora open bounty from https://algora.io/cal/bounties
+- Score: 160
+- Reason: Algora open paid bounty from https://algora.io/cal/bounties
