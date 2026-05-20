@@ -8,6 +8,7 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.error import HTTPError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -73,7 +74,7 @@ class Candidate:
     source: str = "volume-expander"
 
 
-def github_get(url: str, token: str | None = None) -> dict[str, Any]:
+def _github_get_once(url: str, token: str | None = None) -> dict[str, Any]:
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "bounty-autopilot-volume-expander",
@@ -82,9 +83,26 @@ def github_get(url: str, token: str | None = None) -> dict[str, Any]:
     if token:
         headers["Authorization"] = f"Bearer {token}"
     request = Request(url, headers=headers)
-    with urlopen(request, timeout=30) as response:
-        raw = response.read().decode("utf-8", errors="replace")
+    try:
+        with urlopen(request, timeout=30) as response:
+            raw = response.read().decode("utf-8", errors="replace")
+    except HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"HTTP {exc.code}: {body[:500] or exc.reason}") from exc
     return json.loads(raw) if raw else {}
+
+
+def github_get(url: str, token: str | None = None) -> dict[str, Any]:
+    if not token:
+        return _github_get_once(url)
+    try:
+        return _github_get_once(url, token=token)
+    except RuntimeError as exc:
+        # GitHub Actions installation tokens can be forbidden from cross-repo search.
+        # Public unauthenticated search is often enough for scouting, so keep going.
+        if "HTTP 403" not in str(exc):
+            raise
+        return _github_get_once(url)
 
 
 def clean(value: str) -> str:
@@ -208,7 +226,7 @@ def write_report(found: list[Candidate], errors: list[str]) -> None:
 
 
 def main() -> int:
-    token = os.environ.get("GITHUB_TOKEN")
+    token = os.environ.get("GITHUB_SEARCH_TOKEN") or os.environ.get("BOUNTY_GITHUB_TOKEN") or os.environ.get("GITHUB_TOKEN")
     by_url: dict[str, dict[str, Any]] = {str(item.get("url")): item for item in load_existing() if item.get("url")}
     found: list[Candidate] = []
     errors: list[str] = []
