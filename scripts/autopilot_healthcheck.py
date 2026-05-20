@@ -45,12 +45,18 @@ def has_secret(name: str) -> bool:
     return bool(os.environ.get(name, "").strip())
 
 
-def status_from_report(text: str) -> str:
+def status_from_report(text: str, *, local_solver_fallback: bool = False) -> str:
     if not text:
         return "missing"
     lowered = text.lower()
-    if "not_configured" in lowered or "configuration missing" in lowered:
-        return "blocked"
+    missing_model = (
+        "openai_api_key is required" in lowered
+        or "no model key configured" in lowered
+        or "configuration missing" in lowered
+        or "not_configured" in lowered
+    )
+    if missing_model:
+        return "degraded" if local_solver_fallback else "blocked"
     if "patch_ready" in lowered or "submitted" in lowered or "pr_opened" in lowered or "claimed" in lowered:
         return "active"
     if "access_failed" in lowered or "blocked" in lowered or "no solver candidates" in lowered or "claim_failed" in lowered:
@@ -74,13 +80,37 @@ def main() -> int:
     checks: list[Check] = []
 
     bounty_token = has_secret("BOUNTY_GITHUB_TOKEN") or has_secret("GH_TOKEN") or has_secret("GITHUB_TOKEN")
-    checks.append(Check("GitHub interaction token", "ok" if bounty_token else "blocked", "Token available for comments, fork, push, and PR submission." if bounty_token else "Missing token for GitHub comments, fork, push, and PR submission."))
+    checks.append(
+        Check(
+            "GitHub interaction token",
+            "ok" if bounty_token else "blocked",
+            "Token available for comments, fork, push, and PR submission."
+            if bounty_token
+            else "Missing token for GitHub comments, fork, push, and PR submission.",
+        )
+    )
 
     model_ready = has_secret("OPENAI_API_KEY") or has_secret("OPENROUTER_API_KEY") or (has_secret("SOLVER_API_KEY") and has_secret("SOLVER_BASE_URL"))
-    checks.append(Check("Online model solver key", "ok" if model_ready else "degraded", "Online patch solver can call a model." if model_ready else "GitHub Actions cannot generate new code patches without OPENAI_API_KEY, OPENROUTER_API_KEY, or SOLVER_API_KEY+SOLVER_BASE_URL. Local Codex automation is the fallback."))
+    checks.append(
+        Check(
+            "Online model solver key",
+            "ok" if model_ready else "degraded",
+            "Online patch solver can call a model."
+            if model_ready
+            else "GitHub Actions cannot generate new code patches without a model key. Local Codex automation is configured as the solving fallback.",
+        )
+    )
 
     taskbounty_ready = has_secret("TASKBOUNTY_API_KEY") and has_secret("TASKBOUNTY_AGENT_ID")
-    checks.append(Check("TaskBounty credentials", "ok" if taskbounty_ready else "degraded", "TaskBounty API and agent id are available." if taskbounty_ready else "TaskBounty scanning/submission may be limited without API key and agent id."))
+    checks.append(
+        Check(
+            "TaskBounty credentials",
+            "ok" if taskbounty_ready else "degraded",
+            "TaskBounty API and agent id are available."
+            if taskbounty_ready
+            else "TaskBounty scanning/submission may be limited without API key and agent id.",
+        )
+    )
 
     claim_report = read_text("github_bounty_claim_report.md")
     claim_status = status_from_report(claim_report)
@@ -88,10 +118,26 @@ def main() -> int:
     checks.append(Check("GitHub bounty claimer", claim_status, f"Comments tracked: {len(comments)}" if comments else "No claim comments tracked yet."))
 
     github_solver_report = read_text("github_openai_patch_solver_report.md")
-    checks.append(Check("GitHub patch solver report", status_from_report(github_solver_report), "Latest report parsed." if github_solver_report else "No GitHub patch solver report yet."))
+    checks.append(
+        Check(
+            "GitHub patch solver report",
+            status_from_report(github_solver_report, local_solver_fallback=True),
+            "Latest report parsed; local Codex is fallback if online model key is missing."
+            if github_solver_report
+            else "No GitHub patch solver report yet.",
+        )
+    )
 
     task_solver_report = read_text("openai_patch_solver_report.md")
-    checks.append(Check("TaskBounty patch solver report", status_from_report(task_solver_report), "Latest report parsed." if task_solver_report else "No TaskBounty patch solver report yet."))
+    checks.append(
+        Check(
+            "TaskBounty patch solver report",
+            status_from_report(task_solver_report, local_solver_fallback=True),
+            "Latest report parsed; local Codex is fallback if online model key is missing."
+            if task_solver_report
+            else "No TaskBounty patch solver report yet.",
+        )
+    )
 
     submitter_report = read_text("github_bounty_submission_report.md")
     submitter_status = status_from_report(submitter_report)
@@ -131,11 +177,11 @@ def main() -> int:
 
     lines = ["# Autopilot Health", "", f"Last run: {data['updated_at']}", "", f"Overall: `{overall}`", ""]
     if overall == "blocked":
-        lines.extend(["The automation has at least one blocker that prevents full unattended execution.", ""])
+        lines.extend(["The automation has a blocker that prevents unattended execution.", ""])
     elif overall == "active":
         lines.extend(["The automation has active work in flight, claim comments, or ready submission paths.", ""])
     elif overall == "degraded":
-        lines.extend(["The automation can still scout/follow up, but at least one capability is degraded.", ""])
+        lines.extend(["The automation can still scout, solve locally through Codex, submit ready patches, and follow up; at least one online capability is degraded.", ""])
     else:
         lines.extend(["The automation is watching for the next suitable opportunity.", ""])
 
