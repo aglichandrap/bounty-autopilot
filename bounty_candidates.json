@@ -1,12 +1,24 @@
 [
   {
-    "title": "Apparently Window Closes when I edit Main Electron File",
-    "url": "https://github.com/sindresorhus/electron-reloader/issues/2",
-    "repository_url": "https://github.com/sindresorhus/electron-reloader",
-    "updated_at": "2026-05-20T05:21:31Z",
-    "score": 59,
-    "amount_hint": "$40.00",
-    "reason": "mentions bounty/reward, has visible amount",
+    "title": "Fixing the bounty award system",
+    "url": "https://github.com/ResearchHub/issues/issues/531",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:39Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  },
+  {
+    "title": "Create a Bounty Amount Box Issue",
+    "url": "https://github.com/ResearchHub/issues/issues/540",
+    "repository_url": "https://github.com/ResearchHub/issues",
+    "updated_at": "2026-01-20T06:50:37Z",
+    "score": 35,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, low discussion volume",
     "triage_decision": "keep",
     "triage_reasons": [],
     "linked_prs": []

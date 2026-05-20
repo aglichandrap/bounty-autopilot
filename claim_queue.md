@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-20 05:43 UTC
+Last built: 2026-05-20 05:47 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -23,21 +23,3 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 - URL: https://www.task-bounty.com/task/fix-editor-scroll-jumps-randomly-related-to-chrome-97d1ll
 - Amount: $10
 - Status: needs TaskBounty agent API access before attempting/submitting.
-
-## GitHub
-
-### Apparently Window Closes when I edit Main Electron File
-
-- URL: https://github.com/sindresorhus/electron-reloader/issues/2
-- Amount: $40.00
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
