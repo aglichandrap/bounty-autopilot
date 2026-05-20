@@ -30,6 +30,8 @@ permissions:
 jobs:
   scout:
     runs-on: ubuntu-latest
+    env:
+      SCOUT_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN || github.token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,30 +43,32 @@ jobs:
 
       - name: Run bounty scout
         env:
-          GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
         run: python scripts/bounty_scout.py
 
       - name: Expand bounty candidate volume
         env:
-          GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
+          GITHUB_SEARCH_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
           BOUNTY_VOLUME_MAX_CANDIDATES: "100"
           BOUNTY_VOLUME_MIN_SCORE: "20"
         run: python scripts/bounty_volume_expander.py
 
       - name: Add Algora bounty candidates
         env:
-          GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
         run: python scripts/algora_bounty_scout.py
 
       - name: Triage GitHub bounty candidates
         env:
-          GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
           BOUNTY_MAX_COMMENTS: "25"
+          BOUNTY_MIN_PAID_AMOUNT: "10"
         run: python scripts/bounty_candidate_triage.py
 
       - name: Generate GitHub bounty patch
         env:
-          GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
           GITHUB_SOLVER_MAX_TASKS: "5"
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_SOLVER_MODEL: ${{ secrets.OPENAI_SOLVER_MODEL }}
