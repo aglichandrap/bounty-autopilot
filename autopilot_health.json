@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-20 05:55 UTC",
-  "overall": "blocked",
+  "updated_at": "2026-05-20 06:46 UTC",
+  "overall": "active",
   "checks": [
     {
       "name": "GitHub interaction token",
@@ -10,7 +10,7 @@
     {
       "name": "Online model solver key",
       "status": "degraded",
-      "detail": "GitHub Actions cannot generate new code patches without OPENAI_API_KEY, OPENROUTER_API_KEY, or SOLVER_API_KEY+SOLVER_BASE_URL. Local Codex automation is the fallback."
+      "detail": "GitHub Actions cannot generate new code patches without a model key. Local Codex automation is configured as the solving fallback."
     },
     {
       "name": "TaskBounty credentials",
@@ -24,13 +24,13 @@
     },
     {
       "name": "GitHub patch solver report",
-      "status": "ok",
-      "detail": "Latest report parsed."
+      "status": "degraded",
+      "detail": "Latest report parsed; local Codex is fallback if online model key is missing."
     },
     {
       "name": "TaskBounty patch solver report",
-      "status": "blocked",
-      "detail": "Latest report parsed."
+      "status": "degraded",
+      "detail": "Latest report parsed; local Codex is fallback if online model key is missing."
     },
     {
       "name": "GitHub bounty submitter",
