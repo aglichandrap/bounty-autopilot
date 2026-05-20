@@ -36,17 +36,17 @@ jobs:
       - name: Claim one safe GitHub bounty candidate
         env:
           BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
-          GITHUB_BOUNTY_MAX_CLAIMS: "1"
-          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "20"
-          GITHUB_BOUNTY_MAX_COMPETING_PRS: "2"
+          GITHUB_BOUNTY_MAX_CLAIMS: "3"
+          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "80"
+          GITHUB_BOUNTY_MAX_COMPETING_PRS: "4"
           GITHUB_BOUNTY_MIN_CLAIM_AMOUNT: "10"
         run: python scripts/github_bounty_claimer.py
 
       - name: Clean up stale or false-positive claims
         env:
           BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
-          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "20"
-          GITHUB_BOUNTY_MAX_COMPETING_PRS: "2"
+          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "80"
+          GITHUB_BOUNTY_MAX_COMPETING_PRS: "4"
           GITHUB_BOUNTY_MIN_CLAIM_AMOUNT: "10"
         run: python scripts/github_bounty_claim_cleanup.py
 
