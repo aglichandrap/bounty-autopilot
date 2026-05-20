@@ -86,12 +86,20 @@ def triage_task(task: dict[str, Any], token: str | None) -> tuple[dict[str, Any]
     linked_prs: list[str] = []
     decision = "candidate"
     score_adjustment = 0
+    source = clean(str(task.get("source") or "")).lower()
+    amount_hint = clean(str(task.get("amount_hint") or "")).lower()
+    funded_feed_task = source == "bounties-feed" and "amount not obvious" not in amount_hint
 
     parsed = parse_issue_url(issue_url)
     if not parsed:
-        decision = "blocked"
-        score_adjustment -= 60
-        reasons.append("no GitHub issue URL exposed")
+        if funded_feed_task:
+            score_adjustment += 5
+            reasons.append("funded TaskBounty feed item; let worker request access before blocking")
+            reasons.append("no public GitHub issue URL exposed before access")
+        else:
+            decision = "blocked"
+            score_adjustment -= 60
+            reasons.append("no GitHub issue URL exposed")
     else:
         repo, issue_number = parsed
         try:
