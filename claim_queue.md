@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-20 04:49 UTC
+Last built: 2026-05-20 05:43 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,26 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### App stops updating on resume after suspend mode
+### Apparently Window Closes when I edit Main Electron File
 
-- URL: https://github.com/sindresorhus/caprine/issues/103
-- Amount: $100.00
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate
-
-- URL: https://github.com/matchmoments-admin/ask-arthur/issues/321
-- Amount: $3, $15
+- URL: https://github.com/sindresorhus/electron-reloader/issues/2
+- Amount: $40.00
 - Claim comment if rules allow:
 
 ```text
