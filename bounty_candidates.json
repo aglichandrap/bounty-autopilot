@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "title": "[BOUNTY $50] - Add a \"TRUE SHUFFLE\" feature.",
+    "url": "https://github.com/Meeep1/EeveeSpotifyRevivedPublic/issues/11",
+    "repository_url": "https://github.com/Meeep1/EeveeSpotifyRevivedPublic",
+    "updated_at": "2026-05-20T20:04:32Z",
+    "score": 40,
+    "amount_hint": "$50, BOUNTY $50",
+    "reason": "mentions bounty/reward, has visible amount",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "light competition allowed: 1 open competing PR(s)"
+    ],
+    "linked_prs": [
+      "https://github.com/Meeep1/EeveeSpotifyRevivedPublic/pull/28"
+    ]
+  }
+]

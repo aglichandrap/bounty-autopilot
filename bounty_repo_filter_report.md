@@ -1,9 +1,9 @@
 # Bounty Repository Filter
 
-Last run: 2026-05-20 21:14 UTC
+Last run: 2026-05-20 21:16 UTC
 
-Input candidates: 9
-Kept candidates: 8
+Input candidates: 14
+Kept candidates: 13
 Dropped candidates: 1
 
 This filter removes known false-positive or self-tracking repositories before expensive triage/solver work runs.
