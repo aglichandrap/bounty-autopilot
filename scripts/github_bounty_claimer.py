@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -17,7 +17,8 @@ CANDIDATES_PATH = Path("bounty_candidates.json")
 STATE_PATH = Path("github_bounty_claim_state.json")
 REPORT_PATH = Path("github_bounty_claim_report.md")
 MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "1"))
-MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "15"))
+MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "8"))
+MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "20"))
 
 CLAIM_COMMENT = (
     "I can take this if it is still available. I will first reproduce the issue, "
@@ -96,6 +97,18 @@ def parse_issue(url: str) -> tuple[str, int] | None:
     return match.group(1), int(match.group(2))
 
 
+def amount_value(text: str) -> float:
+    best = 0.0
+    for match in re.finditer(r"\$\s*([0-9][0-9,]*(?:\.[0-9]+)?)(\s*k)?", text or "", flags=re.I):
+        value = float(match.group(1).replace(",", ""))
+        if match.group(2):
+            value *= 1000
+        best = max(best, value)
+    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s*(usd|usdc)\b", text or "", flags=re.I):
+        best = max(best, float(match.group(1).replace(",", "")))
+    return best
+
+
 def text_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
     return " ".join(
         str(value or "")
@@ -113,12 +126,14 @@ def text_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
 def has_paid_signal(blob: str) -> bool:
     if "amount not obvious" in blob:
         return False
-    return bool(re.search(r"\$\s*\d|\b\d+\s*(usd|usdc|sats|sat)\b|\bbounty\b|\breward\b|\bpaid\b", blob))
+    return amount_value(blob) >= MIN_CLAIM_AMOUNT
 
 
 def forbidden(blob: str) -> str:
     patterns = {
         "security-sensitive": r"\b(security|vulnerability|credential|private key|api key|secret)\b",
+        "private-access-needed": r"\b(stripe live|vercel|production access|admin access|customer account|private repo)\b",
+        "manual-verification-only": r"\b(smoke test|end-to-end smoke|manual verification|verify .* live-mode)\b",
         "spam/deception": r"\b(spam|fake account|referral|airdrop|casino|gambling|trading bot)\b",
         "prompt/context": r"\b(prompt|context|pre_task_context|runtime_instructions)\b",
         "content-only": r"\b(article|blog post|tutorial|content proposal)\b",
@@ -140,7 +155,10 @@ def already_claimed_by_us(comments: list[dict[str, Any]], login: str) -> str:
 
 
 def competition_in_comments(comments: list[dict[str, Any]], login: str) -> str:
-    pattern = re.compile(r"\b(i can work|working on this|opened a pr|submitted|raised pr|/claim|/attempt|assign(ed)? me)\b", re.I)
+    pattern = re.compile(
+        r"\b(i can work|i'?m interested in taking|working on this|opened a pr|submitted|raised pr|/claim|/attempt|assign(ed)? me)\b",
+        re.I,
+    )
     for comment in comments:
         if not isinstance(comment, dict):
             continue
@@ -194,7 +212,7 @@ def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: di
 
     blob = text_blob(candidate, issue)
     if not has_paid_signal(blob):
-        return ClaimResult(title, issue_url, "skipped", message="No clear paid bounty signal.")
+        return ClaimResult(title, issue_url, "skipped", message=f"No claimable paid signal >= ${MIN_CLAIM_AMOUNT:.0f}.")
     reason = forbidden(blob)
     if reason:
         return ClaimResult(title, issue_url, "skipped", message=f"Forbidden/risky category: {reason}.")
@@ -224,6 +242,10 @@ def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: di
     comment_url = str(comment.get("html_url") or "")
     state["claims"][issue_url] = {"comment_url": comment_url, "updated_at": now_utc(), "status": "claimed"}
     return ClaimResult(title, issue_url, "claimed", comment_url, "Posted cautious availability comment.")
+
+
+def claim_sort_key(item: dict[str, Any]) -> tuple[float, int]:
+    return amount_value(str(item.get("amount_hint") or "")), int(item.get("score") or 0)
 
 
 def write_report(results: list[ClaimResult], state: dict[str, Any]) -> None:
@@ -257,7 +279,7 @@ def main() -> int:
         return 0
     login = str(viewer.get("login") or "")
     candidates = [item for item in load_candidates() if str(item.get("triage_decision") or "keep").lower() == "keep"]
-    candidates.sort(key=lambda item: int(item.get("score") or 0), reverse=True)
+    candidates.sort(key=claim_sort_key, reverse=True)
     results: list[ClaimResult] = []
     claimed = 0
     for candidate in candidates:
