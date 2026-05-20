@@ -11,6 +11,7 @@ on:
       - "scripts/taskbounty_worker.py"
       - "scripts/taskbounty_scout.py"
       - "scripts/taskbounty_triage.py"
+      - "scripts/openai_patch_solver.py"
       - "taskbounty_patches/**"
       - ".github/workflows/taskbounty-worker.yml"
 
@@ -45,6 +46,13 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/taskbounty_triage.py
 
+      - name: Generate patch with OpenAI solver
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_SOLVER_MODEL: ${{ secrets.OPENAI_SOLVER_MODEL }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/openai_patch_solver.py
+
       - name: Run TaskBounty worker
         env:
           TASKBOUNTY_API_KEY: ${{ secrets.TASKBOUNTY_API_KEY }}
@@ -55,9 +63,10 @@ jobs:
 
       - name: Commit worker report
         run: |
+          mkdir -p taskbounty_patches
           git config user.name "taskbounty-worker-bot"
           git config user.email "taskbounty-worker-bot@users.noreply.github.com"
-          git add taskbounty_report.md taskbounty_tasks.json taskbounty_triage_report.md taskbounty_worker_report.md taskbounty_worker_state.json taskbounty_agent_state.json
+          git add taskbounty_report.md taskbounty_tasks.json taskbounty_triage_report.md taskbounty_worker_report.md taskbounty_worker_state.json taskbounty_agent_state.json openai_patch_solver_report.md taskbounty_patches
           if git diff --cached --quiet; then
             echo "No TaskBounty worker changes."
           else
