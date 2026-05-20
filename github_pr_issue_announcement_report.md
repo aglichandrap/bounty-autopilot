@@ -1,6 +1,6 @@
 # GitHub PR Issue Announcement Report
 
-Last run: 2026-05-20 22:06 UTC
+Last run: 2026-05-20 23:48 UTC
 
 ## already_announced
 
@@ -9,23 +9,23 @@ Last run: 2026-05-20 22:06 UTC
 - Comment: not posted
 - Message: Matching issue comment already exists.
 
-## commented
+## already_announced
 
 - PR: https://github.com/orchestration-agent/AgentOrchestration/pull/99
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
-- Comment: https://github.com/orchestration-agent/AgentOrchestration/issues/88#issuecomment-4503026056
-- Message: ok
+- Comment: not posted
+- Message: Matching issue comment already exists.
 
-## commented
+## already_announced
 
 - PR: https://github.com/orchestration-agent/AgentOrchestration/pull/98
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/24
-- Comment: https://github.com/orchestration-agent/AgentOrchestration/issues/24#issuecomment-4503026147
-- Message: ok
+- Comment: not posted
+- Message: Matching issue comment already exists.
 
-## commented
+## already_announced
 
 - PR: https://github.com/orchestration-agent/AgentOrchestration/pull/20
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/12
-- Comment: https://github.com/orchestration-agent/AgentOrchestration/issues/12#issuecomment-4503026243
-- Message: ok
+- Comment: not posted
+- Message: Matching issue comment already exists.
