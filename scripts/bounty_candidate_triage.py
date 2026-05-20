@@ -26,8 +26,11 @@ MONEY_PATTERN = re.compile(r"(?:usd\s*)?\$\s*\d|(?:\b\d+\s*(?:usd|usdc)\b)", re.
 COMMENT_BLOCK_PATTERN = re.compile(
     r"\b(submitted|opened|raised)\s+(?:a\s+)?(?:focused\s+)?(?:fix\s+)?(?:pr|pull request)\b"
     r"|/attempt\b|/claim\b|pull/\d+|#\d+\s+for\s+this"
-    r"|\bi can take this\b|\bi'll open a focused pr\b|\bi will open a focused pr\b"
+    r"|\bi can take this\b|\bi'?m interested in taking\b|\binterested in taking a focused look\b"
+    r"|\bi'll open a focused pr\b|\bi will open a focused pr\b"
     r"|\bsuperseded\b|\bshipped as pr\b|\bbuilt\b.*\bpr\s+#?\d+\b"
+    r"|\bsource or patching workflow available\b|\bpublic branch only contains the readme\b"
+    r"|\bexpected deliverable a binary patch\b|\bnot the source/build setup\b"
     r"|\bthis issue can be closed once\b|\bno code written yet\b.*\bthe handoff\b",
     re.IGNORECASE,
 )
@@ -197,7 +200,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
 
             if comments_indicate_competition(repo, issue_number, token=token):
                 decision = "drop"
-                reasons.append("issue comments indicate active attempts, claims, or superseded/built work")
+                reasons.append("issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work")
                 final_score -= 60
         except Exception as exc:
             reasons.append(f"GitHub triage failed: {exc}")
