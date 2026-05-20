@@ -4,28 +4,13 @@
     "url": "https://www.task-bounty.com/task/fix-security-roadmap-protecting-api-keys-from-agen-uej5sq",
     "task_id": "623bb359-6405-4142-a1c5-f06ce4b9779c",
     "amount_hint": "$10",
-    "score": -100,
+    "score": 50,
     "source": "api",
     "reason": "TaskBounty paid task",
     "summary": "Resolve open issue #11829 in openclaw/openclaw. Real upstream bug; a verified PR that fixes it wins the bounty.",
     "github_repo_url": "https://github.com/openclaw/openclaw",
     "github_issue_url": "https://github.com/openclaw/openclaw/issues/11829",
     "status": "OPEN",
-    "submission_count": 0,
-    "triage_decision": "crowded",
-    "triage_score_adjustment": -150,
-    "triage_reasons": [
-      "low discussion volume",
-      "security-sensitive scope",
-      "linked or competing PRs found (5)",
-      "comments indicate a competing PR already exists"
-    ],
-    "linked_prs": [
-      "https://github.com/openclaw/openclaw/issues/11829",
-      "https://github.com/openclaw/openclaw/issues/14411",
-      "https://github.com/openclaw/openclaw/issues/56268",
-      "https://github.com/openclaw/openclaw/issues/10659",
-      "https://github.com/openclaw/openclaw/issues/13854"
-    ]
+    "submission_count": 0
   }
 ]
