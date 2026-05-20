@@ -1,17 +1,17 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-20 12:09 UTC
+Last built: 2026-05-20 12:27 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: Model uses N sequential Edit calls for bulk renumbering instead of single sed/Write
+## Queue Item 1: [SCAN] 20-05-2026 14:00 — No opportunities | VIX 18.1 | NEUTRAL
 
-- Issue: https://github.com/anthropics/claude-code/issues/60733
-- Repository: https://github.com/anthropics/claude-code
-- Amount hint: $15, $3.75
-- Score: 98
-- Work priority: 99.5
-- Match reason: paid/bounty wording, visible amount, coding scope, low discussion, new issue
+- Issue: https://github.com/Dilaneze/skills-introduction-to-github/issues/41
+- Repository: https://github.com/Dilaneze/skills-introduction-to-github
+- Amount hint: $735.58, $738.65, $735, $710
+- Score: 100
+- Work priority: 173.9
+- Match reason: paid/bounty wording, visible amount, no discussion yet, new issue, fresh update
 
 ### Worker Instructions
 
