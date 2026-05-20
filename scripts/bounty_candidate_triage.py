@@ -30,8 +30,10 @@ REAL_BOUNTY_PATTERN = re.compile(
 )
 FALSE_POSITIVE_PATTERN = re.compile(
     r"\b(bounty claim|claim:)\b|\b(completed|working submission)\b.*\b(sol(ana)? wallet|payment details)\b"
-    r"|\b(cost floor|monthly cost|per month|/month|/mo|paid once|paid api|budget tokens)\b"
-    r"|\b(smoke test|stripe live|vercel|production access)\b",
+    r"|\b(cost floor|monthly cost|per month|/month|/mo|paid once|paid api|budget tokens|cache info|prompt_cache_key|token consumption)\b"
+    r"|\b(smoke test|stripe live|vercel|production access)\b"
+    r"|\b(watch|short|long|bajista|alcista|bearish|bullish)\b.*\b([a-z]{2,6}/usd|usd/[a-z]{2,6}|scanner)\b"
+    r"|\b(zec/usd|btc/usd|eth/usd|trading signal|market signal)\b",
     re.IGNORECASE,
 )
 COMMENT_BLOCK_PATTERN = re.compile(
@@ -165,7 +167,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
 
             if FALSE_POSITIVE_PATTERN.search(issue_text):
                 decision = "drop"
-                reasons.append("false positive claim/cost/manual-access issue, not an open coding bounty")
+                reasons.append("false positive claim/cost/market/manual-access issue, not an open coding bounty")
                 final_score -= 100
             elif NO_PAY_PATTERN.search(issue_text) or any("free-ok" in label for label in labels):
                 decision = "drop"
@@ -254,7 +256,7 @@ def write_report(entries: list[TriageEntry], kept_count: int) -> None:
         "",
         f"Kept candidates: {kept_count}",
         "",
-        "This pass removes unpaid, crowded, assigned, closed, already-attempted, or false-positive GitHub bounty issues before worker time is spent.",
+        "This pass removes unpaid, crowded, assigned, closed, already-attempted, market-alert, or false-positive GitHub bounty issues before worker time is spent.",
         "",
     ]
     if not entries:
