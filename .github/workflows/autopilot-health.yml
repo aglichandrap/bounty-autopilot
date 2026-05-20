@@ -1,0 +1,76 @@
+name: Autopilot Health
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/autopilot_healthcheck.py"
+      - ".github/workflows/autopilot-health.yml"
+      - "*_report.md"
+      - "*_state.json"
+      - "github_bounty_patches/**"
+      - "taskbounty_patches/**"
+
+concurrency:
+  group: autopilot-health-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check autopilot health
+        env:
+          BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          TASKBOUNTY_API_KEY: ${{ secrets.TASKBOUNTY_API_KEY }}
+          TASKBOUNTY_AGENT_ID: ${{ secrets.TASKBOUNTY_AGENT_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SOLVER_API_KEY: ${{ secrets.SOLVER_API_KEY }}
+          SOLVER_BASE_URL: ${{ secrets.SOLVER_BASE_URL }}
+        run: python scripts/autopilot_healthcheck.py
+
+      - name: Commit health report
+        run: |
+          git config user.name "autopilot-health-bot"
+          git config user.email "autopilot-health-bot@users.noreply.github.com"
+          git add AUTOPILOT_HEALTH.md autopilot_health.json
+          if git diff --cached --quiet; then
+            echo "No health report changes."
+          else
+            git commit -m "Update autopilot health"
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase -X ours origin main
+              sleep 5
+            done
+          fi
+
+      - name: Open/update health issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Autopilot health status"
+          body="$(cat AUTOPILOT_HEALTH.md)"
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
