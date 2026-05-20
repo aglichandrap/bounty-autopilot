@@ -1,16 +1,17 @@
 # TaskBounty Triage
 
-Last run: 2026-05-20 04:55 UTC
+Last run: 2026-05-20 05:19 UTC
 
 This report filters scouted TaskBounty tasks before solver time is spent.
 
 ## 1. [$50] Fix: [Admin] New API Submission on: Fix: Flows not working when using celery rabitmq and redis
 
-- Decision: blocked
-- Score adjustment: -60
+- Decision: candidate
+- Score adjustment: 5
 - Issue: not available
 - Repository: not available
-- Reason: no GitHub issue URL exposed
+- Reason: funded TaskBounty feed item; let worker request access before blocking
+- Reason: no public GitHub issue URL exposed before access
 
 ## 2. Fix: Flows not working when using celery rabitmq and redis
 
