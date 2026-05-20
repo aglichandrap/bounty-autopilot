@@ -1,14 +1,1 @@
-[
-  {
-    "title": "Make our build system agnostic to bundlers",
-    "url": "https://github.com/okTurtles/group-income/issues/1085",
-    "repository_url": "https://github.com/okTurtles/group-income",
-    "updated_at": "2026-05-20T16:15:24Z",
-    "score": 72,
-    "amount_hint": "$300",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  }
-]
+[]
