@@ -2,7 +2,7 @@ name: Bounty Scout
 
 on:
   schedule:
-    - cron: "2,17,32,47 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
   push:
     branches:
@@ -47,7 +47,7 @@ jobs:
       - name: Expand bounty candidate volume
         env:
           GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
-          BOUNTY_VOLUME_MAX_CANDIDATES: "80"
+          BOUNTY_VOLUME_MAX_CANDIDATES: "100"
           BOUNTY_VOLUME_MIN_SCORE: "20"
         run: python scripts/bounty_volume_expander.py
 
@@ -59,7 +59,7 @@ jobs:
       - name: Triage GitHub bounty candidates
         env:
           GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
-          BOUNTY_MAX_COMMENTS: "40"
+          BOUNTY_MAX_COMMENTS: "25"
         run: python scripts/bounty_candidate_triage.py
 
       - name: Generate GitHub bounty patch
