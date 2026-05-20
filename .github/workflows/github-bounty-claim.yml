@@ -36,7 +36,7 @@ jobs:
         env:
           BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
           GITHUB_BOUNTY_MAX_CLAIMS: "1"
-          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "15"
+          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "20"
           GITHUB_BOUNTY_MAX_COMPETING_PRS: "2"
           GITHUB_BOUNTY_MIN_CLAIM_AMOUNT: "10"
         run: python scripts/github_bounty_claimer.py
