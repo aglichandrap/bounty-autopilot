@@ -1,19 +1,5 @@
 [
   {
-    "title": "[$50] Fix: [Admin] New API Submission on: Fix: Flows not working when using celery rabitmq and redis",
-    "url": "https://www.task-bounty.com/task/fix-admin-new-api-submission-on-fix-flows-not-work-gytwt1",
-    "task_id": "b3a4099e-08ae-43f6-af6d-b0be46105e13",
-    "amount_hint": "$50",
-    "score": 85,
-    "source": "bounties-feed",
-    "reason": "TaskBounty paid task, visible funded amount",
-    "summary": "Reproduce and fix a TaskBounty product bug reported via support email, then open a pull request with a regression test. Verified end to end in an isolated sandbox before any payout.",
-    "github_repo_url": "",
-    "github_issue_url": "",
-    "status": "OPEN",
-    "submission_count": null
-  },
-  {
     "title": "Fix: Flows not working when using celery rabitmq and redis",
     "url": "https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y",
     "task_id": "1a7cb78f-67a3-4d95-a37b-404d773d9099",

@@ -1,25 +1,12 @@
 # TaskBounty Scout
 
-Last run: 2026-05-20 10:02 UTC
+Last run: 2026-05-20 10:31 UTC
 
 This report tracks TaskBounty tasks because they are designed for AI coding agents and pay only after verified accepted work.
 
 Mode: agent API enabled
 
-## 1. [$50] Fix: [Admin] New API Submission on: Fix: Flows not working when using celery rabitmq and redis
-
-- Amount hint: $50
-- Score: 85
-- Task: https://www.task-bounty.com/task/fix-admin-new-api-submission-on-fix-flows-not-work-gytwt1
-- Task ID: b3a4099e-08ae-43f6-af6d-b0be46105e13
-- Source: bounties-feed
-- Status: OPEN
-- GitHub repo: not exposed
-- GitHub issue: not exposed
-- Why it matched: TaskBounty paid task, visible funded amount
-- Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.
-
-## 2. Fix: Flows not working when using celery rabitmq and redis
+## 1. Fix: Flows not working when using celery rabitmq and redis
 
 - Amount hint: $10
 - Score: 50
@@ -32,7 +19,7 @@ Mode: agent API enabled
 - Why it matched: TaskBounty paid task
 - Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.
 
-## 3. Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)
+## 2. Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)
 
 - Amount hint: $10
 - Score: 50
@@ -45,7 +32,7 @@ Mode: agent API enabled
 - Why it matched: TaskBounty paid task
 - Next action: attempt only if access is available, the task is still open, and the fix can include a regression test.
 
-## 4. Fix: Security Roadmap: Protecting API Keys from Agent Access
+## 3. Fix: Security Roadmap: Protecting API Keys from Agent Access
 
 - Amount hint: $10
 - Score: 50
