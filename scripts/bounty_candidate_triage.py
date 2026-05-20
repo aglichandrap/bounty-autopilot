@@ -16,8 +16,8 @@ CANDIDATES_PATH = Path("bounty_candidates.json")
 REPORT_PATH = Path("bounty_candidate_triage_report.md")
 GITHUB_API = "https://api.github.com"
 OWNER_LOGIN = os.environ.get("BOUNTY_OWNER_LOGIN", "asaadnashed").lower()
-MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "40"))
-MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "2"))
+MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "80"))
+MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "4"))
 MIN_PAID_AMOUNT = float(os.environ.get("BOUNTY_MIN_PAID_AMOUNT", "10"))
 PAID_LABEL_WORDS = ("bounty", "reward", "microgrant")
 NO_PAY_PATTERN = re.compile(
@@ -149,7 +149,7 @@ def has_paid_signal(candidate: dict[str, Any], labels: set[str], issue_text: str
         for key in ("title", "amount_hint")
     ).lower()
     bounty_text = f"{clean(str(candidate.get('title') or ''))} {issue_text} {' '.join(labels)}".lower()
-    amount_text = f"{candidate_amount_text} {issue_text}"
+    amount_text = f"{candidate_amount_text} {issue_text} {' '.join(labels)}"
     if FALSE_POSITIVE_PATTERN.search(f"{bounty_text} {amount_text}"):
         return False
     bounty_label = any(any(word in label for word in PAID_LABEL_WORDS) for label in labels)
@@ -253,7 +253,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
     updated["triage_reasons"] = reasons
     updated["linked_prs"] = linked_pr_urls
 
-    if decision == "drop" or final_score < 25:
+    if decision == "drop" or final_score < 10:
         kept = None
     else:
         kept = updated
