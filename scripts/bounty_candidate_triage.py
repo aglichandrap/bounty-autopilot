@@ -87,14 +87,21 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def strip_code_blocks(value: str) -> str:
+    text = re.sub(r"```.*?```", " ", value or "", flags=re.S)
+    text = re.sub(r"~~~.*?~~~", " ", text, flags=re.S)
+    return text
+
+
 def amount_value(text: str) -> float:
+    prose = strip_code_blocks(text)
     best = 0.0
-    for match in re.finditer(r"\$\s*([0-9][0-9,]*(?:\.[0-9]+)?)(\s*k)?", text or "", flags=re.I):
+    for match in re.finditer(r"\$\s*([0-9][0-9,]*(?:\.[0-9]+)?)(\s*k)?", prose, flags=re.I):
         value = float(match.group(1).replace(",", ""))
         if match.group(2):
             value *= 1000
         best = max(best, value)
-    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s*(usd|usdc)\b", text or "", flags=re.I):
+    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s*(usd|usdc)\b", prose, flags=re.I):
         best = max(best, float(match.group(1).replace(",", "")))
     return best
 
@@ -137,16 +144,17 @@ def comments_indicate_competition(repo: str, issue_number: int, token: str | Non
 
 
 def has_paid_signal(candidate: dict[str, Any], labels: set[str], issue_text: str) -> bool:
-    candidate_text = " ".join(
+    candidate_amount_text = " ".join(
         clean(str(candidate.get(key) or ""))
-        for key in ("title", "amount_hint", "reason", "source")
+        for key in ("title", "amount_hint")
     ).lower()
-    combined = f"{candidate_text} {issue_text} {' '.join(labels)}"
-    if FALSE_POSITIVE_PATTERN.search(combined):
+    bounty_text = f"{clean(str(candidate.get('title') or ''))} {issue_text} {' '.join(labels)}".lower()
+    amount_text = f"{candidate_amount_text} {issue_text}"
+    if FALSE_POSITIVE_PATTERN.search(f"{bounty_text} {amount_text}"):
         return False
     bounty_label = any(any(word in label for word in PAID_LABEL_WORDS) for label in labels)
-    explicit_bounty = REAL_BOUNTY_PATTERN.search(combined) is not None
-    return (bounty_label or explicit_bounty) and amount_value(combined) >= MIN_PAID_AMOUNT
+    explicit_bounty = REAL_BOUNTY_PATTERN.search(bounty_text) is not None
+    return (bounty_label or explicit_bounty) and amount_value(amount_text) >= MIN_PAID_AMOUNT
 
 
 def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict[str, Any] | None, TriageEntry]:
@@ -175,7 +183,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
                 for label in issue.get("labels", [])
                 if isinstance(label, dict)
             }
-            issue_text = f"{title} {issue.get('body') or ''}".lower()
+            issue_text = f"{title} {strip_code_blocks(issue.get('body') or '')}".lower()
 
             if FALSE_POSITIVE_PATTERN.search(issue_text):
                 decision = "drop"
