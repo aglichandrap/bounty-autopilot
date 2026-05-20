@@ -1,10 +1,20 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 11:32 UTC
+Last run: 2026-05-20 12:02 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. SESSION_COMPLETE_RECAP.md
+## 1. [ Bounty $6k ] [ CI ] Validate runner image provenance — self-hosted build fleet
+
+- Score: 80
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/494
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T11:59:26Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. SESSION_COMPLETE_RECAP.md
 
 - Score: 76
 - Amount hint: $10
@@ -14,7 +24,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [Bounty] JMD Currency Precision — Full-Stack Fix
+## 3. [Bounty] JMD Currency Precision — Full-Stack Fix
 
 - Score: 67
 - Amount hint: $1,000
@@ -24,17 +34,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
+## 4. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
 - Score: 63
 - Amount hint: amount not obvious
 - Issue: https://github.com/thesysdev/openui-creator-program/issues/3
 - Repository: https://github.com/thesysdev/openui-creator-program
-- Updated: 2026-05-20T08:32:20Z
+- Updated: 2026-05-20T11:49:46Z
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. Add BIP44 account addresses
+## 5. Add BIP44 account addresses
 
 - Score: 60
 - Amount hint: $10
@@ -44,7 +54,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. Add favicon
+## 6. [$5 bounty] Text object at wrong position (and moves!)
+
+- Score: 59
+- Amount hint: $5
+- Issue: https://github.com/4ian/GDevelop/issues/975
+- Repository: https://github.com/4ian/GDevelop
+- Updated: 2026-05-20T11:51:24Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Add favicon
 
 - Score: 55
 - Amount hint: $10
@@ -54,7 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Sats to Local Currency | Mexico
+## 8. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -64,17 +84,27 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 9. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T11:07:37Z
+- Updated: 2026-05-20T11:47:21Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. Fixing the bounty award system
+## 10. [WIKI-DOCS] Archon fantasy RTS/FPS v0 map blockout
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Jonnyton/Workflow/issues/947
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-20T11:35:25Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -84,7 +114,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Create a Bounty Amount Box Issue
+## 12. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -92,34 +122,4 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Repository: https://github.com/ResearchHub/issues
 - Updated: 2026-01-20T06:50:37Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [ Bounty $3k ] [ CLI ] Propagate deploy failure exit codes — exit status
-
-- Score: 29
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/226
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T11:06:05Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
-
-- Score: 25
-- Amount hint: $8, $8000, Bounty $8, bounty $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/467
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T11:25:19Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
