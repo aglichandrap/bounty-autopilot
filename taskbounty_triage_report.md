@@ -1,10 +1,18 @@
 # TaskBounty Triage
 
-Last run: 2026-05-19 23:48 UTC
+Last run: 2026-05-20 04:55 UTC
 
 This report filters scouted TaskBounty tasks before solver time is spent.
 
-## 1. Fix: Flows not working when using celery rabitmq and redis
+## 1. [$50] Fix: [Admin] New API Submission on: Fix: Flows not working when using celery rabitmq and redis
+
+- Decision: blocked
+- Score adjustment: -60
+- Issue: not available
+- Repository: not available
+- Reason: no GitHub issue URL exposed
+
+## 2. Fix: Flows not working when using celery rabitmq and redis
 
 - Decision: crowded
 - Score adjustment: -160
@@ -16,7 +24,7 @@ This report filters scouted TaskBounty tasks before solver time is spent.
 - Linked PR: https://github.com/langflow-ai/langflow/issues/8476
 - Linked PR: https://github.com/langflow-ai/langflow/issues/300
 
-## 2. Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)
+## 3. Fix: Editor: scroll jumps randomly (related to Chrome, Electron, xinput)
 
 - Decision: crowded
 - Score adjustment: -160
@@ -31,7 +39,7 @@ This report filters scouted TaskBounty tasks before solver time is spent.
 - Linked PR: https://github.com/microsoft/vscode/issues/133744
 - Linked PR: https://github.com/microsoft/vscode/issues/197452
 
-## 3. Fix: Security Roadmap: Protecting API Keys from Agent Access
+## 4. Fix: Security Roadmap: Protecting API Keys from Agent Access
 
 - Decision: crowded
 - Score adjustment: -150

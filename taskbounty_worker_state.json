@@ -1,5 +1,16 @@
 [
   {
+    "task_id": "b3a4099e-08ae-43f6-af6d-b0be46105e13",
+    "title": "[$50] Fix: [Admin] New API Submission on: Fix: Flows not working when using celery rabitmq and redis",
+    "amount_hint": "$50",
+    "task_url": "https://www.task-bounty.com/task/fix-admin-new-api-submission-on-fix-flows-not-work-gytwt1",
+    "status": "triage_skipped_blocked",
+    "repo_url": null,
+    "repo_profile": null,
+    "submission_id": null,
+    "message": "no GitHub issue URL exposed"
+  },
+  {
     "task_id": "623bb359-6405-4142-a1c5-f06ce4b9779c",
     "title": "Fix: Security Roadmap: Protecting API Keys from Agent Access",
     "amount_hint": "$10",
