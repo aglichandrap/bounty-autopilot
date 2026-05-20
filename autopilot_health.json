@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20 08:37 UTC",
+  "updated_at": "2026-05-20 10:38 UTC",
   "overall": "active",
   "checks": [
     {
@@ -50,7 +50,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 3; TaskBounty candidates: 4."
+      "detail": "GitHub candidates: 0; TaskBounty candidates: 3."
     }
   ],
   "tracked_prs": [

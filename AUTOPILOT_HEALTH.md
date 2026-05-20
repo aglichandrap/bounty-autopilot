@@ -1,6 +1,6 @@
 # Autopilot Health
 
-Last run: 2026-05-20 08:37 UTC
+Last run: 2026-05-20 10:38 UTC
 
 Overall: `active`
 
@@ -17,7 +17,7 @@ The automation has active work in flight, claim comments, or ready submission pa
 - `active` GitHub bounty submitter: PRs tracked: 3
 - `degraded` TaskBounty worker: Worker report exists.
 - `ok` Ready patch files: GitHub patches: 3; TaskBounty patches: 0.
-- `ok` Candidate feeds: GitHub candidates: 3; TaskBounty candidates: 4.
+- `ok` Candidate feeds: GitHub candidates: 0; TaskBounty candidates: 3.
 
 ## Tracked PRs
 
