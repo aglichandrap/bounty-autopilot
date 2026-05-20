@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 10:51 UTC
+Last run: 2026-05-20 10:55 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -10,7 +10,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Amount hint: $7, $7000, Bounty $7, bounty $7000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/458
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T10:49:27Z
+- Updated: 2026-05-20T10:52:18Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -34,7 +34,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [$1000 bounty] Kia EV9 lateral port
+## 4. [SUGGESTION] 1.12.1 clients don't get primary display properly for resolution/refresh rate options
+
+- Score: 64
+- Amount hint: $100
+- Issue: https://github.com/balakethelock/SuperWoW/issues/14
+- Repository: https://github.com/balakethelock/SuperWoW
+- Updated: 2026-05-20T10:52:10Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. [$1000 bounty] Kia EV9 lateral port
 
 - Score: 64
 - Amount hint: $1000
@@ -44,7 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
+## 6. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
 - Score: 63
 - Amount hint: amount not obvious
@@ -54,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Add favicon
+## 7. Add favicon
 
 - Score: 60
 - Amount hint: $10
@@ -62,16 +72,6 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Repository: https://github.com/bigearth/bitblog
 - Updated: 2026-05-20T10:20:26Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [Bounty][$500] Replace 3D engine / do not depend on graph3dj
-
-- Score: 55
-- Amount hint: $500
-- Issue: https://github.com/RomRaider/RomRaider/issues/210
-- Repository: https://github.com/RomRaider/RomRaider
-- Updated: 2026-05-20T10:47:10Z
-- Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
 ## 8. clawrtc mine --dry-run is documented but rejected by CLI
