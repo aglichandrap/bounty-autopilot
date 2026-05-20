@@ -1,105 +1,55 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 21:15 UTC
+Last run: 2026-05-20 21:56 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [rocket-pool] DEFI@home
+## 1. [ Bounty $4k ] [ Storage ] Guard retention deletion with legal hold flag — artifact lifecycle
 
-- Score: 55
-- Amount hint: $900
-- Issue: https://github.com/guil-lambert/defipunkd/issues/227
-- Repository: https://github.com/guil-lambert/defipunkd
-- Updated: 2026-05-20T20:52:23Z
-- Why it matched: mentions bounty/reward, has visible amount
+- Score: 72
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/828
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T21:21:49Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [BOUNTY $50] - Add a "TRUE SHUFFLE" feature.
+## 2. [ Bounty $2k ] [ Metrics ] Reject non-numeric gauge values — gauge integrity
 
-- Score: 55
-- Amount hint: $50, BOUNTY $50
-- Issue: https://github.com/Meeep1/EeveeSpotifyRevivedPublic/issues/11
-- Repository: https://github.com/Meeep1/EeveeSpotifyRevivedPublic
-- Updated: 2026-05-20T20:04:32Z
-- Why it matched: mentions bounty/reward, has visible amount
+- Score: 72
+- Amount hint: $2, $2000, Bounty $2, bounty $2000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/811
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T21:04:41Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. P1: Complete RL scorecard metric extraction and multi-candidate comparisons
+## 3. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
-- Score: 43
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/lanyusea/screeps/issues/1276
-- Repository: https://github.com/lanyusea/screeps
-- Updated: 2026-05-20T20:58:59Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T20:44:06Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. P1: Implement true policy-gradient update path
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/lanyusea/screeps/issues/1264
-- Repository: https://github.com/lanyusea/screeps
-- Updated: 2026-05-20T21:14:21Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. LLM Daily Update - 2026-05-20 (17 items)
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/changao1/updater-for-LLM-tech/issues/93
-- Repository: https://github.com/changao1/updater-for-LLM-tech
-- Updated: 2026-05-20T21:14:04Z
+- Updated: 2026-05-20T21:23:46Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Add verbose HTTP logging to all plugins for faster debugging
+## 4. Adapt background sound volume based on video volume
 
-- Score: 39
+- Score: 34
 - Amount hint: amount not obvious
-- Issue: https://github.com/sauliusc/minecraft-ai-manager/issues/143
-- Repository: https://github.com/sauliusc/minecraft-ai-manager
-- Updated: 2026-05-20T21:12:56Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/CaptainFact/captain-fact/issues/93
+- Repository: https://github.com/CaptainFact/captain-fact
+- Updated: 2026-05-20T19:31:27Z
+- Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [WIKI-DOCS] Archon fantasy RTS/FPS v0 prototype spec
+## 5. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
 
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/948
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T20:37:21Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. [WIKI-DOCS] Archon fantasy RTS/FPS v0 map blockout
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/947
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T19:54:48Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. Bounty scout candidates
-
-- Score: 26
-- Amount hint: $100, $50, $200
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-20T21:14:33Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, likely claimed: \bclaim\b, low discussion volume
+- Score: 25
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T20:57:11Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
