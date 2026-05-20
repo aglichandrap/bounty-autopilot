@@ -1,6 +1,6 @@
 # Autopilot Health
 
-Last run: 2026-05-20 05:51 UTC
+Last run: 2026-05-20 05:55 UTC
 
 Overall: `blocked`
 
@@ -8,9 +8,10 @@ The automation has at least one blocker that prevents full unattended execution.
 
 ## Checks
 
-- `ok` GitHub PR submit token: BOUNTY_GITHUB_TOKEN/GH_TOKEN available
+- `ok` GitHub interaction token: Token available for comments, fork, push, and PR submission.
 - `degraded` Online model solver key: GitHub Actions cannot generate new code patches without OPENAI_API_KEY, OPENROUTER_API_KEY, or SOLVER_API_KEY+SOLVER_BASE_URL. Local Codex automation is the fallback.
 - `ok` TaskBounty credentials: TaskBounty API and agent id are available.
+- `ok` GitHub bounty claimer: No claim comments tracked yet.
 - `ok` GitHub patch solver report: Latest report parsed.
 - `blocked` TaskBounty patch solver report: Latest report parsed.
 - `active` GitHub bounty submitter: PRs tracked: 3

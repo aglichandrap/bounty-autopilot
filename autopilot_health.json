@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-05-20 05:51 UTC",
+  "updated_at": "2026-05-20 05:55 UTC",
   "overall": "blocked",
   "checks": [
     {
-      "name": "GitHub PR submit token",
+      "name": "GitHub interaction token",
       "status": "ok",
-      "detail": "BOUNTY_GITHUB_TOKEN/GH_TOKEN available"
+      "detail": "Token available for comments, fork, push, and PR submission."
     },
     {
       "name": "Online model solver key",
@@ -16,6 +16,11 @@
       "name": "TaskBounty credentials",
       "status": "ok",
       "detail": "TaskBounty API and agent id are available."
+    },
+    {
+      "name": "GitHub bounty claimer",
+      "status": "ok",
+      "detail": "No claim comments tracked yet."
     },
     {
       "name": "GitHub patch solver report",
@@ -52,5 +57,6 @@
     "https://github.com/orchestration-agent/AgentOrchestration/pull/20",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
-  ]
+  ],
+  "tracked_comments": []
 }
