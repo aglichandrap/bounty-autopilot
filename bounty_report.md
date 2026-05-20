@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 11:02 UTC
+Last run: 2026-05-20 11:14 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -54,33 +54,33 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. clawrtc mine --dry-run is documented but rejected by CLI
+## 6. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
-- Score: 51
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5881
-- Repository: https://github.com/Scottcjn/Rustchain
-- Updated: 2026-05-20T10:50:59Z
+- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-20T11:07:31Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Sats to Local Currency | Mexico
+## 7. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-20T11:07:37Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/sutt/docs/issues/5
 - Repository: https://github.com/sutt/docs
 - Updated: 2026-05-17T11:11:31Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Sketcher Workbench: Adding Missing Information
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/94
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-20T10:57:40Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -114,12 +114,12 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. [Impact Submission] Active Funding Sources for LHON Research brief (find-funding)
+## 12. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
 
 - Score: 30
-- Amount hint: $26, $50, $100
-- Issue: https://github.com/organicoder42/openclawresearch/issues/9
-- Repository: https://github.com/organicoder42/openclawresearch
-- Updated: 2026-05-20T10:59:18Z
-- Why it matched: has visible amount, low discussion volume
+- Amount hint: $8, $8000, Bounty $8, bounty $8000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/467
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T11:10:36Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

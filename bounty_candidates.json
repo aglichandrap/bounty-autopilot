@@ -1,18 +1,5 @@
 [
   {
-    "title": "[SUGGESTION] 1.12.1 clients don't get primary display properly for resolution/refresh rate options",
-    "url": "https://github.com/balakethelock/SuperWoW/issues/14",
-    "repository_url": "https://github.com/balakethelock/SuperWoW",
-    "updated_at": "2026-05-20T10:52:10Z",
-    "score": 73,
-    "amount_hint": "$100",
-    "reason": "paid/bounty wording, visible amount, coding scope, low discussion",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  },
-  {
     "title": "site: verify Stripe live-mode flip on Vercel + end-to-end smoke test",
     "url": "https://github.com/Nolpak14/agorio/issues/72",
     "repository_url": "https://github.com/Nolpak14/agorio",
