@@ -1,9 +1,24 @@
 # Add one GitHub issue search query per line.
-# These run in addition to the built-in search queries in scripts/bounty_scout.py.
-is:issue is:open "bounty" "python" no:assignee comments:<10 sort:updated-desc
-is:issue is:open "bounty" "typescript" no:assignee comments:<10 sort:updated-desc
-is:issue is:open "bounty" "good first issue" no:assignee comments:<10 sort:updated-desc
-is:issue is:open "reward" "bug" no:assignee comments:<10 sort:updated-desc
-is:issue is:open "paid issue" no:assignee comments:<10 sort:updated-desc
-repo:requestly/requestly is:issue is:open label:bounty-$20 label:up-for-grabs no:assignee comments:<12 sort:updated-desc
-is:issue is:open "Opire" bounty no:assignee comments:<10 sort:updated-desc
+# These run in addition to the built-in search queries in scripts/bounty_scout.py and scripts/bounty_volume_expander.py.
+is:issue is:open "bounty" "python" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "typescript" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "javascript" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "test" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "docs" no:assignee comments:<30 sort:updated-desc
+is:issue is:open "bounty" "frontend" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "backend" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "bug" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "bounty" "fix" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "reward" "bug" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "reward" "fix" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "paid issue" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "paid" "bug" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "paid" "fix" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "microgrant" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "Algora" no:assignee comments:<40 sort:updated-desc
+is:issue is:open "Opire" bounty no:assignee comments:<40 sort:updated-desc
+is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc
+repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<40 sort:updated-desc
+repo:projectdiscovery/nuclei is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc
+repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc
