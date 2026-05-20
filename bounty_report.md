@@ -1,10 +1,20 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 10:45 UTC
+Last run: 2026-05-20 10:51 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. SESSION_COMPLETE_RECAP.md
+## 1. [ Bounty $7k ] [ CI ] Enforce protected refs for package publishing — registry release job
+
+- Score: 76
+- Amount hint: $7, $7000, Bounty $7, bounty $7000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/458
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T10:49:27Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. SESSION_COMPLETE_RECAP.md
 
 - Score: 76
 - Amount hint: $10
@@ -14,7 +24,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [Bounty] JMD Currency Precision — Full-Stack Fix
+## 3. [Bounty] JMD Currency Precision — Full-Stack Fix
 
 - Score: 67
 - Amount hint: $1,000
@@ -24,7 +34,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
+## 4. [$1000 bounty] Kia EV9 lateral port
+
+- Score: 64
+- Amount hint: $1000
+- Issue: https://github.com/commaai/opendbc/issues/1175
+- Repository: https://github.com/commaai/opendbc
+- Updated: 2026-05-20T10:50:12Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
 - Score: 63
 - Amount hint: amount not obvious
@@ -34,7 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. Add favicon
+## 6. Add favicon
 
 - Score: 60
 - Amount hint: $10
@@ -44,7 +64,27 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. Sats to Local Currency | Mexico
+## 7. [Bounty][$500] Replace 3D engine / do not depend on graph3dj
+
+- Score: 55
+- Amount hint: $500
+- Issue: https://github.com/RomRaider/RomRaider/issues/210
+- Repository: https://github.com/RomRaider/RomRaider
+- Updated: 2026-05-20T10:47:10Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. clawrtc mine --dry-run is documented but rejected by CLI
+
+- Score: 51
+- Amount hint: amount not obvious
+- Issue: https://github.com/Scottcjn/Rustchain/issues/5881
+- Repository: https://github.com/Scottcjn/Rustchain
+- Updated: 2026-05-20T10:50:59Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -54,17 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T10:27:24Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. Fixing the bounty award system
+## 10. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -74,7 +104,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. Create a Bounty Amount Box Issue
+## 11. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -84,7 +114,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Sync Issue-Assigned property from GH to LB
+## 12. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -92,24 +122,4 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Repository: https://github.com/Lightning-Bounties/progress-tracker
 - Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. Bounty scout candidates
-
-- Score: 26
-- Amount hint: $10, $1
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-20T10:39:40Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, likely claimed: \bclaim\b, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [ Bounty $5k ] [ Config ] Coerce numeric environment overrides — AO_ parsing
-
-- Score: 25
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/267
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T10:29:09Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

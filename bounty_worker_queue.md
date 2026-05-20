@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-20 10:46 UTC
+Last built: 2026-05-20 10:52 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
