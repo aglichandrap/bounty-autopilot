@@ -46,6 +46,8 @@ jobs:
       - name: Run bounty scout
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
+          BOUNTY_SCOUT_MAX_QUERIES: "6"
+          BOUNTY_QUERY_DELAY_SECONDS: "3"
         run: python scripts/bounty_scout.py
 
       - name: Expand bounty candidate volume
