@@ -1,13 +1,48 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 
 CANDIDATES_PATH = Path("bounty_candidates.json")
 QUEUE_PATH = Path("bounty_worker_queue.md")
 MAX_QUEUE_ITEMS = 10
+
+DEPRIORITIZE_PATTERNS = [
+    r"\bsession_complete_recap\b",
+    r"\bsmoke test\b",
+    r"\bstripe live\b",
+    r"\bvercel\b",
+    r"\bprivate credential",
+    r"\bmanual verification\b",
+]
+
+
+def amount_value(amount_hint: str) -> float:
+    best = 0.0
+    for match in re.finditer(r"\$\s?([0-9][0-9,]*(?:\.[0-9]+)?)(\s?k)?", amount_hint or "", flags=re.I):
+        value = float(match.group(1).replace(",", ""))
+        if match.group(2):
+            value *= 1000
+        best = max(best, value)
+    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s?(?:usd|usdc)\b", amount_hint or "", flags=re.I):
+        best = max(best, float(match.group(1).replace(",", "")))
+    return best
+
+
+def work_priority(item: dict[str, Any]) -> float:
+    amount = amount_value(str(item.get("amount_hint") or ""))
+    score = float(item.get("score") or 0)
+    text = f"{item.get('title') or ''} {item.get('reason') or ''}".lower()
+    penalty = 0.0
+    for pattern in DEPRIORITIZE_PATTERNS:
+        if re.search(pattern, text, flags=re.I):
+            penalty += 35
+    # Keep score as the quality gate, then let real dollar value choose the best use of worker time.
+    return score + min(amount / 10, 100) - penalty
 
 
 def main() -> int:
@@ -17,7 +52,7 @@ def main() -> int:
     else:
         candidates = json.loads(CANDIDATES_PATH.read_text(encoding="utf-8"))
 
-    candidates = sorted(candidates, key=lambda item: item.get("score", 0), reverse=True)
+    candidates = sorted(candidates, key=work_priority, reverse=True)
     top = candidates[:MAX_QUEUE_ITEMS]
 
     lines = [
@@ -25,7 +60,7 @@ def main() -> int:
         "",
         f"Last built: {now}",
         "",
-        f"Purpose: turn scouting results into a concrete work queue for an agent. Up to {MAX_QUEUE_ITEMS} candidates are kept so one stale opportunity does not block the whole system. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.",
+        f"Purpose: turn scouting results into a concrete work queue for an agent. Up to {MAX_QUEUE_ITEMS} candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.",
         "",
     ]
 
@@ -48,6 +83,7 @@ def main() -> int:
                     f"- Repository: {item['repository_url']}",
                     f"- Amount hint: {item['amount_hint']}",
                     f"- Score: {item['score']}",
+                    f"- Work priority: {work_priority(item):.1f}",
                     f"- Match reason: {item['reason']}",
                     "",
                     "### Worker Instructions",
