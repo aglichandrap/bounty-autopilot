@@ -1,0 +1,56 @@
+{
+  "updated_at": "2026-05-20 05:51 UTC",
+  "overall": "blocked",
+  "checks": [
+    {
+      "name": "GitHub PR submit token",
+      "status": "ok",
+      "detail": "BOUNTY_GITHUB_TOKEN/GH_TOKEN available"
+    },
+    {
+      "name": "Online model solver key",
+      "status": "degraded",
+      "detail": "GitHub Actions cannot generate new code patches without OPENAI_API_KEY, OPENROUTER_API_KEY, or SOLVER_API_KEY+SOLVER_BASE_URL. Local Codex automation is the fallback."
+    },
+    {
+      "name": "TaskBounty credentials",
+      "status": "ok",
+      "detail": "TaskBounty API and agent id are available."
+    },
+    {
+      "name": "GitHub patch solver report",
+      "status": "ok",
+      "detail": "Latest report parsed."
+    },
+    {
+      "name": "TaskBounty patch solver report",
+      "status": "blocked",
+      "detail": "Latest report parsed."
+    },
+    {
+      "name": "GitHub bounty submitter",
+      "status": "active",
+      "detail": "PRs tracked: 3"
+    },
+    {
+      "name": "TaskBounty worker",
+      "status": "degraded",
+      "detail": "Worker report exists."
+    },
+    {
+      "name": "Ready patch files",
+      "status": "ok",
+      "detail": "GitHub patches: 3; TaskBounty patches: 0."
+    },
+    {
+      "name": "Candidate feeds",
+      "status": "ok",
+      "detail": "GitHub candidates: 2; TaskBounty candidates: 4."
+    }
+  ],
+  "tracked_prs": [
+    "https://github.com/orchestration-agent/AgentOrchestration/pull/20",
+    "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
+    "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
+  ]
+}
