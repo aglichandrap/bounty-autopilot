@@ -1,6 +1,6 @@
 # Autopilot Health
 
-Last run: 2026-05-20 10:38 UTC
+Last run: 2026-05-20 11:32 UTC
 
 Overall: `active`
 
@@ -15,9 +15,9 @@ The automation has active work in flight, claim comments, or ready submission pa
 - `ok` GitHub patch solver report: Latest report parsed; local Codex is fallback if online model key is missing.
 - `ok` TaskBounty patch solver report: Latest report parsed; local Codex is fallback if online model key is missing.
 - `active` GitHub bounty submitter: PRs tracked: 3
-- `degraded` TaskBounty worker: Worker report exists.
+- `ok` TaskBounty worker: Worker report exists.
 - `ok` Ready patch files: GitHub patches: 3; TaskBounty patches: 0.
-- `ok` Candidate feeds: GitHub candidates: 0; TaskBounty candidates: 3.
+- `ok` Candidate feeds: GitHub candidates: 1; TaskBounty candidates: 1.
 
 ## Tracked PRs
 
