@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-20 19:35 UTC
+Last run: 2026-05-20 19:55 UTC
 
 Kept candidates: 0
 
@@ -40,23 +40,30 @@ This pass removes unpaid, crowded, assigned, closed, already-attempted, market-a
 - Reason: busy issue thread (65 comments)
 - Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
 
-## 5. [Bug]: xAI OAuth (xai-oauth) returns HTTP 403 for standard SuperGrok subscribers — backend enforcing Heavy-only despite docs claiming all tiers
+## 5. Sats to Local Currency | Mexico
 
 - Decision: drop
-- Score: 54 -> -46
-- Issue: https://github.com/NousResearch/hermes-agent/issues/26847
+- Score: 39 -> -31
+- Issue: https://github.com/sutt/docs/issues/5
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 6. Fixing the bounty award system
+
+- Decision: drop
+- Score: 35 -> -35
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 7. Create a Bounty Amount Box Issue
+
+- Decision: drop
+- Score: 35 -> -65
+- Issue: https://github.com/ResearchHub/issues/issues/540
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 6. [WIKI-PATCH] PATCH-REQ: add safe, auditable universe-level synthesis health + retry surface (per-source status, dry-run, retry stuck/failed, audit log)
+## 8. Sync Issue-Assigned property from GH to LB
 
 - Decision: drop
-- Score: 39 -> -61
-- Issue: https://github.com/Jonnyton/Workflow/issues/945
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 7. [BUG] $480 paid across 3 Stripe invoices for Max 20x — Anthropic's own Stripe sent "payment unsuccessful" while charging card — no provisioning, ticket #98190248 unanswered 17 days
-
-- Decision: drop
-- Score: 34 -> -36
-- Issue: https://github.com/anthropics/claude-code/issues/60923
+- Score: 35 -> -35
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear open paid bounty signal >= $10 found
