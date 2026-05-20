@@ -1,16 +1,16 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 12:02 UTC
+Last run: 2026-05-20 12:08 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $6k ] [ CI ] Validate runner image provenance — self-hosted build fleet
+## 1. [ Bounty $4k ] [ Config ] Add typed getter for integer limits — consumer API
 
 - Score: 80
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/494
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/503
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T11:59:26Z
+- Updated: 2026-05-20T12:06:11Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -54,17 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [$5 bounty] Text object at wrong position (and moves!)
-
-- Score: 59
-- Amount hint: $5
-- Issue: https://github.com/4ian/GDevelop/issues/975
-- Repository: https://github.com/4ian/GDevelop
-- Updated: 2026-05-20T11:51:24Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. Add favicon
+## 6. Add favicon
 
 - Score: 55
 - Amount hint: $10
@@ -74,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. Sats to Local Currency | Mexico
+## 7. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -84,7 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 8. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -94,7 +84,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. [WIKI-DOCS] Archon fantasy RTS/FPS v0 map blockout
+## 9. [WIKI-DOCS] Archon fantasy RTS/FPS v0 map blockout
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -104,7 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Fixing the bounty award system
+## 10. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -114,12 +104,22 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Create a Bounty Amount Box Issue
+## 11. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
 - Issue: https://github.com/ResearchHub/issues/issues/540
 - Repository: https://github.com/ResearchHub/issues
 - Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. Sync Issue-Assigned property from GH to LB
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

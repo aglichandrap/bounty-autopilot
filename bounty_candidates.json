@@ -1,18 +1,5 @@
 [
   {
-    "title": "⚠️ P2 WATCH 🔴 [ZEC/USD/1H] ▼ BAJISTA (SHORT) · 06h BOG",
-    "url": "https://github.com/Metapro-art/zec-scanner/issues/155",
-    "repository_url": "https://github.com/Metapro-art/zec-scanner",
-    "updated_at": "2026-05-20T11:39:46Z",
-    "score": 100,
-    "amount_hint": "$585.35, $597.65, $564.85",
-    "reason": "paid/bounty wording, visible amount, no discussion yet, new issue, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  },
-  {
     "title": "Model uses N sequential Edit calls for bulk renumbering instead of single sed/Write",
     "url": "https://github.com/anthropics/claude-code/issues/60733",
     "repository_url": "https://github.com/anthropics/claude-code",
