@@ -129,8 +129,15 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def strip_code_blocks(value: str) -> str:
+    text = re.sub(r"```.*?```", " ", value or "", flags=re.S)
+    text = re.sub(r"~~~.*?~~~", " ", text, flags=re.S)
+    return text
+
+
 def amount_hint(text: str) -> str:
-    if re.search(r"\u6bcf\u65e5\u4fe1\u606f\u6d41|\bmarket\s+cap\b|\bprice\s+(?:is|feed|update)\b", text, flags=re.I):
+    prose = strip_code_blocks(text)
+    if re.search(r"\u6bcf\u65e5\u4fe1\u606f\u6d41|\bmarket\s+cap\b|\bprice\s+(?:is|feed|update)\b", prose, flags=re.I):
         return "amount not obvious"
     patterns = [
         r"\$\s?\d[\d,]*(?:\.\d+)?",
@@ -139,15 +146,17 @@ def amount_hint(text: str) -> str:
     ]
     matches: list[str] = []
     for pattern in patterns:
-        matches.extend(re.findall(pattern, text, flags=re.I))
+        matches.extend(re.findall(pattern, prose, flags=re.I))
     return ", ".join(dict.fromkeys(m.strip() for m in matches[:4])) or "amount not obvious"
 
 
 def score_issue(item: dict) -> tuple[int, str]:
     title = clean_text(item.get("title", ""))
-    body = clean_text(item.get("body", ""))
+    body = item.get("body", "") or ""
+    body_clean = clean_text(body)
     labels = " ".join(label.get("name", "") for label in item.get("labels", []))
-    text = f"{title} {body} {labels}".lower()
+    full_text = f"{title} {body_clean} {labels}".lower()
+    prose_text = f"{title} {clean_text(strip_code_blocks(body))} {labels}".lower()
 
     score = 0
     reasons: list[str] = []
@@ -171,32 +180,32 @@ def score_issue(item: dict) -> tuple[int, str]:
     if comments > 80:
         return -80, "skip: overcrowded bounty thread"
 
-    if "bounty" in text or "reward" in text or "opire" in text or "lightning bounties" in text:
+    if "bounty" in prose_text or "reward" in prose_text or "opire" in prose_text or "lightning bounties" in prose_text:
         score += 30
         reasons.append("mentions bounty/reward")
 
-    if re.search(r"\$\s?\d|\d+\s?(sats|sat|usd|usdc)", text, flags=re.I):
+    if re.search(r"\$\s?\d|\d+\s?(sats|sat|usd|usdc)", prose_text, flags=re.I):
         score += 25
         reasons.append("has visible amount")
 
     for pattern in POSITIVE_PATTERNS:
-        if re.search(pattern, text, flags=re.I):
+        if re.search(pattern, prose_text, flags=re.I):
             score += 4
 
-    if len(body) < 80:
+    if len(body_clean) < 80:
         score -= 15
         reasons.append("thin description")
 
-    if len(body) > 5000:
+    if len(body_clean) > 5000:
         score -= 8
         reasons.append("large issue body")
 
     for pattern in BLOCKLIST_PATTERNS:
-        if re.search(pattern, text, flags=re.I):
+        if re.search(pattern, full_text, flags=re.I):
             return -100, f"skip: blocked pattern: {pattern}"
 
     for pattern in CLAIMED_PATTERNS:
-        if re.search(pattern, text, flags=re.I):
+        if re.search(pattern, full_text, flags=re.I):
             score -= 50
             reasons.append(f"likely claimed: {pattern}")
 
