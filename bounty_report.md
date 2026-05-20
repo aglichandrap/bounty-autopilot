@@ -1,55 +1,65 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 21:56 UTC
+Last run: 2026-05-20 23:16 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $4k ] [ Storage ] Guard retention deletion with legal hold flag — artifact lifecycle
+## 1. build: sign fleetctl with a real Developer ID for distribution (Local Network Privacy fix)
 
-- Score: 72
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/828
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T21:21:49Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Score: 42
+- Amount hint: $99
+- Issue: https://github.com/owera/owera-fleet/issues/51
+- Repository: https://github.com/owera/owera-fleet
+- Updated: 2026-05-20T22:54:26Z
+- Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [ Bounty $2k ] [ Metrics ] Reject non-numeric gauge values — gauge integrity
-
-- Score: 72
-- Amount hint: $2, $2000, Bounty $2, bounty $2000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/811
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T21:04:41Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 2. [Bug - Gameplay/Logic]: Defeating the 1st set of King Calamari's tentacles can softlock you
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T21:23:46Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/111
+- Repository: https://github.com/pidgezero-one/smrpg_web_randomizer
+- Updated: 2026-05-20T23:03:42Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. Adapt background sound volume based on video volume
+## 3. P1: Implement true policy-gradient update path
 
-- Score: 34
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/CaptainFact/captain-fact/issues/93
-- Repository: https://github.com/CaptainFact/captain-fact
-- Updated: 2026-05-20T19:31:27Z
+- Issue: https://github.com/lanyusea/screeps/issues/1264
+- Repository: https://github.com/lanyusea/screeps
+- Updated: 2026-05-20T21:51:08Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. P0: Complete RL scorecard per-run wiring, metric extraction, and multi-candidate comparisons
+
+- Score: 38
+- Amount hint: amount not obvious
+- Issue: https://github.com/lanyusea/screeps/issues/1276
+- Repository: https://github.com/lanyusea/screeps
+- Updated: 2026-05-20T23:05:52Z
 - Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
+## 5. ⚠️ Kiro rate limit reached: Request quota exceeded. Please wait a moment and try again.
 
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T20:57:11Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 38
+- Amount hint: $0.04, $0.00, 00 USD
+- Issue: https://github.com/kirodotdev/Kiro/issues/8709
+- Repository: https://github.com/kirodotdev/Kiro
+- Updated: 2026-05-20T19:41:05Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. Please add "Credits Wallet" options for freelancer adn new WARP users.
+
+- Score: 34
+- Amount hint: 20 USD
+- Issue: https://github.com/warpdotdev/warp/issues/11393
+- Repository: https://github.com/warpdotdev/warp
+- Updated: 2026-05-20T21:33:35Z
+- Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
