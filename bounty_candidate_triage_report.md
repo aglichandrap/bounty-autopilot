@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-20 10:39 UTC
+Last run: 2026-05-20 10:46 UTC
 
-Kept candidates: 4
+Kept candidates: 3
 
 This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub bounty issues before worker time is spent.
 
@@ -49,73 +49,86 @@ This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub
 ## 6. [Bounty] JMD Currency Precision — Full-Stack Fix
 
 - Decision: drop
-- Score: 67 -> 7
+- Score: 67 -> -83
 - Issue: https://github.com/lnflash/flash/issues/282
+- Reason: open competing PRs found (3)
 - Reason: issue comments indicate active attempts, claims, or superseded/built work
+- Competing PR: https://github.com/lnflash/flash/issues/282
+- Competing PR: https://github.com/lnflash/flash/issues/267
+- Competing PR: https://github.com/lnflash/flash/issues/284
 
-## 7. Add favicon
+## 7. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
 - Decision: drop
-- Score: 60 -> 0
+- Score: 63 -> -87
+- Issue: https://github.com/thesysdev/openui-creator-program/issues/3
+- Reason: open competing PRs found (11)
+- Reason: issue comments indicate active attempts, claims, or superseded/built work
+- Competing PR: https://github.com/thesysdev/openui-creator-program/issues/3
+- Competing PR: https://github.com/thesysdev/openui-creator-program/issues/4
+- Competing PR: https://github.com/thesysdev/openui-creator-program/issues/7
+- Competing PR: https://github.com/thesysdev/openui-creator-program/issues/5
+- Competing PR: https://github.com/thesysdev/openui-creator-program/issues/79
+
+## 8. Add favicon
+
+- Decision: drop
+- Score: 60 -> -90
 - Issue: https://github.com/bigearth/bitblog/issues/1
+- Reason: open competing PRs found (2)
 - Reason: issue comments indicate active attempts, claims, or superseded/built work
+- Competing PR: https://github.com/bigearth/bitblog/issues/1
+- Competing PR: https://github.com/bigearth/bitblog/issues/2
 
-## 8. clawrtc mine --dry-run is documented but rejected by CLI
-
-- Decision: drop
-- Score: 51 -> -19
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5881
-- Reason: no clear paid bounty signal found
-
-## 9. [WIKI-PATCH] PATCH-REQ: add safe, auditable universe-level synthesis health + retry surface (per-source status, dry-run, retry stuck/failed, audit log)
+## 9. Sats to Local Currency | Mexico
 
 - Decision: drop
-- Score: 39 -> -61
-- Issue: https://github.com/Jonnyton/Workflow/issues/945
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 10. Sats to Local Currency | Mexico
-
-- Decision: drop
-- Score: 39 -> -31
+- Score: 39 -> -121
 - Issue: https://github.com/sutt/docs/issues/5
 - Reason: no clear paid bounty signal found
+- Reason: open competing PRs found (2)
+- Competing PR: https://github.com/sutt/docs/issues/5
+- Competing PR: https://github.com/sutt/docs/issues/4
 
-## 11. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 10. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Decision: drop
-- Score: 39 -> -31
+- Score: 39 -> -121
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Reason: no clear paid bounty signal found
+- Reason: open competing PRs found (1)
+- Competing PR: https://github.com/svv2014/loop-monitor/issues/109
 
-## 12. Fixing the bounty award system
+## 11. Fixing the bounty award system
 
 - Decision: keep
 - Score: 35 -> 35
 - Issue: https://github.com/ResearchHub/issues/issues/531
 
-## 13. Create a Bounty Amount Box Issue
+## 12. Create a Bounty Amount Box Issue
 
 - Decision: keep
 - Score: 35 -> 35
 - Issue: https://github.com/ResearchHub/issues/issues/540
 
-## 14. Sync Issue-Assigned property from GH to LB
+## 13. Sync Issue-Assigned property from GH to LB
 
 - Decision: drop
 - Score: 35 -> -35
 - Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear paid bounty signal found
 
-## 15. [ Bounty $3k ] [ Runtime ] Enforce deterministic cleanup for temporary run files — file runtime
+## 14. Bounty scout candidates
 
 - Decision: drop
-- Score: 26 -> -34
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/449
+- Score: 26 -> -134
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
 - Reason: issue comments indicate active attempts, claims, or superseded/built work
 
-## 16. 帝国数字服务清单 - $1起，接受USDT TRC20支付
+## 15. [ Bounty $5k ] [ Config ] Coerce numeric environment overrides — AO_ parsing
 
-- Decision: keep
-- Score: 25 -> 25
-- Issue: https://github.com/jiezishu000/empire-digital-shop/issues/1
+- Decision: drop
+- Score: 25 -> -35
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/267
+- Reason: issue comments indicate active attempts, claims, or superseded/built work

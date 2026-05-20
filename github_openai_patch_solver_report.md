@@ -1,14 +1,33 @@
 # GitHub OpenAI Patch Solver
 
-Last run: 2026-05-20 10:45 UTC
+Last run: 2026-05-20 10:46 UTC
 
-No online model key is configured, so GitHub Actions cannot generate new code patches by itself.
+No online model key is configured, so GitHub Actions did not attempt code generation.
+Eligible candidates were queued for the local Codex solver instead of marking the run as failed.
 
-No eligible GitHub bounty candidates are queued for local Codex right now.
+## 1. SESSION_COMPLETE_RECAP.md
 
-Recent cleanup:
+- Status: local_fallback_queued
+- Repository: Reussitess30/reussitess-global-nexus
+- Issue: https://github.com/Reussitess30/reussitess-global-nexus/issues/72
+- Patch: not ready
+- Metadata: not ready
+- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-- `matchmoments-admin/ask-arthur#321` was removed because it was superseded by a maintainer-built path and PR #339.
-- `ResearchHub/issues#531` and `ResearchHub/issues#540` were removed because no clear paid bounty signal was confirmed.
+## 2. Fixing the bounty award system
 
-The scout runs every 15 minutes and will queue a new `local_fallback_queued` item only when a paid, accessible, low-competition issue appears.
+- Status: local_fallback_queued
+- Repository: ResearchHub/issues
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Patch: not ready
+- Metadata: not ready
+- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
+
+## 3. Create a Bounty Amount Box Issue
+
+- Status: local_fallback_queued
+- Repository: ResearchHub/issues
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Patch: not ready
+- Metadata: not ready
+- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
