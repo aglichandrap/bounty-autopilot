@@ -23,6 +23,14 @@ NO_PAY_PATTERN = re.compile(
     r"\b(no paid bounty|no bounty|not paid|unpaid|free[- ]?ok|volunteer only|no compensation)\b"
 )
 MONEY_PATTERN = re.compile(r"(?:usd\s*)?\$\s*\d|(?:\b\d+\s*(?:usd|usdc)\b)", re.IGNORECASE)
+COMMENT_BLOCK_PATTERN = re.compile(
+    r"\b(submitted|opened|raised)\s+(?:a\s+)?(?:focused\s+)?(?:fix\s+)?(?:pr|pull request)\b"
+    r"|/attempt\b|/claim\b|pull/\d+|#\d+\s+for\s+this"
+    r"|\bi can take this\b|\bi'll open a focused pr\b|\bi will open a focused pr\b"
+    r"|\bsuperseded\b|\bshipped as pr\b|\bbuilt\b.*\bpr\s+#?\d+\b"
+    r"|\bthis issue can be closed once\b|\bno code written yet\b.*\bthe handoff\b",
+    re.IGNORECASE,
+)
 
 
 @dataclass
@@ -96,12 +104,7 @@ def comments_indicate_competition(repo: str, issue_number: int, token: str | Non
     if not isinstance(comments, list):
         return False
     text = " ".join(clean(str(comment.get("body") or "")) for comment in comments if isinstance(comment, dict)).lower()
-    return bool(
-        re.search(
-            r"\b(submitted|opened|raised)\s+(?:a\s+)?(?:pr|pull request)\b|/attempt\b|/claim\b|pull/\d+|#\d+\s+for\s+this",
-            text,
-        )
-    )
+    return COMMENT_BLOCK_PATTERN.search(text) is not None
 
 
 def has_paid_signal(candidate: dict[str, Any], labels: set[str], issue_text: str) -> bool:
@@ -194,7 +197,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
 
             if comments_indicate_competition(repo, issue_number, token=token):
                 decision = "drop"
-                reasons.append("issue comments indicate active attempts or claims")
+                reasons.append("issue comments indicate active attempts, claims, or superseded/built work")
                 final_score -= 60
         except Exception as exc:
             reasons.append(f"GitHub triage failed: {exc}")
