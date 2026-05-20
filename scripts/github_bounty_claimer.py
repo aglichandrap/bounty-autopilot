@@ -18,7 +18,7 @@ STATE_PATH = Path("github_bounty_claim_state.json")
 REPORT_PATH = Path("github_bounty_claim_report.md")
 MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "1"))
 MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "8"))
-MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "20"))
+MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "10"))
 
 CLAIM_COMMENT = (
     "I can take this if it is still available. I will first reproduce the issue, "
