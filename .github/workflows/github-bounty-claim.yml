@@ -2,7 +2,7 @@ name: GitHub Bounty Claimer
 
 on:
   schedule:
-    - cron: "12,27,42,57 * * * *"
+    - cron: "3,8,13,18,23,28,33,38,43,48,53,58 * * * *"
   workflow_dispatch:
   push:
     branches:
@@ -36,7 +36,8 @@ jobs:
         env:
           BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
           GITHUB_BOUNTY_MAX_CLAIMS: "1"
-          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "15"
+          GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "8"
+          GITHUB_BOUNTY_MIN_CLAIM_AMOUNT: "20"
         run: python scripts/github_bounty_claimer.py
 
       - name: Commit claim report
