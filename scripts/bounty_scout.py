@@ -24,6 +24,9 @@ SEARCH_QUERIES = [
 ]
 
 EXTRA_QUERY_FILE = "bounty_extra_queries.txt"
+MAX_QUERIES_PER_RUN = int(os.environ.get("BOUNTY_SCOUT_MAX_QUERIES", "6"))
+QUERY_DELAY_SECONDS = float(os.environ.get("BOUNTY_QUERY_DELAY_SECONDS", "3"))
+QUERY_OFFSET = int(os.environ.get("BOUNTY_SCOUT_QUERY_OFFSET", os.environ.get("GITHUB_RUN_NUMBER", "0")) or "0")
 
 BLOCKLIST_PATTERNS = [
     r"\u6bcf\u65e5\u4fe1\u606f\u6d41",
@@ -226,8 +229,7 @@ def recent_comments_text(item: dict, token: str | None = None) -> str:
     return " ".join(clean_text(comment.get("body", "")) for comment in comments if isinstance(comment, dict))
 
 
-def iter_candidates(token: str | None = None) -> Iterable[Candidate]:
-    seen: set[str] = set()
+def load_queries() -> list[str]:
     queries = list(SEARCH_QUERIES)
     if os.path.exists(EXTRA_QUERY_FILE):
         with open(EXTRA_QUERY_FILE, "r", encoding="utf-8") as handle:
@@ -235,8 +237,23 @@ def iter_candidates(token: str | None = None) -> Iterable[Candidate]:
                 line = line.strip()
                 if line and not line.startswith("#"):
                     queries.append(line)
+    unique_queries = list(dict.fromkeys(queries))
+    if not unique_queries:
+        return []
+    limit = max(1, min(MAX_QUERIES_PER_RUN, len(unique_queries)))
+    offset = (QUERY_OFFSET * limit) % len(unique_queries)
+    selected = [unique_queries[(offset + index) % len(unique_queries)] for index in range(limit)]
+    print(
+        f"Bounty scout using {len(selected)}/{len(unique_queries)} queries "
+        f"from offset {offset} with {QUERY_DELAY_SECONDS:g}s delay."
+    )
+    return selected
 
-    for query in queries:
+
+def iter_candidates(token: str | None = None) -> Iterable[Candidate]:
+    seen: set[str] = set()
+
+    for query in load_queries():
         params = urlencode({"q": query, "per_page": 20})
         try:
             data = github_get(f"{GITHUB_SEARCH_URL}?{params}", token=token)
@@ -275,7 +292,7 @@ def iter_candidates(token: str | None = None) -> Iterable[Candidate]:
                 amount_hint=amount_hint(text),
                 reason=reason,
             )
-        time.sleep(2)
+        time.sleep(QUERY_DELAY_SECONDS)
 
 
 def write_outputs(candidates: list[Candidate]) -> None:
