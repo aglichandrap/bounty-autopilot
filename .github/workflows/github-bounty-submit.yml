@@ -2,7 +2,7 @@ name: GitHub Bounty Submitter
 
 on:
   schedule:
-    - cron: "41 * * * *"
+    - cron: "10,25,40,55 * * * *"
   workflow_dispatch:
   push:
     branches:
