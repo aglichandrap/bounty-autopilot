@@ -1,10 +1,16 @@
 # Claim Queue
 
-Last built: 2026-05-20 04:40 UTC
+Last built: 2026-05-20 04:49 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
 ## TaskBounty
+
+### [$50] Fix: [Admin] New API Submission on: Fix: Flows not working when using celery rabitmq and redis
+
+- URL: https://www.task-bounty.com/task/fix-admin-new-api-submission-on-fix-flows-not-work-gytwt1
+- Amount: $50
+- Status: needs TaskBounty agent API access before attempting/submitting.
 
 ### Fix: Flows not working when using celery rabitmq and redis
 
