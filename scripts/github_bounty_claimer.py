@@ -17,7 +17,8 @@ CANDIDATES_PATH = Path("bounty_candidates.json")
 STATE_PATH = Path("github_bounty_claim_state.json")
 REPORT_PATH = Path("github_bounty_claim_report.md")
 MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "1"))
-MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "8"))
+MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "15"))
+MAX_COMPETING_PRS = int(os.environ.get("GITHUB_BOUNTY_MAX_COMPETING_PRS", "2"))
 MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "10"))
 
 CLAIM_COMMENT = (
@@ -154,9 +155,10 @@ def already_claimed_by_us(comments: list[dict[str, Any]], login: str) -> str:
     return ""
 
 
-def competition_in_comments(comments: list[dict[str, Any]], login: str) -> str:
+def blocking_competition_in_comments(comments: list[dict[str, Any]], login: str) -> str:
     pattern = re.compile(
-        r"\b(i can work|i'?m interested in taking|working on this|opened a pr|submitted|raised pr|/claim|/attempt|assign(ed)? me)\b",
+        r"\b(opened|submitted|raised)\s+(?:a\s+)?(?:focused\s+)?(?:fix\s+)?(?:pr|pull request)\b"
+        r"|/claim\b|/attempt\b|pull/\d+|\bassigned to me\b|\bplease assign me\b",
         re.I,
     )
     for comment in comments:
@@ -167,7 +169,7 @@ def competition_in_comments(comments: list[dict[str, Any]], login: str) -> str:
         if author.lower() == login.lower():
             continue
         if pattern.search(str(comment.get("body") or "")):
-            return f"active attempt/comment by {author or 'another user'}"
+            return f"strong active attempt/comment by {author or 'another user'}"
     return ""
 
 
@@ -223,12 +225,12 @@ def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: di
     if existing:
         state["claims"][issue_url] = {"comment_url": existing, "updated_at": now_utc(), "status": "already_claimed"}
         return ClaimResult(title, issue_url, "already_claimed", existing, "Existing comment by account found.")
-    competition = competition_in_comments(comments, login)
+    competition = blocking_competition_in_comments(comments, login)
     if competition:
         return ClaimResult(title, issue_url, "skipped", message=competition)
     competing_prs = open_competing_prs(repo, issue_number, login, token)
-    if competing_prs > 0:
-        return ClaimResult(title, issue_url, "skipped", message=f"Open competing PRs found: {competing_prs}.")
+    if competing_prs > MAX_COMPETING_PRS:
+        return ClaimResult(title, issue_url, "skipped", message=f"Too many open competing PRs found: {competing_prs}.")
 
     try:
         comment = request_json(
