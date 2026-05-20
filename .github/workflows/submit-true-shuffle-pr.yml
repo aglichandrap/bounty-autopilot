@@ -1,0 +1,52 @@
+name: Submit True Shuffle PR
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/submit_true_shuffle_pr.py"
+      - ".github/workflows/submit-true-shuffle-pr.yml"
+
+concurrency:
+  group: submit-true-shuffle-pr
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Submit upstream PR
+        env:
+          BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+        run: python scripts/submit_true_shuffle_pr.py
+
+      - name: Commit submit report
+        if: always()
+        run: |
+          git config user.name "true-shuffle-submitter-bot"
+          git config user.email "true-shuffle-submitter-bot@users.noreply.github.com"
+          git add true_shuffle_pr_report.md || true
+          if git diff --cached --quiet; then
+            echo "No submit report changes."
+          else
+            git commit -m "Update true shuffle PR report"
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase -X ours origin main
+              sleep 5
+            done
+          fi
