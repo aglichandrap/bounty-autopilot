@@ -1,17 +1,5 @@
 [
   {
-    "title": "SESSION_COMPLETE_RECAP.md",
-    "url": "https://github.com/Reussitess30/reussitess-global-nexus/issues/72",
-    "repository_url": "https://github.com/Reussitess30/reussitess-global-nexus",
-    "updated_at": "2026-05-20T10:20:30Z",
-    "score": 76,
-    "amount_hint": "$10",
-    "reason": "mentions bounty/reward, has visible amount, large issue body, low discussion volume",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  },
-  {
     "title": "[SUGGESTION] 1.12.1 clients don't get primary display properly for resolution/refresh rate options",
     "url": "https://github.com/balakethelock/SuperWoW/issues/14",
     "repository_url": "https://github.com/balakethelock/SuperWoW",

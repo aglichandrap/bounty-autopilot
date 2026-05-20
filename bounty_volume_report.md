@@ -1,8 +1,8 @@
 # Bounty Volume Expander
 
-Last run: 2026-05-20 10:56 UTC
+Last run: 2026-05-20 11:02 UTC
 
-Fresh candidates found before triage: 612
+Fresh candidates found before triage: 336
 
 ## AI-Powered Research Assistant Suite
 
@@ -11,6 +11,38 @@ Fresh candidates found before triage: 612
 - Issue: https://github.com/SCIBASE-AI/SCIBASE.AI/issues/16
 - Repository: https://github.com/SCIBASE-AI/SCIBASE.AI
 - Reason: paid/bounty wording, coding scope
+
+## SESSION_COMPLETE_RECAP.md
+
+- Score: 73
+- Amount: $10
+- Issue: https://github.com/Reussitess30/reussitess-global-nexus/issues/72
+- Repository: https://github.com/Reussitess30/reussitess-global-nexus
+- Reason: paid/bounty wording, visible amount, coding scope, low discussion
+
+## [Bounty] JMD Currency Precision — Full-Stack Fix
+
+- Score: 65
+- Amount: $1,000
+- Issue: https://github.com/lnflash/flash/issues/282
+- Repository: https://github.com/lnflash/flash
+- Reason: paid/bounty wording, visible amount, coding scope
+
+## [ Bounty $7k ] [ CI ] Enforce protected refs for package publishing — registry release job
+
+- Score: 65
+- Amount: $7, $7000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/458
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Reason: paid/bounty wording, visible amount, coding scope
+
+## [ Bounty $7k ] [ Solidity ] Fix first-depositor inflation attack in AMMPool — hardening
+
+- Score: 65
+- Amount: $7, $7200
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/69
+- Repository: https://github.com/ClankerNation/OpenAgents
+- Reason: paid/bounty wording, visible amount, coding scope
 
 ## [ Bounty $3k ] [ Runtime ] Enforce deterministic cleanup for temporary run files — file runtime
 
@@ -27,14 +59,6 @@ Fresh candidates found before triage: 612
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/131
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
 - Reason: paid/bounty wording, visible amount, coding scope
-
-## [ Bounty $7k ] [ CI ] Enforce protected refs for package publishing — registry release job
-
-- Score: 73
-- Amount: $7, $7000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/458
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, low discussion
 
 ## Bounty claim: clawrtc dry-run docs bug #5881
 
@@ -156,28 +180,12 @@ Fresh candidates found before triage: 612
 - Repository: https://github.com/ClankerNation/OpenAgents
 - Reason: paid/bounty wording, visible amount, coding scope, low discussion
 
-## SESSION_COMPLETE_RECAP.md
-
-- Score: 73
-- Amount: $10
-- Issue: https://github.com/Reussitess30/reussitess-global-nexus/issues/72
-- Repository: https://github.com/Reussitess30/reussitess-global-nexus
-- Reason: paid/bounty wording, visible amount, coding scope, low discussion
-
 ## [ Bounty $10k ] [ Runtime ] Release database advisory locks on exception — lock manager
 
 - Score: 65
 - Amount: $10, $10000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/382
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope
-
-## [Bounty] JMD Currency Precision — Full-Stack Fix
-
-- Score: 65
-- Amount: $1,000
-- Issue: https://github.com/lnflash/flash/issues/282
-- Repository: https://github.com/lnflash/flash
 - Reason: paid/bounty wording, visible amount, coding scope
 
 ## [ Bounty $7k ] [ API ] Add agent reputation scoring system — high priority
@@ -196,14 +204,30 @@ Fresh candidates found before triage: 612
 - Repository: https://github.com/ClankerNation/OpenAgents
 - Reason: paid/bounty wording, visible amount, coding scope
 
-## [ Bounty $4k ] [ Solidity ] Fix RandomLottery refund mechanism missing when lottery cancelled — code review finding
-
-- Score: 73
-- Amount: $4, $4700
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/167
-- Repository: https://github.com/ClankerNation/OpenAgents
-- Reason: paid/bounty wording, visible amount, coding scope, low discussion
-
 ## Search Errors
 
-- repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 422: {"message":"Validation Failed","errors":[{"message":"The listed users and repositories cannot be searched either because the resources do not exist or you do not have permission to view them.","resource":"Search","field":"q","code":"invalid"}],"documentation_url":"https://docs.github.com/v3/search/","status":"422"}
+- is:issue is:open "Opire" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "bounty" "python" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "bounty" "typescript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "bounty" "javascript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "bounty" "frontend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "bounty" "backend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "paid issue" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- is:issue is:open "Opire" bounty no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- repo:projectdiscovery/nuclei is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+- repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.57.198.227. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
