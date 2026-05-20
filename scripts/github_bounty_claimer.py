@@ -17,7 +17,7 @@ CANDIDATES_PATH = Path("bounty_candidates.json")
 STATE_PATH = Path("github_bounty_claim_state.json")
 REPORT_PATH = Path("github_bounty_claim_report.md")
 MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "1"))
-MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "15"))
+MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "20"))
 MAX_COMPETING_PRS = int(os.environ.get("GITHUB_BOUNTY_MAX_COMPETING_PRS", "2"))
 MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "10"))
 
@@ -158,7 +158,7 @@ def already_claimed_by_us(comments: list[dict[str, Any]], login: str) -> str:
 def blocking_competition_in_comments(comments: list[dict[str, Any]], login: str) -> str:
     pattern = re.compile(
         r"\b(opened|submitted|raised)\s+(?:a\s+)?(?:focused\s+)?(?:fix\s+)?(?:pr|pull request)\b"
-        r"|/claim\b|/attempt\b|pull/\d+|\bassigned to me\b|\bplease assign me\b",
+        r"|/claim\b|/attempt\b|pull/\d+|\bassigned to me\b|\bassigned this to\b",
         re.I,
     )
     for comment in comments:
