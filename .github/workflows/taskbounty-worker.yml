@@ -2,7 +2,7 @@ name: TaskBounty Worker
 
 on:
   schedule:
-    - cron: "53 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
   push:
     branches:
