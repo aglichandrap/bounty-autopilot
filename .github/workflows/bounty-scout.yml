@@ -72,7 +72,8 @@ jobs:
       - name: Triage GitHub bounty candidates
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
-          BOUNTY_MAX_COMMENTS: "25"
+          BOUNTY_MAX_COMMENTS: "40"
+          BOUNTY_MAX_COMPETING_PRS: "2"
           BOUNTY_MIN_PAID_AMOUNT: "10"
         run: python scripts/bounty_candidate_triage.py
 
