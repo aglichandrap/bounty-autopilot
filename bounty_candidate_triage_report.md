@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-20 07:14 UTC
+Last run: 2026-05-20 08:13 UTC
 
 Kept candidates: 3
 
@@ -46,12 +46,12 @@ This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub
 - Score: 42 -> 42
 - Issue: https://github.com/matchmoments-admin/ask-arthur/issues/321
 
-## 6. [WIKI-DOCS] Archon fantasy RTS/FPS v0 technical prototype plan
+## 6. Add Responsive Scroll-to-Top Utility for Improved Page Navigation Experience
 
 - Decision: drop
-- Score: 39 -> -61
-- Issue: https://github.com/Jonnyton/Workflow/issues/949
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Score: 39 -> -31
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/363
+- Reason: no clear paid bounty signal found
 
 ## 7. Sats to Local Currency | Mexico
 
@@ -60,56 +60,42 @@ This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub
 - Issue: https://github.com/sutt/docs/issues/5
 - Reason: no clear paid bounty signal found
 
-## 8. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Reason: no clear paid bounty signal found
-
-## 9. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+## 8. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
 
 - Decision: drop
 - Score: 39 -> -31
 - Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
 - Reason: no clear paid bounty signal found
 
-## 10. Fixing the bounty award system
+## 9. Fixing the bounty award system
 
 - Decision: keep
 - Score: 35 -> 35
 - Issue: https://github.com/ResearchHub/issues/issues/531
 
-## 11. Create a Bounty Amount Box Issue
+## 10. Create a Bounty Amount Box Issue
 
 - Decision: keep
 - Score: 35 -> 35
 - Issue: https://github.com/ResearchHub/issues/issues/540
 
-## 12. Sync Issue-Assigned property from GH to LB
+## 11. Sync Issue-Assigned property from GH to LB
 
 - Decision: drop
 - Score: 35 -> -35
 - Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear paid bounty signal found
 
-## 13. Use Langchain library instead of huggingface
+## 12. [WIKI-PATCH] PATCH-REQ: revise canon-08 work-package priority — modern public catalog data as active scientific spine; pre-modern literature as calibration/regression only
 
 - Decision: drop
-- Score: 35 -> -25
-- Issue: https://github.com/sushobhith/ai-english-tutor/issues/14
-- Reason: issue comments indicate active attempts or claims
+- Score: 31 -> -69
+- Issue: https://github.com/Jonnyton/Workflow/issues/957
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
 
-## 14. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
-
-- Decision: drop
-- Score: 30 -> -30
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
-- Reason: issue comments indicate active attempts or claims
-
-## 15. [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
+## 13. [ Bounty $5k ] [ CI ] Protect release signing from concurrency cancellation — tagged builds
 
 - Decision: drop
-- Score: 25 -> -35
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/6
+- Score: 26 -> -34
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/356
 - Reason: issue comments indicate active attempts or claims

@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 07:14 UTC
+Last run: 2026-05-20 08:12 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -10,18 +10,18 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Amount hint: $3, $15
 - Issue: https://github.com/matchmoments-admin/ask-arthur/issues/321
 - Repository: https://github.com/matchmoments-admin/ask-arthur
-- Updated: 2026-05-20T06:41:19Z
+- Updated: 2026-05-20T07:42:57Z
 - Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [WIKI-DOCS] Archon fantasy RTS/FPS v0 technical prototype plan
+## 2. Add Responsive Scroll-to-Top Utility for Improved Page Navigation Experience
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/949
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T06:32:47Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/363
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-20T08:08:08Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
 ## 3. Sats to Local Currency | Mexico
@@ -34,17 +34,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T07:06:36Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+## 4. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -54,7 +44,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Fixing the bounty award system
+## 5. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -64,7 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Create a Bounty Amount Box Issue
+## 6. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -74,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. Sync Issue-Assigned property from GH to LB
+## 7. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -84,32 +74,22 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Use Langchain library instead of huggingface
+## 8. [WIKI-PATCH] PATCH-REQ: revise canon-08 work-package priority — modern public catalog data as active scientific spine; pre-modern literature as calibration/regression only
 
-- Score: 35
+- Score: 31
 - Amount hint: amount not obvious
-- Issue: https://github.com/sushobhith/ai-english-tutor/issues/14
-- Repository: https://github.com/sushobhith/ai-english-tutor
-- Updated: 2026-05-20T07:10:51Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/Jonnyton/Workflow/issues/957
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-20T07:53:46Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
+## 9. [ Bounty $5k ] [ CI ] Protect release signing from concurrency cancellation — tagged builds
 
-- Score: 30
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
+- Score: 26
+- Amount hint: $5, $5000, Bounty $5, bounty $5000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/356
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T07:12:31Z
+- Updated: 2026-05-20T08:09:28Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
-
-- Score: 25
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/6
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T07:02:46Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
