@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "title": "探索bug",
+    "url": "https://github.com/AzurTian/OnmyojiAutoScript/issues/105",
+    "repository_url": "https://github.com/AzurTian/OnmyojiAutoScript",
+    "updated_at": "2026-05-20T17:39:04Z",
+    "score": 110,
+    "amount_hint": "$ 2422",
+    "reason": "paid/bounty wording, visible amount, coding scope, no discussion yet, new issue, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  }
+]

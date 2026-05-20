@@ -1,9 +1,23 @@
 # Claim Queue
 
-Last built: 2026-05-20 19:55 UTC
+Last built: 2026-05-20 20:51 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
-No safe claim target is ready right now.
+## GitHub
 
-Next action: keep scouting. Do not comment just to look active.
+### 探索bug
+
+- URL: https://github.com/AzurTian/OnmyojiAutoScript/issues/105
+- Amount: $ 2422
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
