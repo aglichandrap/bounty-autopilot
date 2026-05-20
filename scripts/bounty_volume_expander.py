@@ -5,7 +5,7 @@ import os
 import re
 import time
 from dataclasses import asdict, dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError
@@ -16,23 +16,28 @@ from urllib.request import Request, urlopen
 CANDIDATES_PATH = Path("bounty_candidates.json")
 EXTRA_QUERY_FILE = Path("bounty_extra_queries.txt")
 GITHUB_SEARCH_URL = "https://api.github.com/search/issues"
-MAX_CANDIDATES = int(os.environ.get("BOUNTY_VOLUME_MAX_CANDIDATES", "80"))
+MAX_CANDIDATES = int(os.environ.get("BOUNTY_VOLUME_MAX_CANDIDATES", "100"))
 MIN_SCORE = int(os.environ.get("BOUNTY_VOLUME_MIN_SCORE", "20"))
 
-VOLUME_QUERIES = [
-    'is:issue is:open "bounty" "bug" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "bounty" "fix" no:assignee comments:<40 sort:updated-desc',
+BASE_QUERIES = [
+    'is:issue is:open "bounty" "bug" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "bounty" "fix" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "reward" "bug" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "paid" "fix" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "microgrant" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "Algora" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "Opire" no:assignee comments:<25 sort:created-desc',
+    'is:issue is:open "Lightning Bounties" no:assignee comments:<25 sort:created-desc',
+    'repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<25 sort:created-desc',
+]
+
+BACKFILL_QUERIES = [
     'is:issue is:open "bounty" "test" no:assignee comments:<40 sort:updated-desc',
     'is:issue is:open "bounty" "docs" no:assignee comments:<30 sort:updated-desc',
-    'is:issue is:open "reward" "bug" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "reward" "fix" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "paid" "bug" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "paid" "fix" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "microgrant" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "Algora" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "Opire" no:assignee comments:<40 sort:updated-desc',
-    'is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc',
-    'repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<40 sort:updated-desc',
+    'is:issue is:open "bounty" "python" no:assignee comments:<40 sort:updated-desc',
+    'is:issue is:open "bounty" "typescript" no:assignee comments:<40 sort:updated-desc',
+    'is:issue is:open "bounty" "javascript" no:assignee comments:<40 sort:updated-desc',
+    'is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc',
 ]
 
 BLOCK_PATTERNS = [
@@ -40,6 +45,11 @@ BLOCK_PATTERNS = [
     r"\bresponsible disclosure\b",
     r"\bcredential(s)?\b",
     r"\bprivate key\b",
+    r"\bapi key\b",
+    r"\bsecret\b",
+    r"\bstripe live\b",
+    r"\bvercel\b",
+    r"\bsmoke test\b",
     r"\breferral\b",
     r"\bairdrop\b",
     r"\bcasino\b",
@@ -74,6 +84,13 @@ class Candidate:
     source: str = "volume-expander"
 
 
+def parse_github_time(value: str) -> datetime | None:
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
 def _github_get_once(url: str, token: str | None = None) -> dict[str, Any]:
     headers = {
         "Accept": "application/vnd.github+json",
@@ -98,8 +115,6 @@ def github_get(url: str, token: str | None = None) -> dict[str, Any]:
     try:
         return _github_get_once(url, token=token)
     except RuntimeError as exc:
-        # GitHub Actions installation tokens can be forbidden from cross-repo search.
-        # Public unauthenticated search is often enough for scouting, so keep going.
         if "HTTP 403" not in str(exc):
             raise
         return _github_get_once(url)
@@ -120,7 +135,15 @@ def load_existing() -> list[dict[str, Any]]:
 
 
 def load_queries() -> list[str]:
-    queries = list(VOLUME_QUERIES)
+    cutoff_24h = (datetime.now(timezone.utc) - timedelta(hours=24)).strftime("%Y-%m-%d")
+    fresh_queries = [
+        f'is:issue is:open "bounty" created:>={cutoff_24h} no:assignee comments:<12 sort:created-desc',
+        f'is:issue is:open "reward" created:>={cutoff_24h} no:assignee comments:<12 sort:created-desc',
+        f'is:issue is:open "paid" "fix" created:>={cutoff_24h} no:assignee comments:<12 sort:created-desc',
+        f'is:issue is:open "Algora" created:>={cutoff_24h} no:assignee comments:<12 sort:created-desc',
+        f'is:issue is:open "Opire" created:>={cutoff_24h} no:assignee comments:<12 sort:created-desc',
+    ]
+    queries = fresh_queries + BASE_QUERIES + BACKFILL_QUERIES
     if EXTRA_QUERY_FILE.exists():
         for line in EXTRA_QUERY_FILE.read_text(encoding="utf-8").splitlines():
             line = line.strip()
@@ -130,8 +153,18 @@ def load_queries() -> list[str]:
 
 
 def amount_hint(text: str) -> str:
-    matches = re.findall(r"\$\s?\d[\d,]*(?:\.\d+)?|\b\d[\d,]*\s?(?:usd|usdc|sats?|eur|gbp)\b", text, flags=re.I)
+    matches = re.findall(r"\$\s?\d[\d,]*(?:\.\d+)?\s?k?|\b\d[\d,]*\s?(?:usd|usdc|sats?|eur|gbp)\b", text, flags=re.I)
     return ", ".join(dict.fromkeys(match.strip() for match in matches[:4])) or "amount not obvious"
+
+
+def amount_value(text: str) -> float:
+    best = 0.0
+    for match in re.finditer(r"\$\s?([0-9][0-9,]*(?:\.[0-9]+)?)(\s?k)?", text or "", flags=re.I):
+        value = float(match.group(1).replace(",", ""))
+        if match.group(2):
+            value *= 1000
+        best = max(best, value)
+    return best
 
 
 def score_item(item: dict[str, Any]) -> tuple[int, str]:
@@ -151,19 +184,35 @@ def score_item(item: dict[str, Any]) -> tuple[int, str]:
     if any(word in text for word in ("bounty", "reward", "paid", "microgrant", "opire", "algora", "lightning bounties")):
         score += 30
         reasons.append("paid/bounty wording")
-    if re.search(r"\$\s?\d|\b\d+\s?(?:usd|usdc|sats?)\b", text, flags=re.I):
+    hint = amount_hint(f"{title}\n{body}")
+    if amount_value(hint) > 0:
         score += 25
         reasons.append("visible amount")
     if re.search(r"\b(bug|fix|test|typescript|python|api|frontend|backend|cli|docs?)\b", text, flags=re.I):
         score += 10
         reasons.append("coding scope")
     comments = int(item.get("comments") or 0)
-    if comments <= 5:
+    if comments == 0:
+        score += 14
+        reasons.append("no discussion yet")
+    elif comments <= 3:
         score += 8
         reasons.append("low discussion")
-    elif comments > 40:
-        score -= 25
+    elif comments > 25:
+        score -= 35
         reasons.append("busy discussion")
+    now = datetime.now(timezone.utc)
+    created = parse_github_time(str(item.get("created_at") or ""))
+    updated = parse_github_time(str(item.get("updated_at") or ""))
+    if created and now - created <= timedelta(hours=24):
+        score += 25
+        reasons.append("new issue")
+    elif created and now - created <= timedelta(days=7):
+        score += 10
+        reasons.append("recent issue")
+    if updated and now - updated <= timedelta(hours=6):
+        score += 6
+        reasons.append("fresh update")
     for pattern in CLAIM_PATTERNS:
         if re.search(pattern, text, flags=re.I):
             score -= 50
@@ -172,7 +221,7 @@ def score_item(item: dict[str, Any]) -> tuple[int, str]:
     if len(body) < 60:
         score -= 8
         reasons.append("thin description")
-    return score, ", ".join(reasons[:5]) or "volume candidate"
+    return score, ", ".join(reasons[:6]) or "volume candidate"
 
 
 def search(query: str, token: str | None) -> list[Candidate]:
@@ -202,6 +251,10 @@ def search(query: str, token: str | None) -> list[Candidate]:
             )
         )
     return candidates
+
+
+def sort_key(item: dict[str, Any]) -> tuple[int, str]:
+    return int(item.get("score") or 0), str(item.get("updated_at") or "")
 
 
 def write_report(found: list[Candidate], errors: list[str]) -> None:
@@ -237,12 +290,12 @@ def main() -> int:
             for candidate in hits:
                 existing = by_url.get(candidate.url)
                 data = asdict(candidate)
-                if not existing or int(existing.get("score") or 0) < candidate.score:
+                if not existing or sort_key(existing) < sort_key(data):
                     by_url[candidate.url] = data
         except Exception as exc:
             errors.append(f"{query}: {exc}")
-        time.sleep(1)
-    merged = sorted(by_url.values(), key=lambda item: int(item.get("score") or 0), reverse=True)[:MAX_CANDIDATES]
+        time.sleep(0.5)
+    merged = sorted(by_url.values(), key=sort_key, reverse=True)[:MAX_CANDIDATES]
     CANDIDATES_PATH.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     write_report(found, errors)
     print(f"Volume expander added {len(found)} raw candidates; merged total {len(merged)}.")
