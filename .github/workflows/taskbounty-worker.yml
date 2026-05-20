@@ -12,6 +12,7 @@ on:
       - "scripts/taskbounty_scout.py"
       - "scripts/taskbounty_triage.py"
       - "scripts/openai_patch_solver.py"
+      - "scripts/taskbounty_patch_solver_router.py"
       - "taskbounty_patches/**"
       - ".github/workflows/taskbounty-worker.yml"
 
@@ -51,7 +52,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_SOLVER_MODEL: ${{ secrets.OPENAI_SOLVER_MODEL }}
           GITHUB_TOKEN: ${{ github.token }}
-        run: python scripts/openai_patch_solver.py
+        run: python scripts/taskbounty_patch_solver_router.py
 
       - name: Run TaskBounty worker
         env:
