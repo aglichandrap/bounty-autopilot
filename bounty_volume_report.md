@@ -1,8 +1,32 @@
 # Bounty Volume Expander
 
-Last run: 2026-05-20 14:13 UTC
+Last run: 2026-05-20 14:28 UTC
 
-Fresh candidates found before triage: 262
+Fresh candidates found before triage: 260
+
+## Emoji Reaction Claim - 47 Reactions - 2026-05-20 14:17 UTC
+
+- Score: 75
+- Amount: amount not obvious
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11507
+- Repository: https://github.com/Scottcjn/rustchain-bounties
+- Reason: paid/bounty wording, no discussion yet, new issue, fresh update
+
+## PR Review Claim - 20 PRs - 2026-05-20 14:17 UTC
+
+- Score: 75
+- Amount: amount not obvious
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11506
+- Repository: https://github.com/Scottcjn/rustchain-bounties
+- Reason: paid/bounty wording, no discussion yet, new issue, fresh update
+
+## [ Bounty $6k ] [ Webhook ] Redact secrets from webhook failure logs — delivery logs
+
+- Score: 96
+- Amount: $6k, $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/590
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
 
 ## Claim: Blog Post — Blockchain Governance (Bounty #2179)
 
@@ -116,45 +140,13 @@ Fresh candidates found before triage: 262
 - Repository: https://github.com/Scottcjn/rustchain-bounties
 - Reason: paid/bounty wording, coding scope, no discussion yet, new issue, fresh update
 
-## Claim: Blog Post — Decentralized Compute (Bounty #2179)
+## ⚠️ P2 WATCH 🔴 [ZEC/USD/1H] ▼ BAJISTA (SHORT) · 09h BOG
 
-- Score: 75
-- Amount: amount not obvious
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11476
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Reason: paid/bounty wording, no discussion yet, new issue, fresh update
-
-## [ Bounty $4k ] [ Config ] Add typed getter for integer limits — consumer API
-
-- Score: 96
-- Amount: $4k, $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/503
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## PR Review Claim - 20 PRs - 2026-05-20 12:00 UTC
-
-- Score: 75
-- Amount: amount not obvious
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11473
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Reason: paid/bounty wording, no discussion yet, new issue, fresh update
-
-## [ Bounty $6k ] [ CI ] Validate runner image provenance — self-hosted build fleet
-
-- Score: 96
-- Amount: $6k, $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/494
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## Code Review Bounty #73 claim - RustChain PR #5912
-
-- Score: 85
-- Amount: amount not obvious
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11469
-- Repository: https://github.com/Scottcjn/rustchain-bounties
-- Reason: paid/bounty wording, coding scope, no discussion yet, new issue, fresh update
+- Score: 100
+- Amount: $613.66, $629.98, $586.45
+- Issue: https://github.com/Metapro-art/zec-scanner/issues/156
+- Repository: https://github.com/Metapro-art/zec-scanner
+- Reason: paid/bounty wording, visible amount, no discussion yet, new issue, fresh update
 
 ## Problems debugging on Lilygo T-Display S3
 
@@ -204,56 +196,62 @@ Fresh candidates found before triage: 262
 - Repository: https://github.com/stkr89/trading-agents
 - Reason: paid/bounty wording, visible amount, coding scope, no discussion yet, new issue, fresh update
 
+## 📈 AMZN — 2026-05-20 (OK)
+
+- Score: 110
+- Amount: $1,000.00, $261.46, $4,900.09, $27,805.30
+- Issue: https://github.com/stkr89/trading-agents/issues/56
+- Repository: https://github.com/stkr89/trading-agents
+- Reason: paid/bounty wording, visible amount, coding scope, no discussion yet, new issue, fresh update
+
 ## Search Errors
 
-- is:issue is:open "Algora" no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "Algora" no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "Opire" no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "Opire" no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "Lightning Bounties" no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "Lightning Bounties" no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<25 sort:created-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "test" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "test" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "docs" no:assignee comments:<30 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "docs" no:assignee comments:<30 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "python" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "python" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "typescript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "typescript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "javascript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "javascript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "frontend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "frontend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "backend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "backend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "bounty" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "bounty" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "reward" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "reward" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "reward" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "reward" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "paid issue" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "paid issue" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "paid" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "paid" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "paid" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "paid" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "microgrant" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "microgrant" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "Algora" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "Algora" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "Opire" bounty no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "Opire" bounty no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 172.182.225.198. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
-- repo:projectdiscovery/nuclei is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
-
-- repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for 20.236.100.7. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+- repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 422: {"message":"Validation Failed","errors":[{"message":"The listed users and repositories cannot be searched either because the resources do not exist or you do not have permission to view them.","resource":"Search","field":"q","code":"invalid"}],"documentation_url":"https://docs.github.com/v3/search/","status":"422"}

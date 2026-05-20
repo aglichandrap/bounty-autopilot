@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 14:12 UTC
+Last run: 2026-05-20 14:27 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -34,14 +34,14 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. feat(backend): scaffold bounties CRUD module
+## 4. [WIKI-DOCS] Archon fantasy RTS/FPS v0 technical prototype plan
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/BountyOnChain/StellarBounty/issues/6
-- Repository: https://github.com/BountyOnChain/StellarBounty
-- Updated: 2026-05-20T12:45:26Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/Jonnyton/Workflow/issues/949
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-20T14:16:38Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
 ## 5. Sats to Local Currency | Mexico
@@ -54,27 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T13:52:50Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. GitHub bounty submitter status
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-20T14:10:35Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Fixing the bounty award system
+## 6. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -84,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Create a Bounty Amount Box Issue
+## 7. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -94,7 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Sync Issue-Assigned property from GH to LB
+## 8. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -104,22 +84,42 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. [ Bounty $8k ] [ Orchestrator ] Reconcile queue and state divergence — partial dispatch failures
+## 9. [ Bounty $6k ] [ Webhook ] Redact secrets from webhook failure logs — delivery logs
 
 - Score: 30
-- Amount hint: $8, $8000, Bounty $8, bounty $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/81
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/590
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T14:05:01Z
+- Updated: 2026-05-20T14:21:26Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Sketcher Workbench: Adding Missing Information
+## 10. [ Bounty $7k ] [ Middleware ] Prevent gzip bomb expansion in request decompression — body middleware
 
-- Score: 30
-- Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/94
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-20T14:10:27Z
-- Why it matched: mentions bounty/reward
+- Score: 25
+- Amount hint: $7, $7000, Bounty $7, bounty $7000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/35
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T14:24:48Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. [ Bounty $8k ] [ Middleware ] Apply rate limits before expensive body parsing — ingress middleware
+
+- Score: 25
+- Amount hint: $8, $8000, Bounty $8, bounty $8000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/195
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T14:22:32Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. [ Bounty $6k ] [ Data ] Cascade deletion to derived embeddings — retention workflow
+
+- Score: 25
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/580
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T14:16:04Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

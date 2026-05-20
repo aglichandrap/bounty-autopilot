@@ -1,15 +1,1 @@
-[
-  {
-    "title": "StaffDispatch auto-close bypasses DealEngine + Inventory (synthetic gross, no unit decrement)",
-    "url": "https://github.com/EstradaRPM/dealership-alpha/issues/137",
-    "repository_url": "https://github.com/EstradaRPM/dealership-alpha",
-    "updated_at": "2026-05-20T14:02:58Z",
-    "score": 85,
-    "amount_hint": "$0",
-    "reason": "paid/bounty wording, coding scope, no discussion yet, new issue, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  }
-]
+[]
