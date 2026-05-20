@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20 06:46 UTC",
+  "updated_at": "2026-05-20 08:13 UTC",
   "overall": "active",
   "checks": [
     {
@@ -24,12 +24,12 @@
     },
     {
       "name": "GitHub patch solver report",
-      "status": "degraded",
+      "status": "ok",
       "detail": "Latest report parsed; local Codex is fallback if online model key is missing."
     },
     {
       "name": "TaskBounty patch solver report",
-      "status": "degraded",
+      "status": "ok",
       "detail": "Latest report parsed; local Codex is fallback if online model key is missing."
     },
     {
@@ -50,7 +50,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 2; TaskBounty candidates: 4."
+      "detail": "GitHub candidates: 3; TaskBounty candidates: 4."
     }
   ],
   "tracked_prs": [
