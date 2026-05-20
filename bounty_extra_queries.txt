@@ -19,6 +19,15 @@ is:issue is:open "microgrant" no:assignee comments:<40 sort:updated-desc
 is:issue is:open "Algora" no:assignee comments:<40 sort:updated-desc
 is:issue is:open "Opire" bounty no:assignee comments:<40 sort:updated-desc
 is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc
-repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<40 sort:updated-desc
+is:issue is:open label:bounty no:assignee comments:<80 sort:updated-desc
+is:issue is:open label:reward no:assignee comments:<80 sort:updated-desc
+is:issue is:open label:paid no:assignee comments:<80 sort:updated-desc
+is:issue is:open label:"good first issue" "bounty" comments:<80 sort:updated-desc
+is:issue is:open "Bounty $" comments:<80 sort:updated-desc
+is:issue is:open "Reward $" comments:<80 sort:updated-desc
+is:issue is:open "$10" "bounty" comments:<80 sort:updated-desc
+is:issue is:open "$20" "bounty" comments:<80 sort:updated-desc
+is:issue is:open "$50" "bounty" comments:<80 sort:updated-desc
+repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<80 sort:updated-desc
 repo:projectdiscovery/nuclei is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc
 repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc
