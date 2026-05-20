@@ -13,6 +13,7 @@ on:
       - "scripts/bounty_volume_expander_lite.py"
       - "scripts/algora_bounty_scout.py"
       - "scripts/bounty_candidate_triage.py"
+      - "scripts/bounty_policy_gate.py"
       - "scripts/bounty_worker_queue.py"
       - "scripts/claim_queue.py"
       - "scripts/github_openai_patch_solver.py"
@@ -69,6 +70,11 @@ jobs:
           BOUNTY_MIN_PAID_AMOUNT: "10"
         run: python scripts/bounty_candidate_triage.py
 
+      - name: Apply bounty policy gate
+        env:
+          GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
+        run: python scripts/bounty_policy_gate.py
+
       - name: Generate GitHub bounty patch
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
@@ -91,7 +97,7 @@ jobs:
           mkdir -p github_bounty_patches
           git config user.name "bounty-scout-bot"
           git config user.email "bounty-scout-bot@users.noreply.github.com"
-          git add bounty_report.md bounty_candidates.json bounty_candidate_triage_report.md bounty_worker_queue.md claim_queue.md algora_bounty_report.md bounty_volume_report.md github_openai_patch_solver_report.md github_bounty_patches
+          git add bounty_report.md bounty_candidates.json bounty_candidate_triage_report.md bounty_policy_gate_report.md bounty_worker_queue.md claim_queue.md algora_bounty_report.md bounty_volume_report.md github_openai_patch_solver_report.md github_bounty_patches
           if git diff --cached --quiet; then
             echo "No bounty report changes."
           else
@@ -111,7 +117,7 @@ jobs:
             exit 0
           fi
           title="Bounty scout candidates"
-          body="$(cat bounty_worker_queue.md; printf '\n\n---\n\n'; cat claim_queue.md; printf '\n\n---\n\n'; cat algora_bounty_report.md; printf '\n\n---\n\n'; cat bounty_volume_report.md; printf '\n\n---\n\n'; cat github_openai_patch_solver_report.md; printf '\n\n---\n\n'; cat bounty_candidate_triage_report.md; printf '\n\n---\n\n'; cat bounty_report.md)"
+          body="$(cat bounty_worker_queue.md; printf '\n\n---\n\n'; cat claim_queue.md; printf '\n\n---\n\n'; cat algora_bounty_report.md; printf '\n\n---\n\n'; cat bounty_volume_report.md; printf '\n\n---\n\n'; cat bounty_policy_gate_report.md; printf '\n\n---\n\n'; cat github_openai_patch_solver_report.md; printf '\n\n---\n\n'; cat bounty_candidate_triage_report.md; printf '\n\n---\n\n'; cat bounty_report.md)"
           existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
           if [ -n "$existing" ]; then
             gh issue edit "$existing" --body "$body"
