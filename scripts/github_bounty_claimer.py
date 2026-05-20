@@ -16,9 +16,9 @@ API = "https://api.github.com"
 CANDIDATES_PATH = Path("bounty_candidates.json")
 STATE_PATH = Path("github_bounty_claim_state.json")
 REPORT_PATH = Path("github_bounty_claim_report.md")
-MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "1"))
-MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "20"))
-MAX_COMPETING_PRS = int(os.environ.get("GITHUB_BOUNTY_MAX_COMPETING_PRS", "2"))
+MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "3"))
+MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "80"))
+MAX_COMPETING_PRS = int(os.environ.get("GITHUB_BOUNTY_MAX_COMPETING_PRS", "4"))
 MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "10"))
 PAID_LABEL_WORDS = ("bounty", "reward", "microgrant")
 REAL_BOUNTY_PATTERN = re.compile(
@@ -144,6 +144,7 @@ def amount_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
             candidate.get("amount_hint"),
             issue.get("title"),
             strip_code_blocks(str(issue.get("body") or "")),
+            " ".join(issue_labels(issue)),
         )
     ).lower()
 
@@ -167,8 +168,6 @@ def text_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
 def has_paid_signal(candidate: dict[str, Any], issue: dict[str, Any]) -> bool:
     amount_text = amount_blob(candidate, issue)
     bounty_text = bounty_blob(candidate, issue)
-    if "amount not obvious" in amount_text:
-        return False
     labels = issue_labels(issue)
     bounty_label = any(any(word in label for word in PAID_LABEL_WORDS) for label in labels)
     explicit_bounty = REAL_BOUNTY_PATTERN.search(bounty_text) is not None
