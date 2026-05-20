@@ -18,11 +18,11 @@ GITHUB_API = "https://api.github.com"
 OWNER_LOGIN = os.environ.get("BOUNTY_OWNER_LOGIN", "asaadnashed").lower()
 MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "25"))
 MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "0"))
+MIN_PAID_AMOUNT = float(os.environ.get("BOUNTY_MIN_PAID_AMOUNT", "10"))
 PAID_LABEL_WORDS = ("bounty", "reward", "microgrant")
 NO_PAY_PATTERN = re.compile(
     r"\b(no paid bounty|no bounty|not paid|unpaid|free[- ]?ok|volunteer only|no compensation)\b"
 )
-MONEY_PATTERN = re.compile(r"(?:usd\s*)?\$\s*\d|(?:\b\d+\s*(?:usd|usdc)\b)", re.IGNORECASE)
 REAL_BOUNTY_PATTERN = re.compile(
     r"\b(bounty|reward|microgrant|opire|algora|lightning bounties)\b"
     r"|\b(will pay|payable upon|payment details|payout|prize)\b",
@@ -33,6 +33,7 @@ FALSE_POSITIVE_PATTERN = re.compile(
     r"|\b(cost floor|cost impact|monthly cost|per month|/month|/mo|paid once|paid api|budget tokens|cache info|prompt_cache_key|token consumption)\b"
     r"|\b(wast(e|ing)|unnecessary|expensive)\b.{0,40}\b(tokens?|edits?|calls?)\b"
     r"|\b(smoke test|stripe live|vercel|production access)\b"
+    r"|\b(hitl|human[- ]in[- ]the[- ]loop|open design questions? need hitl)\b"
     r"|\b(no opportunities|vix|neutral|p2 watch|trading signal|market signal|scanner)\b"
     r"|\b(watch|short|long|bajista|alcista|bearish|bullish)\b.*\b([a-z]{2,6}/usd|usd/[a-z]{2,6}|scanner)\b"
     r"|\b([a-z]{2,6}/usd|usd/[a-z]{2,6}|zec/usd|btc/usd|eth/usd)\b",
@@ -88,6 +89,18 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def amount_value(text: str) -> float:
+    best = 0.0
+    for match in re.finditer(r"\$\s*([0-9][0-9,]*(?:\.[0-9]+)?)(\s*k)?", text or "", flags=re.I):
+        value = float(match.group(1).replace(",", ""))
+        if match.group(2):
+            value *= 1000
+        best = max(best, value)
+    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s*(usd|usdc)\b", text or "", flags=re.I):
+        best = max(best, float(match.group(1).replace(",", "")))
+    return best
+
+
 def search_related_prs(repo: str, issue_number: int, title: str, token: str | None) -> list[dict[str, Any]]:
     title_terms = " ".join(re.findall(r"[A-Za-z0-9_+-]{4,}", title)[:5])
     queries = [
@@ -135,8 +148,7 @@ def has_paid_signal(candidate: dict[str, Any], labels: set[str], issue_text: str
         return False
     bounty_label = any(any(word in label for word in PAID_LABEL_WORDS) for label in labels)
     explicit_bounty = REAL_BOUNTY_PATTERN.search(combined) is not None
-    has_money = MONEY_PATTERN.search(combined) is not None
-    return bounty_label or (explicit_bounty and has_money)
+    return (bounty_label or explicit_bounty) and amount_value(combined) >= MIN_PAID_AMOUNT
 
 
 def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict[str, Any] | None, TriageEntry]:
@@ -177,7 +189,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
                 final_score -= 100
             elif not has_paid_signal(candidate, labels, issue_text):
                 decision = "drop"
-                reasons.append("no clear open paid bounty signal found")
+                reasons.append(f"no clear open paid bounty signal >= ${MIN_PAID_AMOUNT:.0f} found")
                 final_score -= 70
 
             if (
@@ -258,7 +270,7 @@ def write_report(entries: list[TriageEntry], kept_count: int) -> None:
         "",
         f"Kept candidates: {kept_count}",
         "",
-        "This pass removes unpaid, crowded, assigned, closed, already-attempted, market-alert, token-cost, or false-positive GitHub bounty issues before worker time is spent.",
+        "This pass removes unpaid, crowded, assigned, closed, already-attempted, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent.",
         "",
     ]
     if not entries:
