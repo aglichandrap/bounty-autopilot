@@ -51,9 +51,9 @@ def status_from_report(text: str) -> str:
     lowered = text.lower()
     if "not_configured" in lowered or "configuration missing" in lowered:
         return "blocked"
-    if "patch_ready" in lowered or "submitted" in lowered or "pr_opened" in lowered:
+    if "patch_ready" in lowered or "submitted" in lowered or "pr_opened" in lowered or "claimed" in lowered:
         return "active"
-    if "access_failed" in lowered or "blocked" in lowered or "no solver candidates" in lowered:
+    if "access_failed" in lowered or "blocked" in lowered or "no solver candidates" in lowered or "claim_failed" in lowered:
         return "degraded"
     return "ok"
 
@@ -66,17 +66,26 @@ def extract_prs(text: str) -> list[str]:
     return sorted(set(re.findall(r"https://github\.com/[^\s)]+/pull/\d+", text)))
 
 
+def extract_comments(text: str) -> list[str]:
+    return sorted(set(re.findall(r"https://github\.com/[^\s)]+/issues/\d+#issuecomment-\d+", text)))
+
+
 def main() -> int:
     checks: list[Check] = []
 
     bounty_token = has_secret("BOUNTY_GITHUB_TOKEN") or has_secret("GH_TOKEN") or has_secret("GITHUB_TOKEN")
-    checks.append(Check("GitHub PR submit token", "ok" if bounty_token else "blocked", "BOUNTY_GITHUB_TOKEN/GH_TOKEN available" if bounty_token else "Missing token for fork, push, and PR submission."))
+    checks.append(Check("GitHub interaction token", "ok" if bounty_token else "blocked", "Token available for comments, fork, push, and PR submission." if bounty_token else "Missing token for GitHub comments, fork, push, and PR submission."))
 
     model_ready = has_secret("OPENAI_API_KEY") or has_secret("OPENROUTER_API_KEY") or (has_secret("SOLVER_API_KEY") and has_secret("SOLVER_BASE_URL"))
     checks.append(Check("Online model solver key", "ok" if model_ready else "degraded", "Online patch solver can call a model." if model_ready else "GitHub Actions cannot generate new code patches without OPENAI_API_KEY, OPENROUTER_API_KEY, or SOLVER_API_KEY+SOLVER_BASE_URL. Local Codex automation is the fallback."))
 
     taskbounty_ready = has_secret("TASKBOUNTY_API_KEY") and has_secret("TASKBOUNTY_AGENT_ID")
     checks.append(Check("TaskBounty credentials", "ok" if taskbounty_ready else "degraded", "TaskBounty API and agent id are available." if taskbounty_ready else "TaskBounty scanning/submission may be limited without API key and agent id."))
+
+    claim_report = read_text("github_bounty_claim_report.md")
+    claim_status = status_from_report(claim_report)
+    comments = extract_comments(claim_report)
+    checks.append(Check("GitHub bounty claimer", claim_status, f"Comments tracked: {len(comments)}" if comments else "No claim comments tracked yet."))
 
     github_solver_report = read_text("github_openai_patch_solver_report.md")
     checks.append(Check("GitHub patch solver report", status_from_report(github_solver_report), "Latest report parsed." if github_solver_report else "No GitHub patch solver report yet."))
@@ -116,6 +125,7 @@ def main() -> int:
         "overall": overall,
         "checks": [check.__dict__ for check in checks],
         "tracked_prs": prs,
+        "tracked_comments": comments,
     }
     STATUS_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -123,7 +133,7 @@ def main() -> int:
     if overall == "blocked":
         lines.extend(["The automation has at least one blocker that prevents full unattended execution.", ""])
     elif overall == "active":
-        lines.extend(["The automation has active work in flight or ready submission paths.", ""])
+        lines.extend(["The automation has active work in flight, claim comments, or ready submission paths.", ""])
     elif overall == "degraded":
         lines.extend(["The automation can still scout/follow up, but at least one capability is degraded.", ""])
     else:
@@ -132,6 +142,10 @@ def main() -> int:
     lines.extend(["## Checks", ""])
     for check in checks:
         lines.append(f"- `{check.status}` {check.name}: {check.detail}")
+    if comments:
+        lines.extend(["", "## Tracked Comments", ""])
+        for comment in comments:
+            lines.append(f"- {comment}")
     if prs:
         lines.extend(["", "## Tracked PRs", ""])
         for pr in prs:
