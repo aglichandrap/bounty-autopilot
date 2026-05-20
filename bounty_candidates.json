@@ -1,5 +1,17 @@
 [
   {
+    "title": "shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate",
+    "url": "https://github.com/matchmoments-admin/ask-arthur/issues/321",
+    "repository_url": "https://github.com/matchmoments-admin/ask-arthur",
+    "updated_at": "2026-05-20T06:41:19Z",
+    "score": 42,
+    "amount_hint": "$3, $15",
+    "reason": "has visible amount, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  },
+  {
     "title": "Fixing the bounty award system",
     "url": "https://github.com/ResearchHub/issues/issues/531",
     "repository_url": "https://github.com/ResearchHub/issues",

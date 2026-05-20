@@ -1,40 +1,30 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 05:47 UTC
+Last run: 2026-05-20 07:14 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [WIKI-PATCH] PATCH-REQ: add safe, auditable universe-level synthesis health + retry surface (per-source status, dry-run, retry stuck/failed, audit log)
+## 1. shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate
+
+- Score: 42
+- Amount hint: $3, $15
+- Issue: https://github.com/matchmoments-admin/ask-arthur/issues/321
+- Repository: https://github.com/matchmoments-admin/ask-arthur
+- Updated: 2026-05-20T06:41:19Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. [WIKI-DOCS] Archon fantasy RTS/FPS v0 technical prototype plan
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/945
+- Issue: https://github.com/Jonnyton/Workflow/issues/949
 - Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T05:43:49Z
+- Updated: 2026-05-20T06:32:47Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [WIKI-PATCH] Goal-bound branch protocols: ordered branch family/runbook with typed artifact handoffs and gate checkpoints
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/922
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T05:39:40Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [BUG-094] build_branch _apply_state_field_spec strips state_schema default_value (key-name mismatch); PR #932 seeding path silently inert for user-built branches
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/942
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T05:39:17Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. Sats to Local Currency | Mexico
+## 3. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -44,17 +34,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 4. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T05:46:29Z
+- Updated: 2026-05-20T07:06:36Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+## 5. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -64,27 +54,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. [WIKI-DOCS] Composing ExperiencePool queries
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/951
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T05:39:45Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. [WIKI-PATCH] Make tinyassets.io/mcp smoother for first-time and non-local MCP users
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/946
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T05:39:30Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Fixing the bounty award system
+## 6. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -94,7 +64,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Create a Bounty Amount Box Issue
+## 7. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -104,7 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Sync Issue-Assigned property from GH to LB
+## 8. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -114,12 +84,32 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. [0.02 XMR per task] Remove unused dependencies
+## 9. Use Langchain library instead of huggingface
 
-- Score: 34
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/eigenwallet/core/issues/775
-- Repository: https://github.com/eigenwallet/core
-- Updated: 2026-05-20T05:45:01Z
-- Why it matched: mentions bounty/reward
+- Issue: https://github.com/sushobhith/ai-english-tutor/issues/14
+- Repository: https://github.com/sushobhith/ai-english-tutor
+- Updated: 2026-05-20T07:10:51Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
+
+- Score: 30
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T07:12:31Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. [ Bounty $3k ] [ CLI ] Reject unsupported output modes — argument validation
+
+- Score: 25
+- Amount hint: $3, $3000, Bounty $3, bounty $3000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/6
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T07:02:46Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
