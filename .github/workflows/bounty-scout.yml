@@ -2,7 +2,7 @@ name: Bounty Scout
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
   push:
     branches:
@@ -10,6 +10,7 @@ on:
     paths:
       - "scripts/bounty_scout.py"
       - "scripts/bounty_volume_expander.py"
+      - "scripts/bounty_volume_expander_lite.py"
       - "scripts/algora_bounty_scout.py"
       - "scripts/bounty_candidate_triage.py"
       - "scripts/bounty_worker_queue.py"
@@ -52,7 +53,9 @@ jobs:
           GITHUB_SEARCH_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
           BOUNTY_VOLUME_MAX_CANDIDATES: "100"
           BOUNTY_VOLUME_MIN_SCORE: "20"
-        run: python scripts/bounty_volume_expander.py
+          BOUNTY_VOLUME_MAX_QUERIES: "8"
+          BOUNTY_QUERY_DELAY_SECONDS: "3"
+        run: python scripts/bounty_volume_expander_lite.py
 
       - name: Add Algora bounty candidates
         env:
