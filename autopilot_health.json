@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20 19:53 UTC",
+  "updated_at": "2026-05-20 21:27 UTC",
   "overall": "active",
   "checks": [
     {
@@ -19,8 +19,8 @@
     },
     {
       "name": "GitHub bounty claimer",
-      "status": "ok",
-      "detail": "No claim comments tracked yet."
+      "status": "active",
+      "detail": "Comments tracked: 1"
     },
     {
       "name": "GitHub patch solver report",
@@ -50,7 +50,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 0; TaskBounty candidates: 1."
+      "detail": "GitHub candidates: 1; TaskBounty candidates: 1."
     }
   ],
   "tracked_prs": [
@@ -58,5 +58,7 @@
     "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
   ],
-  "tracked_comments": []
+  "tracked_comments": [
+    "https://github.com/Meeep1/EeveeSpotifyRevivedPublic/issues/11#issuecomment-4502702872"
+  ]
 }
