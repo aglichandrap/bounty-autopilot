@@ -1,125 +1,125 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-19 23:34 UTC
+Last run: 2026-05-20 04:40 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $3k ] [ Storage ] Add restore test for compressed artifacts — backup reliability
-
-- Score: 80
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/105
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T23:30:47Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. [ Bounty $3k ] [ Registry ] Prevent handler name path traversal — local plugin metadata
-
-- Score: 80
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/19
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T20:02:47Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
-
-- Score: 80
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/12
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T19:55:53Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
-
-- Score: 71
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/24
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-19T19:23:08Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. App stops updating on resume after suspend mode
+## 1. App stops updating on resume after suspend mode
 
 - Score: 67
 - Amount hint: $100.00
 - Issue: https://github.com/sindresorhus/caprine/issues/103
 - Repository: https://github.com/sindresorhus/caprine
-- Updated: 2026-05-19T23:26:08Z
+- Updated: 2026-05-20T04:32:55Z
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
+## 2. ⚠️ P2 WATCH 🔴 [ZEC/USD/1H] ▼ BAJISTA (SHORT) · 05h BOG
 
-- Score: 63
-- Amount hint: amount not obvious
-- Issue: https://github.com/thesysdev/openui-creator-program/issues/3
-- Repository: https://github.com/thesysdev/openui-creator-program
-- Updated: 2026-05-19T17:33:51Z
-- Why it matched: mentions bounty/reward, has visible amount
+- Score: 60
+- Amount hint: $522.84, $534.30, $503.74
+- Issue: https://github.com/Metapro-art/zec-scanner/issues/139
+- Repository: https://github.com/Metapro-art/zec-scanner
+- Updated: 2026-05-20T04:17:12Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. [Tutorial] Verified Math in ZK Circuits: Division, Exchange Rates & Overflow Protection
-
-- Score: 59
-- Amount hint: $300, $500
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/298
-- Repository: https://github.com/midnightntwrk/contributor-hub
-- Updated: 2026-05-19T06:08:12Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+## 3. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
 
 - Score: 43
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/137
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-19T23:12:27Z
+- Updated: 2026-05-20T04:26:53Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Token Stripping
+## 4. shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate
 
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/xFengleN/MiniBountyFactory_LangGraph/issues/8
-- Repository: https://github.com/xFengleN/MiniBountyFactory_LangGraph
-- Updated: 2026-05-19T18:54:27Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Score: 42
+- Amount hint: $3, $15
+- Issue: https://github.com/matchmoments-admin/ask-arthur/issues/321
+- Repository: https://github.com/matchmoments-admin/ask-arthur
+- Updated: 2026-05-20T04:02:54Z
+- Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. [BUG-091] Branch validation allows undeclared state fields to drop initial inputs and node outputs at runtime
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/924
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-19T23:20:18Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 5. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-19T23:12:32Z
+- Updated: 2026-05-20T04:26:57Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Sats to Local Currency | Mexico
+## 6. [WIKI-PATCH] Goal-bound branch protocols: ordered branch family/runbook with typed artifact handoffs and gate checkpoints
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/Jonnyton/Workflow/issues/922
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-20T04:06:01Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/sutt/docs/issues/5
 - Repository: https://github.com/sutt/docs
 - Updated: 2026-05-17T11:11:31Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
+- Repository: https://github.com/hashgraph/hedera-agent-kit-js
+- Updated: 2026-05-20T02:08:19Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. Fixing the bounty award system
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. Create a Bounty Amount Box Issue
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. Sync Issue-Assigned property from GH to LB
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. [Bounty] Investigate and optimize CPU impact on faster-whisper transcription
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ivrit-ai/ivrit-py/issues/15
+- Repository: https://github.com/ivrit-ai/ivrit-py
+- Updated: 2026-05-20T04:03:32Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
