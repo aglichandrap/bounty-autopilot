@@ -1,6 +1,6 @@
 # TaskBounty Triage
 
-Last run: 2026-05-20 17:23 UTC
+Last run: 2026-05-20 19:41 UTC
 
 This report filters scouted TaskBounty tasks before solver time is spent.
 
