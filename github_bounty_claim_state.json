@@ -1,4 +1,10 @@
 {
-  "claims": {},
-  "updated_at": "2026-05-20 20:51 UTC"
+  "claims": {
+    "https://github.com/AzurTian/OnmyojiAutoScript/issues/105": {
+      "comment_url": "https://github.com/AzurTian/OnmyojiAutoScript/issues/105#issuecomment-4502556387",
+      "updated_at": "2026-05-20 20:54 UTC",
+      "status": "claimed"
+    }
+  },
+  "updated_at": "2026-05-20 20:54 UTC"
 }
