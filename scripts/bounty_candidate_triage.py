@@ -16,8 +16,8 @@ CANDIDATES_PATH = Path("bounty_candidates.json")
 REPORT_PATH = Path("bounty_candidate_triage_report.md")
 GITHUB_API = "https://api.github.com"
 OWNER_LOGIN = os.environ.get("BOUNTY_OWNER_LOGIN", "asaadnashed").lower()
-MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "25"))
-MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "0"))
+MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "40"))
+MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "2"))
 MIN_PAID_AMOUNT = float(os.environ.get("BOUNTY_MIN_PAID_AMOUNT", "10"))
 PAID_LABEL_WORDS = ("bounty", "reward", "microgrant")
 NO_PAY_PATTERN = re.compile(
@@ -42,8 +42,6 @@ FALSE_POSITIVE_PATTERN = re.compile(
 COMMENT_BLOCK_PATTERN = re.compile(
     r"\b(submitted|opened|raised)\s+(?:a\s+)?(?:focused\s+)?(?:fix\s+)?(?:pr|pull request)\b"
     r"|/attempt\b|/claim\b|pull/\d+|#\d+\s+for\s+this"
-    r"|\bi can take this\b|\bi'?m interested in taking\b|\binterested in taking a focused look\b"
-    r"|\bi'll open a focused pr\b|\bi will open a focused pr\b"
     r"|\bsuperseded\b|\bshipped as pr\b|\bbuilt\b.*\bpr\s+#?\d+\b"
     r"|\bsource or patching workflow available\b|\bpublic branch only contains the readme\b"
     r"|\bexpected deliverable a binary patch\b|\bnot the source/build setup\b"
@@ -224,15 +222,18 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
             linked_pr_urls = [str(pr.get("html_url")) for pr in competing_prs if pr.get("html_url")]
             if len(competing_prs) > MAX_OPEN_COMPETING_PRS:
                 decision = "drop"
-                reasons.append(f"open competing PRs found ({len(competing_prs)})")
+                reasons.append(f"too many open competing PRs found ({len(competing_prs)})")
                 final_score -= 90
+            elif competing_prs:
+                reasons.append(f"light competition allowed: {len(competing_prs)} open competing PR(s)")
+                final_score -= 15 * len(competing_prs)
             elif related_prs:
                 reasons.append("own/related PR already exists; avoid duplicate work")
                 final_score -= 20
 
             if comments_indicate_competition(repo, issue_number, token=token):
                 decision = "drop"
-                reasons.append("issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work")
+                reasons.append("issue comments indicate submitted/claimed PR or missing-source uncertainty")
                 final_score -= 60
         except Exception as exc:
             reasons.append(f"GitHub triage failed: {exc}")
