@@ -20,6 +20,12 @@ MAX_CLAIMS = int(os.environ.get("GITHUB_BOUNTY_MAX_CLAIMS", "1"))
 MAX_COMMENTS = int(os.environ.get("GITHUB_BOUNTY_CLAIM_MAX_COMMENTS", "20"))
 MAX_COMPETING_PRS = int(os.environ.get("GITHUB_BOUNTY_MAX_COMPETING_PRS", "2"))
 MIN_CLAIM_AMOUNT = float(os.environ.get("GITHUB_BOUNTY_MIN_CLAIM_AMOUNT", "10"))
+PAID_LABEL_WORDS = ("bounty", "reward", "microgrant")
+REAL_BOUNTY_PATTERN = re.compile(
+    r"\b(bounty|reward|microgrant|opire|algora|lightning bounties)\b"
+    r"|\b(will pay|payable upon|payment details|payout|prize)\b",
+    re.IGNORECASE,
+)
 
 CLAIM_COMMENT = (
     "I can take this if it is still available. I will first reproduce the issue, "
@@ -28,6 +34,11 @@ CLAIM_COMMENT = (
 
 ASSIGNMENT_COMMENT = (
     "I can work on this if it is still available. Please assign it to me if assignment is required before opening a PR."
+)
+
+WITHDRAW_COMMENT = (
+    "Withdrawing this. After reviewing the issue more carefully, I noticed the apparent dollar amount "
+    "was from a log/code block rather than a bounty signal. Sorry for the noise."
 )
 
 
@@ -98,36 +109,70 @@ def parse_issue(url: str) -> tuple[str, int] | None:
     return match.group(1), int(match.group(2))
 
 
+def strip_code_blocks(value: str) -> str:
+    text = re.sub(r"```.*?```", " ", value or "", flags=re.S)
+    text = re.sub(r"~~~.*?~~~", " ", text, flags=re.S)
+    return text
+
+
 def amount_value(text: str) -> float:
+    prose = strip_code_blocks(text)
     best = 0.0
-    for match in re.finditer(r"\$\s*([0-9][0-9,]*(?:\.[0-9]+)?)(\s*k)?", text or "", flags=re.I):
+    for match in re.finditer(r"\$\s*([0-9][0-9,]*(?:\.[0-9]+)?)(\s*k)?", prose, flags=re.I):
         value = float(match.group(1).replace(",", ""))
         if match.group(2):
             value *= 1000
         best = max(best, value)
-    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s*(usd|usdc)\b", text or "", flags=re.I):
+    for match in re.finditer(r"\b([0-9][0-9,]*(?:\.[0-9]+)?)\s*(usd|usdc)\b", prose, flags=re.I):
         best = max(best, float(match.group(1).replace(",", "")))
     return best
 
 
-def text_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
+def issue_labels(issue: dict[str, Any]) -> set[str]:
+    return {
+        str(label.get("name") or "").lower()
+        for label in issue.get("labels", [])
+        if isinstance(label, dict)
+    }
+
+
+def amount_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
     return " ".join(
         str(value or "")
         for value in (
             candidate.get("title"),
             candidate.get("amount_hint"),
-            candidate.get("reason"),
             issue.get("title"),
-            issue.get("body"),
-            " ".join(str(label.get("name") or "") for label in issue.get("labels", []) if isinstance(label, dict)),
+            strip_code_blocks(str(issue.get("body") or "")),
         )
     ).lower()
 
 
-def has_paid_signal(blob: str) -> bool:
-    if "amount not obvious" in blob:
+def bounty_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
+    return " ".join(
+        str(value or "")
+        for value in (
+            candidate.get("title"),
+            issue.get("title"),
+            strip_code_blocks(str(issue.get("body") or "")),
+            " ".join(issue_labels(issue)),
+        )
+    ).lower()
+
+
+def text_blob(candidate: dict[str, Any], issue: dict[str, Any]) -> str:
+    return f"{amount_blob(candidate, issue)} {bounty_blob(candidate, issue)}"
+
+
+def has_paid_signal(candidate: dict[str, Any], issue: dict[str, Any]) -> bool:
+    amount_text = amount_blob(candidate, issue)
+    bounty_text = bounty_blob(candidate, issue)
+    if "amount not obvious" in amount_text:
         return False
-    return amount_value(blob) >= MIN_CLAIM_AMOUNT
+    labels = issue_labels(issue)
+    bounty_label = any(any(word in label for word in PAID_LABEL_WORDS) for label in labels)
+    explicit_bounty = REAL_BOUNTY_PATTERN.search(bounty_text) is not None
+    return (bounty_label or explicit_bounty) and amount_value(amount_text) >= MIN_CLAIM_AMOUNT
 
 
 def forbidden(blob: str) -> str:
@@ -145,14 +190,14 @@ def forbidden(blob: str) -> str:
     return ""
 
 
-def already_claimed_by_us(comments: list[dict[str, Any]], login: str) -> str:
+def claim_comment_by_us(comments: list[dict[str, Any]], login: str) -> dict[str, Any] | None:
     for comment in comments:
         if not isinstance(comment, dict):
             continue
         user = comment.get("user") if isinstance(comment.get("user"), dict) else {}
         if str(user.get("login") or "").lower() == login.lower():
-            return str(comment.get("html_url") or "")
-    return ""
+            return comment
+    return None
 
 
 def blocking_competition_in_comments(comments: list[dict[str, Any]], login: str) -> str:
@@ -190,6 +235,17 @@ def select_comment(blob: str) -> str:
     return CLAIM_COMMENT
 
 
+def retract_comment(repo: str, comment: dict[str, Any], token: str) -> str:
+    comment_id = comment.get("id")
+    if not comment_id:
+        return "existing comment had no id"
+    try:
+        request_json(f"/repos/{repo}/issues/comments/{comment_id}", token, method="PATCH", payload={"body": WITHDRAW_COMMENT})
+    except HTTPError as exc:
+        return f"withdraw failed: {http_error_message(exc)}"
+    return "withdrawn false-positive claim comment"
+
+
 def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: dict[str, Any]) -> ClaimResult:
     title = str(candidate.get("title") or "Untitled")
     issue_url = str(candidate.get("url") or "")
@@ -197,8 +253,6 @@ def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: di
     if not parsed:
         return ClaimResult(title, issue_url, "skipped", message="Not a parseable GitHub issue URL.")
     repo, issue_number = parsed
-    if issue_url in state["claims"]:
-        return ClaimResult(title, issue_url, "already_recorded", state["claims"][issue_url].get("comment_url", ""), "Already recorded in claim state.")
 
     issue = request_json(f"/repos/{repo}/issues/{issue_number}", token)
     if issue.get("state") != "open":
@@ -212,19 +266,29 @@ def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: di
     if comments_count > MAX_COMMENTS:
         return ClaimResult(title, issue_url, "skipped", message=f"Issue has too many comments ({comments_count}).")
 
-    blob = text_blob(candidate, issue)
-    if not has_paid_signal(blob):
+    comments = request_json(f"/repos/{repo}/issues/{issue_number}/comments?per_page=50", token)
+    comments = comments if isinstance(comments, list) else []
+    existing = claim_comment_by_us(comments, login)
+    paid = has_paid_signal(candidate, issue)
+    comment_url = str(existing.get("html_url") or "") if existing else ""
+    if not paid:
+        if existing:
+            message = retract_comment(repo, existing, token)
+            state["claims"][issue_url] = {"comment_url": comment_url, "updated_at": now_utc(), "status": "withdrawn_false_positive"}
+            return ClaimResult(title, issue_url, "withdrawn_false_positive", comment_url, message)
         return ClaimResult(title, issue_url, "skipped", message=f"No claimable paid signal >= ${MIN_CLAIM_AMOUNT:.0f}.")
+
+    if issue_url in state["claims"] and not existing:
+        return ClaimResult(title, issue_url, "already_recorded", state["claims"][issue_url].get("comment_url", ""), "Already recorded in claim state.")
+
+    blob = text_blob(candidate, issue)
     reason = forbidden(blob)
     if reason:
         return ClaimResult(title, issue_url, "skipped", message=f"Forbidden/risky category: {reason}.")
 
-    comments = request_json(f"/repos/{repo}/issues/{issue_number}/comments?per_page=50", token)
-    comments = comments if isinstance(comments, list) else []
-    existing = already_claimed_by_us(comments, login)
     if existing:
-        state["claims"][issue_url] = {"comment_url": existing, "updated_at": now_utc(), "status": "already_claimed"}
-        return ClaimResult(title, issue_url, "already_claimed", existing, "Existing comment by account found.")
+        state["claims"][issue_url] = {"comment_url": comment_url, "updated_at": now_utc(), "status": "already_claimed"}
+        return ClaimResult(title, issue_url, "already_claimed", comment_url, "Existing comment by account found.")
     competition = blocking_competition_in_comments(comments, login)
     if competition:
         return ClaimResult(title, issue_url, "skipped", message=competition)
@@ -241,9 +305,9 @@ def claim_candidate(candidate: dict[str, Any], token: str, login: str, state: di
         )
     except HTTPError as exc:
         return ClaimResult(title, issue_url, "claim_failed", message=http_error_message(exc))
-    comment_url = str(comment.get("html_url") or "")
-    state["claims"][issue_url] = {"comment_url": comment_url, "updated_at": now_utc(), "status": "claimed"}
-    return ClaimResult(title, issue_url, "claimed", comment_url, "Posted cautious availability comment.")
+    new_comment_url = str(comment.get("html_url") or "")
+    state["claims"][issue_url] = {"comment_url": new_comment_url, "updated_at": now_utc(), "status": "claimed"}
+    return ClaimResult(title, issue_url, "claimed", new_comment_url, "Posted cautious availability comment.")
 
 
 def claim_sort_key(item: dict[str, Any]) -> tuple[float, int]:
