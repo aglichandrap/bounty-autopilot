@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-20 20:59 UTC
+Last run: 2026-05-20 21:01 UTC
 
 Kept candidates: 0
 
@@ -9,8 +9,9 @@ This pass removes unpaid, crowded, assigned, closed, already-attempted, market-a
 ## 1. Proton Calendar Integration
 
 - Decision: drop
-- Score: 160 -> 40
+- Score: 160 -> -30
 - Issue: https://github.com/calcom/cal.com/issues/5756
+- Reason: no clear open paid bounty signal >= $10 found
 - Reason: busy issue thread (124 comments)
 - Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
 
@@ -40,14 +41,7 @@ This pass removes unpaid, crowded, assigned, closed, already-attempted, market-a
 - Reason: busy issue thread (65 comments)
 - Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
 
-## 5. [SUGGESTION] 1.12.1 clients don't get primary display properly for resolution/refresh rate options
-
-- Decision: drop
-- Score: 64 -> 4
-- Issue: https://github.com/balakethelock/SuperWoW/issues/14
-- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
-
-## 6. [WIKI-DOCS] Archon fantasy RTS/FPS v0 prototype spec
+## 5. [WIKI-DOCS] Archon fantasy RTS/FPS v0 prototype spec
 
 - Decision: drop
 - Score: 39 -> -61
