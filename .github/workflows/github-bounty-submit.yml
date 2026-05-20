@@ -1,0 +1,70 @@
+name: GitHub Bounty Submitter
+
+on:
+  schedule:
+    - cron: "41 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/github_bounty_submitter.py"
+      - "github_bounty_patches/**"
+      - ".github/workflows/github-bounty-submit.yml"
+
+concurrency:
+  group: github-bounty-submitter-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Submit ready GitHub bounty patches
+        env:
+          BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+        run: python scripts/github_bounty_submitter.py
+
+      - name: Commit submitter report
+        run: |
+          git config user.name "github-bounty-submitter-bot"
+          git config user.email "github-bounty-submitter-bot@users.noreply.github.com"
+          git add github_bounty_submission_report.md github_bounty_submission_state.json
+          if git diff --cached --quiet; then
+            echo "No GitHub bounty submitter changes."
+          else
+            git commit -m "Update GitHub bounty submission report"
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase -X ours origin main
+              sleep 5
+            done
+          fi
+
+      - name: Open/update submitter issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s github_bounty_submission_report.md ]; then
+            exit 0
+          fi
+          title="GitHub bounty submitter status"
+          body="$(cat github_bounty_submission_report.md)"
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
