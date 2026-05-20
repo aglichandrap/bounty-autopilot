@@ -1,0 +1,54 @@
+name: Announce Open PRs On Issues
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/announce_open_prs_on_issues.py"
+      - ".github/workflows/announce-open-prs-on-issues.yml"
+
+concurrency:
+  group: announce-open-prs-on-issues
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Announce PRs on linked issues
+        env:
+          BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
+          PR_ANNOUNCER_MAX_PRS: "25"
+        run: python scripts/announce_open_prs_on_issues.py
+
+      - name: Commit announcement report
+        if: always()
+        run: |
+          git config user.name "pr-issue-announcer-bot"
+          git config user.email "pr-issue-announcer-bot@users.noreply.github.com"
+          git add github_pr_issue_announcement_report.md || true
+          if git diff --cached --quiet; then
+            echo "No announcement report changes."
+          else
+            git commit -m "Update PR issue announcement report"
+            for attempt in 1 2 3; do
+              git push && break
+              git pull --rebase -X ours origin main
+              sleep 5
+            done
+          fi
