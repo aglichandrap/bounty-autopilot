@@ -37,7 +37,7 @@ jobs:
           BOUNTY_GITHUB_TOKEN: ${{ secrets.BOUNTY_GITHUB_TOKEN }}
           GITHUB_BOUNTY_MAX_CLAIMS: "1"
           GITHUB_BOUNTY_CLAIM_MAX_COMMENTS: "8"
-          GITHUB_BOUNTY_MIN_CLAIM_AMOUNT: "20"
+          GITHUB_BOUNTY_MIN_CLAIM_AMOUNT: "10"
         run: python scripts/github_bounty_claimer.py
 
       - name: Commit claim report
