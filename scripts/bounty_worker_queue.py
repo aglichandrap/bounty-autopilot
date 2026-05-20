@@ -7,6 +7,7 @@ from pathlib import Path
 
 CANDIDATES_PATH = Path("bounty_candidates.json")
 QUEUE_PATH = Path("bounty_worker_queue.md")
+MAX_QUEUE_ITEMS = 10
 
 
 def main() -> int:
@@ -17,14 +18,14 @@ def main() -> int:
         candidates = json.loads(CANDIDATES_PATH.read_text(encoding="utf-8"))
 
     candidates = sorted(candidates, key=lambda item: item.get("score", 0), reverse=True)
-    top = candidates[:3]
+    top = candidates[:MAX_QUEUE_ITEMS]
 
     lines = [
         "# Bounty Worker Queue",
         "",
         f"Last built: {now}",
         "",
-        "Purpose: turn scouting results into a concrete work queue for an agent. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.",
+        f"Purpose: turn scouting results into a concrete work queue for an agent. Up to {MAX_QUEUE_ITEMS} candidates are kept so one stale opportunity does not block the whole system. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.",
         "",
     ]
 
