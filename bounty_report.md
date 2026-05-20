@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 12:26 UTC
+Last run: 2026-05-20 13:08 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -14,7 +14,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [Bounty] JMD Currency Precision — Full-Stack Fix
+## 2. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
+
+- Score: 71
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/24
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T12:28:14Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. [Bounty] JMD Currency Precision — Full-Stack Fix
 
 - Score: 67
 - Amount hint: $1,000
@@ -24,7 +34,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
+## 4. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
 - Score: 63
 - Amount hint: amount not obvious
@@ -34,7 +44,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem
+## 5. [Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem
 
 - Score: 59
 - Amount hint: $500, $700
@@ -44,7 +54,27 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [WIKI-DOCS] Archon fantasy RTS/FPS v0 prototype spec
+## 6. Add favicon
+
+- Score: 55
+- Amount hint: $10
+- Issue: https://github.com/bigearth/bitblog/issues/1
+- Repository: https://github.com/bigearth/bitblog
+- Updated: 2026-05-20T12:37:01Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. feat(backend): scaffold bounties CRUD module
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/BountyOnChain/StellarBounty/issues/6
+- Repository: https://github.com/BountyOnChain/StellarBounty
+- Updated: 2026-05-20T12:45:26Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. [WIKI-DOCS] Archon fantasy RTS/FPS v0 prototype spec
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -54,7 +84,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Sats to Local Currency | Mexico
+## 9. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -62,36 +92,6 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Repository: https://github.com/sutt/docs
 - Updated: 2026-05-17T11:11:31Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [event-audit/4] Anomaly detector switches from log-mining to SQL query
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T11:47:21Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Feature: Scenario numbers in display (v1.4)
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/jamescochran/TwinStarsRando/issues/8
-- Repository: https://github.com/jamescochran/TwinStarsRando
-- Updated: 2026-05-20T12:19:49Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. [WIKI-DOCS] Archon fantasy RTS/FPS v0 map blockout
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/947
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-20T11:35:25Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
 ## 10. Fixing the bounty award system
