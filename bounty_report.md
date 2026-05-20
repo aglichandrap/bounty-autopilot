@@ -1,6 +1,6 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-20 11:14 UTC
+Last run: 2026-05-20 11:32 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
@@ -54,13 +54,13 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+## 6. Sats to Local Currency | Mexico
 
-- Score: 43
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-20T11:07:31Z
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-17T11:11:31Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
@@ -74,17 +74,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. Sats to Local Currency | Mexico
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
-- Updated: 2026-05-17T11:11:31Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Fixing the bounty award system
+## 8. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -94,7 +84,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Create a Bounty Amount Box Issue
+## 9. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -104,7 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Sync Issue-Assigned property from GH to LB
+## 10. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -114,12 +104,22 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
+## 11. [ Bounty $3k ] [ CLI ] Propagate deploy failure exit codes — exit status
+
+- Score: 29
+- Amount hint: $3, $3000, Bounty $3, bounty $3000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/226
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-20T11:06:05Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
 ## 12. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
 
-- Score: 30
+- Score: 25
 - Amount hint: $8, $8000, Bounty $8, bounty $8000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/467
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-20T11:10:36Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
+- Updated: 2026-05-20T11:25:19Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

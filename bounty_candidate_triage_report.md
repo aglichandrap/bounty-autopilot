@@ -1,239 +1,283 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-20 11:15 UTC
+Last run: 2026-05-20 11:33 UTC
 
-Kept candidates: 1
+Kept candidates: 5
 
 This pass removes unpaid, crowded, assigned, closed, or already-attempted GitHub bounty issues before worker time is spent.
 
-## 1. Replace panic with error handling in template loader when dialers are missing
-
-- Decision: drop
-- Score: 80 -> -140
-- Issue: https://github.com/projectdiscovery/nuclei/issues/6674
-- Reason: issue is not open
-- Reason: busy issue thread (47 comments)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 2. Integrate typos tool into CI
-
-- Decision: drop
-- Score: 80 -> -140
-- Issue: https://github.com/projectdiscovery/nuclei/issues/6532
-- Reason: issue is not open
-- Reason: busy issue thread (41 comments)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 3. [CAL-3105] BigBlueButton Integration
-
-- Decision: drop
-- Score: 80 -> -40
-- Issue: https://github.com/calcom/cal.com/issues/1985
-- Reason: busy issue thread (65 comments)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 4. Proton Calendar Integration
-
-- Decision: drop
-- Score: 80 -> -40
-- Issue: https://github.com/calcom/cal.com/issues/5756
-- Reason: busy issue thread (123 comments)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 5. SESSION_COMPLETE_RECAP.md
-
-- Decision: drop
-- Score: 76 -> 16
-- Issue: https://github.com/Reussitess30/reussitess-global-nexus/issues/72
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 6. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
-
-- Decision: drop
-- Score: 73 -> -77
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/467
-- Reason: open competing PRs found (6)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/474
-- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/472
-- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/478
-- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/477
-- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/217
-
-## 7. [ Bounty $3k ] [ Solidity ] Fix MultiTokenStaking duplicate pool and reward overflow — high priority
-
-- Decision: drop
-- Score: 73 -> -77
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/79
-- Reason: open competing PRs found (2)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1812
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1980
-
-## 8. [ Bounty $3k ] [ Solidity ] Fix PrizeSplit doesn't handle case where winner is contract without receive
-
-- Decision: drop
-- Score: 73 -> -77
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/126
-- Reason: open competing PRs found (4)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1767
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1959
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1976
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1884
-
-## 9. [ Bounty $4k ] [ Solidity ] Fix phantom reward accrual after period expiry in YieldVault — high priority
-
-- Decision: drop
-- Score: 73 -> -77
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/66
-- Reason: open competing PRs found (2)
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1728
-- Competing PR: https://github.com/ClankerNation/OpenAgents/pull/1974
-
-## 10. [ Bounty $4k ] [ SDK ] Add contract deployment helpers to SDK
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/148
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 11. [ Bounty $4k ] [ Solidity ] Fix RandomLottery refund mechanism missing when lottery cancelled — code review finding
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/167
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 12. [ Bounty $5k ] [ Solidity ] Fix MultiTokenStaking duplicate pool and reward overflow — post-audit remediation
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/94
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 13. [SUGGESTION] 1.12.1 clients don't get primary display properly for resolution/refresh rate options
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/balakethelock/SuperWoW/issues/14
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 14. shop-signal Stage 1 / PR 4: Inngest fan-out + ResultCard accordion + Stage-2 gate
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/matchmoments-admin/ask-arthur/issues/321
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 15. [ Bounty $4k ] [ Solidity ] Fix PaymentEscrow missing dispute resolution and timeout — mainnet blocker
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/91
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 16. [ Bounty $6k ] [ Solidity ] Fix first-depositor inflation attack in AMMPool — high priority
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/80
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 17. [ Bounty $6k ] [ Solidity ] Fix AgentRegistry getActiveAgentCount gas limit for large registries — gas optimization
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/89
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 18. [ Bounty $1k ] [ Solidity ] Fix missing zero-amount check in PaymentEscrow createEscrow
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/104
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 19. fix(price-overrides): comprehensive override sweep from second-pass audit (WBTC/Base, restaking rebinds, stablecoin pins, whitelisted-zero triage, blacklist extension)
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/velodrome-finance/indexer/issues/731
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 20. [ Bounty $3k ] [ API ] Fix auth.py doesn't support API key authentication alongside JWT
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/138
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 21. [ Bounty $2k ] [ Solidity ] Fix AgentRegistry registerAgent frontrunning with deterministic ID
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/105
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 22. [ Bounty $1k ] [ Solidity ] Fix AgentToken permit replay across chains after fork — testnet finding
-
-- Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/158
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 23. site: verify Stripe live-mode flip on Vercel + end-to-end smoke test
+## 1. [BOUNTY] Claim: <Mobile SERP Tracker - Working Submission ($50 Wave 2)>
 
 - Decision: keep
-- Score: 73 -> 73
-- Issue: https://github.com/Nolpak14/agorio/issues/72
+- Score: 110 -> 110
+- Issue: https://github.com/bolivian-peru/marketplace-service-template/issues/463
 
-## 24. [Bug] Anthropic API: Excessive token consumption on initial prompt and simple continuations
+## 2. Codex/ChatGPT-Plus backend does not return cache info regardless of prompt_cache_key — closes #538 investigation
+
+- Decision: keep
+- Score: 110 -> 110
+- Issue: https://github.com/eumemic/aios/issues/560
+
+## 3. Foundation reconciliation roadmap — process + analytical scrutinize findings (2 rounds)
 
 - Decision: drop
-- Score: 73 -> 13
-- Issue: https://github.com/anthropics/claude-code/issues/56136
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 25. Foundation reconciliation roadmap — process + analytical scrutinize findings (2 rounds)
-
-- Decision: drop
-- Score: 73 -> 13
+- Score: 104 -> 44
 - Issue: https://github.com/dackclup/quantrank/issues/150
 - Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
 
-## 26. [ Bounty $6k ] [ Docker ] Remove build arguments from final layers — image metadata
+## 4. Teatree Fleet Architecture (TFA): 24/7 cloud-resident reactive code factory
+
+- Decision: keep
+- Score: 104 -> 104
+- Issue: https://github.com/souliane/teatree/issues/1166
+
+## 5. Issue 8: Evaluate Real-World and Multi-Garment Try-On Providers
+
+- Decision: keep
+- Score: 104 -> 104
+- Issue: https://github.com/WeiweiuuuLiiii/ai-virtual-tryon-assistant/issues/8
+
+## 6. Model uses N sequential Edit calls for bulk renumbering instead of single sed/Write
+
+- Decision: keep
+- Score: 98 -> 98
+- Issue: https://github.com/anthropics/claude-code/issues/60733
+
+## 7. [ Bounty $3k ] [ Runtime ] Enforce deterministic cleanup for temporary run files — file runtime
 
 - Decision: drop
-- Score: 73 -> 13
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/449
+- Reason: open competing PRs found (7)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/455
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/479
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/453
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/456
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/454
+
+## 8. [ Bounty $7k ] [ CI ] Enforce protected refs for package publishing — registry release job
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/458
+- Reason: open competing PRs found (6)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/468
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/460
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/480
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/463
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/464
+
+## 9. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/467
+- Reason: open competing PRs found (7)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/481
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/474
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/478
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/472
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/477
+
+## 10. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
+- Reason: open competing PRs found (13)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/484
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/316
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/402
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/315
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/370
+
+## 11. [ Bounty $4k ] [ CLI ] Use stderr for errors and stdout for data — shell integration
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/366
+- Reason: open competing PRs found (11)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/368
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/380
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/473
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/373
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/466
+
+## 12. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/300
+- Reason: open competing PRs found (13)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/307
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/470
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/302
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/363
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/361
+
+## 13. [ Bounty $4k ] [ Data ] Escape spreadsheet formulas in CSV exports — reporting downloads
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/340
+- Reason: open competing PRs found (9)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/348
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/350
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/359
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/383
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/346
+
+## 14. [ Bounty $3k ] [ Queue ] Persist visibility timeout extensions — long running agents
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/426
+- Reason: open competing PRs found (7)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/430
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/435
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/434
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/432
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/436
+
+## 15. [ Bounty $3k ] [ API ] Check run state before approving human step — approval endpoint
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/417
+- Reason: open competing PRs found (5)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/425
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/427
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/424
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/422
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/419
+
+## 16. [ Bounty $8k ] [ API ] Return 404 for cross-project artifact lookup — artifact download API
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/400
+- Reason: open competing PRs found (11)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/407
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/161
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/36
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/406
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/41
+
+## 17. [ Bounty $8k ] [ Storage ] Require transactional state update with artifact manifest — task finalization
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/439
+- Reason: open competing PRs found (5)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/442
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/445
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/444
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/446
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/441
+
+## 18. [ Bounty $10k ] [ Runtime ] Release database advisory locks on exception — lock manager
+
+- Decision: drop
+- Score: 96 -> -54
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/382
+- Reason: open competing PRs found (4)
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/393
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/410
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/428
+- Competing PR: https://github.com/orchestration-agent/AgentOrchestration/pull/448
+
+## 19. [ Bounty $9k ] [ Runtime ] Stop retry loop after terminal run state — retry runtime
+
+- Decision: drop
+- Score: 96 -> 36
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/42
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+
+## 20. [ Bounty $3k ] [ Storage ] Add checksum validation to download cache — artifact consumers
+
+- Decision: drop
+- Score: 96 -> 36
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/283
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+
+## 21. [ Bounty $5k ] [ CI ] Protect release signing from concurrency cancellation — tagged builds
+
+- Decision: drop
+- Score: 96 -> 36
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/356
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+
+## 22. [ Bounty $10k ] [ API ] Enforce max body size on artifact upload — artifact ingestion
+
+- Decision: drop
+- Score: 96 -> 36
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/290
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+
+## 23. ⚠️ P2 WATCH 🔴 [ZEC/USD/1H] ▼ BAJISTA (SHORT) · 24h BOG
+
+- Decision: drop
+- Score: 94 -> 34
+- Issue: https://github.com/Metapro-art/zec-scanner/issues/154
+- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+
+## 24. [ Bounty $6k ] [ Docker ] Remove build arguments from final layers — image metadata
+
+- Decision: drop
+- Score: 90 -> 30
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/78
 - Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
 
-## 27. [Bounty] JMD Currency Precision — Full-Stack Fix
+## 25. Bounty claim: PR #5885 backup verifier failure hardening
 
 - Decision: drop
-- Score: 67 -> 7
-- Issue: https://github.com/lnflash/flash/issues/282
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11458
+- Reason: no clear paid bounty signal found
 
-## 28. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
-
-- Decision: drop
-- Score: 65 -> 5
-- Issue: https://github.com/thesysdev/openui-creator-program/issues/3
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
-
-## 29. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
+## 26. Bounty claim: PR #5855 signed header ingestion nginx proxy
 
 - Decision: drop
-- Score: 65 -> 5
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11457
+- Reason: no clear paid bounty signal found
 
-## 30. [ Bounty $4k ] [ Config ] Coerce boolean environment overrides — AO_ parsing
+## 27. Bounty claim: reviewed PR #5905 public error detail hiding
 
 - Decision: drop
-- Score: 65 -> 5
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/137
-- Reason: issue comments indicate active attempts, claims, missing-source uncertainty, or superseded/built work
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11456
+- Reason: no clear paid bounty signal found
+
+## 28. Bounty claim: reviewed PR #5902 genesis validator malformed payloads
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11454
+- Reason: no clear paid bounty signal found
+
+## 29. Bounty claim: reviewed PR #5901 relic market reserve fields
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11452
+- Reason: no clear paid bounty signal found
+
+## 30. Bounty claim: reviewed PR #5900 relic reserve identity fields
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11448
+- Reason: no clear paid bounty signal found

@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-20 11:15 UTC
+Last built: 2026-05-20 11:33 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -20,10 +20,42 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### site: verify Stripe live-mode flip on Vercel + end-to-end smoke test
+### Teatree Fleet Architecture (TFA): 24/7 cloud-resident reactive code factory
 
-- URL: https://github.com/Nolpak14/agorio/issues/72
-- Amount: $1
+- URL: https://github.com/souliane/teatree/issues/1166
+- Amount: $2, $120
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### Issue 8: Evaluate Real-World and Multi-Garment Try-On Providers
+
+- URL: https://github.com/WeiweiuuuLiiii/ai-virtual-tryon-assistant/issues/8
+- Amount: $0.039, $0.195, $0.390, $0.585
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### Model uses N sequential Edit calls for bulk renumbering instead of single sed/Write
+
+- URL: https://github.com/anthropics/claude-code/issues/60733
+- Amount: $15, $3.75
 - Claim comment if rules allow:
 
 ```text
