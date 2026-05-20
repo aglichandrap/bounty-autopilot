@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - "scripts/bounty_scout.py"
+      - "scripts/algora_bounty_scout.py"
       - "scripts/bounty_candidate_triage.py"
       - "scripts/bounty_worker_queue.py"
       - "scripts/claim_queue.py"
@@ -41,6 +42,9 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/bounty_scout.py
 
+      - name: Add Algora bounty candidates
+        run: python scripts/algora_bounty_scout.py
+
       - name: Triage GitHub bounty candidates
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -67,7 +71,7 @@ jobs:
           mkdir -p github_bounty_patches
           git config user.name "bounty-scout-bot"
           git config user.email "bounty-scout-bot@users.noreply.github.com"
-          git add bounty_report.md bounty_candidates.json bounty_candidate_triage_report.md bounty_worker_queue.md claim_queue.md github_openai_patch_solver_report.md github_bounty_patches
+          git add bounty_report.md bounty_candidates.json bounty_candidate_triage_report.md bounty_worker_queue.md claim_queue.md algora_bounty_report.md github_openai_patch_solver_report.md github_bounty_patches
           if git diff --cached --quiet; then
             echo "No bounty report changes."
           else
@@ -87,7 +91,7 @@ jobs:
             exit 0
           fi
           title="Bounty scout candidates"
-          body="$(cat bounty_worker_queue.md; printf '\n\n---\n\n'; cat claim_queue.md; printf '\n\n---\n\n'; cat github_openai_patch_solver_report.md; printf '\n\n---\n\n'; cat bounty_candidate_triage_report.md; printf '\n\n---\n\n'; cat bounty_report.md)"
+          body="$(cat bounty_worker_queue.md; printf '\n\n---\n\n'; cat claim_queue.md; printf '\n\n---\n\n'; cat algora_bounty_report.md; printf '\n\n---\n\n'; cat github_openai_patch_solver_report.md; printf '\n\n---\n\n'; cat bounty_candidate_triage_report.md; printf '\n\n---\n\n'; cat bounty_report.md)"
           existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
           if [ -n "$existing" ]; then
             gh issue edit "$existing" --body "$body"
