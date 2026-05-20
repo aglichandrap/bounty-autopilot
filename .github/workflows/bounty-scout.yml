@@ -47,7 +47,7 @@ jobs:
       - name: Run bounty scout
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
-          BOUNTY_SCOUT_MAX_QUERIES: "6"
+          BOUNTY_SCOUT_MAX_QUERIES: "12"
           BOUNTY_QUERY_DELAY_SECONDS: "3"
         run: python scripts/bounty_scout.py
 
@@ -55,9 +55,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
           GITHUB_SEARCH_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
-          BOUNTY_VOLUME_MAX_CANDIDATES: "100"
-          BOUNTY_VOLUME_MIN_SCORE: "20"
-          BOUNTY_VOLUME_MAX_QUERIES: "8"
+          BOUNTY_VOLUME_MAX_CANDIDATES: "200"
+          BOUNTY_VOLUME_MIN_SCORE: "10"
+          BOUNTY_VOLUME_MAX_QUERIES: "16"
           BOUNTY_QUERY_DELAY_SECONDS: "3"
         run: python scripts/bounty_volume_expander_lite.py
 
@@ -72,8 +72,8 @@ jobs:
       - name: Triage GitHub bounty candidates
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
-          BOUNTY_MAX_COMMENTS: "40"
-          BOUNTY_MAX_COMPETING_PRS: "2"
+          BOUNTY_MAX_COMMENTS: "80"
+          BOUNTY_MAX_COMPETING_PRS: "4"
           BOUNTY_MIN_PAID_AMOUNT: "10"
         run: python scripts/bounty_candidate_triage.py
 
@@ -85,7 +85,7 @@ jobs:
       - name: Generate GitHub bounty patch
         env:
           GITHUB_TOKEN: ${{ env.SCOUT_GITHUB_TOKEN }}
-          GITHUB_SOLVER_MAX_TASKS: "5"
+          GITHUB_SOLVER_MAX_TASKS: "8"
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_SOLVER_MODEL: ${{ secrets.OPENAI_SOLVER_MODEL }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
