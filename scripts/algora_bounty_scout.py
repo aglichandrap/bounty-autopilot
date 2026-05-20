@@ -57,6 +57,18 @@ def load_existing() -> list[dict]:
     return data if isinstance(data, list) else []
 
 
+def algora_score(amount: str) -> int:
+    value = int(amount.replace(",", ""))
+    # Algora pages are dedicated paid bounty feeds, so these should outrank noisy
+    # generic GitHub search hits and always survive the merged candidate cap.
+    return 140 + min(value // 10, 40)
+
+
+def candidate_sort_key(item: dict) -> tuple[int, int]:
+    source_boost = 1000 if str(item.get("source") or "").lower() == "algora" else 0
+    return source_boost + int(item.get("score") or 0), int(bool(item.get("amount_hint")))
+
+
 def parse_page(url: str, repo_map: dict[str, str]) -> list[AlgoraCandidate]:
     html = fetch(url)
     text = strip_tags(html)
@@ -81,9 +93,9 @@ def parse_page(url: str, repo_map: dict[str, str]) -> list[AlgoraCandidate]:
                 url=f"https://github.com/{full_repo}/issues/{issue_number}",
                 repository_url=f"https://github.com/{full_repo}",
                 updated_at=datetime.now(timezone.utc).isoformat(),
-                score=80 if int(amount.replace(",", "")) >= 50 else 65,
+                score=algora_score(amount),
                 amount_hint=f"${amount}",
-                reason=f"Algora open bounty from {url}",
+                reason=f"Algora open paid bounty from {url}",
             )
         )
     return candidates
@@ -101,7 +113,7 @@ def main() -> int:
             errors.append(f"{page_url}: {exc}")
     for candidate in found:
         by_url[candidate.url] = asdict(candidate)
-    merged = sorted(by_url.values(), key=lambda item: int(item.get("score") or 0), reverse=True)[:30]
+    merged = sorted(by_url.values(), key=candidate_sort_key, reverse=True)[:60]
     CANDIDATES_PATH.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     lines = ["# Algora Bounty Scout", "", f"Last run: {now_utc()}", "", f"Found candidates: {len(found)}", ""]
@@ -111,6 +123,7 @@ def main() -> int:
             f"- Amount: {candidate.amount_hint}",
             f"- Issue: {candidate.url}",
             f"- Repository: {candidate.repository_url}",
+            f"- Score: {candidate.score}",
             f"- Reason: {candidate.reason}", "",
         ])
     if errors:
