@@ -2,7 +2,7 @@ name: GitHub Bounty Claimer
 
 on:
   schedule:
-    - cron: "29 * * * *"
+    - cron: "12,27,42,57 * * * *"
   workflow_dispatch:
   push:
     branches:
