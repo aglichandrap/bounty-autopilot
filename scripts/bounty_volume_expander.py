@@ -110,14 +110,9 @@ def _github_get_once(url: str, token: str | None = None) -> dict[str, Any]:
 
 
 def github_get(url: str, token: str | None = None) -> dict[str, Any]:
-    if not token:
-        return _github_get_once(url)
-    try:
+    if token:
         return _github_get_once(url, token=token)
-    except RuntimeError as exc:
-        if "HTTP 403" not in str(exc):
-            raise
-        return _github_get_once(url)
+    return _github_get_once(url)
 
 
 def clean(value: str) -> str:
