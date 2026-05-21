@@ -20,6 +20,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
+  actions: write
   contents: write
   issues: write
 
@@ -44,6 +45,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           SOLVER_API_KEY: ${{ secrets.SOLVER_API_KEY }}
           SOLVER_BASE_URL: ${{ secrets.SOLVER_BASE_URL }}
+          AUTOPILOT_STALE_MINUTES: "45"
         run: python scripts/autopilot_healthcheck.py
 
       - name: Commit health report
