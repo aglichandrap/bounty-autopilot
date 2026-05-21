@@ -1,16 +1,82 @@
 [
   {
-    "title": "Fix: Security Roadmap: Protecting API Keys from Agent Access",
-    "url": "https://www.task-bounty.com/task/fix-security-roadmap-protecting-api-keys-from-agen-uej5sq",
-    "task_id": "623bb359-6405-4142-a1c5-f06ce4b9779c",
-    "amount_hint": "$10",
-    "score": 50,
-    "source": "api",
+    "title": "Add a test harness and run it in CI",
+    "url": "https://www.task-bounty.com/task/taskbounty-mcp-server-16-add-a-test-harness-and-ru-q8mnpc",
+    "task_id": "taskbounty-mcp-server-16-add-a-test-harness-and-ru-q8mnpc",
+    "amount_hint": "$10.00",
+    "score": -15,
+    "source": "browse",
     "reason": "TaskBounty paid task",
-    "summary": "Resolve open issue #11829 in openclaw/openclaw. Real upstream bug; a verified PR that fixes it wins the bounty.",
-    "github_repo_url": "https://github.com/openclaw/openclaw",
-    "github_issue_url": "https://github.com/openclaw/openclaw/issues/11829",
-    "status": "OPEN",
-    "submission_count": 0
+    "summary": "",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "",
+    "submission_count": null,
+    "triage_decision": "blocked",
+    "triage_score_adjustment": -60,
+    "triage_reasons": [
+      "no GitHub issue URL exposed"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Fix: Flows not working when using celery rabitmq and redis",
+    "url": "https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y",
+    "task_id": "fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y",
+    "amount_hint": "$10.00",
+    "score": -15,
+    "source": "browse",
+    "reason": "TaskBounty paid task",
+    "summary": "",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "",
+    "submission_count": null,
+    "triage_decision": "blocked",
+    "triage_score_adjustment": -60,
+    "triage_reasons": [
+      "no GitHub issue URL exposed"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Device-login polling logic is duplicated and the deviceLogin() fallback is dead/divergent",
+    "url": "https://www.task-bounty.com/task/taskbounty-mcp-server-18-device-login-polling-logi-v2c223",
+    "task_id": "taskbounty-mcp-server-18-device-login-polling-logi-v2c223",
+    "amount_hint": "$10.00",
+    "score": -20,
+    "source": "browse",
+    "reason": "TaskBounty paid task",
+    "summary": "",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "",
+    "submission_count": null,
+    "triage_decision": "blocked",
+    "triage_score_adjustment": -60,
+    "triage_reasons": [
+      "no GitHub issue URL exposed"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Resolve 3 moderate npm audit advisories in transitive deps",
+    "url": "https://www.task-bounty.com/task/taskbounty-mcp-server-17-resolve-3-moderate-npm-au-nw89of",
+    "task_id": "taskbounty-mcp-server-17-resolve-3-moderate-npm-au-nw89of",
+    "amount_hint": "$10.00",
+    "score": -20,
+    "source": "browse",
+    "reason": "TaskBounty paid task",
+    "summary": "",
+    "github_repo_url": "",
+    "github_issue_url": "",
+    "status": "",
+    "submission_count": null,
+    "triage_decision": "blocked",
+    "triage_score_adjustment": -60,
+    "triage_reasons": [
+      "no GitHub issue URL exposed"
+    ],
+    "linked_prs": []
   }
 ]

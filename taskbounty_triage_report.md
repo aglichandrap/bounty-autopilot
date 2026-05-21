@@ -1,21 +1,37 @@
 # TaskBounty Triage
 
-Last run: 2026-05-21 16:39 UTC
+Last run: 2026-05-21 16:56 UTC
 
 This report filters scouted TaskBounty tasks before solver time is spent.
 
-## 1. Fix: Security Roadmap: Protecting API Keys from Agent Access
+## 1. Add a test harness and run it in CI
 
-- Decision: hard
-- Score adjustment: -40
-- Issue: https://github.com/openclaw/openclaw/issues/11829
-- Repository: https://github.com/openclaw/openclaw
-- Reason: low discussion volume
-- Reason: security-sensitive scope
-- Reason: linked or competing PRs found (5)
-- Reason: comments indicate a competing PR already exists
-- Linked PR: https://github.com/openclaw/openclaw/issues/11829
-- Linked PR: https://github.com/openclaw/openclaw/issues/14411
-- Linked PR: https://github.com/openclaw/openclaw/issues/56268
-- Linked PR: https://github.com/openclaw/openclaw/issues/10659
-- Linked PR: https://github.com/openclaw/openclaw/issues/13854
+- Decision: blocked
+- Score adjustment: -60
+- Issue: not available
+- Repository: not available
+- Reason: no GitHub issue URL exposed
+
+## 2. Fix: Flows not working when using celery rabitmq and redis
+
+- Decision: blocked
+- Score adjustment: -60
+- Issue: not available
+- Repository: not available
+- Reason: no GitHub issue URL exposed
+
+## 3. Device-login polling logic is duplicated and the deviceLogin() fallback is dead/divergent
+
+- Decision: blocked
+- Score adjustment: -60
+- Issue: not available
+- Repository: not available
+- Reason: no GitHub issue URL exposed
+
+## 4. Resolve 3 moderate npm audit advisories in transitive deps
+
+- Decision: blocked
+- Score adjustment: -60
+- Issue: not available
+- Repository: not available
+- Reason: no GitHub issue URL exposed

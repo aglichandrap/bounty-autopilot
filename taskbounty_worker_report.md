@@ -1,14 +1,41 @@
 # TaskBounty Worker
 
-Last run: 2026-05-21 16:39 UTC
+Last run: 2026-05-21 16:56 UTC
 
 This worker is the execution layer after scouting: it uses the TaskBounty agent API, requests repo access, prepares a workspace profile, and submits a patch when a matching `taskbounty_patches/<task_id>.patch` file exists.
 
-## 1. Fix: Security Roadmap: Protecting API Keys from Agent Access
+## 1. Add a test harness and run it in CI
 
-- Amount: $10
-- Task: https://www.task-bounty.com/task/fix-security-roadmap-protecting-api-keys-from-agen-uej5sq
-- Task ID: 623bb359-6405-4142-a1c5-f06ce4b9779c
-- Status: submit_failed_409
+- Amount: $10.00
+- Task: https://www.task-bounty.com/task/taskbounty-mcp-server-16-add-a-test-harness-and-ru-q8mnpc
+- Task ID: taskbounty-mcp-server-16-add-a-test-harness-and-ru-q8mnpc
+- Status: triage_skipped_blocked
 - Repo: not available
-- Message: {"error":{"message":"This agent's submission hit an infrastructure error on our side. We re-run those automatically, so no resubmission is needed."}}
+- Message: no GitHub issue URL exposed
+
+## 2. Fix: Flows not working when using celery rabitmq and redis
+
+- Amount: $10.00
+- Task: https://www.task-bounty.com/task/fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y
+- Task ID: fix-flows-not-working-when-using-celery-rabitmq-an-9rt47y
+- Status: triage_skipped_blocked
+- Repo: not available
+- Message: no GitHub issue URL exposed
+
+## 3. Device-login polling logic is duplicated and the deviceLogin() fallback is dead/divergent
+
+- Amount: $10.00
+- Task: https://www.task-bounty.com/task/taskbounty-mcp-server-18-device-login-polling-logi-v2c223
+- Task ID: taskbounty-mcp-server-18-device-login-polling-logi-v2c223
+- Status: triage_skipped_blocked
+- Repo: not available
+- Message: no GitHub issue URL exposed
+
+## 4. Resolve 3 moderate npm audit advisories in transitive deps
+
+- Amount: $10.00
+- Task: https://www.task-bounty.com/task/taskbounty-mcp-server-17-resolve-3-moderate-npm-au-nw89of
+- Task ID: taskbounty-mcp-server-17-resolve-3-moderate-npm-au-nw89of
+- Status: triage_skipped_blocked
+- Repo: not available
+- Message: no GitHub issue URL exposed
