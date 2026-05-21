@@ -19,6 +19,7 @@ on:
       - "scripts/claim_queue.py"
       - "scripts/github_openai_patch_solver.py"
       - "scripts/github_patch_solver_router.py"
+      - "scripts/telegram_notify.py"
       - "bounty_extra_queries.txt"
       - ".github/workflows/bounty-scout.yml"
 
@@ -107,8 +108,10 @@ jobs:
           git config user.email "bounty-scout-bot@users.noreply.github.com"
           git add bounty_report.md bounty_candidates.json bounty_repo_filter_report.md bounty_candidate_triage_report.md bounty_policy_gate_report.md bounty_worker_queue.md claim_queue.md algora_bounty_report.md bounty_volume_report.md github_openai_patch_solver_report.md github_bounty_patches
           if git diff --cached --quiet; then
+            echo "REPORT_CHANGED=0" >> "$GITHUB_ENV"
             echo "No bounty report changes."
           else
+            echo "REPORT_CHANGED=1" >> "$GITHUB_ENV"
             git commit -m "Update bounty scout report"
             for attempt in 1 2 3; do
               git push && break
@@ -132,3 +135,25 @@ jobs:
           else
             gh issue create --title "$title" --body "$body"
           fi
+
+      - name: Notify Telegram about bounty scout update
+        if: env.REPORT_CHANGED == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "Bounty Scout: new report/change"
+          TELEGRAM_STATUS: "updated"
+          TELEGRAM_REPORT_FILES: "bounty_worker_queue.md,github_openai_patch_solver_report.md,claim_queue.md"
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
+
+      - name: Notify Telegram about bounty scout failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "Bounty Scout: failed"
+          TELEGRAM_STATUS: "failure"
+          TELEGRAM_MESSAGE: "The GitHub bounty scout workflow failed and needs attention."
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
