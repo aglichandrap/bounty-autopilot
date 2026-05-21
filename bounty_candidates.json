@@ -1,17 +1,1 @@
-[
-  {
-    "title": "Written Content: OpenUI for Voice Agents: Pairing LiveKit with Generative UI for Real-Time Visual Feedback",
-    "url": "https://github.com/thesysdev/openui-creator-program/issues/6",
-    "repository_url": "https://github.com/thesysdev/openui-creator-program",
-    "updated_at": "2026-05-21T19:04:37Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  }
-]
+[]
