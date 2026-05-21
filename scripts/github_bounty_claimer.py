@@ -180,7 +180,11 @@ def forbidden(blob: str) -> str:
         "private-access-needed": r"\b(stripe live|vercel|production access|admin access|customer account|private repo)\b",
         "manual-verification-only": r"\b(smoke test|end-to-end smoke|manual verification|verify .* live-mode)\b",
         "spam/deception": r"\b(spam|fake account|referral|airdrop|casino|gambling|trading bot)\b",
-        "prompt/context": r"\b(prompt|context|pre_task_context|runtime_instructions)\b",
+        "prompt/context": (
+            r"\b(pre_task_context|generation_context|runtime_instructions|system prompt|developer instructions)\b"
+            r"|paste.*(entire|full|all).*(session|prompt|instructions|context)"
+            r"|platform-provided instructions|hidden context|conversation transcript"
+        ),
         "content-only": r"\b(article|blog post|tutorial|content proposal)\b",
     }
     for reason, pattern in patterns.items():
