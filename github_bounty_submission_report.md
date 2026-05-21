@@ -1,6 +1,13 @@
 # GitHub Bounty Submission Report
 
-Last run: 2026-05-21 08:23 UTC
+Last run: 2026-05-21 09:50 UTC
+
+## Scottcjn/Rustchain
+
+- Issue: https://github.com/Scottcjn/Rustchain/issues/819
+- Status: submitted_pr_ci_unblock_pushed
+- PR: https://github.com/Scottcjn/Rustchain/pull/6016
+- Message: PR has one approval. Follow-up commit updated stale macOS miner checksum pins that were blocking CI. GitHub Actions are rerunning; waiting for green checks, maintainer review/merge, and any payout confirmation.
 
 ## orchestration-agent/AgentOrchestration
 
