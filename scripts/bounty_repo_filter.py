@@ -40,6 +40,15 @@ DEFAULT_BLOCKED_ISSUES = {
     # Liberdus #274 looks high-value, but already has an active /attempt before
     # our claim. Avoid spending local Codex on a likely duplicate UI PR.
     "https://github.com/Liberdus/lib-lp-staking-frontend/issues/274",
+    # tscircuit #114 has many prior attempts, PRs, and rewarded claims; a new
+    # local fallback patch would be duplicate work with poor odds.
+    "https://github.com/tscircuit/kicad-component-converter/issues/114",
+    # ZoneMinder #2138 is an old/stale Bountysource-era request with unclear
+    # payout state and a fresh competing /attempt.
+    "https://github.com/ZoneMinder/zoneminder/issues/2138",
+    # devpool #5012 is a mirror/directory issue with many claim comments and
+    # unclear implementation target; use the source issue only if it becomes clear.
+    "https://github.com/devpool-directory/devpool-directory/issues/5012",
 }
 
 
