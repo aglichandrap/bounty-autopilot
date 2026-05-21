@@ -49,6 +49,9 @@ DEFAULT_BLOCKED_ISSUES = {
     # devpool #5012 is a mirror/directory issue with many claim comments and
     # unclear implementation target; use the source issue only if it becomes clear.
     "https://github.com/devpool-directory/devpool-directory/issues/5012",
+    # OpenUI creator #6 is content-only and already has many submitted article PRs.
+    # The autopilot currently targets code patches, not crowded article bounties.
+    "https://github.com/thesysdev/openui-creator-program/issues/6",
 }
 
 
