@@ -3,7 +3,7 @@
     "title": "[CAL-3105] BigBlueButton Integration",
     "url": "https://github.com/calcom/cal.com/issues/1985",
     "repository_url": "https://github.com/calcom/cal.com",
-    "updated_at": "2026-05-21T12:40:06.152335+00:00",
+    "updated_at": "2026-05-21T13:31:13.101197+00:00",
     "score": 110,
     "amount_hint": "$50",
     "reason": "Algora open paid bounty from https://algora.io/cal/bounties",
@@ -12,6 +12,19 @@
     "triage_reasons": [
       "competition already visible in comments; still allowed in aggressive mode"
     ],
+    "linked_prs": []
+  },
+  {
+    "title": "May 2026 Swarm Treasury System Service Fee",
+    "url": "https://github.com/SingularityNet-Ambassador-Program/Treasury-Guild/issues/113",
+    "repository_url": "https://github.com/SingularityNet-Ambassador-Program/Treasury-Guild",
+    "updated_at": "2026-05-21T10:34:54Z",
+    "score": 75,
+    "amount_hint": "35 USD, 400 USD",
+    "reason": "paid/bounty wording, no discussion yet, new issue, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [],
     "linked_prs": []
   }
 ]
