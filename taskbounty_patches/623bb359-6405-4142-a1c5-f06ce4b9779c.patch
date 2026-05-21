@@ -1,0 +1,151 @@
+﻿diff --git a/src/agents/models-config.applies-config-env-vars.test.ts b/src/agents/models-config.applies-config-env-vars.test.ts
+index 447dc16d..d22507a7 100644
+--- a/src/agents/models-config.applies-config-env-vars.test.ts
++++ b/src/agents/models-config.applies-config-env-vars.test.ts
+@@ -239,8 +239,10 @@ describe("models-config", () => {
+       throw new Error("Expected models.json write plan");
+     }
+     const parsed = JSON.parse(plan.contents) as {
+-      providers?: Record<string, { models?: Array<{ id?: string }> }>;
++      providers?: Record<string, { apiKey?: string; models?: Array<{ id?: string }> }>;
+     };
++    expect(parsed.providers?.openai?.apiKey).toBeUndefined();
++    expect(parsed.providers?.google?.apiKey).toBeUndefined();
+     expect(parsed.providers?.google?.models?.map((model) => model.id)).toEqual([
+       "gemini-3.1-pro-preview",
+     ]);
+diff --git a/src/agents/models-config.plan.ts b/src/agents/models-config.plan.ts
+index f21dcb30..6f79857a 100644
+--- a/src/agents/models-config.plan.ts
++++ b/src/agents/models-config.plan.ts
+@@ -105,6 +105,23 @@ function resolveProvidersForMode(params: {
+   });
+ }
+ 
++function stripAuthSecretsForModelsJson(
++  providers: Record<string, ProviderConfig>,
++): Record<string, ProviderConfig> {
++  return Object.fromEntries(
++    Object.entries(providers).map(([id, provider]) => {
++      const {
++        apiKey: _apiKey,
++        discoveryApiKey: _discoveryApiKey,
++        ...safeProvider
++      } = provider as ProviderConfig & {
++        discoveryApiKey?: unknown;
++      };
++      return [id, safeProvider as ProviderConfig];
++    }),
++  );
++}
++
+ export async function planOpenClawModelsJsonWithDeps(
+   params: {
+     cfg: OpenClawConfig;
+@@ -177,7 +194,9 @@ export async function planOpenClawModelsJsonWithDeps(
+       sourceSecretDefaults: params.sourceConfigForSecrets?.secrets?.defaults,
+       secretRefManagedProviders,
+     }) ?? normalizedMergedProviders;
+-  const finalProviders = applyNativeStreamingUsageCompat(secretEnforcedProviders);
++  const finalProviders = stripAuthSecretsForModelsJson(
++    applyNativeStreamingUsageCompat(secretEnforcedProviders),
++  );
+   const nextContents = `${JSON.stringify({ providers: finalProviders }, null, 2)}\n`;
+ 
+   if (params.existingRaw === nextContents) {
+diff --git a/src/agents/models-config.runtime-source-snapshot.test.ts b/src/agents/models-config.runtime-source-snapshot.test.ts
+index d3d32df5..0f0d6b0a 100644
+--- a/src/agents/models-config.runtime-source-snapshot.test.ts
++++ b/src/agents/models-config.runtime-source-snapshot.test.ts
+@@ -171,15 +171,11 @@ function withGatewayTokenMode(config: OpenClawConfig): OpenClawConfig {
+   };
+ }
+ 
+-async function expectGeneratedProviderApiKey(
+-  agentDir: string,
+-  providerId: string,
+-  expected: string,
+-) {
++async function expectGeneratedProviderHasNoApiKey(agentDir: string, providerId: string) {
+   const parsed = await readGeneratedModelsJson<{
+     providers: Record<string, { apiKey?: string }>;
+   }>(agentDir);
+-  expect(parsed.providers[providerId]?.apiKey).toBe(expected);
++  expect(parsed.providers[providerId]?.apiKey).toBeUndefined();
+ }
+ 
+ async function planGeneratedProviders(params: {
+@@ -272,7 +268,7 @@ describe("models-config runtime source snapshot", () => {
+       try {
+         setRuntimeConfigSnapshot(runtimeConfig, sourceConfig);
+         await ensureOpenClawModelsJson(clonedRuntimeConfig, agentDir);
+-        await expectGeneratedProviderApiKey(agentDir, "openai", "OPENAI_API_KEY"); // pragma: allowlist secret
++        await expectGeneratedProviderHasNoApiKey(agentDir, "openai");
+       } finally {
+         clearRuntimeConfigSnapshot();
+         clearConfigCache();
+@@ -325,7 +321,7 @@ describe("models-config runtime source snapshot", () => {
+           >;
+         }>(agentDir);
+         expect(parsed.providers.openai?.baseUrl).toBe("https://api.openai.com/v1");
+-        expect(parsed.providers.openai?.apiKey).toBe("OPENAI_API_KEY"); // pragma: allowlist secret
++        expect(parsed.providers.openai?.apiKey).toBeUndefined();
+         expect(parsed.providers.openai?.headers?.["X-OpenClaw-Test"]).toBe("one");
+ 
+         // Header changes still rewrite models.json, but merge mode preserves the existing baseUrl.
+@@ -337,7 +333,7 @@ describe("models-config runtime source snapshot", () => {
+           >;
+         }>(agentDir);
+         expect(parsed.providers.openai?.baseUrl).toBe("https://api.openai.com/v1");
+-        expect(parsed.providers.openai?.apiKey).toBe("OPENAI_API_KEY"); // pragma: allowlist secret
++        expect(parsed.providers.openai?.apiKey).toBeUndefined();
+         expect(parsed.providers.openai?.headers?.["X-OpenClaw-Test"]).toBe("two");
+       } finally {
+         clearRuntimeConfigSnapshot();
+@@ -359,7 +355,7 @@ describe("models-config runtime source snapshot", () => {
+       config: createOpenAiRuntimeConfigWithHeadersAndApiKey(),
+       sourceConfigForSecrets: withGatewayTokenMode(createOpenAiSourceConfigWithHeadersAndApiKey()),
+     });
+-    expect(providers.openai?.apiKey).toBe("OPENAI_API_KEY"); // pragma: allowlist secret
++    expect(providers.openai?.apiKey).toBeUndefined();
+     expectOpenAiHeaderMarkers(providers);
+   });
+ });
+diff --git a/src/agents/models-config.skips-writing-models-json-no-env-token.test.ts b/src/agents/models-config.skips-writing-models-json-no-env-token.test.ts
+index 4c6058c9..f1ef410d 100644
+--- a/src/agents/models-config.skips-writing-models-json-no-env-token.test.ts
++++ b/src/agents/models-config.skips-writing-models-json-no-env-token.test.ts
+@@ -102,7 +102,6 @@ async function runEnvProviderCase(params: {
+   envVar: "MINIMAX_API_KEY" | "SYNTHETIC_API_KEY";
+   envValue: string;
+   providerKey: "minimax" | "synthetic";
+-  expectedApiKeyRef: string;
+ }) {
+   const previousValue = process.env[params.envVar];
+   process.env[params.envVar] = params.envValue;
+@@ -113,7 +112,8 @@ async function runEnvProviderCase(params: {
+     const raw = await fs.readFile(modelPath, "utf8");
+     const parsed = JSON.parse(raw) as { providers: Record<string, ParsedProviderConfig> };
+     const provider = parsed.providers[params.providerKey];
+-    expect(provider?.apiKey).toBe(params.expectedApiKeyRef);
++    expect(provider).toBeDefined();
++    expect(provider?.apiKey).toBeUndefined();
+   } finally {
+     if (previousValue === undefined) {
+       delete process.env[params.envVar];
+@@ -211,7 +211,6 @@ describe("models-config", () => {
+         envVar: "MINIMAX_API_KEY",
+         envValue: "sk-minimax-test",
+         providerKey: "minimax",
+-        expectedApiKeyRef: "MINIMAX_API_KEY", // pragma: allowlist secret
+       });
+     });
+   });
+@@ -222,7 +221,6 @@ describe("models-config", () => {
+         envVar: "SYNTHETIC_API_KEY",
+         envValue: "sk-synthetic-test",
+         providerKey: "synthetic",
+-        expectedApiKeyRef: "SYNTHETIC_API_KEY", // pragma: allowlist secret
+       });
+     });
+   });
