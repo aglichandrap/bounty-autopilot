@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 20:54 UTC
+Last run: 2026-05-21 21:00 UTC
 
 Kept candidates: 0
 
@@ -30,112 +30,171 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. ai-employee: wire Stripe Subscriptions for recurring monthly retainer billing
+## 4. Publish to crates.io and add cargo install instructions
 
 - Decision: drop
-- Score: 104 -> -31
-- Issue: https://github.com/venturecrane/ss-console/issues/917
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/21
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 5. Crash in [Combat] dialog (Combat, Human vs AI) EIP: H3era hd.00495B60. Code: C0000005
+## 5. Set up CI with GitHub Actions (cargo test + clippy)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/20
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 6. Handle API errors gracefully (network timeout, rate limit)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/18
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 7. Add team filtering and favorites
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/19
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. Support multiple leagues (NBA, NCAA, WNBA)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/16
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 9. Add game detail view (box score / play-by-play)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/17
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 10. Add configurable refresh interval
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/15
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 11. Add README with install & usage instructions
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/14
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 12. Set up CI with GitHub Actions (cargo test + clippy)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/12
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 13. Publish to crates.io and add cargo install instructions
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/13
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 14. Add game detail view (box score / play-by-play)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/9
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 15. Add team filtering and favorites
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/11
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 16. Support multiple leagues (NBA, NCAA, WNBA)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/8
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. Add configurable refresh interval
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/7
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. Handle API errors gracefully (network timeout, rate limit)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/10
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 19. Add README with install & usage instructions
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/6
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. Crash in [Combat] dialog (Combat, Human vs AI) EIP: H3era hd.00495B60. Code: C0000005
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/ERA-Projects/era-project-eng/issues/753
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. [FEATURE] Add Persistent Sidebar Navigation Across All Pages
+## 21. Bug: PR auto-detection matches wrong GHB bounty
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Ghbounty/GhBounty/issues/108
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 22. [BUG-105] published-scope branch listings expose published:false and omit the published version handle
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/994
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 23. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/415
+- Issue: https://github.com/probe-rs/probe-rs/issues/4022
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 7. Add QCon to the conference data tracker
+## 24. Intune device enrollment failed
 
 - Decision: drop
-- Score: 36 -> -159
-- Issue: https://github.com/speakers-in-tech/conference-data/issues/11
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: too many open competing PRs found (15)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/310
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/300
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/319
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/295
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/313
-
-## 8. Add CodeMash to the conference data tracker
-
-- Decision: drop
-- Score: 36 -> -249
-- Issue: https://github.com/speakers-in-tech/conference-data/issues/10
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 12 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/293
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/309
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/302
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/304
-- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/318
-
-## 9. [Tutorial] Running a Midnight Node: Setup, Sync & Monitoring
-
-- Decision: drop
-- Score: 36 -> -249
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/323
-- Reason: content bounty has AI-content disqualification risk for autonomous work
-- Reason: light competition allowed: 10 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/522
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/456
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/523
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/376
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/390
-
-## 10. [EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2155
+- Score: 73 -> 3
+- Issue: https://github.com/himmelblau-idm/himmelblau/issues/1399
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. Nomic Embeddings Model for +10% Accuracy
+## 25. join
 
 - Decision: drop
-- Score: 14 -> -91
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5064
+- Score: 73 -> 3
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
 - Reason: no clear open paid bounty signal >= $10 found
+
+## 26. [WIKI-DESIGN] Goal selection logic should be user-buildable — bind a selector branch instead of baking formula into platform quality_leaderboard
+
+- Decision: drop
+- Score: 73 -> -62
+- Issue: https://github.com/Jonnyton/Workflow/issues/995
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 12. BOUNTY: add support for qdrant vector database in javascript sdk
+## 27. Mouse Event Handling
 
 - Decision: drop
-- Score: 11 -> -184
-- Issue: https://github.com/arakoodev/EdgeChains/issues/273
+- Score: 64 -> -6
+- Issue: https://github.com/amdiazzz/basketui/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: too many open competing PRs found (14)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/arakoodev/EdgeChains/pull/534
-- Competing PR: https://github.com/arakoodev/EdgeChains/pull/487
-- Competing PR: https://github.com/arakoodev/EdgeChains/pull/510
-- Competing PR: https://github.com/arakoodev/EdgeChains/pull/478
-- Competing PR: https://github.com/arakoodev/EdgeChains/pull/485
-
-## 13. Check dev experience on starting an issue
-
-- Decision: drop
-- Score: 6 -> -79
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5027
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/devpool-directory/devpool-directory/pull/5948
-
-## 14. Callbacks - event handlers and hybrid plugins
-
-- Decision: drop
-- Score: 6 -> -99
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5043
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
