@@ -1,13 +1,13 @@
 # TaskBounty Triage
 
-Last run: 2026-05-21 04:46 UTC
+Last run: 2026-05-21 04:50 UTC
 
 This report filters scouted TaskBounty tasks before solver time is spent.
 
 ## 1. Fix: Security Roadmap: Protecting API Keys from Agent Access
 
-- Decision: crowded
-- Score adjustment: -150
+- Decision: hard
+- Score adjustment: -40
 - Issue: https://github.com/openclaw/openclaw/issues/11829
 - Repository: https://github.com/openclaw/openclaw
 - Reason: low discussion volume
