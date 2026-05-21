@@ -143,6 +143,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_TITLE: "Bounty Scout: new report/change"
           TELEGRAM_STATUS: "updated"
+          TELEGRAM_NOTIFY_QUEUE: "1"
           TELEGRAM_REPORT_FILES: "bounty_worker_queue.md,github_openai_patch_solver_report.md,claim_queue.md"
           GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python scripts/telegram_notify.py
