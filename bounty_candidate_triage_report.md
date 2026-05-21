@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 16:05 UTC
+Last run: 2026-05-21 16:22 UTC
 
-Kept candidates: 17
+Kept candidates: 1
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -37,404 +37,178 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. [BUG][低] KANG_F11 活动 Download 没反应
-
-- Decision: keep
-- Score: 104 -> 69
-- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/125
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 6. [BUG][中] JIAN_15 注册后无邮件 + 后台无记录
-
-- Decision: keep
-- Score: 104 -> 69
-- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/105
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 7. [BUG][高] L_13 VIP 规则奖励应为「锁」vip-rule reward ·
-
-- Decision: drop
-- Score: 104 -> -1
-- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/75
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 8. Address Kafka 4.3.0 moving non-public classes to an internal subpackage
-
-- Decision: drop
-- Score: 104 -> -1
-- Issue: https://github.com/kroxylicious/kroxylicious/issues/3996
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 9. [BUG][高] L_2 新用户没收到欢迎邮件
-
-- Decision: keep
-- Score: 104 -> 69
-- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/64
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 10. 探索bug
-
-- Decision: drop
-- Score: 96 -> 26
-- Issue: https://github.com/AzurTian/OnmyojiAutoScript/issues/105
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 11. [Experiment] P1.3 Formal baseline training and evaluation
+## 5. Bug: PR auto-detection matches wrong GHB bounty
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/w2030298-art/HybridArena/issues/8
+- Issue: https://github.com/Ghbounty/GhBounty/issues/108
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 12. [Blocker] ISSUE-F13 objective shaping does not produce hard wins
+## 6. FAIR Compliance Dashboard
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/w2030298-art/HybridArena/issues/4
+- Issue: https://github.com/kuttysoftmy/app-hrm-studio-9750/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 13. adversarial-review: add scope discipline to prevent finding-count inflation
+## 7. FAIR Compliance Dashboard
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/oalders/kitchen-sink/issues/11
+- Issue: https://github.com/kuttysoftmy/app-toolsforge-visual-configuration-builder-for-tools-installer-9139/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. gemma4 grpo异常loss spike
+## 8. FAIR Compliance Dashboard
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/modelscope/ms-swift/issues/9400
+- Issue: https://github.com/kuttysoftmy/app-hrm-studio-9229/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. launch-selected-element: include the page URL (and ideally route + query) for context
+## 9. FAIR Compliance Dashboard
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/anthropics/claude-code/issues/61161
+- Issue: https://github.com/kuttysoftmy/app-launchpad-visual-profile-designer-for-tools-installer-0857/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. [ FastAPI ] Add request ID middleware for log correlation
+## 10. FAIR Compliance Dashboard
 
 - Decision: drop
-- Score: 81 -> -54
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/797
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> 15
+- Issue: https://github.com/kuttysoftmy/app-hrm-explorer-step-visualizer-0146/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 17. [ FastAPI ] Fix jsonable_encoder TypeError on bytes and memoryview objects
-
-- Decision: drop
-- Score: 81 -> -54
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/759
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 18. [ Laravel ] Add rate limiting middleware to web routes and fix session driver fallback
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/749
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 19. [ Laravel ] Fix logging config to separate error logs and add JSON structured logging
+## 11. FAIR Compliance Dashboard
 
 - Decision: drop
-- Score: 81 -> -54
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/787
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> 15
+- Issue: https://github.com/kuttysoftmy/app-hrm-studio-hierarchical-reasoning-visualizer-debugger--1412/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 20. [ CONTEXT RIFT ] Fix typos in knowledge-base/context.json
-
-- Decision: drop
-- Score: 81 -> -54
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/611
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 21. [ T3 Code ] Add round-trip schema validation tests for all contract types
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/827
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 22. [ T3 Code ] Fix turbo.json missing dependency graph for incremental builds
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/828
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 23. [ T3 Code ] Fix ProviderModelPicker not persisting selection across reloads
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/834
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 24. [ T3 Code ] Add Tailscale peer diagnostics with latency graph
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/844
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 25. [ FastAPI ] Fix OpenAPI schema missing server, contact, and license information
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/801
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 26. [ Laravel ] Fix phpunit.xml coverage config and add route and model test suites
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/794
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 27. [ FastAPI ] Fix generate_unique_id producing duplicate operation IDs across routers
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/764
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 28. [ FastAPI ] Fix hardcoded CDN URLs in Swagger UI and ReDoc HTML generation
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/762
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 29. P1: Restore true policy-gradient update step after fixed-vector recurrence
+## 12. Intune device enrollment failed
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/lanyusea/screeps/issues/1299
+- Issue: https://github.com/himmelblau-idm/himmelblau/issues/1399
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 30. [ T3 Code ] Add Prometheus metrics endpoint with Effect.Metric integration
-
-- Decision: keep
-- Score: 71 -> 36
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/833
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 31. [ Javascript ] Missing supported_versions Extension in ClientHello
+## 13. [BUG]
 
 - Decision: drop
-- Score: 71 -> -34
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/389
+- Score: 79 -> 9
+- Issue: https://github.com/anthropics/claude-code/issues/61054
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 32. Example task for Base market-data agents: Bazaar Signal Agent
-
-- Decision: keep
-- Score: 71 -> 36
-- Issue: https://github.com/coinbase/agentic-wallet-skills/issues/37
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 33. [Tutorial] Testing Compact Contracts: Unit Tests, Assertions, and Local Simulation
+## 14. join
 
 - Decision: drop
-- Score: 71 -> -64
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/312
-- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Score: 79 -> 9
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 15. [BUG-105] published-scope branch listings expose published:false and omit the published version handle
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/994
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 16. API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/anthropics/claude-code-action/issues/1337
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. [BUG-104] PR-123 quality_leaderboard crashes with float-conversion error on ISO timestamp — blocks auto_canonical_via_leaderboard
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/988
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 18. [BUG-103] build_branch silently drops node timeout_seconds from spec_json
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/987
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 19. [BUG-102] gates claim/list_claims fail with transport deserialize error and 502 during Goal 4ff5862cc26d learned_failure claim
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/983
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 20. [BUG-101] recommended_parent_for_fork fails on ISO timestamp while selecting Goal 4ff5862cc26d canonical parent
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/982
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 21. [BUG-100] wiki action=write prepends category prefix to the filename path, creating doubled-prefix paths like drafts/notes/drafts-notes-foo.md
+
+- Decision: drop
+- Score: 79 -> -21
+- Issue: https://github.com/Jonnyton/Workflow/issues/981
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 22. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/probe-rs/probe-rs/issues/4022
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. Mouse Event Handling
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/amdiazzz/basketui/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. [WIKI-DESIGN] Goal selection logic should be user-buildable — bind a selector branch instead of baking formula into platform quality_leaderboard
+
+- Decision: drop
+- Score: 73 -> -62
+- Issue: https://github.com/Jonnyton/Workflow/issues/995
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 34. [ FastAPI ] Add concurrent task runner with semaphore limiting and timeout
+## 25. parser/unparser: AstToString produces unparseable output for doubles in scientific notation
 
-- Decision: keep
-- Score: 71 -> 36
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/803
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Decision: drop
+- Score: 73 -> 3
+- Issue: https://github.com/google/cel-go/issues/1325
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 35. [Bug - Gameplay/Logic]: Winning the curtain game causes stray sprites to appear
+## 26. feat: Lesson quality scoring — auto-rank by usefulness
 
 - Decision: drop
 - Score: 64 -> -6
-- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/108
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/86
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 36. Fix the schematic view by also optionally accepting kicad_sym and converting into a schPortArrangement and pinLabels
-
-- Decision: keep
-- Score: 63 -> 28
-- Issue: https://github.com/tscircuit/kicad-component-converter/issues/114
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 37. [ English ] Complete missing lines in limericks.md — finish three limericks
+## 27. [Tutorial] Midnight Development on Windows via WSL2
 
 - Decision: drop
-- Score: 61 -> -74
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/577
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 63 -> -37
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
+- Reason: content bounty has AI-content disqualification risk for autonomous work
 
-## 38. [ English ] Complete Sonnet I — The Weight of Stars in sonnets.md
-
-- Decision: drop
-- Score: 61 -> -44
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/579
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 39. [ English ] Complete missing closing lines in haikus.md
+## 28. docs: Add usage examples to README for each domain
 
 - Decision: drop
-- Score: 61 -> -74
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/576
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 40. [ English ] Complete missing lines in acrostics.md — finish UNSAFE acrostic and write BOUNTY acrostic
-
-- Decision: drop
-- Score: 61 -> -44
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/575
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 41. [AUTORESEARCH][ONLINE] RAxer bug fix sweep — 40+ fixes need aggregate offline evaluation before merge
-
-- Decision: drop
-- Score: 56 -> -14
-- Issue: https://github.com/SolbiatiAlessandro/cogames/issues/77
+- Score: 58 -> -12
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/85
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 42. Random TODOs
+## 29. feat: Add 'docker' domain to lesson pipeline
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/yihui/yihui.org/issues/20
+- Score: 58 -> -12
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/84
 - Reason: no clear open paid bounty signal >= $10 found
-
-## 43. [Bug - cosmetic]: Various player character sprite issues (Bowser and others) [v9]
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/99
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 44. [Bug]: Various issues with Belome Temple fortunes
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/96
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 45. [Bug]: Prizes can be assigned to the wrong locations, and will infinitely replenish [v9]
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/102
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 46. research: run issue-749 BC warm-start PPO experiment
-
-- Decision: drop
-- Score: 46 -> -59
-- Issue: https://github.com/ll7/robot_sf_ll7/issues/1108
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 47. Sketcher Workbench: Adding Missing Information
-
-- Decision: drop
-- Score: 46 -> -59
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/94
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 48. Wayland version does not support external keyboard/mouse
-
-- Decision: drop
-- Score: 46 -> -59
-- Issue: https://github.com/autokey/autokey/issues/1003
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 49. [FEATURE] Add Empty States and Skeleton Loaders for Better UX
-
-- Decision: drop
-- Score: 43 -> -57
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/381
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 50. 'get' command returns the same wallpaper for different screens with different wallpapers.
-
-- Decision: drop
-- Score: 41 -> -29
-- Issue: https://github.com/sindresorhus/macos-wallpaper/issues/25
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 51. Add FAQ page and link it in footer
-
-- Decision: drop
-- Score: 39 -> -111
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/408
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: already assigned to ANISHA-RAWAT
-
-## 52. Add About Us page and link it in footer
-
-- Decision: drop
-- Score: 39 -> -111
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/407
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: already assigned to ANISHA-RAWAT
-
-## 53. Footer missing on inner/subpages
-
-- Decision: drop
-- Score: 39 -> -111
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/406
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: already assigned to ANISHA-RAWAT
-
-## 54. Sats to Local Currency | Mexico
-
-- Decision: drop
-- Score: 39 -> -66
-- Issue: https://github.com/sutt/docs/issues/5
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 55. Developer feedback: three friction points when integrating v4 for the first time
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 56. feat: handle offline validators on the consumer chain side and punish them on provider
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/allinbits/vaas/issues/38
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 57. [BOUNTY] Write a Blog Post About Proof-of-Antiquity — 15 RTC
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/282
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 58. [Minter] Add solo staking
-
-- Decision: drop
-- Score: 36 -> -114
-- Issue: https://github.com/SharedStake/Contracts/issues/12
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 3 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/SharedStake/Contracts/pull/31
-- Competing PR: https://github.com/SharedStake/Contracts/pull/26
-- Competing PR: https://github.com/SharedStake/Contracts/pull/16
