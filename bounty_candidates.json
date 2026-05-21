@@ -3,56 +3,11 @@
     "title": "[CAL-3105] BigBlueButton Integration",
     "url": "https://github.com/calcom/cal.com/issues/1985",
     "repository_url": "https://github.com/calcom/cal.com",
-    "updated_at": "2026-05-21T10:56:08.725957+00:00",
+    "updated_at": "2026-05-21T12:40:06.152335+00:00",
     "score": 110,
     "amount_hint": "$50",
     "reason": "Algora open paid bounty from https://algora.io/cal/bounties",
     "source": "algora",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "[ Bounty $2k ] [ SDK ] Fix retry utility has no max retries cap — v2 implementation",
-    "url": "https://github.com/ClankerNation/OpenAgents/issues/102",
-    "repository_url": "https://github.com/ClankerNation/OpenAgents",
-    "updated_at": "2026-05-20T13:08:47Z",
-    "score": 40,
-    "amount_hint": "$2k, $2900",
-    "reason": "paid/bounty wording, visible amount, coding scope, recent issue",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output",
-    "url": "https://github.com/thesysdev/openui-creator-program/issues/3",
-    "repository_url": "https://github.com/thesysdev/openui-creator-program",
-    "updated_at": "2026-05-20T11:49:46Z",
-    "score": 5,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Implement Differential Reward Distribution for Reopened Issues",
-    "url": "https://github.com/devpool-directory/devpool-directory/issues/5012",
-    "repository_url": "https://github.com/devpool-directory/devpool-directory",
-    "updated_at": "2026-05-21T08:39:33Z",
-    "score": 1,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, fresh update",
-    "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
       "competition already visible in comments; still allowed in aggressive mode"
