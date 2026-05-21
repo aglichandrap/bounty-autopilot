@@ -1,6 +1,13 @@
 # GitHub Bounty Submission Report
 
-Last run: 2026-05-21 07:37 UTC
+Last run: 2026-05-21 07:40 UTC
+
+## Scottcjn/Rustchain
+
+- Issue: https://github.com/Scottcjn/Rustchain/issues/819
+- Status: submitted_pr
+- PR: https://github.com/Scottcjn/Rustchain/pull/6016
+- Message: Doc-only ARM/AArch64 classification guidance submitted; waiting for maintainer review/merge.
 
 ## orchestration-agent/AgentOrchestration
 
