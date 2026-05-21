@@ -10,6 +10,7 @@ on:
     paths:
       - "scripts/github_bounty_claimer.py"
       - "scripts/github_bounty_claim_cleanup.py"
+      - "scripts/telegram_notify.py"
       - "bounty_candidates.json"
       - ".github/workflows/github-bounty-claim.yml"
 
@@ -56,8 +57,10 @@ jobs:
           git config user.email "github-bounty-claimer-bot@users.noreply.github.com"
           git add github_bounty_claim_report.md github_bounty_claim_state.json
           if git diff --cached --quiet; then
+            echo "REPORT_CHANGED=0" >> "$GITHUB_ENV"
             echo "No claim report changes."
           else
+            echo "REPORT_CHANGED=1" >> "$GITHUB_ENV"
             git commit -m "Update GitHub bounty claim report"
             for attempt in 1 2 3; do
               git push && break
@@ -81,3 +84,25 @@ jobs:
           else
             gh issue create --title "$title" --body "$body"
           fi
+
+      - name: Notify Telegram about GitHub claim update
+        if: env.REPORT_CHANGED == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "GitHub Bounty Claimer: new action/report"
+          TELEGRAM_STATUS: "updated"
+          TELEGRAM_REPORT_FILES: "github_bounty_claim_report.md"
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
+
+      - name: Notify Telegram about GitHub claim failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "GitHub Bounty Claimer: failed"
+          TELEGRAM_STATUS: "failure"
+          TELEGRAM_MESSAGE: "The GitHub bounty claimer workflow failed and needs attention."
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
