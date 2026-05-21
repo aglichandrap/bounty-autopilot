@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,6 +21,30 @@ ASSIGNMENT_TEMPLATE = (
     "I will wait for assignment before opening a PR."
 )
 
+BLOCKED_PATTERNS = [
+    r"\bclosed\b",
+    r"\bclaim(?:ed|ing)?\b",
+    r"\bsecurity\b",
+    r"\bcredential(s)?\b",
+    r"\bprivate key\b",
+    r"\bapi key\b",
+    r"\bsecret\b",
+    r"\bpre_task_context\b",
+    r"\bgeneration_context\b",
+    r"\bruntime_instructions\b",
+    r"\bsystem prompt\b",
+    r"\bdeveloper instructions\b",
+    r"paste.*(entire|full|all).*(session|prompt|instructions|context)",
+    r"platform-provided instructions",
+    r"hidden context",
+    r"conversation transcript",
+    r"\bwritten content\b",
+    r"\bcontent type\s*:\s*(article|tutorial)\b",
+    r"\barticle\s*/\s*tutorial\b",
+    r"\bblog post\b",
+    r"\bcontent proposal\b",
+]
+
 
 def load_json(path: Path) -> list[dict]:
     if not path.exists():
@@ -32,8 +57,11 @@ def load_json(path: Path) -> list[dict]:
 
 
 def is_actionable(item: dict) -> bool:
-    text = " ".join(str(item.get(key, "")) for key in ("title", "reason", "amount_hint", "source")).lower()
-    if any(word in text for word in ("closed", "claim", "security", "credential", "prompt", "context")):
+    text = " ".join(
+        str(item.get(key, ""))
+        for key in ("title", "reason", "amount_hint", "source", "body", "description")
+    ).lower()
+    if any(re.search(pattern, text, flags=re.I | re.S) for pattern in BLOCKED_PATTERNS):
         return False
     return bool(item.get("url")) and "amount not obvious" not in text
 
