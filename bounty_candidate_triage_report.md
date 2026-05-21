@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 16:22 UTC
+Last run: 2026-05-21 16:38 UTC
 
 Kept candidates: 1
 
@@ -37,178 +37,397 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. Bug: PR auto-detection matches wrong GHB bounty
+## 5. [BUG]: persisted-fee amount does not match estimate for pay-in-advance percentage charges with `per_transaction_min_amount` / `per_transaction_max_amount`
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/Ghbounty/GhBounty/issues/108
+- Score: 110 -> 40
+- Issue: https://github.com/getlago/lago-api/issues/5560
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. FAIR Compliance Dashboard
+## 6. 📋 Insurance Application Data Sheet — what insurers will ask + our answers
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-hrm-studio-9750/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 7. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-toolsforge-visual-configuration-builder-for-tools-installer-9139/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 8. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-hrm-studio-9229/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 9. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-launchpad-visual-profile-designer-for-tools-installer-0857/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 10. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-hrm-explorer-step-visualizer-0146/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 11. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-hrm-studio-hierarchical-reasoning-visualizer-debugger--1412/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. Intune device enrollment failed
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/himmelblau-idm/himmelblau/issues/1399
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. [BUG]
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/anthropics/claude-code/issues/61054
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 14. join
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 15. [BUG-105] published-scope branch listings expose published:false and omit the published version handle
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/Jonnyton/Workflow/issues/994
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 16. API Error: Claude Code is unable to respond to this request, which appears to violate our Usage Policy
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/anthropics/claude-code-action/issues/1337
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 17. [BUG-104] PR-123 quality_leaderboard crashes with float-conversion error on ISO timestamp — blocks auto_canonical_via_leaderboard
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/Jonnyton/Workflow/issues/988
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 18. [BUG-103] build_branch silently drops node timeout_seconds from spec_json
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/Jonnyton/Workflow/issues/987
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 19. [BUG-102] gates claim/list_claims fail with transport deserialize error and 502 during Goal 4ff5862cc26d learned_failure claim
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/Jonnyton/Workflow/issues/983
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 20. [BUG-101] recommended_parent_for_fork fails on ISO timestamp while selecting Goal 4ff5862cc26d canonical parent
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/Jonnyton/Workflow/issues/982
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 21. [BUG-100] wiki action=write prepends category prefix to the filename path, creating doubled-prefix paths like drafts/notes/drafts-notes-foo.md
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/Jonnyton/Workflow/issues/981
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 22. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/probe-rs/probe-rs/issues/4022
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 23. Mouse Event Handling
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/amdiazzz/basketui/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. [WIKI-DESIGN] Goal selection logic should be user-buildable — bind a selector branch instead of baking formula into platform quality_leaderboard
-
-- Decision: drop
-- Score: 73 -> -62
-- Issue: https://github.com/Jonnyton/Workflow/issues/995
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Score: 104 -> -31
+- Issue: https://github.com/rivegosh/concierge-rivegosh/issues/143
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 25. parser/unparser: AstToString produces unparseable output for doubles in scientific notation
+## 7. 📧 Insurance Quote Outreach — Paste-Ready Emails + Form Submissions
+
+- Decision: drop
+- Score: 94 -> -11
+- Issue: https://github.com/rivegosh/concierge-rivegosh/issues/146
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 8. rephonic.com (Allow)
+
+- Decision: drop
+- Score: 94 -> -41
+- Issue: https://github.com/badmojr/1Hosts/issues/4149
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 9. 💼 Rive Gosh — Insurance Outreach (US, platform framing, cyber-priority)
+
+- Decision: drop
+- Score: 86 -> -49
+- Issue: https://github.com/rivegosh/concierge-rivegosh/issues/134
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 10. MAMA Reflection: post-Sprint-8, post-am-arc, post-architectural-pivot
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/yobryon/methodical-cc/issues/27
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 11. MAMA Reflection: post-Sprint-10 close
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/yobryon/methodical-cc/issues/26
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 12. MAMA Reflection: standardizing substrate-truth + structural-fix candidate tracking
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/yobryon/methodical-cc/issues/25
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 13. [BUG] Claude Code Destroyed 7 Hours of Customer Work — Demanding Account Credit
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/anthropics/claude-code/issues/61220
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 14. scoreTypeFidelity regex over-matches across newlines + 'id' substring false positive
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/mvanhorn/cli-printing-press/issues/1720
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 15. Bug: memory_utilization 60s freshness-retry sleep (PR #24552) adds ~2 minutes per test, causing pytest timeouts
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/sonic-net/sonic-mgmt/issues/24785
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 16. [Bug]: ollama-cloud provider does not inject SOUL.md into outgoing request (loader fires correctly; content drops downstream)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/NousResearch/hermes-agent/issues/29871
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. [16.0][BUG] account_reconcile_oca: incorrect amount when manually adding a counterpart line in company currency from a foreign-currency statement (late rate import)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/OCA/account-reconcile/issues/993
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. tracking: Phase 6 — Direct HTML scraping for anti-bot sites (optional)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/YuanshuoDu/applymate-jobcopilot/issues/26
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 19. testspec generator: no E2E flows for role-guarded state transitions
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/manwithacat/dazzle/issues/1186
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. P1: Restore local RL experiment-card fallback after NO_EXPERIMENT_CARD recurrence
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/lanyusea/screeps/issues/1291
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 21. smrt-commerce: new PaymentIntent model with multi-option semantics
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/happyvertical/smrt/issues/1281
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 22. [Bug] maintainer_cut carve-out paid to penalized miners despite zeroed scoring
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/entrius/gittensor/issues/1328
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. vectorbt==0.26.2 compatibility with Python 3.11 / recent pandas unverified
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/jvalansi/autoalpha/issues/12
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. feat(submissions): add quality rubric and promo routing
 
 - Decision: drop
 - Score: 73 -> 3
-- Issue: https://github.com/google/cel-go/issues/1325
+- Issue: https://github.com/JSONbored/awesome-claude/issues/446
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 26. feat: Lesson quality scoring — auto-rank by usefulness
+## 25. feat(submissions): add guided source-backed submission wizard
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/86
+- Score: 73 -> 3
+- Issue: https://github.com/JSONbored/awesome-claude/issues/444
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 27. [Tutorial] Midnight Development on Windows via WSL2
+## 26. Launch command center: first 3 paid audits
 
 - Decision: drop
-- Score: 63 -> -37
+- Score: 71 -> -64
+- Issue: https://github.com/SpeedRanger/agent-choice-lab/issues/1
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 27. BOLT12 offers with larger TLVs (blinded paths + issuer metadata from lexe.app) can cause xpay payers (CLN) to fail with "Could not create payment onion: path too long"
+
+- Decision: drop
+- Score: 69 -> -1
+- Issue: https://github.com/lexe-app/lexe-public/issues/77
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 28. [Story 1] Life Assurance Data Model & Service
+
+- Decision: drop
+- Score: 69 -> -1
+- Issue: https://github.com/phuongphh/FinanceAssistant/issues/784
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 29. Facet public roadmap
+
+- Decision: drop
+- Score: 69 -> -1
+- Issue: https://github.com/QuartzInkStudio/Facet/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 30. [BUG-087] run_branch fails immediately with AllProvidersExhaustedError instead of retry/backoff despite actionable retry message
+
+- Decision: drop
+- Score: 64 -> -86
+- Issue: https://github.com/Jonnyton/Workflow/issues/917
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Reason: light competition allowed: 1 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/Jonnyton/Workflow/pull/1000
+
+## 31. BUG: Client-side 429 routing loop causes runaway token consumption and exhausts billing caps
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/google-gemini/gemini-cli/issues/27187
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 32. [Tutorial] Midnight Development on Windows via WSL2
+
+- Decision: drop
+- Score: 63 -> -67
 - Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
 - Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: light competition allowed: 2 open competing PR(s)
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/498
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/497
 
-## 28. docs: Add usage examples to README for each domain
+## 33. Gemini suddenly lost the ability to edit a single Python file
 
 - Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/85
+- Score: 59 -> -41
+- Issue: https://github.com/google-gemini/gemini-cli/issues/27285
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 34. 时序：LIAN WAP 用户旅程 V0.1 分阶段落地顺序
+
+- Decision: drop
+- Score: 56 -> -64
+- Issue: https://github.com/taoyu051818-sys/lian-mobile-web/issues/643
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 1 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/taoyu051818-sys/lian-mobile-web/pull/747
+
+## 35. Welcome modal with integrated bridge and/or instructions
+
+- Decision: keep
+- Score: 55 -> -85
+- Issue: https://github.com/capofficial/client/issues/13
+- Reason: light competition allowed: 7 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/capofficial/client/pull/138
+- Competing PR: https://github.com/capofficial/client/pull/180
+- Competing PR: https://github.com/capofficial/client/pull/194
+- Competing PR: https://github.com/capofficial/client/pull/129
+- Competing PR: https://github.com/capofficial/client/pull/177
+
+## 36. Add vector/semantic search using sqlite-vec embeddings
+
+- Decision: drop
+- Score: 54 -> -16
+- Issue: https://github.com/mihaelamj/cupertino/issues/8
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 29. feat: Add 'docker' domain to lesson pipeline
+## 37. [Feedback] Requesting Prorated Refund for Google AI Ultra — Gemini CLI & Gemini 3.1 Pro Quality Issues
 
 - Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/84
+- Score: 54 -> -16
+- Issue: https://github.com/google-gemini/gemini-cli/issues/27023
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 38. [Bug]: Slack reaction_added/reaction_removed events never delivered via Socket Mode (multi-account, v2026.3.24)
+
+- Decision: drop
+- Score: 54 -> -16
+- Issue: https://github.com/openclaw/openclaw/issues/56653
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 39. Add property-based tests for contribution logic
+
+- Decision: drop
+- Score: 54 -> -51
+- Issue: https://github.com/sorosave-protocol/contracts/issues/33
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 40. Feature: Add Organizer Revenue Dashboard with earnings breakdown for paid events
+
+- Decision: drop
+- Score: 50 -> -20
+- Issue: https://github.com/anubhavxdev/Event-management-system-main/issues/81
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 41. investigation: full make e2e-realclaude green on Max-only Mac (stop the layer-by-layer peel)
+
+- Decision: drop
+- Score: 49 -> -21
+- Issue: https://github.com/pyrycode/pyrycode/issues/499
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 42. [BUG]
+
+- Decision: drop
+- Score: 46 -> -24
+- Issue: https://github.com/apsinghdev/opensox/issues/371
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 43. Too many requests
+
+- Decision: drop
+- Score: 43 -> -27
+- Issue: https://github.com/kirodotdev/Kiro/issues/8704
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 44. Account recovery request
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10733
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 45. feat(tui): transcript rendering core — flicker-free render, markdown+syntax, wide-char-safe wrapping, streaming output
+
+- Decision: drop
+- Score: 39 -> -66
+- Issue: https://github.com/smug-haus/tau/issues/337
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 46. PEP 541 Request: Lance
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10730
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 47. PEP 541 Request: boku
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10729
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 48. Mass name squat by user: jcmhkh
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10728
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 49. Sats to Local Currency | Mexico
+
+- Decision: drop
+- Score: 39 -> -66
+- Issue: https://github.com/sutt/docs/issues/5
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 50. Account recovery request
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10727
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 51. Account recovery request
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10726
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 52. Account recovery request
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/pypi/support/issues/10725
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 53. feat: handle offline validators on the consumer chain side and punish them on provider
+
+- Decision: drop
+- Score: 36 -> -34
+- Issue: https://github.com/allinbits/vaas/issues/38
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 54. [BOUNTY] Amazon Product & BSR Tracker API — $75 paid in $SX token
+
+- Decision: drop
+- Score: 36 -> -99
+- Issue: https://github.com/bolivian-peru/marketplace-service-template/issues/72
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 55. Fixing the bounty award system
+
+- Decision: drop
+- Score: 35 -> -35
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 56. Create a Bounty Amount Box Issue
+
+- Decision: drop
+- Score: 35 -> -65
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 57. Sync Issue-Assigned property from GH to LB
+
+- Decision: drop
+- Score: 35 -> -35
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear open paid bounty signal >= $10 found
