@@ -25,6 +25,14 @@ DEFAULT_BLOCKED_REPOS = {
     "LeoVeeNetVip/team-docs",
 }
 
+DEFAULT_BLOCKED_ISSUES = {
+    # CAL-3105 is a real bounty, but the thread has many prior attempts and
+    # active/open PRs for the same BigBlueButton integration. Keep Codex time
+    # for less-crowded work instead of burning a full local implementation here.
+    "https://github.com/calcom/cal.com/issues/1985",
+    "https://github.com/calcom/cal.diy/issues/1985",
+}
+
 
 def blocked_repos() -> set[str]:
     repos = set(DEFAULT_BLOCKED_REPOS)
@@ -34,6 +42,16 @@ def blocked_repos() -> set[str]:
         if item:
             repos.add(item)
     return repos
+
+
+def blocked_issues() -> set[str]:
+    issues = set(DEFAULT_BLOCKED_ISSUES)
+    extra = os.environ.get("BOUNTY_BLOCKED_ISSUES", "")
+    for item in re.split(r"[,\n]", extra):
+        item = item.strip()
+        if item:
+            issues.add(item.rstrip("/"))
+    return issues
 
 
 def repo_from_candidate(candidate: dict[str, Any]) -> str:
@@ -49,6 +67,14 @@ def repo_from_candidate(candidate: dict[str, Any]) -> str:
     return ""
 
 
+def issue_from_candidate(candidate: dict[str, Any]) -> str:
+    for key in ("url", "issue", "html_url"):
+        value = str(candidate.get(key) or "").strip().rstrip("/")
+        if re.match(r"^https://github\.com/[^/]+/[^/]+/issues/\d+$", value):
+            return value
+    return ""
+
+
 def load_candidates() -> list[dict[str, Any]]:
     if not CANDIDATES_PATH.exists():
         return []
@@ -61,14 +87,18 @@ def load_candidates() -> list[dict[str, Any]]:
 
 def main() -> int:
     candidates = load_candidates()
-    blocked = blocked_repos()
+    blocked_repo_set = blocked_repos()
+    blocked_issue_set = blocked_issues()
     kept: list[dict[str, Any]] = []
-    dropped: list[tuple[dict[str, Any], str]] = []
+    dropped: list[tuple[dict[str, Any], str, str]] = []
 
     for candidate in candidates:
         repo = repo_from_candidate(candidate)
-        if repo in blocked:
-            dropped.append((candidate, repo))
+        issue = issue_from_candidate(candidate)
+        if issue in blocked_issue_set:
+            dropped.append((candidate, repo, "known stale/crowded bounty issue"))
+        elif repo in blocked_repo_set:
+            dropped.append((candidate, repo, "known false-positive bounty source"))
         else:
             kept.append(candidate)
 
@@ -84,13 +114,13 @@ def main() -> int:
         f"Kept candidates: {len(kept)}",
         f"Dropped candidates: {len(dropped)}",
         "",
-        "This filter removes known false-positive or self-tracking repositories before expensive triage/solver work runs.",
+        "This filter removes known false-positive, self-tracking, stale, or overcrowded bounty sources before expensive triage/solver work runs.",
         "",
     ]
     if dropped:
         lines.append("## Dropped")
         lines.append("")
-        for index, (candidate, repo) in enumerate(dropped[:50], start=1):
+        for index, (candidate, repo, reason) in enumerate(dropped[:50], start=1):
             title = candidate.get("title") or "Untitled"
             url = candidate.get("url") or ""
             lines.extend([
@@ -98,7 +128,7 @@ def main() -> int:
                 "",
                 f"- Repository: {repo}",
                 f"- Issue: {url}",
-                "- Reason: known false-positive bounty source",
+                f"- Reason: {reason}",
                 "",
             ])
     REPORT_PATH.write_text("\n".join(lines), encoding="utf-8")
