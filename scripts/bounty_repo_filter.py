@@ -37,6 +37,9 @@ DEFAULT_BLOCKED_ISSUES = {
     # Algora #238 is a real paid UI bug, but the thread is already crowded and
     # has prior fixing PRs (#248 and #282). Avoid duplicate claim/solver work.
     "https://github.com/algora-io/algora/issues/238",
+    # Liberdus #274 looks high-value, but already has an active /attempt before
+    # our claim. Avoid spending local Codex on a likely duplicate UI PR.
+    "https://github.com/Liberdus/lib-lp-staking-frontend/issues/274",
 }
 
 
