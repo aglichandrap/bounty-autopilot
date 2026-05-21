@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - "scripts/announce_open_prs_on_issues.py"
+      - "scripts/telegram_notify.py"
       - ".github/workflows/announce-open-prs-on-issues.yml"
 
 concurrency:
@@ -43,8 +44,10 @@ jobs:
           git config user.email "pr-issue-announcer-bot@users.noreply.github.com"
           git add github_pr_issue_announcement_report.md || true
           if git diff --cached --quiet; then
+            echo "REPORT_CHANGED=0" >> "$GITHUB_ENV"
             echo "No announcement report changes."
           else
+            echo "REPORT_CHANGED=1" >> "$GITHUB_ENV"
             git commit -m "Update PR issue announcement report"
             for attempt in 1 2 3; do
               git push && break
@@ -52,3 +55,25 @@ jobs:
               sleep 5
             done
           fi
+
+      - name: Notify Telegram about PR issue announcement update
+        if: env.REPORT_CHANGED == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "PR/Issue Follow-up: new action/report"
+          TELEGRAM_STATUS: "updated"
+          TELEGRAM_REPORT_FILES: "github_pr_issue_announcement_report.md"
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
+
+      - name: Notify Telegram about PR issue announcement failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "PR/Issue Follow-up: failed"
+          TELEGRAM_STATUS: "failure"
+          TELEGRAM_MESSAGE: "The PR/issue follow-up workflow failed and needs attention."
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
