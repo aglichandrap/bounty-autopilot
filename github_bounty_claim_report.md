@@ -1,5 +1,10 @@
 # GitHub Bounty Claim Report
 
-Last run: 2026-05-21 17:17 UTC
+Last run: 2026-05-21 18:25 UTC
 
-No safe claim target was processed.
+## LP Staking UI/UX: inline row actions (Stake, Unstake, Claim)
+
+- Issue: https://github.com/Liberdus/lib-lp-staking-frontend/issues/274
+- Status: skipped
+- Comment: not posted
+- Message: Forbidden/risky category: prompt/context.
