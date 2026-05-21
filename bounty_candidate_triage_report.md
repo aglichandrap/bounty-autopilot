@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 20:20 UTC
+Last run: 2026-05-21 20:54 UTC
 
 Kept candidates: 0
 
@@ -30,128 +30,112 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Crash in [Combat] dialog (Combat, Human vs AI) EIP: H3era hd.00495B60. Code: C0000005
+## 4. ai-employee: wire Stripe Subscriptions for recurring monthly retainer billing
+
+- Decision: drop
+- Score: 104 -> -31
+- Issue: https://github.com/venturecrane/ss-console/issues/917
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 5. Crash in [Combat] dialog (Combat, Human vs AI) EIP: H3era hd.00495B60. Code: C0000005
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/ERA-Projects/era-project-eng/issues/753
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 5. Bounty Claim: Code review of RustChain#6051
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11909
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 6. Brainstorm: 100 procgen beast hunting missions (mission board)
-
-- Decision: drop
-- Score: 79 -> -21
-- Issue: https://github.com/kaosnyrb/FrankyCLI/issues/42
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 7. [FEATURE] Add Persistent Sidebar Navigation Across All Pages
+## 6. [FEATURE] Add Persistent Sidebar Navigation Across All Pages
 
 - Decision: drop
 - Score: 79 -> 9
 - Issue: https://github.com/RatLoopz/sahidawa-india/issues/415
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. Emoji Reaction Claim - 15 Reactions - 2026-05-21 19:51 UTC
+## 7. Add QCon to the conference data tracker
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11924
+- Score: 36 -> -159
+- Issue: https://github.com/speakers-in-tech/conference-data/issues/11
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: too many open competing PRs found (15)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/310
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/300
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/319
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/295
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/313
 
-## 9. PR Review Claim - 15 PRs - 2026-05-21 19:51 UTC
+## 8. Add CodeMash to the conference data tracker
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11923
+- Score: 36 -> -249
+- Issue: https://github.com/speakers-in-tech/conference-data/issues/10
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 12 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/293
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/309
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/302
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/304
+- Competing PR: https://github.com/speakers-in-tech/conference-data/pull/318
 
-## 10. Wallet Gateway Reference Implementation #109 Milestone 7: Institutional Adoption Bounty
+## 9. [Tutorial] Running a Midnight Node: Setup, Sync & Monitoring
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/canton-foundation/canton-dev-fund/issues/366
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 36 -> -249
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/323
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: light competition allowed: 10 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/522
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/456
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/523
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/376
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/390
 
-## 11. Emoji Reaction Claim - 20 Reactions - 2026-05-21 18:43 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11921
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. PR Review Claim - 15 PRs - 2026-05-21 18:43 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11920
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. Emoji Reaction Claim - 10 Reactions - 2026-05-21 17:40 UTC
+## 10. [EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11913
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2155
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. PR Review Claim - 9 PRs - 2026-05-21 17:40 UTC
+## 11. Nomic Embeddings Model for +10% Accuracy
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11912
+- Score: 14 -> -91
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5064
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 15. Emoji Reaction Claim - 25 Reactions - 2026-05-21 16:37 UTC
+## 12. BOUNTY: add support for qdrant vector database in javascript sdk
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11911
+- Score: 11 -> -184
+- Issue: https://github.com/arakoodev/EdgeChains/issues/273
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: too many open competing PRs found (14)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/534
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/487
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/510
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/478
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/485
 
-## 16. PR Review Claim - 9 PRs - 2026-05-21 16:37 UTC
+## 13. Check dev experience on starting an issue
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11910
+- Score: 6 -> -79
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5027
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 1 open competing PR(s)
+- Competing PR: https://github.com/devpool-directory/devpool-directory/pull/5948
 
-## 17. Add Hindi Voice Support Alongside Existing English TTS in Voice Triage
+## 14. Callbacks - event handlers and hybrid plugins
 
 - Decision: drop
-- Score: 69 -> -1
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/414
+- Score: 6 -> -99
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5043
 - Reason: no clear open paid bounty signal >= $10 found
-
-## 18. implement post bounty
-
-- Decision: drop
-- Score: 67 -> -3
-- Issue: https://github.com/Freeuni-OOP/final-project-gitbounty/issues/25
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 19. create JPA entity: bounty
-
-- Decision: drop
-- Score: 67 -> -3
-- Issue: https://github.com/Freeuni-OOP/final-project-gitbounty/issues/23
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 20. Crash on game launch
-
-- Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/MightyDuck75/RealisticTariffs/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 21. Add price chart generation for Telegram notifications
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/Sarmkadan/binance-p2p-monitor/issues/38
-- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
