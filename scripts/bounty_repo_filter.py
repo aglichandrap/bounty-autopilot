@@ -43,6 +43,9 @@ DEFAULT_BLOCKED_ISSUES = {
     # tscircuit #114 has many prior attempts, PRs, and rewarded claims; a new
     # local fallback patch would be duplicate work with poor odds.
     "https://github.com/tscircuit/kicad-component-converter/issues/114",
+    # tscircuit #6 has a long Algora attempt/reward table, many rewarded PRs,
+    # and recent follow-up claim traffic. Do not burn local solver time here.
+    "https://github.com/tscircuit/circuit-json-to-step/issues/6",
     # ZoneMinder #2138 is an old/stale Bountysource-era request with unclear
     # payout state and a fresh competing /attempt.
     "https://github.com/ZoneMinder/zoneminder/issues/2138",
@@ -52,6 +55,15 @@ DEFAULT_BLOCKED_ISSUES = {
     # OpenUI creator #6 is content-only and already has many submitted article PRs.
     # The autopilot currently targets code patches, not crowded article bounties.
     "https://github.com/thesysdev/openui-creator-program/issues/6",
+    # Filecoin devgrants #2081 is an open grant proposal owned by its proposer,
+    # not a bounty issue for outside contributors to claim.
+    "https://github.com/filecoin-project/devgrants/issues/2081",
+    # Dokploy templates #152 is a generic standing bounty board. It is already
+    # crowded with many overlapping template PRs/claims and no specific target.
+    "https://github.com/Dokploy/templates/issues/152",
+    # Archestra #3855 is explicitly reserved for SE interview candidates and
+    # requires core-team assignment before working.
+    "https://github.com/archestra-ai/archestra/issues/3855",
 }
 
 
