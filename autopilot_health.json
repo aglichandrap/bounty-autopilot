@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21 13:51 UTC",
+  "updated_at": "2026-05-21 16:32 UTC",
   "overall": "active",
   "checks": [
     {
@@ -10,27 +10,27 @@
     {
       "name": "Bounty scout scheduler",
       "status": "ok",
-      "detail": "bounty_worker_queue.md is fresh (20 minutes old)."
+      "detail": "bounty_worker_queue.md is fresh (9 minutes old)."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "ok",
-      "detail": "github_bounty_claim_report.md is fresh (23 minutes old)."
+      "status": "degraded",
+      "detail": "github_bounty_claim_report.md is stale (123 minutes old); dispatch sent."
     },
     {
       "name": "GitHub submitter scheduler",
-      "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (23 minutes old)."
+      "status": "degraded",
+      "detail": "github_bounty_submission_report.md is stale (122 minutes old); dispatch sent."
     },
     {
       "name": "TaskBounty scout scheduler",
-      "status": "ok",
-      "detail": "taskbounty_report.md is fresh (22 minutes old)."
+      "status": "degraded",
+      "detail": "taskbounty_report.md is stale (124 minutes old); dispatch sent."
     },
     {
       "name": "TaskBounty worker scheduler",
-      "status": "ok",
-      "detail": "taskbounty_worker_report.md is fresh (22 minutes old)."
+      "status": "degraded",
+      "detail": "taskbounty_worker_report.md is stale (125 minutes old); dispatch sent."
     },
     {
       "name": "Online model solver key",
@@ -44,8 +44,8 @@
     },
     {
       "name": "GitHub bounty claimer",
-      "status": "ok",
-      "detail": "No claim comments tracked yet."
+      "status": "active",
+      "detail": "Comments tracked: 1"
     },
     {
       "name": "GitHub patch solver report",
@@ -75,7 +75,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 2; TaskBounty candidates: 1."
+      "detail": "GitHub candidates: 1; TaskBounty candidates: 1."
     }
   ],
   "tracked_prs": [
@@ -83,5 +83,7 @@
     "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
   ],
-  "tracked_comments": []
+  "tracked_comments": [
+    "https://github.com/SingularityNet-Ambassador-Program/Treasury-Guild/issues/113#issuecomment-4509254558"
+  ]
 }
