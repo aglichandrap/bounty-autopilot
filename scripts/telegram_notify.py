@@ -37,7 +37,7 @@ def _read_file(path: str) -> str:
     return file_path.read_text(encoding="utf-8", errors="replace").strip()
 
 
-def _first_match(pattern: str, text: str, default: str = "غير معروف") -> str:
+def _first(pattern: str, text: str, default: str = "غير معروف") -> str:
     match = re.search(pattern, text, flags=re.I | re.M)
     return match.group(1).strip() if match else default
 
@@ -50,22 +50,21 @@ def _clean_title(title: str) -> str:
     return re.sub(r"^#+\s*", "", title).strip()
 
 
-def _extract_queue_items(text: str) -> list[tuple[str, str, str]]:
+def _queue_items(text: str) -> list[tuple[str, str, str]]:
     items: list[tuple[str, str, str]] = []
-    sections = re.split(r"\n## Queue Item \d+: ", text)
-    for section in sections[1:]:
+    for section in re.split(r"\n## Queue Item \d+: ", text)[1:]:
         title = _clean_title(section.splitlines()[0])
-        issue = _first_match(r"^- Issue:\s*(.+)$", section, "")
-        amount = _first_match(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
+        issue = _first(r"^- Issue:\s*(.+)$", section, "")
+        amount = _first(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
         items.append((title, amount, issue))
     return items
 
 
 def _summarize_bounty_queue(text: str) -> list[str]:
-    last = _first_match(r"^Last built:\s*(.+)$", text)
-    items = _extract_queue_items(text)
+    last = _first(r"^Last built:\s*(.+)$", text)
+    items = _queue_items(text)
     if not items:
-        return [f"طابور GitHub: لا يوجد فرصة قابلة للشغل حاليا. آخر فحص: {last}"]
+        return [f"طابور GitHub: لا توجد فرصة قابلة للشغل حاليا. آخر فحص: {last}"]
     lines = [f"طابور GitHub: {len(items)} فرصة. آخر فحص: {last}"]
     for title, amount, issue in items[:3]:
         lines.append(f"- {title} | {amount} | {issue}")
@@ -75,14 +74,13 @@ def _summarize_bounty_queue(text: str) -> list[str]:
 
 
 def _summarize_taskbounty_report(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
-    sections = re.split(r"\n## \d+\. ", text)
+    last = _first(r"^Last run:\s*(.+)$", text)
     tasks = []
-    for section in sections[1:]:
+    for section in re.split(r"\n## \d+\. ", text)[1:]:
         title = _clean_title(section.splitlines()[0])
-        amount = _first_match(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
-        status = _first_match(r"^- Status:\s*(.+)$", section, "غير معروف")
-        task_url = _first_match(r"^- Task:\s*(https?://\S+)", section, "")
+        amount = _first(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
+        status = _first(r"^- Status:\s*(.+)$", section, "غير معروف")
+        task_url = _first(r"^- Task:\s*(https?://\S+)", section, "")
         tasks.append((title, amount, status, task_url))
     if not tasks:
         return [f"بحث TaskBounty: لا توجد مهام مناسبة حاليا. آخر فحص: {last}"]
@@ -93,15 +91,14 @@ def _summarize_taskbounty_report(text: str) -> list[str]:
 
 
 def _summarize_claim_report(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
+    last = _first(r"^Last run:\s*(.+)$", text)
     claimed = _count(r"^- Status:\s*claimed\b", text)
     skipped = _count(r"^- Status:\s*skipped\b", text)
     lines = [f"تعليقات GitHub: {claimed} تعليق جديد، {skipped} تخطي. آخر تشغيل: {last}"]
     comments = re.findall(r"^- Comment:\s*(https?://\S+)", text, flags=re.M)
     if comments:
         lines.append(f"- رابط التعليق: {comments[0]}")
-    messages = re.findall(r"^- Message:\s*(.+)$", text, flags=re.M)
-    for message in messages[:2]:
+    for message in re.findall(r"^- Message:\s*(.+)$", text, flags=re.M)[:2]:
         if "strong active" in message.lower():
             lines.append("- تم تخطي فرصة لأن فيها محاولة قوية قبلنا.")
         elif "posted" in message.lower():
@@ -109,34 +106,38 @@ def _summarize_claim_report(text: str) -> list[str]:
     return lines
 
 
+def _patch_values(text: str) -> list[str]:
+    return [value.strip() for value in re.findall(r"^- Patch:\s*(.+)$", text, flags=re.I | re.M)]
+
+
 def _summarize_patch_solver(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
+    last = _first(r"^Last run:\s*(.+)$", text)
     queued = _count(r"^- Status:\s*local_fallback_queued\b", text)
-    ready = _count(r"^- Patch:\s*(?!not ready).+", text)
-    lines = [f"حل الكود: {queued} مهمة بانتظار Codex المحلي، patches جاهزة: {ready}. آخر تشغيل: {last}"]
+    ready_values = [value for value in _patch_values(text) if value and value.lower() != "not ready"]
+    lines = [f"حل الكود: {queued} مهمة بانتظار Codex المحلي، patches جاهزة: {len(ready_values)}. آخر تشغيل: {last}"]
     if "No online model key is configured" in text:
         lines.append("- GitHub Actions لا يولد كود أونلاين بدون model key؛ الاعتماد الحالي على Codex المحلي عند الحاجة.")
-    first_issue = _first_match(r"^- Issue:\s*(https?://\S+)", text, "")
+    first_issue = _first(r"^- Issue:\s*(https?://\S+)", text, "")
     if first_issue:
         lines.append(f"- أول مهمة تنتظر فحص كود: {first_issue}")
     return lines
 
 
 def _summarize_taskbounty_worker(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
+    last = _first(r"^Last run:\s*(.+)$", text)
     failed_409 = _count(r"submit_failed_409", text)
     submitted = _count(r"^- Status:\s*(submitted|accepted|success)\b", text)
     lines = [f"TaskBounty: submitted/accepted={submitted}، أخطاء 409={failed_409}. آخر تشغيل: {last}"]
     if failed_409:
         lines.append("- خطأ 409 من منصة TaskBounty نفسها، التقرير يقول إنهم يعيدونها تلقائيا.")
-    task = _first_match(r"^- Task:\s*(https?://\S+)", text, "")
+    task = _first(r"^- Task:\s*(https?://\S+)", text, "")
     if task:
         lines.append(f"- المهمة: {task}")
     return lines
 
 
 def _summarize_taskbounty_triage(text: str) -> list[str]:
-    decision = _first_match(r"^- Decision:\s*(.+)$", text, "غير معروف")
+    decision = _first(r"^- Decision:\s*(.+)$", text, "غير معروف")
     reasons = re.findall(r"^- Reason:\s*(.+)$", text, flags=re.M)
     lines = [f"فرز TaskBounty: القرار {decision}."]
     if reasons:
@@ -145,17 +146,16 @@ def _summarize_taskbounty_triage(text: str) -> list[str]:
 
 
 def _summarize_health(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
-    overall = _first_match(r"^Overall:\s*`?([^`\n]+)`?", text)
-    degraded = re.findall(r"^- `degraded`\s*([^:]+):\s*(.+)$", text, flags=re.M)
+    last = _first(r"^Last run:\s*(.+)$", text)
+    overall = _first(r"^Overall:\s*`?([^`\n]+)`?", text)
     lines = [f"صحة النظام: {overall}. آخر فحص: {last}"]
-    for name, message in degraded[:2]:
+    for name, message in re.findall(r"^- `degraded`\s*([^:]+):\s*(.+)$", text, flags=re.M)[:2]:
         lines.append(f"- تنبيه: {name.strip()} - {message.strip()}")
     return lines
 
 
 def _summarize_pr_followup(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
+    last = _first(r"^Last run:\s*(.+)$", text)
     announced = _count(r"^## already_announced", text)
     skipped = _count(r"^## skipped", text)
     posted = _count(r"^- Comment:\s*https?://", text)
@@ -163,15 +163,17 @@ def _summarize_pr_followup(text: str) -> list[str]:
 
 
 def _summarize_submission_report(text: str) -> list[str]:
-    last = _first_match(r"^Last run:\s*(.+)$", text)
+    last = _first(r"^Last run:\s*(.+)$", text)
     submitted = _count(r"^- Status:\s*(submitted|opened|created|ready)\b", text)
     skipped = _count(r"^- Status:\s*skipped\b", text)
     failed = _count(r"^- Status:\s*(failed|error)\b", text)
     prs = re.findall(r"^- PR:\s*(https?://\S+)", text, flags=re.M)
     lines = [f"إرسال PRs: جديد={submitted}، تخطي={skipped}، فشل={failed}. آخر تشغيل: {last}"]
-    if prs:
-        lines.append(f"- آخر PR: {prs[0]}")
-    elif submitted == 0 and failed == 0:
+    if prs and submitted > 0:
+        lines.append(f"- PR جديد: {prs[0]}")
+    elif prs:
+        lines.append(f"- آخر PR متابع: {prs[0]}")
+    else:
         lines.append("- لا يوجد PR جديد في هذه الجولة.")
     return lines
 
@@ -195,8 +197,8 @@ def _summarize_generic(path: str, text: str) -> list[str]:
         return _summarize_pr_followup(text)
     if path.endswith("github_bounty_submission_report.md"):
         return _summarize_submission_report(text)
-    heading = _first_match(r"^#\s*(.+)$", text, pathlib.Path(path).name)
-    last = _first_match(r"^Last (?:run|built):\s*(.+)$", text, "")
+    heading = _first(r"^#\s*(.+)$", text, pathlib.Path(path).name)
+    last = _first(r"^Last (?:run|built):\s*(.+)$", text, "")
     suffix = f" آخر تحديث: {last}" if last else ""
     return [f"{heading}.{suffix}"]
 
