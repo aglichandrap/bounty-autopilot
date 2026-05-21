@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21 07:37 UTC",
+  "updated_at": "2026-05-21 07:40 UTC",
   "overall": "active",
   "checks": [
     {
@@ -9,28 +9,28 @@
     },
     {
       "name": "Bounty scout scheduler",
-      "status": "degraded",
-      "detail": "bounty_worker_queue.md is stale (101 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "bounty_worker_queue.md is fresh (0 minutes old)."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "degraded",
-      "detail": "github_bounty_claim_report.md is stale (167 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "github_bounty_claim_report.md is fresh (3 minutes old)."
     },
     {
       "name": "GitHub submitter scheduler",
-      "status": "degraded",
-      "detail": "github_bounty_submission_report.md is stale (168 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "github_bounty_submission_report.md is fresh (0 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
       "status": "ok",
-      "detail": "taskbounty_report.md is fresh (32 minutes old)."
+      "detail": "taskbounty_report.md is fresh (35 minutes old)."
     },
     {
       "name": "TaskBounty worker scheduler",
       "status": "degraded",
-      "detail": "taskbounty_worker_report.md is stale (148 minutes old); dispatch sent."
+      "detail": "taskbounty_worker_report.md is stale (151 minutes old); dispatch sent."
     },
     {
       "name": "Online model solver key",
@@ -60,7 +60,7 @@
     {
       "name": "GitHub bounty submitter",
       "status": "active",
-      "detail": "PRs tracked: 3"
+      "detail": "PRs tracked: 4"
     },
     {
       "name": "TaskBounty worker",
@@ -75,10 +75,11 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 3; TaskBounty candidates: 1."
+      "detail": "GitHub candidates: 4; TaskBounty candidates: 1."
     }
   ],
   "tracked_prs": [
+    "https://github.com/Scottcjn/Rustchain/pull/6016",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/20",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
