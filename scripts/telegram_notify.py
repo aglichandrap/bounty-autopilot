@@ -14,10 +14,11 @@ MAX_MESSAGE_CHARS = 3900
 MAX_SUMMARY_LINES = 14
 
 TITLE_AR = {
-    "Bounty Scout": "بحث فرص GitHub",
     "TaskBounty Worker": "عامل TaskBounty",
     "TaskBounty Scout": "بحث TaskBounty",
+    "GitHub Bounty Submitter": "إرسال PRs",
     "GitHub Bounty Claimer": "تعليقات GitHub",
+    "Bounty Scout": "بحث فرص GitHub",
     "PR/Issue Follow-up": "متابعة PR/Issue",
     "Autopilot Health": "صحة النظام",
 }
@@ -70,6 +71,24 @@ def _summarize_bounty_queue(text: str) -> list[str]:
         lines.append(f"- {title} | {amount} | {issue}")
     if len(items) > 3:
         lines.append(f"- وفيه {len(items) - 3} فرص إضافية بالطابور.")
+    return lines
+
+
+def _summarize_taskbounty_report(text: str) -> list[str]:
+    last = _first_match(r"^Last run:\s*(.+)$", text)
+    sections = re.split(r"\n## \d+\. ", text)
+    tasks = []
+    for section in sections[1:]:
+        title = _clean_title(section.splitlines()[0])
+        amount = _first_match(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
+        status = _first_match(r"^- Status:\s*(.+)$", section, "غير معروف")
+        task_url = _first_match(r"^- Task:\s*(https?://\S+)", section, "")
+        tasks.append((title, amount, status, task_url))
+    if not tasks:
+        return [f"بحث TaskBounty: لا توجد مهام مناسبة حاليا. آخر فحص: {last}"]
+    lines = [f"بحث TaskBounty: {len(tasks)} مهمة. آخر فحص: {last}"]
+    for title, amount, status, task_url in tasks[:3]:
+        lines.append(f"- {title} | {amount} | {status} | {task_url}")
     return lines
 
 
@@ -143,7 +162,23 @@ def _summarize_pr_followup(text: str) -> list[str]:
     return [f"متابعة PR/Issue: معلن سابقا={announced}، تخطي={skipped}، تعليقات جديدة={posted}. آخر تشغيل: {last}"]
 
 
+def _summarize_submission_report(text: str) -> list[str]:
+    last = _first_match(r"^Last run:\s*(.+)$", text)
+    submitted = _count(r"^- Status:\s*(submitted|opened|created|ready)\b", text)
+    skipped = _count(r"^- Status:\s*skipped\b", text)
+    failed = _count(r"^- Status:\s*(failed|error)\b", text)
+    prs = re.findall(r"^- PR:\s*(https?://\S+)", text, flags=re.M)
+    lines = [f"إرسال PRs: جديد={submitted}، تخطي={skipped}، فشل={failed}. آخر تشغيل: {last}"]
+    if prs:
+        lines.append(f"- آخر PR: {prs[0]}")
+    elif submitted == 0 and failed == 0:
+        lines.append("- لا يوجد PR جديد في هذه الجولة.")
+    return lines
+
+
 def _summarize_generic(path: str, text: str) -> list[str]:
+    if path.endswith("taskbounty_report.md"):
+        return _summarize_taskbounty_report(text)
     if path.endswith("bounty_worker_queue.md"):
         return _summarize_bounty_queue(text)
     if path.endswith("github_bounty_claim_report.md"):
@@ -158,6 +193,8 @@ def _summarize_generic(path: str, text: str) -> list[str]:
         return _summarize_health(text)
     if path.endswith("github_pr_issue_announcement_report.md"):
         return _summarize_pr_followup(text)
+    if path.endswith("github_bounty_submission_report.md"):
+        return _summarize_submission_report(text)
     heading = _first_match(r"^#\s*(.+)$", text, pathlib.Path(path).name)
     last = _first_match(r"^Last (?:run|built):\s*(.+)$", text, "")
     suffix = f" آخر تحديث: {last}" if last else ""
@@ -165,8 +202,12 @@ def _summarize_generic(path: str, text: str) -> list[str]:
 
 
 def _arabic_title(title: str) -> str:
+    lowered = title.lower()
     for key, value in TITLE_AR.items():
-        if key.lower() in title.lower():
+        if lowered.startswith(key.lower()):
+            return value
+    for key, value in sorted(TITLE_AR.items(), key=lambda item: len(item[0]), reverse=True):
+        if key.lower() in lowered:
             return value
     return title
 
