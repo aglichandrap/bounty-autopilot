@@ -1,20 +1,5 @@
 [
   {
-    "title": "More thorough benchmarks [$200]",
-    "url": "https://github.com/QuantumSavory/QuantumSavory.jl/issues/131",
-    "repository_url": "https://github.com/QuantumSavory/QuantumSavory.jl",
-    "updated_at": "2026-05-21T15:45:25Z",
-    "score": 36,
-    "amount_hint": "$200",
-    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
     "title": "Written Content: OpenUI for Voice Agents: Pairing LiveKit with Generative UI for Real-Time Visual Feedback",
     "url": "https://github.com/thesysdev/openui-creator-program/issues/6",
     "repository_url": "https://github.com/thesysdev/openui-creator-program",
@@ -22,51 +7,6 @@
     "score": 11,
     "amount_hint": "amount not obvious",
     "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Implement a fully functional Admin Panel",
-    "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/29",
-    "repository_url": "https://github.com/SecureBananaLabs/bug-bounty",
-    "updated_at": "2026-05-21T15:08:52Z",
-    "score": 11,
-    "amount_hint": "$500",
-    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, recent issue, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "bug: Rule shows “1 applied filter” even when no filter is applied",
-    "url": "https://github.com/requestly/requestly/issues/3826",
-    "repository_url": "https://github.com/requestly/requestly",
-    "updated_at": "2026-05-20T10:05:06Z",
-    "score": 5,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Open Source Contributions - Bounties",
-    "url": "https://github.com/athena-consulting/cosmwasm-by-example/issues/11",
-    "repository_url": "https://github.com/athena-consulting/cosmwasm-by-example",
-    "updated_at": "2026-05-21T14:57:47Z",
-    "score": 1,
-    "amount_hint": "10 USD, 20 USD, 30 USD",
-    "reason": "paid/bounty wording, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
