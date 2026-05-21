@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21 16:32 UTC",
+  "updated_at": "2026-05-21 16:35 UTC",
   "overall": "active",
   "checks": [
     {
@@ -10,27 +10,27 @@
     {
       "name": "Bounty scout scheduler",
       "status": "ok",
-      "detail": "bounty_worker_queue.md is fresh (9 minutes old)."
+      "detail": "bounty_worker_queue.md is fresh (13 minutes old)."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "degraded",
-      "detail": "github_bounty_claim_report.md is stale (123 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "github_bounty_claim_report.md is fresh (3 minutes old)."
     },
     {
       "name": "GitHub submitter scheduler",
-      "status": "degraded",
-      "detail": "github_bounty_submission_report.md is stale (122 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "github_bounty_submission_report.md is fresh (3 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
-      "status": "degraded",
-      "detail": "taskbounty_report.md is stale (124 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "taskbounty_report.md is fresh (3 minutes old)."
     },
     {
       "name": "TaskBounty worker scheduler",
-      "status": "degraded",
-      "detail": "taskbounty_worker_report.md is stale (125 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "taskbounty_worker_report.md is fresh (3 minutes old)."
     },
     {
       "name": "Online model solver key",
@@ -44,8 +44,8 @@
     },
     {
       "name": "GitHub bounty claimer",
-      "status": "active",
-      "detail": "Comments tracked: 1"
+      "status": "ok",
+      "detail": "No claim comments tracked yet."
     },
     {
       "name": "GitHub patch solver report",
@@ -83,7 +83,5 @@
     "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
   ],
-  "tracked_comments": [
-    "https://github.com/SingularityNet-Ambassador-Program/Treasury-Guild/issues/113#issuecomment-4509254558"
-  ]
+  "tracked_comments": []
 }
