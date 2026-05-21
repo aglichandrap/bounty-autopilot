@@ -1,17 +1,17 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-21 18:16 UTC
+Last built: 2026-05-21 18:20 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: [UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page
+## Queue Item 1: LP Staking UI/UX: inline row actions (Stake, Unstake, Claim)
 
-- Issue: https://github.com/algora-io/algora/issues/238
-- Repository: https://github.com/algora-io/algora
-- Amount hint: $2,500
-- Score: 36
-- Work priority: 136.0
-- Match reason: paid/bounty wording, visible amount, coding scope, fresh update
+- Issue: https://github.com/Liberdus/lib-lp-staking-frontend/issues/274
+- Repository: https://github.com/Liberdus/lib-lp-staking-frontend
+- Amount hint: $10.77K
+- Score: 69
+- Work priority: 169.0
+- Match reason: paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update
 
 ### Worker Instructions
 

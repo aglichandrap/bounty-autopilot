@@ -1,55 +1,25 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-21 18:14 UTC
+Last run: 2026-05-21 18:18 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [Tutorial] Midnight Development on Windows via WSL2
+## 1. [ Bounty $5k ] [ Config ] Coerce numeric environment overrides — AO_ parsing
 
-- Score: 63
-- Amount hint: $300, $500
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
-- Repository: https://github.com/midnightntwrk/contributor-hub
-- Updated: 2026-05-21T16:50:38Z
-- Why it matched: mentions bounty/reward, has visible amount
+- Score: 25
+- Amount hint: $5, $5000, Bounty $5, bounty $5000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/267
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-21T13:23:42Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. GPU render endpoints crash on non-object JSON and expose SQLite schema errors
+## 2. [ Bounty $4k ] [ CLI ] Add dry-run mode for deploy — deploy safety
 
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/Scottcjn/Rustchain/issues/5520
-- Repository: https://github.com/Scottcjn/Rustchain
-- Updated: 2026-05-21T17:48:32Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. Developer feedback: three friction points when integrating v4 for the first time
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
-- Repository: https://github.com/hashgraph/hedera-agent-kit-js
-- Updated: 2026-05-21T16:57:27Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. Agent Kit Feedback: Building Hedera AI Court with HAK v4 (Week 1 Bounty)
-
-- Score: 39
-- Amount hint: Bounty 1
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/833
-- Repository: https://github.com/hashgraph/hedera-agent-kit-js
-- Updated: 2026-05-21T16:54:43Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. Add low-latency raw search path separate from agentic answer synthesis
-
-- Score: 34
-- Amount hint: Bounty 5
-- Issue: https://github.com/XortexAI/XMem/issues/163
-- Repository: https://github.com/XortexAI/XMem
-- Updated: 2026-05-21T17:26:38Z
-- Why it matched: mentions bounty/reward
+- Score: 25
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/535
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-21T12:59:25Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

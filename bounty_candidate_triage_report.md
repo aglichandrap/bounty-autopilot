@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 18:16 UTC
+Last run: 2026-05-21 18:20 UTC
 
 Kept candidates: 1
 
@@ -30,296 +30,157 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. join
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 5. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/probe-rs/probe-rs/issues/4022
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 6. Mouse Event Handling
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/amdiazzz/basketui/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 7. 📰 Hacker News AI 社区动态日报 2026-05-17
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/DenisZheng/agents-radar/issues/842
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 8. Daily Leads – 2026-05-20
-
-- Decision: drop
-- Score: 73 -> -27
-- Issue: https://github.com/Harrisoneller/lead-scanner/issues/32
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 9. [UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page
+## 4. LP Staking UI/UX: inline row actions (Stake, Unstake, Claim)
 
 - Decision: keep
-- Score: 71 -> 36
-- Issue: https://github.com/algora-io/algora/issues/238
+- Score: 104 -> 69
+- Issue: https://github.com/Liberdus/lib-lp-staking-frontend/issues/274
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 10. feat: Lesson quality scoring — auto-rank by usefulness
+## 5. Index.html
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/86
+- Score: 85 -> 15
+- Issue: https://github.com/DekuBB/deploy/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. Please cut a release
+## 6. [Docs] Remove/review obsolete and aspirational content
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/slick/slick/issues/3564
+- Score: 85 -> 15
+- Issue: https://github.com/CERTCC/Vultron/issues/601
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 12. Glasp デプロイパイプライン（CI/CD）
+## 7. [Contract] #85: Add Validator Reward and Penalty System
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/7
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/179
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 13. GitHub Pages セットアップ（手動操作）
+## 8. [Contract] #83: Implement Proposal Reward Pool Distribution to Contributors
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/6
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/177
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. テスト実装（自動＋手動）
+## 9. [Contract] #82: Add Contribution Scoring and Quality Metrics
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/5
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/176
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. DASHBOARDグラフ設定（テンプレート）
+## 10. [Contract] #68: Add Token Approval Management for Challenge/Competition Rewards
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/4
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/162
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. ダッシュボードキャッシュ計算エンジン
+## 11. [Contract] #67: Implement Platform Fee Collection for Reward Distribution
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/3
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/161
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 17. tweet.js/bookmark.js パーサー実装
+## 12. [Contract] #66: Add Staking Mechanism for LD Tokens
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/2
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/160
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 18. GASメニュー実装 / HTMLアップロードダイアログ
+## 13. [Contract] #61: Implement ClaimLogic Contract Functions
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/155
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 19. Many problems when attempting to implement a flash algorithm
+## 14. [Contract] #58: Add Competition Status View and Active Competition Registry
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/probe-rs/probe-rs/issues/4016
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/152
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 20. Test issue
+## 15. [Contract] #57: Implement Emergency Withdrawal for Competition Funds
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/gacorpoll-ui/test-repo/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/151
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 21. Cross-ecosystem agent payments: Solana ↔ EVM via ERC-8004 identity
+## 16. [Contract] #55: Implement Gradual Prize Release (Milestone Payouts)
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/marchantdev/agent-protocol/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/149
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 22. React Review Audit
+## 17. [Contract] #53: Fix `submitFlag` Solution Comparison Logic
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/todolist-intern/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/147
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 23. React Review Audit
+## 18. [Contract] #52: Add Competition XP Rewards for Participation
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/FaceIO-saas-authentication/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/146
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 24. React Review Audit
+## 19. [Contract] #46: Fix Competition Prize Array Hardcoded to 3 Winners
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/Leadhung-issue-DC-reference/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/140
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 25. React Review Audit
+## 20. [Contract] #44: Add Challenge Reward Pool Mechanism
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/ecommerce-shop/issues/1
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/138
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 26. React Review Audit
+## 21. [Contract] #38: Add XP Reward Distribution Events to Challenge
 
 - Decision: drop
-- Score: 64 -> -36
-- Issue: https://github.com/sonpt-afk/carter-portfolio/issues/3
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/132
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 22. [Contract] #34: Implement Proper Solution Verification in Challenge
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/128
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. [Contract] #31: Fix Challenge Initialization to Accept All Required Dependencies
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/125
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. [Contract] #26: Integration Test — Full User Onboarding Flow
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Taida-Debu/zenode/issues/120
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 25. [BOUNTY] Claim: <Mobile SERP Tracker - Working Submission ($50 Wave 2)>
+
+- Decision: drop
+- Score: 81 -> -54
+- Issue: https://github.com/bolivian-peru/marketplace-service-template/issues/463
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 27. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -36
-- Issue: https://github.com/sonpt-afk/face-authentication-project/issues/1
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 28. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -36
-- Issue: https://github.com/sonpt-afk/homemade-saas/issues/1
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 29. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/askIT-redux-ulti/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 30. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/AI-app-prontonx/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 31. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -36
-- Issue: https://github.com/sonpt-afk/next-blog/issues/1
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 32. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/next-dashboard-pp/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 33. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/Trip-planner-AI/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 34. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/atlas-forge-noob/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 35. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/generative-ui-with-copilotkit/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 36. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/podcastLibraryApp/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 37. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/Trello-Python-SQL-Redis/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 38. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/dc-project-issue-manager/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 39. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/trello-clone-byson/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 40. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/jira-issue-manager/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 41. React Review Audit
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/sonpt-afk/next-ai-note-generator/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 42. [Tutorial] Midnight Development on Windows via WSL2
-
-- Decision: drop
-- Score: 63 -> -37
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
-- Reason: content bounty has AI-content disqualification risk for autonomous work
-
-## 43. docs: Add usage examples to README for each domain
-
-- Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/85
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 44. feat: Add 'docker' domain to lesson pipeline
-
-- Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/84
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 45. TSPerf challenge submission: tsperf-vscode
-
-- Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/algora-io/algora/issues/277
-- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode

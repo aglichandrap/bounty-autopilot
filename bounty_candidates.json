@@ -1,12 +1,12 @@
 [
   {
-    "title": "[UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page",
-    "url": "https://github.com/algora-io/algora/issues/238",
-    "repository_url": "https://github.com/algora-io/algora",
-    "updated_at": "2026-05-21T15:18:42Z",
-    "score": 36,
-    "amount_hint": "$2,500",
-    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
+    "title": "LP Staking UI/UX: inline row actions (Stake, Unstake, Claim)",
+    "url": "https://github.com/Liberdus/lib-lp-staking-frontend/issues/274",
+    "repository_url": "https://github.com/Liberdus/lib-lp-staking-frontend",
+    "updated_at": "2026-05-21T18:04:43Z",
+    "score": 69,
+    "amount_hint": "$10.77K",
+    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
