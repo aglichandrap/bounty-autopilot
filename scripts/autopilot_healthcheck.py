@@ -3,6 +3,8 @@ from __future__ import annotations
 import json
 import os
 import re
+import urllib.error
+import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -11,6 +13,9 @@ from typing import Any
 
 REPORT_PATH = Path("AUTOPILOT_HEALTH.md")
 STATUS_PATH = Path("autopilot_health.json")
+GITHUB_API = "https://api.github.com"
+REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "asaadnashed/bounty-autopilot")
+STALE_MINUTES = int(os.environ.get("AUTOPILOT_STALE_MINUTES", "45"))
 
 
 @dataclass
@@ -22,6 +27,10 @@ class Check:
 
 def now_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+
+def utc_now() -> datetime:
+    return datetime.now(timezone.utc)
 
 
 def read_text(path: str) -> str:
@@ -43,6 +52,74 @@ def load_json(path: str) -> Any:
 
 def has_secret(name: str) -> bool:
     return bool(os.environ.get(name, "").strip())
+
+
+def github_token() -> str:
+    return (
+        os.environ.get("BOUNTY_GITHUB_TOKEN")
+        or os.environ.get("GH_TOKEN")
+        or os.environ.get("GITHUB_TOKEN")
+        or ""
+    ).strip()
+
+
+def report_timestamp(text: str) -> datetime | None:
+    match = re.search(r"Last (?:built|run):\s*(\d{4}-\d{2}-\d{2} \d{2}:\d{2}) UTC", text or "")
+    if not match:
+        return None
+    try:
+        return datetime.strptime(match.group(1), "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+
+
+def report_age_minutes(path: str) -> int | None:
+    timestamp = report_timestamp(read_text(path))
+    if not timestamp:
+        return None
+    return int((utc_now() - timestamp).total_seconds() // 60)
+
+
+def dispatch_workflow(workflow_file: str) -> str:
+    token = github_token()
+    if not token:
+        return "dispatch skipped: missing GitHub token"
+    url = f"{GITHUB_API}/repos/{REPOSITORY}/actions/workflows/{workflow_file}/dispatches"
+    body = json.dumps({"ref": "main"}).encode("utf-8")
+    request = urllib.request.Request(
+        url,
+        data=body,
+        method="POST",
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            "User-Agent": "bounty-autopilot-health-dispatcher",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=45):
+            return "dispatch sent"
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")
+        return f"dispatch failed: HTTP {exc.code}: {detail[:300]}"
+    except urllib.error.URLError as exc:
+        return f"dispatch failed: {exc.reason}"
+
+
+def dispatch_if_stale(name: str, report_path: str, workflow_file: str, checks: list[Check]) -> None:
+    age = report_age_minutes(report_path)
+    if age is None:
+        status = "missing"
+        detail = f"{report_path} has no parseable timestamp; {dispatch_workflow(workflow_file)}."
+    elif age > STALE_MINUTES:
+        status = "degraded"
+        detail = f"{report_path} is stale ({age} minutes old); {dispatch_workflow(workflow_file)}."
+    else:
+        status = "ok"
+        detail = f"{report_path} is fresh ({age} minutes old)."
+    checks.append(Check(name, status, detail))
 
 
 def status_from_report(text: str, *, local_solver_fallback: bool = False) -> str:
@@ -89,6 +166,12 @@ def main() -> int:
             else "Missing token for GitHub comments, fork, push, and PR submission.",
         )
     )
+
+    dispatch_if_stale("Bounty scout scheduler", "bounty_worker_queue.md", "bounty-scout.yml", checks)
+    dispatch_if_stale("GitHub claimer scheduler", "github_bounty_claim_report.md", "github-bounty-claim.yml", checks)
+    dispatch_if_stale("GitHub submitter scheduler", "github_bounty_submission_report.md", "github-bounty-submit.yml", checks)
+    dispatch_if_stale("TaskBounty scout scheduler", "taskbounty_scout_report.md", "taskbounty-scout.yml", checks)
+    dispatch_if_stale("TaskBounty worker scheduler", "taskbounty_worker_report.md", "taskbounty-worker.yml", checks)
 
     model_ready = has_secret("OPENAI_API_KEY") or has_secret("OPENROUTER_API_KEY") or (has_secret("SOLVER_API_KEY") and has_secret("SOLVER_BASE_URL"))
     checks.append(
