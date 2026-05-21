@@ -122,6 +122,14 @@ def dispatch_if_stale(name: str, report_path: str, workflow_file: str, checks: l
     checks.append(Check(name, status, detail))
 
 
+def report_statuses(text: str) -> list[str]:
+    return [status.strip().lower() for status in re.findall(r"^- Status:\s*([^\n]+)$", text or "", flags=re.I | re.M)]
+
+
+def is_non_actionable_blocked_status(status: str) -> bool:
+    return status.startswith("triage_skipped_blocked") or status.startswith("skipped") or status.startswith("already_submitted")
+
+
 def status_from_report(text: str, *, local_solver_fallback: bool = False) -> str:
     if not text:
         return "missing"
@@ -134,10 +142,23 @@ def status_from_report(text: str, *, local_solver_fallback: bool = False) -> str
     )
     if missing_model:
         return "degraded" if local_solver_fallback else "blocked"
-    if "patch_ready" in lowered or "submitted" in lowered or "pr_opened" in lowered or "claimed" in lowered:
+
+    statuses = report_statuses(text)
+    if any(status.startswith(("claimed", "submitted", "accepted", "success", "pr_opened", "patch_ready")) for status in statuses):
         return "active"
-    if "access_failed" in lowered or "blocked" in lowered or "no solver candidates" in lowered or "claim_failed" in lowered:
+    if any(status.startswith("submit_failed_") and not status.startswith("submit_failed_409") for status in statuses):
         return "degraded"
+    if any(status.startswith(("claim_failed", "access_failed", "blocked")) for status in statuses):
+        return "degraded"
+    if statuses and all(is_non_actionable_blocked_status(status) for status in statuses):
+        return "ok"
+
+    if re.search(r"\b(patch_ready|pr_opened)\b", lowered):
+        return "active"
+    if "access_failed" in lowered or "claim_failed" in lowered:
+        return "degraded"
+    if "no solver candidates" in lowered:
+        return "ok"
     return "ok"
 
 
@@ -238,7 +259,7 @@ def main() -> int:
     task_candidates = load_json("taskbounty_tasks.json") or []
     checks.append(Check("Candidate feeds", "ok" if candidates or task_candidates else "watching", f"GitHub candidates: {len(candidates) if isinstance(candidates, list) else 0}; TaskBounty candidates: {len(task_candidates) if isinstance(task_candidates, list) else 0}."))
 
-    severities = {"blocked": 4, "degraded": 3, "watching": 2, "missing": 2, "ok": 1, "active": 1}
+    severities = {"blocked": 4, "degraded": 3, "missing": 2, "watching": 2, "ok": 1, "active": 1}
     worst = max(checks, key=lambda item: severities.get(item.status, 0)).status if checks else "unknown"
     if any(check.status == "active" for check in checks) and worst not in {"blocked"}:
         overall = "active"
