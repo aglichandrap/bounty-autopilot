@@ -1,264 +1,274 @@
 # Bounty Volume Expander
 
-Last run: 2026-05-21 16:57 UTC
+Last run: 2026-05-21 18:15 UTC
 
-Fresh candidates found before triage: 136
+Fresh candidates found before triage: 88
 
-## [ T3 Code ] Add environment variable validation at server startup
+## Daily Leads – 2026-05-20
+
+- Score: 73
+- Amount: $300, $250, $600, $1500
+- Issue: https://github.com/Harrisoneller/lead-scanner/issues/32
+- Repository: https://github.com/Harrisoneller/lead-scanner
+- Reason: paid/bounty wording, visible amount, low discussion, recent issue
+
+## TSPerf challenge submission: tsperf-vscode
+
+- Score: 58
+- Amount: amount not obvious
+- Issue: https://github.com/algora-io/algora/issues/277
+- Repository: https://github.com/algora-io/algora
+- Reason: paid/bounty wording, coding scope, low discussion, recent issue
+
+## [ Bounty $6k ] [ Docker ] Remove build arguments from final layers — image metadata
 
 - Score: 81
-- Amount: $35
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/853
-- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
-- Reason: paid/bounty wording, visible amount, coding scope, recent issue, fresh update
-
-## [ Bounty $7k ] [ Workflow ] Validate artifact retention policies — cleanup scheduling
-
-- Score: 96
-- Amount: $7k, $7000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1463
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $5k ] [ SDK ] Handle sync task functions explicitly — developer ergonomics
-
-- Score: 104
-- Amount: $5k, $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1612
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update
-
-## [Tutorial] Midnight Development on Windows via WSL2
-
-- Score: 71
-- Amount: $300, $500
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
-- Repository: https://github.com/midnightntwrk/contributor-hub
-- Reason: paid/bounty wording, visible amount, coding scope, fresh update
-
-## [ Bounty $6k ] [ Sandbox ] Resolve base_path before use — path boundary checks
-
-- Score: 96
 - Amount: $6k, $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1602
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Docs ] Fix broken markdown table in api-reference.md
-
-- Score: 71
-- Amount: $1
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/303
-- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
-- Reason: paid/bounty wording, visible amount, coding scope, fresh update
-
-## [ Bounty $2k ] [ Runtime ] Record failure reason before worker shutdown — lifecycle runtime
-
-- Score: 96
-- Amount: $2k, $2000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1592
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Config ] Fix misspelled database key in app.json
-
-- Score: 71
-- Amount: $1
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/309
-- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
-- Reason: paid/bounty wording, visible amount, coding scope, fresh update
-
-## [ FastAPI ] Fix jsonable_encoder TypeError on bytes and memoryview objects
-
-- Score: 81
-- Amount: $25
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/759
-- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
-- Reason: paid/bounty wording, visible amount, coding scope, recent issue, fresh update
-
-## [ Config ] Fix port mapping in docker-compose.yml
-
-- Score: 71
-- Amount: $1
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/312
-- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
-- Reason: paid/bounty wording, visible amount, coding scope, fresh update
-
-## [ Bounty $3k ] [ CLI ] Propagate deploy failure exit codes — exit status
-
-- Score: 81
-- Amount: $3k, $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/226
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/78
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
 - Reason: paid/bounty wording, visible amount, coding scope, recent issue, fresh update
 
-## Cow Swap Cash Out
+## [ Bounty $9k ] [ Runtime ] Stop retry loop after terminal run state — retry runtime
 
-- Score: 6
-- Amount: amount not obvious
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5066
-- Repository: https://github.com/devpool-directory/devpool-directory
-- Reason: low discussion, fresh update, thin description
-
-## UbiquityOS Sprint Management Dashboard
-
-- Score: 6
-- Amount: amount not obvious
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5916
-- Repository: https://github.com/devpool-directory/devpool-directory
-- Reason: low discussion, fresh update, thin description
-
-## [ Bounty $3k ] [ Middleware ] Validate multipart boundary before buffering upload — upload middleware
-
-- Score: 96
-- Amount: $3k, $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1471
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $4k ] [ Registry ] Block incompatible protocol upgrades — agent RPC negotiation
-
-- Score: 96
-- Amount: $4k, $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1580
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $4k ] [ Docker ] Enforce network-off final packaging stage — deterministic images
-
-- Score: 96
-- Amount: $4k, $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1574
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $10k ] [ Runtime ] Retry transient queue failures with jitter — queue runtime
-
-- Score: 96
-- Amount: $10k, $10000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1546
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $2k ] [ CI ] Validate generated manifests are committed — dependency metadata
-
-- Score: 96
-- Amount: $2k, $2000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1540
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $8k ] [ Data ] Enforce purpose limitation in data lake writes — pipeline governance
-
-- Score: 96
-- Amount: $8k, $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1555
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $10k ] [ API ] Enforce max body size on artifact upload — artifact ingestion
-
-- Score: 96
-- Amount: $10k, $10000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1542
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
-
-## [ Bounty $9k ] [ Runtime ] Enforce memory limit on trace aggregation — trace runtime
-
-- Score: 96
+- Score: 75
 - Amount: $9k, $9000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1563
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/42
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
+- Reason: paid/bounty wording, visible amount, coding scope, recent issue
 
-## [ FastAPI ] Add request ID middleware for log correlation
+## Brand-impersonation spam: @BossChaos posting fake Algora-style bounty comments across 94+ PRs (wallet 0xdaE5...)
+
+- Score: 48
+- Amount: amount not obvious
+- Issue: https://github.com/spaceandtimefdn/sxt-proof-of-sql/issues/1724
+- Repository: https://github.com/spaceandtimefdn/sxt-proof-of-sql
+- Reason: paid/bounty wording, low discussion, recent issue
+
+## Payout question: PayPal option for contributor who cannot use Stripe from mainland China
+
+- Score: 54
+- Amount: amount not obvious
+- Issue: https://github.com/algora-io/algora/issues/270
+- Repository: https://github.com/algora-io/algora
+- Reason: paid/bounty wording, no discussion yet, recent issue
+
+## 📰 Hacker News AI 社区动态日报 2026-05-17
+
+- Score: 79
+- Amount: $1.3
+- Issue: https://github.com/DenisZheng/agents-radar/issues/842
+- Repository: https://github.com/DenisZheng/agents-radar
+- Reason: paid/bounty wording, visible amount, no discussion yet, recent issue
+
+## Bounty scout candidates
 
 - Score: 81
-- Amount: $15
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/797
-- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Amount: $100, $50, $200
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
+- Repository: https://github.com/asaadnashed/bounty-autopilot
 - Reason: paid/bounty wording, visible amount, coding scope, recent issue, fresh update
 
-## More thorough benchmarks [$200]
+## [ Crypto ] Fix cross-chain replay attack in CrossChainBridge signature verification
+
+- Score: 75
+- Amount: $900
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/920
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Reason: paid/bounty wording, visible amount, coding scope, recent issue
+
+## [ FastAPI ] Implement dynamic CORS origin validation with callback support
+
+- Score: 65
+- Amount: $300
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/763
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Reason: paid/bounty wording, visible amount, recent issue
+
+## [ FastAPI ] Add error handling and retry mechanism to BackgroundTasks
+
+- Score: 75
+- Amount: $500
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/760
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Reason: paid/bounty wording, visible amount, coding scope, recent issue
+
+## Bounty claim pending sponsor reward after merged PR
+
+- Score: 44
+- Amount: amount not obvious
+- Issue: https://github.com/algora-io/algora/issues/262
+- Repository: https://github.com/algora-io/algora
+- Reason: paid/bounty wording, no discussion yet
+
+## [ Cobol ] Fix EBCDIC-to-ASCII conversion corrupting certificate fingerprint in VERIFY-SIGNATURE paragraph
+
+- Score: 65
+- Amount: $700
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/515
+- Repository: https://github.com/UnsafeLabs/Bounty-Hunters
+- Reason: paid/bounty wording, visible amount, coding scope
+
+## Support very large tables in simulator/stress/whopper
+
+- Score: 54
+- Amount: amount not obvious
+- Issue: https://github.com/tursodatabase/turso/issues/6957
+- Repository: https://github.com/tursodatabase/turso
+- Reason: paid/bounty wording, coding scope, no discussion yet
+
+## Mpdf export can exceed pcre.backtrack_limit
+
+- Score: 48
+- Amount: amount not obvious
+- Issue: https://github.com/PHPOffice/PHPWord/issues/2876
+- Repository: https://github.com/PHPOffice/PHPWord
+- Reason: paid/bounty wording, coding scope, low discussion
+
+## Primer_paso_TFM
+
+- Score: 44
+- Amount: amount not obvious
+- Issue: https://github.com/Crimisual00/TMF_VIU/issues/1
+- Repository: https://github.com/Crimisual00/TMF_VIU
+- Reason: paid/bounty wording, no discussion yet
+
+## Introduccion TFM
+
+- Score: 44
+- Amount: amount not obvious
+- Issue: https://github.com/Crimisual00/tfg-patricia-suarez/issues/1
+- Repository: https://github.com/Crimisual00/tfg-patricia-suarez
+- Reason: paid/bounty wording, no discussion yet
+
+## Setup Database and Backend Infrastructure
+
+- Score: 48
+- Amount: amount not obvious
+- Issue: https://github.com/Enemuo-debug/cookbook-website/issues/1
+- Repository: https://github.com/Enemuo-debug/cookbook-website
+- Reason: paid/bounty wording, coding scope, low discussion
+
+## Support for number forms and number spacing
+
+- Score: 54
+- Amount: amount not obvious
+- Issue: https://github.com/PHPOffice/PHPWord/issues/2875
+- Repository: https://github.com/PHPOffice/PHPWord
+- Reason: paid/bounty wording, coding scope, no discussion yet
+
+## Quad 6 executive retro pack (Phase 2 evaluation)
+
+- Score: 38
+- Amount: amount not obvious
+- Issue: https://github.com/HHS/simpler-grants-gov/issues/10095
+- Repository: https://github.com/HHS/simpler-grants-gov
+- Reason: paid/bounty wording, low discussion
+
+## Funded Open Source Contributor Program
+
+- Score: 54
+- Amount: amount not obvious
+- Issue: https://github.com/HHS/simpler-grants-gov/issues/10059
+- Repository: https://github.com/HHS/simpler-grants-gov
+- Reason: paid/bounty wording, coding scope, no discussion yet
+
+## [repo-status] Daily Status Report — May 2, 2026 🗺️⚔️
+
+- Score: 54
+- Amount: amount not obvious
+- Issue: https://github.com/liubchigo/CopilotAdventures/issues/84
+- Repository: https://github.com/liubchigo/CopilotAdventures
+- Reason: paid/bounty wording, coding scope, no discussion yet
+
+## bug: Custom models in config.toml not respected (v2.9.3)
+
+- Score: 10
+- Amount: amount not obvious
+- Issue: https://github.com/mistralai/mistral-vibe/issues/657
+- Repository: https://github.com/mistralai/mistral-vibe
+- Reason: coding scope
+
+## Add Package Configuration Files for JavaScript and Python Solutions
+
+- Score: 48
+- Amount: amount not obvious
+- Issue: https://github.com/liubchigo/copilot-adventures-liubchigo/issues/4
+- Repository: https://github.com/liubchigo/copilot-adventures-liubchigo
+- Reason: paid/bounty wording, coding scope, low discussion
+
+## [UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page
 
 - Score: 71
-- Amount: $200
-- Issue: https://github.com/QuantumSavory/QuantumSavory.jl/issues/131
-- Repository: https://github.com/QuantumSavory/QuantumSavory.jl
+- Amount: $2,500
+- Issue: https://github.com/algora-io/algora/issues/238
+- Repository: https://github.com/algora-io/algora
 - Reason: paid/bounty wording, visible amount, coding scope, fresh update
-
-## [ Bounty $6k ] [ Webhook ] Avoid leaking internal run metadata in public events — payload shaping
-
-- Score: 81
-- Amount: $6k, $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/52
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, recent issue, fresh update
-
-## [ Bounty $8k ] [ Data ] Prevent stale authorization in cached report results — reporting cache
-
-- Score: 96
-- Amount: $8k, $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1432
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Reason: paid/bounty wording, visible amount, coding scope, new issue, fresh update
 
 ## Search Errors
 
+- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<80 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- repo:projectdiscovery/nuclei is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" created:>=2026-05-20 no:assignee comments:<12 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "reward" created:>=2026-05-20 no:assignee comments:<12 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "paid" "fix" created:>=2026-05-20 no:assignee comments:<12 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "Algora" created:>=2026-05-20 no:assignee comments:<12 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "Opire" created:>=2026-05-20 no:assignee comments:<12 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "bug" no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "fix" no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "reward" "bug" no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "paid" "fix" no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "microgrant" no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "Lightning Bounties" no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<25 sort:created-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "test" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "docs" no:assignee comments:<30 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "python" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "typescript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
+  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
 - is:issue is:open "bounty" "javascript" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-	"message": "API rate limit exceeded for user ID 213713858. If you reach out to GitHub Support for help, please include the request ID 044C:12C82A:534014:13EA9C1:6A0F3942 and timestamp 2026-05-21 16:56:34 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https:\/\/docs.github.com\/en\/site-policy\/github-terms\/github-terms-of-service)",
-	"documentation_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-
-- is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for user ID 213713858. If you reach out to GitHub Support for help, please include the request ID 044D:38B1F2:5578E7:146B380:6A0F3945 and timestamp 2026-05-21 16:56:37 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)","documentation_url":"https://docs.github.com/rest/overview/rate-limits-for-the-rest-api","status":"403"}
-- is:issue is:open "bounty" "frontend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {"message":"API rate limit exceeded for user ID 213713858. If you reach out to GitHub Support for help, please include the request ID 0440:2EEEAD:569F9B:14B3B9E:6A0F3948 and timestamp 2026-05-21 16:56:40 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service)","documentation_url":"https://docs.github.com/rest/overview/rate-limits-for-the-rest-api","status":"403"}
-- is:issue is:open "bounty" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
   "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "reward" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "api" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
   "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "reward" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9
+- is:issue is:open "bounty" "frontend" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
   "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "paid issue" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "paid" "bug" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "paid" "fix" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "microgrant" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "Algora" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "Opire" bounty no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "Lightning Bounties" no:assignee comments:<40 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open label:bounty no:assignee comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open label:reward no:assignee comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open label:paid no:assignee comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open label:"good first issue" "bounty" comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "Bounty $" comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "Reward $" comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
-- is:issue is:open "$10" "bounty" comments:<80 sort:updated-desc: HTTP 403: {
-  "documentation_url": "https://docs.github.com/free-pro-team@latest/rest/overview/rate-limits-for-the-rest-api#about-secondary-rate-limits",
-  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 0
+  "message": "You have exceeded a secondary rate limit. Please wait a few minutes before you try again. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) If you reach out to GitHub Support for help, please include the request ID 9

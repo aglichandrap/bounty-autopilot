@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "[UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page",
+    "url": "https://github.com/algora-io/algora/issues/238",
+    "repository_url": "https://github.com/algora-io/algora",
+    "updated_at": "2026-05-21T15:18:42Z",
+    "score": 36,
+    "amount_hint": "$2,500",
+    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  }
+]

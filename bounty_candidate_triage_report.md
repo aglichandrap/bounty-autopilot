@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 16:58 UTC
+Last run: 2026-05-21 18:16 UTC
 
-Kept candidates: 0
+Kept candidates: 1
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -17,14 +17,10 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 ## 2. Replace panic with error handling in template loader when dialers are missing
 
 - Decision: drop
-- Score: 150 -> -30
+- Score: 150 -> 15
 - Issue: https://github.com/projectdiscovery/nuclei/issues/6674
 - Reason: issue is not open
-- Reason: light competition allowed: 3 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/projectdiscovery/nuclei/pull/6746
-- Competing PR: https://github.com/projectdiscovery/nuclei/pull/7316
-- Competing PR: https://github.com/projectdiscovery/nuclei/pull/7368
 
 ## 3. Integrate typos tool into CI
 
@@ -34,127 +30,296 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Bug: PR auto-detection matches wrong GHB bounty
+## 4. join
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/Ghbounty/GhBounty/issues/108
+- Score: 79 -> 9
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 5. Code Review Bounty #73 — BossChaos FINAL CLAIM (27 PRs, 33 findings)
+## 5. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
 
 - Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11900
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Score: 79 -> 9
+- Issue: https://github.com/probe-rs/probe-rs/issues/4022
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 6. [BOUNTY] Claim: <Mobile SERP Tracker - Working Submission ($50 Wave 2)>
+## 6. Mouse Event Handling
 
 - Decision: drop
-- Score: 81 -> -69
-- Issue: https://github.com/bolivian-peru/marketplace-service-template/issues/463
+- Score: 79 -> 9
+- Issue: https://github.com/amdiazzz/basketui/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 7. 📰 Hacker News AI 社区动态日报 2026-05-17
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/DenisZheng/agents-radar/issues/842
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. Daily Leads – 2026-05-20
+
+- Decision: drop
+- Score: 73 -> -27
+- Issue: https://github.com/Harrisoneller/lead-scanner/issues/32
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: light competition allowed: 1 open competing PR(s)
+
+## 9. [UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page
+
+- Decision: keep
+- Score: 71 -> 36
+- Issue: https://github.com/algora-io/algora/issues/238
 - Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/bolivian-peru/marketplace-service-template/pull/464
 
-## 7. PR Review Claim - 9 PRs - 2026-05-21 16:37 UTC
+## 10. feat: Lesson quality scoring — auto-rank by usefulness
 
 - Decision: drop
-- Score: 75 -> -10
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11910
+- Score: 64 -> -6
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/86
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/Scottcjn/rustchain-bounties/pull/11619
 
-## 8. PR Review Claim - 3 PRs - 2026-05-21 13:21 UTC
+## 11. Please cut a release
 
 - Decision: drop
-- Score: 75 -> -10
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11876
+- Score: 64 -> -6
+- Issue: https://github.com/slick/slick/issues/3564
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/Scottcjn/rustchain-bounties/pull/11619
 
-## 9. [Tutorial] Midnight Development on Windows via WSL2
+## 12. Glasp デプロイパイプライン（CI/CD）
 
 - Decision: drop
-- Score: 71 -> -59
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/7
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 13. GitHub Pages セットアップ（手動操作）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/6
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 14. テスト実装（自動＋手動）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/5
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 15. DASHBOARDグラフ設定（テンプレート）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/4
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 16. ダッシュボードキャッシュ計算エンジン
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/3
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. tweet.js/bookmark.js パーサー実装
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. GASメニュー実装 / HTMLアップロードダイアログ
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 19. Many problems when attempting to implement a flash algorithm
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/probe-rs/probe-rs/issues/4016
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. Test issue
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/gacorpoll-ui/test-repo/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 21. Cross-ecosystem agent payments: Solana ↔ EVM via ERC-8004 identity
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/marchantdev/agent-protocol/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 22. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/todolist-intern/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/FaceIO-saas-authentication/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/Leadhung-issue-DC-reference/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 25. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/ecommerce-shop/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 26. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/sonpt-afk/carter-portfolio/issues/3
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 27. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/sonpt-afk/face-authentication-project/issues/1
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 28. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/sonpt-afk/homemade-saas/issues/1
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 29. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/askIT-redux-ulti/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 30. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/AI-app-prontonx/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 31. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/sonpt-afk/next-blog/issues/1
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 32. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/next-dashboard-pp/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 33. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/Trip-planner-AI/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 34. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/atlas-forge-noob/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 35. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/generative-ui-with-copilotkit/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 36. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/podcastLibraryApp/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 37. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/Trello-Python-SQL-Redis/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 38. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/dc-project-issue-manager/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 39. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/trello-clone-byson/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 40. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/jira-issue-manager/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 41. React Review Audit
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/sonpt-afk/next-ai-note-generator/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 42. [Tutorial] Midnight Development on Windows via WSL2
+
+- Decision: drop
+- Score: 63 -> -37
 - Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
 - Reason: content bounty has AI-content disqualification risk for autonomous work
-- Reason: light competition allowed: 2 open competing PR(s)
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/498
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/497
 
-## 10. [Tutorial] Designing Public vs. Private State: What Goes Where and Why
+## 43. docs: Add usage examples to README for each domain
 
 - Decision: drop
-- Score: 71 -> -109
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/292
-- Reason: content bounty has AI-content disqualification risk for autonomous work
-- Reason: light competition allowed: 3 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/510
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/346
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/425
-
-## 11. More thorough benchmarks [$200]
-
-- Decision: keep
-- Score: 71 -> -69
-- Issue: https://github.com/QuantumSavory/QuantumSavory.jl/issues/131
-- Reason: light competition allowed: 7 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/QuantumSavory/QuantumSavory.jl/pull/430
-- Competing PR: https://github.com/QuantumSavory/QuantumSavory.jl/pull/422
-- Competing PR: https://github.com/QuantumSavory/QuantumSavory.jl/pull/353
-- Competing PR: https://github.com/QuantumSavory/QuantumSavory.jl/pull/377
-- Competing PR: https://github.com/QuantumSavory/QuantumSavory.jl/pull/375
-
-## 12. [UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page
-
-- Decision: keep
-- Score: 71 -> -129
-- Issue: https://github.com/algora-io/algora/issues/238
-- Reason: light competition allowed: 11 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/algora-io/algora/pull/257
-- Competing PR: https://github.com/algora-io/algora/pull/271
-- Competing PR: https://github.com/algora-io/algora/pull/267
-- Competing PR: https://github.com/algora-io/algora/pull/266
-- Competing PR: https://github.com/algora-io/algora/pull/282
-
-## 13. [Tutorial] Bringing External Data On-Chain: Oracle Patterns for Midnight
-
-- Decision: drop
-- Score: 71 -> -44
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/304
-- Reason: content bounty has AI-content disqualification risk for autonomous work
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/489
-
-## 14. [Tutorial] Integrating Midnight Proofs into an Existing Backend (Node.js/REST)
-
-- Decision: drop
-- Score: 71 -> -94
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/311
-- Reason: content bounty has AI-content disqualification risk for autonomous work
-- Reason: light competition allowed: 2 open competing PR(s)
-- Reason: competition already visible in comments; still allowed in aggressive mode
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/336
-- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/459
-
-## 15. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
-
-- Decision: drop
-- Score: 70 -> 0
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
+- Score: 58 -> -12
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/85
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. [BUG-087] run_branch fails immediately with AllProvidersExhaustedError instead of retry/backoff despite actionable retry message
+## 44. feat: Add 'docker' domain to lesson pipeline
 
 - Decision: drop
-- Score: 64 -> -71
-- Issue: https://github.com/Jonnyton/Workflow/issues/917
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 58 -> -12
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/84
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 45. TSPerf challenge submission: tsperf-vscode
+
+- Decision: drop
+- Score: 58 -> -12
+- Issue: https://github.com/algora-io/algora/issues/277
+- Reason: no clear open paid bounty signal >= $10 found
