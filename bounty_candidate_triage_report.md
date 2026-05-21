@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 01:32 UTC
+Last run: 2026-05-21 04:38 UTC
 
 Kept candidates: 0
 
@@ -38,89 +38,193 @@ This pass removes unpaid, crowded, assigned, closed, already-attempted, market-a
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
 
-## 5. App stops updating on resume after suspend mode
+## 5. 探索bug
 
 - Decision: drop
-- Score: 67 -> -8
-- Issue: https://github.com/sindresorhus/caprine/issues/103
-- Reason: light competition allowed: 1 open competing PR(s)
+- Score: 98 -> 28
+- Issue: https://github.com/AzurTian/OnmyojiAutoScript/issues/105
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 6. Code Review Bounty 73 Claim - RustChain PR 5997
+
+- Decision: drop
+- Score: 85 -> -15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11668
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 7. Code Review Bounty 73 Claim - RustChain PR 6003
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11661
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. SEAC: replay-buffer pooling as alternative to parameter sharing
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/jimlbeaver/Bug-Sim/issues/31
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 9. qa(messages): event-* notification normalizer round-trip vitest pin
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/taoyu051818-sys/lian-mobile-web/issues/739
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 10. [Bug - Gameplay/Logic]: Defeating the 1st set of King Calamari's tentacles can softlock you
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/111
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 11. [ Bounty $2k ] [ Solidity ] Fix MultiTokenStaking emergencyWithdraw doesn't exist — v2 upgrade
+
+- Decision: drop
+- Score: 81 -> 21
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/195
 - Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
-- Competing PR: https://github.com/sindresorhus/caprine/pull/2384
 
-## 6. Bounty: USDC for first external agent x402 MCP call
+## 12. [ T3 Code ] Add Effect.Cache-based provider API response caching with TTL
 
 - Decision: drop
-- Score: 60 -> -10
-- Issue: https://github.com/RileyCraig14/nexus-agent/issues/1
+- Score: 81 -> 21
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/865
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 13. [ Bounty $2k ] [ API ] Fix payment endpoint has race condition on double-claim
+
+- Decision: drop
+- Score: 81 -> 21
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/30
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 14. [ Bounty $3k ] [ API ] Fix task endpoint allows creator to complete their own task
+
+- Decision: drop
+- Score: 81 -> 21
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/48
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 15. [ Bounty $5k ] [ API ] Fix database models missing indexes and cascade deletes
+
+- Decision: drop
+- Score: 81 -> 21
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/37
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 16. Latest 15 Papers - May 21, 2026
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/jyyang621/DailyArXiv/issues/335
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 7. feat(notifications): event completion and reward readout in messages center
+## 17. Bug: SerdeTypesModel doesn't deserialize from a dict, only from a str
 
 - Decision: drop
-- Score: 47 -> -38
-- Issue: https://github.com/taoyu051818-sys/lian-mobile-web/issues/706
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/taoyu051818-sys/lian-mobile-web/pull/722
-
-## 8. [Bug]: Running list of messed up overworld sprites [v9]
-
-- Decision: drop
-- Score: 43 -> -42
-- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/101
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/pidgezero-one/smrpg_web_randomizer/pull/98
-
-## 9. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
-
-- Decision: drop
-- Score: 43 -> -27
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Score: 79 -> 9
+- Issue: https://github.com/JPK314/rlgym-learn/issues/25
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 10. Twitch: EventSub Subscription Management Command
+## 18. [ Bounty $3k ] [ Solidity ] Fix division by zero in InterestRateModel at 100% utilization
 
 - Decision: drop
-- Score: 43 -> -42
-- Issue: https://github.com/he4rt/heartdevs.com/issues/270
+- Score: 75 -> 15
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/15
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 19. [ CONTEXT RIFT ] Fix typos in knowledge-base/context.json
+
+- Decision: drop
+- Score: 75 -> 15
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/611
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 20. Augur: verdict.status emitted as "unknown" for every step (incl. failed)
+
+- Decision: drop
+- Score: 73 -> 3
+- Issue: https://github.com/mercurialsolo/mantis/issues/530
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/he4rt/heartdevs.com/pull/272
 
-## 11. [Gas] Assembly-optimized ecrecover — save ~500 gas per ECDSA UserOp
+## 21. [ Bounty $6k ] [ SDK ] Add transaction simulation before sending
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/AAStarCommunity/airaccount-contract/issues/19
+- Score: 71 -> 11
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/39
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 22. App stops updating on resume after suspend mode
+
+- Decision: drop
+- Score: 71 -> 11
+- Issue: https://github.com/sindresorhus/caprine/issues/103
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 23. [WIKI-PATCH] Publication-readiness gate primitive for research Goals should validate journal-specific evidence, reproducibility, and disclosure requirements before real-world gate claims
+
+- Decision: drop
+- Score: 64 -> -96
+- Issue: https://github.com/Jonnyton/Workflow/issues/923
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 24. [AUTORESEARCH][ONLINE] RAxer bug fix sweep — 40+ fixes need aggregate offline evaluation before merge
+
+- Decision: drop
+- Score: 56 -> -14
+- Issue: https://github.com/SolbiatiAlessandro/cogames/issues/77
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 12. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 25. [PHASE-2] Orchestration, Cloud Run, and GCS Storage
 
 - Decision: drop
-- Score: 39 -> -76
-- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Score: 54 -> -76
+- Issue: https://github.com/jimlbeaver/Bug-Sim/issues/13
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: issue comments indicate submitted/claimed PR or missing-source uncertainty
+
+## 26. [Quest] - The Last Line Of Defense sometimes (very rarely) get you stuck upon returning
+
+- Decision: drop
+- Score: 54 -> -16
+- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/24704
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 27. SKPORT daily login reward claim
+
+- Decision: drop
+- Score: 54 -> -16
+- Issue: https://github.com/MaaEnd/MaaEnd/issues/3062
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 28. Unloaded emmissive maps should be black, not grey
+
+- Decision: drop
+- Score: 54 -> -16
+- Issue: https://github.com/secondlife/viewer/issues/5701
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 29. Resistent Memory for instructions
+
+- Decision: drop
+- Score: 54 -> -46
+- Issue: https://github.com/deepseek-ai/DeepSeek-V3/issues/1225
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/svv2014/loop-monitor/pull/315
 
-## 13. [FEATURE] Add offline status banner and graceful PWA fallback mode
+## 30. [Quest Bug]: atm star completion quests grant undefined jetpack
 
 - Decision: drop
-- Score: 35 -> -35
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/370
+- Score: 54 -> -16
+- Issue: https://github.com/AllTheMods/All-the-mods-10-Sky/issues/967
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. Mission Lists blue prints not associated with it
+## 31. Hauling missions showing BP in title when no BP is awarded
 
 - Decision: drop
-- Score: 35 -> -35
-- Issue: https://github.com/Osiris-DevWorks/smart-citizen/issues/47
+- Score: 50 -> -20
+- Issue: https://github.com/MrKraken/StarStrings/issues/38
 - Reason: no clear open paid bounty signal >= $10 found
-
-## 15. FlyCasual 2.5 UO Roadmap
-
-- Decision: drop
-- Score: 26 -> -74
-- Issue: https://github.com/Baledin/FlyCasual/issues/39
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty

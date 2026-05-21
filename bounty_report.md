@@ -1,115 +1,95 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-21 01:31 UTC
+Last run: 2026-05-21 04:36 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. App stops updating on resume after suspend mode
+## 1. Sats to Local Currency | Mexico
 
-- Score: 67
-- Amount hint: $100.00
-- Issue: https://github.com/sindresorhus/caprine/issues/103
-- Repository: https://github.com/sindresorhus/caprine
-- Updated: 2026-05-21T00:50:04Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. Bounty: USDC for first external agent x402 MCP call
-
-- Score: 60
-- Amount hint: $5, $0.01, 5 USD, 01 USD
-- Issue: https://github.com/RileyCraig14/nexus-agent/issues/1
-- Repository: https://github.com/RileyCraig14/nexus-agent
-- Updated: 2026-05-21T01:26:00Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. feat(notifications): event completion and reward readout in messages center
-
-- Score: 47
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/taoyu051818-sys/lian-mobile-web/issues/706
-- Repository: https://github.com/taoyu051818-sys/lian-mobile-web
-- Updated: 2026-05-21T01:18:46Z
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-17T11:11:31Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/svv2014/loop-monitor/issues/137
-- Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-21T01:19:53Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. [Bug]: Running list of messed up overworld sprites [v9]
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/pidgezero-one/smrpg_web_randomizer/issues/101
-- Repository: https://github.com/pidgezero-one/smrpg_web_randomizer
-- Updated: 2026-05-21T01:22:49Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Twitch: EventSub Subscription Management Command
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/he4rt/heartdevs.com/issues/270
-- Repository: https://github.com/he4rt/heartdevs.com
-- Updated: 2026-05-21T00:58:06Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [event-audit/4] Anomaly detector switches from log-mining to SQL query
+## 2. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Repository: https://github.com/svv2014/loop-monitor
-- Updated: 2026-05-21T01:19:57Z
+- Updated: 2026-05-21T04:35:48Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [Gas] Assembly-optimized ecrecover — save ~500 gas per ECDSA UserOp
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/AAStarCommunity/airaccount-contract/issues/19
-- Repository: https://github.com/AAStarCommunity/airaccount-contract
-- Updated: 2026-05-21T01:24:59Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. [FEATURE] Add offline status banner and graceful PWA fallback mode
+## 3. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/370
-- Repository: https://github.com/RatLoopz/sahidawa-india
-- Updated: 2026-05-21T01:20:06Z
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Mission Lists blue prints not associated with it
+## 4. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Osiris-DevWorks/smart-citizen/issues/47
-- Repository: https://github.com/Osiris-DevWorks/smart-citizen
-- Updated: 2026-05-21T01:15:24Z
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. FlyCasual 2.5 UO Roadmap
+## 5. Sync Issue-Assigned property from GH to LB
 
-- Score: 26
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Baledin/FlyCasual/issues/39
-- Repository: https://github.com/Baledin/FlyCasual
-- Updated: 2026-05-21T00:37:40Z
-- Why it matched: mentions bounty/reward, large issue body
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. [Tutorial] Decoding Error 1010: What 'Invalid Transaction' Actually Means
+
+- Score: 34
+- Amount hint: $300, $500
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/318
+- Repository: https://github.com/midnightntwrk/contributor-hub
+- Updated: 2026-05-20T22:11:10Z
+- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. [ Bounty $4k ] [ CLI ] Use stderr for errors and stdout for data — shell integration
+
+- Score: 25
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/366
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-21T04:33:04Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+
+- Score: 25
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/300
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-21T04:29:01Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. [ Bounty $6k ] [ Config ] Detect case-colliding environment overrides — case handling
+
+- Score: 25
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/57
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-21T04:24:57Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
