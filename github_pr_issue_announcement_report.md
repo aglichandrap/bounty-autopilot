@@ -1,13 +1,20 @@
 # GitHub PR Issue Announcement Report
 
-Last run: 2026-05-21 07:54 UTC
+Last run: 2026-05-21 11:26 UTC
 
-## commented
+## already_announced
 
 - PR: https://github.com/Scottcjn/Rustchain/pull/6016
 - Issue: https://github.com/Scottcjn/Rustchain/issues/819
-- Comment: https://github.com/Scottcjn/Rustchain/issues/819#issuecomment-4505954161
-- Message: ok
+- Comment: not posted
+- Message: Matching issue comment already exists.
+
+## skipped
+
+- PR: https://github.com/guil-lambert/defipunkd/pull/259
+- Issue: not available
+- Comment: not posted
+- Message: PR body has no Fixes/Closes/Resolves issue reference.
 
 ## already_announced
 
