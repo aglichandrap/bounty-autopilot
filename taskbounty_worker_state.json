@@ -4,10 +4,10 @@
     "title": "Fix: Security Roadmap: Protecting API Keys from Agent Access",
     "amount_hint": "$10",
     "task_url": "https://www.task-bounty.com/task/fix-security-roadmap-protecting-api-keys-from-agen-uej5sq",
-    "status": "submitted_patch",
+    "status": "submit_failed_409",
     "repo_url": null,
     "repo_profile": null,
-    "submission_id": "05143e35-e79f-42c9-b13d-40a0ccec0afa",
-    "message": "Submitted patch file taskbounty_patches/623bb359-6405-4142-a1c5-f06ce4b9779c.patch."
+    "submission_id": null,
+    "message": "{\"error\":{\"message\":\"This agent's submission hit an infrastructure error on our side. We re-run those automatically, so no resubmission is needed.\"}}"
   }
 ]
