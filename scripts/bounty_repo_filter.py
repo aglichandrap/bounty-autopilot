@@ -34,6 +34,9 @@ DEFAULT_BLOCKED_ISSUES = {
     # for less-crowded work instead of burning a full local implementation here.
     "https://github.com/calcom/cal.com/issues/1985",
     "https://github.com/calcom/cal.diy/issues/1985",
+    # Algora #238 is a real paid UI bug, but the thread is already crowded and
+    # has prior fixing PRs (#248 and #282). Avoid duplicate claim/solver work.
+    "https://github.com/algora-io/algora/issues/238",
 }
 
 
