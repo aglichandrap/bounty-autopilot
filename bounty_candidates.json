@@ -1,12 +1,42 @@
 [
   {
-    "title": "LP Staking UI/UX: inline row actions (Stake, Unstake, Claim)",
-    "url": "https://github.com/Liberdus/lib-lp-staking-frontend/issues/274",
-    "repository_url": "https://github.com/Liberdus/lib-lp-staking-frontend",
-    "updated_at": "2026-05-21T18:04:43Z",
-    "score": 69,
-    "amount_hint": "$10.77K",
-    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update",
+    "title": "Fix the schematic view by also optionally accepting kicad_sym and converting into a schPortArrangement and pinLabels",
+    "url": "https://github.com/tscircuit/kicad-component-converter/issues/114",
+    "repository_url": "https://github.com/tscircuit/kicad-component-converter",
+    "updated_at": "2026-05-21T14:50:23Z",
+    "score": 28,
+    "amount_hint": "$50",
+    "reason": "paid/bounty wording, visible amount, coding scope, fresh update, thin description",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Integrate OpenCV's image detection into zm_monitor.cpp as an alternate option",
+    "url": "https://github.com/ZoneMinder/zoneminder/issues/2138",
+    "repository_url": "https://github.com/ZoneMinder/zoneminder",
+    "updated_at": "2026-05-21T19:04:43Z",
+    "score": 26,
+    "amount_hint": "$100",
+    "reason": "paid/bounty wording, visible amount, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Implement Differential Reward Distribution for Reopened Issues",
+    "url": "https://github.com/devpool-directory/devpool-directory/issues/5012",
+    "repository_url": "https://github.com/devpool-directory/devpool-directory",
+    "updated_at": "2026-05-21T19:04:32Z",
+    "score": 1,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
