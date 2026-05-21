@@ -1,125 +1,125 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-21 13:29 UTC
+Last run: 2026-05-21 16:03 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $5k ] [ Config ] Coerce numeric environment overrides — AO_ parsing
+## 1. [ Bounty $4k ] [ Registry ] Block incompatible protocol upgrades — agent RPC negotiation
 
-- Score: 25
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/267
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T13:23:42Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. [ Bounty $4k ] [ CLI ] Add dry-run mode for deploy — deploy safety
-
-- Score: 25
+- Score: 72
 - Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/535
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1580
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T12:59:25Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Updated: 2026-05-21T15:58:42Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+## 2. [FEATURE] Add Empty States and Skeleton Loaders for Better UX
 
-- Score: 25
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/300
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T11:36:19Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/381
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-21T09:41:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [ Bounty $7k ] [ Middleware ] Prevent gzip bomb expansion in request decompression — body middleware
+## 3. Add FAQ page and link it in footer
 
-- Score: 25
-- Amount hint: $7, $7000, Bounty $7, bounty $7000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/35
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:49:42Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/408
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-21T16:00:43Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [ Bounty $6k ] [ Sandbox ] Store cancellation results for executions — task execution
+## 4. Add About Us page and link it in footer
 
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/185
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:18:09Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/407
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-21T15:59:02Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [ Bounty $8k ] [ Orchestrator ] Reconcile queue and state divergence — partial dispatch failures
+## 5. Footer missing on inner/subpages
 
-- Score: 25
-- Amount hint: $8, $8000, Bounty $8, bounty $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/81
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:53Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/406
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-21T15:47:39Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
+## 6. Sats to Local Currency | Mexico
 
-- Score: 25
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:48Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-21T12:48:20Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
+## 7. Developer feedback: three friction points when integrating v4 for the first time
 
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:44Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
+- Repository: https://github.com/hashgraph/hedera-agent-kit-js
+- Updated: 2026-05-21T12:12:55Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. [ Bounty $3k ] [ Storage ] Add restore test for compressed artifacts — backup reliability
+## 8. Endless scrolling in Excel on Terminal Server 2008 R2
 
-- Score: 25
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/105
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:34Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/rdesktop/rdesktop/issues/77
+- Repository: https://github.com/rdesktop/rdesktop
+- Updated: 2026-05-21T12:36:07Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
+## 9. Fixing the bounty award system
 
-- Score: 25
-- Amount hint: $8, $8000, Bounty $8, bounty $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/117
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:24Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. [ Bounty $3k ] [ CLI ] Fail deploy when manifest is missing — manifest validation
+## 10. Create a Bounty Amount Box Issue
 
-- Score: 25
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/131
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:14Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. [ Bounty $4k ] [ Config ] Coerce boolean environment overrides — AO_ parsing
+## 11. Sync Issue-Assigned property from GH to LB
 
-- Score: 25
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/137
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. [ Bounty $10k ] [ API ] Enforce max body size on artifact upload — artifact ingestion
+
+- Score: 26
+- Amount hint: $10, $10000, Bounty $10, bounty $10000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1542
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T08:06:09Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Updated: 2026-05-21T15:42:43Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
