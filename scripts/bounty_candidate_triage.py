@@ -35,6 +35,7 @@ FALSE_POSITIVE_PATTERN = re.compile(
     r"|\b(wast(e|ing)|unnecessary|expensive)\b.{0,40}\b(tokens?|edits?|calls?)\b"
     r"|\b(smoke test|stripe live|vercel|production access)\b"
     r"|\b(hitl|human[- ]in[- ]the[- ]loop|open design questions? need hitl)\b"
+    r"|\b(full configuration prompt|complete configuration prompt|full system prompt|system_prompt|boot_context|provenance\.json)\b"
     r"|\b(no opportunities|vix|neutral|p2 watch|trading signal|market signal|scanner)\b"
     r"|\b(watch|short|long|bajista|alcista|bearish|bullish)\b.*\b([a-z]{2,6}/usd|usd/[a-z]{2,6}|scanner)\b"
     r"|\b([a-z]{2,6}/usd|usd/[a-z]{2,6}|zec/usd|btc/usd|eth/usd)\b",

@@ -114,6 +114,10 @@ def triage_task(task: dict[str, Any], token: str | None) -> tuple[dict[str, Any]
                 decision = "blocked"
                 score_adjustment -= 100
                 reasons.append("GitHub issue is not open")
+            if re.search(r"\b(full configuration prompt|complete configuration prompt|full system prompt|system_prompt|boot_context|provenance\.json)\b", text):
+                decision = "blocked"
+                score_adjustment -= 100
+                reasons.append("requires internal prompt/configuration disclosure")
             if comments_count > 100:
                 score_adjustment -= 40
                 reasons.append(f"very busy issue thread ({comments_count} comments)")
