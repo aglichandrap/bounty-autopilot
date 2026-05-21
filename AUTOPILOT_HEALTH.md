@@ -1,6 +1,6 @@
 # Autopilot Health
 
-Last run: 2026-05-21 16:35 UTC
+Last run: 2026-05-21 16:39 UTC
 
 Overall: `active`
 
@@ -9,11 +9,11 @@ The automation has active work in flight, claim comments, or ready submission pa
 ## Checks
 
 - `ok` GitHub interaction token: Token available for comments, fork, push, and PR submission.
-- `ok` Bounty scout scheduler: bounty_worker_queue.md is fresh (13 minutes old).
-- `ok` GitHub claimer scheduler: github_bounty_claim_report.md is fresh (3 minutes old).
-- `ok` GitHub submitter scheduler: github_bounty_submission_report.md is fresh (3 minutes old).
-- `ok` TaskBounty scout scheduler: taskbounty_report.md is fresh (3 minutes old).
-- `ok` TaskBounty worker scheduler: taskbounty_worker_report.md is fresh (3 minutes old).
+- `ok` Bounty scout scheduler: bounty_worker_queue.md is fresh (1 minutes old).
+- `ok` GitHub claimer scheduler: github_bounty_claim_report.md is fresh (4 minutes old).
+- `ok` GitHub submitter scheduler: github_bounty_submission_report.md is fresh (7 minutes old).
+- `ok` TaskBounty scout scheduler: taskbounty_report.md is fresh (4 minutes old).
+- `ok` TaskBounty worker scheduler: taskbounty_worker_report.md is fresh (7 minutes old).
 - `degraded` Online model solver key: GitHub Actions cannot generate new code patches without a model key. Local Codex automation is configured as the solving fallback.
 - `ok` TaskBounty credentials: TaskBounty API and agent id are available.
 - `ok` GitHub bounty claimer: No claim comments tracked yet.
