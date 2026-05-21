@@ -1,13 +1,148 @@
 [
   {
-    "title": "[CAL-3105] BigBlueButton Integration",
-    "url": "https://github.com/calcom/cal.com/issues/1985",
-    "repository_url": "https://github.com/calcom/cal.com",
-    "updated_at": "2026-05-21T16:41:46.851334+00:00",
-    "score": 110,
+    "title": "[ Bounty $2k ] [ Solidity ] Fix MultiTokenStaking emergencyWithdraw doesn't exist — v2 upgrade",
+    "url": "https://github.com/ClankerNation/OpenAgents/issues/195",
+    "repository_url": "https://github.com/ClankerNation/OpenAgents",
+    "updated_at": "2026-05-21T04:27:31Z",
+    "score": 40,
+    "amount_hint": "$2k, $2300",
+    "reason": "paid/bounty wording, visible amount, coding scope, recent issue",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "[ Bounty $4k ] [ Solidity ] Fix InterestRateModel doesn't emit events on parameter changes — deployment blocker",
+    "url": "https://github.com/ClankerNation/OpenAgents/issues/193",
+    "repository_url": "https://github.com/ClankerNation/OpenAgents",
+    "updated_at": "2026-05-20T16:19:55Z",
+    "score": 40,
+    "amount_hint": "$4k, $4400",
+    "reason": "paid/bounty wording, visible amount, coding scope, recent issue",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "[ Bounty $5k ] [ Solidity ] Fix PrizeSplit doesn't handle case where winner is contract without receive — urgent",
+    "url": "https://github.com/ClankerNation/OpenAgents/issues/189",
+    "repository_url": "https://github.com/ClankerNation/OpenAgents",
+    "updated_at": "2026-05-20T16:19:55Z",
+    "score": 40,
+    "amount_hint": "$5k, $5000",
+    "reason": "paid/bounty wording, visible amount, coding scope, recent issue",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "[UI Bug] Unauthorized 'Edit' and 'Delete' buttons visible on /bounties page",
+    "url": "https://github.com/algora-io/algora/issues/238",
+    "repository_url": "https://github.com/algora-io/algora",
+    "updated_at": "2026-05-21T15:18:42Z",
+    "score": 36,
+    "amount_hint": "$2,500",
+    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Wrong error message while approving CAP on Stake function",
+    "url": "https://github.com/capofficial/client/issues/32",
+    "repository_url": "https://github.com/capofficial/client",
+    "updated_at": "2026-05-20T09:02:12Z",
+    "score": 30,
+    "amount_hint": "$25",
+    "reason": "paid/bounty wording, visible amount, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Get Your Custom Dokploy Templates Built!",
+    "url": "https://github.com/Dokploy/templates/issues/152",
+    "repository_url": "https://github.com/Dokploy/templates",
+    "updated_at": "2026-05-21T08:13:54Z",
+    "score": 20,
+    "amount_hint": "$1000",
+    "reason": "paid/bounty wording, visible amount",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Determine why rectangles are missing in output",
+    "url": "https://github.com/tscircuit/circuit-json-to-step/issues/6",
+    "repository_url": "https://github.com/tscircuit/circuit-json-to-step",
+    "updated_at": "2026-05-21T01:37:49Z",
+    "score": 20,
     "amount_hint": "$50",
-    "reason": "Algora open paid bounty from https://algora.io/cal/bounties",
-    "source": "algora",
+    "reason": "paid/bounty wording, visible amount",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "[$300 Bounty] Toyota: cancel cruise without chime",
+    "url": "https://github.com/commaai/opendbc/issues/1173",
+    "repository_url": "https://github.com/commaai/opendbc",
+    "updated_at": "2026-05-20T22:08:56Z",
+    "score": 20,
+    "amount_hint": "$300, $200",
+    "reason": "paid/bounty wording, visible amount",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Create WindMill MCP Apps MCP server",
+    "url": "https://github.com/archestra-ai/archestra/issues/3855",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-20T19:13:10Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Add loading spinner to bounty list page",
+    "url": "https://github.com/labmain/ai-agent-pay-demo/issues/18",
+    "repository_url": "https://github.com/labmain/ai-agent-pay-demo",
+    "updated_at": "2026-05-20T12:06:23Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
+    "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
       "competition already visible in comments; still allowed in aggressive mode"
