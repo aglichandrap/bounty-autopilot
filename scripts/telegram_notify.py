@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Send concise Arabic bounty-autopilot status updates to Telegram."""
+"""Send concise Arabic bounty-autopilot status updates to Telegram.
+
+The workflows run often and most runs only refresh timestamps. This notifier is
+intentionally quiet unless there is something actionable: a posted claim, a new
+PR/submission, a maintainer/reviewer follow-up, a ready patch, a real failure, or
+a health problem that needs the owner.
+"""
 
 from __future__ import annotations
 
@@ -11,7 +17,6 @@ import urllib.parse
 import urllib.request
 
 MAX_MESSAGE_CHARS = 3900
-MAX_SUMMARY_LINES = 14
 
 TITLE_AR = {
     "TaskBounty Worker": "عامل TaskBounty",
@@ -29,228 +34,219 @@ STATUS_AR = {
     "success": "نجح",
 }
 
+QUIET_MESSAGES = (
+    "no actionable bounty",
+    "no safe claim target",
+    "no eligible github bounty candidates",
+    "no strong candidates",
+    "forbidden/risky category: content-only",
+    "strong active attempt/comment",
+    "already_submitted",
+    "triage_skipped_blocked",
+    "no github issue url exposed",
+)
 
-def _read_file(path: str) -> str:
+
+def read_file(path: str) -> str:
     file_path = pathlib.Path(path.strip())
     if not file_path.exists() or not file_path.is_file():
         return ""
     return file_path.read_text(encoding="utf-8", errors="replace").strip()
 
 
-def _first(pattern: str, text: str, default: str = "غير معروف") -> str:
+def first(pattern: str, text: str, default: str = "غير معروف") -> str:
     match = re.search(pattern, text, flags=re.I | re.M)
     return match.group(1).strip() if match else default
 
 
-def _count(pattern: str, text: str) -> int:
+def count(pattern: str, text: str) -> int:
     return len(re.findall(pattern, text, flags=re.I | re.M))
 
 
-def _clean_title(title: str) -> str:
-    return re.sub(r"^#+\s*", "", title).strip()
+def arabic_title(title: str) -> str:
+    lowered = title.lower()
+    for key, value in TITLE_AR.items():
+        if lowered.startswith(key.lower()) or key.lower() in lowered:
+            return value
+    return title
 
 
-def _queue_items(text: str) -> list[tuple[str, str, str]]:
-    items: list[tuple[str, str, str]] = []
-    for section in re.split(r"\n## Queue Item \d+: ", text)[1:]:
-        title = _clean_title(section.splitlines()[0])
-        issue = _first(r"^- Issue:\s*(.+)$", section, "")
-        amount = _first(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
-        items.append((title, amount, issue))
-    return items
+def report_files() -> list[str]:
+    return [p.strip() for p in os.getenv("TELEGRAM_REPORT_FILES", "").split(",") if p.strip()]
 
 
-def _summarize_bounty_queue(text: str) -> list[str]:
-    last = _first(r"^Last built:\s*(.+)$", text)
-    items = _queue_items(text)
+def reports_text() -> str:
+    return "\n\n".join(read_file(path) for path in report_files())
+
+
+def patch_values(text: str) -> list[str]:
+    values = re.findall(r"^- Patch:\s*(.+)$", text, flags=re.I | re.M)
+    return [value.strip() for value in values if value.strip() and value.strip().lower() != "not ready"]
+
+
+def has_real_health_problem(text: str) -> bool:
+    if re.search(r"^Overall:\s*`?(blocked|failed|error)`,?", text, flags=re.I | re.M):
+        return True
+    degraded_lines = re.findall(r"^- `degraded`\s*([^:]+):\s*(.+)$", text, flags=re.I | re.M)
+    for name, message in degraded_lines:
+        combined = f"{name} {message}".lower()
+        if "scheduler" in combined or "dispatch sent" in combined or "online model" in combined:
+            continue
+        return True
+    return False
+
+
+def is_actionable(title: str, status: str, text: str) -> bool:
+    lowered = text.lower()
+    if status == "failure" or "failed" in title.lower():
+        return True
+    if os.getenv("TELEGRAM_FORCE_SEND", "0") == "1":
+        return True
+    if os.getenv("TELEGRAM_MESSAGE", "").strip():
+        return True
+
+    if "github_bounty_claim_report.md" in ",".join(report_files()):
+        return bool(re.search(r"^- Status:\s*(claimed|claim_failed|blocked)\b", text, flags=re.I | re.M))
+
+    if "github_bounty_submission_report.md" in ",".join(report_files()):
+        return bool(re.search(r"^- Status:\s*(submitted|opened|created|ready|failed|error)\b", text, flags=re.I | re.M))
+
+    if "github_pr_issue_announcement_report.md" in ",".join(report_files()):
+        return bool(re.search(r"^- Comment:\s*https?://", text, flags=re.I | re.M))
+
+    if "taskbounty_worker_report.md" in ",".join(report_files()):
+        if re.search(r"^- Status:\s*(submitted|accepted|success)\b", text, flags=re.I | re.M):
+            return True
+        return bool(re.search(r"submit_failed_(?!409)\d+", text, flags=re.I))
+
+    if "github_openai_patch_solver_report.md" in ",".join(report_files()) or "openai_patch_solver_report.md" in ",".join(report_files()):
+        return bool(patch_values(text))
+
+    if "bounty_worker_queue.md" in ",".join(report_files()):
+        # Scout output changes constantly. Keep Telegram quiet unless explicitly enabled.
+        return os.getenv("TELEGRAM_NOTIFY_QUEUE", "0") == "1" and "## Queue Item" in text
+
+    if "AUTOPILOT_HEALTH.md" in ",".join(report_files()):
+        return has_real_health_problem(text)
+
+    if all(message in lowered for message in ("no actionable", "no eligible")):
+        return False
+    if any(message in lowered for message in QUIET_MESSAGES):
+        return False
+    return False
+
+
+def queue_summary(text: str) -> list[str]:
+    last = first(r"^Last built:\s*(.+)$", text)
+    items = re.findall(r"^## Queue Item \d+:\s*(.+)$", text, flags=re.M)
     if not items:
         return [f"طابور GitHub: لا توجد فرصة قابلة للشغل حاليا. آخر فحص: {last}"]
-    lines = [f"طابور GitHub: {len(items)} فرصة. آخر فحص: {last}"]
-    for title, amount, issue in items[:3]:
-        lines.append(f"- {title} | {amount} | {issue}")
-    if len(items) > 3:
-        lines.append(f"- وفيه {len(items) - 3} فرص إضافية بالطابور.")
+    lines = [f"طابور GitHub: {len(items)} فرصة قابلة للفحص. آخر فحص: {last}"]
+    for title in items[:3]:
+        lines.append(f"- {title.strip()}")
     return lines
 
 
-def _summarize_taskbounty_report(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    tasks = []
-    for section in re.split(r"\n## \d+\. ", text)[1:]:
-        title = _clean_title(section.splitlines()[0])
-        amount = _first(r"^- Amount hint:\s*(.+)$", section, "غير واضح")
-        status = _first(r"^- Status:\s*(.+)$", section, "غير معروف")
-        task_url = _first(r"^- Task:\s*(https?://\S+)", section, "")
-        tasks.append((title, amount, status, task_url))
-    if not tasks:
-        return [f"بحث TaskBounty: لا توجد مهام مناسبة حاليا. آخر فحص: {last}"]
-    lines = [f"بحث TaskBounty: {len(tasks)} مهمة. آخر فحص: {last}"]
-    for title, amount, status, task_url in tasks[:3]:
-        lines.append(f"- {title} | {amount} | {status} | {task_url}")
+def claim_summary(text: str) -> list[str]:
+    last = first(r"^Last run:\s*(.+)$", text)
+    claimed = count(r"^- Status:\s*claimed\b", text)
+    failed = count(r"^- Status:\s*claim_failed\b", text)
+    blocked = count(r"^- Status:\s*blocked\b", text)
+    lines = [f"تعليقات GitHub: claimed={claimed}، failed={failed}، blocked={blocked}. آخر تشغيل: {last}"]
+    comment = first(r"^- Comment:\s*(https?://\S+)", text, "")
+    if comment:
+        lines.append(f"- التعليق: {comment}")
+    issue = first(r"^- Issue:\s*(https?://\S+)", text, "")
+    if issue:
+        lines.append(f"- الفرصة: {issue}")
     return lines
 
 
-def _summarize_claim_report(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    claimed = _count(r"^- Status:\s*claimed\b", text)
-    skipped = _count(r"^- Status:\s*skipped\b", text)
-    lines = [f"تعليقات GitHub: {claimed} تعليق جديد، {skipped} تخطي. آخر تشغيل: {last}"]
-    comments = re.findall(r"^- Comment:\s*(https?://\S+)", text, flags=re.M)
-    if comments:
-        lines.append(f"- رابط التعليق: {comments[0]}")
-    for message in re.findall(r"^- Message:\s*(.+)$", text, flags=re.M)[:2]:
-        if "strong active" in message.lower():
-            lines.append("- تم تخطي فرصة لأن فيها محاولة قوية قبلنا.")
-        elif "posted" in message.lower():
-            lines.append("- تم نشر تعليق حذر على فرصة مفتوحة.")
+def submission_summary(text: str) -> list[str]:
+    last = first(r"^Last run:\s*(.+)$", text)
+    new_count = count(r"^- Status:\s*(submitted|opened|created|ready)\b", text)
+    failed = count(r"^- Status:\s*(failed|error)\b", text)
+    lines = [f"إرسال PRs: جديد={new_count}، فشل={failed}. آخر تشغيل: {last}"]
+    prs = re.findall(r"^- PR:\s*(https?://\S+)", text, flags=re.M)
+    if prs:
+        lines.append(f"- PR: {prs[0]}")
     return lines
 
 
-def _patch_values(text: str) -> list[str]:
-    return [value.strip() for value in re.findall(r"^- Patch:\s*(.+)$", text, flags=re.I | re.M)]
-
-
-def _summarize_patch_solver(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    queued = _count(r"^- Status:\s*local_fallback_queued\b", text)
-    ready_values = [value for value in _patch_values(text) if value and value.lower() != "not ready"]
-    lines = [f"حل الكود: {queued} مهمة بانتظار Codex المحلي، patches جاهزة: {len(ready_values)}. آخر تشغيل: {last}"]
-    if "No online model key is configured" in text:
-        lines.append("- GitHub Actions لا يولد كود أونلاين بدون model key؛ الاعتماد الحالي على Codex المحلي عند الحاجة.")
-    first_issue = _first(r"^- Issue:\s*(https?://\S+)", text, "")
-    if first_issue:
-        lines.append(f"- أول مهمة تنتظر فحص كود: {first_issue}")
+def patch_summary(text: str) -> list[str]:
+    last = first(r"^Last run:\s*(.+)$", text)
+    ready = patch_values(text)
+    queued = count(r"^- Status:\s*local_fallback_queued\b", text)
+    lines = [f"حل الكود: queued={queued}، patches جاهزة={len(ready)}. آخر تشغيل: {last}"]
+    if ready:
+        lines.append(f"- أول patch جاهز: {ready[0]}")
     return lines
 
 
-def _summarize_taskbounty_worker(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    failed_409 = _count(r"submit_failed_409", text)
-    submitted = _count(r"^- Status:\s*(submitted|accepted|success)\b", text)
-    lines = [f"TaskBounty: submitted/accepted={submitted}، أخطاء 409={failed_409}. آخر تشغيل: {last}"]
-    if failed_409:
-        lines.append("- خطأ 409 من منصة TaskBounty نفسها، التقرير يقول إنهم يعيدونها تلقائيا.")
-    task = _first(r"^- Task:\s*(https?://\S+)", text, "")
+def taskbounty_worker_summary(text: str) -> list[str]:
+    last = first(r"^Last run:\s*(.+)$", text)
+    accepted = count(r"^- Status:\s*(submitted|accepted|success)\b", text)
+    failed_non_409 = count(r"submit_failed_(?!409)\d+", text)
+    lines = [f"TaskBounty: submitted/accepted={accepted}، أخطاء مهمة={failed_non_409}. آخر تشغيل: {last}"]
+    task = first(r"^- Task:\s*(https?://\S+)", text, "")
     if task:
         lines.append(f"- المهمة: {task}")
     return lines
 
 
-def _summarize_taskbounty_triage(text: str) -> list[str]:
-    decision = _first(r"^- Decision:\s*(.+)$", text, "غير معروف")
-    reasons = re.findall(r"^- Reason:\s*(.+)$", text, flags=re.M)
-    lines = [f"فرز TaskBounty: القرار {decision}."]
-    if reasons:
-        lines.append("- السبب: " + "؛ ".join(reasons[:3]))
-    return lines
-
-
-def _summarize_health(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    overall = _first(r"^Overall:\s*`?([^`\n]+)`?", text)
+def health_summary(text: str) -> list[str]:
+    last = first(r"^Last run:\s*(.+)$", text)
+    overall = first(r"^Overall:\s*`?([^`\n]+)`?", text)
     lines = [f"صحة النظام: {overall}. آخر فحص: {last}"]
-    for name, message in re.findall(r"^- `degraded`\s*([^:]+):\s*(.+)$", text, flags=re.M)[:2]:
+    for name, message in re.findall(r"^- `degraded`\s*([^:]+):\s*(.+)$", text, flags=re.M)[:3]:
+        combined = f"{name} {message}".lower()
+        if "scheduler" in combined or "dispatch sent" in combined or "online model" in combined:
+            continue
         lines.append(f"- تنبيه: {name.strip()} - {message.strip()}")
     return lines
 
 
-def _summarize_pr_followup(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    announced = _count(r"^## already_announced", text)
-    skipped = _count(r"^## skipped", text)
-    posted = _count(r"^- Comment:\s*https?://", text)
-    return [f"متابعة PR/Issue: معلن سابقا={announced}، تخطي={skipped}، تعليقات جديدة={posted}. آخر تشغيل: {last}"]
+def followup_summary(text: str) -> list[str]:
+    last = first(r"^Last run:\s*(.+)$", text)
+    posted = count(r"^- Comment:\s*https?://", text)
+    return [f"متابعة PR/Issue: تعليقات جديدة={posted}. آخر تشغيل: {last}"]
 
 
-def _summarize_submission_report(text: str) -> list[str]:
-    last = _first(r"^Last run:\s*(.+)$", text)
-    submitted = _count(r"^- Status:\s*(submitted|opened|created|ready)\b", text)
-    skipped = _count(r"^- Status:\s*skipped\b", text)
-    failed = _count(r"^- Status:\s*(failed|error)\b", text)
-    prs = re.findall(r"^- PR:\s*(https?://\S+)", text, flags=re.M)
-    lines = [f"إرسال PRs: جديد={submitted}، تخطي={skipped}، فشل={failed}. آخر تشغيل: {last}"]
-    if prs and submitted > 0:
-        lines.append(f"- PR جديد: {prs[0]}")
-    elif prs:
-        lines.append(f"- آخر PR متابع: {prs[0]}")
-    else:
-        lines.append("- لا يوجد PR جديد في هذه الجولة.")
-    return lines
-
-
-def _summarize_generic(path: str, text: str) -> list[str]:
-    if path.endswith("taskbounty_report.md"):
-        return _summarize_taskbounty_report(text)
+def generic_summary(path: str, text: str) -> list[str]:
     if path.endswith("bounty_worker_queue.md"):
-        return _summarize_bounty_queue(text)
+        return queue_summary(text)
     if path.endswith("github_bounty_claim_report.md"):
-        return _summarize_claim_report(text)
-    if path.endswith("github_openai_patch_solver_report.md") or path.endswith("openai_patch_solver_report.md"):
-        return _summarize_patch_solver(text)
-    if path.endswith("taskbounty_worker_report.md"):
-        return _summarize_taskbounty_worker(text)
-    if path.endswith("taskbounty_triage_report.md"):
-        return _summarize_taskbounty_triage(text)
-    if path.endswith("AUTOPILOT_HEALTH.md"):
-        return _summarize_health(text)
-    if path.endswith("github_pr_issue_announcement_report.md"):
-        return _summarize_pr_followup(text)
+        return claim_summary(text)
     if path.endswith("github_bounty_submission_report.md"):
-        return _summarize_submission_report(text)
-    heading = _first(r"^#\s*(.+)$", text, pathlib.Path(path).name)
-    last = _first(r"^Last (?:run|built):\s*(.+)$", text, "")
-    suffix = f" آخر تحديث: {last}" if last else ""
-    return [f"{heading}.{suffix}"]
+        return submission_summary(text)
+    if path.endswith("github_openai_patch_solver_report.md") or path.endswith("openai_patch_solver_report.md"):
+        return patch_summary(text)
+    if path.endswith("taskbounty_worker_report.md"):
+        return taskbounty_worker_summary(text)
+    if path.endswith("AUTOPILOT_HEALTH.md"):
+        return health_summary(text)
+    if path.endswith("github_pr_issue_announcement_report.md"):
+        return followup_summary(text)
+    heading = first(r"^#\s*(.+)$", text, pathlib.Path(path).name)
+    return [heading]
 
 
-def _arabic_title(title: str) -> str:
-    lowered = title.lower()
-    for key, value in TITLE_AR.items():
-        if lowered.startswith(key.lower()):
-            return value
-    for key, value in sorted(TITLE_AR.items(), key=lambda item: len(item[0]), reverse=True):
-        if key.lower() in lowered:
-            return value
-    return title
-
-
-def _build_message() -> str:
-    raw_title = os.getenv("TELEGRAM_TITLE", "Bounty autopilot update").strip()
-    title = _arabic_title(raw_title)
-    status = STATUS_AR.get(os.getenv("TELEGRAM_STATUS", "updated").strip().lower(), os.getenv("TELEGRAM_STATUS", "updated").strip())
-    run_url = os.getenv("GITHUB_RUN_URL") or (
-        f"https://github.com/{os.getenv('GITHUB_REPOSITORY', '')}/actions/runs/{os.getenv('GITHUB_RUN_ID', '')}"
-        if os.getenv("GITHUB_REPOSITORY") and os.getenv("GITHUB_RUN_ID")
-        else ""
-    )
-    custom_message = os.getenv("TELEGRAM_MESSAGE", "").strip()
-    report_files = [p.strip() for p in os.getenv("TELEGRAM_REPORT_FILES", "").split(",") if p.strip()]
-
-    lines = [f"تحديث الباونتي: {title}", f"الحالة: {status}"]
-    if custom_message:
-        lines.append(f"الخلاصة: {custom_message}")
-
-    summary_lines: list[str] = []
-    for report_file in report_files:
-        text = _read_file(report_file)
-        if text:
-            summary_lines.extend(_summarize_generic(report_file, text))
-
-    if summary_lines:
+def build_message(title: str, status: str, text: str) -> str:
+    lines = [f"تحديث الباونتي: {arabic_title(title)}", f"الحالة: {STATUS_AR.get(status, status)}"]
+    custom = os.getenv("TELEGRAM_MESSAGE", "").strip()
+    if custom:
+        lines.append(f"الخلاصة: {custom}")
+    summary: list[str] = []
+    for path in report_files():
+        report = read_file(path)
+        if report:
+            summary.extend(generic_summary(path, report))
+    if summary:
         lines.append("الخلاصة:")
-        lines.extend(summary_lines[:MAX_SUMMARY_LINES])
-    else:
-        lines.append("الخلاصة: لا يوجد تقرير قابل للقراءة في هذه الجولة.")
-
+        lines.extend(summary[:10])
+    run_url = os.getenv("GITHUB_RUN_URL", "").strip()
     if run_url:
         lines.append(f"الرن: {run_url}")
-
-    if os.getenv("TELEGRAM_INCLUDE_RAW_REPORTS", "0") == "1":
-        for report_file in report_files:
-            text = _read_file(report_file)
-            if text:
-                lines.append(f"\n--- {report_file} ---\n{text[:900].rstrip()}" + ("\n..." if len(text) > 900 else ""))
-
     message = "\n".join(lines).strip()
     if len(message) > MAX_MESSAGE_CHARS:
         message = message[:MAX_MESSAGE_CHARS].rstrip() + "\n..."
@@ -264,7 +260,14 @@ def main() -> int:
         print("Telegram secrets are not configured; skipping notification.")
         return 0
 
-    message = _build_message()
+    title = os.getenv("TELEGRAM_TITLE", "Bounty autopilot update").strip()
+    status = os.getenv("TELEGRAM_STATUS", "updated").strip().lower()
+    text = reports_text()
+    if not is_actionable(title, status, text):
+        print("Telegram update is not actionable; skipping notification.")
+        return 0
+
+    message = build_message(title, status, text)
     data = urllib.parse.urlencode(
         {
             "chat_id": chat_id,
@@ -272,14 +275,12 @@ def main() -> int:
             "disable_web_page_preview": "true",
         }
     ).encode("utf-8")
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
-    request = urllib.request.Request(url, data=data, method="POST")
+    request = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=data, method="POST")
     try:
         with urllib.request.urlopen(request, timeout=20) as response:
             print(response.read().decode("utf-8", errors="replace"))
     except Exception as exc:  # noqa: BLE001 - notifications must not block bounty work.
         print(f"Telegram notification failed: {exc}", file=sys.stderr)
-        return 0
     return 0
 
 
