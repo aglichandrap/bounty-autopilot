@@ -1,10 +1,10 @@
 # Bounty Repository Filter
 
-Last run: 2026-05-21 19:20 UTC
+Last run: 2026-05-21 19:50 UTC
 
-Input candidates: 60
-Kept candidates: 36
-Dropped candidates: 24
+Input candidates: 50
+Kept candidates: 31
+Dropped candidates: 19
 
 This filter removes known false-positive, unsafe, self-tracking, stale, or overcrowded bounty sources before expensive triage/solver work runs.
 
@@ -16,140 +16,110 @@ This filter removes known false-positive, unsafe, self-tracking, stale, or overc
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Reason: known stale/crowded bounty issue
 
-### 2. [ Bounty $4k ] [ Data ] Validate redaction in JSON exports — structured data downloads
+### 2. TaskBounty worker status
 
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1711
+- Repository: asaadnashed/bounty-autopilot
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
 - Reason: known false-positive or unsafe bounty source
 
-### 3. [ Bounty $4k ] [ Orchestrator ] Reject events for archived runs — late worker messages
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1692
-- Reason: known false-positive or unsafe bounty source
-
-### 4. [ Bounty $4k ] [ SDK ] Reject blank event handler names — event decorator metadata
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1050
-- Reason: known false-positive or unsafe bounty source
-
-### 5. [ Bounty $3k ] [ SDK ] Reject blank agent names before POST — registration validation
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1716
-- Reason: known false-positive or unsafe bounty source
-
-### 6. [ Bounty $8k ] [ Workflow ] Enforce branch output namespaces — parallel branch joins
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1701
-- Reason: known false-positive or unsafe bounty source
-
-### 7. [ Bounty $4k ] [ Docker ] Enforce network-off final packaging stage — deterministic images
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1574
-- Reason: known false-positive or unsafe bounty source
-
-### 8. [ Bounty $4k ] [ Registry ] Block incompatible protocol upgrades — agent RPC negotiation
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1580
-- Reason: known false-positive or unsafe bounty source
-
-### 9. [ Bounty $2k ] [ Runtime ] Record failure reason before worker shutdown — lifecycle runtime
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1592
-- Reason: known false-positive or unsafe bounty source
-
-### 10. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1675
-- Reason: known false-positive or unsafe bounty source
-
-### 11. [ Bounty $6k ] [ Sandbox ] Resolve base_path before use — path boundary checks
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1602
-- Reason: known false-positive or unsafe bounty source
-
-### 12. [ Bounty $10k ] [ Runtime ] Retry transient queue failures with jitter — queue runtime
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1546
-- Reason: known false-positive or unsafe bounty source
-
-### 13. [ Bounty $3k ] [ Middleware ] Validate multipart boundary before buffering upload — upload middleware
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1471
-- Reason: known false-positive or unsafe bounty source
-
-### 14. [ Bounty $8k ] [ Data ] Enforce purpose limitation in data lake writes — pipeline governance
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1555
-- Reason: known false-positive or unsafe bounty source
-
-### 15. [ Bounty $10k ] [ API ] Enforce max body size on artifact upload — artifact ingestion
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1542
-- Reason: known false-positive or unsafe bounty source
-
-### 16. [ Bounty $8k ] [ Data ] Prevent stale authorization in cached report results — reporting cache
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1432
-- Reason: known false-positive or unsafe bounty source
-
-### 17. [ Bounty $3k ] [ Orchestrator ] Preserve parent failure after child success — late child events
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/854
-- Reason: known false-positive or unsafe bounty source
-
-### 18. [ Bounty $4k ] [ Storage ] Guard retention deletion with legal hold flag — artifact lifecycle
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/828
-- Reason: known false-positive or unsafe bounty source
-
-### 19. [ Bounty $7k ] [ Runtime ] Persist run state before emitting completion event — state machine
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/760
-- Reason: known false-positive or unsafe bounty source
-
-### 20. [ Bounty $3k ] [ CLI ] Propagate deploy failure exit codes — exit status
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/226
-- Reason: known false-positive or unsafe bounty source
-
-### 21. [ Bounty $4k ] [ CLI ] Use stderr for errors and stdout for data — shell integration
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/366
-- Reason: known false-positive or unsafe bounty source
-
-### 22. [ Bounty $4k ] [ API ] Scope search indexing queries to workspace — run search API
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/24
-- Reason: known false-positive or unsafe bounty source
-
-### 23. [ Brainfuck ] Implement a program that converts decimal input to binary output
+### 3. [ FastAPI ] Fix hardcoded CDN URLs in Swagger UI and ReDoc HTML generation
 
 - Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/655
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/762
 - Reason: known false-positive or unsafe bounty source
 
-### 24. [ FastAPI ] Add StreamingCSVResponse for large dataset exports
+### 4. TaskBounty candidates
+
+- Repository: asaadnashed/bounty-autopilot
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/2
+- Reason: known false-positive or unsafe bounty source
+
+### 5. [ T3 Code ] Add Tailscale peer diagnostics with latency graph
 
 - Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/799
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/844
+- Reason: known false-positive or unsafe bounty source
+
+### 6. [ T3 Code ] Add version command and --version flag to CLI
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/821
+- Reason: known false-positive or unsafe bounty source
+
+### 7. [ T3 Code ] Add backend health monitoring and auto-restart to DesktopBackendManager
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/820
+- Reason: known false-positive or unsafe bounty source
+
+### 8. [ T3 Code ] Add round-trip schema validation tests for all contract types
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/827
+- Reason: known false-positive or unsafe bounty source
+
+### 9. [ Laravel ] Add rate limiting middleware to web routes and fix session driver fallback
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/749
+- Reason: known false-positive or unsafe bounty source
+
+### 10. [ T3 Code ] Fix ProviderModelPicker not persisting selection across reloads
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/834
+- Reason: known false-positive or unsafe bounty source
+
+### 11. [ FastAPI ] Implement standardized pagination with offset and cursor support
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/802
+- Reason: known false-positive or unsafe bounty source
+
+### 12. [ T3 Code ] Add Prometheus metrics endpoint with Effect.Metric integration
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/833
+- Reason: known false-positive or unsafe bounty source
+
+### 13. [ Scripts ] Fix string vs arithmetic comparison in cleanup.sh
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/319
+- Reason: known false-positive or unsafe bounty source
+
+### 14. Fix the schematic view by also optionally accepting kicad_sym and converting into a schPortArrangement and pinLabels
+
+- Repository: tscircuit/kicad-component-converter
+- Issue: https://github.com/tscircuit/kicad-component-converter/issues/114
+- Reason: known stale/crowded bounty issue
+
+### 15. [ English ] Complete missing closing lines in haikus.md
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/576
+- Reason: known false-positive or unsafe bounty source
+
+### 16. GitHub bounty submitter status
+
+- Repository: asaadnashed/bounty-autopilot
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
+- Reason: known false-positive or unsafe bounty source
+
+### 17. Integrate OpenCV's image detection into zm_monitor.cpp as an alternate option
+
+- Repository: ZoneMinder/zoneminder
+- Issue: https://github.com/ZoneMinder/zoneminder/issues/2138
+- Reason: known stale/crowded bounty issue
+
+### 18. Implement Differential Reward Distribution for Reopened Issues
+
+- Repository: devpool-directory/devpool-directory
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5012
+- Reason: known stale/crowded bounty issue
+
+### 19. [ T3 Code ] Add visual keybinding editor with conflict detection and recording
+
+- Repository: UnsafeLabs/Bounty-Hunters
+- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/843
 - Reason: known false-positive or unsafe bounty source
