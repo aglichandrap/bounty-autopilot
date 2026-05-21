@@ -1,13 +1,6 @@
 # GitHub Bounty Submission Report
 
-Last run: 2026-05-21 07:45 UTC
-
-## Scottcjn/Rustchain
-
-- Issue: https://github.com/Scottcjn/Rustchain/issues/819
-- Status: submitted_pr_reviewed
-- PR: https://github.com/Scottcjn/Rustchain/pull/6016
-- Message: Doc-only ARM/AArch64 classification guidance submitted. One approval received; another reviewer says the docs change looks consistent with #819 but CI is red from unrelated baseline checksum pin tests. Waiting for maintainer review/merge; no payout/acceptance confirmed.
+Last run: 2026-05-21 08:23 UTC
 
 ## orchestration-agent/AgentOrchestration
 
