@@ -100,7 +100,7 @@ def load_candidates() -> list[dict[str, Any]]:
 
 
 def is_candidate(item: dict[str, Any]) -> bool:
-    if str(item.get("triage_decision") or "keep").lower() in {"drop", "blocked", "crowded", "hard"}:
+    if str(item.get("triage_decision") or "keep").lower() in {"drop", "blocked"}:
         return False
     issue_url = str(item.get("url") or "")
     repo_url = str(item.get("repository_url") or "")

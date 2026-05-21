@@ -269,7 +269,7 @@ def process_task(task: dict[str, Any], token: str, agent_id: str, clone_repos: b
         return result
 
     triage_decision = str(task.get("triage_decision") or "").lower()
-    if triage_decision in {"blocked", "crowded", "hard"}:
+    if triage_decision in {"blocked"}:
         result.status = f"triage_skipped_{triage_decision}"
         reasons = task.get("triage_reasons")
         if isinstance(reasons, list) and reasons:

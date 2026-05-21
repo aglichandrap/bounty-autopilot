@@ -51,7 +51,7 @@ def load_candidates() -> list[dict[str, Any]]:
 
 def is_local_fallback_candidate(item: dict[str, Any]) -> bool:
     decision = str(item.get("triage_decision") or "keep").lower()
-    if decision in {"drop", "blocked", "crowded", "hard"}:
+    if decision in {"drop", "blocked"}:
         return False
     issue_url = str(item.get("url") or "")
     return parse_issue(issue_url) is not None

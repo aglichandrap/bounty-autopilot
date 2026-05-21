@@ -16,9 +16,10 @@ CANDIDATES_PATH = Path("bounty_candidates.json")
 REPORT_PATH = Path("bounty_candidate_triage_report.md")
 GITHUB_API = "https://api.github.com"
 OWNER_LOGIN = os.environ.get("BOUNTY_OWNER_LOGIN", "asaadnashed").lower()
-MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "80"))
-MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "4"))
+MAX_COMMENTS_FOR_NEW_WORK = int(os.environ.get("BOUNTY_MAX_COMMENTS", "180"))
+MAX_OPEN_COMPETING_PRS = int(os.environ.get("BOUNTY_MAX_COMPETING_PRS", "12"))
 MIN_PAID_AMOUNT = float(os.environ.get("BOUNTY_MIN_PAID_AMOUNT", "10"))
+MIN_FINAL_SCORE = int(os.environ.get("BOUNTY_MIN_FINAL_SCORE", "0"))
 PAID_LABEL_WORDS = ("bounty", "reward", "microgrant")
 NO_PAY_PATTERN = re.compile(
     r"\b(no paid bounty|no bounty|not paid|unpaid|free[- ]?ok|volunteer only|no compensation)\b"
@@ -240,9 +241,8 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
                 final_score -= 20
 
             if comments_indicate_competition(repo, issue_number, token=token):
-                decision = "drop"
-                reasons.append("issue comments indicate submitted/claimed PR or missing-source uncertainty")
-                final_score -= 60
+                reasons.append("competition already visible in comments; still allowed in aggressive mode")
+                final_score -= 35
         except Exception as exc:
             reasons.append(f"GitHub triage failed: {exc}")
             final_score -= 10
@@ -253,7 +253,7 @@ def triage_candidate(candidate: dict[str, Any], token: str | None) -> tuple[dict
     updated["triage_reasons"] = reasons
     updated["linked_prs"] = linked_pr_urls
 
-    if decision == "drop" or final_score < 10:
+    if decision == "drop" or final_score < MIN_FINAL_SCORE:
         kept = None
     else:
         kept = updated
@@ -279,7 +279,7 @@ def write_report(entries: list[TriageEntry], kept_count: int) -> None:
         "",
         f"Kept candidates: {kept_count}",
         "",
-        "This pass removes unpaid, crowded, assigned, closed, already-attempted, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent.",
+        "This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.",
         "",
     ]
     if not entries:

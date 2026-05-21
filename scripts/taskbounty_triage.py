@@ -128,11 +128,11 @@ def triage_task(task: dict[str, Any], token: str | None) -> tuple[dict[str, Any]
                 score_adjustment -= 50
                 reasons.append("likely upstream platform issue")
             if "security" in labels or "security" in text:
-                score_adjustment -= 20
+                score_adjustment -= 10
                 reasons.append("security-sensitive scope")
 
             if linked_prs:
-                score_adjustment -= 70
+                score_adjustment -= 20
                 reasons.append(f"linked or competing PRs found ({len(linked_prs)})")
 
             try:
@@ -141,7 +141,7 @@ def triage_task(task: dict[str, Any], token: str | None) -> tuple[dict[str, Any]
                 comments = []
             comments_text = " ".join(clean(str(comment.get("body") or "")) for comment in comments if isinstance(comment, dict)).lower()
             if re.search(r"\bopened\s+(?:a\s+)?(?:focused\s+)?(?:fix\s+)?(?:pr|pull request)\b|#\d+\s+for\s+this\s+path|opened\s+#\d+", comments_text):
-                score_adjustment -= 70
+                score_adjustment -= 20
                 reasons.append("comments indicate a competing PR already exists")
 
             if decision == "candidate" and score_adjustment <= -60:

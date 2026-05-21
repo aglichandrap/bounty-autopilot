@@ -34,7 +34,7 @@ def load_tasks() -> list[dict[str, Any]]:
 
 def is_local_fallback_task(item: dict[str, Any]) -> bool:
     decision = str(item.get("triage_decision") or "").lower()
-    if decision not in {"candidate", "keep", "ready"}:
+    if decision in {"blocked"}:
         return False
     status = str(item.get("status") or "").upper()
     return status in {"", "OPEN", "AVAILABLE"}

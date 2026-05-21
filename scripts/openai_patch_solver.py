@@ -96,13 +96,13 @@ def is_candidate(task: dict[str, Any]) -> bool:
         return False
     if str(task.get("status") or "").upper() not in {"", "OPEN"}:
         return False
-    if str(task.get("triage_decision") or "candidate").lower() in {"blocked", "crowded", "hard"}:
+    if str(task.get("triage_decision") or "candidate").lower() in {"blocked"}:
         return False
     try:
         score = int(task.get("score") or 0)
     except (TypeError, ValueError):
         score = 0
-    return score >= 25
+    return score >= int(os.environ.get("TASKBOUNTY_SOLVER_MIN_SCORE", "5"))
 
 
 def keyword_tokens(text: str) -> list[str]:
