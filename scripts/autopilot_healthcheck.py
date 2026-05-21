@@ -170,7 +170,7 @@ def main() -> int:
     dispatch_if_stale("Bounty scout scheduler", "bounty_worker_queue.md", "bounty-scout.yml", checks)
     dispatch_if_stale("GitHub claimer scheduler", "github_bounty_claim_report.md", "github-bounty-claim.yml", checks)
     dispatch_if_stale("GitHub submitter scheduler", "github_bounty_submission_report.md", "github-bounty-submit.yml", checks)
-    dispatch_if_stale("TaskBounty scout scheduler", "taskbounty_scout_report.md", "taskbounty-scout.yml", checks)
+    dispatch_if_stale("TaskBounty scout scheduler", "taskbounty_report.md", "taskbounty-scout.yml", checks)
     dispatch_if_stale("TaskBounty worker scheduler", "taskbounty_worker_report.md", "taskbounty-worker.yml", checks)
 
     model_ready = has_secret("OPENAI_API_KEY") or has_secret("OPENROUTER_API_KEY") or (has_secret("SOLVER_API_KEY") and has_secret("SOLVER_BASE_URL"))
