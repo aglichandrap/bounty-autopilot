@@ -64,6 +64,15 @@ DEFAULT_BLOCKED_ISSUES = {
     # Archestra #3855 is explicitly reserved for SE interview candidates and
     # requires core-team assignment before working.
     "https://github.com/archestra-ai/archestra/issues/3855",
+    # CAP #32 has many assignment requests and several PRs already opened for
+    # the same approval-state fix. Avoid duplicate $25 work.
+    "https://github.com/capofficial/client/issues/32",
+    # labmain #18 has multiple submitted PRs for the loading spinner already.
+    # The BountyPay dashboard also points to localhost, so payout path is unclear.
+    "https://github.com/labmain/ai-agent-pay-demo/issues/18",
+    # commaai #1173 requires real Toyota/openpilot hardware validation and has
+    # prior attempts/PRs. It is not safe for unattended local-only solving.
+    "https://github.com/commaai/opendbc/issues/1173",
 }
 
 
