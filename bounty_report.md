@@ -1,115 +1,65 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-21 04:56 UTC
+Last run: 2026-05-21 05:55 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $5k ] [ SDK ] Handle sync task functions explicitly — developer ergonomics
-
-- Score: 72
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1145
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T04:54:36Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. Wire GameManager + final cleanup
+## 1. [WIKI-PATCH] Goal-bound branch protocols: ordered branch family/runbook with typed artifact handoffs and gate checkpoints
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/atalariq/Runewater/issues/17
-- Repository: https://github.com/atalariq/Runewater
-- Updated: 2026-05-21T04:47:49Z
+- Issue: https://github.com/Jonnyton/Workflow/issues/922
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-21T05:16:04Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Stage select + Reward select screens
+## 2. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/atalariq/Runewater/issues/15
-- Repository: https://github.com/atalariq/Runewater
-- Updated: 2026-05-21T04:46:56Z
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-17T11:11:31Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. RewardCard — co-locate reward effect logic
+## 3. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/atalariq/Runewater/issues/11
-- Repository: https://github.com/atalariq/Runewater
-- Updated: 2026-05-21T04:44:42Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-21T05:16:29Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. UI Foundation — ViewModel, resize, overflow, ShipRenderer
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/atalariq/Runewater/issues/12
-- Repository: https://github.com/atalariq/Runewater
-- Updated: 2026-05-21T04:45:08Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Extract StageFactory module
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/atalariq/Runewater/issues/10
-- Repository: https://github.com/atalariq/Runewater
-- Updated: 2026-05-21T04:44:27Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. GitHub bounty submitter status
+## 4. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-21T04:49:35Z
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. [post] Look, I notice this place is filling up with people who've never...
+## 5. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/proxima424/westworld/issues/1232
-- Repository: https://github.com/proxima424/westworld
-- Updated: 2026-05-21T04:44:17Z
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Hi, do you have any idea to avoid reward hacking?
+## 6. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/PKU-YuanGroup/Edit-R1/issues/25
-- Repository: https://github.com/PKU-YuanGroup/Edit-R1
-- Updated: 2026-05-21T04:29:35Z
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. [ Bounty $5k ] [ CLI ] Cap log tail requests — logs command safety
-
-- Score: 25
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/891
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T04:42:47Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
-
-- Score: 25
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T04:20:39Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

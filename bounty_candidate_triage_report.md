@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-21 04:58 UTC
+Last run: 2026-05-21 05:56 UTC
 
-Kept candidates: 2
+Kept candidates: 3
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -37,68 +37,70 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. Claim Reward - Troubleshooting and FAQ
+## 5. [Bounty] @tomisnotcat — ARM architecture details needed (5 RTC)
+
+- Decision: keep
+- Score: 61 -> 26
+- Issue: https://github.com/Scottcjn/Rustchain/issues/819
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 6. Looking for a demo using Schema-First approach
+
+- Decision: keep
+- Score: 61 -> 26
+- Issue: https://github.com/graphql-dotnet/graphql-dotnet/issues/1025
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 7. Claim Reward - Troubleshooting and FAQ
 
 - Decision: drop
 - Score: 54 -> -16
 - Issue: https://github.com/sutt/docs/issues/3
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. Sats to Local Currency | Mexico
+## 8. Sats to Local Currency | Mexico
 
 - Decision: drop
 - Score: 48 -> -22
 - Issue: https://github.com/sutt/docs/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 7. Sync Issue-Assigned property from GH to LB
+## 9. [BOUNTY] RustChain Wallet CLI - Command-Line RTC Management
+
+- Decision: drop
+- Score: 46 -> -59
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/39
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 10. [BOUNTY: 5-7 RTC] Write Video Generation Guides for BoTTube Agents
+
+- Decision: drop
+- Score: 46 -> -24
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/732
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 11. Sync Issue-Assigned property from GH to LB
 
 - Decision: drop
 - Score: 44 -> -26
 - Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. bug: Rule shows “1 applied filter” even when no filter is applied
-
-- Decision: keep
-- Score: 40 -> 5
-- Issue: https://github.com/requestly/requestly/issues/3826
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 9. Wire GameManager + final cleanup
+## 12. [event-audit/4] Anomaly detector switches from log-mining to SQL query
 
 - Decision: drop
 - Score: 39 -> -61
-- Issue: https://github.com/atalariq/Runewater/issues/17
+- Issue: https://github.com/svv2014/loop-monitor/issues/109
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 10. Stage select + Reward select screens
+## 13. [WIKI-PATCH] Goal-bound branch protocols: ordered branch family/runbook with typed artifact handoffs and gate checkpoints
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/atalariq/Runewater/issues/15
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 11. UI Foundation — ViewModel, resize, overflow, ShipRenderer
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/atalariq/Runewater/issues/12
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. RewardCard — co-locate reward effect logic
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/atalariq/Runewater/issues/11
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. Extract StageFactory module
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/atalariq/Runewater/issues/10
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 39 -> -96
+- Issue: https://github.com/Jonnyton/Workflow/issues/922
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
 ## 14. Fixing the bounty award system
 
@@ -114,93 +116,44 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Issue: https://github.com/ResearchHub/issues/issues/540
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 16. [post] Look, I notice this place is filling up with people who've never...
+## 16. [BOTTUBE: 5 RTC] Create a 3-Video Series on Any Tech Topic
 
 - Decision: drop
-- Score: 35 -> -35
-- Issue: https://github.com/proxima424/westworld/issues/1232
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2793
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 17. Hi, do you have any idea to avoid reward hacking?
-
-- Decision: drop
-- Score: 35 -> -35
-- Issue: https://github.com/PKU-YuanGroup/Edit-R1/issues/25
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 18. Feature Request: Copy rule(s) to Private Workspace
-
-- Decision: keep
-- Score: 30 -> -5
-- Issue: https://github.com/requestly/requestly/issues/3825
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 19. LIghtning bounties for completed tasks
+## 17. LIghtning bounties for completed tasks
 
 - Decision: drop
 - Score: 30 -> -40
 - Issue: https://github.com/Cyberpunk-Hardware/Cyberpunk-Hardware/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 20. Add Guide for Converting Sats to Mexican Pesos
+## 18. Add Guide for Converting Sats to Mexican Pesos
 
 - Decision: drop
 - Score: 24 -> -46
 - Issue: https://github.com/sutt/docs/issues/4
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 21. Add section: Posting and solving bounties for GitBook / Wikis
+## 19. Add section: Posting and solving bounties for GitBook / Wikis
 
 - Decision: drop
 - Score: 24 -> -46
 - Issue: https://github.com/sutt/docs/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 22. Jest unit test needs to be added for react admin app
+## 20. Jest unit test needs to be added for react admin app
 
 - Decision: drop
 - Score: 18 -> -52
 - Issue: https://github.com/avored/avored-rust-cms/issues/247
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 23. Withdraw Decoder/Status
+## 21. Withdraw Decoder/Status
 
 - Decision: drop
 - Score: 14 -> -56
 - Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/5
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. Add section: Posting and solving bounties for GitBook / Wikis
-
-- Decision: drop
-- Score: 14 -> -56
-- Issue: https://github.com/Lightning-Bounties/docs/issues/8
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 25. Core Lightning: Add Commando / lnsocket API support
-
-- Decision: drop
-- Score: 10 -> -60
-- Issue: https://github.com/ZeusLN/zeus/issues/1068
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 26. LNURL-auth for agents — AI-generated implementation, looking for expert eyes
-
-- Decision: drop
-- Score: 8 -> -92
-- Issue: https://github.com/lightninglabs/lightning-agent-tools/issues/13
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 27. Lesson 1: Add Your First Photo to the Family Album
-
-- Decision: drop
-- Score: 8 -> -62
-- Issue: https://github.com/steve3535/FamilyPhotoAlbum/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 28. fire and lightning shouldn't be considered attack wands
-
-- Decision: drop
-- Score: 8 -> -62
-- Issue: https://github.com/TAEB/TAEB-AI-Behavioral/issues/42
 - Reason: no clear open paid bounty signal >= $10 found
