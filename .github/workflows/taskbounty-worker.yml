@@ -13,6 +13,7 @@ on:
       - "scripts/taskbounty_triage.py"
       - "scripts/openai_patch_solver.py"
       - "scripts/taskbounty_patch_solver_router.py"
+      - "scripts/telegram_notify.py"
       - "taskbounty_patches/**"
       - ".github/workflows/taskbounty-worker.yml"
 
@@ -69,8 +70,10 @@ jobs:
           git config user.email "taskbounty-worker-bot@users.noreply.github.com"
           git add taskbounty_report.md taskbounty_tasks.json taskbounty_triage_report.md taskbounty_worker_report.md taskbounty_worker_state.json taskbounty_agent_state.json openai_patch_solver_report.md taskbounty_patches
           if git diff --cached --quiet; then
+            echo "REPORT_CHANGED=0" >> "$GITHUB_ENV"
             echo "No TaskBounty worker changes."
           else
+            echo "REPORT_CHANGED=1" >> "$GITHUB_ENV"
             git commit -m "Update TaskBounty worker report"
             for attempt in 1 2 3; do
               git push && break
@@ -94,3 +97,25 @@ jobs:
           else
             gh issue create --title "$title" --body "$body"
           fi
+
+      - name: Notify Telegram about TaskBounty worker update
+        if: env.REPORT_CHANGED == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "TaskBounty Worker: new action/report"
+          TELEGRAM_STATUS: "updated"
+          TELEGRAM_REPORT_FILES: "taskbounty_worker_report.md,openai_patch_solver_report.md,taskbounty_triage_report.md"
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
+
+      - name: Notify Telegram about TaskBounty worker failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "TaskBounty Worker: failed"
+          TELEGRAM_STATUS: "failure"
+          TELEGRAM_MESSAGE: "The TaskBounty worker workflow failed and needs attention."
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
