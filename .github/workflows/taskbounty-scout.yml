@@ -10,6 +10,7 @@ on:
     paths:
       - "scripts/taskbounty_scout.py"
       - "scripts/claim_queue.py"
+      - "scripts/telegram_notify.py"
       - ".github/workflows/taskbounty-scout.yml"
 
 permissions:
@@ -42,8 +43,10 @@ jobs:
           git config user.email "taskbounty-scout-bot@users.noreply.github.com"
           git add taskbounty_report.md taskbounty_tasks.json claim_queue.md
           if git diff --cached --quiet; then
+            echo "REPORT_CHANGED=0" >> "$GITHUB_ENV"
             echo "No TaskBounty report changes."
           else
+            echo "REPORT_CHANGED=1" >> "$GITHUB_ENV"
             git commit -m "Update TaskBounty scout report"
             for attempt in 1 2 3; do
               git push && break
@@ -67,3 +70,25 @@ jobs:
           else
             gh issue create --title "$title" --body "$body"
           fi
+
+      - name: Notify Telegram about TaskBounty scout update
+        if: env.REPORT_CHANGED == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "TaskBounty Scout: new report/change"
+          TELEGRAM_STATUS: "updated"
+          TELEGRAM_REPORT_FILES: "taskbounty_report.md,claim_queue.md"
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
+
+      - name: Notify Telegram about TaskBounty scout failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_TITLE: "TaskBounty Scout: failed"
+          TELEGRAM_STATUS: "failure"
+          TELEGRAM_MESSAGE: "The TaskBounty scout workflow failed and needs attention."
+          GITHUB_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/telegram_notify.py
