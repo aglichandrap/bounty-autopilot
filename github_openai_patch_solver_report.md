@@ -1,6 +1,6 @@
 # GitHub OpenAI Patch Solver
 
-Last run: 2026-05-21 09:46 UTC
+Last run: 2026-05-21 10:56 UTC
 
 No online model key is configured, so GitHub Actions did not attempt code generation.
 Eligible candidates were queued for the local Codex solver instead of marking the run as failed.
@@ -14,29 +14,29 @@ Eligible candidates were queued for the local Codex solver instead of marking th
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 2. PACT Protocol — Trustless Agent Commerce Infrastructure on FVM (Open Grant)
+## 2. [ Bounty $2k ] [ SDK ] Fix retry utility has no max retries cap — v2 implementation
 
 - Status: local_fallback_queued
-- Repository: filecoin-project/devgrants
-- Issue: https://github.com/filecoin-project/devgrants/issues/2081
+- Repository: ClankerNation/OpenAgents
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/102
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 3. [rocket-pool] DEFI@home
+## 3. Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
 - Status: local_fallback_queued
-- Repository: guil-lambert/defipunkd
-- Issue: https://github.com/guil-lambert/defipunkd/issues/227
+- Repository: thesysdev/openui-creator-program
+- Issue: https://github.com/thesysdev/openui-creator-program/issues/3
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 4. WhatsApp support for agents similar to MS Teams and Slack
+## 4. Implement Differential Reward Distribution for Reopened Issues
 
 - Status: local_fallback_queued
-- Repository: archestra-ai/archestra
-- Issue: https://github.com/archestra-ai/archestra/issues/4145
+- Repository: devpool-directory/devpool-directory
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5012
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.

@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-21 10:49 UTC
+Last built: 2026-05-21 10:56 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -22,26 +22,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### PACT Protocol — Trustless Agent Commerce Infrastructure on FVM (Open Grant)
+### [ Bounty $2k ] [ SDK ] Fix retry utility has no max retries cap — v2 implementation
 
-- URL: https://github.com/filecoin-project/devgrants/issues/2081
-- Amount: $1,500, $8,000, $5,000, $6,000
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### [rocket-pool] DEFI@home
-
-- URL: https://github.com/guil-lambert/defipunkd/issues/227
-- Amount: $900
+- URL: https://github.com/ClankerNation/OpenAgents/issues/102
+- Amount: $2k, $2900
 - Claim comment if rules allow:
 
 ```text

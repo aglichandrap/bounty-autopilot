@@ -1,17 +1,17 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-21 09:46 UTC
+Last built: 2026-05-21 10:56 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: PACT Protocol — Trustless Agent Commerce Infrastructure on FVM (Open Grant)
+## Queue Item 1: [ Bounty $2k ] [ SDK ] Fix retry utility has no max retries cap — v2 implementation
 
-- Issue: https://github.com/filecoin-project/devgrants/issues/2081
-- Repository: https://github.com/filecoin-project/devgrants
-- Amount hint: $1,500, $8,000, $5,000, $6,000
-- Score: 63
-- Work priority: 163.0
-- Match reason: paid/bounty wording, visible amount, low discussion
+- Issue: https://github.com/ClankerNation/OpenAgents/issues/102
+- Repository: https://github.com/ClankerNation/OpenAgents
+- Amount hint: $2k, $2900
+- Score: 40
+- Work priority: 140.0
+- Match reason: paid/bounty wording, visible amount, coding scope, recent issue
 
 ### Worker Instructions
 
@@ -42,14 +42,14 @@ Purpose: turn scouting results into a concrete work queue for an agent. Up to 10
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 3: [rocket-pool] DEFI@home
+## Queue Item 3: Written Content: OpenUI's React Renderer Explained: How Progressive Hydration Works with Streamed Model Output
 
-- Issue: https://github.com/guil-lambert/defipunkd/issues/227
-- Repository: https://github.com/guil-lambert/defipunkd
-- Amount hint: $900
-- Score: 20
-- Work priority: 110.0
-- Match reason: mentions bounty/reward, has visible amount
+- Issue: https://github.com/thesysdev/openui-creator-program/issues/3
+- Repository: https://github.com/thesysdev/openui-creator-program
+- Amount hint: amount not obvious
+- Score: 5
+- Work priority: 5.0
+- Match reason: paid/bounty wording, coding scope
 
 ### Worker Instructions
 
@@ -61,14 +61,14 @@ Purpose: turn scouting results into a concrete work queue for an agent. Up to 10
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 4: WhatsApp support for agents similar to MS Teams and Slack
+## Queue Item 4: Implement Differential Reward Distribution for Reopened Issues
 
-- Issue: https://github.com/archestra-ai/archestra/issues/4145
-- Repository: https://github.com/archestra-ai/archestra
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5012
+- Repository: https://github.com/devpool-directory/devpool-directory
 - Amount hint: amount not obvious
-- Score: 11
-- Work priority: 11.0
-- Match reason: paid/bounty wording, coding scope, fresh update
+- Score: 1
+- Work priority: 1.0
+- Match reason: paid/bounty wording, fresh update
 
 ### Worker Instructions
 
