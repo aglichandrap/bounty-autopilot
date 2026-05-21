@@ -23,6 +23,9 @@ DEFAULT_BLOCKED_REPOS = {
     # Public repo only contains generated docs/screenshots, not the H5 app source
     # needed to fix the advertised bug bounties.
     "LeoVeeNetVip/team-docs",
+    # High-value-looking Solidity bounties ask contributors to paste the full
+    # platform-provided instructions/session-start text into source files.
+    "ClankerNation/OpenAgents",
 }
 
 DEFAULT_BLOCKED_ISSUES = {
@@ -98,7 +101,7 @@ def main() -> int:
         if issue in blocked_issue_set:
             dropped.append((candidate, repo, "known stale/crowded bounty issue"))
         elif repo in blocked_repo_set:
-            dropped.append((candidate, repo, "known false-positive bounty source"))
+            dropped.append((candidate, repo, "known false-positive or unsafe bounty source"))
         else:
             kept.append(candidate)
 
@@ -114,7 +117,7 @@ def main() -> int:
         f"Kept candidates: {len(kept)}",
         f"Dropped candidates: {len(dropped)}",
         "",
-        "This filter removes known false-positive, self-tracking, stale, or overcrowded bounty sources before expensive triage/solver work runs.",
+        "This filter removes known false-positive, unsafe, self-tracking, stale, or overcrowded bounty sources before expensive triage/solver work runs.",
         "",
     ]
     if dropped:
