@@ -17,6 +17,12 @@ DEFAULT_BLOCKED_REPOS = {
     "orchestration-agent/AgentOrchestration",
     # The autopilot's own tracking issue can match bounty searches; never work it.
     "asaadnashed/bounty-autopilot",
+    # Repeatedly asks contributors to attach hidden session/pre-task context files.
+    # Those requests are not safe to satisfy and crowd the worker queue.
+    "UnsafeLabs/Bounty-Hunters",
+    # Public repo only contains generated docs/screenshots, not the H5 app source
+    # needed to fix the advertised bug bounties.
+    "LeoVeeNetVip/team-docs",
 }
 
 
