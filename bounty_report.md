@@ -1,95 +1,125 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-21 07:37 UTC
+Last run: 2026-05-21 09:43 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [RFC] Prefix-Tree Shared Attention for Multi-Turn RL Training
+## 1. 📡 P3 RADAR 🔴 [ZEC/USD/4H] ▼ BAJISTA (SHORT) · 04h BOG
+
+- Score: 60
+- Amount hint: $665.53, $701.55, $605.49
+- Issue: https://github.com/Metapro-art/zec-scanner/issues/159
+- Repository: https://github.com/Metapro-art/zec-scanner
+- Updated: 2026-05-21T09:34:53Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. [rocket-pool] DEFI@home
+
+- Score: 55
+- Amount hint: $900
+- Issue: https://github.com/guil-lambert/defipunkd/issues/227
+- Repository: https://github.com/guil-lambert/defipunkd
+- Updated: 2026-05-21T09:39:56Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. [Ulduar] - Problems with Immortal Guardian.
+
+- Score: 47
+- Amount hint: amount not obvious
+- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/4989
+- Repository: https://github.com/azerothcore/azerothcore-wotlk
+- Updated: 2026-05-21T09:28:29Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. [FEATURE] Add Empty States and Skeleton Loaders for Better UX
+
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/381
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-21T09:41:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. [ui] Phase 6.4 · Token-spend dashboard (per role / project / day)
+
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/svv2014/loop-monitor/issues/137
+- Repository: https://github.com/svv2014/loop-monitor
+- Updated: 2026-05-21T09:20:09Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. RuntimeError: DataLoader worker is killed by signal: Bus error
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/modelscope/ms-swift/issues/7264
+- Repository: https://github.com/modelscope/ms-swift
+- Updated: 2026-05-21T09:30:17Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. [SOTA][BG] Demolisher bug
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/chromiecraft/chromiecraft/issues/9248
+- Repository: https://github.com/chromiecraft/chromiecraft
+- Updated: 2026-05-21T09:22:22Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. research: train a bounded ORCA-residual learned local policy
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/verl-project/verl/issues/6401
-- Repository: https://github.com/verl-project/verl
-- Updated: 2026-05-21T07:04:41Z
+- Issue: https://github.com/ll7/robot_sf_ll7/issues/1358
+- Repository: https://github.com/ll7/robot_sf_ll7
+- Updated: 2026-05-21T09:35:28Z
 - Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. train while use lora and bugs
+## 9. Paid flow: Stripe success creates paid scan session token
 
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/verl-project/verl/issues/6380
-- Repository: https://github.com/verl-project/verl
-- Updated: 2026-05-21T07:03:12Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Score: 34
+- Amount hint: $50
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/27
+- Repository: https://github.com/Priivacy-ai/agent-log-analyzer
+- Updated: 2026-05-21T05:41:45Z
+- Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. [Feature]: Consolidate premium request rules and reward policy
+## 10. Monetization UX: optimization pack unlock
+
+- Score: 34
+- Amount hint: $50
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/24
+- Repository: https://github.com/Priivacy-ai/agent-log-analyzer
+- Updated: 2026-05-21T05:41:43Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. Explore how much faster / better using `oxc`'s parser ecosystem rather than `swc`'s might be
 
 - Score: 34
 - Amount hint: amount not obvious
-- Issue: https://github.com/Jamesllllllllll/RockList.Live/issues/42
-- Repository: https://github.com/Jamesllllllllll/RockList.Live
-- Updated: 2026-05-21T06:16:48Z
-- Why it matched: mentions bounty/reward
+- Issue: https://github.com/pionxzh/wakaru/issues/152
+- Repository: https://github.com/pionxzh/wakaru
+- Updated: 2026-05-21T09:29:11Z
+- Why it matched: mentions bounty/reward, large issue body
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [ Bounty $8k ] [ Orchestrator ] Reconcile queue and state divergence — partial dispatch failures
+## 12. 帝国数字服务清单 - $1起，接受USDT TRC20支付
 
 - Score: 25
-- Amount hint: $8, $8000, Bounty $8, bounty $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/81
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T07:32:56Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
-
-- Score: 25
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/88
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T07:26:38Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
-
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T07:26:33Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [ Bounty $3k ] [ Storage ] Add restore test for compressed artifacts — backup reliability
-
-- Score: 25
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/105
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T07:26:23Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. [ Bounty $8k ] [ Registry ] Recheck authorization on cached resolution — permission changes
-
-- Score: 25
-- Amount hint: $8, $8000, Bounty $8, bounty $8000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/117
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T07:26:13Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. [ Bounty $3k ] [ CLI ] Fail deploy when manifest is missing — manifest validation
-
-- Score: 25
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/131
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T07:26:02Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Amount hint: $1
+- Issue: https://github.com/jiezishu000/empire-digital-shop/issues/1
+- Repository: https://github.com/jiezishu000/empire-digital-shop
+- Updated: 2026-05-20T08:56:14Z
+- Why it matched: has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

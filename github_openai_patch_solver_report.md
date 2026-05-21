@@ -1,6 +1,6 @@
 # GitHub OpenAI Patch Solver
 
-Last run: 2026-05-21 07:40 UTC
+Last run: 2026-05-21 09:46 UTC
 
 No online model key is configured, so GitHub Actions did not attempt code generation.
 Eligible candidates were queued for the local Codex solver instead of marking the run as failed.
@@ -14,29 +14,29 @@ Eligible candidates were queued for the local Codex solver instead of marking th
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 2. [ Bounty $2k ] [ Solidity ] Fix MultiTokenStaking emergencyWithdraw doesn't exist — v2 upgrade
+## 2. PACT Protocol — Trustless Agent Commerce Infrastructure on FVM (Open Grant)
 
 - Status: local_fallback_queued
-- Repository: ClankerNation/OpenAgents
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/195
+- Repository: filecoin-project/devgrants
+- Issue: https://github.com/filecoin-project/devgrants/issues/2081
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 3. [ Bounty $4k ] [ Solidity ] Fix InterestRateModel doesn't emit events on parameter changes — deployment blocker
+## 3. [rocket-pool] DEFI@home
 
 - Status: local_fallback_queued
-- Repository: ClankerNation/OpenAgents
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/193
+- Repository: guil-lambert/defipunkd
+- Issue: https://github.com/guil-lambert/defipunkd/issues/227
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 4. [ Bounty $5k ] [ Solidity ] Fix PrizeSplit doesn't handle case where winner is contract without receive — urgent
+## 4. WhatsApp support for agents similar to MS Teams and Slack
 
 - Status: local_fallback_queued
-- Repository: ClankerNation/OpenAgents
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/189
+- Repository: archestra-ai/archestra
+- Issue: https://github.com/archestra-ai/archestra/issues/4145
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.

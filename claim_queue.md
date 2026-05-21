@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-21 07:40 UTC
+Last built: 2026-05-21 09:46 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -22,10 +22,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [ Bounty $2k ] [ Solidity ] Fix MultiTokenStaking emergencyWithdraw doesn't exist — v2 upgrade
+### PACT Protocol — Trustless Agent Commerce Infrastructure on FVM (Open Grant)
 
-- URL: https://github.com/ClankerNation/OpenAgents/issues/195
-- Amount: $2k, $2300
+- URL: https://github.com/filecoin-project/devgrants/issues/2081
+- Amount: $1,500, $8,000, $5,000, $6,000
 - Claim comment if rules allow:
 
 ```text
@@ -38,10 +38,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### [ Bounty $4k ] [ Solidity ] Fix InterestRateModel doesn't emit events on parameter changes — deployment blocker
+### [rocket-pool] DEFI@home
 
-- URL: https://github.com/ClankerNation/OpenAgents/issues/193
-- Amount: $4k, $4400
+- URL: https://github.com/guil-lambert/defipunkd/issues/227
+- Amount: $900
 - Claim comment if rules allow:
 
 ```text
