@@ -1,31 +1,31 @@
 # GitHub Bounty Claim Report
 
-Last run: 2026-05-21 08:23 UTC
+Last run: 2026-05-21 09:51 UTC
 
-## [ Bounty $5k ] [ Solidity ] Fix PrizeSplit doesn't handle case where winner is contract without receive — urgent
+## PACT Protocol — Trustless Agent Commerce Infrastructure on FVM (Open Grant)
 
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/189
+- Issue: https://github.com/filecoin-project/devgrants/issues/2081
 - Status: skipped
 - Comment: not posted
-- Message: strong active attempt/comment by clanker-journalist[bot]
+- Message: Forbidden/risky category: prompt/context.
 
-## [ Bounty $4k ] [ Solidity ] Fix InterestRateModel doesn't emit events on parameter changes — deployment blocker
+## [rocket-pool] DEFI@home
 
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/193
+- Issue: https://github.com/guil-lambert/defipunkd/issues/227
 - Status: skipped
 - Comment: not posted
-- Message: strong active attempt/comment by clanker-journalist[bot]
-
-## [ Bounty $2k ] [ Solidity ] Fix MultiTokenStaking emergencyWithdraw doesn't exist — v2 upgrade
-
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/195
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by clanker-journalist[bot]
+- Message: strong active attempt/comment by nguyencaoky1121-dev
 
 ## [CAL-3105] BigBlueButton Integration
 
 - Issue: https://github.com/calcom/cal.com/issues/1985
+- Status: skipped
+- Comment: not posted
+- Message: strong active attempt/comment by algora-pbc[bot]
+
+## WhatsApp support for agents similar to MS Teams and Slack
+
+- Issue: https://github.com/archestra-ai/archestra/issues/4145
 - Status: skipped
 - Comment: not posted
 - Message: strong active attempt/comment by algora-pbc[bot]
