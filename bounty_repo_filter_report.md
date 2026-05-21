@@ -1,29 +1,29 @@
 # Bounty Repository Filter
 
-Last run: 2026-05-21 16:37 UTC
+Last run: 2026-05-21 16:41 UTC
 
-Input candidates: 60
-Kept candidates: 57
+Input candidates: 14
+Kept candidates: 11
 Dropped candidates: 3
 
 This filter removes known false-positive or self-tracking repositories before expensive triage/solver work runs.
 
 ## Dropped
 
-### 1. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+### 1. GitHub bounty submitter status
 
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/300
+- Repository: asaadnashed/bounty-autopilot
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
 - Reason: known false-positive bounty source
 
-### 2. [ Bounty $6k ] [ Sandbox ] Resolve base_path before use — path boundary checks
+### 2. [ Bounty $3k ] [ CLI ] Propagate deploy failure exit codes — exit status
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1602
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/226
 - Reason: known false-positive bounty source
 
-### 3. [ Bounty $2k ] [ CI ] Validate generated manifests are committed — dependency metadata
+### 3. [ Bounty $10k ] [ API ] Enforce max body size on artifact upload — artifact ingestion
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1540
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1542
 - Reason: known false-positive bounty source

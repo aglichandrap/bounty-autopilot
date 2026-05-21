@@ -1,46 +1,46 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-21 16:35 UTC
+Last run: 2026-05-21 16:40 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $6k ] [ Sandbox ] Resolve base_path before use — path boundary checks
+## 1. [BUG-087] run_branch fails immediately with AllProvidersExhaustedError instead of retry/backoff despite actionable retry message
 
-- Score: 72
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1602
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T16:35:46Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Score: 43
+- Amount hint: amount not obvious
+- Issue: https://github.com/Jonnyton/Workflow/issues/917
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-21T16:27:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [ Bounty $2k ] [ CI ] Validate generated manifests are committed — dependency metadata
-
-- Score: 67
-- Amount hint: $2, $2000, Bounty $2, bounty $2000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1540
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-21T16:07:34Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [Tutorial] Midnight Development on Windows via WSL2
-
-- Score: 63
-- Amount hint: $300, $500
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/282
-- Repository: https://github.com/midnightntwrk/contributor-hub
-- Updated: 2026-05-21T16:08:19Z
-- Why it matched: mentions bounty/reward, has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. Sats to Local Currency | Mexico
+## 2. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
 - Issue: https://github.com/sutt/docs/issues/5
 - Repository: https://github.com/sutt/docs
 - Updated: 2026-05-21T12:48:20Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. GitHub bounty submitter status
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-21T16:32:25Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. Endless scrolling in Excel on Terminal Server 2008 R2
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/rdesktop/rdesktop/issues/77
+- Repository: https://github.com/rdesktop/rdesktop
+- Updated: 2026-05-21T12:36:07Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
