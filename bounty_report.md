@@ -1,125 +1,85 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 06:34 UTC
+Last run: 2026-05-22 08:15 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [BUG][高] L_13 VIP 规则奖励应为「锁」vip-rule reward ·
+## 1. Sats to Local Currency | Mexico
 
-- Score: 68
-- Amount hint: $1.00, $1, $5, 1 USD
-- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/75
-- Repository: https://github.com/LeoVeeNetVip/team-docs
-- Updated: 2026-05-22T06:20:13Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. [Docs] Doc staleness sweep 2026-05-22
-
-- Score: 68
-- Amount hint: 21 sats, 100 sats
-- Issue: https://github.com/RUNSTR-LLC/RUNSTR/issues/352
-- Repository: https://github.com/RUNSTR-LLC/RUNSTR
-- Updated: 2026-05-22T06:18:23Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [BUG][中] JIAN_15 注册后无邮件 + 后台无记录
-
-- Score: 68
-- Amount hint: $10, $1
-- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/105
-- Repository: https://github.com/LeoVeeNetVip/team-docs
-- Updated: 2026-05-22T06:18:22Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. Submission: NEXUS BazaarSignalAgent — Chef Bazaar + prediction-market signal layer
-
-- Score: 68
-- Amount hint: $0.02, 02 USD
-- Issue: https://github.com/awrsla/agent-bazaar-challenge/issues/3
-- Repository: https://github.com/awrsla/agent-bazaar-challenge
-- Updated: 2026-05-22T06:16:20Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. [BOUNTY] [level:critical] Build AI-Driven Semantic Duplicate Ticket Detection with Vector Embeddings & Cosine Similarity
-
-- Score: 47
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/74
-- Repository: https://github.com/ritesh-1918/HELPDESK.AI
-- Updated: 2026-05-22T06:25:11Z
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-21T12:48:20Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [BOUNTY] [level:critical] Implement Enterprise SLA Breach & Automated Multi-Channel Escalation Engine
+## 2. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
 
-- Score: 43
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/75
-- Repository: https://github.com/ritesh-1918/HELPDESK.AI
-- Updated: 2026-05-22T06:25:24Z
+- Issue: https://github.com/TensorBlock/awesome-mcp-servers/issues/110
+- Repository: https://github.com/TensorBlock/awesome-mcp-servers
+- Updated: 2026-05-22T03:01:19Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. feat: add OrcaRouter chat model integration
+## 3. Create wallet benchmarks
 
-- Score: 43
+- Score: 38
 - Amount hint: amount not obvious
-- Issue: https://github.com/agentscope-ai/agentscope/issues/1637
-- Repository: https://github.com/agentscope-ai/agentscope
-- Updated: 2026-05-22T06:10:40Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
+- Repository: https://github.com/tari-project/wallet-benchmarks
+- Updated: 2026-05-22T06:55:25Z
+- Why it matched: mentions bounty/reward, large issue body
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. P1: Restore true policy-gradient update step after fixed-vector recurrence
-
-- Score: 42
-- Amount hint: amount not obvious
-- Issue: https://github.com/lanyusea/screeps/issues/1299
-- Repository: https://github.com/lanyusea/screeps
-- Updated: 2026-05-22T06:27:21Z
-- Why it matched: mentions bounty/reward
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Add Several Zcash Wallets to Zcash Wallets Page
-
-- Score: 35
-- Amount hint: Bounty: 0
-- Issue: https://github.com/ZecHub/zechub/issues/1659
-- Repository: https://github.com/ZecHub/zechub
-- Updated: 2026-05-22T06:19:32Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. Question about improving stability when switching into an AMP policy on a real robot
+## 4. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Open-X-Humanoid/TienKung-Lab/issues/61
-- Repository: https://github.com/Open-X-Humanoid/TienKung-Lab
-- Updated: 2026-05-22T06:16:50Z
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. GitHub bounty submitter status
+## 5. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. Sync Issue-Assigned property from GH to LB
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Bounty scout candidates
+
+- Score: 33
+- Amount hint: $10.00, $100
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
 - Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-22T06:34:11Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Updated: 2026-05-22T06:36:24Z
+- Why it matched: mentions bounty/reward, has visible amount, large issue body, likely claimed: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Bounty: USDC for first external agent x402 MCP call
+## 8. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
 
-- Score: 30
-- Amount hint: $5, $0.01, 5 USD, 01 USD
-- Issue: https://github.com/RileyCraig14/nexus-agent/issues/1
-- Repository: https://github.com/RileyCraig14/nexus-agent
-- Updated: 2026-05-22T06:09:17Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
+- Score: 25
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-22T08:06:13Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

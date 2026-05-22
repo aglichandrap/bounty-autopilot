@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "title": "Size to close is not well formatted, sometimes",
+    "url": "https://github.com/capofficial/client/issues/11",
+    "repository_url": "https://github.com/capofficial/client",
+    "updated_at": "2026-05-22T08:14:14Z",
+    "score": 36,
+    "amount_hint": "$20",
+    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Implement a fully functional Admin Panel",
+    "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/29",
+    "repository_url": "https://github.com/SecureBananaLabs/bug-bounty",
+    "updated_at": "2026-05-22T05:44:50Z",
+    "score": 11,
+    "amount_hint": "$500",
+    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, recent issue, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "bug: Rule shows “1 applied filter” even when no filter is applied",
+    "url": "https://github.com/requestly/requestly/issues/3826",
+    "repository_url": "https://github.com/requestly/requestly",
+    "updated_at": "2026-05-20T10:05:06Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  }
+]
