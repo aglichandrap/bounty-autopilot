@@ -1,85 +1,45 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 08:15 UTC
+Last run: 2026-05-22 09:59 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. Sats to Local Currency | Mexico
+## 1. [Tracking] Self-Improvement Loop: closed-loop session-driven evolution
+
+- Score: 72
+- Amount hint: $1
+- Issue: https://github.com/mandubian/autonoetic/issues/244
+- Repository: https://github.com/mandubian/autonoetic
+- Updated: 2026-05-22T08:16:53Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. [Priest] Mind Control Bug while being slowed
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
-- Updated: 2026-05-21T12:48:20Z
+- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/25926
+- Repository: https://github.com/azerothcore/azerothcore-wotlk
+- Updated: 2026-05-22T09:38:49Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
+## 3. Tutor stalls on meta-recall + asserts over learner: root cause investigation (IELTS Prep Lab evidence)
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/TensorBlock/awesome-mcp-servers/issues/110
-- Repository: https://github.com/TensorBlock/awesome-mcp-servers
-- Updated: 2026-05-22T03:01:19Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/WANDERCOLTD/HF/issues/600
+- Repository: https://github.com/WANDERCOLTD/HF
+- Updated: 2026-05-22T09:45:35Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Create wallet benchmarks
+## 4. compute_random_baseline_returns silently drops trials when NLV extraction fails for non-log-return rewards
 
-- Score: 38
+- Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
-- Repository: https://github.com/tari-project/wallet-benchmarks
-- Updated: 2026-05-22T06:55:25Z
-- Why it matched: mentions bounty/reward, large issue body
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. Fixing the bounty award system
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/531
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:39Z
+- Issue: https://github.com/kwojdalski/masters_thesis/issues/91
+- Repository: https://github.com/kwojdalski/masters_thesis
+- Updated: 2026-05-22T09:19:27Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. Create a Bounty Amount Box Issue
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/540
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:37Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. Bounty scout candidates
-
-- Score: 33
-- Amount hint: $10.00, $100
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-22T06:36:24Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, likely claimed: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. [ Bounty $6k ] [ Metrics ] Avoid lock re-entry in stop_timer — timer recording
-
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/90
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T08:06:13Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-22 08:17 UTC
+Last run: 2026-05-22 10:02 UTC
 
-Kept candidates: 3
+Kept candidates: 0
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,114 +30,30 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. [Tracking] Self-Improvement Loop: closed-loop session-driven evolution
+## 4. Developer feedback: three friction points when integrating v4 for the first time
 
 - Decision: drop
-- Score: 95 -> -10
+- Score: 79 -> 9
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 5. [BOUNTY] Claim: <Mobile SERP Tracker - Working Submission ($50 Wave 2)>
+
+- Decision: drop
+- Score: 75 -> -60
+- Issue: https://github.com/bolivian-peru/marketplace-service-template/issues/463
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 6. [Tracking] Self-Improvement Loop: closed-loop session-driven evolution
+
+- Decision: drop
+- Score: 72 -> -33
 - Issue: https://github.com/mandubian/autonoetic/issues/244
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. [ARCH] Định nghĩa AgentProtocol — interface chuẩn để plug-in các kiến trúc agent
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/cyborgx0x/nano-agent/issues/3
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 6. AIP-1 v0.4 proposal: portable mission-completion receipts
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/Aigen-Protocol/aigen-protocol/issues/28
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 7. AIP-3 gap: bounty/mission wins not reflected in agent reputation breakdown (live data: 43 winning submissions, 0 reputation points)
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/Aigen-Protocol/aigen-protocol/issues/27
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 8. Sim | Presentation: Quest board — surface a settlement's open jobs to the player
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/AllroundCoding/Timeweft/issues/58
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 9. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-hrm-studio-9396/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 10. FAIR Compliance Dashboard
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kuttysoftmy/app-tool-installer-dashboard-0851/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 11. PR Review Claim - 1 PRs - 2026-05-22 08:12 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11989
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. [GOSSIP][QUEST]Grull Hawkwind implies Narache is inhabited by Undead.
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/25925
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. index.html
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/a01064816930-lang/lll/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 14. PR Review Claim - 1 PRs - 2026-05-22 07:57 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11981
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 15. Emoji Reaction Claim - 10 Reactions - 2026-05-22 07:55 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11980
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 16. PR Review Claim - 1 PRs - 2026-05-22 07:53 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11978
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 17. Size to close is not well formatted, sometimes
-
-- Decision: keep
-- Score: 71 -> 36
-- Issue: https://github.com/capofficial/client/issues/11
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 18. P0: Restore policy-gradient runtime injection and true update evidence
-
-- Decision: drop
-- Score: 71 -> -34
-- Issue: https://github.com/lanyusea/screeps/issues/1299
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 19. When a user returns `return { ... }` from a route instead of `return ctx.json({ ... })`, throw an error telling them to use `ctx.json`
+## 7. When a user returns `return { ... }` from a route instead of `return ctx.json({ ... })`, throw an error telling them to use `ctx.json`
 
 - Decision: drop
 - Score: 71 -> -34
@@ -145,194 +61,255 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 20. [Auth] API-010: Supabase Auth + Next.js Middleware RBAC 라우팅 가드
+## 8. JMD Currency Precision — Full-Stack Fix
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/hjh890989-web/Speech-Therapy_project_root/issues/11
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 21. PPO 训练了 1000 个 episode，车还是开局就撞墙，reward 一直不收敛，是 reward shaping 有问题吗？
-
-- Decision: drop
-- Score: 61 -> -9
-- Issue: https://github.com/OpenHUTB/nn/issues/6814
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 22. Create wallet benchmarks
-
-- Decision: drop
-- Score: 56 -> -49
-- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 23. [CP3 P0] Ghost CP closure gap — counterparty_accepts + evidence_submitted + no deadline = stuck (bounty RAISED to 100 HUB)
-
-- Decision: drop
-- Score: 54 -> -51
-- Issue: https://github.com/handsdiff/hub/issues/11
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 24. [Tracker] Fair Rewards
-
-- Decision: drop
-- Score: 50 -> -20
-- Issue: https://github.com/Usernode-Labs/flutter-mobile-app/issues/381
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 25. Discussion: should AutoGen agents discover tasks from external open markets at runtime?
-
-- Decision: drop
-- Score: 46 -> -54
-- Issue: https://github.com/microsoft/autogen/issues/7702
+- Score: 65 -> -70
+- Issue: https://github.com/lnflash/flash/issues/282
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 26. Implement a fully functional Admin Panel
-
-- Decision: keep
-- Score: 46 -> 11
-- Issue: https://github.com/SecureBananaLabs/bug-bounty/issues/29
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 27. bug: Rule shows “1 applied filter” even when no filter is applied
-
-- Decision: keep
-- Score: 40 -> 5
-- Issue: https://github.com/requestly/requestly/issues/3826
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 28. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
+## 9. [Tutorial] Building a Shielded Token dApp with UI
 
 - Decision: drop
-- Score: 39 -> -31
+- Score: 65 -> -70
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/326
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 10. [Tutorial] Midnight vs Other Privacy Chains: Architecture Comparison for Developers
+
+- Decision: drop
+- Score: 65 -> -35
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/324
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+
+## 11. [Tutorial] Adding Privacy to an Existing dApp: A Retrofit Guide
+
+- Decision: drop
+- Score: 65 -> -35
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/307
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+
+## 12. [Tutorial] Bringing External Data On-Chain: Oracle Patterns for Midnight
+
+- Decision: drop
+- Score: 65 -> -35
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/304
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+
+## 13. [Tutorial] Handling Midnight SDK Breaking Changes: A Developer's Upgrade Playbook
+
+- Decision: drop
+- Score: 65 -> -70
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/321
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 14. [Tutorial] Working with Maps and Merkle Trees in Compact
+
+- Decision: drop
+- Score: 65 -> -70
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/289
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 15. [Tutorial] Building a Compliance Attestation System with Selective Disclosure
+
+- Decision: drop
+- Score: 65 -> -70
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/315
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 16. [Tutorial] Time and Deadlines in Compact: Block Time, Counters & the Uint<16> Problem
+
+- Decision: drop
+- Score: 65 -> -35
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/306
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+
+## 17. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+
+- Decision: drop
+- Score: 64 -> -21
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 1 open competing PR(s)
+- Competing PR: https://github.com/hashgraph/hedera-agent-kit-js/pull/839
+
+## 18. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
+
+- Decision: drop
+- Score: 40 -> -30
 - Issue: https://github.com/TensorBlock/awesome-mcp-servers/issues/110
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 29. Sats to Local Currency | Mexico
+## 19. 🏭 Bounty T3: SolFoundry TypeScript SDK
 
 - Decision: drop
-- Score: 39 -> -66
-- Issue: https://github.com/sutt/docs/issues/5
+- Score: 40 -> -120
+- Issue: https://github.com/SolFoundry/solfoundry/issues/863
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: too many open competing PRs found (14)
+- Competing PR: https://github.com/SolFoundry/solfoundry/pull/1197
+- Competing PR: https://github.com/SolFoundry/solfoundry/pull/981
+- Competing PR: https://github.com/SolFoundry/solfoundry/pull/1269
+- Competing PR: https://github.com/SolFoundry/solfoundry/pull/868
+- Competing PR: https://github.com/SolFoundry/solfoundry/pull/980
+
+## 20. Tutor stalls on meta-recall + asserts over learner: root cause investigation (IELTS Prep Lab evidence)
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/WANDERCOLTD/HF/issues/600
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 21. [Priest] Mind Control Bug while being slowed
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/25926
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 22. compute_random_baseline_returns silently drops trials when NLV extraction fails for non-log-return rewards
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/kwojdalski/masters_thesis/issues/91
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. [Tutorial] Shielded Token Operations: Mint, Transfer & Burn with Test Suite
+
+- Decision: drop
+- Score: 30 -> -285
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/327
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: light competition allowed: 12 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/454
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/356
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/516
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/455
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/338
 
-## 30. Add QCon to the conference data tracker
+## 24. Support for `IN` clause in streaming SQL
 
 - Decision: drop
-- Score: 36 -> -69
-- Issue: https://github.com/speakers-in-tech/conference-data/issues/11
+- Score: 30 -> -180
+- Issue: https://github.com/getdozer/dozer/issues/1659
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 7 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/getdozer/dozer/pull/2493
+- Competing PR: https://github.com/getdozer/dozer/pull/2496
+- Competing PR: https://github.com/getdozer/dozer/pull/2497
+- Competing PR: https://github.com/getdozer/dozer/pull/2494
+- Competing PR: https://github.com/getdozer/dozer/pull/2490
 
-## 31. Incentivise pioneer exploration of virgin areas
+## 25. [Tutorial] Getting NIGHT Tokens: Exchanges, Bridging & Wallet Funding on Mainnet
 
 - Decision: drop
-- Score: 36 -> -69
-- Issue: https://github.com/wiglenet/wigle-wifi-wardriving/issues/77
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 30 -> -210
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/322
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: light competition allowed: 7 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/507
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/391
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/419
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/504
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/329
 
-## 32. [EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2155
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 33. Fixing the bounty award system
+## 26. [Tutorial] Decoding Error 1010: What 'Invalid Transaction' Actually Means
 
 - Decision: drop
-- Score: 35 -> -35
-- Issue: https://github.com/ResearchHub/issues/issues/531
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 34. Create a Bounty Amount Box Issue
-
-- Decision: drop
-- Score: 35 -> -65
-- Issue: https://github.com/ResearchHub/issues/issues/540
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 35. Sync Issue-Assigned property from GH to LB
-
-- Decision: drop
-- Score: 35 -> -35
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 36. Feature Request: Copy rule(s) to Private Workspace
-
-- Decision: keep
-- Score: 30 -> -5
-- Issue: https://github.com/requestly/requestly/issues/3825
+- Score: 30 -> -180
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/318
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: light competition allowed: 5 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/517
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/467
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/450
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/460
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/394
 
-## 37. Implement trace thickness as a parameter
-
-- Decision: keep
-- Score: 26 -> -9
-- Issue: https://github.com/tscircuit/tscircuit-autorouter/issues/66
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 38. Improve 3d model loading to avoid laggy browser
+## 27. Add debugger ai like concept to debug in code but with prompts and breakpoints
 
 - Decision: drop
-- Score: 26 -> -79
-- Issue: https://github.com/tscircuit/3d-viewer/issues/93
+- Score: 22 -> -158
+- Issue: https://github.com/atharvnaik1/ipaship-audit/issues/92
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 5 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/atharvnaik1/ipaship-audit/pull/131
+- Competing PR: https://github.com/atharvnaik1/ipaship-audit/pull/117
+- Competing PR: https://github.com/atharvnaik1/ipaship-audit/pull/93
+- Competing PR: https://github.com/atharvnaik1/ipaship-audit/pull/99
+- Competing PR: https://github.com/atharvnaik1/ipaship-audit/pull/154
 
-## 39. [Achievement] First Blood - First Merged PR - 3 RTC
-
-- Decision: drop
-- Score: 26 -> -79
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/518
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 40. Limits hit in UI or LLM proxy raise exceptions instead of showing user-friendly messages + org-wide limits don't respect the model.
+## 28. Remove `disableAutoFocus` in favor of `focusOnHover={false}`
 
 - Decision: drop
-- Score: 26 -> -79
-- Issue: https://github.com/archestra-ai/archestra/issues/4794
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 41. [Feature] Add `ENCRYPTION_KEY` Rotation Support — Currently Rotating the Key Breaks All Existing Encrypted Secrets
-
-- Decision: drop
-- Score: 24 -> -46
-- Issue: https://github.com/Agri-fund/agri-fi/issues/199
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 42. Remove `disableAutoFocus` in favor of `focusOnHover={false}`
-
-- Decision: drop
-- Score: 18 -> -87
+- Score: 18 -> -177
 - Issue: https://github.com/tscircuit/pcb-viewer/issues/163
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: too many open competing PRs found (13)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/tscircuit/pcb-viewer/pull/858
+- Competing PR: https://github.com/tscircuit/pcb-viewer/pull/856
+- Competing PR: https://github.com/tscircuit/pcb-viewer/pull/855
+- Competing PR: https://github.com/tscircuit/pcb-viewer/pull/854
+- Competing PR: https://github.com/tscircuit/pcb-viewer/pull/853
+
+## 29. document sveltekit backend instrumentation
+
+- Decision: drop
+- Score: 11 -> -184
+- Issue: https://github.com/highlight/highlight/issues/8032
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: too many open competing PRs found (14)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/highlight/highlight/pull/10453
+- Competing PR: https://github.com/highlight/highlight/pull/10457
+- Competing PR: https://github.com/highlight/highlight/pull/10464
+- Competing PR: https://github.com/highlight/highlight/pull/10458
+- Competing PR: https://github.com/highlight/highlight/pull/10432
+
+## 30. BOUNTY: add support for qdrant vector database in javascript sdk
+
+- Decision: drop
+- Score: 11 -> -244
+- Issue: https://github.com/arakoodev/EdgeChains/issues/273
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 10 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/537
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/534
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/487
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/510
+- Competing PR: https://github.com/arakoodev/EdgeChains/pull/478
+
+## 31. Add Support for Weaviate
+
+- Decision: drop
+- Score: 10 -> -95
+- Issue: https://github.com/AI-Northstar-Tech/vector-io/issues/74
+- Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 43. Add support for `vulture`-like dead code detection
+## 32. Integrate Wallet Connect via Reown AppKit
 
 - Decision: drop
-- Score: 16 -> -54
-- Issue: https://github.com/astral-sh/ruff/issues/872
+- Score: 6 -> -64
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5874
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 44. 小规模的领域内数据（10K左右），有什么训练建议吗
+## 33. [BOUNTY] RustChain Python SDK - pip-installable API Client
 
 - Decision: drop
-- Score: 16 -> -54
-- Issue: https://github.com/XIAO4579/PRISM/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 45. AI-Powered Research Assistant Suite
-
-- Decision: drop
-- Score: 11 -> -94
-- Issue: https://github.com/SCIBASE-AI/SCIBASE.AI/issues/16
+- Score: 5 -> -100
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/36
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
