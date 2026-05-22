@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-22 11:22 UTC
+Last run: 2026-05-22 12:35 UTC
 
-Kept candidates: 1
+Kept candidates: 0
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,228 +30,153 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. White hat message
-
-- Decision: keep
-- Score: 86 -> 51
-- Issue: https://github.com/to-nexus/go-cross/issues/63
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 5. Bounce VERP Return-Path silently overridden by Sender header in 7.1+
+## 4. [App] Lightning Bounties
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/mautic/mautic/issues/16151
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 85 -> -15
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/389
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 6. AIP-3 gap: bounty/mission wins not reflected in agent reputation breakdown (live data: 43 winning submissions, 0 reputation points)
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/Aigen-Protocol/aigen-protocol/issues/27
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 7. **Message from Whitehat**
+## 5. **Message from Whitehat**
 
 - Decision: drop
 - Score: 79 -> 9
 - Issue: https://github.com/qubic/core/issues/892
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. Contact Us Issue
+## 6. [App] BountyPay
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/432
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 75 -> -25
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 9. Emoji Reaction Claim - 10 Reactions - 2026-05-22 10:24 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12000
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 10. PR Review Claim - 3 PRs - 2026-05-22 10:24 UTC
+## 7. When a user returns `return { ... }` from a route instead of `return ctx.json({ ... })`, throw an error telling them to use `ctx.json`
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11999
+- Score: 71 -> -34
+- Issue: https://github.com/tscircuit/winterspec/issues/30
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 11. himmelblau-orchestrator deb package cannot be installed properly behind a corporate proxy
+## 8. [BUG-104] PR-123 quality_leaderboard crashes with float-conversion error on ISO timestamp — blocks auto_canonical_via_leaderboard
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/himmelblau-idm/himmelblau/issues/1401
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 64 -> -71
+- Issue: https://github.com/Jonnyton/Workflow/issues/988
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 12. Emoji Reaction Claim - 10 Reactions - 2026-05-22 09:20 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11996
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. PR Review Claim - 5 PRs - 2026-05-22 09:20 UTC
+## 9. Create wallet benchmarks
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11995
+- Score: 56 -> -49
+- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 14. Emoji Reaction Claim - 26 Reactions - 2026-05-22 08:15 UTC
+## 10. [BUG-103] build_branch silently drops node timeout_seconds from spec_json
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11990
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 43 -> -92
+- Issue: https://github.com/Jonnyton/Workflow/issues/987
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 15. PR Review Claim - 1 PRs - 2026-05-22 08:12 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11989
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 16. Emoji Reaction Claim - 8 Reactions - 2026-05-22 08:11 UTC
+## 11. Sats to Local Currency | Mexico
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11988
+- Score: 39 -> -66
+- Issue: https://github.com/sutt/docs/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 17. Emoji Reaction Claim - 14 Reactions - 2026-05-22 08:09 UTC
+## 12. Generalized "GitHub Webhook + Contributor Role -> Rewards" No Config v1
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11987
+- Score: 36 -> -69
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5039
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 18. Emoji Reaction Claim - 9 Reactions - 2026-05-22 08:07 UTC
+## 13. [App] uBounty
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11986
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 35 -> -65
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 19. Emoji Reaction Claim - 14 Reactions - 2026-05-22 08:05 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11985
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 20. Emoji Reaction Claim - 5 Reactions - 2026-05-22 08:02 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11984
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 21. Emoji Reaction Claim - 16 Reactions - 2026-05-22 08:00 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11983
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 22. Emoji Reaction Claim - 7 Reactions - 2026-05-22 07:57 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11982
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 23. PR Review Claim - 1 PRs - 2026-05-22 07:57 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11981
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. Emoji Reaction Claim - 10 Reactions - 2026-05-22 07:55 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11980
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 25. Emoji Reaction Claim - 5 Reactions - 2026-05-22 07:53 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11979
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 26. PR Review Claim - 1 PRs - 2026-05-22 07:53 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11978
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 27. Emoji Reaction Claim - 5 Reactions - 2026-05-22 07:51 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11976
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 28. PR Review Claim - 2 PRs - 2026-05-22 07:47 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11975
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 29. Retail Task 10 DB oracle appears to omit required return side effects
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/sierra-research/tau2-bench/issues/316
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 30. Add Hindi Voice Support Alongside Existing English TTS in Voice Triage
+## 14. Fixing the bounty award system
 
 - Decision: drop
 - Score: 35 -> -35
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/414
+- Issue: https://github.com/ResearchHub/issues/issues/531
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 31. BIM Workbench: Adding Missing Information
+## 15. Create a Bounty Amount Box Issue
 
 - Decision: drop
-- Score: 35 -> -70
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
+- Score: 35 -> -65
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 16. Sync Issue-Assigned property from GH to LB
+
+- Decision: drop
+- Score: 35 -> -35
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. Add option `objectLimit` that limits the number of objects displayed (after filters) on InteractiveGraphics
+
+- Decision: drop
+- Score: 26 -> -79
+- Issue: https://github.com/tscircuit/graphics-debug/issues/42
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 32. Launch error S.T.A.L.K.E.R. Clear sky
+## 18. [BUG]: Nested Partial Select returns null on left join if first column value is null
 
 - Decision: drop
-- Score: 31 -> -39
-- Issue: https://github.com/OpenXRay/xray-16/issues/2067
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 33. [Critical] Token minted before user confirmation in confirmPlantReceipt — infinite generation
-
-- Decision: drop
-- Score: 31 -> -39
-- Issue: https://github.com/Shruti070107/ReGenX/issues/145
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 34. Make locale configurable
-
-- Decision: drop
-- Score: 30 -> -75
-- Issue: https://github.com/HelgeSverre/ollama-gui/issues/26
+- Score: 16 -> -89
+- Issue: https://github.com/drizzle-team/drizzle-orm/issues/1603
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 35. [rocket-pool] DEFI@home
+## 19. Multiple Matchmaking Comments
 
-- Decision: keep
-- Score: 30 -> -5
-- Issue: https://github.com/guil-lambert/defipunkd/issues/227
+- Decision: drop
+- Score: 14 -> -56
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5055
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. Nomic Embeddings Model for +10% Accuracy
+
+- Decision: drop
+- Score: 14 -> -91
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5064
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 21. Repository return type errors when using multiple entity managers
+
+- Decision: drop
+- Score: 6 -> -99
+- Issue: https://github.com/phpstan/phpstan-doctrine/issues/655
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 22. Improve Task Assignment Limit Handling
+
+- Decision: drop
+- Score: 6 -> -64
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5085
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. Reminder is sent on PR reopening even with no assignee
+
+- Decision: drop
+- Score: 6 -> -99
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5957
+- Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode

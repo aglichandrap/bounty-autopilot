@@ -1,17 +1,1 @@
-[
-  {
-    "title": "White hat message",
-    "url": "https://github.com/to-nexus/go-cross/issues/63",
-    "repository_url": "https://github.com/to-nexus/go-cross",
-    "updated_at": "2026-05-22T10:21:54Z",
-    "score": 51,
-    "amount_hint": "$20k, $496",
-    "reason": "paid/bounty wording, visible amount, new issue, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  }
-]
+[]
