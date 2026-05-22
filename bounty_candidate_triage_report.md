@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-22 02:39 UTC
+Last run: 2026-05-22 04:47 UTC
 
-Kept candidates: 3
+Kept candidates: 0
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,136 +30,158 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. zenscript
-
-- Decision: keep
-- Score: 94 -> 59
-- Issue: https://github.com/tranhuybr88-art/zenhub/issues/1
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 5. Bounty: USDC for first external agent x402 MCP call
+## 4. Submission: NEXUS BazaarSignalAgent — Chef Bazaar + prediction-market signal layer
 
 - Decision: drop
-- Score: 71 -> 1
-- Issue: https://github.com/RileyCraig14/nexus-agent/issues/1
+- Score: 110 -> 10
+- Issue: https://github.com/awrsla/agent-bazaar-challenge/issues/3
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 5. NEXUS x402 — Kalshi/Polymarket cross-market spread API
+
+- Decision: drop
+- Score: 104 -> 34
+- Issue: https://github.com/stormulv/PolyMarket-AI-agent-trading/issues/4
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. [Tutorial] Designing Public vs. Private State: What Goes Where and Why
+## 6. List NEXUS — x402 Kalshi/Polymarket arb MCP ($0.02/call, free odds)
 
 - Decision: drop
-- Score: 71 -> -64
-- Issue: https://github.com/midnightntwrk/contributor-hub/issues/292
-- Reason: content bounty has AI-content disqualification risk for autonomous work
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 7. [Data Source] Zero-auth Kalshi/Polymarket arb spread API + MCP — live 28pt Fed spread, x402 native
-
-- Decision: drop
-- Score: 66 -> -4
-- Issue: https://github.com/alsk1992/CloddsBot/issues/42
+- Score: 104 -> 34
+- Issue: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker/issues/23
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. [WIKI-PATCH] PATCH-REQ: revise canon-08 work-package priority — modern public catalog data as active scientific spine; pre-modern literature as calibration/regression only
+## 7. List NEXUS — x402 Kalshi/Polymarket arb MCP ($0.02/call, free odds)
 
 - Decision: drop
-- Score: 64 -> -36
-- Issue: https://github.com/Jonnyton/Workflow/issues/957
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Score: 104 -> 34
+- Issue: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker/issues/24
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 9. Challenge #3: implement support for slurm
+## 8. NEXUS x402 prediction market data — Kalshi/Polymarket arb API
 
 - Decision: drop
-- Score: 56 -> -49
-- Issue: https://github.com/qtop/qtop/issues/356
+- Score: 96 -> -9
+- Issue: https://github.com/MervinPraison/PraisonAI/issues/1716
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 10. Event-Driven Agent Lifecycle + Idempotency + Reputation + Timeout Handling
+## 9. NEXUS x402 spread API — 22.75pt Fed arb live
 
 - Decision: drop
-- Score: 54 -> -51
-- Issue: https://github.com/Mosss-OS/ABB/issues/33
+- Score: 96 -> 26
+- Issue: https://github.com/sanzoI-tech/polymarket-kalshi-arbitrage-bot/issues/4
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 11. [Bounty] Add Documentation
-
-- Decision: keep
-- Score: 46 -> 11
-- Issue: https://github.com/Kleo-Network/kleo-connect/issues/56
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 12. JMD Currency Precision — Full-Stack Fix
+## 10. NEXUS x402 spread API — Kalshi/Polymarket arb data
 
 - Decision: drop
-- Score: 42 -> -93
-- Issue: https://github.com/lnflash/flash/issues/282
+- Score: 96 -> 26
+- Issue: https://github.com/neosun100/openAgentPay/issues/3
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 11. NEXUS x402 spread API — Kalshi/Polymarket arb data
+
+- Decision: drop
+- Score: 96 -> 26
+- Issue: https://github.com/schumachero/PolyKalshi/issues/9
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 12. [Submit] NEXUS Intelligence — AgentKit + A2A + x402 Kalshi/Polymarket
+
+- Decision: drop
+- Score: 96 -> 26
+- Issue: https://github.com/chatmcp/mcpso/issues/2458
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 13. 📡 P3 RADAR 🔴 [ZEC/USD/4H] ▼ BAJISTA (SHORT) · 17h BOG
+
+- Decision: drop
+- Score: 94 -> -41
+- Issue: https://github.com/Metapro-art/zec-scanner/issues/164
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 13. bug: Rule shows “1 applied filter” even when no filter is applied
-
-- Decision: keep
-- Score: 40 -> 5
-- Issue: https://github.com/requestly/requestly/issues/3826
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 14. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
+## 14. [BE] Integration, Testing, and Documentation
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/TensorBlock/awesome-mcp-servers/issues/110
+- Score: 85 -> 15
+- Issue: https://github.com/Driedoutjerky/memory-egg-back/issues/7
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. Developer feedback: three friction points when integrating v4 for the first time
+## 15. [BE] Quest and Will API
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
+- Score: 85 -> 15
+- Issue: https://github.com/Driedoutjerky/memory-egg-back/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+## 16. [BE] Post and Archive API
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
+- Score: 85 -> 15
+- Issue: https://github.com/Driedoutjerky/memory-egg-back/issues/4
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 17. Feature Request: Copy rule(s) to Private Workspace
-
-- Decision: keep
-- Score: 30 -> -5
-- Issue: https://github.com/requestly/requestly/issues/3825
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 18. need PRs that implement the 4 main sh1pt cli commands (and sub-commands) as seen in our docs page:
+## 17. Reward pipeline skips abandoned episodes — 98% of closed episodes never scored
 
 - Decision: drop
-- Score: 16 -> -89
-- Issue: https://github.com/profullstack/sh1pt/issues/133
+- Score: 85 -> 15
+- Issue: https://github.com/MemTensor/MemOS/issues/1782
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 19. Quality scorer assigns 100/100 to fabricated GitHub release URLs (no source-existence check)
+## 18. 📈 گزارش تحلیل فارکس - 2026-05-22
 
 - Decision: drop
-- Score: 16 -> -89
-- Issue: https://github.com/aibtcdev/agent-news/issues/810
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> -15
+- Issue: https://github.com/alicsx/my-news-feed/issues/2797
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 20. BOUNTY: add support for qdrant vector database in javascript sdk
-
-- Decision: drop
-- Score: 11 -> -94
-- Issue: https://github.com/arakoodev/EdgeChains/issues/273
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 21. [FEATURE]: Default select for custom types
+## 19. Phase 4: populate quest_prerequisites flag-graph (10 -> 1000+, closes #67)
 
 - Decision: drop
-- Score: 6 -> -99
-- Issue: https://github.com/drizzle-team/drizzle-orm/issues/1083
+- Score: 85 -> 15
+- Issue: https://github.com/ssilvius/kessel/issues/131
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 20. 探索bug
+
+- Decision: drop
+- Score: 81 -> 11
+- Issue: https://github.com/AzurTian/OnmyojiAutoScript/issues/105
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 21. [Troubleshoot]: LoRA finetuning OOM OpenPI
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/RLinf/RLinf/issues/1194
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 22. [Quest] - "Projections and Plans" sometimes can't be completed
+
+- Decision: drop
+- Score: 75 -> 5
+- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/25924
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. Maximize ROI with an Independence Fmcg franchise business
+
+- Decision: drop
+- Score: 75 -> 5
+- Issue: https://github.com/campacolabusiness12/campa-cola-business/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. Emoji Reaction Claim - 10 Reactions - 2026-05-22 04:28 UTC
+
+- Decision: drop
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/11955
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 25. Custom Loot datapack does not work
+
+- Decision: drop
+- Score: 75 -> 5
+- Issue: https://github.com/alfiehanks/Immersive-Enchanting/issues/69
+- Reason: no clear open paid bounty signal >= $10 found

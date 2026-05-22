@@ -1,65 +1,115 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 02:38 UTC
+Last run: 2026-05-22 04:45 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. JMD Currency Precision — Full-Stack Fix
+## 1. [BE] Integration, Testing, and Documentation
 
-- Score: 42
-- Amount hint: $1,000
-- Issue: https://github.com/lnflash/flash/issues/282
-- Repository: https://github.com/lnflash/flash
-- Updated: 2026-05-22T00:02:51Z
-- Why it matched: mentions bounty/reward, has visible amount, busy thread
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
-
-- Score: 39
+- Score: 51
 - Amount hint: amount not obvious
-- Issue: https://github.com/TensorBlock/awesome-mcp-servers/issues/110
-- Repository: https://github.com/TensorBlock/awesome-mcp-servers
-- Updated: 2026-05-21T22:55:30Z
+- Issue: https://github.com/Driedoutjerky/memory-egg-back/issues/7
+- Repository: https://github.com/Driedoutjerky/memory-egg-back
+- Updated: 2026-05-22T04:30:46Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Developer feedback: three friction points when integrating v4 for the first time
+## 2. P1: Reduce RL policy-gradient normalization after near-zero trusted-gradient signal
 
-- Score: 39
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
-- Repository: https://github.com/hashgraph/hedera-agent-kit-js
-- Updated: 2026-05-21T16:57:27Z
+- Issue: https://github.com/lanyusea/screeps/issues/1319
+- Repository: https://github.com/lanyusea/screeps
+- Updated: 2026-05-22T04:20:03Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
+## 3. Reward pipeline skips abandoned episodes — 98% of closed episodes never scored
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
-- Repository: https://github.com/hashgraph/hedera-agent-kit-js
-- Updated: 2026-05-21T16:56:21Z
+- Issue: https://github.com/MemTensor/MemOS/issues/1782
+- Repository: https://github.com/MemTensor/MemOS
+- Updated: 2026-05-22T04:24:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [WIKI-PATCH] PATCH-REQ: revise canon-08 work-package priority — modern public catalog data as active scientific spine; pre-modern literature as calibration/regression only
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Jonnyton/Workflow/issues/957
-- Repository: https://github.com/Jonnyton/Workflow
-- Updated: 2026-05-22T01:36:31Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Bounty scout candidates
+## 4. NEXUS x402 — Kalshi/Polymarket cross-market spread API
 
 - Score: 34
-- Amount hint: $10.00, $100
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-22T00:18:33Z
-- Why it matched: mentions bounty/reward, has visible amount, large issue body, likely claimed: \bclaim\b, low discussion volume
+- Amount hint: $0.02, 02 USD
+- Issue: https://github.com/stormulv/PolyMarket-AI-agent-trading/issues/4
+- Repository: https://github.com/stormulv/PolyMarket-AI-agent-trading
+- Updated: 2026-05-22T04:35:35Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. List NEXUS — x402 Kalshi/Polymarket arb MCP ($0.02/call, free odds)
+
+- Score: 34
+- Amount hint: $0.02
+- Issue: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker/issues/23
+- Repository: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker
+- Updated: 2026-05-22T04:35:33Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. List NEXUS — x402 Kalshi/Polymarket arb MCP ($0.02/call, free odds)
+
+- Score: 34
+- Amount hint: $0.02
+- Issue: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker/issues/24
+- Repository: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker
+- Updated: 2026-05-22T04:35:30Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. [Data Source] Zero-auth Kalshi/Polymarket arb spread API + MCP — live 28pt Fed spread, x402 native
+
+- Score: 29
+- Amount hint: $0.02, 02 USD
+- Issue: https://github.com/alsk1992/CloddsBot/issues/42
+- Repository: https://github.com/alsk1992/CloddsBot
+- Updated: 2026-05-22T04:35:26Z
+- Why it matched: has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. NEXUS x402 spread API — 22.75pt Fed arb live
+
+- Score: 29
+- Amount hint: $25
+- Issue: https://github.com/sanzoI-tech/polymarket-kalshi-arbitrage-bot/issues/4
+- Repository: https://github.com/sanzoI-tech/polymarket-kalshi-arbitrage-bot
+- Updated: 2026-05-22T04:25:10Z
+- Why it matched: has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. NEXUS x402 spread API — Kalshi/Polymarket arb data
+
+- Score: 29
+- Amount hint: $0.02
+- Issue: https://github.com/neosun100/openAgentPay/issues/3
+- Repository: https://github.com/neosun100/openAgentPay
+- Updated: 2026-05-22T04:25:05Z
+- Why it matched: has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. NEXUS x402 spread API — Kalshi/Polymarket arb data
+
+- Score: 29
+- Amount hint: $0.02
+- Issue: https://github.com/schumachero/PolyKalshi/issues/9
+- Repository: https://github.com/schumachero/PolyKalshi
+- Updated: 2026-05-22T04:25:03Z
+- Why it matched: has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. [Submit] NEXUS Intelligence — AgentKit + A2A + x402 Kalshi/Polymarket
+
+- Score: 29
+- Amount hint: $0.02
+- Issue: https://github.com/chatmcp/mcpso/issues/2458
+- Repository: https://github.com/chatmcp/mcpso
+- Updated: 2026-05-22T04:25:00Z
+- Why it matched: has visible amount
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
