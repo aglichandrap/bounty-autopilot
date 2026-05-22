@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-22 15:42 UTC
+Last built: 2026-05-22 16:28 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### Element should ignore events it cannot process (IoT)
+### White hat message
 
-- URL: https://github.com/element-hq/element-web/issues/22662
-- Amount: $14874408815468
+- URL: https://github.com/to-nexus/go-cross/issues/63
+- Amount: $20k, $496
 - Claim comment if rules allow:
 
 ```text

@@ -1,55 +1,12 @@
 [
   {
-    "title": "Element should ignore events it cannot process (IoT)",
-    "url": "https://github.com/element-hq/element-web/issues/22662",
-    "repository_url": "https://github.com/element-hq/element-web",
-    "updated_at": "2026-05-22T13:59:51Z",
-    "score": 71,
-    "amount_hint": "$14874408815468",
-    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  },
-  {
-    "title": "Agent template catalog",
-    "url": "https://github.com/archestra-ai/archestra/issues/3858",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-22T15:16:18Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Add durable agent memory for user, team, and organization context across sessions",
-    "url": "https://github.com/archestra-ai/archestra/issues/3837",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-22T08:20:14Z",
-    "score": 5,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "json in mcp server args textarea",
-    "url": "https://github.com/archestra-ai/archestra/issues/3859",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-22T05:38:38Z",
-    "score": 5,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope",
+    "title": "White hat message",
+    "url": "https://github.com/to-nexus/go-cross/issues/63",
+    "repository_url": "https://github.com/to-nexus/go-cross",
+    "updated_at": "2026-05-22T10:21:54Z",
+    "score": 45,
+    "amount_hint": "$20k, $496",
+    "reason": "paid/bounty wording, visible amount, new issue",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [

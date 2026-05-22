@@ -1,125 +1,75 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 15:40 UTC
+Last run: 2026-05-22 16:27 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $7k ] [ Workflow ] Validate artifact retention policies — cleanup scheduling
-
-- Score: 72
-- Amount hint: $7, $7000, Bounty $7, bounty $7000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2461
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T15:38:07Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. TaskBounty worker status
-
-- Score: 72
-- Amount hint: $10.00
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
-- Repository: https://github.com/asaadnashed/bounty-autopilot
-- Updated: 2026-05-22T15:39:54Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. Upload Photo Button Opens Scanner Instead of File Gallery
-
-- Score: 47
-- Amount hint: amount not obvious
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/325
-- Repository: https://github.com/RatLoopz/sahidawa-india
-- Updated: 2026-05-22T14:37:21Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. structural: Phase 06b — bootstrap RL training scaffold (TRL venv + episteme/rl module)
-
-- Score: 47
-- Amount hint: amount not obvious
-- Issue: https://github.com/forkwright/aletheia/issues/3979
-- Repository: https://github.com/forkwright/aletheia
-- Updated: 2026-05-22T15:18:18Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. feat(aletheia): Q-learning router with prioritized experience replay for dispatch routing
+## 1. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/forkwright/aletheia/issues/3969
-- Repository: https://github.com/forkwright/aletheia
-- Updated: 2026-05-22T15:16:52Z
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-21T12:48:20Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. BIMI VMC purchase + activate (deferred, paid)
-
-- Score: 38
-- Amount hint: $1,499
-- Issue: https://github.com/pinohu/lead-os/issues/71
-- Repository: https://github.com/pinohu/lead-os
-- Updated: 2026-05-22T11:32:07Z
-- Why it matched: has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. BIM Workbench: Adding Missing Information
+## 2. [App] BountyPay
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-22T15:31:23Z
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:38Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. himmelblau-orchestrator deb package cannot be installed properly
+## 3. [App] uBounty
 
 - Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/himmelblau-idm/himmelblau/issues/1401
-- Repository: https://github.com/himmelblau-idm/himmelblau
-- Updated: 2026-05-22T15:25:32Z
+- Amount hint: 402, usd
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:34Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Roleplay experience system needs overhauled
+## 4. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Haven-of-the-Embraced/src/issues/625
-- Repository: https://github.com/Haven-of-the-Embraced/src
-- Updated: 2026-05-22T15:39:19Z
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. Incorrect message when leaving RDF: You are no longer queued in the Dungeon Finder
+## 5. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/chromiecraft/chromiecraft/issues/9554
-- Repository: https://github.com/chromiecraft/chromiecraft
-- Updated: 2026-05-22T15:33:47Z
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. Deepen the Planet Square module
+## 6. Sync Issue-Assigned property from GH to LB
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/mmmattG/the-square/issues/99
-- Repository: https://github.com/mmmattG/the-square
-- Updated: 2026-05-22T15:33:31Z
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. Question about improving stability when switching into an AMP policy on a real robot
+## 7. [ Bounty $5k ] [ Sandbox ] Return execution_id before long tasks finish — executor API contract
 
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Open-X-Humanoid/TienKung-Lab/issues/61
-- Repository: https://github.com/Open-X-Humanoid/TienKung-Lab
-- Updated: 2026-05-22T15:30:27Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Score: 26
+- Amount hint: $5, $5000, Bounty $5, bounty $5000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2474
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-22T16:09:05Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
