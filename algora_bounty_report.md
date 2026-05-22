@@ -1,8 +1,24 @@
 # Algora Bounty Scout
 
-Last run: 2026-05-22 22:44 UTC
+Last run: 2026-05-22 23:51 UTC
 
-Found candidates: 2
+Found candidates: 4
+
+## Replace panic with error handling in template loader when dialers are missing
+
+- Amount: $100
+- Issue: https://github.com/projectdiscovery/nuclei/issues/6674
+- Repository: https://github.com/projectdiscovery/nuclei
+- Score: 150
+- Reason: Algora open paid bounty from https://algora.io/projectdiscovery/bounties
+
+## Integrate typos tool into CI
+
+- Amount: $100
+- Issue: https://github.com/projectdiscovery/nuclei/issues/6532
+- Repository: https://github.com/projectdiscovery/nuclei
+- Score: 150
+- Reason: Algora open paid bounty from https://algora.io/projectdiscovery/bounties
 
 ## [CAL-3105] BigBlueButton Integration
 
@@ -19,7 +35,3 @@ Found candidates: 2
 - Repository: https://github.com/calcom/cal.com
 - Score: 160
 - Reason: Algora open paid bounty from https://algora.io/cal/bounties
-
-## Errors
-
-- https://algora.io/projectdiscovery/bounties: HTTP Error 500: Internal Server Error

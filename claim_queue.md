@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-22 22:56 UTC
+Last built: 2026-05-22 23:51 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -23,3 +23,37 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 - URL: https://www.task-bounty.com/task/taskbounty-mcp-server-18-device-login-polling-logi-v2c223
 - Amount: $10.00
 - Status: needs TaskBounty agent API access before attempting/submitting.
+
+## GitHub
+
+### EMDG: keep receipts, but gated until turnover >$100k (not yet eligible)
+
+- URL: https://github.com/nickmeinhold/claude-tasks/issues/35
+- Amount: $100k, $20, $20k
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### [Bounty $20] Inline declarations throw exception.
+
+- URL: https://github.com/Syncleus/aparapi/issues/97
+- Amount: $20, $1, $3
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
