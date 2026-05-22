@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-22 00:18 UTC
+Last run: 2026-05-22 02:39 UTC
 
-Kept candidates: 0
+Kept candidates: 3
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,111 +30,136 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. BIMI VMC purchase + activate (deferred, paid)
+## 4. zenscript
+
+- Decision: keep
+- Score: 94 -> 59
+- Issue: https://github.com/tranhuybr88-art/zenhub/issues/1
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 5. Bounty: USDC for first external agent x402 MCP call
 
 - Decision: drop
-- Score: 98 -> -7
-- Issue: https://github.com/pinohu/lead-os/issues/71
+- Score: 71 -> 1
+- Issue: https://github.com/RileyCraig14/nexus-agent/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 6. [Tutorial] Designing Public vs. Private State: What Goes Where and Why
+
+- Decision: drop
+- Score: 71 -> -64
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/292
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 7. [Data Source] Zero-auth Kalshi/Polymarket arb spread API + MCP — live 28pt Fed spread, x402 native
+
+- Decision: drop
+- Score: 66 -> -4
+- Issue: https://github.com/alsk1992/CloddsBot/issues/42
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. [WIKI-PATCH] PATCH-REQ: revise canon-08 work-package priority — modern public catalog data as active scientific spine; pre-modern literature as calibration/regression only
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/Jonnyton/Workflow/issues/957
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 9. Challenge #3: implement support for slurm
+
+- Decision: drop
+- Score: 56 -> -49
+- Issue: https://github.com/qtop/qtop/issues/356
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. V3 Protocol Team
+## 10. Event-Driven Agent Lifecycle + Idempotency + Reputation + Timeout Handling
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/yearn/budget/issues/120
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 6. Paid flow: Stripe success creates paid scan session token
-
-- Decision: drop
-- Score: 75 -> -30
-- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/27
+- Score: 54 -> -51
+- Issue: https://github.com/Mosss-OS/ABB/issues/33
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 7. Monetization UX: optimization pack unlock
+## 11. [Bounty] Add Documentation
 
-- Decision: drop
-- Score: 75 -> -30
-- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/24
-- Reason: no clear open paid bounty signal >= $10 found
+- Decision: keep
+- Score: 46 -> 11
+- Issue: https://github.com/Kleo-Network/kleo-connect/issues/56
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 8. How to manage state in meteor Vue project with Pinia ORM [PROPOSAL]
+## 12. JMD Currency Precision — Full-Stack Fix
 
 - Decision: drop
-- Score: 65 -> -5
-- Issue: https://github.com/CloudByGalaxy/galaxy-community-writers/issues/28
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 9. [PROPOSAL] Handling File Uploads in Node.js using Multer
-
-- Decision: drop
-- Score: 65 -> -5
-- Issue: https://github.com/CloudByGalaxy/galaxy-community-writers/issues/32
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 10. BIM Workbench: Adding Missing Information
-
-- Decision: drop
-- Score: 60 -> -10
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 11. 📡 P3 RADAR 🔴 [ZEC/USD/4H] ▼ BAJISTA (SHORT) · 18h BOG
-
-- Decision: drop
-- Score: 60 -> -75
-- Issue: https://github.com/Metapro-art/zec-scanner/issues/165
+- Score: 42 -> -93
+- Issue: https://github.com/lnflash/flash/issues/282
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 12. Paid install UX: post-Stripe plugin command and rollback instructions
+## 13. bug: Rule shows “1 applied filter” even when no filter is applied
+
+- Decision: keep
+- Score: 40 -> 5
+- Issue: https://github.com/requestly/requestly/issues/3826
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 14. Add: Quantish prediction market MCP servers (Polymarket, Kalshi, Limitless)
 
 - Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/30
+- Score: 39 -> -31
+- Issue: https://github.com/TensorBlock/awesome-mcp-servers/issues/110
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 13. 帝国数字服务清单 - $1起，接受USDT TRC20支付
+## 15. Developer feedback: three friction points when integrating v4 for the first time
 
 - Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/jiezishu000/empire-digital-shop/issues/1
+- Score: 39 -> -31
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/836
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. Draft Workbench: Adding Missing Information
+## 16. HAK v4: Plugin registration order affects tool availability in HederaAgentAPI
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/27
+- Score: 39 -> -31
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/834
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. Epic: patch survival and patch-yield metrics
+## 17. Feature Request: Copy rule(s) to Private Workspace
+
+- Decision: keep
+- Score: 30 -> -5
+- Issue: https://github.com/requestly/requestly/issues/3825
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 18. need PRs that implement the 4 main sh1pt cli commands (and sub-commands) as seen in our docs page:
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/86
+- Score: 16 -> -89
+- Issue: https://github.com/profullstack/sh1pt/issues/133
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 16. Meeting Summary 06/06/2024
+## 19. Quality scorer assigns 100/100 to fabricated GitHub release URLs (no source-existence check)
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/SingularityNet-Ambassador-Program/African-Guild/issues/17
+- Score: 16 -> -89
+- Issue: https://github.com/aibtcdev/agent-news/issues/810
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 17. Laravel template - Quiz App
+## 20. BOUNTY: add support for qdrant vector database in javascript sdk
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/codesphere-community/templates/issues/5
+- Score: 11 -> -94
+- Issue: https://github.com/arakoodev/EdgeChains/issues/273
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 18. AI Code completion tool
+## 21. [FEATURE]: Default select for custom types
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/codesphere-community/templates/issues/16
+- Score: 6 -> -99
+- Issue: https://github.com/drizzle-team/drizzle-orm/issues/1083
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode

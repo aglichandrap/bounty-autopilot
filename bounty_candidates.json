@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "title": "zenscript",
+    "url": "https://github.com/tranhuybr88-art/zenhub/issues/1",
+    "repository_url": "https://github.com/tranhuybr88-art/zenhub",
+    "updated_at": "2026-05-22T01:47:47Z",
+    "score": 59,
+    "amount_hint": "$25,000",
+    "reason": "paid/bounty wording, visible amount, low discussion, new issue, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "[Bounty] Add Documentation",
+    "url": "https://github.com/Kleo-Network/kleo-connect/issues/56",
+    "repository_url": "https://github.com/Kleo-Network/kleo-connect",
+    "updated_at": "2026-05-22T02:33:59Z",
+    "score": 11,
+    "amount_hint": "25 USD",
+    "reason": "paid/bounty wording, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "bug: Rule shows “1 applied filter” even when no filter is applied",
+    "url": "https://github.com/requestly/requestly/issues/3826",
+    "repository_url": "https://github.com/requestly/requestly",
+    "updated_at": "2026-05-20T10:05:06Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  }
+]
