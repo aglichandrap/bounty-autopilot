@@ -1,115 +1,125 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 04:45 UTC
+Last run: 2026-05-22 06:34 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [BE] Integration, Testing, and Documentation
+## 1. [BUG][高] L_13 VIP 规则奖励应为「锁」vip-rule reward ·
 
-- Score: 51
+- Score: 68
+- Amount hint: $1.00, $1, $5, 1 USD
+- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/75
+- Repository: https://github.com/LeoVeeNetVip/team-docs
+- Updated: 2026-05-22T06:20:13Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. [Docs] Doc staleness sweep 2026-05-22
+
+- Score: 68
+- Amount hint: 21 sats, 100 sats
+- Issue: https://github.com/RUNSTR-LLC/RUNSTR/issues/352
+- Repository: https://github.com/RUNSTR-LLC/RUNSTR
+- Updated: 2026-05-22T06:18:23Z
+- Why it matched: mentions bounty/reward, has visible amount, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. [BUG][中] JIAN_15 注册后无邮件 + 后台无记录
+
+- Score: 68
+- Amount hint: $10, $1
+- Issue: https://github.com/LeoVeeNetVip/team-docs/issues/105
+- Repository: https://github.com/LeoVeeNetVip/team-docs
+- Updated: 2026-05-22T06:18:22Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. Submission: NEXUS BazaarSignalAgent — Chef Bazaar + prediction-market signal layer
+
+- Score: 68
+- Amount hint: $0.02, 02 USD
+- Issue: https://github.com/awrsla/agent-bazaar-challenge/issues/3
+- Repository: https://github.com/awrsla/agent-bazaar-challenge
+- Updated: 2026-05-22T06:16:20Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. [BOUNTY] [level:critical] Build AI-Driven Semantic Duplicate Ticket Detection with Vector Embeddings & Cosine Similarity
+
+- Score: 47
 - Amount hint: amount not obvious
-- Issue: https://github.com/Driedoutjerky/memory-egg-back/issues/7
-- Repository: https://github.com/Driedoutjerky/memory-egg-back
-- Updated: 2026-05-22T04:30:46Z
+- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/74
+- Repository: https://github.com/ritesh-1918/HELPDESK.AI
+- Updated: 2026-05-22T06:25:11Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. P1: Reduce RL policy-gradient normalization after near-zero trusted-gradient signal
+## 6. [BOUNTY] [level:critical] Implement Enterprise SLA Breach & Automated Multi-Channel Escalation Engine
 
 - Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/lanyusea/screeps/issues/1319
-- Repository: https://github.com/lanyusea/screeps
-- Updated: 2026-05-22T04:20:03Z
+- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/75
+- Repository: https://github.com/ritesh-1918/HELPDESK.AI
+- Updated: 2026-05-22T06:25:24Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Reward pipeline skips abandoned episodes — 98% of closed episodes never scored
+## 7. feat: add OrcaRouter chat model integration
 
-- Score: 39
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/MemTensor/MemOS/issues/1782
-- Repository: https://github.com/MemTensor/MemOS
-- Updated: 2026-05-22T04:24:16Z
+- Issue: https://github.com/agentscope-ai/agentscope/issues/1637
+- Repository: https://github.com/agentscope-ai/agentscope
+- Updated: 2026-05-22T06:10:40Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. NEXUS x402 — Kalshi/Polymarket cross-market spread API
+## 8. P1: Restore true policy-gradient update step after fixed-vector recurrence
 
-- Score: 34
-- Amount hint: $0.02, 02 USD
-- Issue: https://github.com/stormulv/PolyMarket-AI-agent-trading/issues/4
-- Repository: https://github.com/stormulv/PolyMarket-AI-agent-trading
-- Updated: 2026-05-22T04:35:35Z
-- Why it matched: has visible amount, low discussion volume
+- Score: 42
+- Amount hint: amount not obvious
+- Issue: https://github.com/lanyusea/screeps/issues/1299
+- Repository: https://github.com/lanyusea/screeps
+- Updated: 2026-05-22T06:27:21Z
+- Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. List NEXUS — x402 Kalshi/Polymarket arb MCP ($0.02/call, free odds)
+## 9. Add Several Zcash Wallets to Zcash Wallets Page
 
-- Score: 34
-- Amount hint: $0.02
-- Issue: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker/issues/23
-- Repository: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker
-- Updated: 2026-05-22T04:35:33Z
-- Why it matched: has visible amount, low discussion volume
+- Score: 35
+- Amount hint: Bounty: 0
+- Issue: https://github.com/ZecHub/zechub/issues/1659
+- Repository: https://github.com/ZecHub/zechub
+- Updated: 2026-05-22T06:19:32Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. List NEXUS — x402 Kalshi/Polymarket arb MCP ($0.02/call, free odds)
+## 10. Question about improving stability when switching into an AMP policy on a real robot
 
-- Score: 34
-- Amount hint: $0.02
-- Issue: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker/issues/24
-- Repository: https://github.com/BlockRunAI/awesome-OpenClaw-Money-Maker
-- Updated: 2026-05-22T04:35:30Z
-- Why it matched: has visible amount, low discussion volume
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Open-X-Humanoid/TienKung-Lab/issues/61
+- Repository: https://github.com/Open-X-Humanoid/TienKung-Lab
+- Updated: 2026-05-22T06:16:50Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. [Data Source] Zero-auth Kalshi/Polymarket arb spread API + MCP — live 28pt Fed spread, x402 native
+## 11. GitHub bounty submitter status
 
-- Score: 29
-- Amount hint: $0.02, 02 USD
-- Issue: https://github.com/alsk1992/CloddsBot/issues/42
-- Repository: https://github.com/alsk1992/CloddsBot
-- Updated: 2026-05-22T04:35:26Z
-- Why it matched: has visible amount
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-22T06:34:11Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. NEXUS x402 spread API — 22.75pt Fed arb live
+## 12. Bounty: USDC for first external agent x402 MCP call
 
-- Score: 29
-- Amount hint: $25
-- Issue: https://github.com/sanzoI-tech/polymarket-kalshi-arbitrage-bot/issues/4
-- Repository: https://github.com/sanzoI-tech/polymarket-kalshi-arbitrage-bot
-- Updated: 2026-05-22T04:25:10Z
-- Why it matched: has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. NEXUS x402 spread API — Kalshi/Polymarket arb data
-
-- Score: 29
-- Amount hint: $0.02
-- Issue: https://github.com/neosun100/openAgentPay/issues/3
-- Repository: https://github.com/neosun100/openAgentPay
-- Updated: 2026-05-22T04:25:05Z
-- Why it matched: has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. NEXUS x402 spread API — Kalshi/Polymarket arb data
-
-- Score: 29
-- Amount hint: $0.02
-- Issue: https://github.com/schumachero/PolyKalshi/issues/9
-- Repository: https://github.com/schumachero/PolyKalshi
-- Updated: 2026-05-22T04:25:03Z
-- Why it matched: has visible amount
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [Submit] NEXUS Intelligence — AgentKit + A2A + x402 Kalshi/Polymarket
-
-- Score: 29
-- Amount hint: $0.02
-- Issue: https://github.com/chatmcp/mcpso/issues/2458
-- Repository: https://github.com/chatmcp/mcpso
-- Updated: 2026-05-22T04:25:00Z
-- Why it matched: has visible amount
+- Score: 30
+- Amount hint: $5, $0.01, 5 USD, 01 USD
+- Issue: https://github.com/RileyCraig14/nexus-agent/issues/1
+- Repository: https://github.com/RileyCraig14/nexus-agent
+- Updated: 2026-05-22T06:09:17Z
+- Why it matched: mentions bounty/reward, has visible amount, busy thread
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
