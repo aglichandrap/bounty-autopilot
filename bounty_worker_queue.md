@@ -1,9 +1,62 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-22 21:45 UTC
+Last built: 2026-05-22 22:45 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-No actionable bounty is queued right now.
+## Queue Item 1: 📱 Epic: BAWES Universe Mobile App (Android + iOS)
 
-Next action: wait for the next scout run or broaden search queries.
+- Issue: https://github.com/BAWES-Universe/workadventure-universe/issues/1
+- Repository: https://github.com/BAWES-Universe/workadventure-universe
+- Amount hint: amount not obvious
+- Score: 11
+- Work priority: 11.0
+- Match reason: paid/bounty wording, coding scope, fresh update
+
+### Worker Instructions
+
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
+
+## Queue Item 2: Agent template catalog
+
+- Issue: https://github.com/archestra-ai/archestra/issues/3858
+- Repository: https://github.com/archestra-ai/archestra
+- Amount hint: amount not obvious
+- Score: 5
+- Work priority: 5.0
+- Match reason: paid/bounty wording, coding scope
+
+### Worker Instructions
+
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
+
+## Queue Item 3: Validate reward generation behavior
+
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
+- Repository: https://github.com/devpool-directory/devpool-directory
+- Amount hint: amount not obvious
+- Score: 1
+- Work priority: 1.0
+- Match reason: paid/bounty wording, fresh update
+
+### Worker Instructions
+
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.

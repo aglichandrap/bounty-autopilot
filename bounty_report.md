@@ -1,40 +1,20 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 21:43 UTC
+Last run: 2026-05-22 22:43 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $5k ] [ Config ] Support literal underscores in override keys — env key mapping
-
-- Score: 76
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2588
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T21:28:39Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. [ Bounty $5k ] [ CLI ] Validate logs tail is non-negative — logs arguments
-
-- Score: 76
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2580
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T20:39:00Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. [ Bounty $4k ] [ Config ] Report JSON parse failures with path context — file loading
+## 1. TaskBounty worker status
 
 - Score: 72
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2600
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T21:36:28Z
+- Amount hint: $10.00
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-22T22:37:19Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions
+## 2. [ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions
 
 - Score: 72
 - Amount hint: $6, $6000, Bounty $6, bounty $6000
@@ -44,27 +24,37 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [ Bounty $5k ] [ Middleware ] Bound request timeout for streaming endpoints — timeout middleware
+## 3. Upload Photo Button Opens Scanner Instead of File Gallery
 
-- Score: 72
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2550
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T20:41:08Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. [Reward] HarnessClaw 体验测评（任一场景）
-
-- Score: 43
+- Score: 47
 - Amount hint: amount not obvious
-- Issue: https://github.com/harnessclaw/harnessclaw/issues/43
-- Repository: https://github.com/harnessclaw/harnessclaw
-- Updated: 2026-05-22T18:40:13Z
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/325
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-22T14:37:21Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Create wallet benchmarks
+## 4. [Global Call] WeChat Enterprise Cross-Bot Message Routing: OpenClaw→Hermes @Momo Bridge
+
+- Score: 42
+- Amount hint: amount not obvious
+- Issue: https://github.com/ZWISERFIT/zwiserfit-ai-store-manager/issues/8
+- Repository: https://github.com/ZWISERFIT/zwiserfit-ai-store-manager
+- Updated: 2026-05-22T21:04:48Z
+- Why it matched: mentions bounty/reward
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. Sats to Local Currency | Mexico
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-21T12:48:20Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. Create wallet benchmarks
 
 - Score: 38
 - Amount hint: amount not obvious
@@ -74,52 +64,62 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, large issue body
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 8. BIM Workbench: Adding Missing Information
+## 7. GitHub bounty submitter status
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-22T17:22:28Z
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-22T22:38:52Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 9. Draft Workbench: Adding Missing Information
+## 8. [App] BountyPay
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/27
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-22T17:01:22Z
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:38Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 10. PartDesign Workbench: Adding Missing Information
+## 9. [App] uBounty
 
-- Score: 30
+- Score: 35
+- Amount hint: 402, usd
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:34Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. Fixing the bounty award system
+
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/79
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-22T19:35:34Z
-- Why it matched: mentions bounty/reward
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 11. [ Bounty $4k ] [ Metrics ] Reject negative counter increments — counter integrity
+## 11. Create a Bounty Amount Box Issue
 
-- Score: 26
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2510
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T20:14:00Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 12. [ Bounty $6k ] [ CLI ] Inject SDK clients into CLI handlers — test isolation
+## 12. Sync Issue-Assigned property from GH to LB
 
-- Score: 26
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2554
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T20:12:43Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
