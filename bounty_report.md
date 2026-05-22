@@ -1,65 +1,125 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-22 17:27 UTC
+Last run: 2026-05-22 18:17 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $3k ] [ Middleware ] Validate multipart boundary before buffering upload — upload middleware
+## 1. BIMI VMC purchase + activate (deferred, paid)
 
-- Score: 72
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2523
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T17:23:37Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Score: 38
+- Amount hint: $1,499
+- Issue: https://github.com/pinohu/lead-os/issues/71
+- Repository: https://github.com/pinohu/lead-os
+- Updated: 2026-05-22T11:32:07Z
+- Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [ Bounty $5k ] [ Deploy ] Include queue backlog in canary decision — worker autoscaling
+## 2. BIM Workbench: Adding Missing Information
 
-- Score: 72
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2525
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T17:20:26Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. Multiline slash commands should not be evaluated as a comment
-
-- Score: 45
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5873
-- Repository: https://github.com/devpool-directory/devpool-directory
-- Updated: 2026-05-22T17:14:04Z
-- Why it matched: mentions bounty/reward, has visible amount, thin description, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. **Message from Whitehat**
-
-- Score: 43
-- Amount hint: amount not obvious
-- Issue: https://github.com/qubic/core/issues/892
-- Repository: https://github.com/qubic/core
-- Updated: 2026-05-22T16:18:23Z
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-22T17:22:28Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [ Bounty $5k ] [ CLI ] Validate agent_id format before backend calls — shared validation
+## 3. Draft Workbench: Adding Missing Information
 
-- Score: 34
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2367
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T16:14:44Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/27
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-22T17:01:22Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [ Bounty $4k ] [ Metrics ] Reject negative counter increments — counter integrity
+## 4. Paid flow: Stripe success creates paid scan session token
 
-- Score: 26
-- Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2510
+- Score: 34
+- Amount hint: $50
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/27
+- Repository: https://github.com/Priivacy-ai/agent-log-analyzer
+- Updated: 2026-05-21T05:41:45Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. Monetization UX: optimization pack unlock
+
+- Score: 34
+- Amount hint: $50
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/24
+- Repository: https://github.com/Priivacy-ai/agent-log-analyzer
+- Updated: 2026-05-21T05:41:43Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. CAM Workbench: Adding Missing Information
+
+- Score: 30
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/25
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-21T22:43:21Z
+- Why it matched: mentions bounty/reward
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. PartDesign Workbench: Adding Missing Information
+
+- Score: 30
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/79
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-21T22:40:43Z
+- Why it matched: mentions bounty/reward
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. [ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions
+
+- Score: 25
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/68
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T17:21:23Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
+- Updated: 2026-05-22T14:10:17Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. [ Bounty $6k ] [ Sandbox ] Store cancellation results for executions — task execution
+
+- Score: 25
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/185
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-22T14:06:17Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. [ Bounty $4k ] [ Config ] Block branch replacement by scalar env values — nested merge safety
+
+- Score: 25
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/12
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-22T14:00:17Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. [ Bounty $3k ] [ CLI ] Fail deploy when manifest is missing — manifest validation
+
+- Score: 25
+- Amount hint: $3, $3000, Bounty $3, bounty $3000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/131
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-22T13:42:17Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. [ Bounty $4k ] [ Config ] Coerce boolean environment overrides — AO_ parsing
+
+- Score: 25
+- Amount hint: $4, $4000, Bounty $4, bounty $4000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/137
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-22T13:08:16Z
+- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
