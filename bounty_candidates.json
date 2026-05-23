@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "[BOUNTY: 10 RTC] Write about our CVPR 2026 acceptance on any platform",
+    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2259",
+    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
+    "updated_at": "2026-05-23T02:49:07Z",
+    "score": 26,
+    "amount_hint": "$12K",
+    "reason": "paid/bounty wording, visible amount, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  }
+]
