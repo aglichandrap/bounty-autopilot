@@ -1,47 +1,14 @@
 [
   {
-    "title": "Implement PDIP-8",
-    "url": "https://github.com/tscircuit/footprinter/issues/371",
-    "repository_url": "https://github.com/tscircuit/footprinter",
-    "updated_at": "2026-05-23T17:07:15Z",
-    "score": 26,
-    "amount_hint": "$10",
-    "reason": "paid/bounty wording, visible amount, fresh update",
-    "source": "volume-expander",
+    "title": "Publish GitHub Issue Scout as an Apify Store Actor",
+    "url": "https://github.com/mysubb01/apify-github-issue-scout/issues/2",
+    "repository_url": "https://github.com/mysubb01/apify-github-issue-scout",
+    "updated_at": "2026-05-23T16:15:06Z",
+    "score": 56,
+    "amount_hint": "50 USD",
+    "reason": "mentions bounty/reward, has visible amount, large issue body, low discussion volume",
     "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "json in mcp server args textarea",
-    "url": "https://github.com/archestra-ai/archestra/issues/3859",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-23T17:24:48Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Add durable agent memory for user, team, and organization context across sessions",
-    "url": "https://github.com/archestra-ai/archestra/issues/3837",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-23T15:19:57Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
+    "triage_reasons": [],
     "linked_prs": []
   }
 ]

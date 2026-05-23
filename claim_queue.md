@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-23 17:47 UTC
+Last built: 2026-05-23 18:43 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### Implement PDIP-8
+### Publish GitHub Issue Scout as an Apify Store Actor
 
-- URL: https://github.com/tscircuit/footprinter/issues/371
-- Amount: $10
+- URL: https://github.com/mysubb01/apify-github-issue-scout/issues/2
+- Amount: 50 USD
 - Claim comment if rules allow:
 
 ```text
