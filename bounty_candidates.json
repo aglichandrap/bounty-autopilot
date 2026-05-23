@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "title": "Publish GitHub Issue Scout as an Apify Store Actor",
+    "url": "https://github.com/mysubb01/apify-github-issue-scout/issues/2",
+    "repository_url": "https://github.com/mysubb01/apify-github-issue-scout",
+    "updated_at": "2026-05-23T12:56:59Z",
+    "score": 56,
+    "amount_hint": "50 USD",
+    "reason": "mentions bounty/reward, has visible amount, large issue body, low discussion volume",
+    "triage_decision": "keep",
+    "triage_reasons": [],
+    "linked_prs": []
+  },
+  {
+    "title": "Add durable agent memory for user, team, and organization context across sessions",
+    "url": "https://github.com/archestra-ai/archestra/issues/3837",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-23T15:19:57Z",
+    "score": 11,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "json in mcp server args textarea",
+    "url": "https://github.com/archestra-ai/archestra/issues/3859",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-23T08:05:53Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "📱 Epic: BAWES Universe Mobile App (Android + iOS)",
+    "url": "https://github.com/BAWES-Universe/workadventure-universe/issues/1",
+    "repository_url": "https://github.com/BAWES-Universe/workadventure-universe",
+    "updated_at": "2026-05-23T05:38:11Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  }
+]

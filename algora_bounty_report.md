@@ -1,6 +1,6 @@
 # Algora Bounty Scout
 
-Last run: 2026-05-23 15:17 UTC
+Last run: 2026-05-23 15:43 UTC
 
 Found candidates: 4
 
