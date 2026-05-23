@@ -1,17 +1,1 @@
-[
-  {
-    "title": "Agent template catalog",
-    "url": "https://github.com/archestra-ai/archestra/issues/3858",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-22T15:16:18Z",
-    "score": 5,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  }
-]
+[]

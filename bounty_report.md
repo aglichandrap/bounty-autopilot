@@ -1,30 +1,70 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-23 01:47 UTC
+Last run: 2026-05-23 03:24 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $4k ] [ Runtime ] Handle timezone-aware schedules consistently — cron runtime
+## 1. [ Bounty $4k ] [ Metrics ] Handle exporter counter range limits — large counters
 
-- Score: 72
+- Score: 80
 - Amount hint: $4, $4000, Bounty $4, bounty $4000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2701
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2771
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T01:44:19Z
+- Updated: 2026-05-23T03:15:14Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. [ Bounty $3k ] [ Metrics ] Shorten snapshot lock hold time — threaded exporters
+## 2. [ Bounty $3k ] [ Storage ] Add checksum validation to download cache — artifact consumers
+
+- Score: 72
+- Amount hint: $3, $3000, Bounty $3, bounty $3000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2791
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-23T03:23:08Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. [ Bounty $3k ] [ Metrics ] Shorten snapshot lock hold time — threaded exporters
 
 - Score: 72
 - Amount hint: $3, $3000, Bounty $3, bounty $3000
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2694
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T01:32:51Z
+- Updated: 2026-05-23T02:04:57Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Sats to Local Currency | Mexico
+## 4. Upload Photo Button Opens Scanner Instead of File Gallery
+
+- Score: 47
+- Amount hint: amount not obvious
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/325
+- Repository: https://github.com/RatLoopz/sahidawa-india
+- Updated: 2026-05-22T14:37:21Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. [CLI] Implement bounty command
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/issueflow-buidl/issueflow-terminal/issues/3
+- Repository: https://github.com/issueflow-buidl/issueflow-terminal
+- Updated: 2026-05-23T03:20:28Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. [WIKI-FEATURE] get_run snapshot omits system-authoritative external_write_results / external_write_errors — receipts visible only via get_run_output
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/Jonnyton/Workflow/issues/1022
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-23T01:31:27Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
@@ -34,7 +74,17 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [App] BountyPay
+## 8. BIM Workbench: Adding Missing Information
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-23T02:57:09Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. [App] BountyPay
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -44,7 +94,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. [App] uBounty
+## 10. [App] uBounty
 
 - Score: 35
 - Amount hint: 402, usd
@@ -54,7 +104,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Fixing the bounty award system
+## 11. Fixing the bounty award system
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -64,7 +114,7 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. Create a Bounty Amount Box Issue
+## 12. Create a Bounty Amount Box Issue
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -72,44 +122,4 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Repository: https://github.com/ResearchHub/issues
 - Updated: 2026-01-20T06:50:37Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. [ Bounty $2k ] [ Webhook ] Validate subscription filters against allowed fields — filter API
-
-- Score: 26
-- Amount hint: $2, $2000, Bounty $2, bounty $2000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2676
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T01:36:17Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. [ Bounty $7k ] [ API ] Validate SSE cursor ownership — streaming updates
-
-- Score: 26
-- Amount hint: $7, $7000, Bounty $7, bounty $7000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2658
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T00:17:48Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
-
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T00:35:07Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
