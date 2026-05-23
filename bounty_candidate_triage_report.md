@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-23 07:58 UTC
+Last run: 2026-05-23 08:37 UTC
 
-Kept candidates: 4
+Kept candidates: 0
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,330 +30,226 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
-
-- Decision: keep
-- Score: 96 -> 61
-- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 5. Per-invoice delivery log should default to client-facing rows + "include emails sent to me" toggle
+## 4. [策略发现] RL驱动最优执行算法 (订单拆分+自适应策略)
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/n8bar/CryptoZing/issues/77
+- Issue: https://github.com/Kaoruha/GinkGO/issues/4172
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. verifyManifestSignature accepts any 65-byte signature when generatorAddress is missing — relayer's V2 finalize trusts forged manifests
+## 5. epic: migrate off candle to in-house kiln-tensor (CUDA + Metal + Vulkan)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/ericflo/kiln/issues/1082
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 6. [AI日报] 2026-05-23 · 每日 AI 科技热点速递
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/m13891290332/github-copilot-Hermes/issues/30
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 7. Epic: Benchmark & framework adapters — RoboSuite, Meta-World, ROS2, Isaac SIL/HIL
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/strands-labs/robots/issues/206
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. verifyManifestSignature accepts any 65-byte signature when generatorAddress is missing — relayer's V2 finalize trusts forged manifests
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/chainofclaw/COC/issues/727
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 7. Onefile size bloat in ver 4.1.1.
+## 9. Add a local doctor command for onboarding checks
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/Nuitka/Nuitka/issues/3894
+- Issue: https://github.com/junbuilds96/bounty-sieve/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. build --from <earlier-stage>: "stream ended before a matching stage event was emitted" when re-entering a completed stage
+## 10. Reward history icons are overflowing
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/bradtaylorsf/show-sidekick/issues/268
+- Issue: https://github.com/michellekli/PomoExchange/issues/113
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 9. ci(e2e): configure E2E_SUPABASE_* secrets so Playwright actually runs on PRs
+## 11. 📈 گزارش تحلیل فارکس - 2026-05-23
+
+- Decision: drop
+- Score: 85 -> -15
+- Issue: https://github.com/alicsx/my-news-feed/issues/2805
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 12. learn-world-model
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/William-Hill/ptso_agent/issues/339
+- Issue: https://github.com/datawhalechina/DOPMC/issues/419
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 10. Epoch-diff: real divergences at preview boundaries 1-5 (treasury/reserves/fees/pv/rewards)
+## 13. Redesign valuation architecture into dynamic multi-agent investment committee
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/michaeljfazio/dugite/issues/615
+- Issue: https://github.com/Mattrix07/equity-research-report-generation/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. feat(knowledge): ingest clarifying-question answers as knowledge chunks
+## 14. [MEDIUM] feat: 複数 parent (父・母) 同時利用本格対応 (認証 / 権限設計、parent 共用) (#2362 派生 I4)
 
 - Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/viamin/paid/issues/2220
+- Score: 85 -> 15
+- Issue: https://github.com/Takenori-Kusaka/ganbari-quest/issues/2448
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 12. [Bug]: Program crashes twice. Same code, same questions, using GPT relay in conversation mode. Could reproduce again if there's remaining quota
+## 15. [FEAT] W1 단독 모델로 임시 보고서 작성 — 백테스트·ANOVA·SHAP 분석
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/AI-Robo-Advisor/rl-rag-roboadvisor/issues/56
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 16. On-chain payout gem markers on both charts
 
 - Decision: drop
 - Score: 79 -> -21
-- Issue: https://github.com/CherryHQ/cherry-studio/issues/15275
+- Issue: https://github.com/rdouma/hashrate-autopilot/issues/207
 - Reason: issue explicitly indicates no paid bounty or free-only payment status
 
-## 13. Add `priceComponents[]` decomposition and `dynamicPricing` reference to `EnergyPlanContract`
+## 17. Add `priceComponents[]` decomposition and `dynamicPricing` reference to `EnergyPlanContract`
 
 - Decision: drop
 - Score: 79 -> 9
 - Issue: https://github.com/ConsumerDataStandardsAustralia/standards-maintenance/issues/723
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. Add `timeOfUseFeedInTariff[]` to support time-varying, signed, and BEL-exempt feed-in tariffs (Energex Two-Way Trial use case)
+## 18. Add `timeOfUseFeedInTariff[]` to support time-varying, signed, and BEL-exempt feed-in tariffs (Energex Two-Way Trial use case)
 
 - Decision: drop
 - Score: 79 -> 9
 - Issue: https://github.com/ConsumerDataStandardsAustralia/standards-maintenance/issues/722
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. [MMIR-D126][P0][agent-ready] Publish ChatGPT/Open WebUI parity matrix for product gaps
+## 19. Epoch-diff: real divergences at preview boundaries 1-5 (treasury/reserves/fees/pv/rewards)
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/inkognitroz/inkognitroz.github.io/issues/108
+- Issue: https://github.com/michaeljfazio/dugite/issues/615
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. When a user returns `return { ... }` from a route instead of `return ctx.json({ ... })`, throw an error telling them to use `ctx.json`
+## 20. lib.rs is a 904-line monolith; split into modules
 
 - Decision: drop
-- Score: 71 -> -34
-- Issue: https://github.com/tscircuit/winterspec/issues/30
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 17. [CLI] Implement bounty command
-
-- Decision: drop
-- Score: 71 -> 1
-- Issue: https://github.com/issueflow-buidl/issueflow-terminal/issues/3
+- Score: 79 -> 9
+- Issue: https://github.com/leotonezi/pet-tamagotchi/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 18. [Bounty $20] Inline declarations throw exception.
-
-- Decision: keep
-- Score: 65 -> 30
-- Issue: https://github.com/Syncleus/aparapi/issues/97
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 19. [Phase 3] Paid Tier
+## 21. About the DMControl Data - How to Interpret the Task IDs?
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/kylerberry/prompt-spear/issues/17
+- Score: 79 -> 9
+- Issue: https://github.com/nicklashansen/tdmpc2/issues/87
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 20. Crash when opening with oneclient
+## 22. Track alpha A0-A7 production execution
 
 - Decision: drop
-- Score: 64 -> -41
-- Issue: https://github.com/SkyblockerMod/Skyblocker/issues/2406
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 21. Dependency Dashboard
-
-- Decision: drop
-- Score: 60 -> -10
-- Issue: https://github.com/kseito/RewardedTodo/issues/102
+- Score: 79 -> 9
+- Issue: https://github.com/DOS/Second-Spawn/issues/161
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 22. Dependency Dashboard
+## 23. 📚 ArXiv AI Research Digest 2026-05-23
 
 - Decision: drop
-- Score: 60 -> -10
-- Issue: https://github.com/Sunior-k/walklog/issues/58
+- Score: 79 -> 9
+- Issue: https://github.com/QYQAQ/agents-radar/issues/21
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 23. Create wallet benchmarks
+## 24. F1 Sprint Briefing: F1 Canadian GP - Sprint Race
 
 - Decision: drop
-- Score: 56 -> -49
-- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 24. engine_newPayload tx-list corruption: 3 events observed, multi-host, multi-EL (v2.0.4 mainnet)
-
-- Decision: drop
-- Score: 56 -> -14
-- Issue: https://github.com/grandinetech/grandine/issues/703
+- Score: 75 -> 5
+- Issue: https://github.com/ShreyTriesToCode/PitWall/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 25. [Good First Issue]:Mentor approval points input defaults to 10 instead of using roadmapTask.pointsBase from API
+## 25. Improve AI evaluation function
 
 - Decision: drop
-- Score: 56 -> -14
-- Issue: https://github.com/pathment/pathment/issues/36
+- Score: 75 -> 5
+- Issue: https://github.com/fildon/tak/issues/7
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 26. P2: Add paid-gated calendar sharing support and live tests
+## 26. Tempoross and Wintertodt
 
 - Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/hacker-h/proton-calendar-cli/issues/123
+- Score: 75 -> 5
+- Issue: https://github.com/Mrnice98/BossingInfo/issues/33
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 27. 模拟器刷基质，到淤积点又重新寻路，不点激发选项
+## 27. Emoji Reaction Claim - 15 Reactions - 2026-05-23 08:10 UTC
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/MaaEnd/MaaEnd/issues/3121
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12089
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 28. Account recovery request
+## 28. PR Review Claim - 1 PRs - 2026-05-23 08:10 UTC
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/pypi/support/issues/10752
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12088
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 29. Project Limit Request: PROJECT_NAME - 00 GiB
+## 29. Suggestion
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/pypi/support/issues/10751
+- Score: 75 -> 5
+- Issue: https://github.com/domistae/poe2-leveling/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 30. Add natural-language governance judge layer for repo workflow review
+## 30. Ymirheim Chosen Warrior and Blight Falconer use abilities while under CC
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/NIBARGERB-HLDPRO/hldpro-governance/issues/1269
+- Score: 75 -> 5
+- Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/25935
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 31. 📱 Epic: BAWES Universe Mobile App (Android + iOS)
-
-- Decision: keep
-- Score: 46 -> 11
-- Issue: https://github.com/BAWES-Universe/workadventure-universe/issues/1
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 32. Widget Looses Thumbnail - I want Paid Support ( Please )
+## 31. Emoji Reaction Claim - 5 Reactions - 2026-05-23 07:05 UTC
 
 - Decision: drop
-- Score: 46 -> -24
-- Issue: https://github.com/seazon/FeedMe/issues/137
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12086
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 33. 親: SDD 駆動運用方針の確定と不足 product SSOT の child 起票
+## 32. Emoji Reaction Claim - 5 Reactions - 2026-05-23 05:59 UTC
 
 - Decision: drop
-- Score: 41 -> -29
-- Issue: https://github.com/squne121/loop-protocol/issues/254
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12085
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 34. Drop density from score calculation
+## 33. Emoji Reaction Claim - 5 Reactions - 2026-05-23 04:54 UTC
 
 - Decision: drop
-- Score: 41 -> -64
-- Issue: https://github.com/entrius/gittensor/issues/1339
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 35. Launch command center: first 3 paid audits
-
-- Decision: drop
-- Score: 36 -> -99
-- Issue: https://github.com/SpeedRanger/agent-choice-lab/issues/1
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 36. [EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2155
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12084
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 37. Validate reward generation behavior
-
-- Decision: keep
-- Score: 36 -> 1
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 38. [EASY BOUNTY: 1 RTC] Upvote 10 BoTTube Videos
+## 34. Emoji Reaction Claim - 10 Reactions - 2026-05-23 03:48 UTC
 
 - Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/1096
+- Score: 75 -> 5
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12083
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 39. Patreon Subscription Incentive
+## 35. Request for rollout data used in Figure 7 and Figure 10
 
 - Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/ChilloutVR-Team/ChilloutVR-Issues/issues/450
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 40. Chicken in Every Pot: Fork the Big 5 and Earn RTC
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/697
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 41. Account recovery request
-
-- Decision: drop
-- Score: 33 -> -37
-- Issue: https://github.com/pypi/support/issues/10749
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 42. Account recovery request
-
-- Decision: drop
-- Score: 33 -> -37
-- Issue: https://github.com/pypi/support/issues/10748
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 43. Account recovery request
-
-- Decision: drop
-- Score: 33 -> -37
-- Issue: https://github.com/pypi/support/issues/10747
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 44. Account recovery request
-
-- Decision: drop
-- Score: 28 -> -42
-- Issue: https://github.com/pypi/support/issues/10665
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 45. Account recovery request
-
-- Decision: drop
-- Score: 18 -> -52
-- Issue: https://github.com/pypi/support/issues/10663
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 46. Account recovery request
-
-- Decision: drop
-- Score: 18 -> -52
-- Issue: https://github.com/pypi/support/issues/10661
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 47. Account recovery request
-
-- Decision: drop
-- Score: 18 -> -52
-- Issue: https://github.com/pypi/support/issues/10659
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 48. Account recovery request
-
-- Decision: drop
-- Score: 18 -> -52
-- Issue: https://github.com/pypi/support/issues/10658
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 49. Account recovery request
-
-- Decision: drop
-- Score: 18 -> -52
-- Issue: https://github.com/pypi/support/issues/10654
+- Score: 75 -> 5
+- Issue: https://github.com/mukhal/ThinkPRM/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
