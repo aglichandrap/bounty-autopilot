@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-23 15:43 UTC
+Last built: 2026-05-23 16:31 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -30,6 +30,22 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 - URL: https://github.com/mysubb01/apify-github-issue-scout/issues/2
 - Amount: 50 USD
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### [Bounty $3k] Optimise exp2 fp32/bf16
+
+- URL: https://github.com/tenstorrent/tt-metal/issues/44507
+- Amount: $3k
 - Claim comment if rules allow:
 
 ```text
