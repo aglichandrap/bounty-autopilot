@@ -1,54 +1,12 @@
 [
   {
-    "title": "Publish GitHub Issue Scout as an Apify Store Actor",
-    "url": "https://github.com/mysubb01/apify-github-issue-scout/issues/2",
-    "repository_url": "https://github.com/mysubb01/apify-github-issue-scout",
-    "updated_at": "2026-05-23T16:15:06Z",
-    "score": 79,
-    "amount_hint": "50 USD",
-    "reason": "paid/bounty wording, coding scope, low discussion, new issue, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [],
-    "linked_prs": []
-  },
-  {
-    "title": "[Bounty $3k] Optimise exp2 fp32/bf16",
-    "url": "https://github.com/tenstorrent/tt-metal/issues/44507",
-    "repository_url": "https://github.com/tenstorrent/tt-metal",
-    "updated_at": "2026-05-23T11:49:02Z",
-    "score": 36,
-    "amount_hint": "$3k",
-    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
     "title": "Implement PDIP-8",
     "url": "https://github.com/tscircuit/footprinter/issues/371",
     "repository_url": "https://github.com/tscircuit/footprinter",
     "updated_at": "2026-05-23T17:07:15Z",
-    "score": 25,
+    "score": 26,
     "amount_hint": "$10",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Fix extra trace lines in post-processing step",
-    "url": "https://github.com/tscircuit/schematic-trace-solver/issues/78",
-    "repository_url": "https://github.com/tscircuit/schematic-trace-solver",
-    "updated_at": "2026-05-23T14:19:37Z",
-    "score": 1,
-    "amount_hint": "$75",
-    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, fresh update",
+    "reason": "paid/bounty wording, visible amount, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
@@ -57,13 +15,28 @@
     "linked_prs": []
   },
   {
-    "title": "Fix extra net label in repro61, or remove trace",
-    "url": "https://github.com/tscircuit/schematic-trace-solver/issues/79",
-    "repository_url": "https://github.com/tscircuit/schematic-trace-solver",
-    "updated_at": "2026-05-23T13:53:14Z",
-    "score": 1,
-    "amount_hint": "$75",
-    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, fresh update",
+    "title": "json in mcp server args textarea",
+    "url": "https://github.com/archestra-ai/archestra/issues/3859",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-23T17:24:48Z",
+    "score": 11,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Add durable agent memory for user, team, and organization context across sessions",
+    "url": "https://github.com/archestra-ai/archestra/issues/3837",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-23T15:19:57Z",
+    "score": 11,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
