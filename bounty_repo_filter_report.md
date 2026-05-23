@@ -1,10 +1,10 @@
 # Bounty Repository Filter
 
-Last run: 2026-05-23 09:48 UTC
+Last run: 2026-05-23 10:17 UTC
 
-Input candidates: 60
-Kept candidates: 19
-Dropped candidates: 41
+Input candidates: 42
+Kept candidates: 4
+Dropped candidates: 38
 
 This filter removes known false-positive, unsafe, self-tracking, stale, or overcrowded bounty sources before expensive triage/solver work runs.
 
@@ -16,58 +16,58 @@ This filter removes known false-positive, unsafe, self-tracking, stale, or overc
 - Issue: https://github.com/calcom/cal.com/issues/1985
 - Reason: known stale/crowded bounty issue
 
-### 2. [ Bounty $9k ] [ Runtime ] Enforce memory limit on trace aggregation — trace runtime
+### 2. [ Bounty $4k ] [ Metrics ] Reject non-finite gauge values — numeric safety
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3043
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3055
 - Reason: known false-positive or unsafe bounty source
 
-### 3. [ Bounty $3k ] [ Data ] Track export access in audit trail — data download events
+### 3. [ Bounty $2k ] [ Data ] Add data owner to retention exceptions — governance metadata
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2984
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3007
 - Reason: known false-positive or unsafe bounty source
 
-### 4. [ Bounty $3k ] [ Docker ] Exclude local environment files from build context — dockerignore policy
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3034
-- Reason: known false-positive or unsafe bounty source
-
-### 5. [ Bounty $5k ] [ Data ] Apply retention policy to failed validation payloads — quarantine store
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2828
-- Reason: known false-positive or unsafe bounty source
-
-### 6. [ Bounty $4k ] [ CI ] Fail on unpublished workspace package drift — monorepo release
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2999
-- Reason: known false-positive or unsafe bounty source
-
-### 7. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
-
-- Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2623
-- Reason: known false-positive or unsafe bounty source
-
-### 8. [ Bounty $4k ] [ SDK ] Attach task metadata to the returned wrapper — decorator introspection
+### 4. [ Bounty $4k ] [ SDK ] Attach task metadata to the returned wrapper — decorator introspection
 
 - Repository: orchestration-agent/AgentOrchestration
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3025
 - Reason: known false-positive or unsafe bounty source
 
-### 9. [ Bounty $7k ] [ API ] Validate SSE cursor ownership — streaming updates
+### 5. [ Bounty $3k ] [ Docker ] Exclude local environment files from build context — dockerignore policy
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2658
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3034
 - Reason: known false-positive or unsafe bounty source
 
-### 10. [ Bounty $2k ] [ Data ] Add data owner to retention exceptions — governance metadata
+### 6. [ Bounty $7k ] [ Middleware ] Keep correlation IDs from crossing tenants — request context
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3007
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3048
+- Reason: known false-positive or unsafe bounty source
+
+### 7. [ Bounty $9k ] [ Runtime ] Enforce memory limit on trace aggregation — trace runtime
+
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3043
+- Reason: known false-positive or unsafe bounty source
+
+### 8. [ Bounty $3k ] [ Data ] Track export access in audit trail — data download events
+
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2984
+- Reason: known false-positive or unsafe bounty source
+
+### 9. [ Bounty $5k ] [ Data ] Apply retention policy to failed validation payloads — quarantine store
+
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2828
+- Reason: known false-positive or unsafe bounty source
+
+### 10. [ Bounty $4k ] [ CI ] Fail on unpublished workspace package drift — monorepo release
+
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2999
 - Reason: known false-positive or unsafe bounty source
 
 ### 11. [ Bounty $5k ] [ Sandbox ] Enforce disk_mb or remove the option — resource limits
@@ -142,116 +142,98 @@ This filter removes known false-positive, unsafe, self-tracking, stale, or overc
 - Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2915
 - Reason: known false-positive or unsafe bounty source
 
-### 23. TaskBounty worker status
-
-- Repository: asaadnashed/bounty-autopilot
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
-- Reason: known false-positive or unsafe bounty source
-
-### 24. [ Bounty $5k ] [ Config ] Own nested config state at boundaries — state isolation
+### 23. [ Bounty $6k ] [ Storage ] Extend job lease TTL for large artifact uploads — queue reliability
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2297
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2964
 - Reason: known false-positive or unsafe bounty source
 
-### 25. [ Bounty $7k ] [ CI ] Add provenance attestation for release artifacts — agent package publish
+### 24. [ Bounty $6k ] [ Runtime ] Cancel orphaned subprocesses after run timeout — worker runtime
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2276
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2974
 - Reason: known false-positive or unsafe bounty source
 
-### 26. [ Bounty $5k ] [ CLI ] Validate logs tail is non-negative — logs arguments
+### 25. [ Bounty $3k ] [ Runtime ] Prevent worker heartbeat from reviving completed runs — heartbeat monitor
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1821
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2748
 - Reason: known false-positive or unsafe bounty source
 
-### 27. [ Bounty $6k ] [ Workflow ] Prevent conflicting timeout units — definition parsing
+### 26. [ Bounty $5k ] [ Middleware ] Propagate cancellation to downstream agent calls — async middleware
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1849
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2714
 - Reason: known false-positive or unsafe bounty source
 
-### 28. [ Bounty $2k ] [ Metrics ] Reject non-numeric gauge values — gauge integrity
+### 27. [ Bounty $3k ] [ Metrics ] Shorten snapshot lock hold time — threaded exporters
 
 - Repository: orchestration-agent/AgentOrchestration
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/1978
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2694
 - Reason: known false-positive or unsafe bounty source
 
-### 29. [ Bounty $2k ] [ Solidity ] Add gas sponsorship relay for agent transactions — testnet finding
+### 28. [ Bounty $5k ] [ Scheduler ] Avoid backlog burst after resume — paused tenant resumes
 
-- Repository: ClankerNation/OpenAgents
-- Issue: https://github.com/ClankerNation/OpenAgents/issues/153
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2736
 - Reason: known false-positive or unsafe bounty source
 
-### 30. TaskBounty candidates
+### 29. [ Bounty $5k ] [ CLI ] Expand user paths for --config — config loading
 
-- Repository: asaadnashed/bounty-autopilot
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/2
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2750
 - Reason: known false-positive or unsafe bounty source
 
-### 31. Bounty scout candidates
+### 30. [ Bounty $5k ] [ Sandbox ] Enforce disk_mb or remove the option — resource limits
 
-- Repository: asaadnashed/bounty-autopilot
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/1
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2799
 - Reason: known false-positive or unsafe bounty source
 
-### 32. [ Laravel ] Fix DatabaseSeeder creating duplicate test user on re-run and add proper seeder structure
+### 31. [ Bounty $2k ] [ Data ] Document data lineage for transformed task records — analytics pipeline
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/746
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2815
 - Reason: known false-positive or unsafe bounty source
 
-### 33. [ FastAPI ] Fix OpenAPI schema missing server, contact, and license information
+### 32. [ Bounty $4k ] [ Storage ] Use atomic writes for JSONL event logs — concurrent appenders
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/801
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2801
 - Reason: known false-positive or unsafe bounty source
 
-### 34. [ Laravel ] Fix User model password cast not applying bcrypt rounds from config
+### 33. [ Bounty $5k ] [ Sandbox ] Verify tracked paths before get_path returns — workspace access
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/745
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2685
 - Reason: known false-positive or unsafe bounty source
 
-### 35. [ CONTEXT RIFT ] Fix typos in knowledge-base/context.json
+### 34. [ Bounty $2k ] [ Webhook ] Validate subscription filters against allowed fields — filter API
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/611
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2676
 - Reason: known false-positive or unsafe bounty source
 
-### 36. [ FastAPI ] Add request ID middleware for log correlation
+### 35. [ Bounty $4k ] [ Runtime ] Handle timezone-aware schedules consistently — cron runtime
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/797
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2701
 - Reason: known false-positive or unsafe bounty source
 
-### 37. [ Laravel ] Fix console.php missing scheduled task registration and add log cleanup command
+### 36. [ Bounty $5k ] [ Deploy ] De-duplicate scheduled jobs during rollout — cron workers
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/753
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2722
 - Reason: known false-positive or unsafe bounty source
 
-### 38. [ T3 Code ] Add update download progress, defer, and skip version to auto-updater
+### 37. [ Bounty $3k ] [ Storage ] Add checksum validation to download cache — artifact consumers
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/842
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2791
 - Reason: known false-positive or unsafe bounty source
 
-### 39. [ T3 Code ] Add syntax highlighting, copy button, and collapsible code blocks to ChatMarkdown
+### 38. [ Bounty $4k ] [ Metrics ] Handle exporter counter range limits — large counters
 
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/837
-- Reason: known false-positive or unsafe bounty source
-
-### 40. [ FastAPI ] Add concurrent task runner with semaphore limiting and timeout
-
-- Repository: UnsafeLabs/Bounty-Hunters
-- Issue: https://github.com/UnsafeLabs/Bounty-Hunters/issues/803
-- Reason: known false-positive or unsafe bounty source
-
-### 41. GitHub bounty claim status
-
-- Repository: asaadnashed/bounty-autopilot
-- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/8
+- Repository: orchestration-agent/AgentOrchestration
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/2771
 - Reason: known false-positive or unsafe bounty source
