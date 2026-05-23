@@ -1,50 +1,20 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-23 22:09 UTC
+Last run: 2026-05-23 23:12 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $9k ] [ Workflow ] Sandbox expression side effects — workflow condition evaluation
-
-- Score: 72
-- Amount hint: $9, $9000, Bounty $9, bounty $9000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3396
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T22:06:01Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. PRD: Prototype → Product — Live Evaluator, Semantic Deviation, API Layer
-
-- Score: 47
-- Amount hint: amount not obvious
-- Issue: https://github.com/abp2204/council/issues/14
-- Repository: https://github.com/abp2204/council
-- Updated: 2026-05-23T21:58:01Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. Slice 3: Class-gated drops (solo)
+## 1. Sats to Local Currency | Mexico
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/Ryankolsen/wizard-kittenz/issues/204
-- Repository: https://github.com/Ryankolsen/wizard-kittenz
-- Updated: 2026-05-23T22:08:52Z
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-21T12:48:20Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. Episode logging fabricates portfolio value from shaped rewards
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/kwojdalski/masters_thesis/issues/76
-- Repository: https://github.com/kwojdalski/masters_thesis
-- Updated: 2026-05-23T22:03:47Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. Expose ESM modules
+## 2. Expose ESM modules
 
 - Score: 38
 - Amount hint: amount not obvious
@@ -54,22 +24,52 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. [Balance] Rework “Flee the hunt” — reduce reward for failure
+## 3. [App] BountyPay
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/almostanonymousdev/ghost-in-m-sheet/issues/213
-- Repository: https://github.com/almostanonymousdev/ghost-in-m-sheet
-- Updated: 2026-05-23T22:01:21Z
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:38Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. PRD: Class-gated item drops, multi-stat items, and shop-purchasable gear
+## 4. [App] uBounty
 
-- Score: 31
+- Score: 35
+- Amount hint: 402, usd
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:34Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. Fixing the bounty award system
+
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Ryankolsen/wizard-kittenz/issues/201
-- Repository: https://github.com/Ryankolsen/wizard-kittenz
-- Updated: 2026-05-23T22:02:50Z
-- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Issue: https://github.com/ResearchHub/issues/issues/531
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:39Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. Create a Bounty Amount Box Issue
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Repository: https://github.com/ResearchHub/issues
+- Updated: 2026-01-20T06:50:37Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Sync Issue-Assigned property from GH to LB
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Repository: https://github.com/Lightning-Bounties/progress-tracker
+- Updated: 2025-05-08T13:14:16Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

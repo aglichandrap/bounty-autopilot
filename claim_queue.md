@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-23 22:51 UTC
+Last built: 2026-05-23 23:14 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### 🎯 Bounty Alert: 17 New Opportunityies found
+### Publish GitHub Issue Scout as an Apify Store Actor
 
-- URL: https://github.com/dev-kp-eloper/BountyScout/issues/1
-- Amount: $4k, $3k, $7k, $5k
+- URL: https://github.com/mysubb01/apify-github-issue-scout/issues/2
+- Amount: 50 USD
 - Claim comment if rules allow:
 
 ```text

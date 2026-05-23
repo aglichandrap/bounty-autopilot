@@ -1,17 +1,17 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-23 22:11 UTC
+Last built: 2026-05-23 23:14 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: 🎯 Bounty Alert: 17 New Opportunityies found
+## Queue Item 1: Publish GitHub Issue Scout as an Apify Store Actor
 
-- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/1
-- Repository: https://github.com/dev-kp-eloper/BountyScout
-- Amount hint: $4k, $3k, $7k, $5k
-- Score: 69
-- Work priority: 169.0
-- Match reason: paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update
+- Issue: https://github.com/mysubb01/apify-github-issue-scout/issues/2
+- Repository: https://github.com/mysubb01/apify-github-issue-scout
+- Amount hint: 50 USD
+- Score: 73
+- Work priority: 78.0
+- Match reason: paid/bounty wording, coding scope, low discussion, new issue
 
 ### Worker Instructions
 
