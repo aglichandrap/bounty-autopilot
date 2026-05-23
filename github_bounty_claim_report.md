@@ -1,24 +1,17 @@
 # GitHub Bounty Claim Report
 
-Last run: 2026-05-22 23:48 UTC
+Last run: 2026-05-23 01:31 UTC
 
-## 📱 Epic: BAWES Universe Mobile App (Android + iOS)
+## EMDG: keep receipts, but gated until turnover >$100k (not yet eligible)
 
-- Issue: https://github.com/BAWES-Universe/workadventure-universe/issues/1
+- Issue: https://github.com/nickmeinhold/claude-tasks/issues/35
 - Status: skipped
 - Comment: not posted
-- Message: strong active attempt/comment by algora-pbc[bot]
+- Message: strong active attempt/comment by nguyencaoky1121-dev
 
-## Agent template catalog
+## [Bounty $20] Inline declarations throw exception.
 
-- Issue: https://github.com/archestra-ai/archestra/issues/3858
+- Issue: https://github.com/Syncleus/aparapi/issues/97
 - Status: skipped
 - Comment: not posted
-- Message: Forbidden/risky category: prompt/context.
-
-## Validate reward generation behavior
-
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by zhaog100
+- Message: strong active attempt/comment by KingParmenides
