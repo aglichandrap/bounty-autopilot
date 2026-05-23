@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 14:00 UTC",
+  "updated_at": "2026-05-23 15:16 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -10,27 +10,27 @@
     {
       "name": "Bounty scout scheduler",
       "status": "degraded",
-      "detail": "bounty_worker_queue.md is stale (73 minutes old); dispatch sent."
+      "detail": "bounty_worker_queue.md is stale (56 minutes old); dispatch sent."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "degraded",
-      "detail": "github_bounty_claim_report.md is stale (114 minutes old); dispatch failed: HTTP 500: {\"message\":\"Failed to run workflow dispatch\",\"documentation_url\":\"https://docs.github.com/rest/actions/workflows#create-a-workflow-dispatch-event\",\"status\":\"500\"}."
+      "status": "ok",
+      "detail": "github_bounty_claim_report.md is fresh (3 minutes old)."
     },
     {
       "name": "GitHub submitter scheduler",
       "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (1 minutes old)."
+      "detail": "github_bounty_submission_report.md is fresh (3 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
       "status": "ok",
-      "detail": "taskbounty_report.md is fresh (4 minutes old)."
+      "detail": "taskbounty_report.md is fresh (9 minutes old)."
     },
     {
       "name": "TaskBounty worker scheduler",
       "status": "ok",
-      "detail": "taskbounty_worker_report.md is fresh (4 minutes old)."
+      "detail": "taskbounty_worker_report.md is fresh (9 minutes old)."
     },
     {
       "name": "Online model solver key",
