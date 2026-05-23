@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 22:32 UTC",
+  "updated_at": "2026-05-23 23:39 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -10,27 +10,27 @@
     {
       "name": "Bounty scout scheduler",
       "status": "ok",
-      "detail": "bounty_worker_queue.md is fresh (21 minutes old)."
+      "detail": "bounty_worker_queue.md is fresh (25 minutes old)."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "degraded",
-      "detail": "github_bounty_claim_report.md is stale (56 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "github_bounty_claim_report.md is fresh (1 minutes old)."
     },
     {
       "name": "GitHub submitter scheduler",
       "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (1 minutes old)."
+      "detail": "github_bounty_submission_report.md is fresh (4 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
       "status": "ok",
-      "detail": "taskbounty_report.md is fresh (5 minutes old)."
+      "detail": "taskbounty_report.md is fresh (7 minutes old)."
     },
     {
       "name": "TaskBounty worker scheduler",
       "status": "ok",
-      "detail": "taskbounty_worker_report.md is fresh (5 minutes old)."
+      "detail": "taskbounty_worker_report.md is fresh (7 minutes old)."
     },
     {
       "name": "Online model solver key",
@@ -45,7 +45,7 @@
     {
       "name": "GitHub bounty claimer",
       "status": "ok",
-      "detail": "No claim comments tracked yet."
+      "detail": "Comments tracked: 1"
     },
     {
       "name": "GitHub patch solver report",
@@ -83,5 +83,7 @@
     "https://github.com/orchestration-agent/AgentOrchestration/pull/98",
     "https://github.com/orchestration-agent/AgentOrchestration/pull/99"
   ],
-  "tracked_comments": []
+  "tracked_comments": [
+    "https://github.com/mysubb01/apify-github-issue-scout/issues/2#issuecomment-4525909171"
+  ]
 }
