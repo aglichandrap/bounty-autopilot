@@ -1,12 +1,27 @@
 [
   {
-    "title": "[BOUNTY: 10 RTC] Write about our CVPR 2026 acceptance on any platform",
-    "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2259",
-    "repository_url": "https://github.com/Scottcjn/rustchain-bounties",
-    "updated_at": "2026-05-23T02:49:07Z",
-    "score": 26,
-    "amount_hint": "$12K",
-    "reason": "paid/bounty wording, visible amount, fresh update",
+    "title": "bug: Rule shows “1 applied filter” even when no filter is applied",
+    "url": "https://github.com/requestly/requestly/issues/3826",
+    "repository_url": "https://github.com/requestly/requestly",
+    "updated_at": "2026-05-23T01:33:29Z",
+    "score": 11,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Feature Request: Copy rule(s) to Private Workspace",
+    "url": "https://github.com/requestly/requestly/issues/3825",
+    "repository_url": "https://github.com/requestly/requestly",
+    "updated_at": "2026-05-23T01:33:32Z",
+    "score": 1,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [

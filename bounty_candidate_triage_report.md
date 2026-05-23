@@ -1,6 +1,6 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-23 05:31 UTC
+Last run: 2026-05-23 06:24 UTC
 
 Kept candidates: 2
 
@@ -30,113 +30,66 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Delivery notification: ugig gigs completed (erica-ai)
-
-- Decision: drop
-- Score: 104 -> -1
-- Issue: https://github.com/profullstack/sh1pt/issues/406
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 5. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
+## 4. bug: Rule shows “1 applied filter” even when no filter is applied
 
 - Decision: keep
-- Score: 96 -> 61
-- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
+- Score: 46 -> 11
+- Issue: https://github.com/requestly/requestly/issues/3826
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 6. Crash when opening with oneclient
+## 5. Sats to Local Currency | Mexico
 
 - Decision: drop
-- Score: 64 -> -41
-- Issue: https://github.com/SkyblockerMod/Skyblocker/issues/2406
+- Score: 39 -> -66
+- Issue: https://github.com/sutt/docs/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 7. [BOUNTY: 10 RTC] Write about our CVPR 2026 acceptance on any platform
+## 6. Feature Request: Copy rule(s) to Private Workspace
 
 - Decision: keep
-- Score: 61 -> 26
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2259
+- Score: 36 -> 1
+- Issue: https://github.com/requestly/requestly/issues/3825
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 8. content hashing, memory versioning, memory decay
+## 7. [App] BountyPay
 
 - Decision: drop
-- Score: 54 -> -51
-- Issue: https://github.com/XortexAI/XMem/issues/166
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 35 -> -65
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 9. [EASY BOUNTY: 5 RTC] Upload Your First BoTTube Video
-
-- Decision: drop
-- Score: 46 -> -24
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/1100
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 10. research: H1 AI Systems Testing programmes and LLM tooling gaps
+## 8. [App] uBounty
 
 - Decision: drop
-- Score: 43 -> -27
-- Issue: https://github.com/coolhandle01/cybersquad/issues/38
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 35 -> -65
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 11. [EASY BOUNTY: 1 RTC] Follow 5 BoTTube Creators
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/1097
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. [EASY BOUNTY: 1 RTC] Upvote 10 BoTTube Videos
+## 9. Fixing the bounty award system
 
 - Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/1096
+- Score: 35 -> -35
+- Issue: https://github.com/ResearchHub/issues/issues/531
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 13. [MICRO-BOUNTY] Add a BoTTube Profile Avatar + Bio (1 RTC)
+## 10. Create a Bounty Amount Box Issue
 
 - Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/124
-- Reason: no clear open paid bounty signal >= $10 found
+- Score: 35 -> -65
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 14. [Bug]: Log level colors only apply to the first container in multi-container logs view
-
-- Decision: drop
-- Score: 16 -> -54
-- Issue: https://github.com/coollabsio/coolify/issues/10207
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 15. Nomic Embeddings Model for +10% Accuracy
+## 11. Sync Issue-Assigned property from GH to LB
 
 - Decision: drop
-- Score: 14 -> -91
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5064
+- Score: 35 -> -35
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 16. use the new auto generated docs in the system prompt
+## 12. Support / add `proxy-server` input mode to fuzz / run checks on live traffic
 
 - Decision: drop
-- Score: 11 -> -94
-- Issue: https://github.com/tscircuit/prompt-benchmarks/issues/45
+- Score: 8 -> -62
+- Issue: https://github.com/projectdiscovery/nuclei/issues/4953
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 17. Check dev experience on starting an issue
-
-- Decision: drop
-- Score: 6 -> -64
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5027
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 18. Callbacks - event handlers and hybrid plugins
-
-- Decision: drop
-- Score: 6 -> -99
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5043
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
