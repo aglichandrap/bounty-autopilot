@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-23 14:20 UTC
+Last run: 2026-05-23 15:18 UTC
 
-Kept candidates: 0
+Kept candidates: 1
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,212 +30,131 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Post-merge launch hardening: verify GitHub Pages deploy and remove legacy CogniPrint validation gates
+## 4. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
+
+- Decision: keep
+- Score: 96 -> 61
+- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 5. [Reward] HarnessClaw 体验测评（任一场景）
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/TakoVHS/TakoVHS.github.io/issues/11
+- Issue: https://github.com/harnessclaw/harnessclaw/issues/43
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 5. 📰 Hacker News AI 社区动态日报 2026-05-17
+## 6. V3 Protocol Team
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/DenisZheng/agents-radar/issues/842
+- Issue: https://github.com/yearn/budget/issues/120
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. Daily Leads – 2026-05-20
+## 7. BIMI VMC purchase + activate (deferred, paid)
 
 - Decision: drop
-- Score: 73 -> -27
-- Issue: https://github.com/Harrisoneller/lead-scanner/issues/32
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Score: 75 -> -30
+- Issue: https://github.com/pinohu/lead-os/issues/71
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 7. TSPerf challenge submission: tsperf-vscode
+## 8. Paid flow: Stripe success creates paid scan session token
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/algora-io/algora/issues/277
+- Score: 75 -> -30
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/27
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 9. Monetization UX: optimization pack unlock
+
+- Decision: drop
+- Score: 75 -> -30
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/24
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 10. How to manage state in meteor Vue project with Pinia ORM [PROPOSAL]
+
+- Decision: drop
+- Score: 65 -> -5
+- Issue: https://github.com/CloudByGalaxy/galaxy-community-writers/issues/28
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. STRETCH: Support multiple leagues (NBA, NCAA, WNBA)
+## 11. [PROPOSAL] Handling File Uploads in Node.js using Multer
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/16
+- Score: 65 -> -5
+- Issue: https://github.com/CloudByGalaxy/galaxy-community-writers/issues/32
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 9. Publish to crates.io and add cargo install instructions
+## 12. Paid install UX: post-Stripe plugin command and rollback instructions
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/21
+- Score: 58 -> -12
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/30
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 10. Set up CI with GitHub Actions (cargo test + clippy)
+## 13. 帝国数字服务清单 - $1起，接受USDT TRC20支付
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/20
+- Score: 55 -> -15
+- Issue: https://github.com/jiezishu000/empire-digital-shop/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. Add team filtering and favorites
+## 14. BIM Workbench: Adding Missing Information
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/19
+- Score: 54 -> -16
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 12. Handle API errors gracefully (network timeout, rate limit)
+## 15. Epic: patch survival and patch-yield metrics
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/18
+- Score: 54 -> -16
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/86
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 13. Add game detail view (box score / play-by-play)
+## 16. Meeting Summary 06/06/2024
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/17
+- Score: 54 -> -16
+- Issue: https://github.com/SingularityNet-Ambassador-Program/African-Guild/issues/17
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. Add configurable refresh interval
+## 17. Laravel template - Quiz App
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/15
+- Score: 54 -> -16
+- Issue: https://github.com/codesphere-community/templates/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. Set up CI with GitHub Actions (cargo test + clippy)
+## 18. AI Code completion tool
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/12
+- Score: 54 -> -16
+- Issue: https://github.com/codesphere-community/templates/issues/16
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. Publish to crates.io and add cargo install instructions
+## 19. Epic: paid Claude plugin generation and install delivery
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/13
+- Score: 48 -> -22
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/26
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 17. Add game detail view (box score / play-by-play)
+## 20. Paid pack: personalized but privacy-safe MCP/skill profile
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/9
+- Score: 48 -> -22
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/64
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 18. Add team filtering and favorites
+## 21. Paid install UX: require waiver before plugin/tooling commands
 
 - Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/11
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 19. Support multiple leagues (NBA, NCAA, WNBA)
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/8
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 20. Add configurable refresh interval
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/7
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 21. Handle API errors gracefully (network timeout, rate limit)
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/10
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 22. Add README with install & usage instructions
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/6
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 23. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/probe-rs/probe-rs/issues/4022
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. Mouse Event Handling
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/amdiazzz/basketui/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 25. feat: Lesson quality scoring — auto-rank by usefulness
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/Ikalus1988/MisakaNet/issues/86
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 26. Please cut a release
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/slick/slick/issues/3564
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 27. Glasp デプロイパイプライン（CI/CD）
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/7
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 28. GitHub Pages セットアップ（手動操作）
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/6
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 29. テスト実装（自動＋手動）
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/5
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 30. DASHBOARDグラフ設定（テンプレート）
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/4
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 31. ダッシュボードキャッシュ計算エンジン
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/3
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 32. tweet.js/bookmark.js パーサー実装
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/2
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 33. GASメニュー実装 / HTMLアップロードダイアログ
-
-- Decision: drop
-- Score: 64 -> -6
-- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/1
+- Score: 48 -> -22
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/33
 - Reason: no clear open paid bounty signal >= $10 found
