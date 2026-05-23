@@ -1,10 +1,10 @@
 # GitHub Bounty Claim Report
 
-Last run: 2026-05-23 22:34 UTC
+Last run: 2026-05-23 23:38 UTC
 
-## 🎯 Bounty Alert: 17 New Opportunityies found
+## Recorded claim cleanup
 
-- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/1
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by nguyencaoky1121-dev
+- Issue: https://github.com/mysubb01/apify-github-issue-scout/issues/2
+- Status: withdrawn_false_positive
+- Comment: https://github.com/mysubb01/apify-github-issue-scout/issues/2#issuecomment-4525909171
+- Message: withdrawn false-positive claim comment
