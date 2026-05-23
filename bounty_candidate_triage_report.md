@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-23 20:14 UTC
+Last run: 2026-05-23 21:11 UTC
 
-Kept candidates: 0
+Kept candidates: 1
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,402 +30,297 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Marketplace / Phase 4: RIA-registration trigger monitor + legal-review escalation
+## 4. MRWK bounty: small public UX and smoke-check fixes
 
 - Decision: drop
-- Score: 104 -> -31
-- Issue: https://github.com/ghantakiran/axion-stock/issues/92
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> 15
+- Issue: https://github.com/ramimbo/mergework/issues/45
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 5. HTTP 500 Error on extensionpay.com/extension/*/subscribe endpoint - All extensions affected globally since May 22
-
-- Decision: drop
-- Score: 104 -> -31
-- Issue: https://github.com/Glench/ExtPay/issues/349
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 6. Add DC Hub Intelligence (data center / energy market intelligence) to community servers
+## 5. BUG-BL-07 [MEDIUM]: SignalFilterPipeline::PassOpportunityFilter() menggunakan zona lawan sebagai TP target tanpa memperhitungkan SL — R:R ratio tidak dihitung dengan benar
 
 - Decision: drop
-- Score: 104 -> -31
-- Issue: https://github.com/modelcontextprotocol/servers/issues/4235
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> 15
+- Issue: https://github.com/sakuninfinix-svg/MQL5/issues/231
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 7. [Bug]: dlss grayed out
+## 6. [Bug]: dlss grayed out
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/187J3X1-114514/superresolution/issues/164
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. [Bug] : "Collect Rewards" button comes back after page refresh
+## 7. [Bug] : "Collect Rewards" button comes back after page refresh
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/harshalkurrey/Harshal-World/issues/78
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 9. Add transaction build page (swap) — design spec + prototype
+## 8. epic: migrate off candle to in-house kiln-tensor (CUDA + Metal + Vulkan)
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/lambdasistemi/amaru-treasury-tx/issues/256
+- Issue: https://github.com/ericflo/kiln/issues/1082
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 10. Behavioral drift away from user-granted autonomy in long sessions despite memory rules
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/anthropics/claude-code/issues/61879
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 11. bug: EventSub websocket subscriptions fail with mixed auth users
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/KainCH/omniasylum/issues/349
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. 📈 گزارش تحلیل فارکس - 2026-05-23
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/alicsx/my-news-feed/issues/2812
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 13. epic: watch-pty-migration -- move auto-wake off claude --print -p before 2026-06-15 billing flip
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/runlegion/legion/issues/495
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 14. [EoE] Hyperspeed Accelerators and Nitro Boosts malfunction while mounted on a Nexus Lord disc
+## 9. [EoE] Hyperspeed Accelerators and Nitro Boosts malfunction while mounted on a Nexus Lord disc
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/azerothcore/azerothcore-wotlk/issues/25938
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. animated-explainer compose: captions render the asset-manifest `prompt` instead of `script.json` narration
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/bradtaylorsf/show-sidekick/issues/278
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 16. animated-explainer: episode `aspect: 9:16` is ignored — render emits 1920x1080 (landscape)
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/bradtaylorsf/show-sidekick/issues/277
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 17. [retro] generator: client.go blindly prepends BaseURL to absolute-URL paths
+## 10. [retro] generator: client.go blindly prepends BaseURL to absolute-URL paths
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/mvanhorn/cli-printing-press/issues/1975
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 18. feat: Mensalidades — monthly fee generation, Pix verification, and financial management
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/marcosgenesis/tatamiq/issues/5
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 19. Variable.load() is a no-op for numpy data; can skip dispatch entirely
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/FBumann/xarray/issues/8
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 20. Gradients in rewards cause thread locks
+## 11. Gradients in rewards cause thread locks
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/GC-spigot/battle-pass/issues/782
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 21. AIBTC bounty: Cross-post 3 active Bitcoin-agent bounties — 400 sats
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/hunki1488-a11y/AIgor/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 22. Feature candidate_H: directory-only manifest signal for D.4-shape multi-route services — 1 voice
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/fardinvahdat/x402trace/issues/85
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 23. Feat: Implement Optimistic UI Updates in Gamification Hook
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/arzoo0511/ecoplay/issues/79
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. fix(agent-runs): paid_state=analyzed is a dead end for re-enqueue
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/viamin/paid/issues/2231
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 25. fix(github-sync): backfilled issues from reconciliation not evaluated for auto-pick
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/viamin/paid/issues/2230
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 26. fix(backend): remove or harden the legacy Stripe event-payment webhook path
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/tiagofur/solennix/issues/406
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 27. Add achievement badges for progress milestones
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/mohitkumhar/450-dsa/issues/286
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 28. Define Obscura Internal Agent Loop V1
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/silentsn3akeR/Obscura_V2_MVP/issues/132
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 29. feat(website,cloud): /cloud landing page with console.agentbreeder.io waitlist
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/agentbreeder/agentbreeder/issues/491
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 30. 📈 گزارش تحلیل فارکس - 2026-05-23
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/alicsx/my-news-feed/issues/2811
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 31. Claude resumes work automatically after context compaction, overriding user's explicit "no changes without permission" rule
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/anthropics/claude-code/issues/61843
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 32. Self-play generation: model-as-user, model-as-assistant, real tools
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/TomasrRodrigues/MCPTune/issues/36
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 33. fix(pi-kilocode): model registration race condition, Opus 4.7 thinkingLevelMap, remove free-only filter
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/sudosubin/pi-frontier/issues/24
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 34. [Minecraft 1.21.1/Yggdrasil 6.0.0] Vanaheim Vaults - Incorrect Loot Pool Reference
+## 12. [Minecraft 1.21.1/Yggdrasil 6.0.0] Vanaheim Vaults - Incorrect Loot Pool Reference
 
 - Decision: drop
 - Score: 85 -> 15
 - Issue: https://github.com/Hardel-DW/Yggdrasil-Structure/issues/23
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 35. 经验奖励使用 getattr 获取不存在的 _exp_reward 属性，属于死代码
+## 13. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
 
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/kongshan001/rpg-battle-game/issues/13
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 36. 📈 گزارش تحلیل فارکس - 2026-05-23
-
-- Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/alicsx/my-news-feed/issues/2810
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 37. SDK package: extract ExpansionContext and manifest types into a published @karimn/ironsworn-expansion-sdk
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/karimn/agentic-rpg/issues/140
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 38. fix(tests): update IOWeight assertions after BFQ cap (c357e34f breaks testDerivedWeightsFromMemoryHigh)
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/MagnaCapax/PMSS/issues/583
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 39. perf: ServerDataflow ~80-100x slower than BuckarooInfiniteWidget on list<string> columns
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/buckaroo-data/buckaroo/issues/842
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 40. Fix provider architecture parity across external model adapters
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/seungpyoson/codex-plugin-multi/issues/171
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 41. [P0][agent-ready] Mobile first chat journey: visible composer, tappable controls and no spinner lock
-
-- Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/inkognitroz/inkognitroz.github.io/issues/159
-- Reason: no clear open paid bounty signal >= $10 found
+- Decision: keep
+- Score: 81 -> 46
+- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 42. MRWK bounty: add GitHub Actions CI checks
-
-- Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/ramimbo/mergework/issues/34
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 43. Daily quests not completing on overnight crafting.
+## 14. Bug: Infinite XP Exploit in Bingo Game (Progress Stored Locally Instead of DB)
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/tristinbaker/IdleFantasy/issues/158
+- Issue: https://github.com/arzoo0511/ecoplay/issues/86
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 44. Bounty platform: multi-winner ('Up to N winners') copy is structurally unsupported — singular acceptedSubmissionId + create API has no slot parameter
+## 15. Bounty platform: multi-winner ('Up to N winners') copy is structurally unsupported — singular acceptedSubmissionId + create API has no slot parameter
 
 - Decision: drop
 - Score: 79 -> 9
 - Issue: https://github.com/aibtcdev/landing-page/issues/908
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 45. MRWK bounty: add accepted-work payout reconciliation check
+## 16. ledger: replace saturating_add/saturating_sub on monetary state with checked arithmetic (mask divergences)
 
 - Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/ramimbo/mergework/issues/35
+- Score: 79 -> 9
+- Issue: https://github.com/michaeljfazio/dugite/issues/632
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. Fix negative-diff drop on post edits
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/avatharbe/bbPoints/issues/8
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. MRWK bounty: live public smoke checks and useful reports
+
+- Decision: drop
+- Score: 71 -> -34
+- Issue: https://github.com/ramimbo/mergework/issues/38
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 46. MRWK bounty: add terminal multi-award API status regression tests
+## 19. [Reward] HarnessClaw 体验测评（任一场景）
 
 - Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/ramimbo/mergework/issues/36
+- Score: 64 -> -6
+- Issue: https://github.com/harnessclaw/harnessclaw/issues/43
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. Comment routes can crash before validating non-string JSON fields
+
+- Decision: drop
+- Score: 64 -> -41
+- Issue: https://github.com/Scottcjn/bottube/issues/1196
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 47. MRWK bounty: add MCP proof lookup tool
+## 21. [SUGGESTION] Unprepared War Declaration for Radical Ideologies
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/ramimbo/mergework/issues/37
+- Score: 61 -> -9
+- Issue: https://github.com/MillenniumDawn/Millennium-Dawn/issues/1405
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 48. Audit/fix licensing posture for AGPL + commercial dual licensing
+## 22. Dependency Dashboard
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/cyclevault-ssi/influx/issues/14
+- Score: 60 -> -10
+- Issue: https://github.com/kseito/RewardedTodo/issues/102
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 49. MRWK bounty: improve public API examples for agents
+## 23. Unloaded emmissive maps should be black, not grey
 
 - Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/ramimbo/mergework/issues/22
+- Score: 54 -> -16
+- Issue: https://github.com/secondlife/viewer/issues/5701
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. [BUG] Realm best challenge mode titles lost on logout
+
+- Decision: drop
+- Score: 54 -> -16
+- Issue: https://github.com/ClassicWoWCommunity/mop-classic-bugs/issues/2636
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 25. Track 0.12.x prompt simplification and token-cost cleanup
+
+- Decision: drop
+- Score: 51 -> -54
+- Issue: https://github.com/sauravpanda/browser-use-rust/issues/17
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 50. [post] I’ve watched my cousin in Plovdiv livestream from Dubai, telling...
+## 26. Create wallet benchmarks
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/proxima424/westworld/issues/1862
+- Score: 50 -> -115
+- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 4 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/tari-project/wallet-benchmarks/pull/5
+- Competing PR: https://github.com/tari-project/wallet-benchmarks/pull/6
+- Competing PR: https://github.com/tari-project/wallet-benchmarks/pull/4
+- Competing PR: https://github.com/tari-project/wallet-benchmarks/pull/3
+
+## 27. Recognition lift: hoist remaining module-resident Player.log recognizers into the worlds
+
+- Decision: drop
+- Score: 49 -> -86
+- Issue: https://github.com/moumantai-gg/mithril/issues/766
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 28. 界园月度小队余因强制选择二技能无法达成开启10次三技能的目标
+
+- Decision: drop
+- Score: 49 -> -21
+- Issue: https://github.com/MaaAssistantArknights/MaaAssistantArknights/issues/16824
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 51. Polly model pricing discrepancy: shows $0 but consumes Kimi K2.5 tier grants
+## 29. json in mcp server args textarea
+
+- Decision: keep
+- Score: 46 -> -4
+- Issue: https://github.com/archestra-ai/archestra/issues/3859
+- Reason: light competition allowed: 1 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/archestra-ai/archestra/pull/4591
+
+## 30. [RFC] M-to-N cast primitive (for RL weight rollout & pipeline parallel)
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/pollinations/pollinations/issues/11257
+- Score: 46 -> -24
+- Issue: https://github.com/pytorch/pytorch/issues/181061
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 52. Model documentation: Clarify that Polly and NomNom consume tier grants / are not free
+## 31. Open world mobs follow too long when running away
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/pollinations/pollinations/issues/11256
+- Score: 46 -> -59
+- Issue: https://github.com/chromiecraft/chromiecraft/issues/3382
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 32. [Bounty]:
+
+- Decision: drop
+- Score: 40 -> -215
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/463
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 10 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/433
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/431
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/429
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/432
+- Competing PR: https://github.com/midnightntwrk/contributor-hub/pull/471
+
+## 33. animated-explainer: paid-sample asset dispatcher routes scenes to `code_snippet` without required `code` input
+
+- Decision: drop
+- Score: 38 -> -32
+- Issue: https://github.com/bradtaylorsf/show-sidekick/issues/267
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 53. [post] Yoh, another day another "decentralized future" sermon from some...
+## 34. Validate reward generation behavior
+
+- Decision: keep
+- Score: 36 -> -14
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
+- Reason: light competition allowed: 1 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/devpool-directory/devpool-directory/pull/5966
+
+## 35. [Bounty] Block Explorer Bug Hunt - 2 RTC
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/proxima424/westworld/issues/1838
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/517
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 54. [Bug] Remote Control web/mobile: session header exists but /v1/sessions/{id}/events returns 404, transcript silently blank
+## 36. [EASY BOUNTY: 2 RTC] Add an Elyan Labs Link to Your Personal Site or Link-in-Bio
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/anthropics/claude-code/issues/61832
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/1577
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 55. [Refactor] Test runner depends on Node experimental flag (--experimental-strip-types)
+## 37. [BOTTUBE: 5 RTC] Create a 3-Video Series on Any Tech Topic
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/BilgeGates/chess-vision/issues/82
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2793
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 56. Feature: Add Achievement Badges & Rewards System to ecoplay
+## 38. [EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/arzoo0511/ecoplay/issues/67
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2155
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 57. [T1] Log eval scores per run
+## 39. Final scores for each game.
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/aravindkrishna2008/disaster-rescue/issues/28
+- Score: 31 -> -39
+- Issue: https://github.com/Snagnar/Hieros/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 58. [Lecture Topic Task] Create Streaks Domain Glossary
+## 40. Fix extra net label in repro61, or remove trace
+
+- Decision: keep
+- Score: 30 -> -5
+- Issue: https://github.com/tscircuit/schematic-trace-solver/issues/79
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 41. bug report: error and exit in consensus_pool_service.rs in the AG community cluster
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/uprm-inso4115-2025-2026-s2/semester-project-gym-tracker/issues/505
+- Score: 26 -> -44
+- Issue: https://github.com/anza-xyz/agave/issues/12698
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 59. Keymaster Urmgrgl - lack of script on quest completion
+## 42. [Week 4][Medium] set_yield_direction Can Be Called Without Timelock, Enabling Instant Yield Manipulation
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/chromiecraft/chromiecraft/issues/9567
+- Score: 24 -> -46
+- Issue: https://github.com/Frankcastleauditor/Solana-Audit-Arena/issues/184
 - Reason: no clear open paid bounty signal >= $10 found
