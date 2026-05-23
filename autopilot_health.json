@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 01:46 UTC",
+  "updated_at": "2026-05-23 05:29 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -10,27 +10,27 @@
     {
       "name": "Bounty scout scheduler",
       "status": "degraded",
-      "detail": "bounty_worker_queue.md is stale (115 minutes old); dispatch sent."
+      "detail": "bounty_worker_queue.md is stale (123 minutes old); dispatch sent."
     },
     {
       "name": "GitHub claimer scheduler",
       "status": "ok",
-      "detail": "github_bounty_claim_report.md is fresh (15 minutes old)."
+      "detail": "github_bounty_claim_report.md is fresh (5 minutes old)."
     },
     {
       "name": "GitHub submitter scheduler",
       "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (15 minutes old)."
+      "detail": "github_bounty_submission_report.md is fresh (5 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
       "status": "ok",
-      "detail": "taskbounty_report.md is fresh (17 minutes old)."
+      "detail": "taskbounty_report.md is fresh (21 minutes old)."
     },
     {
       "name": "TaskBounty worker scheduler",
       "status": "ok",
-      "detail": "taskbounty_worker_report.md is fresh (17 minutes old)."
+      "detail": "taskbounty_worker_report.md is fresh (21 minutes old)."
     },
     {
       "name": "Online model solver key",
@@ -75,7 +75,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 2; TaskBounty candidates: 4."
+      "detail": "GitHub candidates: 0; TaskBounty candidates: 4."
     }
   ],
   "tracked_prs": [
