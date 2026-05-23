@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 21:34 UTC",
+  "updated_at": "2026-05-23 22:32 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -10,17 +10,17 @@
     {
       "name": "Bounty scout scheduler",
       "status": "ok",
-      "detail": "bounty_worker_queue.md is fresh (23 minutes old)."
+      "detail": "bounty_worker_queue.md is fresh (21 minutes old)."
     },
     {
       "name": "GitHub claimer scheduler",
       "status": "degraded",
-      "detail": "github_bounty_claim_report.md is stale (58 minutes old); dispatch sent."
+      "detail": "github_bounty_claim_report.md is stale (56 minutes old); dispatch sent."
     },
     {
       "name": "GitHub submitter scheduler",
       "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (3 minutes old)."
+      "detail": "github_bounty_submission_report.md is fresh (1 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
@@ -75,7 +75,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 0; TaskBounty candidates: 4."
+      "detail": "GitHub candidates: 1; TaskBounty candidates: 4."
     }
   ],
   "tracked_prs": [
