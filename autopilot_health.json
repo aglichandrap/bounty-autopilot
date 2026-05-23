@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 12:06 UTC",
+  "updated_at": "2026-05-23 14:00 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -9,18 +9,18 @@
     },
     {
       "name": "Bounty scout scheduler",
-      "status": "ok",
-      "detail": "bounty_worker_queue.md is fresh (23 minutes old)."
+      "status": "degraded",
+      "detail": "bounty_worker_queue.md is stale (73 minutes old); dispatch sent."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "ok",
-      "detail": "github_bounty_claim_report.md is fresh (1 minutes old)."
+      "status": "degraded",
+      "detail": "github_bounty_claim_report.md is stale (114 minutes old); dispatch failed: HTTP 500: {\"message\":\"Failed to run workflow dispatch\",\"documentation_url\":\"https://docs.github.com/rest/actions/workflows#create-a-workflow-dispatch-event\",\"status\":\"500\"}."
     },
     {
       "name": "GitHub submitter scheduler",
       "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (2 minutes old)."
+      "detail": "github_bounty_submission_report.md is fresh (1 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
@@ -75,7 +75,7 @@
     {
       "name": "Candidate feeds",
       "status": "ok",
-      "detail": "GitHub candidates: 3; TaskBounty candidates: 4."
+      "detail": "GitHub candidates: 0; TaskBounty candidates: 4."
     }
   ],
   "tracked_prs": [
