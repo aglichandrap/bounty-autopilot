@@ -10,5 +10,50 @@
     "triage_decision": "keep",
     "triage_reasons": [],
     "linked_prs": []
+  },
+  {
+    "title": "Implement PDIP-8",
+    "url": "https://github.com/tscircuit/footprinter/issues/371",
+    "repository_url": "https://github.com/tscircuit/footprinter",
+    "updated_at": "2026-05-23T17:07:15Z",
+    "score": 26,
+    "amount_hint": "$10",
+    "reason": "paid/bounty wording, visible amount, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "json in mcp server args textarea",
+    "url": "https://github.com/archestra-ai/archestra/issues/3859",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-23T18:27:51Z",
+    "score": 11,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Validate reward generation behavior",
+    "url": "https://github.com/devpool-directory/devpool-directory/issues/5887",
+    "repository_url": "https://github.com/devpool-directory/devpool-directory",
+    "updated_at": "2026-05-23T17:10:59Z",
+    "score": 1,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
   }
 ]

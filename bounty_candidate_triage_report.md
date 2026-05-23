@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-23 18:43 UTC
+Last run: 2026-05-23 19:14 UTC
 
-Kept candidates: 1
+Kept candidates: 5
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,141 +30,93 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. AIBTC bounty: Prove 3-agent coordination with one verifiable artifact — 1500 sats
+## 4. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
+
+- Decision: keep
+- Score: 96 -> 61
+- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 5. Bounty platform: multi-winner ('Up to N winners') copy is structurally unsupported — singular acceptedSubmissionId + create API has no slot parameter
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/hunki1488-a11y/AIgor/issues/2
+- Issue: https://github.com/aibtcdev/landing-page/issues/908
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 5. AIBTC bounty: Cross-post 3 active Bitcoin-agent bounties — 400 sats
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/hunki1488-a11y/AIgor/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 6. [Low][SPECA] 豚こまは月曜と木曜で異なる味付けを使用すること（単調化防止） (PROP-v3-inv-018)
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/koteitan/ryori_sekkeisyo/issues/100
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 7. [Low][SPECA] 日曜の買い物リストにカレールーが在庫確認なしで毎週購入品目として含まれていること（INV-172）。var3はIN… (PROP-tmpl-inv-013)
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/koteitan/ryori_sekkeisyo/issues/97
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 8. [FEATURE] Animated Hover Underline Effect for Navigation Links
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/507
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 9. MRWK bounty: improve public API examples for agents
+## 6. MRWK bounty: add terminal multi-award API status regression tests
 
 - Decision: drop
 - Score: 79 -> -26
-- Issue: https://github.com/ramimbo/mergework/issues/22
+- Issue: https://github.com/ramimbo/mergework/issues/36
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 10. feat: pow-attest oracle implementation (PoW-gated Schnorr DLC, GitHub PR/issue conditions)
+## 7. MRWK bounty: live public smoke checks and useful reports
+
+- Decision: drop
+- Score: 79 -> 9
+- Issue: https://github.com/ramimbo/mergework/issues/38
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. feat: pow-attest oracle implementation (PoW-gated Schnorr DLC, GitHub PR/issue conditions)
 
 - Decision: drop
 - Score: 79 -> 9
 - Issue: https://github.com/bennyhodl/dlcdevkit/issues/158
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. [Feature] Implement Impact Analytics Dashboard for Community Engagement
-
-- Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/501
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. Emoji Reaction Claim - 10 Reactions - 2026-05-23 18:11 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12140
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. PR Review Claim - 4 PRs - 2026-05-23 18:11 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12139
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 14. Emoji Reaction Claim - 45 Reactions - 2026-05-23 17:04 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12136
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 15. PR Review Claim - 2 PRs - 2026-05-23 17:04 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12135
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 16. Emoji Reaction Claim - 10 Reactions - 2026-05-23 15:58 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12126
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 17. PR Review Claim - 2 PRs - 2026-05-23 15:58 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12125
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 18. Emoji Reaction Claim - 30 Reactions - 2026-05-23 14:55 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12123
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 19. PR Review Claim - 1 PRs - 2026-05-23 14:55 UTC
-
-- Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12122
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 20. MRWK bounty: review an open MergeWork PR with test evidence
+## 9. $1,000 Paid Gig — Table UI for an NBA Card Platform
 
 - Decision: drop
 - Score: 71 -> -34
-- Issue: https://github.com/ramimbo/mergework/issues/19
+- Issue: https://github.com/nicocaparas/nba-cards-inventory/issues/2
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 21. MRWK bounty: star MergeWork and verify wallet claim flow
+## 10. [Quest] Configurable retention + storage billing for media.pollinations.ai.
 
 - Decision: drop
-- Score: 69 -> -1
-- Issue: https://github.com/ramimbo/mergework/issues/18
+- Score: 64 -> -6
+- Issue: https://github.com/pollinations/pollinations/issues/10832
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 22. Publish GitHub Issue Scout as an Apify Store Actor
+## 11. AIBTC bounty: Cross-post 3 active Bitcoin-agent bounties — 400 sats
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/hunki1488-a11y/AIgor/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 12. Implement PDIP-8
+
+- Decision: keep
+- Score: 61 -> 26
+- Issue: https://github.com/tscircuit/footprinter/issues/371
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 13. Publish GitHub Issue Scout as an Apify Store Actor
 
 - Decision: keep
 - Score: 56 -> 56
 - Issue: https://github.com/mysubb01/apify-github-issue-scout/issues/2
 
-## 23. 🐛 [BUG] Faucet wallet validation accepts arbitrary 0x-prefixed strings (10+ chars) — allows bypass of RTC wallet format
+## 14. json in mcp server args textarea
+
+- Decision: keep
+- Score: 46 -> 11
+- Issue: https://github.com/archestra-ai/archestra/issues/3859
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 15. 💰 BOUNTY: Fix typo in BOUNTY.md (€2.00)
+
+- Decision: drop
+- Score: 46 -> -59
+- Issue: https://github.com/watney-ai/open-source-bounties/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 16. 🐛 [BUG] Faucet wallet validation accepts arbitrary 0x-prefixed strings (10+ chars) — allows bypass of RTC wallet format
 
 - Decision: drop
 - Score: 41 -> -94
@@ -172,48 +124,52 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 24. [CLI] Implement bounty command
+## 17. [BUG] Realm best challenge mode titles lost on logout
 
 - Decision: drop
-- Score: 39 -> -66
-- Issue: https://github.com/issueflow-buidl/issueflow-terminal/issues/3
+- Score: 39 -> -31
+- Issue: https://github.com/ClassicWoWCommunity/mop-classic-bugs/issues/2636
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. [EASY BOUNTY: 2 RTC] Leave an Honest Review of BoTTube on ToolPilot.ai
+
+- Decision: drop
+- Score: 36 -> -34
+- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/2155
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 19. Generalized "GitHub Webhook + Contributor Role -> Rewards" No Config v1
+
+- Decision: drop
+- Score: 36 -> -69
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5039
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 25. PR #494: setWithdrawalStatus stamps settledAt=now() on FAILED transfers — settled means succeeded everywhere else in admin.ts
+## 20. Validate reward generation behavior
 
-- Decision: drop
-- Score: 38 -> -62
-- Issue: https://github.com/serter2069/dressit/issues/611
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
-
-## 26. PR #494: handleChargeRefunded uses donation.userId (donor) for postSystemDm and a confused identity ternary — DMs the wrong person
-
-- Decision: drop
-- Score: 38 -> -97
-- Issue: https://github.com/serter2069/dressit/issues/605
-- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Decision: keep
+- Score: 36 -> 1
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 27. animated-explainer: paid-sample asset dispatcher routes scenes to `code_snippet` without required `code` input
+## 21. [T1] Log eval scores per run
 
 - Decision: drop
-- Score: 38 -> -32
-- Issue: https://github.com/bradtaylorsf/show-sidekick/issues/267
+- Score: 35 -> -35
+- Issue: https://github.com/aravindkrishna2008/disaster-rescue/issues/28
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 28. Scout Tool Integration Research Report Q3
+## 22. MQ + MQF: more quest concepts dump
 
 - Decision: drop
-- Score: 38 -> -97
-- Issue: https://github.com/onehumancorp/mono/issues/16914
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 35 -> -35
+- Issue: https://github.com/Rafia-Bee/StardewMods/issues/88
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 29. HTTP 500 Error on extensionpay.com/extension/*/subscribe endpoint - All extensions affected globally since May 22
+## 23. [T1] Reward + timeout + set_goal()
 
 - Decision: drop
-- Score: 38 -> -97
-- Issue: https://github.com/Glench/ExtPay/issues/349
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 35 -> -35
+- Issue: https://github.com/aravindkrishna2008/disaster-rescue/issues/7
+- Reason: no clear open paid bounty signal >= $10 found
