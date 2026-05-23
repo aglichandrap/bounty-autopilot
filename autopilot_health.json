@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 09:46 UTC",
+  "updated_at": "2026-05-23 11:02 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -9,28 +9,28 @@
     },
     {
       "name": "Bounty scout scheduler",
-      "status": "degraded",
-      "detail": "bounty_worker_queue.md is stale (69 minutes old); dispatch sent."
+      "status": "ok",
+      "detail": "bounty_worker_queue.md is fresh (45 minutes old)."
     },
     {
       "name": "GitHub claimer scheduler",
       "status": "degraded",
-      "detail": "github_bounty_claim_report.md is stale (112 minutes old); dispatch sent."
+      "detail": "github_bounty_claim_report.md is stale (71 minutes old); dispatch sent."
     },
     {
       "name": "GitHub submitter scheduler",
       "status": "ok",
-      "detail": "github_bounty_submission_report.md is fresh (17 minutes old)."
+      "detail": "github_bounty_submission_report.md is fresh (5 minutes old)."
     },
     {
       "name": "TaskBounty scout scheduler",
       "status": "ok",
-      "detail": "taskbounty_report.md is fresh (19 minutes old)."
+      "detail": "taskbounty_report.md is fresh (7 minutes old)."
     },
     {
       "name": "TaskBounty worker scheduler",
       "status": "ok",
-      "detail": "taskbounty_worker_report.md is fresh (19 minutes old)."
+      "detail": "taskbounty_worker_report.md is fresh (7 minutes old)."
     },
     {
       "name": "Online model solver key",
