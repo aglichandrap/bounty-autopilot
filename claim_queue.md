@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 10:50 UTC
+Last built: 2026-05-24 11:04 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### 🎯 Bounty Alert: 11 New Opportunityies found
+### Bounties not displaying on homepage
 
-- URL: https://github.com/dev-kp-eloper/BountyScout/issues/4
-- Amount: $2k, $5k, $8k, $6k
+- URL: https://github.com/picsoritdidnthappen/poidh-app/issues/1216
+- Amount: $50
 - Claim comment if rules allow:
 
 ```text

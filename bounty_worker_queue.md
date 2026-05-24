@@ -1,17 +1,36 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-24 09:35 UTC
+Last built: 2026-05-24 11:04 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
-## Queue Item 1: 🎯 Bounty Alert: 11 New Opportunityies found
+## Queue Item 1: Bounties not displaying on homepage
 
-- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/4
-- Repository: https://github.com/dev-kp-eloper/BountyScout
-- Amount hint: $2k, $5k, $8k, $6k
-- Score: 69
-- Work priority: 169.0
-- Match reason: paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update
+- Issue: https://github.com/picsoritdidnthappen/poidh-app/issues/1216
+- Repository: https://github.com/picsoritdidnthappen/poidh-app
+- Amount hint: $50
+- Score: 30
+- Work priority: 35.0
+- Match reason: paid/bounty wording, visible amount, coding scope
+
+### Worker Instructions
+
+1. Open the issue and confirm the bounty is still active.
+2. Read the repository contribution rules.
+3. Clone or fork the repository only if the issue is still open and not already solved.
+4. Reproduce the bug or identify the smallest requested change.
+5. Add or update tests when practical.
+6. Submit a focused PR with a short explanation and link it to the bounty issue.
+7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
+
+## Queue Item 2: json in mcp server args textarea
+
+- Issue: https://github.com/archestra-ai/archestra/issues/3859
+- Repository: https://github.com/archestra-ai/archestra
+- Amount hint: amount not obvious
+- Score: 5
+- Work priority: 5.0
+- Match reason: paid/bounty wording, coding scope
 
 ### Worker Instructions
 

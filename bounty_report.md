@@ -1,95 +1,55 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-24 09:33 UTC
+Last run: 2026-05-24 11:03 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. CookieRift
+## 1. [ Bounty $3k ] [ Sandbox ] Add safe child path helper — path ownership
 
-- Score: 51
-- Amount hint: amount not obvious
-- Issue: https://github.com/davidrencse/damocles/issues/17
-- Repository: https://github.com/davidrencse/damocles
-- Updated: 2026-05-24T02:47:03Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Score: 76
+- Amount hint: $3, $3000, Bounty $3, bounty $3000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3705
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-24T10:47:26Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. Sats to Local Currency | Mexico
+## 2. [ Bounty $5k ] [ Registry ] Invalidate cached registry lookups — agent disablement
+
+- Score: 72
+- Amount hint: $5, $5000, Bounty $5, bounty $5000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3707
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-24T11:02:44Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. Multiline slash commands should not be evaluated as a comment
+
+- Score: 45
+- Amount hint: amount not obvious
+- Issue: https://github.com/devpool-directory/devpool-directory/issues/5873
+- Repository: https://github.com/devpool-directory/devpool-directory
+- Updated: 2026-05-24T10:47:06Z
+- Why it matched: mentions bounty/reward, has visible amount, thin description, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. Bug bounty
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
-- Updated: 2026-05-21T12:48:20Z
+- Issue: https://github.com/mjoibh/Qw/issues/1
+- Repository: https://github.com/mjoibh/Qw
+- Updated: 2026-05-24T10:34:44Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Expose ESM modules
-
-- Score: 38
-- Amount hint: amount not obvious
-- Issue: https://github.com/comunica/comunica/issues/930
-- Repository: https://github.com/comunica/comunica
-- Updated: 2026-05-23T21:30:20Z
-- Why it matched: mentions bounty/reward
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 4. [App] BountyPay
+## 5. Bounty Tab ???
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
-- Repository: https://github.com/gitcoinco/gitcoin_co_30
-- Updated: 2026-05-22T12:29:38Z
+- Issue: https://github.com/fallenswordhelper/fallenswordhelper/issues/864
+- Repository: https://github.com/fallenswordhelper/fallenswordhelper
+- Updated: 2026-05-24T10:34:42Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. [App] uBounty
-
-- Score: 35
-- Amount hint: 402, usd
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
-- Repository: https://github.com/gitcoinco/gitcoin_co_30
-- Updated: 2026-05-22T12:29:34Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Fixing the bounty award system
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/531
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:39Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. Create a Bounty Amount Box Issue
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/540
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:37Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Modernize BLT-API repo for agentic development
-
-- Score: 25
-- Amount hint: amount not obvious
-- Issue: https://github.com/OWASP-BLT/BLT-API/issues/94
-- Repository: https://github.com/OWASP-BLT/BLT-API
-- Updated: 2026-05-24T07:08:49Z
-- Why it matched: low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

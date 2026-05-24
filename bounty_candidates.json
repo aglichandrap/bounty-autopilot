@@ -1,12 +1,27 @@
 [
   {
-    "title": "🎯 Bounty Alert: 11 New Opportunityies found",
-    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/4",
-    "repository_url": "https://github.com/dev-kp-eloper/BountyScout",
-    "updated_at": "2026-05-24T05:05:23Z",
-    "score": 69,
-    "amount_hint": "$2k, $5k, $8k, $6k",
-    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update",
+    "title": "Bounties not displaying on homepage",
+    "url": "https://github.com/picsoritdidnthappen/poidh-app/issues/1216",
+    "repository_url": "https://github.com/picsoritdidnthappen/poidh-app",
+    "updated_at": "2026-05-23T23:21:19Z",
+    "score": 30,
+    "amount_hint": "$50",
+    "reason": "paid/bounty wording, visible amount, coding scope",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "json in mcp server args textarea",
+    "url": "https://github.com/archestra-ai/archestra/issues/3859",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-23T18:27:51Z",
+    "score": 5,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
