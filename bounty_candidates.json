@@ -13,20 +13,5 @@
       "competition already visible in comments; still allowed in aggressive mode"
     ],
     "linked_prs": []
-  },
-  {
-    "title": "Opire",
-    "url": "https://github.com/ubiquity/business-development/issues/89",
-    "repository_url": "https://github.com/ubiquity/business-development",
-    "updated_at": "2026-05-24T14:04:06Z",
-    "score": 1,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
   }
 ]
