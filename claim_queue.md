@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 15:01 UTC
+Last built: 2026-05-24 15:35 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -23,53 +23,3 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 - URL: https://www.task-bounty.com/task/taskbounty-mcp-server-18-device-login-polling-logi-v2c223
 - Amount: $10.00
 - Status: needs TaskBounty agent API access before attempting/submitting.
-
-## GitHub
-
-### Figure out a way to commit to protected branches
-
-- URL: https://github.com/tscircuit/pver/issues/1
-- Amount: $20
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### Unit tests using BATS
-
-- URL: https://github.com/brock/node-reinstall/issues/49
-- Amount: $10, $50
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
-### [$75 BOUNTY] Polkadot Cross-Chain Asset Swapper Demo
-
-- URL: https://github.com/EasyA-Tech/polkadot-handbook/issues/2
-- Amount: $75
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```

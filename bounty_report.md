@@ -1,125 +1,55 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-24 14:03 UTC
+Last run: 2026-05-24 15:33 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $5k ] [ SDK ] Run cleanup when BaseAgent setup fails — agent lifecycle
+## 1. [ Bounty $6k ] [ Runtime ] Cancel orphaned subprocesses after run timeout — worker runtime
 
 - Score: 72
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3765
+- Amount hint: $6, $6000, Bounty $6, bounty $6000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3786
 - Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-24T14:01:23Z
+- Updated: 2026-05-24T15:26:47Z
 - Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. MRWK bounty: small public UX and smoke-check fixes, round 2
+## 2. [ Bounty $2k ] [ Registry ] Reject unknown registry fields — configuration drift
 
-- Score: 55
-- Amount hint: amount not obvious
-- Issue: https://github.com/ramimbo/mergework/issues/103
-- Repository: https://github.com/ramimbo/mergework
-- Updated: 2026-05-24T13:58:28Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Score: 72
+- Amount hint: $2, $2000, Bounty $2, bounty $2000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3784
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-24T15:13:28Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. CookieRift
+## 3. [ Bounty $8k ] [ Data ] Enforce purpose limitation in data lake writes — pipeline governance
+
+- Score: 72
+- Amount hint: $8, $8000, Bounty $8, bounty $8000
+- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3778
+- Repository: https://github.com/orchestration-agent/AgentOrchestration
+- Updated: 2026-05-24T15:03:15Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. MRWK bounty: live public smoke checks and useful reports, round 2
 
 - Score: 51
 - Amount hint: amount not obvious
-- Issue: https://github.com/davidrencse/damocles/issues/17
-- Repository: https://github.com/davidrencse/damocles
-- Updated: 2026-05-24T02:47:03Z
+- Issue: https://github.com/ramimbo/mergework/issues/109
+- Repository: https://github.com/ramimbo/mergework
+- Updated: 2026-05-24T15:14:43Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. [FEATURE] UI Enhancement: Add Dark Theme Toggle & Fix Double Footer Issue in Search Tab
+## 5. Feedback from building Kalipso (Week 1 bounty): v4 SDK transition friction, mirror-node tx-id gap, transitive vulnerabilities
 
 - Score: 47
 - Amount hint: amount not obvious
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/497
-- Repository: https://github.com/RatLoopz/sahidawa-india
-- Updated: 2026-05-24T10:06:28Z
+- Issue: https://github.com/hashgraph/hedera-agent-kit-js/issues/857
+- Repository: https://github.com/hashgraph/hedera-agent-kit-js
+- Updated: 2026-05-24T15:09:49Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 5. Sats to Local Currency | Mexico
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/sutt/docs/issues/5
-- Repository: https://github.com/sutt/docs
-- Updated: 2026-05-21T12:48:20Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 6. Add a way to pick colors consistently
-
-- Score: 39
-- Amount hint: amount not obvious
-- Issue: https://github.com/RE-SS3D/SS3D/issues/1377
-- Repository: https://github.com/RE-SS3D/SS3D
-- Updated: 2026-05-24T12:38:51Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 7. [App] BountyPay
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
-- Repository: https://github.com/gitcoinco/gitcoin_co_30
-- Updated: 2026-05-22T12:29:38Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. [App] uBounty
-
-- Score: 35
-- Amount hint: 402, usd
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
-- Repository: https://github.com/gitcoinco/gitcoin_co_30
-- Updated: 2026-05-22T12:29:34Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Fixing the bounty award system
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/531
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:39Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. Create a Bounty Amount Box Issue
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/ResearchHub/issues/issues/540
-- Repository: https://github.com/ResearchHub/issues
-- Updated: 2026-01-20T06:50:37Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. Sync Issue-Assigned property from GH to LB
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
-- Repository: https://github.com/Lightning-Bounties/progress-tracker
-- Updated: 2025-05-08T13:14:16Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. [ Bounty $2k ] [ Config ] Add typed getter for boolean flags — consumer API
-
-- Score: 26
-- Amount hint: $2, $2000, Bounty $2, bounty $2000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3757
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-24T14:01:27Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
