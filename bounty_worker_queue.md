@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-24 16:45 UTC
+Last built: 2026-05-24 17:41 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -28,9 +28,9 @@ Purpose: turn scouting results into a concrete work queue for an agent. Up to 10
 - Issue: https://github.com/ubiquity/business-development/issues/89
 - Repository: https://github.com/ubiquity/business-development
 - Amount hint: amount not obvious
-- Score: 20
-- Work priority: 20.0
-- Match reason: mentions bounty/reward, has visible amount
+- Score: 1
+- Work priority: 1.0
+- Match reason: paid/bounty wording, fresh update
 
 ### Worker Instructions
 
