@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-24 05:47 UTC
+Last run: 2026-05-24 07:44 UTC
 
-Kept candidates: 1
+Kept candidates: 2
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,157 +30,214 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. 2026-05 Agent-harness landscape sweep — findings + prioritized integration shortlist for CT2
+## 4. 🎯 Bounty Alert: 11 New Opportunityies found
 
-- Decision: drop
-- Score: 80 -> -55
-- Issue: https://github.com/alohays/ct2/issues/39
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Decision: keep
+- Score: 104 -> 69
+- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/4
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. Updating the Developer Hub
+## 5. 🎯 Bounty Alert: 19 New Opportunityies found
+
+- Decision: keep
+- Score: 98 -> 63
+- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/2
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 6. [WIKI-DOCS] SPLITROOT two-session coordination — Opus 4.7 + GPT-5.5 Codex as passion-project siblings, model-grounded routing
 
 - Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/329
+- Score: 85 -> -15
+- Issue: https://github.com/Jonnyton/Workflow/issues/1034
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 7. [WIKI-PATCH] Add concurrent-session discipline to chatbot-builder-behaviors: in-flight markers + required sha256 on patches when concurrency is possible
+
+- Decision: drop
+- Score: 85 -> -15
+- Issue: https://github.com/Jonnyton/Workflow/issues/1029
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 8. [Bug] Gunslinger Muntions Crafter Import Error (And some secondary Errors)
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/ShinraEngineer/hlo-importer-abyssal-engine/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 6. V3 Protocol Team
+## 9. CookieRift
+
+- Decision: drop
+- Score: 85 -> 15
+- Issue: https://github.com/davidrencse/damocles/issues/17
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 10. [WIKI-DOCS] SPLITROOT "First 60 Seconds" slice — Verdant root-vault, table-ordered Thornbound squad, fog-of-war loop
+
+- Decision: drop
+- Score: 79 -> -71
+- Issue: https://github.com/Jonnyton/Workflow/issues/1027
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+- Reason: light competition allowed: 1 open competing PR(s)
+- Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/Jonnyton/Workflow/pull/1028
+
+## 11. SDK IDL register_agent account order mismatches deployed mainnet SAP program
 
 - Decision: drop
 - Score: 79 -> 9
-- Issue: https://github.com/yearn/budget/issues/120
+- Issue: https://github.com/OOBE-PROTOCOL/synapse-sap-sdk/issues/3
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 7. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
+## 12. Unit tests using BATS
 
 - Decision: keep
-- Score: 75 -> 40
-- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
+- Score: 60 -> -5
+- Issue: https://github.com/brock/node-reinstall/issues/49
+- Reason: light competition allowed: 2 open competing PR(s)
 - Reason: competition already visible in comments; still allowed in aggressive mode
+- Competing PR: https://github.com/brock/node-reinstall/pull/56
+- Competing PR: https://github.com/brock/node-reinstall/pull/58
 
-## 8. BIMI VMC purchase + activate (deferred, paid)
+## 13. Add final Phase I tests, seed data, and docs pass
 
 - Decision: drop
-- Score: 75 -> -30
+- Score: 49 -> -111
+- Issue: https://github.com/OWASP-BLT/BLT-API/issues/100
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 6 open competing PR(s)
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/39
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/82
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/64
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/66
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/53
+
+## 14. Expand BLT-API route metadata
+
+- Decision: drop
+- Score: 49 -> -36
+- Issue: https://github.com/OWASP-BLT/BLT-API/issues/99
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 1 open competing PR(s)
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/53
+
+## 15. Add Newsletter API for BLT-API v2
+
+- Decision: drop
+- Score: 49 -> -36
+- Issue: https://github.com/OWASP-BLT/BLT-API/issues/98
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 1 open competing PR(s)
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/53
+
+## 16. Add Jobs API for BLT-API v2
+
+- Decision: drop
+- Score: 49 -> -66
+- Issue: https://github.com/OWASP-BLT/BLT-API/issues/96
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 3 open competing PR(s)
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/44
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/90
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/66
+
+## 17. Modernize BLT-API repo for agentic development
+
+- Decision: drop
+- Score: 49 -> -81
+- Issue: https://github.com/OWASP-BLT/BLT-API/issues/94
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 4 open competing PR(s)
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/39
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/90
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/66
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/64
+
+## 18. Add llm.txt for agentic BLT-API usage
+
+- Decision: drop
+- Score: 49 -> -36
+- Issue: https://github.com/OWASP-BLT/BLT-API/issues/93
+- Reason: no clear open paid bounty signal >= $10 found
+- Reason: light competition allowed: 1 open competing PR(s)
+- Competing PR: https://github.com/OWASP-BLT/BLT-API/pull/70
+
+## 19. Identity gate 503: shouldBlock=true not cached, causing repeated timeout storms
+
+- Decision: drop
+- Score: 49 -> -21
+- Issue: https://github.com/aibtcdev/agent-news/issues/826
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. Bug: install-miner.sh exits on Windows despite docs claiming support for "any computer"
+
+- Decision: drop
+- Score: 43 -> -27
+- Issue: https://github.com/Scottcjn/Rustchain/issues/6157
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 21. [WIKI-DOCS] SPLITROOT S3 contract — map table widget + visibility state component (the widget's data source)
+
+- Decision: drop
+- Score: 39 -> -61
+- Issue: https://github.com/Jonnyton/Workflow/issues/1030
+- Reason: issue explicitly indicates no paid bounty or free-only payment status
+
+## 22. research: run shielded PPO repair Slurm campaign
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/ll7/robot_sf_ll7/issues/1474
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 23. [FEATURE] Animated Hover Underline Effect for Navigation Links
+
+- Decision: drop
+- Score: 39 -> -31
+- Issue: https://github.com/RatLoopz/sahidawa-india/issues/507
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 24. BIMI VMC purchase + activate (deferred, paid)
+
+- Decision: drop
+- Score: 38 -> -67
 - Issue: https://github.com/pinohu/lead-os/issues/71
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 9. Paid flow: Stripe success creates paid scan session token
+## 25. Add Achievement Badge & Reward System
 
 - Decision: drop
-- Score: 75 -> -30
+- Score: 35 -> -35
+- Issue: https://github.com/Sejal10406/student-task-manager/issues/298
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 26. PartDesign Workbench: Adding Missing Information
+
+- Decision: drop
+- Score: 35 -> -35
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/79
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 27. karma Phase 1 health check — manual run needed
+
+- Decision: drop
+- Score: 35 -> -35
+- Issue: https://github.com/ArtemioPadilla/rastrum/issues/1039
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 28. Paid flow: Stripe success creates paid scan session token
+
+- Decision: drop
+- Score: 34 -> -71
 - Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/27
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 10. Monetization UX: optimization pack unlock
+## 29. Monetization UX: optimization pack unlock
 
 - Decision: drop
-- Score: 75 -> -30
+- Score: 34 -> -71
 - Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/24
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 11. LLM-ToolKit 项目基础架构
-
-- Decision: drop
-- Score: 69 -> -36
-- Issue: https://github.com/Digital-Nomad-Home/MetaCommunity-LLM-Toolkit/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 12. External Add-on Documentation
-
-- Decision: drop
-- Score: 69 -> -36
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/331
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 13. Maintaining Macros
-
-- Decision: drop
-- Score: 69 -> -36
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/332
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 14. How to manage state in meteor Vue project with Pinia ORM [PROPOSAL]
-
-- Decision: drop
-- Score: 65 -> -5
-- Issue: https://github.com/CloudByGalaxy/galaxy-community-writers/issues/28
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 15. [PROPOSAL] Handling File Uploads in Node.js using Multer
-
-- Decision: drop
-- Score: 65 -> -5
-- Issue: https://github.com/CloudByGalaxy/galaxy-community-writers/issues/32
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 16. [Reward] HarnessClaw 体验测评（任一场景）
-
-- Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/harnessclaw/harnessclaw/issues/43
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 17. Paid install UX: post-Stripe plugin command and rollback instructions
-
-- Decision: drop
-- Score: 58 -> -12
-- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/30
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 18. bug(rewards): Network packet drops cause duplicate API requests resulting in double $RGX token issuance
-
-- Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/Shruti070107/ReGenX/issues/144
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 19. [retro] generator: client.go blindly prepends BaseURL to absolute-URL paths
-
-- Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/mvanhorn/cli-printing-press/issues/1975
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 20. 帝国数字服务清单 - $1起，接受USDT TRC20支付
-
-- Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/jiezishu000/empire-digital-shop/issues/1
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 21. Epic: patch survival and patch-yield metrics
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/86
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 22. Meeting Summary 06/06/2024
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/SingularityNet-Ambassador-Program/African-Guild/issues/17
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 23. Laravel template - Quiz App
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/codesphere-community/templates/issues/5
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. AI Code completion tool
-
-- Decision: drop
-- Score: 54 -> -16
-- Issue: https://github.com/codesphere-community/templates/issues/16
-- Reason: no clear open paid bounty signal >= $10 found
