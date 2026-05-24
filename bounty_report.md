@@ -1,55 +1,125 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-24 11:03 UTC
+Last run: 2026-05-24 12:12 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [ Bounty $3k ] [ Sandbox ] Add safe child path helper — path ownership
+## 1. [Reward] HarnessClaw 体验测评（任一场景）
 
-- Score: 76
-- Amount hint: $3, $3000, Bounty $3, bounty $3000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3705
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-24T10:47:26Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 2. [ Bounty $5k ] [ Registry ] Invalidate cached registry lookups — agent disablement
-
-- Score: 72
-- Amount hint: $5, $5000, Bounty $5, bounty $5000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3707
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-24T11:02:44Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 3. Multiline slash commands should not be evaluated as a comment
-
-- Score: 45
+- Score: 43
 - Amount hint: amount not obvious
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5873
-- Repository: https://github.com/devpool-directory/devpool-directory
-- Updated: 2026-05-24T10:47:06Z
-- Why it matched: mentions bounty/reward, has visible amount, thin description, low discussion volume
+- Issue: https://github.com/harnessclaw/harnessclaw/issues/43
+- Repository: https://github.com/harnessclaw/harnessclaw
+- Updated: 2026-05-23T16:13:48Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. Bug bounty
+## 2. Updating the Developer Hub
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/mjoibh/Qw/issues/1
-- Repository: https://github.com/mjoibh/Qw
-- Updated: 2026-05-24T10:34:44Z
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/329
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-24T11:25:27Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. Bounty Tab ???
+## 3. Enable test's code coverage monitoring
+
+- Score: 38
+- Amount hint: amount not obvious
+- Issue: https://github.com/linksplatform/Ranges/issues/36
+- Repository: https://github.com/linksplatform/Ranges
+- Updated: 2026-05-24T00:12:40Z
+- Why it matched: mentions bounty/reward
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. BIMI VMC purchase + activate (deferred, paid)
+
+- Score: 38
+- Amount hint: $1,499
+- Issue: https://github.com/pinohu/lead-os/issues/71
+- Repository: https://github.com/pinohu/lead-os
+- Updated: 2026-05-22T11:32:07Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 5. Maintaining Macros
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/fallenswordhelper/fallenswordhelper/issues/864
-- Repository: https://github.com/fallenswordhelper/fallenswordhelper
-- Updated: 2026-05-24T10:34:42Z
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/332
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-24T10:37:41Z
 - Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. External Add-on Documentation
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/331
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-24T10:36:18Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. PartDesign Workbench: Adding Missing Information
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/79
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-24T07:31:20Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 8. LLM-ToolKit 项目基础架构
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Digital-Nomad-Home/MetaCommunity-LLM-Toolkit/issues/1
+- Repository: https://github.com/Digital-Nomad-Home/MetaCommunity-LLM-Toolkit
+- Updated: 2026-05-24T04:07:07Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 9. BIM Workbench: Adding Missing Information
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-23T16:48:36Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 10. Draft Workbench: Adding Missing Information
+
+- Score: 35
+- Amount hint: amount not obvious
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/27
+- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
+- Updated: 2026-05-22T17:01:22Z
+- Why it matched: mentions bounty/reward, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 11. Paid flow: Stripe success creates paid scan session token
+
+- Score: 34
+- Amount hint: $50
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/27
+- Repository: https://github.com/Priivacy-ai/agent-log-analyzer
+- Updated: 2026-05-21T05:41:45Z
+- Why it matched: has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 12. Monetization UX: optimization pack unlock
+
+- Score: 34
+- Amount hint: $50
+- Issue: https://github.com/Priivacy-ai/agent-log-analyzer/issues/24
+- Repository: https://github.com/Priivacy-ai/agent-log-analyzer
+- Updated: 2026-05-21T05:41:43Z
+- Why it matched: has visible amount, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

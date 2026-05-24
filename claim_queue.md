@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 11:59 UTC
+Last built: 2026-05-24 12:14 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### Bounties not displaying on homepage
+### Unit tests using BATS
 
-- URL: https://github.com/picsoritdidnthappen/poidh-app/issues/1216
-- Amount: $50
+- URL: https://github.com/brock/node-reinstall/issues/49
+- Amount: $10, $50
 - Claim comment if rules allow:
 
 ```text
