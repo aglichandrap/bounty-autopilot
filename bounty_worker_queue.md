@@ -1,6 +1,6 @@
 # Bounty Worker Queue
 
-Last built: 2026-05-24 16:42 UTC
+Last built: 2026-05-24 16:45 UTC
 
 Purpose: turn scouting results into a concrete work queue for an agent. Up to 10 candidates are kept so one stale opportunity does not block the whole system. Higher-value, lower-risk items are prioritized first. Do not submit a PR unless the bug is reproduced or the requested change is clearly verified.
 
@@ -23,14 +23,14 @@ Purpose: turn scouting results into a concrete work queue for an agent. Up to 10
 6. Submit a focused PR with a short explanation and link it to the bounty issue.
 7. Stop immediately if the issue is vague, already fixed, requires private credentials, or asks for spam/security-abuse behavior.
 
-## Queue Item 2: Unit tests using BATS
+## Queue Item 2: Opire
 
-- Issue: https://github.com/brock/node-reinstall/issues/49
-- Repository: https://github.com/brock/node-reinstall
-- Amount hint: $10, $50
-- Score: 26
-- Work priority: 31.0
-- Match reason: paid/bounty wording, visible amount, fresh update
+- Issue: https://github.com/ubiquity/business-development/issues/89
+- Repository: https://github.com/ubiquity/business-development
+- Amount hint: amount not obvious
+- Score: 20
+- Work priority: 20.0
+- Match reason: mentions bounty/reward, has visible amount
 
 ### Worker Instructions
 

@@ -1,40 +1,90 @@
 # Bounty Scout Candidates
 
-Last run: 2026-05-24 16:40 UTC
+Last run: 2026-05-24 16:43 UTC
 
 This report filters public GitHub issues for small paid coding opportunities. It is a scout, not a payout guarantee.
 
-## 1. [Reward] HarnessClaw 体验测评（任一场景）
+## 1. TaskBounty worker status
 
-- Score: 43
+- Score: 72
+- Amount hint: $10.00
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/5
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-24T16:36:39Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 2. 🎯 Bounty Alert: 14 New Opportunityies found
+
+- Score: 72
+- Amount hint: $10, $4, $6, $7
+- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/9
+- Repository: https://github.com/dev-kp-eloper/BountyScout
+- Updated: 2026-05-24T16:05:28Z
+- Why it matched: mentions bounty/reward, has visible amount, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 3. Opire
+
+- Score: 55
 - Amount hint: amount not obvious
-- Issue: https://github.com/harnessclaw/harnessclaw/issues/43
-- Repository: https://github.com/harnessclaw/harnessclaw
-- Updated: 2026-05-23T16:13:48Z
+- Issue: https://github.com/ubiquity/business-development/issues/89
+- Repository: https://github.com/ubiquity/business-development
+- Updated: 2026-05-24T14:04:06Z
+- Why it matched: mentions bounty/reward, has visible amount
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 4. CookieRift
+
+- Score: 51
+- Amount hint: amount not obvious
+- Issue: https://github.com/davidrencse/damocles/issues/17
+- Repository: https://github.com/davidrencse/damocles
+- Updated: 2026-05-24T02:47:03Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 2. Updating the Developer Hub
+## 5. [WIKI-DOCS] SPLITROOT polish — representative audio direction (rung-2 gate; four-layer cue discipline + faction palettes)
 
 - Score: 39
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/329
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-24T15:47:21Z
+- Issue: https://github.com/Jonnyton/Workflow/issues/1059
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-24T16:40:05Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 6. [WIKI-DESIGN] Factory branch substrate improvement — JSONify faction registry (eliminate the biggest remix-friction point)
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/Jonnyton/Workflow/issues/1050
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-24T14:20:32Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
+- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
+
+## 7. Sats to Local Currency | Mexico
+
+- Score: 39
+- Amount hint: amount not obvious
+- Issue: https://github.com/sutt/docs/issues/5
+- Repository: https://github.com/sutt/docs
+- Updated: 2026-05-21T12:48:20Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 3. Enable test's code coverage monitoring
+## 8. GitHub bounty submitter status
 
-- Score: 38
+- Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/linksplatform/Ranges/issues/36
-- Repository: https://github.com/linksplatform/Ranges
-- Updated: 2026-05-24T00:12:40Z
-- Why it matched: mentions bounty/reward
+- Issue: https://github.com/asaadnashed/bounty-autopilot/issues/6
+- Repository: https://github.com/asaadnashed/bounty-autopilot
+- Updated: 2026-05-24T16:39:22Z
+- Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 4. BIM Workbench: Adding Missing Information
+## 9. BIM Workbench: Adding Missing Information
 
 - Score: 35
 - Amount hint: amount not obvious
@@ -44,82 +94,32 @@ This report filters public GitHub issues for small paid coding opportunities. It
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 5. PartDesign Workbench: Adding Missing Information
+## 10. [WIKI-DOCS] SPLITROOT hero plan — Briar Saint + Master Artificer (the two starting heroes; horizontal-only paid discipline locked)
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/79
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-24T15:43:59Z
-- Why it matched: mentions bounty/reward, low discussion volume
+- Issue: https://github.com/Jonnyton/Workflow/issues/1054
+- Repository: https://github.com/Jonnyton/Workflow
+- Updated: 2026-05-24T15:41:33Z
+- Why it matched: mentions bounty/reward, large issue body, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 6. Maintaining Macros
+## 11. [App] BountyPay
 
 - Score: 35
 - Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/332
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-24T10:37:41Z
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:38Z
 - Why it matched: mentions bounty/reward, low discussion volume
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
 
-## 7. External Add-on Documentation
+## 12. [App] uBounty
 
 - Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/331
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-24T10:36:18Z
+- Amount hint: 402, usd
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Repository: https://github.com/gitcoinco/gitcoin_co_30
+- Updated: 2026-05-22T12:29:34Z
 - Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 8. LLM-ToolKit 项目基础架构
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Digital-Nomad-Home/MetaCommunity-LLM-Toolkit/issues/1
-- Repository: https://github.com/Digital-Nomad-Home/MetaCommunity-LLM-Toolkit
-- Updated: 2026-05-24T04:07:07Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 9. Draft Workbench: Adding Missing Information
-
-- Score: 35
-- Amount hint: amount not obvious
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/27
-- Repository: https://github.com/Reqrefusion/FreeCAD-Documentation-Project
-- Updated: 2026-05-22T17:01:22Z
-- Why it matched: mentions bounty/reward, low discussion volume
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 10. [ Bounty $10k ] [ Middleware ] Avoid swallowing validation exceptions in audit middleware — API errors
-
-- Score: 26
-- Amount hint: $10, $10000, Bounty $10, bounty $10000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/3797
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-24T16:38:32Z
-- Why it matched: mentions bounty/reward, has visible amount, low discussion volume, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 11. [ Bounty $6k ] [ SDK ] Validate task decorator timeout values — decorator guardrails
-
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/308
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-23T00:35:07Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
-- Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.
-
-## 12. [ Bounty $6k ] [ Workflow ] Block downstream after partial rollback — compensating actions
-
-- Score: 25
-- Amount hint: $6, $6000, Bounty $6, bounty $6000
-- Issue: https://github.com/orchestration-agent/AgentOrchestration/issues/68
-- Repository: https://github.com/orchestration-agent/AgentOrchestration
-- Updated: 2026-05-22T14:10:17Z
-- Why it matched: mentions bounty/reward, has visible amount, likely claimed in comments: \bclaim\b
 - Next action: inspect repo, confirm bounty rules, reproduce issue, submit a focused PR only if the fix is real.

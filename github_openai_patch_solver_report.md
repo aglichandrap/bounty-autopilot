@@ -1,6 +1,6 @@
 # GitHub OpenAI Patch Solver
 
-Last run: 2026-05-24 16:42 UTC
+Last run: 2026-05-24 16:45 UTC
 
 No online model key is configured, so GitHub Actions did not attempt code generation.
 Eligible candidates were queued for the local Codex solver instead of marking the run as failed.
@@ -14,11 +14,11 @@ Eligible candidates were queued for the local Codex solver instead of marking th
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 2. Unit tests using BATS
+## 2. Opire
 
 - Status: local_fallback_queued
-- Repository: brock/node-reinstall
-- Issue: https://github.com/brock/node-reinstall/issues/49
+- Repository: ubiquity/business-development
+- Issue: https://github.com/ubiquity/business-development/issues/89
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.

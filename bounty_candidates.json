@@ -15,14 +15,13 @@
     "linked_prs": []
   },
   {
-    "title": "Unit tests using BATS",
-    "url": "https://github.com/brock/node-reinstall/issues/49",
-    "repository_url": "https://github.com/brock/node-reinstall",
-    "updated_at": "2026-05-24T16:10:38Z",
-    "score": 26,
-    "amount_hint": "$10, $50",
-    "reason": "paid/bounty wording, visible amount, fresh update",
-    "source": "volume-expander",
+    "title": "Opire",
+    "url": "https://github.com/ubiquity/business-development/issues/89",
+    "repository_url": "https://github.com/ubiquity/business-development",
+    "updated_at": "2026-05-24T14:04:06Z",
+    "score": 20,
+    "amount_hint": "amount not obvious",
+    "reason": "mentions bounty/reward, has visible amount",
     "triage_decision": "keep",
     "triage_reasons": [
       "competition already visible in comments; still allowed in aggressive mode"
