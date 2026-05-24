@@ -1,6 +1,6 @@
 # Autopilot Health
 
-Last run: 2026-05-24 15:39 UTC
+Last run: 2026-05-24 16:40 UTC
 
 Overall: `degraded`
 
@@ -9,8 +9,8 @@ The automation can still scout, solve locally through Codex, submit ready patche
 ## Checks
 
 - `ok` GitHub interaction token: Token available for comments, fork, push, and PR submission.
-- `ok` Bounty scout scheduler: bounty_worker_queue.md is fresh (4 minutes old).
-- `ok` GitHub claimer scheduler: github_bounty_claim_report.md is fresh (1 minutes old).
+- `degraded` Bounty scout scheduler: bounty_worker_queue.md is stale (65 minutes old); dispatch sent.
+- `degraded` GitHub claimer scheduler: github_bounty_claim_report.md is stale (62 minutes old); dispatch sent.
 - `ok` GitHub submitter scheduler: github_bounty_submission_report.md is fresh (1 minutes old).
 - `ok` TaskBounty scout scheduler: taskbounty_report.md is fresh (4 minutes old).
 - `ok` TaskBounty worker scheduler: taskbounty_worker_report.md is fresh (4 minutes old).

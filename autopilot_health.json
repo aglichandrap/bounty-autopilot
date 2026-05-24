@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24 15:39 UTC",
+  "updated_at": "2026-05-24 16:40 UTC",
   "overall": "degraded",
   "checks": [
     {
@@ -9,13 +9,13 @@
     },
     {
       "name": "Bounty scout scheduler",
-      "status": "ok",
-      "detail": "bounty_worker_queue.md is fresh (4 minutes old)."
+      "status": "degraded",
+      "detail": "bounty_worker_queue.md is stale (65 minutes old); dispatch sent."
     },
     {
       "name": "GitHub claimer scheduler",
-      "status": "ok",
-      "detail": "github_bounty_claim_report.md is fresh (1 minutes old)."
+      "status": "degraded",
+      "detail": "github_bounty_claim_report.md is stale (62 minutes old); dispatch sent."
     },
     {
       "name": "GitHub submitter scheduler",
