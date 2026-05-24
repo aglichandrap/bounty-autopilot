@@ -13,20 +13,5 @@
       "competition already visible in comments; still allowed in aggressive mode"
     ],
     "linked_prs": []
-  },
-  {
-    "title": "🎯 Bounty Alert: 19 New Opportunityies found",
-    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/2",
-    "repository_url": "https://github.com/dev-kp-eloper/BountyScout",
-    "updated_at": "2026-05-23T22:57:19Z",
-    "score": 63,
-    "amount_hint": "$8k, $5k, $4k",
-    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, new issue",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
   }
 ]
