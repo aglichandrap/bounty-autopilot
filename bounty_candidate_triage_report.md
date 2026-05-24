@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-24 01:36 UTC
+Last run: 2026-05-24 04:43 UTC
 
-Kept candidates: 1
+Kept candidates: 0
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,88 +30,177 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Updating the Developer Hub
+## 4. Add free public contract/gig job feed adapters
 
 - Decision: drop
-- Score: 79 -> -26
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/329
+- Score: 85 -> 15
+- Issue: https://github.com/brockamer/findajob/issues/853
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 5. Call for wallet-capable agents: verify rails, critique safety, route bounties
-
-- Decision: keep
-- Score: 64 -> 29
-- Issue: https://github.com/daveh8541/han-agent-bounty-packet/issues/1
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 6. [App] Lightning Bounties
+## 5. Populate API data to TUI
 
 - Decision: drop
-- Score: 64 -> -36
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/389
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+- Score: 85 -> 15
+- Issue: https://github.com/amdiazzz/basketui/issues/26
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 7. [App] BountyPay
-
-- Decision: drop
-- Score: 54 -> -46
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-
-## 8. [App] uBounty
+## 6. Daily Leads – 2026-05-20
 
 - Decision: drop
-- Score: 54 -> -46
-- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
+- Score: 73 -> -27
+- Issue: https://github.com/Harrisoneller/lead-scanner/issues/32
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 9. Claim Reward - Troubleshooting and FAQ
+## 7. Post-merge launch hardening: verify GitHub Pages deploy and remove legacy CogniPrint validation gates
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/TakoVHS/TakoVHS.github.io/issues/11
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 8. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/probe-rs/probe-rs/issues/4022
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 9. Please cut a release
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/slick/slick/issues/3564
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 10. Glasp デプロイパイプライン（CI/CD）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/7
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 11. GitHub Pages セットアップ（手動操作）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/6
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 12. テスト実装（自動＋手動）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/5
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 13. DASHBOARDグラフ設定（テンプレート）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/4
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 14. ダッシュボードキャッシュ計算エンジン
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/3
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 15. tweet.js/bookmark.js パーサー実装
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 16. GASメニュー実装 / HTMLアップロードダイアログ
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. Many problems when attempting to implement a flash algorithm
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/probe-rs/probe-rs/issues/4016
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. implement Algora task rules for comment and implementation
+
+- Decision: drop
+- Score: 61 -> -9
+- Issue: https://github.com/xFengleN/MiniBountyFactory_LangGraph/issues/24
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 19. TSPerf challenge submission: tsperf-vscode
+
+- Decision: drop
+- Score: 58 -> -12
+- Issue: https://github.com/algora-io/algora/issues/277
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 20. join
+
+- Decision: drop
+- Score: 58 -> -12
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 21. [App] Algora
 
 - Decision: drop
 - Score: 54 -> -16
-- Issue: https://github.com/sutt/docs/issues/3
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/395
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 10. epic: migrate off candle to in-house kiln-tensor (CUDA + Metal + Vulkan)
+## 22. Test issue
 
 - Decision: drop
-- Score: 51 -> -19
-- Issue: https://github.com/ericflo/kiln/issues/1082
+- Score: 54 -> -16
+- Issue: https://github.com/gacorpoll-ui/test-repo/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. Sats to Local Currency | Mexico
+## 23. Cross-ecosystem agent payments: Solana ↔ EVM via ERC-8004 identity
 
 - Decision: drop
-- Score: 48 -> -57
-- Issue: https://github.com/sutt/docs/issues/5
+- Score: 54 -> -16
+- Issue: https://github.com/marchantdev/agent-protocol/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 12. Sync Issue-Assigned property from GH to LB
+## 24. React Review Audit
 
 - Decision: drop
-- Score: 44 -> -26
-- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
+- Score: 54 -> -16
+- Issue: https://github.com/sonpt-afk/todolist-intern/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 13. TPOTrainer.evaluate() returns NaN eval_loss while training loss is finite
+## 25. React Review Audit
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/huggingface/trl/issues/5662
+- Score: 54 -> -16
+- Issue: https://github.com/sonpt-afk/FaceIO-saas-authentication/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. [PATCH] Improved BuildingAI + implemented different Attack tags for BuildingAI
+## 26. React Review Audit
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/ElioNeto/AOE-clone/issues/1497
+- Score: 54 -> -16
+- Issue: https://github.com/sonpt-afk/Leadhung-issue-DC-reference/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. Fixing the bounty award system
+## 27. React Review Audit
 
 - Decision: drop
-- Score: 38 -> -32
-- Issue: https://github.com/ResearchHub/issues/issues/531
+- Score: 54 -> -16
+- Issue: https://github.com/sonpt-afk/ecommerce-shop/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
+
+## 28. React Review Audit
+
+- Decision: drop
+- Score: 54 -> -46
+- Issue: https://github.com/sonpt-afk/carter-portfolio/issues/3
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty

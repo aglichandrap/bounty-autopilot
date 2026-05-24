@@ -1,16 +1,1 @@
-[
-  {
-    "title": "Call for wallet-capable agents: verify rails, critique safety, route bounties",
-    "url": "https://github.com/daveh8541/han-agent-bounty-packet/issues/1",
-    "repository_url": "https://github.com/daveh8541/han-agent-bounty-packet",
-    "updated_at": "2026-05-24T01:29:21Z",
-    "score": 29,
-    "amount_hint": "$20",
-    "reason": "mentions bounty/reward, has visible amount, low discussion volume",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  }
-]
+[]

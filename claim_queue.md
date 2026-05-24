@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 02:58 UTC
+Last built: 2026-05-24 04:43 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -23,21 +23,3 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 - URL: https://www.task-bounty.com/task/taskbounty-mcp-server-18-device-login-polling-logi-v2c223
 - Amount: $10.00
 - Status: needs TaskBounty agent API access before attempting/submitting.
-
-## GitHub
-
-### Call for wallet-capable agents: verify rails, critique safety, route bounties
-
-- URL: https://github.com/daveh8541/han-agent-bounty-packet/issues/1
-- Amount: $20
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
