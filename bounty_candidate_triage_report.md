@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-24 18:55 UTC
+Last run: 2026-05-24 20:00 UTC
 
-Kept candidates: 1
+Kept candidates: 3
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,223 +30,166 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. 🎯 Bounty Alert: 9 New Opportunityies found
+## 4. Updating the Developer Hub
 
 - Decision: drop
-- Score: 104 -> -31
-- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/10
-- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
-- Reason: competition already visible in comments; still allowed in aggressive mode
+- Score: 85 -> 15
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/329
+- Reason: no clear open paid bounty signal >= $10 found
 
-## 5. 🎯 Bounty Alert: 14 New Opportunityies found
+## 5. [App] Lightning Bounties
+
+- Decision: drop
+- Score: 64 -> -36
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/389
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 6. Compare Local & Gist Settings | Show & upload only changes
 
 - Decision: keep
-- Score: 104 -> 69
-- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/9
+- Score: 61 -> 26
+- Issue: https://github.com/shanalikhan/code-settings-sync/issues/508
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 6. Investigate versioned-only ability resolution gap (Heat Chain category)
+## 7. Opire
+
+- Decision: keep
+- Score: 55 -> 20
+- Issue: https://github.com/ubiquity/business-development/issues/89
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 8. Dev Tooling: Support for deployment factories
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ssilvius/kessel/issues/179
+- Score: 54 -> -16
+- Issue: https://github.com/ethereum-optimism/Retro-Funding/issues/12
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 7. Disciplines via authoritative dis.* records (codename + tier mods + signature ability + mirror map)
+## 9. PartDesign Workbench: Adding Missing Information
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ssilvius/kessel/issues/170
+- Score: 54 -> -16
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/79
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 8. Code review claim for BoTTube PR #1235
+## 10. [App] BountyPay
 
 - Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12257
+- Score: 54 -> -46
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/391
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 9. Code review claim for BoTTube PR #1234
+## 11. [App] uBounty
 
 - Decision: drop
-- Score: 85 -> -15
-- Issue: https://github.com/Scottcjn/rustchain-bounties/issues/12253
+- Score: 54 -> -46
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/390
 - Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
 
-## 10. Crash in [Adventure Map] dialog EIP: Kernelbase.164984. Code: EEDFADE
+## 12. Claim Reward - Troubleshooting and FAQ
 
 - Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ERA-Projects/era-project-rus/issues/251
+- Score: 54 -> -16
+- Issue: https://github.com/sutt/docs/issues/3
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 11. Explorer page: Miner data stuck at 'Loading miners...' indefinitely (frontend rendering bug)
+## 13. Sats to Local Currency | Mexico
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/Scottcjn/Rustchain/issues/6211
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. MRWK bounty: public docs and contributor onboarding improvements
-
-- Decision: drop
-- Score: 71 -> -34
-- Issue: https://github.com/ramimbo/mergework/issues/114
+- Score: 48 -> -57
+- Issue: https://github.com/sutt/docs/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 13. Pytest collection fails: missing Playwright in dev extras
+## 14. Fresh Markets Watch
+
+- Decision: keep
+- Score: 46 -> 11
+- Issue: https://github.com/daydreamsai/agent-bounties/issues/1
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 15. Sketcher Workbench: Adding Missing Information
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT-SafeCloak/issues/138
+- Score: 46 -> -24
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/94
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 14. Access Request: Collaborator access for Aryan (Intern)
+## 16. BIM Workbench: Adding Missing Information
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6478
+- Score: 44 -> -26
+- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/26
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 15. Create a dedicated alert email adress for BLT
+## 17. Sync Issue-Assigned property from GH to LB
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6477
+- Score: 44 -> -26
+- Issue: https://github.com/Lightning-Bounties/progress-tracker/issues/53
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 16. website/static/img/browser-logos/polarity/polarity_24x24.png | component: static-assets | deletability: High
+## 18. Fixing the bounty award system
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6476
+- Score: 38 -> -32
+- Issue: https://github.com/ResearchHub/issues/issues/531
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 17. website/static/img/browser-logos/polarity/polarity_32x32.png | component: static-assets | deletability: High
+## 19. Create a Bounty Amount Box Issue
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6475
+- Score: 38 -> -62
+- Issue: https://github.com/ResearchHub/issues/issues/540
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 20. [Tutorial] Getting NIGHT Tokens: Exchanges, Bridging & Wallet Funding on Mainnet
+
+- Decision: drop
+- Score: 36 -> -99
+- Issue: https://github.com/midnightntwrk/contributor-hub/issues/322
+- Reason: content bounty has AI-content disqualification risk for autonomous work
+- Reason: competition already visible in comments; still allowed in aggressive mode
+
+## 21. Onchain Builders: Expand user metrics beyond Farcaster IDs
+
+- Decision: drop
+- Score: 36 -> -34
+- Issue: https://github.com/ethereum-optimism/Retro-Funding/issues/13
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 18. website/static/img/browser-logos/polarity/polarity_48x48.png | component: static-assets | deletability: High
+## 22. Additonal topics that need to be added
 
 - Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6474
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 19. website/static/img/browser-logos/puffin/puffin_24x24.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6473
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 20. website/static/img/browser-logos/puffin/puffin_256x256.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6472
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 21. website/static/img/browser-logos/safari-technology-preview/safari-technology-preview_64x64.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6471
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 22. website/static/img/browser-logos/safari/safari_16x16.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6470
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 23. website/static/img/browser-logos/seamonkey/seamonkey_24x24.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6469
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 24. website/static/img/browser-logos/avant/avant_512x512.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6468
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 25. website/static/img/browser-logos/android/android_512x512.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6467
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 26. website/static/img/browser-logos/android/android_24x24.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6466
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 27. website/static/img/browser-logos/adblock/adblock_64x64.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6465
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 28. website/static/img/browser-logos/adblock/adblock_512x512.png | component: static-assets | deletability: High
-
-- Decision: drop
-- Score: 49 -> -21
-- Issue: https://github.com/OWASP-BLT/BLT/issues/6464
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 29. [BUG] Login and Sign Up buttons do not redirect on Report Bug, Leaderboard, Projects, and About pages
-
-- Decision: drop
-- Score: 49 -> -36
-- Issue: https://github.com/OWASP-BLT/BLT-Next/issues/164
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 1 open competing PR(s)
-- Competing PR: https://github.com/OWASP-BLT/BLT-Next/pull/165
-
-## 30. Audit candidate: elementalsouls/Claude-BugHunter
-
-- Decision: drop
-- Score: 41 -> -64
-- Issue: https://github.com/xiaolai/nlpm-for-claude/issues/272
+- Score: 36 -> -69
+- Issue: https://github.com/vishalsingh2972/100xDevs_2.0/issues/6
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 31. [FEATURE] Add Dedicated “Contact Us” Page
+## 23. LIghtning bounties for completed tasks
 
 - Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/RatLoopz/sahidawa-india/issues/543
+- Score: 30 -> -40
+- Issue: https://github.com/Cyberpunk-Hardware/Cyberpunk-Hardware/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 32. Discord and Twitter footer links do not redirect correctly in `/getting-started` route
+## 24. Scene upload from UI
 
 - Decision: drop
-- Score: 39 -> -106
-- Issue: https://github.com/OWASP-BLT/BLT-Rewards/issues/60
+- Score: 28 -> -42
+- Issue: https://github.com/stashapp/stash/issues/13
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: light competition allowed: 5 open competing PR(s)
-- Competing PR: https://github.com/OWASP-BLT/BLT-Rewards/pull/36
-- Competing PR: https://github.com/OWASP-BLT/BLT-Rewards/pull/23
-- Competing PR: https://github.com/OWASP-BLT/BLT-Rewards/pull/41
-- Competing PR: https://github.com/OWASP-BLT/BLT-Rewards/pull/39
-- Competing PR: https://github.com/OWASP-BLT/BLT-Rewards/pull/50
 
-## 33. Add testing suites
+## 25. Add Guide for Converting Sats to Mexican Pesos
 
 - Decision: drop
-- Score: 31 -> -39
-- Issue: https://github.com/OWASP-BLT/BLT-University/issues/57
+- Score: 24 -> -46
+- Issue: https://github.com/sutt/docs/issues/4
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 26. Add section: Posting and solving bounties for GitBook / Wikis
+
+- Decision: drop
+- Score: 24 -> -46
+- Issue: https://github.com/sutt/docs/issues/2
 - Reason: no clear open paid bounty signal >= $10 found

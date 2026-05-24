@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 19:50 UTC
+Last built: 2026-05-24 20:00 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,10 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### 🎯 Bounty Alert: 14 New Opportunityies found
+### Compare Local & Gist Settings | Show & upload only changes
 
-- URL: https://github.com/dev-kp-eloper/BountyScout/issues/9
-- Amount: $10k, $4k, $6k, $7k
+- URL: https://github.com/shanalikhan/code-settings-sync/issues/508
+- Amount: $20.00
 - Claim comment if rules allow:
 
 ```text
