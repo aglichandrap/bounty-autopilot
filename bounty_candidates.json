@@ -1,11 +1,41 @@
 [
   {
+    "title": "Figure out a way to commit to protected branches",
+    "url": "https://github.com/tscircuit/pver/issues/1",
+    "repository_url": "https://github.com/tscircuit/pver",
+    "updated_at": "2026-05-24T13:17:29Z",
+    "score": 26,
+    "amount_hint": "$20",
+    "reason": "paid/bounty wording, visible amount, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
     "title": "Unit tests using BATS",
     "url": "https://github.com/brock/node-reinstall/issues/49",
     "repository_url": "https://github.com/brock/node-reinstall",
-    "updated_at": "2026-05-24T11:53:28Z",
+    "updated_at": "2026-05-24T13:15:19Z",
     "score": 26,
     "amount_hint": "$10, $50",
+    "reason": "paid/bounty wording, visible amount, fresh update",
+    "source": "volume-expander",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "[$75 BOUNTY] Polkadot Cross-Chain Asset Swapper Demo",
+    "url": "https://github.com/EasyA-Tech/polkadot-handbook/issues/2",
+    "repository_url": "https://github.com/EasyA-Tech/polkadot-handbook",
+    "updated_at": "2026-05-24T09:37:25Z",
+    "score": 26,
+    "amount_hint": "$75",
     "reason": "paid/bounty wording, visible amount, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
