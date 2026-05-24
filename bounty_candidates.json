@@ -30,13 +30,13 @@
     "linked_prs": []
   },
   {
-    "title": "Add Sorting Hat MCP server with Patronus-based tool authorization and Quidditch-style streaming UI",
-    "url": "https://github.com/archestra-ai/archestra/issues/4998",
-    "repository_url": "https://github.com/archestra-ai/archestra",
-    "updated_at": "2026-05-24T20:06:16Z",
-    "score": 29,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, low discussion, recent issue, fresh update",
+    "title": "Add Bittensor (TAO) wallet support with staking tracking",
+    "url": "https://github.com/yzumbado/cryptofolio/issues/22",
+    "repository_url": "https://github.com/yzumbado/cryptofolio",
+    "updated_at": "2026-05-24T23:07:32Z",
+    "score": 44,
+    "amount_hint": "$15,165, $274, $274.00, $657.60",
+    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
@@ -45,87 +45,13 @@
     "linked_prs": []
   },
   {
-    "title": "Opire",
-    "url": "https://github.com/ubiquity/business-development/issues/89",
-    "repository_url": "https://github.com/ubiquity/business-development",
-    "updated_at": "2026-05-24T14:04:06Z",
+    "title": "Unit tests using BATS",
+    "url": "https://github.com/brock/node-reinstall/issues/49",
+    "repository_url": "https://github.com/brock/node-reinstall",
+    "updated_at": "2026-05-24T16:10:38Z",
     "score": 20,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, has visible amount",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Yield Pool Watcher",
-    "url": "https://github.com/daydreamsai/agent-bounties/issues/6",
-    "repository_url": "https://github.com/daydreamsai/agent-bounties",
-    "updated_at": "2026-05-24T21:23:20Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Fresh Markets Watch",
-    "url": "https://github.com/daydreamsai/agent-bounties/issues/1",
-    "repository_url": "https://github.com/daydreamsai/agent-bounties",
-    "updated_at": "2026-05-24T17:19:59Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Validate reward generation behavior",
-    "url": "https://github.com/devpool-directory/devpool-directory/issues/5887",
-    "repository_url": "https://github.com/devpool-directory/devpool-directory",
-    "updated_at": "2026-05-24T22:01:48Z",
-    "score": 1,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Fix extra net label in repro61, or remove trace",
-    "url": "https://github.com/tscircuit/schematic-trace-solver/issues/79",
-    "repository_url": "https://github.com/tscircuit/schematic-trace-solver",
-    "updated_at": "2026-05-24T21:05:02Z",
-    "score": 1,
-    "amount_hint": "$75",
-    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Fix extra trace lines in post-processing step",
-    "url": "https://github.com/tscircuit/schematic-trace-solver/issues/78",
-    "repository_url": "https://github.com/tscircuit/schematic-trace-solver",
-    "updated_at": "2026-05-24T21:05:00Z",
-    "score": 1,
-    "amount_hint": "$75",
-    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, fresh update",
+    "amount_hint": "$10, $50",
+    "reason": "paid/bounty wording, visible amount",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [

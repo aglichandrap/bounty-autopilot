@@ -1,6 +1,6 @@
 # GitHub OpenAI Patch Solver
 
-Last run: 2026-05-24 22:14 UTC
+Last run: 2026-05-24 23:19 UTC
 
 No online model key is configured, so GitHub Actions did not attempt code generation.
 Eligible candidates were queued for the local Codex solver instead of marking the run as failed.
@@ -23,65 +23,20 @@ Eligible candidates were queued for the local Codex solver instead of marking th
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 3. Add Sorting Hat MCP server with Patronus-based tool authorization and Quidditch-style streaming UI
+## 3. Add Bittensor (TAO) wallet support with staking tracking
 
 - Status: local_fallback_queued
-- Repository: archestra-ai/archestra
-- Issue: https://github.com/archestra-ai/archestra/issues/4998
+- Repository: yzumbado/cryptofolio
+- Issue: https://github.com/yzumbado/cryptofolio/issues/22
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 4. Opire
+## 4. Unit tests using BATS
 
 - Status: local_fallback_queued
-- Repository: ubiquity/business-development
-- Issue: https://github.com/ubiquity/business-development/issues/89
-- Patch: not ready
-- Metadata: not ready
-- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
-
-## 5. Yield Pool Watcher
-
-- Status: local_fallback_queued
-- Repository: daydreamsai/agent-bounties
-- Issue: https://github.com/daydreamsai/agent-bounties/issues/6
-- Patch: not ready
-- Metadata: not ready
-- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
-
-## 6. Fresh Markets Watch
-
-- Status: local_fallback_queued
-- Repository: daydreamsai/agent-bounties
-- Issue: https://github.com/daydreamsai/agent-bounties/issues/1
-- Patch: not ready
-- Metadata: not ready
-- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
-
-## 7. Validate reward generation behavior
-
-- Status: local_fallback_queued
-- Repository: devpool-directory/devpool-directory
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
-- Patch: not ready
-- Metadata: not ready
-- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
-
-## 8. Fix extra net label in repro61, or remove trace
-
-- Status: local_fallback_queued
-- Repository: tscircuit/schematic-trace-solver
-- Issue: https://github.com/tscircuit/schematic-trace-solver/issues/79
-- Patch: not ready
-- Metadata: not ready
-- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
-
-## 9. Fix extra trace lines in post-processing step
-
-- Status: local_fallback_queued
-- Repository: tscircuit/schematic-trace-solver
-- Issue: https://github.com/tscircuit/schematic-trace-solver/issues/78
+- Repository: brock/node-reinstall
+- Issue: https://github.com/brock/node-reinstall/issues/49
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.

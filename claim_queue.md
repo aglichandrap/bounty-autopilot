@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 22:56 UTC
+Last built: 2026-05-24 23:19 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -58,10 +58,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### Fix extra net label in repro61, or remove trace
+### Add Bittensor (TAO) wallet support with staking tracking
 
-- URL: https://github.com/tscircuit/schematic-trace-solver/issues/79
-- Amount: $75
+- URL: https://github.com/yzumbado/cryptofolio/issues/22
+- Amount: $15,165, $274, $274.00, $657.60
 - Claim comment if rules allow:
 
 ```text
