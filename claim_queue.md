@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-24 23:58 UTC
+Last built: 2026-05-25 01:33 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,22 +26,6 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### 🎯 Bounty Alert: 14 New Opportunityies found
-
-- URL: https://github.com/dev-kp-eloper/BountyScout/issues/12
-- Amount: $9k, $3k
-- Claim comment if rules allow:
-
-```text
-I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
-```
-
-- Assignment-first comment if the project requires assignment:
-
-```text
-I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
-```
-
 ### 🎯 Bounty Alert: 9 New Opportunityies found
 
 - URL: https://github.com/dev-kp-eloper/BountyScout/issues/11
@@ -58,10 +42,10 @@ I can take this if it is still available. I will first reproduce the issue, keep
 I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
 ```
 
-### Add Bittensor (TAO) wallet support with staking tracking
+### Unit tests using BATS
 
-- URL: https://github.com/yzumbado/cryptofolio/issues/22
-- Amount: $15,165, $274, $274.00, $657.60
+- URL: https://github.com/brock/node-reinstall/issues/49
+- Amount: $10, $50, 50 USD
 - Claim comment if rules allow:
 
 ```text

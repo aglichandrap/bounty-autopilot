@@ -1,20 +1,5 @@
 [
   {
-    "title": "🎯 Bounty Alert: 14 New Opportunityies found",
-    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/12",
-    "repository_url": "https://github.com/dev-kp-eloper/BountyScout",
-    "updated_at": "2026-05-24T21:59:31Z",
-    "score": 69,
-    "amount_hint": "$9k, $3k",
-    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, new issue, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
     "title": "🎯 Bounty Alert: 9 New Opportunityies found",
     "url": "https://github.com/dev-kp-eloper/BountyScout/issues/11",
     "repository_url": "https://github.com/dev-kp-eloper/BountyScout",
@@ -30,13 +15,13 @@
     "linked_prs": []
   },
   {
-    "title": "Add Bittensor (TAO) wallet support with staking tracking",
-    "url": "https://github.com/yzumbado/cryptofolio/issues/22",
-    "repository_url": "https://github.com/yzumbado/cryptofolio",
-    "updated_at": "2026-05-24T23:07:32Z",
-    "score": 44,
-    "amount_hint": "$15,165, $274, $274.00, $657.60",
-    "reason": "paid/bounty wording, visible amount, coding scope, low discussion, fresh update",
+    "title": "Add Sorting Hat MCP server with Patronus-based tool authorization and Quidditch-style streaming UI",
+    "url": "https://github.com/archestra-ai/archestra/issues/4998",
+    "repository_url": "https://github.com/archestra-ai/archestra",
+    "updated_at": "2026-05-24T20:06:16Z",
+    "score": 29,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, low discussion, recent issue, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
@@ -48,10 +33,24 @@
     "title": "Unit tests using BATS",
     "url": "https://github.com/brock/node-reinstall/issues/49",
     "repository_url": "https://github.com/brock/node-reinstall",
-    "updated_at": "2026-05-24T16:10:38Z",
+    "updated_at": "2026-05-25T01:27:17Z",
     "score": 20,
-    "amount_hint": "$10, $50",
-    "reason": "paid/bounty wording, visible amount",
+    "amount_hint": "$10, $50, 50 USD",
+    "reason": "mentions bounty/reward, has visible amount",
+    "triage_decision": "keep",
+    "triage_reasons": [
+      "competition already visible in comments; still allowed in aggressive mode"
+    ],
+    "linked_prs": []
+  },
+  {
+    "title": "Yield Pool Watcher",
+    "url": "https://github.com/daydreamsai/agent-bounties/issues/6",
+    "repository_url": "https://github.com/daydreamsai/agent-bounties",
+    "updated_at": "2026-05-24T21:23:20Z",
+    "score": 11,
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, coding scope, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
