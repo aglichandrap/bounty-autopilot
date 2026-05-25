@@ -1,8 +1,8 @@
 # GitHub Bounty Candidate Triage
 
-Last run: 2026-05-25 10:24 UTC
+Last run: 2026-05-25 10:56 UTC
 
-Kept candidates: 2
+Kept candidates: 0
 
 This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-blocked, or false-positive GitHub bounty issues before worker time is spent. Crowded but still-paid issues are allowed with a score penalty.
 
@@ -30,285 +30,153 @@ This pass removes unpaid, assigned, closed, market-alert, token-cost, HITL-block
 - Reason: issue is not open
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 4. Add `amount` display with token decimals normalization
+## 4. attach: <PATH> help text incorrectly says "flash and run"
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/377
+- Issue: https://github.com/probe-rs/probe-rs/issues/4027
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 5. Add `image lazy loading` and `srcset` for any bounty-related images
+## 5. [DASHBOARD] Hardening Status — 2026-05-25
 
 - Decision: drop
 - Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/363
+- Issue: https://github.com/kostasuser01gr/Hackathon-Voice-AI-Support-Dashboard-UI/issues/50
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 6. Optimize `bountyStore.listBounties` with a single-pass filter and sort
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/358
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 7. Add response `gzip` compression to Express
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/356
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 8. Cache bounty list in-memory with 5-second TTL in backend
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/355
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 9. Document the `reservationExpirationJob` configuration options
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/342
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 10. Add `FAQ.md` for common contributor and maintainer questions
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/336
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 11. Add `React.memo` and `useMemo` to prevent bounty card list re-renders
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/312
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 12. Add `BountyDetailPage` print/export to PDF button
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/308
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 13. Add `IntersectionObserver` infinite scroll for the bounty list
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/307
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 14. Add `CopyIcons` button to copy bounty ID and maintainer address
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/295
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 15. Add idempotency key support to `POST /api/bounties/:id/reserve`
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/252
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 16. Add `GET /api/bounties/:id/events` paginated history endpoint
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/249
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 17. Add `GET /api/bounties/:id/audit-log` endpoint
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/237
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 18. Add `get_all_bounties` paginated view function to contract
-
-- Decision: drop
-- Score: 85 -> 15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/213
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 19. [ Bounty $3k ] [ Research ] Collect and compare AI-generated AGI architecture proposals
-
-- Decision: keep
-- Score: 81 -> 46
-- Issue: https://github.com/aLexzzz430/Cognitive-OS/issues/5
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 20. [BOUNTY] [level:advanced] Containerize Backend Services with Multi-Stage Docker Builds and Automate Kubernetes Deployment Manifests
+## 6. [App] GitGig
 
 - Decision: drop
 - Score: 79 -> -26
-- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/132
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/401
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 21. Add `autocannon` load test script for the bounty board backend
+## 7. Daily Leads – 2026-05-20
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/385
+- Score: 73 -> -27
+- Issue: https://github.com/Harrisoneller/lead-scanner/issues/32
+- Reason: false positive claim/cost/market/manual-access issue, not an open coding bounty
+
+## 8. probe-rs is hardwired to use group plugdev
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/probe-rs/probe-rs/issues/4025
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 22. Add `Stellar Expert` deep links for transaction hashes in bounty detail
+## 9. Post-merge launch hardening: verify GitHub Pages deploy and remove legacy CogniPrint validation gates
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/382
+- Score: 64 -> -6
+- Issue: https://github.com/TakoVHS/TakoVHS.github.io/issues/11
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 23. Add subdomains an all in one subdomain enumeration tool
+## 10. Feature Request: Add probe-rs-tools-aarch64-pc-windows-msvc.zip to release assets for ARM Windows support
 
 - Decision: drop
-- Score: 79 -> 9
-- Issue: https://github.com/vavkamil/awesome-bugbounty-tools/issues/109
+- Score: 64 -> -6
+- Issue: https://github.com/probe-rs/probe-rs/issues/4022
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 24. Zcash Ecosystem Digest | May 30th Submission
+## 11. Please cut a release
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/ZecHub/zechub/issues/1691
+- Score: 64 -> -6
+- Issue: https://github.com/slick/slick/issues/3564
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 25. Add `update_protocol_fee` governance function callable by fee recipient
+## 12. Glasp デプロイパイプライン（CI/CD）
 
 - Decision: drop
-- Score: 75 -> 5
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/212
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/7
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 26. Create wallet benchmarks
+## 13. GitHub Pages セットアップ（手動操作）
 
 - Decision: drop
-- Score: 56 -> -49
-- Issue: https://github.com/tari-project/wallet-benchmarks/issues/1
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/6
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 14. DASHBOARDグラフ設定（テンプレート）
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/4
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 15. ダッシュボードキャッシュ計算エンジン
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/3
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 16. tweet.js/bookmark.js パーサー実装
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/2
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 17. GASメニュー実装 / HTMLアップロードダイアログ
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/1
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 18. Many problems when attempting to implement a flash algorithm
+
+- Decision: drop
+- Score: 64 -> -6
+- Issue: https://github.com/probe-rs/probe-rs/issues/4016
+- Reason: no clear open paid bounty signal >= $10 found
+
+## 19. テスト実装（自動＋手動）
+
+- Decision: drop
+- Score: 58 -> -47
+- Issue: https://github.com/ktakahiro150397/gas-tweet-archive/issues/5
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 27. Add `bulk-create` script for seeding demo bounties in development
+## 20. TSPerf challenge submission: tsperf-vscode
 
 - Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/368
+- Score: 58 -> -12
+- Issue: https://github.com/algora-io/algora/issues/277
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 28. Add weekly load test workflow using `autocannon`
+## 21. join
 
 - Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/331
+- Score: 58 -> -12
+- Issue: https://github.com/Ikalus1988/MisakaNet/issues/87
 - Reason: no clear open paid bounty signal >= $10 found
 
-## 29. Add `GET /api/leaderboard` with contributor ranking
+## 22. [BUG] Frontend lint still fails because Jest files use browser-only ESLint globals
 
 - Decision: drop
-- Score: 55 -> -15
-- Issue: https://github.com/ritik4ever/stellar-bounty-board/issues/238
+- Score: 55 -> -50
+- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/125
 - Reason: no clear open paid bounty signal >= $10 found
+- Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 30. External Add-on Documentation
+## 23. [App] Algora
 
 - Decision: drop
 - Score: 54 -> -51
-- Issue: https://github.com/Reqrefusion/FreeCAD-Documentation-Project/issues/331
+- Issue: https://github.com/gitcoinco/gitcoin_co_30/issues/395
 - Reason: no clear open paid bounty signal >= $10 found
 - Reason: competition already visible in comments; still allowed in aggressive mode
 
-## 31. Tari Universe terminates external xmrig processes on shutdown
+## 24. Test issue
 
 - Decision: drop
-- Score: 46 -> -59
-- Issue: https://github.com/tari-project/universe/issues/3204
+- Score: 54 -> -16
+- Issue: https://github.com/gacorpoll-ui/test-repo/issues/1
 - Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 32. Feature Request: Multiple PR contributors payout distribution
-
-- Decision: drop
-- Score: 46 -> -59
-- Issue: https://github.com/skndash96/bountic/issues/12
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 33. Tari Universe 1.6.11 reports rate in G/s on Mac for CPU
-
-- Decision: drop
-- Score: 46 -> -59
-- Issue: https://github.com/tari-project/universe/issues/3210
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 34. [Bug]: Scroll event leak after scrolling to the top of a text widget
-
-- Decision: drop
-- Score: 46 -> -24
-- Issue: https://github.com/Comfy-Org/ComfyUI_frontend/issues/3990
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 35. [BOUNTY] [level:critical] Establish Distributed Redis Caching Layer for AI Categorization and Sentence Transformer Embeddings
-
-- Decision: drop
-- Score: 39 -> -66
-- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/131
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 36. [BOUNTY] [level:critical] Establish Distributed Redis Caching Layer for AI Categorization and Sentence Transformer Embeddings
-
-- Decision: drop
-- Score: 39 -> -31
-- Issue: https://github.com/ritesh-1918/HELPDESK.AI/issues/129
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 37. [Feature Request]: Simple animation mode to reduce screen redraws
-
-- Decision: drop
-- Score: 36 -> -34
-- Issue: https://github.com/Comfy-Org/ComfyUI_frontend/issues/4013
-- Reason: no clear open paid bounty signal >= $10 found
-
-## 38. Feature Request: Copy rule(s) to Private Workspace
-
-- Decision: keep
-- Score: 36 -> 1
-- Issue: https://github.com/requestly/requestly/issues/3825
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 39. [rocket-pool] DEFI@home
-
-- Decision: keep
-- Score: 30 -> -5
-- Issue: https://github.com/guil-lambert/defipunkd/issues/227
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 40. Add debugger ai like concept to debug in code but with prompts and breakpoints
-
-- Decision: drop
-- Score: 28 -> -77
-- Issue: https://github.com/atharvnaik1/ipaship-audit/issues/92
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 41. Tests: Add Unit tests
-
-- Decision: drop
-- Score: 24 -> -81
-- Issue: https://github.com/BitgesellOfficial/gobglbridge/issues/3
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode
-
-## 42. [DMP 2026]: Agentic Invoice Co-Pilot for Government Billing (PWA + iOS/Android + Web3 Payments)
-
-- Decision: drop
-- Score: 16 -> -89
-- Issue: https://github.com/seetadev/GovtInvoice/issues/37
-- Reason: no clear open paid bounty signal >= $10 found
-- Reason: competition already visible in comments; still allowed in aggressive mode

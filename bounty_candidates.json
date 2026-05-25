@@ -1,17 +1,1 @@
-[
-  {
-    "title": "Feature Request: Copy rule(s) to Private Workspace",
-    "url": "https://github.com/requestly/requestly/issues/3825",
-    "repository_url": "https://github.com/requestly/requestly",
-    "updated_at": "2026-05-25T08:32:26Z",
-    "score": 1,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  }
-]
+[]
