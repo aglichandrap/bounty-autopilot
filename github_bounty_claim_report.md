@@ -1,6 +1,13 @@
 # GitHub Bounty Claim Report
 
-Last run: 2026-05-24 23:14 UTC
+Last run: 2026-05-25 00:16 UTC
+
+## Add Bittensor (TAO) wallet support with staking tracking
+
+- Issue: https://github.com/yzumbado/cryptofolio/issues/22
+- Status: skipped
+- Comment: not posted
+- Message: strong active attempt/comment by nguyencaoky1121-dev
 
 ## 🎯 Bounty Alert: 14 New Opportunityies found
 
@@ -16,51 +23,9 @@ Last run: 2026-05-24 23:14 UTC
 - Comment: not posted
 - Message: strong active attempt/comment by nguyencaoky1121-dev
 
-## Fix extra net label in repro61, or remove trace
+## Unit tests using BATS
 
-- Issue: https://github.com/tscircuit/schematic-trace-solver/issues/79
+- Issue: https://github.com/brock/node-reinstall/issues/49
 - Status: skipped
 - Comment: not posted
-- Message: strong active attempt/comment by algora-pbc[bot]
-
-## Fix extra trace lines in post-processing step
-
-- Issue: https://github.com/tscircuit/schematic-trace-solver/issues/78
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by algora-pbc[bot]
-
-## Add Sorting Hat MCP server with Patronus-based tool authorization and Quidditch-style streaming UI
-
-- Issue: https://github.com/archestra-ai/archestra/issues/4998
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by algora-pbc[bot]
-
-## Opire
-
-- Issue: https://github.com/ubiquity/business-development/issues/89
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by addidea
-
-## Yield Pool Watcher
-
-- Issue: https://github.com/daydreamsai/agent-bounties/issues/6
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by ai-developer-010-plantecs-ai
-
-## Fresh Markets Watch
-
-- Issue: https://github.com/daydreamsai/agent-bounties/issues/1
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by ai-developer-010-plantecs-ai
-
-## Validate reward generation behavior
-
-- Issue: https://github.com/devpool-directory/devpool-directory/issues/5887
-- Status: skipped
-- Comment: not posted
-- Message: strong active attempt/comment by zhaog100
+- Message: strong active attempt/comment by LpcPaul
