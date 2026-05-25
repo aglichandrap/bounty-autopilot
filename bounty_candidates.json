@@ -1,86 +1,12 @@
 [
   {
-    "title": "Size to close is not well formatted, sometimes",
-    "url": "https://github.com/capofficial/client/issues/11",
-    "repository_url": "https://github.com/capofficial/client",
-    "updated_at": "2026-05-25T04:51:02Z",
-    "score": 36,
-    "amount_hint": "$20",
-    "reason": "paid/bounty wording, visible amount, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Show new liquidation price when adding or removing margin",
-    "url": "https://github.com/capofficial/client/issues/4",
-    "repository_url": "https://github.com/capofficial/client",
-    "updated_at": "2026-05-25T04:53:20Z",
-    "score": 26,
-    "amount_hint": "$50",
-    "reason": "paid/bounty wording, visible amount, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Unit tests using BATS",
-    "url": "https://github.com/brock/node-reinstall/issues/49",
-    "repository_url": "https://github.com/brock/node-reinstall",
-    "updated_at": "2026-05-25T01:27:17Z",
-    "score": 26,
-    "amount_hint": "$10, $50",
-    "reason": "paid/bounty wording, visible amount, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Opire",
-    "url": "https://github.com/ubiquity/business-development/issues/89",
-    "repository_url": "https://github.com/ubiquity/business-development",
-    "updated_at": "2026-05-24T14:04:06Z",
-    "score": 20,
-    "amount_hint": "amount not obvious",
-    "reason": "mentions bounty/reward, has visible amount",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "Bridge Route Pinger",
-    "url": "https://github.com/daydreamsai/agent-bounties/issues/10",
-    "repository_url": "https://github.com/daydreamsai/agent-bounties",
-    "updated_at": "2026-05-25T05:30:01Z",
-    "score": 11,
-    "amount_hint": "amount not obvious",
-    "reason": "paid/bounty wording, coding scope, fresh update",
-    "source": "volume-expander",
-    "triage_decision": "keep",
-    "triage_reasons": [
-      "competition already visible in comments; still allowed in aggressive mode"
-    ],
-    "linked_prs": []
-  },
-  {
-    "title": "BGL PR bounty hunt ($10000 overall budget)",
-    "url": "https://github.com/BitgesellOfficial/bitgesell/issues/39",
-    "repository_url": "https://github.com/BitgesellOfficial/bitgesell",
-    "updated_at": "2026-05-25T05:18:16Z",
+    "title": "Feature Request: Copy rule(s) to Private Workspace",
+    "url": "https://github.com/requestly/requestly/issues/3825",
+    "repository_url": "https://github.com/requestly/requestly",
+    "updated_at": "2026-05-25T08:32:26Z",
     "score": 1,
-    "amount_hint": "$10000, $500",
-    "reason": "paid/bounty wording, visible amount, coding scope, busy discussion, fresh update",
+    "amount_hint": "amount not obvious",
+    "reason": "paid/bounty wording, fresh update",
     "source": "volume-expander",
     "triage_decision": "keep",
     "triage_reasons": [
