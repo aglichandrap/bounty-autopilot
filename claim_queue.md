@@ -1,6 +1,6 @@
 # Claim Queue
 
-Last built: 2026-05-25 04:05 UTC
+Last built: 2026-05-25 06:13 UTC
 
 Identity: use the owner account `asaadnashed`; do not impersonate another human or use fake accounts.
 
@@ -26,10 +26,26 @@ Identity: use the owner account `asaadnashed`; do not impersonate another human 
 
 ## GitHub
 
-### 🎯 Bounty Alert: 9 New Opportunityies found
+### Size to close is not well formatted, sometimes
 
-- URL: https://github.com/dev-kp-eloper/BountyScout/issues/11
-- Amount: $7k, $2k
+- URL: https://github.com/capofficial/client/issues/11
+- Amount: $20
+- Claim comment if rules allow:
+
+```text
+I can take this if it is still available. I will first reproduce the issue, keep the PR focused, and include a regression test or clear verification notes before asking for review.
+```
+
+- Assignment-first comment if the project requires assignment:
+
+```text
+I can work on this. Please assign it to me if it is still available; I will wait for assignment before opening a PR.
+```
+
+### Show new liquidation price when adding or removing margin
+
+- URL: https://github.com/capofficial/client/issues/4
+- Amount: $50
 - Claim comment if rules allow:
 
 ```text
@@ -45,7 +61,7 @@ I can work on this. Please assign it to me if it is still available; I will wait
 ### Unit tests using BATS
 
 - URL: https://github.com/brock/node-reinstall/issues/49
-- Amount: $10, $50, 50 USD
+- Amount: $10, $50
 - Claim comment if rules allow:
 
 ```text

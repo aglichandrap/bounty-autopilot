@@ -1,24 +1,24 @@
 # GitHub OpenAI Patch Solver
 
-Last run: 2026-05-25 01:33 UTC
+Last run: 2026-05-25 06:13 UTC
 
 No online model key is configured, so GitHub Actions did not attempt code generation.
 Eligible candidates were queued for the local Codex solver instead of marking the run as failed.
 
-## 1. 🎯 Bounty Alert: 9 New Opportunityies found
+## 1. Size to close is not well formatted, sometimes
 
 - Status: local_fallback_queued
-- Repository: dev-kp-eloper/BountyScout
-- Issue: https://github.com/dev-kp-eloper/BountyScout/issues/11
+- Repository: capofficial/client
+- Issue: https://github.com/capofficial/client/issues/11
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 2. Add Sorting Hat MCP server with Patronus-based tool authorization and Quidditch-style streaming UI
+## 2. Show new liquidation price when adding or removing margin
 
 - Status: local_fallback_queued
-- Repository: archestra-ai/archestra
-- Issue: https://github.com/archestra-ai/archestra/issues/4998
+- Repository: capofficial/client
+- Issue: https://github.com/capofficial/client/issues/4
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
@@ -32,11 +32,29 @@ Eligible candidates were queued for the local Codex solver instead of marking th
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
 
-## 4. Yield Pool Watcher
+## 4. Opire
+
+- Status: local_fallback_queued
+- Repository: ubiquity/business-development
+- Issue: https://github.com/ubiquity/business-development/issues/89
+- Patch: not ready
+- Metadata: not ready
+- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
+
+## 5. Bridge Route Pinger
 
 - Status: local_fallback_queued
 - Repository: daydreamsai/agent-bounties
-- Issue: https://github.com/daydreamsai/agent-bounties/issues/6
+- Issue: https://github.com/daydreamsai/agent-bounties/issues/10
+- Patch: not ready
+- Metadata: not ready
+- Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
+
+## 6. BGL PR bounty hunt ($10000 overall budget)
+
+- Status: local_fallback_queued
+- Repository: BitgesellOfficial/bitgesell
+- Issue: https://github.com/BitgesellOfficial/bitgesell/issues/39
 - Patch: not ready
 - Metadata: not ready
 - Message: Online model key missing; local Codex automation should inspect, patch, test, and prepare submission metadata.
