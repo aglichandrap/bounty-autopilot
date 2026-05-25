@@ -31,3 +31,13 @@ is:issue is:open "$50" "bounty" comments:<80 sort:updated-desc
 repo:requestly/requestly is:issue is:open label:bounty-$20 no:assignee comments:<80 sort:updated-desc
 repo:projectdiscovery/nuclei is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc
 repo:calcom/cal.com is:issue is:open "bounty" no:assignee comments:<50 sort:updated-desc
+
+# Custom queries for aglichandrap bounty hunting
+is:issue is:open label:bounty created:>2025-04-01 sort:created-desc
+is:issue is:open "good first issue" label:bounty created:>2025-04-01 sort:created-desc
+is:issue is:open "reward" "PR" label:bounty sort:updated-desc
+is:issue is:open "solidity" label:bounty sort:updated-desc
+is:issue is:open "typescript" label:bounty sort:updated-desc
+is:issue is:open "python" label:bounty sort:updated-desc
+is:issue is:open label:prize sort:updated-desc
+is:issue is:open "Algora" label:bounty sort:updated-desc
